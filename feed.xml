@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 03 Oct 2022 18:40:17 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Oct 2022 18:41:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Istio のサービスへの接続でプロトコルエラーになる]]></title>
+            <link>https://zenn.dev/toshikish/articles/d0dd54ae067bed</link>
+            <guid>https://zenn.dev/toshikish/articles/d0dd54ae067bed</guid>
+            <pubDate>Tue, 04 Oct 2022 02:55:06 GMT</pubDate>
+            <content:encoded><![CDATA[現象Istio サービスメッシュを有効にした Kubernetes クラスタ内に立てた Service に接続しようとするも，upstream connect error or disconnect/reset before headers. reset reason: protocol error が出て到達できない。例えば，以下のような Service に gRPC で接続しようとしても失敗する。apiVersion: v1kind: Servicemetadata:  name: my-servicespec:  selector:    app.kubern...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/badge-generator-introduction</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/learn-about-terratest/</guid>
             <pubDate>Mon, 27 Jun 2022 00:43:53 GMT</pubDate>
             <content:encoded><![CDATA[Terratest の概要 公式HP: https://terratest.gruntwork.io/ Githubリポジトリ: https://github.com/gruntwork-io/ter […]The post インフラコードのテストツール Terratest を触ってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS SAP 合格体験記 2022/06]]></title>
-            <link>https://zenn.dev/tayusa/articles/7b3dd99a79403c</link>
-            <guid>https://zenn.dev/tayusa/articles/7b3dd99a79403c</guid>
-            <pubDate>Fri, 24 Jun 2022 00:36:49 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにネットで公開されている数々のAWS Certified Solutions Architect - Professionalの合格体験記や勉強法などにお世話になったので自分も書いてみることにしました。教材選びや学習スケジュールの参考になれば嬉しいです。 私の前提知識まず、本題に入る前に私のSAPを受ける前までのスキルセットを軽く紹介させてください。業務でのAWS歴は8ヶ月ほどで現在SREとして働いています以前はRuby on Railsなどを書くプログラマーをやっていましたAWS SAAは2022/03に取得しましたAWSではない他のIT資格は以下で...]]></content:encoded>
         </item>
     </channel>
 </rss>
