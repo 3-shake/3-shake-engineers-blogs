@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 05 Oct 2022 18:41:06 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Oct 2022 18:39:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[CDK for Terraform を理解する]]></title>
+            <link>https://sreake.com/blog/cdk-for-terraform/</link>
+            <guid>https://sreake.com/blog/cdk-for-terraform/</guid>
+            <pubDate>Thu, 06 Oct 2022 02:27:54 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 基本的な使い方をまとめてみました。 CDK for Terraform Is Now Generally Available 今回は TypeScript を使っている前提で記述するため、他の言語を利用する場合 […]The post CDK for Terraform を理解する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Istio のサービスへの接続でプロトコルエラーになる]]></title>
             <link>https://zenn.dev/toshikish/articles/d0dd54ae067bed</link>
@@ -96,7 +103,7 @@
             <link>https://zenn.dev/kou_pg_0131/articles/cdk-for-terraform</link>
             <guid>https://zenn.dev/kou_pg_0131/articles/cdk-for-terraform</guid>
             <pubDate>Thu, 01 Sep 2022 12:52:06 GMT</pubDate>
-            <content:encoded><![CDATA[先日 CDK for Terraform が GA になりました。https://www.hashicorp.com/blog/cdk-for-terraform-now-generally-availableこの記事では CDK for Terraform の基本的な使い方をまとめます。TypeScript を使う前提で記述するため、他の言語を利用する場合は適宜読み替えてください。 CDK for Terraform とはhttps://www.terraform.io/cdktfCDK for Terraform を使うと使い慣れたプログラミング言語を使ってインフラの定...]]></content:encoded>
+            <content:encoded><![CDATA[こちらの記事は下記ブログに移動しました！https://sreake.com/blog/cdk-for-terraform/]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[負荷テストツール K6 について調べてみた]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/s3_datadog_log/</guid>
             <pubDate>Tue, 28 Jun 2022 03:04:23 GMT</pubDate>
             <content:encoded><![CDATA[Datadogのログにまつわるお話を紹介させていただきます！今回はアーカイブされたログをDatadogで見たい場合どのように復元していくのかについてご紹介しますThe post S3にアーカイブしたDatadogのログを復元する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[インフラコードのテストツール Terratest を触ってみた]]></title>
-            <link>https://sreake.com/blog/learn-about-terratest/</link>
-            <guid>https://sreake.com/blog/learn-about-terratest/</guid>
-            <pubDate>Mon, 27 Jun 2022 00:43:53 GMT</pubDate>
-            <content:encoded><![CDATA[Terratest の概要 公式HP: https://terratest.gruntwork.io/ Githubリポジトリ: https://github.com/gruntwork-io/ter […]The post インフラコードのテストツール Terratest を触ってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
