@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 18 Oct 2022 18:41:08 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Oct 2022 18:41:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub Actions で OIDC を使用して GCP 認証を行う]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-gcp</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-gcp</guid>
+            <pubDate>Wed, 19 Oct 2022 12:41:17 GMT</pubDate>
+            <content:encoded><![CDATA[躓きまくったので備忘録。AWS はこっち。https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-aws 概要GitHub Actions では OpenID Connect (OIDC) がサポートされています。OIDC を使用することによりサービスアカウントキーなどを用意することなく GCP 認証を行うことができます。詳細については下記ページをご参照ください。https://docs.github.com/en/actions/deployment/security-hardening-your-deployment...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes で StatefulSet の Volume を resize する]]></title>
             <link>https://blog.1q77.com/2022/10/kubernetes-resize-statefulset-volume/</link>
@@ -40,7 +47,7 @@
             <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-aws</link>
             <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-aws</guid>
             <pubDate>Sat, 15 Oct 2022 13:40:00 GMT</pubDate>
-            <content:encoded><![CDATA[毎回ググってるので備忘録。 概要GitHub Actions では OpenID Connect (OIDC) がサポートされています。OIDC を使用することにより長期間有効なアクセスキーなどを用意することなく AWS 認証を行うことができます。詳細については下記ページをご参照ください。https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connectこの記事では GitHub Actio...]]></content:encoded>
+            <content:encoded><![CDATA[毎回ググってるので備忘録。GCP はこっち。https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-gcp 概要GitHub Actions では OpenID Connect (OIDC) がサポートされています。OIDC を使用することにより長期間有効なアクセスキーなどを用意することなく AWS 認証を行うことができます。詳細については下記ページをご参照ください。https://docs.github.com/en/actions/deployment/security-hardening-your-deployme...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[apt-key is deprecated への対応]]></title>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/gogogo-introduction</guid>
             <pubDate>Fri, 12 Aug 2022 09:17:29 GMT</pubDate>
             <content:encoded><![CDATA[先日 CDK for Terraform が GA になりました。https://www.hashicorp.com/blog/cdk-for-terraform-now-generally-availableCDK for Terraform を使うことにより、 TypeScript や Go などといったプログラミング言語を使って Terraform エコシステムを利用したインフラの定義やプロビジョニングを行うことができます。「Go でインフラが書ける」と聞き、ふと思ったことがこちらです。というわけで書きました。 作ったものGoGoGohttps://go55.d...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GKE Service の NEG を Terraform で作成する]]></title>
-            <link>https://blog.1q77.com/2022/08/create-gke-service-neg-using-terraform/</link>
-            <guid>https://blog.1q77.com/2022/08/create-gke-service-neg-using-terraform/</guid>
-            <pubDate>Tue, 09 Aug 2022 11:13:48 GMT</pubDate>
-            <content:encoded><![CDATA[GKE の Ingress で Load Balancer を作成すると、同一 namespace 内の Service にしか振り分けられないとか、単一の Cluster でしか使えないとか不都合な場合があります。その場合 Load Balancer 関連のリソー]]></content:encoded>
         </item>
     </channel>
 </rss>
