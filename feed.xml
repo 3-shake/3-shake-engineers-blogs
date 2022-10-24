@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 23 Oct 2022 18:38:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Oct 2022 18:41:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[PodSecurityPolicy について考えてみた]]></title>
+            <link>https://sreake.com/blog/pod-security-policy/</link>
+            <guid>https://sreake.com/blog/pod-security-policy/</guid>
+            <pubDate>Mon, 24 Oct 2022 02:15:18 GMT</pubDate>
+            <content:encoded><![CDATA[話すこと 案件で Kubernetes のセキュリティについて調べることがあったので、各レイヤで何が必要かを検討しました。 Node レイヤ・Inspector・(falco) Pod レイヤ・(falco)・セキュリテ […]The post PodSecurityPolicy について考えてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Anthos Service Mesh の Outbound Access Log を出力する]]></title>
             <link>https://blog.1q77.com/2022/10/asm-access-log/</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2022/08/delete-failed-pod-periodically/</guid>
             <pubDate>Fri, 12 Aug 2022 12:19:57 GMT</pubDate>
             <content:encoded><![CDATA[GKE (GKE 限定な話ではないけれども) で Preemptible な node を使用していると Graceful Node Shutdown により停止させられた Pod が Failed 状態でどんどん溜まっていって結構邪魔です。 できれば消え]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[envoy-sidecar-helper で Job の終了後に istio-proxy を停止させる]]></title>
-            <link>https://blog.1q77.com/2022/08/stop-istio-proxy-using-envoy-sidecar-helper/</link>
-            <guid>https://blog.1q77.com/2022/08/stop-istio-proxy-using-envoy-sidecar-helper/</guid>
-            <pubDate>Fri, 12 Aug 2022 11:51:14 GMT</pubDate>
-            <content:encoded><![CDATA[Istio を導入した環境で Job (CronJob) を実行すると、sidecar としての istio-proxy コンテナを Job 本来の処理が終わった後に istio-proxy コンテナを終了させないといつまで経っても Pod]]></content:encoded>
         </item>
     </channel>
 </rss>
