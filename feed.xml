@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 25 Oct 2022 18:42:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Oct 2022 18:37:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gitlab Ci で Kaniko build し Trivy で scan する]]></title>
+            <link>https://blog.1q77.com/2022/10/gitlab-ci-kaniko-and-trivy/</link>
+            <guid>https://blog.1q77.com/2022/10/gitlab-ci-kaniko-and-trivy/</guid>
+            <pubDate>Wed, 26 Oct 2022 14:34:28 GMT</pubDate>
+            <content:encoded><![CDATA[GitLab CI でコンテナイメージを Docker daemon の不要な Kaniko で build し、それを Trivy でスキャンする方法 まず、kaniko で --tarPath を指定して tar ファイルで書き出す 書き出す先を artifacts で]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[PodSecurityPolicy について考えてみた]]></title>
             <link>https://sreake.com/blog/pod-security-policy/</link>
@@ -47,7 +54,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2022/10/18/161000</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2022/10/18/161000</guid>
             <pubDate>Tue, 18 Oct 2022 07:10:00 GMT</pubDate>
-            <content:encoded><![CDATA[TipsMAC でkubectl port-forward を用いてlocalhost に対してHTTPSアクセスをしたら、Chromeで「この接続ではプライバシーが保護されません　NET::ERR_CERT_INVALID」と表示されてしまうことがある。「詳細設定」を押してもいっても解決策が出てこない。そういう時には半角英数モードでthisisunsafeとキーボード入力しすればアクセスできるようになる。しかも、一定期間すぎたらstackoverflow.com]]></content:encoded>
+            <content:encoded><![CDATA[TipsMAC でkubectl port-forward を用いてlocalhost に対してHTTPSアクセスをしたら、Chromeで「この接続ではプライバシーが保護されません　NET::ERR_CERT_INVALID」と表示されてしまうことがある。「詳細設定」を押してもいっても解決策が出てこない。そういう時には半角英数モードでthisisunsafeとキーボード入力しすればアクセスできるようになる。しかも、一定期間すぎたらこのようなメッセージが出てきます。stackoverflow.com]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[DNS over HTTPS 通信の中身を確認する]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/terraform-state-structure/</guid>
             <pubDate>Mon, 15 Aug 2022 23:16:16 GMT</pubDate>
             <content:encoded><![CDATA[動機 単一の Terraform state でリソースを構築していると、徐々にリソース数が増加し、コードの見通しが悪くなったり plan 時間が長くなったりといった問題が発生します。 単一 state で運用していたが […]The post Terraform state の構成の提案 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Graceful Node Shutdown で Terminated 状態で残る Pod を削除する cronjob]]></title>
-            <link>https://blog.1q77.com/2022/08/delete-failed-pod-periodically/</link>
-            <guid>https://blog.1q77.com/2022/08/delete-failed-pod-periodically/</guid>
-            <pubDate>Fri, 12 Aug 2022 12:19:57 GMT</pubDate>
-            <content:encoded><![CDATA[GKE (GKE 限定な話ではないけれども) で Preemptible な node を使用していると Graceful Node Shutdown により停止させられた Pod が Failed 状態でどんどん溜まっていって結構邪魔です。 できれば消え]]></content:encoded>
         </item>
     </channel>
 </rss>
