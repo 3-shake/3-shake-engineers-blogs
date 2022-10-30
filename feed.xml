@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 29 Oct 2022 18:36:05 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Oct 2022 18:36:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[/etc/hosts で wildcard や CNAME 対応させたい]]></title>
+            <link>https://blog.1q77.com/2022/10/mac-etc-resolver/</link>
+            <guid>https://blog.1q77.com/2022/10/mac-etc-resolver/</guid>
+            <pubDate>Sun, 30 Oct 2022 14:56:34 GMT</pubDate>
+            <content:encoded><![CDATA[macOS での話です。(macOS Ventura でも機能することを確認しました) /etc/hosts で 203.0.113.2 *.example.com みたいに wildcard に対応させたいことが稀にあります。 また、AWS の Application Load Balancer のように]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[VHS でターミナルを録画する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/vhs-introduction</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/vhs-introduction</guid>
+            <pubDate>Sun, 30 Oct 2022 09:27:18 GMT</pubDate>
+            <content:encoded><![CDATA[VHS という CLI ツールを見かけて試しに使ってみたら最高すぎたので簡単な紹介です。https://github.com/charmbracelet/vhsVHS を使用すると、例えばこういう GIF を作成したりできます。CLI ツールのデモ動画を作成する際などに大活躍しそうです。 検証環境VHS v0.1.1 前提条件VHS を使用するには事前に ffmpeg と ttyd のインストールが必要です。例えば Homebrew を使っている場合は brew install でインストールすることができます。$ brew install ffmpeg tt...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes クラスタ内ホスト名に CNAME レコードでエイリアスを付与したい]]></title>
             <link>https://zenn.dev/toshikish/articles/7f555dbf1b4b7d</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/hebr-introduction</guid>
             <pubDate>Sun, 28 Aug 2022 10:10:38 GMT</pubDate>
             <content:encoded><![CDATA[例えば画像などのバイナリデータを Base64 エンコードするとき、「Base64 ではなくヘブライ文字でエンコードできたらな」と思うことはありませんか？僕はありません。そんなときに使える CLI ツール hebr を作ったので、その紹介です。https://github.com/koki-develop/hebr インストールGo で作っているので go install でインストールできます。$ go install github.com/koki-develop/hebr/cmd/hebr@latest 使い方 エンコードhebr にヘブライ文字エンコードした...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud が公開しているIP rangeから特定のRegionのIP rangeを抜き出す]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2022/08/24/115833</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2022/08/24/115833</guid>
-            <pubDate>Wed, 24 Aug 2022 02:58:33 GMT</pubDate>
-            <content:encoded><![CDATA[やったことGoogle Cloud はhttps://www.gstatic.com/ipranges/cloud.json というサイトでGoogle Cloud で利用しているIP rangeが公開されている。余談ではありますがAWSは同様に https://ip-ranges.amazonaws.com/ip-ranges.json に公開されている。みんなが大好きなjqコマンドのselectでscopeの値がasia-northeast1 なものだけを抜き出しています。また、サービスによって自分の利用しているリージョン以外へのアクセスが必要なものもあると思うのでアクセスリストを作る際には気をつけてほしいです。curl -s https://www.gstatic.com/ipranges/cloud.json | jq -r '.prefixes[] | select(.scope == "asia-northeast1") | .ipv4Prefix' | grep -v null結果(asia-northeast1)で利用されているIPアドレス34.84.0.0/1634.85.0.0/1734.104.62.0/2334.104.128.0/1734.127.190.0/2334.146.0.0/1634.157.64.0/2034.157.164.0/2234.157.192.0/2035.187.192.0/1935.189.128.0/1935.190.224.0/2035.194.96.0/1935.200.0.0/1735.213.0.0/1735.220.56.0/2235.221.64.0/1835.230.240.0/2035.242.56.0/2235.243.64.0/18104.198.80.0/20104.198.112.0/20参考GCPのIPアドレス範囲をリスト化AWSとかGCPが公式に公開されているIP rangeを取得するツールを書いた - 地方エンジニアの学習日記]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[疲弊しないSREチームを作るために必要な6つのポイント]]></title>
-            <link>https://sreake.com/blog/not-exhaustion-engineer/</link>
-            <guid>https://sreake.com/blog/not-exhaustion-engineer/</guid>
-            <pubDate>Tue, 23 Aug 2022 03:36:21 GMT</pubDate>
-            <content:encoded><![CDATA[本記事では、疲弊しないSREチームを作るために必要な6つのポイントを紹介します。SREチームをどのように形成すればよいか悩んでいる企業様は参考にしてください。The post 疲弊しないSREチームを作るために必要な6つのポイント first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
