@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 01 Nov 2022 08:28:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Nov 2022 10:03:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -76,6 +76,13 @@
             <guid>https://blog.1q77.com/2022/10/asm-access-log/</guid>
             <pubDate>Fri, 21 Oct 2022 15:33:40 GMT</pubDate>
             <content:encoded><![CDATA[Anthos Service Mesh のアクセスログはデフォルトでは Service への Inbound しか出力されません。 エラーが発生した場合は Outbound のログも出力されます。 出力先は Cloud Logging で HTTP の情報は Load Balancer な]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[10年ぶりに転職しました]]></title>
+            <link>https://blog.jigyakkuma.org/2022/10/20/recruit2022/</link>
+            <guid>https://blog.jigyakkuma.org/2022/10/20/recruit2022/</guid>
+            <pubDate>Thu, 20 Oct 2022 00:37:52 GMT</pubDate>
+            <content:encoded><![CDATA[先日まで面白法人カヤックに勤めていました。転職の経緯も書こうと思ったのですが、内面の変化や会社との関係性など多岐に渡りけっこうなボリュームになりそうだったので分けることにしました。転職のためにやったこと久しく転職活動をしておらず、ポートフォリオや職務経歴書というものがなくどこから手を付けたらいいのやらという状態で、つまりは自分の整理ができていないところからのスタートでした。また、Wantedlyの内容を充実させたことにより少しずつスカウトをいただく機会が増えました。転職活動を振り返って転職活動を始めるまでは沈んでいたこともあり、スカウトをいただいただけでも大変ありがたかったです。ありがたいことに合計17ほどスカウトをいただきました。多いのか少ないのかはわかりませんが、こんな自分にも興味を持ってくださって素直にうれしかったです。PCのキッティングやアカウント管理など日常業務をやる担当はいるコーポレート部門の社員が情シスを兼任(情シスは未経験)情シス部門を立ち上げたいカジュアル面談といいつつ、半分は相談のような面談もあり情シスで悩みを抱えている会社がたくさんあるという現状を知るきっかけにもなりました。それは、「情シス担当者を育てられる環境をつくること」です。そして、自身のチャレンジしてみたいこととニーズがマッチした会社と出会いました。転職先とこれからやっていきたいことその出会った会社というのはスリーシェイクです。SreakeやSecurify,Reckonerといったサービスの運用のお困りごとを手助けできるサービスを展開しています。スリーシェイクは現状100人に満たない規模で情シスには若手が1人います。PCキッティングやアカウント管理など日常業務で手一杯情報システム部として見たときにできていないところを強化していきたいそれをやるのに何をやっていけばいいかわからないという感じでした。最後にこれをお読みいただいた方の中には前職から筆者を知っていただいている方もいるかもしれません。あいも変わらずやっておりますので、何かあれば(もしくは何もなくても)遊びに伺います。お気軽にお声がけください。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[GitHub Actions で OIDC を使用して GCP 認証を行う]]></title>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/pranc1ngpegasus/articles/a8c92235bec641</guid>
             <pubDate>Tue, 30 Aug 2022 11:34:54 GMT</pubDate>
             <content:encoded><![CDATA[Go言語には"Accept interfaces, return structs"というお作法がある。このお作法の存在に気づいていなかったし、そうでなくても正しく動いてくれていた。Goを3年ほど書いてきてようやくお作法を理解したので紹介したい。https://bryanftan.medium.com/accept-interfaces-return-structs-in-go-d4cab29a301b これまでのぼくの書き方以下にこれまでぼくが書いていたコードのinterface定義の例とその実装の例を示す。Example structはExample interfaceの...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[データをヘブライ文字エンコード/デコードできる CLI ツールを作った]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/hebr-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/hebr-introduction</guid>
-            <pubDate>Sun, 28 Aug 2022 10:10:38 GMT</pubDate>
-            <content:encoded><![CDATA[例えば画像などのバイナリデータを Base64 エンコードするとき、「Base64 ではなくヘブライ文字でエンコードできたらな」と思うことはありませんか？僕はありません。そんなときに使える CLI ツール hebr を作ったので、その紹介です。https://github.com/koki-develop/hebr インストールGo で作っているので go install でインストールできます。$ go install github.com/koki-develop/hebr/cmd/hebr@latest 使い方 エンコードhebr にヘブライ文字エンコードした...]]></content:encoded>
         </item>
     </channel>
 </rss>
