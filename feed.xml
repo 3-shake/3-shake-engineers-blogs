@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 05 Nov 2022 18:35:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Nov 2022 18:35:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GoでHTTPミドルウェアをチェインするライブラリを書いた]]></title>
+            <link>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</link>
+            <guid>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</guid>
+            <pubDate>Sun, 06 Nov 2022 00:07:27 GMT</pubDate>
+            <content:encoded><![CDATA[GoでHTTPサーバを書くとき、ミドルウェアを利用することがある。関数を入れ子にすることで数珠つなぎにできるが記述が長くなってしまう。go-chiなどのHTTPフレームワークにはミドルウェアをチェインするメソッドが生えていることがある。しかし、このメソッドはフレームワークに強く依存していて使い回しにくいのでライブラリとして切り出した。https://github.com/Pranc1ngPegasus/middlechain どうやって使うのこのライブラリは以下のようにして使うことができる。mux := http.NewServeMux()handler := mid...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[/etc/hosts で wildcard や CNAME 対応させたい]]></title>
             <link>https://blog.1q77.com/2022/10/mac-etc-resolver/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/learn-about-k6/</guid>
             <pubDate>Thu, 01 Sep 2022 02:10:07 GMT</pubDate>
             <content:encoded><![CDATA[はじめに K6 を初めて触ってから 7-8ヶ月くらいたったので、K6 のツール周りに関する情報紹介で社内で発信した情報をまとめてみました。 k6 jslib まず、K6 には k6 jslib という K6 の拡張ツール […]The post 負荷テストツール K6 について調べてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[オレの書くGoは間違っていた]]></title>
-            <link>https://zenn.dev/pranc1ngpegasus/articles/a8c92235bec641</link>
-            <guid>https://zenn.dev/pranc1ngpegasus/articles/a8c92235bec641</guid>
-            <pubDate>Tue, 30 Aug 2022 11:34:54 GMT</pubDate>
-            <content:encoded><![CDATA[Go言語には"Accept interfaces, return structs"というお作法がある。このお作法の存在に気づいていなかったし、そうでなくても正しく動いてくれていた。Goを3年ほど書いてきてようやくお作法を理解したので紹介したい。https://bryanftan.medium.com/accept-interfaces-return-structs-in-go-d4cab29a301b これまでのぼくの書き方以下にこれまでぼくが書いていたコードのinterface定義の例とその実装の例を示す。Example structはExample interfaceの...]]></content:encoded>
         </item>
     </channel>
 </rss>
