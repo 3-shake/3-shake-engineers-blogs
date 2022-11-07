@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 06 Nov 2022 18:35:20 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Nov 2022 18:35:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cognito ユーザープールに削除保護を設定できるようになったので試してみた]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/aws-cognito-user-pool-deletion-protection</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/aws-cognito-user-pool-deletion-protection</guid>
+            <pubDate>Mon, 07 Nov 2022 10:49:54 GMT</pubDate>
+            <content:encoded><![CDATA[Cognito ユーザープールに削除保護を設定できるようになりました。https://aws.amazon.com/jp/about-aws/whats-new/2022/10/amazon-cognito-console-user-pool-deletion-protection/削除保護の設定方法と、削除保護が有効なときに削除しようとしたときの挙動を調べてみました。 削除保護を有効にする手順 Terraform から設定する場合!AWS Provider のバージョンが 4.38.0 以上である必要があります。aws_cognito_user_pool Resou...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[3-shake 秋季インターンブログ] Trivy Operator を用いた脆弱性管理の提案]]></title>
+            <link>https://sreake.com/blog/trivy_operator_vulnerability/</link>
+            <guid>https://sreake.com/blog/trivy_operator_vulnerability/</guid>
+            <pubDate>Mon, 07 Nov 2022 07:04:20 GMT</pubDate>
+            <content:encoded><![CDATA[Sreake 事業部は SRE関連技術に強みを持つエンジニアによるコンサルテーションサービスを提供する事業部であり、私たちも SRE 技術の調査と研究を行う目的で2022年10月11日 ~ 24日に開催された短期インターンに参加しました。2週間という期間を使って、Trivy Operator の技術検証と運用方法の提案を行いました。本記事では、その成果をまとめたいと思います。The post [3-shake 秋季インターンブログ] Trivy Operator を用いた脆弱性管理の提案 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GoでHTTPミドルウェアをチェインするライブラリを書いた]]></title>
             <link>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/tf-cloudfront-oac</guid>
             <pubDate>Fri, 02 Sep 2022 10:00:00 GMT</pubDate>
             <content:encoded><![CDATA[CloudFront から S3 へのアクセス制御方法として新しく Origin Access Control (OAC) というものが発表されました。これにより従来の Origin Access Identity (OAI) によるアクセス制御は Legacy となりました。詳しくは次の記事をご参照ください。https://dev.classmethod.jp/articles/amazon-cloudfront-origin-access-control/Terraform の AWS Provider も本日リリースされた v4.29.0 から OAC をサポートしたので、...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CDK for Terraform の使い方まとめ]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/cdk-for-terraform</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/cdk-for-terraform</guid>
-            <pubDate>Thu, 01 Sep 2022 12:52:06 GMT</pubDate>
-            <content:encoded><![CDATA[こちらの記事は下記ブログに移動しました！https://sreake.com/blog/cdk-for-terraform/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[負荷テストツール K6 について調べてみた]]></title>
-            <link>https://sreake.com/blog/learn-about-k6/</link>
-            <guid>https://sreake.com/blog/learn-about-k6/</guid>
-            <pubDate>Thu, 01 Sep 2022 02:10:07 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに K6 を初めて触ってから 7-8ヶ月くらいたったので、K6 のツール周りに関する情報紹介で社内で発信した情報をまとめてみました。 k6 jslib まず、K6 には k6 jslib という K6 の拡張ツール […]The post 負荷テストツール K6 について調べてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
