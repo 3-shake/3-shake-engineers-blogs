@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 09 Nov 2022 18:36:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Nov 2022 18:36:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AWS IAM ポリシーの StringNotEquals 条件の複数値指定は AND になる]]></title>
+            <link>https://zenn.dev/toshikish/articles/2d9274783acbae</link>
+            <guid>https://zenn.dev/toshikish/articles/2d9274783acbae</guid>
+            <pubDate>Thu, 10 Nov 2022 08:31:56 GMT</pubDate>
+            <content:encoded><![CDATA[AWS IAM ポリシーの条件で同一キーに対して複数値を指定した場合，通常は OR で評価されます。例えば，以下の StringEquals 条件の例では，aws:PrincipalTag/role が audit または security のいずれかであれば true になります。"Condition": {  "StringEquals": {    "aws:PrincipalTag/role": [ "audit", "security" ]  }}では StringNotEquals 条件にするとどうでしょうか？例えば以下のポリシーで aws:Principal...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[3-shake 秋季インターンブログ] Config Connectorの検証]]></title>
             <link>https://sreake.com/blog/config-connectortest/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/tfcmt-on-gh-actions</guid>
             <pubDate>Sat, 10 Sep 2022 11:00:00 GMT</pubDate>
             <content:encoded><![CDATA[tfcmt を業務で使ってみたらめちゃくちゃ良かったので、 GitHub Actions で動かす例を備忘録として残しておきます。 検証環境tfcmt v3.4.1terraform v1.2.9 tfcmt とは？https://github.com/suzuki-shunsuke/tfcmttfcmt は terraform plan や terraform apply の結果を GitHub にコメントとして通知する CLI ツールです。CI のログを見にいかなくとも GitHub のコメント上で結果を確認することができます。且つ、見やすい形式でコメントして...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[TiDB 入門 (tiup playground)]]></title>
-            <link>https://qiita.com/yteraoka/items/4471e548fb556ef740f4</link>
-            <guid>https://qiita.com/yteraoka/items/4471e548fb556ef740f4</guid>
-            <pubDate>Tue, 06 Sep 2022 08:13:57 GMT</pubDate>
-            <content:encoded><![CDATA[MySQL 互換の NewDB として最近気になっている TiDB について調査すべく、クラスタを手元で簡単にセットアップ可能な tiup playgroud コマンドを使って触ってみます。気にな…]]></content:encoded>
         </item>
     </channel>
 </rss>
