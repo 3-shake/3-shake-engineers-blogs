@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 10 Nov 2022 18:36:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Nov 2022 18:37:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[[3-shake 秋季インターンブログ] eBPF によるコンテナセキュリティツールの Tetragon を検証してみた]]></title>
+            <link>https://sreake.com/blog/ebpf-tetragon/</link>
+            <guid>https://sreake.com/blog/ebpf-tetragon/</guid>
+            <pubDate>Fri, 11 Nov 2022 07:40:40 GMT</pubDate>
+            <content:encoded><![CDATA[Sreake事業部で2022年10月11日 ~ 24日に開催された短期インターンに参加しました。eBPF によるコンテナランタイムセキュリティツールの Tetragon の技術検証と運用方法の提案を行いました。以下では、その成果をまとめたいと思います。The post [3-shake 秋季インターンブログ] eBPF によるコンテナセキュリティツールの Tetragon を検証してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[RPM の install, uninstall 時に実行される script の確認]]></title>
+            <link>https://blog.1q77.com/2022/11/rpm-scripts/</link>
+            <guid>https://blog.1q77.com/2022/11/rpm-scripts/</guid>
+            <pubDate>Thu, 10 Nov 2022 23:38:02 GMT</pubDate>
+            <content:encoded><![CDATA[ある RPM Package のインストール、アンインストール時にどんな処理が行われているのか確認したいことがある そんな時な rpm コマンドの --scripts オプションを使用する rpm -qp]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS IAM ポリシーの StringNotEquals 条件の複数値指定は AND になる]]></title>
             <link>https://zenn.dev/toshikish/articles/2d9274783acbae</link>
@@ -48,13 +62,6 @@
             <guid>https://sreake.com/blog/trivy_operator_vulnerability/</guid>
             <pubDate>Mon, 07 Nov 2022 07:04:20 GMT</pubDate>
             <content:encoded><![CDATA[Sreake 事業部は SRE関連技術に強みを持つエンジニアによるコンサルテーションサービスを提供する事業部であり、私たちも SRE 技術の調査と研究を行う目的で2022年10月11日 ~ 24日に開催された短期インターンに参加しました。2週間という期間を使って、Trivy Operator の技術検証と運用方法の提案を行いました。本記事では、その成果をまとめたいと思います。The post [3-shake 秋季インターンブログ] Trivy Operator を用いた脆弱性管理の提案 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GoでHTTPミドルウェアをチェインするライブラリを書いた]]></title>
-            <link>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</link>
-            <guid>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</guid>
-            <pubDate>Sun, 06 Nov 2022 00:07:27 GMT</pubDate>
-            <content:encoded><![CDATA[GoでHTTPサーバを書くとき、ミドルウェアを利用することがある。関数を入れ子にすることで数珠つなぎにできるが記述が長くなってしまう。go-chiなどのHTTPフレームワークにはミドルウェアをチェインするメソッドが生えていることがある。しかし、このメソッドはフレームワークに強く依存していて使い回しにくいのでライブラリとして切り出した。https://github.com/Pranc1ngPegasus/middlechain どうやって使うのこのライブラリは以下のようにして使うことができる。mux := http.NewServeMux()handler := mid...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[/etc/hosts で wildcard や CNAME 対応させたい]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/toil-eradication-3step/</guid>
             <pubDate>Wed, 14 Sep 2022 09:34:07 GMT</pubDate>
             <content:encoded><![CDATA[トイルを削減できなければ、前向きな作業にかけられる時間が減るだけでなく、作業員の士気の減退やスキルアップの機会の減少などのデメリットがあります。The post トイルを撲滅するための3つのステップ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions で tfcmt を使って terraform plan の結果をコメントに貼り付ける]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/tfcmt-on-gh-actions</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/tfcmt-on-gh-actions</guid>
-            <pubDate>Sat, 10 Sep 2022 11:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[tfcmt を業務で使ってみたらめちゃくちゃ良かったので、 GitHub Actions で動かす例を備忘録として残しておきます。 検証環境tfcmt v3.4.1terraform v1.2.9 tfcmt とは？https://github.com/suzuki-shunsuke/tfcmttfcmt は terraform plan や terraform apply の結果を GitHub にコメントとして通知する CLI ツールです。CI のログを見にいかなくとも GitHub のコメント上で結果を確認することができます。且つ、見やすい形式でコメントして...]]></content:encoded>
         </item>
     </channel>
 </rss>
