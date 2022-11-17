@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 16 Nov 2022 18:35:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Nov 2022 18:35:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[これでライブコーディングも怖くない！ cLive でターミナル操作を自動化する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/clive-introduction</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/clive-introduction</guid>
+            <pubDate>Thu, 17 Nov 2022 09:29:33 GMT</pubDate>
+            <content:encoded><![CDATA[cLive とは？cLive はシンプルな設定ファイルに基づいてターミナルを自動で操作するためのコマンドラインツールです。自動操作するターミナルはブラウザで表示されます。そのため、「任意のターミナルアプリで cLive を起動して、ブラウザだけ画面共有して自動ライブコーディングをする」といった使い方ができます。JavaScript のライブコーディングデモもちろん日本語入力も可能ですし、任意のタイミングで一時停止しておけば必要に応じて手動による操作もできます。手動操作のデモ リポジトリhttps://github.com/koki-develop/cliveス...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[3-shake 秋季インターンブログ] eBPF によるコンテナセキュリティツールの Tetragon を検証してみた]]></title>
             <link>https://sreake.com/blog/ebpf-tetragon/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/pocket-api-usage</guid>
             <pubDate>Wed, 21 Sep 2022 13:22:17 GMT</pubDate>
             <content:encoded><![CDATA[Pocket のアクセストークンを発行して API を叩くまでの手順メモ。 準備 1. Application を作成まずは Application を作成する必要があります。Pocket にログインしていない場合はログインしてください。Application 作成画面にアクセスします。次の項目をそれぞれ入力します。項目説明Application Name任意のアプリケーション名。Application Descriptionアプリケーションの説明文。Permissionsアプリケーションの権限。Add: アイテム追加Modify: ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[gum を使ってシェルスクリプトの表示をカッコよくする]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/gum-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/gum-introduction</guid>
-            <pubDate>Sat, 17 Sep 2022 11:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Twitter で見かけて触ってみたらかなり良かったので備忘録。https://github.com/charmbracelet/gum 検証環境gum v0.6.0 インストールMac の場合は Homebrew を使ってインストールできます。$ brew install gumまた、 Go で作られているため go install でインストールすることもできます。$ go install github.com/charmbracelet/gum@latestその他のインストール方法については公式の README をご参照ください。 使い方!ここでは...]]></content:encoded>
         </item>
     </channel>
 </rss>
