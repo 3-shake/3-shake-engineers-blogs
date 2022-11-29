@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 28 Nov 2022 18:34:28 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Nov 2022 18:33:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【Codezine掲載】エンジニアの事業貢献、必要な第一歩とは？ 松本亮介氏×スリーシェイクが解説！ エンジニアがプロダクトやビジネスへの理解を深める方法]]></title>
+            <link>https://sreake.com/blog/codezine_engineer_product/</link>
+            <guid>https://sreake.com/blog/codezine_engineer_product/</guid>
+            <pubDate>Tue, 29 Nov 2022 05:25:53 GMT</pubDate>
+            <content:encoded><![CDATA[「デベロッパーの成長と課題解決に貢献するメディア」をコンセプトに情報発信を行うソフトウェア開発者向けWebメディア「Codezine」に、弊社SREである手塚と、多数の企業で技術顧問などを務める松本亮介氏の対談記事が掲載されましたThe post 【Codezine掲載】エンジニアの事業貢献、必要な第一歩とは？ 松本亮介氏×スリーシェイクが解説！ エンジニアがプロダクトやビジネスへの理解を深める方法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Google BigQuery: The Definitive Guideを読んでみた]]></title>
+            <link>https://sreake.com/blog/google-bigquery-the-definitive-guide/</link>
+            <guid>https://sreake.com/blog/google-bigquery-the-definitive-guide/</guid>
+            <pubDate>Tue, 29 Nov 2022 02:25:13 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 2021年スリーシェイクに入社してから案件で BigQuery を触ったのをきっかけに、Google BigQuery: The Definitive Guideを読んだので本の内容を一部紹介します。 10章ま […]The post Google BigQuery: The Definitive Guideを読んでみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[オブザーバビリティについて理解する (収集・分析・可視化）]]></title>
+            <link>https://sreake.com/blog/observability/</link>
+            <guid>https://sreake.com/blog/observability/</guid>
+            <pubDate>Tue, 29 Nov 2022 01:05:03 GMT</pubDate>
+            <content:encoded><![CDATA[クラウド基盤の登場により、自社でサーバーを構築してシステムを運用するオンプレ以外の選択肢が増えてきました。多くの企業では、クラウド基盤を活用してシステム運用の効率化を図っているでしょう。 しかし、システムによってはまだま […]The post オブザーバビリティについて理解する (収集・分析・可視化） first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[私はGo言語でシェルスクリプトが書きたい不都合な生きもの]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2022/11/26/174017</link>
@@ -216,27 +237,6 @@
             <guid>https://blog.1q77.com/2022/10/iphone-packet-capture/</guid>
             <pubDate>Fri, 14 Oct 2022 13:10:09 GMT</pubDate>
             <content:encoded><![CDATA[先日 iPhone のアプリが https で通信している内容を覗いてみようと HTTP プロキシに OWSAP ZAP を指定して覗いてみました。 OWASP ZAP が動的に証明書を発行してくれるので、その発]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CDK for Terraform を理解する]]></title>
-            <link>https://sreake.com/blog/cdk-for-terraform/</link>
-            <guid>https://sreake.com/blog/cdk-for-terraform/</guid>
-            <pubDate>Thu, 06 Oct 2022 02:27:54 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 基本的な使い方をまとめてみました。 CDK for Terraform Is Now Generally Available 今回は TypeScript を使っている前提で記述するため、他の言語を利用する場合 […]The post CDK for Terraform を理解する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Istio のサービスへの接続でプロトコルエラーになる]]></title>
-            <link>https://zenn.dev/toshikish/articles/d0dd54ae067bed</link>
-            <guid>https://zenn.dev/toshikish/articles/d0dd54ae067bed</guid>
-            <pubDate>Tue, 04 Oct 2022 02:55:06 GMT</pubDate>
-            <content:encoded><![CDATA[現象Istio サービスメッシュを有効にした Kubernetes クラスタ内に立てた Service に接続しようとするも，upstream connect error or disconnect/reset before headers. reset reason: protocol error が出て到達できない。例えば，以下のような Service に gRPC で接続しようとしても失敗する。apiVersion: v1kind: Servicemetadata:  name: my-servicespec:  selector:    app.kubern...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/badge-generator-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/badge-generator-introduction</guid>
-            <pubDate>Sat, 01 Oct 2022 11:01:14 GMT</pubDate>
-            <content:encoded><![CDATA[こういうのを生成できるやつです。ぜひ GitHub Profile とかに使ってください。ちなみに AtCoder のバッジの色はレーティングによって変化します。 更新2022/10/02 : バッジのラベルをカスタマイズできるようになりました。 作ったものhttps://badgen.org/ユーザー名とスタイルを指定して好きなバッジを選んでコピーして使ってください。Badge Generatorソースコードはこちらです。https://github.com/koki-develop/badge-generator 仕組みGoogle Cloud ...]]></content:encoded>
         </item>
     </channel>
 </rss>
