@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 02 Dec 2022 18:32:30 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Dec 2022 18:32:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Grafana OnCall で Twilio を使って電話を受ける]]></title>
+            <link>https://qiita.com/yteraoka/items/7e6db7111a061f5e22e4</link>
+            <guid>https://qiita.com/yteraoka/items/7e6db7111a061f5e22e4</guid>
+            <pubDate>Sat, 03 Dec 2022 16:34:52 GMT</pubDate>
+            <content:encoded><![CDATA[Twilio Advent Calendar 4日目の記事です。今年 (2022年) の6月に「Introducing Grafana OnCall OSS, on-call management…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[「セキュア・バイ・デザイン」を読んで自分が何番目の豚かを考える。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2022/12/01/225019</link>
@@ -230,13 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2022/10/18/161000</guid>
             <pubDate>Tue, 18 Oct 2022 07:10:00 GMT</pubDate>
             <content:encoded><![CDATA[TipsMAC でkubectl port-forward を用いてlocalhost に対してHTTPSアクセスをしたら、Chromeで「この接続ではプライバシーが保護されません　NET::ERR_CERT_INVALID」と表示されてしまうことがある。「詳細設定」を押してもいっても解決策が出てこない。そういう時には半角英数モードでthisisunsafeとキーボード入力しすればアクセスできるようになる。しかも、一定期間すぎたらこのようなメッセージが出てきます。stackoverflow.com]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[DNS over HTTPS 通信の中身を確認する]]></title>
-            <link>https://blog.1q77.com/2022/10/iphone-dns-over-https/</link>
-            <guid>https://blog.1q77.com/2022/10/iphone-dns-over-https/</guid>
-            <pubDate>Sat, 15 Oct 2022 15:11:55 GMT</pubDate>
-            <content:encoded><![CDATA[iPhone の HTTP(S) 通信を OWASP ZAP で覗いてみたたら 8.8.8.8, 8.8.4.4 に対して DNS over HTTPS の通信を見つけたのでどんなやり取りをしているのか確認してみた。 DNS over HTTPS でのリクエスト # リクエ]]></content:encoded>
         </item>
     </channel>
 </rss>
