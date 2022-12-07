@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 06 Dec 2022 18:33:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Dec 2022 18:33:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[lego で既存の秘密鍵を使って証明書を発行する]]></title>
+            <link>https://blog.1q77.com/2022/12/issue-the-certificate-using-existing-private-key-with-lego/</link>
+            <guid>https://blog.1q77.com/2022/12/issue-the-certificate-using-existing-private-key-with-lego/</guid>
+            <pubDate>Wed, 07 Dec 2022 13:42:05 GMT</pubDate>
+            <content:encoded><![CDATA[既存の秘密鍵を使って証明書を発行しなければいけないという特殊な環境ですぐに証明書を発行したいということがありました。 lego を使っての証明書発行はとても簡単ですが、デ]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[『セキュア・バイ・デザインの鳴くところ』というタイトルでOWASP Fukuoka Meeting #9 に登壇しました。 #owaspfukuoka]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2022/12/07/204400</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2022/12/07/204400</guid>
+            <pubDate>Wed, 07 Dec 2022 11:44:00 GMT</pubDate>
+            <content:encoded><![CDATA[OWASP Fukuoka Meeting #9 に登壇してきました！登壇してきました。自分はセキュリティ専門家ではないのですが発表するとセキュリティ専門家からレビューをもらえたり意見をいただけるのでそれがとてもよいです。ちなみに発表時間が諸事情により30分から1時間になって想定外の資料の取捨選択を行った...発表時間が30分から1時間になって想定してない肉付けしたら資料の主張が曲がったので改変している。— nwiizo (@nwiizo) December 6, 2022  発表資料セキュア・バイ・デザインの鳴くところ - 安全なソフトウェアを全体から考えるみるで候の資料はこちらです『セキュア・バイ・デザインの鳴くところ』みたいな資料を作成したので公開しておきます！https://t.co/BduVhWd73K#owaspfukuoka— nwiizo (@nwiizo) December 7, 2022  リモート発表は寂しいので相槌を入れてほしいと思っている。主催の@TakaharuOgasa さんや@mrtc0 さんが程よく補足情報を入れたりしてくれてよかった。参考資料OWASP SAMM(Software Assurance Maturity Model)OWASP SAMM(Software Assurance Maturity Model):githubOWT2017JP - OWASP SAMMセキュリティーチェックシートという闇への防衛術CircuitBreakerPattern: Circuit BreakerGitHub - istio/istio: Connect, secure, control, and observe services.Istio By Exampleサービスメッシュの「Istio」や、OSSで構成されたマネージドサービス――ミッションクリティカルなシステムをKubernetesで実現するカギはツールにあり！【デブサミ2018】Design It! ―プログラマーのためのアーキテクティング入門Release It!: Design and Deploy Production-Ready SoftwareOWASP SAMM Toolkit v2.0.6開発環境のセキュリティおよびCI/CDパイプラインのセキュア化PHPerKaigi 2022: 予防に勝る防御なし - 堅牢なコードを導く様々… / 和田卓人SOLID CODE 高品質なコードを生み出す実践的開発手法]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CircleCI で OIDC を使用して AWS 認証を行う]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/circleci-oidc-aws</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/circleci-oidc-aws</guid>
+            <pubDate>Wed, 07 Dec 2022 09:15:08 GMT</pubDate>
+            <content:encoded><![CDATA[CircleCI Advent Calendar 2022 の 7 日目です。https://qiita.com/advent-calendar/2022/circleci 概要CircleCI では OpenID Connect (OIDC) がサポートされています。OIDC を使用することで長期間有効なアクセスキーなどを用意することなく AWS 認証を行うことが可能です。詳細については下記ページをご参照ください。https://circleci.com/docs/ja/openid-connect-tokens/https://circleci.com/ja/blog...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[社会に蔓延る労苦〈Toil〉をなくす（株式会社スリーシェイク入社エントリ）]]></title>
             <link>https://qiita.com/tayakun/items/2f5ca30b777a54b2c52d</link>
@@ -117,7 +138,7 @@
             <link>https://blog.1q77.com/2022/11/rpm-scripts/</link>
             <guid>https://blog.1q77.com/2022/11/rpm-scripts/</guid>
             <pubDate>Thu, 10 Nov 2022 23:38:02 GMT</pubDate>
-            <content:encoded><![CDATA[ある RPM Package のインストール、アンインストール時にどんな処理が行われているのか確認したいことがある そんな時な rpm コマンドの --scripts オプションを使用する rpm -qp]]></content:encoded>
+            <content:encoded><![CDATA[ある RPM Package のインストール、アンインストール時にどんな処理が行われているのか確認したいことがある そんな時な rpm コマンドの --scripts オプションを使用する rpm -qp --scripts ./some.rpm]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[AWS IAM ポリシーの StringNotEquals 条件の複数値指定は AND になる]]></title>
@@ -166,7 +187,7 @@
             <link>https://blog.1q77.com/2022/10/mac-etc-resolver/</link>
             <guid>https://blog.1q77.com/2022/10/mac-etc-resolver/</guid>
             <pubDate>Sun, 30 Oct 2022 14:56:34 GMT</pubDate>
-            <content:encoded><![CDATA[macOS での話です。(macOS Ventura でも機能することを確認しました) /etc/hosts で 203.0.113.2 *.example.com みたいに wildcard に対応させたいことが稀にあります。 また、AWS の Application Load Balancer のように]]></content:encoded>
+            <content:encoded><![CDATA[macOS での話です。(macOS Ventura でも機能することを確認しました) /etc/hosts で 203.0.113.2 *.example.com みたいに wildcard に対応させたいことが稀にあります。 また、AWS の Application Load Balancer のように IP アドレスの固定され]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[VHS でターミナルを録画する]]></title>
@@ -208,7 +229,7 @@
             <link>https://blog.1q77.com/2022/10/gitlab-ci-kaniko-and-trivy/</link>
             <guid>https://blog.1q77.com/2022/10/gitlab-ci-kaniko-and-trivy/</guid>
             <pubDate>Wed, 26 Oct 2022 14:34:28 GMT</pubDate>
-            <content:encoded><![CDATA[GitLab CI でコンテナイメージを Docker daemon の不要な Kaniko で build し、それを Trivy でスキャンする方法 まず、kaniko で --tarPath を指定して tar ファイルで書き出す 書き出す先を artifacts で]]></content:encoded>
+            <content:encoded><![CDATA[GitLab CI でコンテナイメージを Docker daemon の不要な Kaniko で build し、それを Trivy でスキャンする方法 まず、kaniko で --tarPath を指定して tar ファイルで書き出す 書き出す先を artifacts で指定したディレクトリ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[PodSecurityPolicy について考えてみた]]></title>
@@ -216,27 +237,6 @@
             <guid>https://sreake.com/blog/pod-security-policy/</guid>
             <pubDate>Mon, 24 Oct 2022 02:15:18 GMT</pubDate>
             <content:encoded><![CDATA[話すこと 案件で Kubernetes のセキュリティについて調べることがあったので、各レイヤで何が必要かを検討しました。 Node レイヤ・Inspector・(falco) Pod レイヤ・(falco)・セキュリテ […]The post PodSecurityPolicy について考えてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Anthos Service Mesh の Outbound Access Log を出力する]]></title>
-            <link>https://blog.1q77.com/2022/10/asm-access-log/</link>
-            <guid>https://blog.1q77.com/2022/10/asm-access-log/</guid>
-            <pubDate>Fri, 21 Oct 2022 15:33:40 GMT</pubDate>
-            <content:encoded><![CDATA[Anthos Service Mesh のアクセスログはデフォルトでは Service への Inbound しか出力されません。 エラーが発生した場合は Outbound のログも出力されます。 出力先は Cloud Logging で HTTP の情報は Load Balancer な]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[10年ぶりに転職しました]]></title>
-            <link>https://blog.jigyakkuma.org/2022/10/20/recruit2022/</link>
-            <guid>https://blog.jigyakkuma.org/2022/10/20/recruit2022/</guid>
-            <pubDate>Thu, 20 Oct 2022 00:37:52 GMT</pubDate>
-            <content:encoded><![CDATA[先日まで面白法人カヤックに勤めていました。転職の経緯も書こうと思ったのですが、内面の変化や会社との関係性など多岐に渡りけっこうなボリュームになりそうだったので分けることにしました。転職のためにやったこと久しく転職活動をしておらず、ポートフォリオや職務経歴書というものがなくどこから手を付けたらいいのやらという状態で、つまりは自分の整理ができていないところからのスタートでした。また、Wantedlyの内容を充実させたことにより少しずつスカウトをいただく機会が増えました。転職活動を振り返って転職活動を始めるまでは沈んでいたこともあり、スカウトをいただいただけでも大変ありがたかったです。ありがたいことに合計17ほどスカウトをいただきました。多いのか少ないのかはわかりませんが、こんな自分にも興味を持ってくださって素直にうれしかったです。PCのキッティングやアカウント管理など日常業務をやる担当はいるコーポレート部門の社員が情シスを兼任(情シスは未経験)情シス部門を立ち上げたいカジュアル面談といいつつ、半分は相談のような面談もあり情シスで悩みを抱えている会社がたくさんあるという現状を知るきっかけにもなりました。それは、「情シス担当者を育てられる環境をつくること」です。そして、自身のチャレンジしてみたいこととニーズがマッチした会社と出会いました。転職先とこれからやっていきたいことその出会った会社というのはスリーシェイクです。SreakeやSecurify,Reckonerといったサービスの運用のお困りごとを手助けできるサービスを展開しています。スリーシェイクは現状100人に満たない規模で情シスには若手が1人います。PCキッティングやアカウント管理など日常業務で手一杯情報システム部として見たときにできていないところを強化していきたいそれをやるのに何をやっていけばいいかわからないという感じでした。最後にこれをお読みいただいた方の中には前職から筆者を知っていただいている方もいるかもしれません。あいも変わらずやっておりますので、何かあれば(もしくは何もなくても)遊びに伺います。お気軽にお声がけください。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions で OIDC を使用して GCP 認証を行う]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-gcp</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-gcp</guid>
-            <pubDate>Wed, 19 Oct 2022 12:41:17 GMT</pubDate>
-            <content:encoded><![CDATA[躓きまくったので備忘録。AWS はこっち。https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-aws 概要GitHub Actions では OpenID Connect (OIDC) がサポートされています。OIDC を使用することによりサービスアカウントキーなどを用意することなく GCP 認証を行うことができます。詳細については下記ページをご参照ください。https://docs.github.com/en/actions/deployment/security-hardening-your-deployment...]]></content:encoded>
         </item>
     </channel>
 </rss>
