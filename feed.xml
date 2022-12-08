@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 07 Dec 2022 18:33:38 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Dec 2022 18:33:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[速習 Datadog APM]]></title>
+            <link>https://sreake.com/blog/datadog-apm/</link>
+            <guid>https://sreake.com/blog/datadog-apm/</guid>
+            <pubDate>Thu, 08 Dec 2022 04:33:11 GMT</pubDate>
+            <content:encoded><![CDATA[Datadog APM を使った監視設計をすることがあり、使い勝手が良かったため基本的な部分と設定した方がいいなと思っている事項を書いていきます。 プロファイリング機能は使いませんでしたので、本記事では対象外です。 AP […]The post 速習 Datadog APM first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[インシデント対応しながら書くポストモーテム]]></title>
+            <link>https://zenn.dev/toshikish/articles/1d5bcf9ed1939d</link>
+            <guid>https://zenn.dev/toshikish/articles/1d5bcf9ed1939d</guid>
+            <pubDate>Wed, 07 Dec 2022 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 8日目の記事です。サービスにおいてインシデントが発生した場合に書くポストモーテムについて，書く負担を減らせるようなテンプレートを提案します。 ポストモーテムのテンプレートポストモーテムのテンプレートは，例えば以下のようなものが公開されています。 Google SREhttps://sre.google/sre-book/example-postmortem/タイトル・インシデント ID日付対応者ステータス概要影響主な原因障害発生のトリガー解決策検知アクションアイテム...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[lego で既存の秘密鍵を使って証明書を発行する]]></title>
             <link>https://blog.1q77.com/2022/12/issue-the-certificate-using-existing-private-key-with-lego/</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/google-cloud-binary-authorization/</guid>
             <pubDate>Thu, 27 Oct 2022 00:46:10 GMT</pubDate>
             <content:encoded><![CDATA[Binary Authorization とは 概要 コンテナベースのアプリケーションに ソフトウェアサプライチェーンのセキュリティを提供する Google Cloud のサービスです。 補足 ソフトウェアサプライチェー […]The post Google Cloud Binary Authorization 徹底調査 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Gitlab Ci で Kaniko build し Trivy で scan する]]></title>
-            <link>https://blog.1q77.com/2022/10/gitlab-ci-kaniko-and-trivy/</link>
-            <guid>https://blog.1q77.com/2022/10/gitlab-ci-kaniko-and-trivy/</guid>
-            <pubDate>Wed, 26 Oct 2022 14:34:28 GMT</pubDate>
-            <content:encoded><![CDATA[GitLab CI でコンテナイメージを Docker daemon の不要な Kaniko で build し、それを Trivy でスキャンする方法 まず、kaniko で --tarPath を指定して tar ファイルで書き出す 書き出す先を artifacts で指定したディレクトリ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PodSecurityPolicy について考えてみた]]></title>
-            <link>https://sreake.com/blog/pod-security-policy/</link>
-            <guid>https://sreake.com/blog/pod-security-policy/</guid>
-            <pubDate>Mon, 24 Oct 2022 02:15:18 GMT</pubDate>
-            <content:encoded><![CDATA[話すこと 案件で Kubernetes のセキュリティについて調べることがあったので、各レイヤで何が必要かを検討しました。 Node レイヤ・Inspector・(falco) Pod レイヤ・(falco)・セキュリテ […]The post PodSecurityPolicy について考えてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
