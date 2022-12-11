@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 10 Dec 2022 18:32:39 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Dec 2022 18:32:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[TypeScriptなGraphQLサーバをGoにリプレースした]]></title>
+            <link>https://zenn.dev/pranc1ngpegasus/articles/7c3013bb132437</link>
+            <guid>https://zenn.dev/pranc1ngpegasus/articles/7c3013bb132437</guid>
+            <pubDate>Sat, 10 Dec 2022 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[TypeScriptなGraphQLサーバをGoにリプレースした3-shake Advent Calendar 2022の11日目です。現在携わっているプロダクトではGraphQLを利用してフロント/バックエンドの通信を行っています。7月に入社した当初はTypeScriptで開発が進んでおり、ある程度の機能が出揃っていましたが、チーム編成が変わったことによりGoが得意なメンバーがバックエンドを担当することになりました。そこで既存のGraphQLサーバをGoにリプレースしたのでまとめます。 これまで既存のGraphQLサーバはTypeScriptをベースに構成されており、...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS Control Towerを調べる]]></title>
             <link>https://blog.masasuzu.net/entry/2022/12/10/204957</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/vhs-introduction</guid>
             <pubDate>Sun, 30 Oct 2022 09:27:18 GMT</pubDate>
             <content:encoded><![CDATA[VHS という CLI ツールを見かけて試しに使ってみたら最高すぎたので簡単な紹介です。https://github.com/charmbracelet/vhsVHS を使用すると、例えばこういう GIF を作成したりできます。CLI ツールのデモ動画を作成する際などに大活躍しそうです。 検証環境VHS v0.1.1 前提条件VHS を使用するには事前に ffmpeg と ttyd のインストールが必要です。例えば Homebrew を使っている場合は brew install でインストールすることができます。$ brew install ffmpeg tt...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes クラスタ内ホスト名に CNAME レコードでエイリアスを付与したい]]></title>
-            <link>https://zenn.dev/toshikish/articles/7f555dbf1b4b7d</link>
-            <guid>https://zenn.dev/toshikish/articles/7f555dbf1b4b7d</guid>
-            <pubDate>Fri, 28 Oct 2022 10:45:26 GMT</pubDate>
-            <content:encoded><![CDATA[Kubernetes クラスタ内で使えるホスト名に CNAME レコード相当でエイリアスを付与したい場合を考えます。クラスタ内では CoreDNS が使われているものとします。 TL;DRCorefile（CoreDNS の設定ファイル）で rewrite プラグインを使って記述します。例えば Service のアドレスである foo.default.svc.cluster.local を foo.example.com にエイリアスしたい場合は以下のように行を追加します。apiVersion: v1kind: ConfigMapmetadata:  name: cor...]]></content:encoded>
         </item>
     </channel>
 </rss>
