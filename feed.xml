@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 11 Dec 2022 18:32:42 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Dec 2022 18:33:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[時間がない人のための AWS Solutions Architect - Professional 勉強法]]></title>
+            <link>https://zenn.dev/toshikish/articles/06d85a2db79f4d</link>
+            <guid>https://zenn.dev/toshikish/articles/06d85a2db79f4d</guid>
+            <pubDate>Mon, 12 Dec 2022 10:46:25 GMT</pubDate>
+            <content:encoded><![CDATA[難度が高くしっかりとした準備が必要な AWS SA Pro 試験を申し込んだものの，残された時間があまりないという方向けに書いた勉強法の記事です。 試験の概略 特徴長文の選択式問題が75問出題され，それを180分で解くという長丁場な試験です。ざっくり1問あたり2分24秒かけられます。75問もあり，1問に複数のサービスを関連させられるので，AWS が重点的に問いたいサービス・テーマはもれなく出現します。AWS を使った2年以上の実務経験が想定されていますが，たいていの場合，実務で扱うサービスは主要なサービスに限られ，触ったこともないサービスが多く出題されます。そのため，確...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[TypeScriptなGraphQLサーバをGoにリプレースした]]></title>
             <link>https://zenn.dev/pranc1ngpegasus/articles/7c3013bb132437</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2022/10/mac-etc-resolver/</guid>
             <pubDate>Sun, 30 Oct 2022 14:56:34 GMT</pubDate>
             <content:encoded><![CDATA[macOS での話です。(macOS Ventura でも機能することを確認しました) /etc/hosts で 203.0.113.2 *.example.com みたいに wildcard に対応させたいことが稀にあります。 また、AWS の Application Load Balancer のように IP アドレスの固定され]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[VHS でターミナルを録画する]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/vhs-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/vhs-introduction</guid>
-            <pubDate>Sun, 30 Oct 2022 09:27:18 GMT</pubDate>
-            <content:encoded><![CDATA[VHS という CLI ツールを見かけて試しに使ってみたら最高すぎたので簡単な紹介です。https://github.com/charmbracelet/vhsVHS を使用すると、例えばこういう GIF を作成したりできます。CLI ツールのデモ動画を作成する際などに大活躍しそうです。 検証環境VHS v0.1.1 前提条件VHS を使用するには事前に ffmpeg と ttyd のインストールが必要です。例えば Homebrew を使っている場合は brew install でインストールすることができます。$ brew install ffmpeg tt...]]></content:encoded>
         </item>
     </channel>
 </rss>
