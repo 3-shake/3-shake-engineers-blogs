@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 15 Dec 2022 18:31:22 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Dec 2022 18:32:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[CloudWatch Logs のログストリームごとのサイズを取得する]]></title>
+            <link>https://zenn.dev/toshikish/articles/684e4d7ed4532f</link>
+            <guid>https://zenn.dev/toshikish/articles/684e4d7ed4532f</guid>
+            <pubDate>Fri, 16 Dec 2022 08:57:33 GMT</pubDate>
+            <content:encoded><![CDATA[動機Amazon CloudWatch Logs のログストリームごとのサイズを知りたいことがありました。たとえば Amazon EKS クラスタを立ち上げて Fluentd または Fluent Bit でログを CloudWatch Logs に送る設定をすると，Pod のログは単一のロググループ（デフォルトでは /aws/containerinsights/Cluster_Name/application）に集約されます。https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Ins...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[エンジニア市場拡大のための「憧れの職業」の重要性に関する緒論]]></title>
+            <link>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</link>
+            <guid>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</guid>
+            <pubDate>Fri, 16 Dec 2022 02:21:05 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに今回、4年ぶりにQiitaに記事を投稿させていただく。ひょんなきっかけ^1で私は、自身が勤めるスリーシェイクのアドベントカレンダーである3-shake Advent Calendar 2…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Descheduler for Kubernetes で Pod の再配置]]></title>
             <link>https://sreake.com/blog/kubernetes-descheduler/</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/aws-cognito-user-pool-deletion-protection</guid>
             <pubDate>Mon, 07 Nov 2022 10:49:54 GMT</pubDate>
             <content:encoded><![CDATA[Cognito ユーザープールに削除保護を設定できるようになりました。https://aws.amazon.com/jp/about-aws/whats-new/2022/10/amazon-cognito-console-user-pool-deletion-protection/削除保護の設定方法と、削除保護が有効なときに削除しようとしたときの挙動を調べてみました。 削除保護を有効にする手順 Terraform から設定する場合!AWS Provider のバージョンが 4.38.0 以上である必要があります。aws_cognito_user_pool Resou...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[3-shake 秋季インターンブログ] Trivy Operator を用いた脆弱性管理の提案]]></title>
-            <link>https://sreake.com/blog/trivy_operator_vulnerability/</link>
-            <guid>https://sreake.com/blog/trivy_operator_vulnerability/</guid>
-            <pubDate>Mon, 07 Nov 2022 07:04:20 GMT</pubDate>
-            <content:encoded><![CDATA[Sreake 事業部は SRE関連技術に強みを持つエンジニアによるコンサルテーションサービスを提供する事業部であり、私たちも SRE 技術の調査と研究を行う目的で2022年10月11日 ~ 24日に開催された短期インターンに参加しました。2週間という期間を使って、Trivy Operator の技術検証と運用方法の提案を行いました。本記事では、その成果をまとめたいと思います。The post [3-shake 秋季インターンブログ] Trivy Operator を用いた脆弱性管理の提案 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GoでHTTPミドルウェアをチェインするライブラリを書いた]]></title>
-            <link>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</link>
-            <guid>https://zenn.dev/pranc1ngpegasus/articles/30638ae4d15ae6</guid>
-            <pubDate>Sun, 06 Nov 2022 00:07:27 GMT</pubDate>
-            <content:encoded><![CDATA[GoでHTTPサーバを書くとき、ミドルウェアを利用することがある。関数を入れ子にすることで数珠つなぎにできるが記述が長くなってしまう。go-chiなどのHTTPフレームワークにはミドルウェアをチェインするメソッドが生えていることがある。しかし、このメソッドはフレームワークに強く依存していて使い回しにくいのでライブラリとして切り出した。https://github.com/Pranc1ngPegasus/middlechain どうやって使うのこのライブラリは以下のようにして使うことができる。mux := http.NewServeMux()handler := mid...]]></content:encoded>
         </item>
     </channel>
 </rss>
