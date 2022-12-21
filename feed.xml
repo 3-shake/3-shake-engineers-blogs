@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 20 Dec 2022 18:32:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Dec 2022 18:32:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[kube-prometheus-stackでPrometheusを構築する]]></title>
+            <link>https://qiita.com/ys1/items/fcb430b15ae7c4fa8b47</link>
+            <guid>https://qiita.com/ys1/items/fcb430b15ae7c4fa8b47</guid>
+            <pubDate>Tue, 20 Dec 2022 22:02:16 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 21日目の記事です。株式会社スリーシェイクに入社して3ヶ月が経ちました。今までアウトプット活動をあまりしてこなかったの…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Dagger Go SDK でポータブルな CI/CD パイプラインを構築する]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/dagger-go-sdk</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2022/11/rpm-scripts/</guid>
             <pubDate>Thu, 10 Nov 2022 23:38:02 GMT</pubDate>
             <content:encoded><![CDATA[ある RPM Package のインストール、アンインストール時にどんな処理が行われているのか確認したいことがある そんな時な rpm コマンドの --scripts オプションを使用する rpm -qp --scripts ./some.rpm]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS IAM ポリシーの StringNotEquals 条件の複数値指定は AND になる]]></title>
-            <link>https://zenn.dev/toshikish/articles/2d9274783acbae</link>
-            <guid>https://zenn.dev/toshikish/articles/2d9274783acbae</guid>
-            <pubDate>Thu, 10 Nov 2022 08:31:56 GMT</pubDate>
-            <content:encoded><![CDATA[AWS IAM ポリシーの条件で同一キーに対して複数値を指定した場合，通常は OR で評価されます。例えば，以下の StringEquals 条件の例では，aws:PrincipalTag/role が audit または security のいずれかであれば true になります。"Condition": {  "StringEquals": {    "aws:PrincipalTag/role": [ "audit", "security" ]  }}では StringNotEquals 条件にするとどうでしょうか？例えば以下のポリシーで aws:Principal...]]></content:encoded>
         </item>
     </channel>
 </rss>
