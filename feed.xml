@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 23 Dec 2022 18:32:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Dec 2022 18:31:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Steam Deck に Windows を入れたい方の参考になれば...!]]></title>
+            <link>https://qiita.com/tozastation/items/a57df36a369b5425795a</link>
+            <guid>https://qiita.com/tozastation/items/a57df36a369b5425795a</guid>
+            <pubDate>Sat, 24 Dec 2022 08:36:33 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2022 の24日目の記事です。はじめに年末、しかもクリスマスということで散財させていただきました。初めまして、戸澤といいます。日常…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[SREとして2022年読んでよかった技術書7選]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2022/12/22/202944</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/toshikish/articles/61db8661cb28ba</guid>
             <pubDate>Fri, 25 Nov 2022 07:33:50 GMT</pubDate>
             <content:encoded><![CDATA[Terraform の tfstate ファイル間のリソースの移動方法は，基本的には以下の記事の通りです。https://www.karakaram.com/moving-terraform-resources-to-another-tfstate-file/この記事では複数リソースを移動したい場合の方法を書きます。 方法やることはシンプルで，リソースをファイルで列挙して xargs で terraform state mv を繰り返すだけです。移動元ディレクトリで terraform state list を実行することで，その tfstate ファイル内の全リソースを取...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[これでライブコーディングも怖くない！ cLive でターミナル操作を自動化する]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/clive-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/clive-introduction</guid>
-            <pubDate>Thu, 17 Nov 2022 09:29:33 GMT</pubDate>
-            <content:encoded><![CDATA[cLive とは？cLive はシンプルな設定ファイルに基づいてターミナルを自動で操作するためのコマンドラインツールです。自動操作するターミナルはブラウザで表示されます。そのため、「任意のターミナルアプリで cLive を起動して、ブラウザだけ画面共有して自動ライブコーディングをする」といった使い方ができます。JavaScript のライブコーディングデモもちろん日本語入力も可能ですし、任意のタイミングで一時停止しておけば必要に応じて手動による操作もできます。手動操作のデモ リポジトリhttps://github.com/koki-develop/cliveス...]]></content:encoded>
         </item>
     </channel>
 </rss>
