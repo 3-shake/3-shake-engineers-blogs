@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 27 Dec 2022 18:32:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Dec 2022 18:32:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[rbspy で ruby の stacktrace を flamegraph にする]]></title>
+            <link>https://blog.1q77.com/2022/12/rbspy/</link>
+            <guid>https://blog.1q77.com/2022/12/rbspy/</guid>
+            <pubDate>Wed, 28 Dec 2022 11:26:10 GMT</pubDate>
+            <content:encoded><![CDATA[中身をよく知らない Rails アプリでどこが遅いのかな？と思って rbspy ( github) を試してみたのでメモ。 とりあえず使って flamegraph を書き出してみたんだけどそもそも flamegraph がどういうものなのか分かっ]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Professional Cloud Security Engineer の振り返り]]></title>
+            <link>https://qiita.com/dirtymosschan/items/2c66eec7919220a4ec06</link>
+            <guid>https://qiita.com/dirtymosschan/items/2c66eec7919220a4ec06</guid>
+            <pubDate>Wed, 28 Dec 2022 08:57:17 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに2022/12/28 に Google Cloud Certification の１つである、Professional Cloud Security Engineer に合格したので、そち…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[go.mod の更新]]></title>
             <link>https://blog.1q77.com/2022/12/updage-go-mod/</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/codezine_engineer_product/</guid>
             <pubDate>Tue, 29 Nov 2022 05:25:53 GMT</pubDate>
             <content:encoded><![CDATA[「デベロッパーの成長と課題解決に貢献するメディア」をコンセプトに情報発信を行うソフトウェア開発者向けWebメディア「Codezine」に、弊社SREである手塚と、多数の企業で技術顧問などを務める松本亮介氏の対談記事が掲載されましたThe post 【Codezine掲載】エンジニアの事業貢献、必要な第一歩とは？ 松本亮介氏×スリーシェイクが解説！ エンジニアがプロダクトやビジネスへの理解を深める方法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google BigQuery: The Definitive Guideを読んでみた]]></title>
-            <link>https://sreake.com/blog/google-bigquery-the-definitive-guide/</link>
-            <guid>https://sreake.com/blog/google-bigquery-the-definitive-guide/</guid>
-            <pubDate>Tue, 29 Nov 2022 02:25:13 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 2021年スリーシェイクに入社してから案件で BigQuery を触ったのをきっかけに、Google BigQuery: The Definitive Guideを読んだので本の内容を一部紹介します。 10章ま […]The post Google BigQuery: The Definitive Guideを読んでみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[オブザーバビリティについて理解する (収集・分析・可視化）]]></title>
-            <link>https://sreake.com/blog/observability/</link>
-            <guid>https://sreake.com/blog/observability/</guid>
-            <pubDate>Tue, 29 Nov 2022 01:05:03 GMT</pubDate>
-            <content:encoded><![CDATA[クラウド基盤の登場により、自社でサーバーを構築してシステムを運用するオンプレ以外の選択肢が増えてきました。多くの企業では、クラウド基盤を活用してシステム運用の効率化を図っているでしょう。 しかし、システムによってはまだま […]The post オブザーバビリティについて理解する (収集・分析・可視化） first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
