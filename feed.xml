@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 04 Jan 2023 18:33:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Jan 2023 04:03:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -232,11 +232,11 @@
             <content:encoded><![CDATA[Kubernetes クラスタで Prometheus を導入し，ServiceMonitor を作って監視対象を定義したところ，一向に Target として追加されないことがありました。ServiceMonitor が作られているだけでは不十分で，Prometheus の探索する対象に入っている必要があります。それがどこで定義されているかを調べました。以下のような ServiceMonitor を考えます。apiVersion: monitoring.coreos.com/v1kind: ServiceMonitormetadata:  name: example-serv...]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Grafana OnCall で Twilio を使って電話を受ける]]></title>
-            <link>https://qiita.com/yteraoka/items/7e6db7111a061f5e22e4</link>
-            <guid>https://qiita.com/yteraoka/items/7e6db7111a061f5e22e4</guid>
-            <pubDate>Sat, 03 Dec 2022 16:34:52 GMT</pubDate>
-            <content:encoded><![CDATA[Twilio Advent Calendar 4日目の記事です。今年 (2022年) の6月に「Introducing Grafana OnCall OSS, on-call management…]]></content:encoded>
+            <title><![CDATA[Cloud Runで定期ジョブを実行する]]></title>
+            <link>https://zenn.dev/satohjohn/articles/20ebf8d1bed1d1</link>
+            <guid>https://zenn.dev/satohjohn/articles/20ebf8d1bed1d1</guid>
+            <pubDate>Sun, 04 Dec 2022 13:48:19 GMT</pubDate>
+            <content:encoded><![CDATA[本記事は GCP(Google Cloud Platform) Advent Calendar 2022 の4日目のものです。3日目は @po3rin さんのAPI on GKE に高速で認証をつけるIdentity-Aware Proxy × Identity Platform でした。 概要普段、GCPを使ったWebアプリケーション開発をしていますが、その中で、定期的に(スケジューリングをして)、ジョブを実行するということがあります。例えば、DBのデータの整合性とか、ログの収集とか。。。この要件のときは、GCP内で完結させるとして、Cloud SchedulerのHTTP...]]></content:encoded>
         </item>
     </channel>
 </rss>
