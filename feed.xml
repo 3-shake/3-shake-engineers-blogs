@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 09 Jan 2023 18:33:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Jan 2023 18:33:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Go でイケてる CLI を作るために利用したパッケージ]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/go-cli-packages</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/go-cli-packages</guid>
+            <pubDate>Tue, 10 Jan 2023 10:05:41 GMT</pubDate>
+            <content:encoded><![CDATA[先日、 cLive というターミナルを自動操作する Go 製のコマンドラインツールを公開しました。https://github.com/koki-develop/clive#readmecLive で JavaScript のライブコーディングをするデモこの記事では Go でイケてる感じの CLI を作るために利用したパッケージを簡単に紹介します。cLive については以下の記事をご参照ください。https://zenn.dev/kou_pg_0131/articles/clive-introduction 利用したパッケージCobra : CLI フレームワーク...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CodeDeploy Agent のバージョンアップを自動化する]]></title>
+            <link>https://sreake.com/blog/codedeploy-agent-update/</link>
+            <guid>https://sreake.com/blog/codedeploy-agent-update/</guid>
+            <pubDate>Tue, 10 Jan 2023 01:22:39 GMT</pubDate>
+            <content:encoded><![CDATA[概要 Auto Scaling Group 内のインスタンスで CodeDeploy を使用する場合、Agent のバージョンアップが手間なので AMI にインストールしない方がよいです。 Systems Manager […]The post CodeDeploy Agent のバージョンアップを自動化する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[HTML/CSS を SVG に変換する Vercel 製のパッケージ「satori」を試してみる]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/satori-usage</link>
@@ -223,20 +237,6 @@
             <guid>https://qiita.com/tayakun/items/2f5ca30b777a54b2c52d</guid>
             <pubDate>Mon, 05 Dec 2022 14:18:53 GMT</pubDate>
             <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 5日目の記事です。前日は @aqarium さんによる 徒然なるままにDatadog APM でした。私は株式会社スリ…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Prometheus で探索対象の ServiceMonitor を広げる]]></title>
-            <link>https://zenn.dev/toshikish/articles/70424038397d6d</link>
-            <guid>https://zenn.dev/toshikish/articles/70424038397d6d</guid>
-            <pubDate>Mon, 05 Dec 2022 09:53:34 GMT</pubDate>
-            <content:encoded><![CDATA[Kubernetes クラスタで Prometheus を導入し，ServiceMonitor を作って監視対象を定義したところ，一向に Target として追加されないことがありました。ServiceMonitor が作られているだけでは不十分で，Prometheus の探索する対象に入っている必要があります。それがどこで定義されているかを調べました。以下のような ServiceMonitor を考えます。apiVersion: monitoring.coreos.com/v1kind: ServiceMonitormetadata:  name: example-serv...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Runで定期ジョブを実行する]]></title>
-            <link>https://zenn.dev/satohjohn/articles/20ebf8d1bed1d1</link>
-            <guid>https://zenn.dev/satohjohn/articles/20ebf8d1bed1d1</guid>
-            <pubDate>Sun, 04 Dec 2022 13:48:19 GMT</pubDate>
-            <content:encoded><![CDATA[本記事は GCP(Google Cloud Platform) Advent Calendar 2022 の4日目のものです。3日目は @po3rin さんのAPI on GKE に高速で認証をつけるIdentity-Aware Proxy × Identity Platform でした。 概要普段、GCPを使ったWebアプリケーション開発をしていますが、その中で、定期的に(スケジューリングをして)、ジョブを実行するということがあります。例えば、DBのデータの整合性とか、ログの収集とか。。。この要件のときは、GCP内で完結させるとして、Cloud SchedulerのHTTP...]]></content:encoded>
         </item>
     </channel>
 </rss>
