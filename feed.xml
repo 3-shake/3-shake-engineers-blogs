@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 10 Jan 2023 18:33:35 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Jan 2023 18:34:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub Actions で機密性の無い変数を設定できるようになったので試してみる]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-configurations-variables</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-configurations-variables</guid>
+            <pubDate>Wed, 11 Jan 2023 10:07:51 GMT</pubDate>
+            <content:encoded><![CDATA[GitHub Actions で変数を設定できるようになりました 🎉🎉🎉🎉https://github.blog/changelog/2023-01-10-github-actions-support-for-configuration-variables-in-workflows/これまではワークフローで再利用可能な値を使用するためには Secret として保存する必要がありました。しかし Secret は一度設定すると値を確認することができないため、機密性の無いデータでもどんな値が設定されているかを確認することができないのが不便でした。今回の更新で、機密性の無いデータは変数と...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Go でイケてる CLI を作るために利用したパッケージ]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/go-cli-packages</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/circleci-oidc-aws</guid>
             <pubDate>Wed, 07 Dec 2022 09:15:08 GMT</pubDate>
             <content:encoded><![CDATA[CircleCI Advent Calendar 2022 の 7 日目です。https://qiita.com/advent-calendar/2022/circleci 概要CircleCI では OpenID Connect (OIDC) がサポートされています。OIDC を使用することで長期間有効なアクセスキーなどを用意することなく AWS 認証を行うことが可能です。詳細については下記ページをご参照ください。https://circleci.com/docs/ja/openid-connect-tokens/https://circleci.com/ja/blog...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[社会に蔓延る労苦〈Toil〉をなくす（株式会社スリーシェイク入社エントリ）]]></title>
-            <link>https://qiita.com/tayakun/items/2f5ca30b777a54b2c52d</link>
-            <guid>https://qiita.com/tayakun/items/2f5ca30b777a54b2c52d</guid>
-            <pubDate>Mon, 05 Dec 2022 14:18:53 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 5日目の記事です。前日は @aqarium さんによる 徒然なるままにDatadog APM でした。私は株式会社スリ…]]></content:encoded>
         </item>
     </channel>
 </rss>
