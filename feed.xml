@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Jan 2023 18:34:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jan 2023 18:33:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[xmllint で HTML 内の任意の値を取り出す]]></title>
+            <link>https://blog.1q77.com/2023/01/xmllint-html-xpath/</link>
+            <guid>https://blog.1q77.com/2023/01/xmllint-html-xpath/</guid>
+            <pubDate>Thu, 12 Jan 2023 14:40:51 GMT</pubDate>
+            <content:encoded><![CDATA[サクッと shell script で HTML の中の何かを取り出したい時があります。 そんな時に使えるのが xmllint. しっかりやるなら python の Beautiful Soup を使ったりしますが、本当に簡単なことを簡単にやりたい場合に xmllint]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MongoDB Atlas の紹介]]></title>
+            <link>https://sreake.com/blog/mongodb-atlas/</link>
+            <guid>https://sreake.com/blog/mongodb-atlas/</guid>
+            <pubDate>Wed, 11 Jan 2023 23:57:02 GMT</pubDate>
+            <content:encoded><![CDATA[MongoDB Atlas とは MongoDB Atlas (以下 Atlas という)は、MongoDB Inc.によって作られた MongoDB の DBaaS(DB as a Service) です。 Atlas […]The post MongoDB Atlas の紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub Actions で機密性の無い変数を設定できるようになったので試してみる]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-configurations-variables</link>
@@ -223,20 +237,6 @@
             <guid>https://blog.1q77.com/2022/12/issue-the-certificate-using-existing-private-key-with-lego/</guid>
             <pubDate>Wed, 07 Dec 2022 13:42:05 GMT</pubDate>
             <content:encoded><![CDATA[既存の秘密鍵を使って証明書を発行しなければいけないという特殊な環境ですぐに証明書を発行したいということがありました。 lego を使っての証明書発行はとても簡単ですが、デ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[『セキュア・バイ・デザインの鳴くところ』というタイトルでOWASP Fukuoka Meeting #9 に登壇しました。 #owaspfukuoka]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2022/12/07/204400</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2022/12/07/204400</guid>
-            <pubDate>Wed, 07 Dec 2022 11:44:00 GMT</pubDate>
-            <content:encoded><![CDATA[OWASP Fukuoka Meeting #9 に登壇してきました！登壇してきました。自分はセキュリティ専門家ではないのですが発表するとセキュリティ専門家からレビューをもらえたり意見をいただけるのでそれがとてもよいです。ちなみに発表時間が諸事情により30分から1時間になって想定外の資料の取捨選択を行った...発表時間が30分から1時間になって想定してない肉付けしたら資料の主張が曲がったので改変している。— nwiizo (@nwiizo) December 6, 2022  発表資料セキュア・バイ・デザインの鳴くところ - 安全なソフトウェアを全体から考えるみるで候の資料はこちらです『セキュア・バイ・デザインの鳴くところ』みたいな資料を作成したので公開しておきます！https://t.co/BduVhWd73K#owaspfukuoka— nwiizo (@nwiizo) December 7, 2022  リモート発表は寂しいので相槌を入れてほしいと思っている。主催の@TakaharuOgasa さんや@mrtc0 さんが程よく補足情報を入れたりしてくれてよかった。参考資料OWASP SAMM(Software Assurance Maturity Model)OWASP SAMM(Software Assurance Maturity Model):githubOWT2017JP - OWASP SAMMセキュリティーチェックシートという闇への防衛術CircuitBreakerPattern: Circuit BreakerGitHub - istio/istio: Connect, secure, control, and observe services.Istio By Exampleサービスメッシュの「Istio」や、OSSで構成されたマネージドサービス――ミッションクリティカルなシステムをKubernetesで実現するカギはツールにあり！【デブサミ2018】Design It! ―プログラマーのためのアーキテクティング入門Release It!: Design and Deploy Production-Ready SoftwareOWASP SAMM Toolkit v2.0.6開発環境のセキュリティおよびCI/CDパイプラインのセキュア化PHPerKaigi 2022: 予防に勝る防御なし - 堅牢なコードを導く様々… / 和田卓人SOLID CODE 高品質なコードを生み出す実践的開発手法]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CircleCI で OIDC を使用して AWS 認証を行う]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/circleci-oidc-aws</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/circleci-oidc-aws</guid>
-            <pubDate>Wed, 07 Dec 2022 09:15:08 GMT</pubDate>
-            <content:encoded><![CDATA[CircleCI Advent Calendar 2022 の 7 日目です。https://qiita.com/advent-calendar/2022/circleci 概要CircleCI では OpenID Connect (OIDC) がサポートされています。OIDC を使用することで長期間有効なアクセスキーなどを用意することなく AWS 認証を行うことが可能です。詳細については下記ページをご参照ください。https://circleci.com/docs/ja/openid-connect-tokens/https://circleci.com/ja/blog...]]></content:encoded>
         </item>
     </channel>
 </rss>
