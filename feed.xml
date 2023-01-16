@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 15 Jan 2023 18:31:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Jan 2023 18:32:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[yq(v4) の倒し方]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/01/17/011521</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/01/17/011521</guid>
+            <pubDate>Mon, 16 Jan 2023 16:15:21 GMT</pubDate>
+            <content:encoded><![CDATA[yq とはyq はgoで書かれている軽量でポータブルなコマンドライン YAML、JSON、XML プロセッサです。yq は jq に似た構文を使用しますが、json、xml、properties、csv、tsv と同様に yaml ファイルを処理します。記事の執筆時点の2023 年01月17日時点でv4.30.8 がリリースされています。github.comyqyq のv4 はv3 とはかなり異なっています。v3 で端的に書けていたものが、v4 ではより表現力のある構文言語となった結果、ちょっと冗長になったように思えるんですけどjq っぽいので慣れてしまえばよいものだとおもいます 。mikefarah.gitbook.ioyq 使ってみる今回の目的はapplication/deployment.yaml のimageの値をnginx:1.14.2をnginx:1.23.3に書き換えたいと思います。PathapiVersion: apps/v1kind: Deploymentmetadata:  name: nginx-deploymentspec:  selector:    matchLabels:      app: nginx  replicas: 2 # tells deployment to run 2 pods matching the template  template:    metadata:      labels:        app: nginx    spec:      containers:      - name: nginx        image: nginx:1.14.2 # 書き換えたいんじゃ        ports:        - containerPort: 80yq(v4) 使ってみるyq(v4) でreadyq '.spec.template.spec.containers[0].image' deployment.yamlnginx:1.14.2yq(v4) でwriteyq -i '.spec.template.spec.containers[0].image = "nginx:1.23.3"' deployment.yaml確認します。yq '.spec.template.spec.containers[0].image' deployment.yamlnginx:1.23.3で目的達成しました簡単！yq(v3) との違いyq(v3) にはwriteやreadなどのサブコマンドが撤廃されたので準拠した書き方を覚える必要があると思います。mikefarah.gitbook.ioyq(v4) での変数利用yq(v4)ではstrenv(<env>)を利用することで変数を利用することができるIMAGE=nginx yq -i '.spec.template.spec.containers[0].image = strenv(IMAGE)' deployment.yaml確認します。yq '.spec.template.spec.containers[0].image' deployment.yaml nginxﾔｯﾀﾈ!! # おわりv3 -> v4 には変更点がいくつかあります。皆さんもCIで使っている時は気をつけましょう。あとはCI で書き換えで使っている時は-vを使っておきましょう。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GoReleaser で Go 製 CLI のリリースを自動化＆ Homebrew でインストールできるようにする]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/goreleaser-usage</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/goreleaser-usage</guid>
+            <pubDate>Mon, 16 Jan 2023 10:09:24 GMT</pubDate>
+            <content:encoded><![CDATA[GoReleaser と GitHub Actions を使って Go で作った CLI のリリースを自動化して、ついでに Homebrew でインストールできるようにするまでの手順メモです。ちなみに先日、 Go で CLI を作る時に便利だったパッケージについて簡単に紹介する記事を公開しました。こちらも興味があれば見てみてください。https://zenn.dev/kou_pg_0131/articles/go-cli-packages 検証環境Go v1.19GoReleaser v1.14.1GoReleaser Action v4.1.0 GoReleas...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Istio⛵️によるサイドカーインジェクションの仕組み]]></title>
             <link>https://hiroki-hasegawa.hatenablog.jp/entry/2023/01/14/223815</link>
@@ -223,20 +237,6 @@
             <guid>https://qiita.com/yteraoka/items/561276f67ad4571ff9f3</guid>
             <pubDate>Fri, 09 Dec 2022 09:28:06 GMT</pubDate>
             <content:encoded><![CDATA[これは 3-shake Advent Calendar 2022 9日目の蝉です。ポエムです。組織の Advent Calendar ですが、組織としての意見ではありません。早く SRE って3…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SREの専門家が集まったチームで『SREの探求』の社内輪読会をやっているという話]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2022/12/09/041252</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2022/12/09/041252</guid>
-            <pubDate>Thu, 08 Dec 2022 19:12:52 GMT</pubDate>
-            <content:encoded><![CDATA[これは SREのカレンダー | Advent Calendar 2022 - Qiita 9日目のエントリです。昨日はryosukes さんによる「北欧、暮らしの道具店」インフラ構成の変遷、5年間の課題と取り組み でした。はじめにこんにちは。株式会社スリーシェイク Sreake 事業部に所属している@nwiizo です。Sreake事業部は技術力が求められる領域で豊富な経験を持つSREの専門家が集まったチームです。事業部にはさまざまな背景を持つSREの専門家が多く在籍してます。しかし、そのSREの専門家達とは案件が一緒にならなかったり、能動的に質問をしなければSREに関する意見や知見を聞けませんでした。SREの探求 ―様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践オライリージャパンAmazonそんな、課題がある中で半年前に各案件で得た知見や経験を各メンバーで出し合える会がもっと(社内で技術共有会はあるため)あると良いと思いました。そこで社内チャットで運営を募り 『輪読会について考える会』を行いました。社内チャットで運営を募ると一瞬で集まったので良い組織だと思いました。※『輪読会について考える会』の議事録のTOPページです。『SREの探求』輪読会この輪読会を開催するにあたって以下の3つを目的として上げました。各メンバーがSREに関する意見や知見を交換できる場にするチーム全体としてSREへの理解を深めることでSreake の価値を高めるさまざまなフェーズの意見が交換できるように『SREの探求』を読む候補としてSRE サイトリライアビリティエンジニアリング ―Googleの信頼性を支えるエンジニアリングチームやサイトリライアビリティワークブック ―SREの実践方法 も上がりました。しかし、Google だけではなく様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践が紹介されているということで『SREの探求』に決定いたしました。輪読会の形式リモートで毎週水曜日 18:00から1時間、業務もあるので参加は自由としました。進め方としては担当者がNotion に担当の章をまとめて内容を発表する。その後、話し合いながらNotion やSlack に意見を垂れ流す方式にしました。参加者はSREの専門家達、リーダー、人事、営業、総務など様々な方がいてわいわいとやれているので僕は楽しい。輪読会をはじめてから半年が経過して開催できてない週もありましたが現在は14回の実施ができました。各担当者毎に特色がある発表で聞いていて面白いです。『SREの探求』には様々な視点でのSREでの話がされているので当初の目的としては正解です。また、同じ本で同じ職種なのにここまで読み方に差が出るのかと感心してます。人によってはすごくその事柄について考えられていて自分と比較して落ち込みます。でも、経験や考え方の違う人の話を聞けるのはとても参考と刺激になってます。『SREの探求』の輪読会のTOPページです。情報がシュッとまとまってます。また、1年が経過したタイミングで「輪読会に参加して、その後、SREに対しての考え方や行動に変化はありましたか？ 」という質問をしたいと考えております。もし、読んでる社内の方がいたら考えておいてください。さいごに『SREの探求』の輪読会を半年運営してきて各メンバーがSREやインフラ技術に関する意見や知見を交換できる場として機能し始めていると思ってます。自分自身もSREに関する知見を深める機会になっております。今後より良いサービスを提供していくためにも輪読会は続けていきたいなと思いました。輪読会をやる時には運営が複数人で実施することと目的を明確にしておけば運営を続けやすいなって思いました。『SREの探求』の輪読会を終了したタイミングでちゃんと効果測定したブログを書こうと【今は】思ってます。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[速習 Datadog APM]]></title>
-            <link>https://sreake.com/blog/datadog-apm/</link>
-            <guid>https://sreake.com/blog/datadog-apm/</guid>
-            <pubDate>Thu, 08 Dec 2022 04:33:11 GMT</pubDate>
-            <content:encoded><![CDATA[Datadog APM を使った監視設計をすることがあり、使い勝手が良かったため基本的な部分と設定した方がいいなと思っている事項を書いていきます。 プロファイリング機能は使いませんでしたので、本記事では対象外です。 AP […]The post 速習 Datadog APM first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
