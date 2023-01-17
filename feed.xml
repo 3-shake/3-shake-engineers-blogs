@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 16 Jan 2023 18:32:37 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Jan 2023 18:32:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,11 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[yq(v4) の倒し方]]></title>
+            <title><![CDATA[yaml 管理を自動化する時の必須道具 yq(v4) の倒し方]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/01/17/011521</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/01/17/011521</guid>
             <pubDate>Mon, 16 Jan 2023 16:15:21 GMT</pubDate>
-            <content:encoded><![CDATA[yq とはyq はgoで書かれている軽量でポータブルなコマンドライン YAML、JSON、XML プロセッサです。yq は jq に似た構文を使用しますが、json、xml、properties、csv、tsv と同様に yaml ファイルを処理します。記事の執筆時点の2023 年01月17日時点でv4.30.8 がリリースされています。github.comyqyq のv4 はv3 とはかなり異なっています。v3 で端的に書けていたものが、v4 ではより表現力のある構文言語となった結果、ちょっと冗長になったように思えるんですけどjq っぽいので慣れてしまえばよいものだとおもいます 。mikefarah.gitbook.ioyq 使ってみる今回の目的はapplication/deployment.yaml のimageの値をnginx:1.14.2をnginx:1.23.3に書き換えたいと思います。PathapiVersion: apps/v1kind: Deploymentmetadata:  name: nginx-deploymentspec:  selector:    matchLabels:      app: nginx  replicas: 2 # tells deployment to run 2 pods matching the template  template:    metadata:      labels:        app: nginx    spec:      containers:      - name: nginx        image: nginx:1.14.2 # 書き換えたいんじゃ        ports:        - containerPort: 80yq(v4) 使ってみるyq(v4) でreadyq '.spec.template.spec.containers[0].image' deployment.yamlnginx:1.14.2yq(v4) でwriteyq -i '.spec.template.spec.containers[0].image = "nginx:1.23.3"' deployment.yaml確認します。yq '.spec.template.spec.containers[0].image' deployment.yamlnginx:1.23.3で目的達成しました簡単！yq(v3) との違いyq(v3) にはwriteやreadなどのサブコマンドが撤廃されたので準拠した書き方を覚える必要があると思います。mikefarah.gitbook.ioyq(v4) での変数利用yq(v4)ではstrenv(<env>)を利用することで変数を利用することができるIMAGE=nginx yq -i '.spec.template.spec.containers[0].image = strenv(IMAGE)' deployment.yaml確認します。yq '.spec.template.spec.containers[0].image' deployment.yaml nginxﾔｯﾀﾈ!! # おわりv3 -> v4 には変更点がいくつかあります。皆さんもCIで使っている時は気をつけましょう。あとはCI で書き換えで使っている時は-vを使っておきましょう。]]></content:encoded>
+            <content:encoded><![CDATA[yq とはyq はgoで書かれている軽量でポータブルなコマンドライン YAML、JSON、XML プロセッサです。yq は jq に似た構文を使用しますが、json、xml、properties、csv、tsv と同様に yaml ファイルを処理します。記事の執筆時点の2023 年01月17日時点でv4.30.8 がリリースされています。github.comyqyq のv4 はv3 とはかなり異なっています。v3 で端的に書けていたものが、v4 ではより表現力のある構文言語となった結果としてちょっと冗長になったように思えるんですけどjq っぽいので慣れてしまえばよいものだとおもいます 。mikefarah.gitbook.ioyq 使ってみる今回の目的はapplication/deployment.yaml のimageの値をnginx:1.14.2をnginx:1.23.3に書き換えたいと思います。yaml をCIで変更するなんてなんぼでもやってますからね。Path などの概念については説明を省略します。apiVersion: apps/v1kind: Deploymentmetadata:  name: nginx-deploymentspec:  selector:    matchLabels:      app: nginx  replicas: 2 # tells deployment to run 2 pods matching the template  template:    metadata:      labels:        app: nginx    spec:      containers:      - name: nginx        image: nginx:1.14.2 # 書き換えたいんじゃ        ports:        - containerPort: 80yq(v4) 使ってみるyq(v4) でreadyq '.spec.template.spec.containers[0].image' deployment.yamlnginx:1.14.2yq(v4) でwriteyq -i '.spec.template.spec.containers[0].image = "nginx:1.23.3"' deployment.yaml確認します。yq '.spec.template.spec.containers[0].image' deployment.yamlnginx:1.23.3で目的達成しました簡単！yq(v3) との違いyq(v3) にはwriteやreadなどのサブコマンドが撤廃されたので準拠した書き方を覚える必要があると思います。mikefarah.gitbook.ioyq(v4) での変数利用yq(v4)ではstrenv(<env>)を利用することで変数を利用することができるIMAGE=nginx yq -i '.spec.template.spec.containers[0].image = strenv(IMAGE)' deployment.yaml確認します。yq '.spec.template.spec.containers[0].image' deployment.yaml nginxﾔｯﾀﾈ!!左辺にはこちら代入できないみたいなのでそのときには作成してからyq に読むこませると良いみたい(他にいい方法があれば教えてほしいです)。    YQ_INPLACE=".${EXE_APP}.image.tag = \"${TAG_HASH}\""    yq -i "${YQ_INPLACE}" "$CHANGE_FILE"おわりv3 -> v4 には変更点がいくつかあります。皆さんもCIで使っている時は気をつけましょう。あとはCI で書き換えで使っている時は-vを使っておきましょう。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[GoReleaser で Go 製 CLI のリリースを自動化＆ Homebrew でインストールできるようにする]]></title>
