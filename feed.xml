@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 22 Jan 2023 18:31:39 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Jan 2023 18:32:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【Terraform】CloudFront Functions を使用して Basic 認証を設定する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/tf-cloudfront-basicauth</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/tf-cloudfront-basicauth</guid>
+            <pubDate>Mon, 23 Jan 2023 10:22:18 GMT</pubDate>
+            <content:encoded><![CDATA[たまに必要になるのでメモ。 検証環境Terraform v1.3.7AWS Provider v4.49.0 サンプルコード今回紹介するサンプルコードは下記リポジトリで管理しています。https://github.com/koki-develop/cloudfront-basic-auth-example 準備今回は例として S3 バケットのオブジェクトを配信する CloudFront Distribution を作成します。主題ではないので気になる方のみ読んでください。サンプルコードprovider.tf# AWS Provider の設定prov...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[aws-vault のすすめ]]></title>
             <link>https://sreake.com/blog/aws-vault/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/pranc1ngpegasus/articles/7c3013bb132437</guid>
             <pubDate>Sat, 10 Dec 2022 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[TypeScriptなGraphQLサーバをGoにリプレースした3-shake Advent Calendar 2022の11日目です。現在携わっているプロダクトではGraphQLを利用してフロント/バックエンドの通信を行っています。7月に入社した当初はTypeScriptで開発が進んでおり、ある程度の機能が出揃っていましたが、チーム編成が変わったことによりGoが得意なメンバーがバックエンドを担当することになりました。そこで既存のGraphQLサーバをGoにリプレースしたのでまとめます。 これまで既存のGraphQLサーバはTypeScriptをベースに構成されており、...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Control Towerを調べる]]></title>
-            <link>https://blog.masasuzu.net/entry/2022/12/10/204957</link>
-            <guid>https://blog.masasuzu.net/entry/2022/12/10/204957</guid>
-            <pubDate>Sat, 10 Dec 2022 11:49:57 GMT</pubDate>
-            <content:encoded><![CDATA[これは  3-shake Advent Calendar 2022 10日目の記事です仕事の中でAWSで複数のアカウントを管理したいという要件あり、その中でAWS Control Towerが使えないかなと調べたものをざっくりと書いていきます。AWS Control TowerとはAWS Control TowerとはLanding Zoneを実装するためのAWSのマネージドサービスです。そもそもLanding Zoneって何って話になりますね。Landing Zoneとはセキュリティとコンプライアンスのベストプラクティスに基づきアーキテクチャ設計とマルチアカウント環境を管理する仕組みを指します。Landing Zoneは、下記機能から構成されます。アカウントの発行必要な初期設定の済んだアカウントを作成管理用権限の発行対象アカウントを管理するための権限を作成AWS ログの集約監査用ログをセキュアに一元保存ガードレールの設置実施してはいけない操作の禁止危険な設定の監視Landing Zoneの実装方法AWS Control TowerAWSサービスとして提供される Landing Zoneです。容易に利用可能ですが、カスタマイズするには制限があります。(必須のガードレールを外せなかったり)主にこれからAWSを利用する場合に利用できます。既存アカウントにも適用可能です。独自実装の Landing Zone自組織で独自実装するパターンです。自組織の方針に従って自由にカスタマイズできるのが強みです。ただし、自由にカスタマイズはできますが、自身でメンテナンスしないといけないので、コストはかかります。主に既存アカウントに適用する場合に利用できます。自組織でアカウント発行の仕組みや管理の仕組みができあがってる場合などです。そもそもなんでマルチアカウントにするのかAWSをマルチアカウントにする観点として以下のものが考えられます。環境の分離開発、テスト、本番を分離することによるセキュリティおよび統制の確保請求の分離部門やシステム単位でのコスト明確化権限の分離部門間での権限分離およびアカウントへの権限移譲複雑性の分離アカウントの目的を明確に絞ることで、構成がシンプルになるAWS Organizationsだけでもできることマルチアカウント管理するだけならOrganizationだけでもある程度はできます。むしろAWS Control TowerはOrganizationの機能を利用しています。複数AWSアカウントの一元管理Organization Unit(OU)の作成複数アカウントのグルーピング化AWSアカウントの発行Service Control Policyの作成、OUへの適用複数アカウントの一括請求AWS Control Towerだと何ができるのかControl Towerで提供される機能として以下のものがあります。Landing Zoneの提供AWS Organizationを使用してマルチアカウントを作成デフォルトでSandbox、SecurityのOUを作成AWS IAM アイデンティティセンターを利用したID管理を提供Account FactoryAWSアカウントのプロビジョニングの自動化設定可能なテンプレートを提供CloudTrailとConfigログの保存Log Archiveアカウント内のS3バケットに一元的に保存されるガードレールの提供必須と任意の観点の2種類と予防的と発見的の2種類の組み合わせがありControl Towerにより管理下のアカウントに適用される参考: ガードレールの仕組み予防的ガードレール(Service Control Policy)禁止されたアクションの実行が拒否される仕組みControl Tower管理下のアカウントは必須の予防的ガードレールで禁止されているアクションが不可能発見的ガードレール(Config)特定のイベントが発生したときにCloudTrailに記録される仕組みダッシュボードOUやアカウント、ガードレール違反などが一覧表示できるAWS Control TowerではできないことAWS Control Towerでは提供されてない機能もあります。GuardDutyやSecurity Hubなどのセキュリティ機能を組織全体適用するにはOrganizationsの機能を利用する必要があります。AWS Control Towerの注意点、制約事項いろいろ資料を見てみてこの辺注意が必要かなという点を書いていきます。注意点既存アカウントの Control Tower への受入処理時にエラーになった場合、スタックセット内で自動実行される作業の一部手作業が必要になる参考:トラブルシューティング - AWS Control Tower独自ガードレールの追加は可能だが、容易ではない。必須ガードレールを外せない参考:必須のガードレール - AWS Control Tower各種セキュリティー機能は自動で有効化されないため、Control Towerの範囲外のセキュリティ機能は Control Tower の機能の外で管理が必要になる範囲内の機能: Config, CloudTrail, SCP範囲外の機能: GuardDuty, Security Hub, IAM Access Analyzer, DetectiveControl Tower 未対応リージョンを使用している場合、Control Tower適用リージョンと適用外リージョンが混在して管理が煩雑になる大阪リージョン未対応なのでマルチリージョンを考えるときに注意Control Towerはマネージドサービスであるが追加機能によっては手動バージョンアップ が必要になるケースがある参考: ランディングゾーンを更新する - AWS Control Tower参考: 更新について - AWS Control Towerログアーカイブアカウントで独自のログバケットを作成可能だが、非推奨参考: ランディングゾーンのセットアップに関する管理上のヒントリージョンの使用を制限する SCP の併用に注意が必要参考: AWS Control Tower リソースの作成および変更に関するガイダンスIaC との境界の検討が必要アカウント発行に関してはControl Tower(Account Factory)で手動で行い、その後のアカウント設定はTerraformで行うなどAccount Factory for Terraformを利用することでAWSアカウント発行は可能参考: AWS Control Tower Account Factory for Terraform によるアカウントのプロビジョニングどこまでTerraformで対応するかは別途検討が必要制限とクォータS３へのログの保存期間は、最大15年間保存可能(最近アップデートされた)Security OU の共有アカウントの E メールアドレスは変更可能だが、これらの変更を AWS Control Tower コンソールで確認するには、Landing Zone を更新する必要があるAWS Control Tower Landing zone の OU には、OU あたり5個のSCPの制限が適用される300超のアカウントを持つ既存の OU は、AWS Control Tower に登録することはできない300を超える場合はOUを分ける必要があるOUのネストは２段階まで、孫OUを持つことはできない参考: AWS Organizations における組織単位のベストプラクティスAWS Control Towerを使うべきなのかマルチアカウントを展開していくのであれば、AWSのベストプラクティスに乗れるので、使用するのが無難です。ただし、独自のLanding Zoneをすでに構築しており、Account Factoryの仕組みも独自で構築できているのであれば、移行コストを鑑みてそのままでも問題ないです。必須の予防的ガードレールが許容できない、OUなどの制限にひっかるなどの運用上の制約がある場合は使えないので、組織のポリシーを見直すか、独自でLanding Zoneを作るかを考える必要があります。発展もっと調査したかったが、時間が足りなかったことや今後調べたいことです。コンソールからAccount Factory実行するとService Catalogの設定項目がありますが、Service Catalog自体の理解不足でどう扱うのかが把握できてないのでこの辺調べたいです。Account Factory for Terraform(AFT)を使うとアカウント発行そのものもIaC化できるので試したい。参考: AWS Control Tower Account Factory for Terraform によるアカウントのプロビジョニング参考: ついにControl Towerのアカウント発行からカスタマイズまでIaC対応！Account Factory for Terraform (AFT)が新登場 #reinvent | DevelopersIOCustomization for Control Tower(CfCT)を使うとアカウント発行のイベントをトリガーにCloudFormationを実行できるので、これも実験したい。参考: AWS Control Tower のカスタマイズ (CfCT) の概要 - AWS Control Tower参考: Control Towerカスタマイズソリューション(CfCT)を使ってガードレールとCloudFormationを自動展開してみた | DevelopersIOまとめControl Towerについて調べたことを書いていきました。実運用自体はまだしてないので、これから触ってみて知見が溜まってきたらまたそれも共有できたらと思います。]]></content:encoded>
         </item>
     </channel>
 </rss>
