@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 23 Jan 2023 18:32:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Jan 2023 18:32:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -43,7 +43,7 @@
             <content:encoded><![CDATA[GoReleaser と GitHub Actions を使って Go で作った CLI のリリースを自動化して、ついでに Homebrew でインストールできるようにするまでの手順メモです。ちなみに先日、 Go で CLI を作る時に便利だったパッケージについて簡単に紹介する記事を公開しました。こちらも興味があれば見てみてください。https://zenn.dev/kou_pg_0131/articles/go-cli-packages 検証環境Go v1.19GoReleaser v1.14.1GoReleaser Action v4.1.0 GoReleas...]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Istio⛵️によるサイドカーインジェクションの仕組み]]></title>
+            <title><![CDATA[【Istio⛵️】サイドカーインジェクションの仕組み]]></title>
             <link>https://hiroki-hasegawa.hatenablog.jp/entry/2023/01/14/223815</link>
             <guid>https://hiroki-hasegawa.hatenablog.jp/entry/2023/01/14/223815</guid>
             <pubDate>Sat, 14 Jan 2023 13:38:15 GMT</pubDate>
@@ -148,7 +148,7 @@
             <content:encoded><![CDATA[先日 GitHub Actions で同一ユーザーもしくは組織内でプライベートリポジトリの Action が共有できるようになりました。https://github.blog/changelog/2022-12-14-github-actions-sharing-actions-and-reusable-workflows-from-private-repositories-is-now-ga/実際の挙動や必要な設定が気になったので試してみたメモです。 要約プライベートリポジトリの Action・Reusable Workflow・Composite Action を同一オー...]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Istio⛵️によるサービスディスカバリーの仕組み]]></title>
+            <title><![CDATA[【Istio⛵️】サービスディスカバリーの仕組み]]></title>
             <link>https://hiroki-hasegawa.hatenablog.jp/entry/2022/12/25/060000</link>
             <guid>https://hiroki-hasegawa.hatenablog.jp/entry/2022/12/25/060000</guid>
             <pubDate>Sat, 24 Dec 2022 21:00:00 GMT</pubDate>
