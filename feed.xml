@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 25 Jan 2023 18:32:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Jan 2023 18:32:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub の README はリポジトリのルートディレクトリ以外にも置ける]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/github-readme-path</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/github-readme-path</guid>
+            <pubDate>Thu, 26 Jan 2023 10:02:07 GMT</pubDate>
+            <content:encoded><![CDATA[Twitter で以下のツイートを見かけました。https://twitter.com/azu_re/status/1614458485055586305そこで調べてみたところ、 GitHub では次の場所に置かれている README を認識するようです。.github/リポジトリのルートディレクトリdocs/複数の README が含まれている場合は、 .github/ 、ルートディレクトリ、 docs/ の順に優先されます。例えば冒頭のツイートの reduxjs/redux-toolkit は .github/ ディレクトリ内に README.md (正確には pa...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[【Terraform】CloudFront Functions を使用して Basic 認証を設定する]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/tf-cloudfront-basicauth</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/toshikish/articles/06d85a2db79f4d</guid>
             <pubDate>Mon, 12 Dec 2022 10:46:25 GMT</pubDate>
             <content:encoded><![CDATA[難度が高くしっかりとした準備が必要な AWS SA Pro 試験を申し込んだものの，残された時間があまりないという方向けに書いた勉強法の記事です。 試験の概略 特徴長文の選択式問題が75問出題され，それを180分で解くという長丁場な試験です。ざっくり1問あたり2分24秒かけられます。75問もあり，1問に複数のサービスを関連させられるので，AWS が重点的に問いたいサービス・テーマはもれなく出現します。AWS を使った2年以上の実務経験が想定されていますが，たいていの場合，実務で扱うサービスは主要なサービスに限られ，触ったこともないサービスが多く出題されます。そのため，確...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[TypeScriptなGraphQLサーバをGoにリプレースした]]></title>
-            <link>https://zenn.dev/pranc1ngpegasus/articles/7c3013bb132437</link>
-            <guid>https://zenn.dev/pranc1ngpegasus/articles/7c3013bb132437</guid>
-            <pubDate>Sat, 10 Dec 2022 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[TypeScriptなGraphQLサーバをGoにリプレースした3-shake Advent Calendar 2022の11日目です。現在携わっているプロダクトではGraphQLを利用してフロント/バックエンドの通信を行っています。7月に入社した当初はTypeScriptで開発が進んでおり、ある程度の機能が出揃っていましたが、チーム編成が変わったことによりGoが得意なメンバーがバックエンドを担当することになりました。そこで既存のGraphQLサーバをGoにリプレースしたのでまとめます。 これまで既存のGraphQLサーバはTypeScriptをベースに構成されており、...]]></content:encoded>
         </item>
     </channel>
 </rss>
