@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 28 Jan 2023 18:31:20 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Jan 2023 18:31:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[zshrcに記載せずに環境変数を自動でexportする]]></title>
+            <link>https://zenn.dev/tayusa/articles/3ce09123cfba88</link>
+            <guid>https://zenn.dev/tayusa/articles/3ce09123cfba88</guid>
+            <pubDate>Sun, 29 Jan 2023 17:17:31 GMT</pubDate>
+            <content:encoded><![CDATA[目的zshrcをgitで管理していて秘匿情報を載せたくないが、自動で環境変数には入れておきたい .env適当なファイルに環境変数を記載する.envでなくても良い.envTOKEN=xxxxx .zshrc上記で用意した適当なファイルを.zshrcでcatしてexportする.zshrc() {  local -r env="${HOME}/.env"  [[ -f ${env} ]] && export $(cat ${env})}]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitLabで指定したグループ内の全てのリポジトリを一括でcloneする]]></title>
+            <link>https://zenn.dev/tayusa/articles/ae5911391c9440</link>
+            <guid>https://zenn.dev/tayusa/articles/ae5911391c9440</guid>
+            <pubDate>Sun, 29 Jan 2023 17:07:31 GMT</pubDate>
+            <content:encoded><![CDATA[概要1個1個丹精込めて手動でcloneすることに限界を感じたので、一括で自分に関連するリポジトリをcloneする シェルスクリプト.zshrc# リポジトリのディレクトリを作成してからcloneする# 第1引数 URL# 第2引数 保存先の大元のディレクトリ。指定しなければ、${HOME}/git# 例えば https://gitlab.example.com/diaspora/diaspora-client.git だと# ${HOME}/git/diaspora/diaspora-client にcloneしたリポジトリがあるfunction git_clo...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub の README はリポジトリのルートディレクトリ以外にも置ける]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/github-readme-path</link>
@@ -223,20 +237,6 @@
             <guid>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</guid>
             <pubDate>Fri, 16 Dec 2022 02:21:05 GMT</pubDate>
             <content:encoded><![CDATA[はじめに今回、4年ぶりにQiitaに記事を投稿させていただく。ひょんなきっかけ^1で私は、自身が勤めるスリーシェイクのアドベントカレンダーである3-shake Advent Calendar 2…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Descheduler for Kubernetes で Pod の再配置]]></title>
-            <link>https://sreake.com/blog/kubernetes-descheduler/</link>
-            <guid>https://sreake.com/blog/kubernetes-descheduler/</guid>
-            <pubDate>Tue, 13 Dec 2022 00:46:47 GMT</pubDate>
-            <content:encoded><![CDATA[背景 ある案件で以下のような小規模な Kubernetes クラスタを運用していました。 Kubernetes には hoge というアプリケーションをデプロイしている hoge アプリケーションを乗せる用のノードは2ノ […]The post Descheduler for Kubernetes で Pod の再配置 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[時間がない人のための AWS Solutions Architect - Professional 勉強法]]></title>
-            <link>https://zenn.dev/toshikish/articles/06d85a2db79f4d</link>
-            <guid>https://zenn.dev/toshikish/articles/06d85a2db79f4d</guid>
-            <pubDate>Mon, 12 Dec 2022 10:46:25 GMT</pubDate>
-            <content:encoded><![CDATA[難度が高くしっかりとした準備が必要な AWS SA Pro 試験を申し込んだものの，残された時間があまりないという方向けに書いた勉強法の記事です。 試験の概略 特徴長文の選択式問題が75問出題され，それを180分で解くという長丁場な試験です。ざっくり1問あたり2分24秒かけられます。75問もあり，1問に複数のサービスを関連させられるので，AWS が重点的に問いたいサービス・テーマはもれなく出現します。AWS を使った2年以上の実務経験が想定されていますが，たいていの場合，実務で扱うサービスは主要なサービスに限られ，触ったこともないサービスが多く出題されます。そのため，確...]]></content:encoded>
         </item>
     </channel>
 </rss>
