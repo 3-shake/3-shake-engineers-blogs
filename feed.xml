@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 29 Jan 2023 18:31:14 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Jan 2023 18:32:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,11 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[zshrcに記載せずに環境変数を自動でexportする]]></title>
-            <link>https://zenn.dev/tayusa/articles/3ce09123cfba88</link>
-            <guid>https://zenn.dev/tayusa/articles/3ce09123cfba88</guid>
-            <pubDate>Sun, 29 Jan 2023 17:17:31 GMT</pubDate>
-            <content:encoded><![CDATA[目的zshrcをgitで管理していて秘匿情報を載せたくないが、自動で環境変数には入れておきたい .env適当なファイルに環境変数を記載する.envでなくても良い.envTOKEN=xxxxx .zshrc上記で用意した適当なファイルを.zshrcでcatしてexportする.zshrc() {  local -r env="${HOME}/.env"  [[ -f ${env} ]] && export $(cat ${env})}]]></content:encoded>
+            <title><![CDATA[GitHub Actions で GitHub の画像キャッシュをクリアする]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/hub-purge-action-usage</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/hub-purge-action-usage</guid>
+            <pubDate>Mon, 30 Jan 2023 10:22:30 GMT</pubDate>
+            <content:encoded><![CDATA[GitHub では README などに載せた画像は Camo という画像プロキシ経由で https://camo.githubusercontent.com/... のような URL で配信されるのですが、たまにこれらの画像が長期間キャッシュされてしまうことがあります。例えば僕の GitHub Profile には Badge Generator で作成した Zenn や Qiita のバッジを表示しているのですが、これらの画像が長期間キャッシュされて正しい数値が表示されていないことがありました。GitHub Profileこれらの画像キャッシュをクリアするシェルスクリプトなど...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[GitLabで指定したグループ内の全てのリポジトリを一括でcloneする]]></title>
