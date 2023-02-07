@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 06 Feb 2023 18:32:48 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Feb 2023 00:56:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -197,13 +197,6 @@
             <content:encoded><![CDATA[はじめに2022年もそろそろ終わります。今年も技術書をたくさん読めました。技術的にはDevOpsやSRE、バックエンドに興味があります。この1年で10kg以上痩せたので冬がとても寒い。今年、読んだ技術書の中からおすすめの7冊を紹介します。順番に意味はないです。なぜ、今年は読んでよかった技術書7選なんてやろうと思ったかというと、元々はRecommend Tech Book でO'Reilly Safariで読んで良かった技術書をまとめていました。しかし、6月末でACM経由のO'Reilly Online Learning Platformを利用できなくなり、更新も止まりました。非常に悲しいですが今はO'Reilly Online Learning Platformを利用しておりません。また、機会があれば入会すると思います。あと大きな読書環境の変化としては物理本絶対主義を卒業して電子書籍で購入できるものは基本的にそちらに移行しました。どこかの誰かに「紙の本を読みなよ」と言われそうです。はじめに2022年に読んでよかった技術書実用 Go言語システム運用アンチパターンソフトウェアアーキテクチャ・ハードパーツ達人プログラマー(第2版): 熟達に向けたあなたの旅セキュア・バイ・デザイン 安全なソフトウェア設計継続的デリバリーのソフトウェア工学実践Vim 思考のスピードで編集しよう！終わりに2022年に読んでよかった技術書実用 Go言語実用 Go言語 ―システム開発の現場で知っておきたいアドバイス作者:渋川 よしき,辻 大志郎,真野 隼記オライリージャパンAmazonReal World HTTP、Goならわかるシステムプログラミングの著者を中心とした経験豊富なGopher達が書いた共著のGo言語のTips系の技術書である「実用 Go言語 ―システム開発の現場で知っておきたいアドバイス」です。本書の素晴らしい点は、「よりGoらしく書くには」「実用的なアプリケーションを書くには」という言葉に偽りがなく、Gopherとしてのノウハウが満載である点だと思う。Goに興味がある程度だったら他の本を読んだほうがいいと思います。が、Goらしいプログラムの書き方を知りたい人はこの本を読むといい。知らなくていい行が一つもないです。「実用Go言語」の作り方 - Forkwell Library #7 というイベントもあったのであわせて紹介しておきます。forkwell.connpass.comシステム運用アンチパターンシステム運用アンチパターン ―エンジニアがDevOpsで解決する組織・自動化・コミュニケーション作者:Jeffery D. SmithオライリージャパンAmazonOperations Anti-Patterns, DevOps Solutions の訳本で「システム運用アンチパターン エンジニアがDevOpsで解決する組織・自動化・コミュニケーション」です。本書はタイトルからしてシステム運用に関するアンチパターンについて書かれた本ではあるが、私はむしろ、新人やシステム運用分からんマンこそ読むべき本だと思う。それくらい分かりやすく、DevOpsの基本が書かれている。本書の感想に関しては以前、読書感想文としてブログにしていたので参照ください。syu-m-5151.hatenablog.comシステム運用アンチパターン - Forkwell Library #4 というイベントもあったのであわせて紹介しておきます。forkwell.connpass.comソフトウェアアーキテクチャ・ハードパーツソフトウェアアーキテクチャ・ハードパーツ ―分散アーキテクチャのためのトレードオフ分析作者:Neal Ford,Mark Richards,Pramod Sadalage,Zhamak DehghaniオライリージャパンAmazonSoftware Architecture: The Hard Parts の訳本で「ソフトウェアアーキテクチャ・ハードパーツ ―分散アーキテクチャのためのトレードオフ分析」です。著者陣の前作『ソフトウェアアーキテクチャの基礎』も非常によい。というか殆どのエンジニアがまずはこっちを読むべきだと思ってます。『ソフトウェアアーキテクチャの基礎』の感想に関しては以前、読書感想文としてブログにしていたので参照ください。syu-m-5151.hatenablog.com本書はソフトウェアの厄介なトレードオフがある中で適切なアーキテクチャを選定するために必要となる「選択肢や考え方を提供」してくれる本です。今、マイクロサービスアーキテクチャ 第2版読んでいるがどちらともマイクロサービスに「賛成」でも「反対」でもないという中立的な立場から語られるので非常に読んでて気持ちが良い。マイクロサービスについて興味があるが導入するか悩んでる人は是非、読んでも損がないと思える一冊です。ソフトウェアアーキテクチャ・ハードパーツ - Forkwell Library #12 というイベントもあったのであわせて紹介しておきます。forkwell.connpass.com達人プログラマー(第2版): 熟達に向けたあなたの旅達人プログラマー ―熟達に向けたあなたの旅― 第2版作者:David Thomas,Andrew Huntオーム社AmazonThe Pragmatic Programmer 20th Anniversary Edition の訳本で「達人プログラマー(第2版): 熟達に向けたあなたの旅」です。我々は日々、生産性を求められている。いくら、加速文化の重圧に対抗するとは思いながら、ソフトウェア業界で働く以上は限界がある。現代は常に変化を求められ、「変わらなければ生き残れない」というのは事実だ(と信じている)。本書は、より効率的、生産的なプログラマーになりたいと願う人に対して実践的で素晴らしいTipsを紹介してくれる書籍です。プリンシプル オブ プログラミングやベタープログラマ を読んで良いと思った人は本書もハマると思う。技術者と作業員というポストにおける技術者として圧倒的な能力で問題解決ができることは理想。そして、理想には定期的に自我が殺される。本書は技術者に我々、作業員が迫る為の術をひたすら書いている。私は本書を読んで人生が楽しくなった。ソフトウェアエンジニアとしての自己啓発が足りない場合には読むことがある。エンジニアの自己啓発本です。セキュア・バイ・デザイン 安全なソフトウェア設計セキュア・バイ・デザイン 安全なソフトウェア設計作者:Dan Bergh Johnsson,Daniel Deogun,Daniel Sawanoマイナビ出版AmazonSecure by Design の訳本で「セキュア・バイ・デザイン 安全なソフトウェア設計」です。システムの設計時にセキュリティだけを切り出して別問題として考えるのではなく、システム全体の関心事として扱い、設計時に考慮するための思考方法を提供してくれる書籍です。以前、読書感想文としてブログにしていたので参照ください。DevOps的なことをいうと三部だけになりますが2030年にはセキュリティの専門家もシステム設計時からシステムに関わります(適当)。なので、セキュリティに関わる職域を目指したいという方は読むべきだと思います。syu-m-5151.hatenablog.com継続的デリバリーのソフトウェア工学継続的デリバリーのソフトウェア工学　もっと早く、もっと良いソフトウェアを作るための秘訣作者:David Farley日経BPAmazonModern Software Engineering : Doing What Works to Build Better Software Faster の訳本で「継続的デリバリーのソフトウェア工学　もっと早く、もっと良いソフトウェアを作るための秘訣」です。「ウェブオペレーション ―サイト運用管理の実践テクニック」は新人の時に読んでおいて良かったと思える一冊です。この本で私はシステムの運用が技芸だと教わりました。本書は継続的デリバリーを技芸からソフトウェア工学に取り戻そうとしている。「はじめに」が無料で公開されているのでぜひ、読んでください。bookplus.nikkei.com実践Vim 思考のスピードで編集しよう！実践Vim　思考のスピードで編集しよう！ (アスキー書籍)作者:Ｄｒｅｗ Ｎｅｉｌ,新丈 径角川アスキー総合研究所AmazonVimのコア機能を使いこなす手法に特化した本書。Editorはソフトウェアと触れ合う時の私の手の延長です。もっと、プログラミングが上手くなりたい。だから、使っているVim の達人になりたいとも考えている。なので、読んでいる。Tips集なのでやっていけば勝手に強くなる。思考のスピードを超えないように注意が必要だとは思っています。自分が好きなEditorを利用すれば良いと思っている。syu-m-5151.hatenablog.com終わりに他にも面白かった技術書はたくさんあるが発表やブログにしたものから厳選しました。これを書きながら技術書を読んでよかったと思えるのは常に自分の能力がその書籍を装備できるまでレベルが上がってからだなって思いました。ちなみに、3-shake Advent Calendar 2022の予備で途中まで書いていたブログです。皆さんが勤勉なので書くことにはなりませんでしたが人生で振り返ることが大事なので振り返ってみました。]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[oreoreCLIを作って最速で静的ホスティングを行う]]></title>
-            <link>https://qiita.com/mk_yjn43/items/ec3244708117ecb9193a</link>
-            <guid>https://qiita.com/mk_yjn43/items/ec3244708117ecb9193a</guid>
-            <pubDate>Wed, 21 Dec 2022 22:01:43 GMT</pubDate>
-            <content:encoded><![CDATA[3-shake Advent Calendar2022の22日目です。初めに自分は最近flutterやReactなどで作業をしている時にふと思うことがありますGO「よし一旦できたから成果物we…]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[kube-prometheus-stackでPrometheusを構築する]]></title>
             <link>https://qiita.com/ys1/items/fcb430b15ae7c4fa8b47</link>
             <guid>https://qiita.com/ys1/items/fcb430b15ae7c4fa8b47</guid>
@@ -237,6 +230,13 @@
             <guid>https://zenn.dev/toshikish/articles/684e4d7ed4532f</guid>
             <pubDate>Fri, 16 Dec 2022 08:57:33 GMT</pubDate>
             <content:encoded><![CDATA[動機Amazon CloudWatch Logs のログストリームごとのサイズを知りたいことがありました。たとえば Amazon EKS クラスタを立ち上げて Fluentd または Fluent Bit でログを CloudWatch Logs に送る設定をすると，Pod のログは単一のロググループ（デフォルトでは /aws/containerinsights/Cluster_Name/application）に集約されます。https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Ins...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[エンジニア市場拡大のための「憧れの職業」の重要性に関する緒論]]></title>
+            <link>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</link>
+            <guid>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</guid>
+            <pubDate>Fri, 16 Dec 2022 02:21:05 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに今回、4年ぶりにQiitaに記事を投稿させていただく。ひょんなきっかけ^1で私は、自身が勤めるスリーシェイクのアドベントカレンダーである3-shake Advent Calendar 2…]]></content:encoded>
         </item>
     </channel>
 </rss>
