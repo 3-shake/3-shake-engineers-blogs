@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 07 Feb 2023 00:57:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Feb 2023 09:18:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[OpenSLO とは？]]></title>
+            <link>https://sreake.com/blog/openslo/</link>
+            <guid>https://sreake.com/blog/openslo/</guid>
+            <pubDate>Tue, 07 Feb 2023 03:37:40 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに OpenSLO の概要に触れながら SLO as Code の現状についてお話しします。 OpenSLOとは？ OpenSLO とは、サービスレベル目標 (SLO)、それに関連するリソースの記述形式を標準化する […]The post OpenSLO とは？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Docker イメージのタグ一覧を取得する docker-tags CLI の紹介]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/docker-tags-cli-usage</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/toshikish/articles/684e4d7ed4532f</guid>
             <pubDate>Fri, 16 Dec 2022 08:57:33 GMT</pubDate>
             <content:encoded><![CDATA[動機Amazon CloudWatch Logs のログストリームごとのサイズを知りたいことがありました。たとえば Amazon EKS クラスタを立ち上げて Fluentd または Fluent Bit でログを CloudWatch Logs に送る設定をすると，Pod のログは単一のロググループ（デフォルトでは /aws/containerinsights/Cluster_Name/application）に集約されます。https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Ins...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[エンジニア市場拡大のための「憧れの職業」の重要性に関する緒論]]></title>
-            <link>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</link>
-            <guid>https://qiita.com/skikkh/items/21c270c7ff7a942dc5f7</guid>
-            <pubDate>Fri, 16 Dec 2022 02:21:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに今回、4年ぶりにQiitaに記事を投稿させていただく。ひょんなきっかけ^1で私は、自身が勤めるスリーシェイクのアドベントカレンダーである3-shake Advent Calendar 2…]]></content:encoded>
         </item>
     </channel>
 </rss>
