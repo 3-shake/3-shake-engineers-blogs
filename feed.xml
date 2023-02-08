@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 08 Feb 2023 02:12:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Feb 2023 18:33:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub Actions から ECR に Docker イメージを push する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-ecr-push-image</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-ecr-push-image</guid>
+            <pubDate>Wed, 08 Feb 2023 10:03:48 GMT</pubDate>
+            <content:encoded><![CDATA[備忘録。 サンプルコード今回紹介するサンプルコードは以下のリポジトリで管理しています。https://github.com/koki-develop/github-actions-ecr-push-example 準備 1. GitHub Actions 用の ID プロバイダと IAM ロールを作成するGitHub Actions で OIDC を使用して AWS 認証を行うために、下記ドキュメントを参考に ID プロバイダと IAM ロールを作成します。https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-aw...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenSLO とは？]]></title>
             <link>https://sreake.com/blog/openslo/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/tayusa/articles/ad9fafa197888b</guid>
             <pubDate>Sat, 17 Dec 2022 03:48:50 GMT</pubDate>
             <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 17日目の記事です。https://qiita.com/advent-calendar/2022/3-shake 概要以下の気持ちでKubernetesのマニフェストを検査するツールを選定しました。ベストプラクティスに則りたい細かなレビューの手間を省きたいセキュリティリスクを排除したい保守するのが大変なので出来るだけ自分でポリシーは書きたくない。書くとしても書きやすい方法で記述したい 検査ツールの選定以下のツールからカテゴリ別に選定することにしました。スキーマ検査kubeval...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CloudWatch Logs のログストリームごとのサイズを取得する]]></title>
-            <link>https://zenn.dev/toshikish/articles/684e4d7ed4532f</link>
-            <guid>https://zenn.dev/toshikish/articles/684e4d7ed4532f</guid>
-            <pubDate>Fri, 16 Dec 2022 08:57:33 GMT</pubDate>
-            <content:encoded><![CDATA[動機Amazon CloudWatch Logs のログストリームごとのサイズを知りたいことがありました。たとえば Amazon EKS クラスタを立ち上げて Fluentd または Fluent Bit でログを CloudWatch Logs に送る設定をすると，Pod のログは単一のロググループ（デフォルトでは /aws/containerinsights/Cluster_Name/application）に集約されます。https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Ins...]]></content:encoded>
         </item>
     </channel>
 </rss>
