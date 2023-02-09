@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 08 Feb 2023 18:33:30 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Feb 2023 18:33:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Caddy の Internal TLS 証明書の有効期間を指定する]]></title>
+            <link>https://blog.1q77.com/2023/02/caddy-internal-tls-cert-lifetime/</link>
+            <guid>https://blog.1q77.com/2023/02/caddy-internal-tls-cert-lifetime/</guid>
+            <pubDate>Thu, 09 Feb 2023 14:29:32 GMT</pubDate>
+            <content:encoded><![CDATA[以前 ワンライナーで https の Reverse Proxy を実行する という記事で Caddy を使うと local での開発用に任意のドメインの証明書を簡単に発行できるし CA の証明書も OS の証明書ストアに保存してくれるた]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[『ポストモーテムはじめました』というタイトルで登壇しました。]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</guid>
+            <pubDate>Thu, 09 Feb 2023 02:33:16 GMT</pubDate>
+            <content:encoded><![CDATA[概要インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT というイベントで『ポストモーテムはじめました』というタイトルで登壇します。これには元記事があって良いポストモーテムを執筆するために必要な5つのポイントです。この記事に対していくつかの加筆修正を行い資料にしました。資料登壇資料になります。 speakerdeck.comあとがきポストモーテムについて考えたり調べたりすればするほど仕組みよりも組織としての心がけが大事だと思った。発表の性質や時間の都合上SREでの話に留めた。いずれ、品質管理についても言及しながらまとめていく活動もしたい。組織を作っていくなら下の二冊はとてもオススメです。失敗を後悔する「恥」として捉えてはいけない。学習する機会と捉え、次に活かせば良い。そのためのスキルが品質管理だ。心理的安全性のつくりかた　「心理的柔軟性」が困難を乗り越えるチームに変える作者:石井遼介日本能率協会マネジメントセンターAmazon失敗の科学 失敗から学習する組織、学習できない組織作者:マシュー・サイドディスカヴァー・トゥエンティワンAmazon参考資料SREとはなにかhttps://sreake.com/blog/what-is-sre/良いポストモーテムを執筆するために必要な5つのポイントhttps://sreake.com/blog/5point-good-postmortem/Part III. Practiceshttps://sre.google/sre-book/part-III-practices/SRE サイトリライアビリティエンジニアリングhttps://www.oreilly.co.jp/books/9784873117911/ウェブオペレーションhttps://www.oreilly.co.jp/books/9784873114934/Postmortem Culture: Learning from Failurehttps://sre.google/sre-book/postmortem-culture/チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよりhttps://www.amazon.co.jp/dp/B00N8J1NPQ]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub Actions から ECR に Docker イメージを push する]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-ecr-push-image</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/dagger-go-sdk</guid>
             <pubDate>Tue, 20 Dec 2022 10:00:09 GMT</pubDate>
             <content:encoded><![CDATA[CI/CD Advent Calendar 2022 の 20 日目の記事です。https://qiita.com/advent-calendar/2022/cicd先日「3-shake SRE Tech Talk 2022 クリスマス直前会！」というイベントで Dagger についての話をしてきました。この記事では上記イベントで発表した内容+αについて改めてまとめます。 Dagger とはhttps://dagger.io/Dagger はコンテナで実行されるパイプラインを構築するプログラマブルな CI/CD エンジンです。Docker の創始者である Solomon ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Reckonerを使ってGitHub名寄せ表をつくってみた]]></title>
-            <link>https://blog.jigyakkuma.org/2022/12/19/reckoner-howto/</link>
-            <guid>https://blog.jigyakkuma.org/2022/12/19/reckoner-howto/</guid>
-            <pubDate>Sun, 18 Dec 2022 15:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 19日目の記事です。dogggggoさんによる Config Controller でポリシー制御をしながら Google Cloud のリソースを管理するでした。いきなりですが、Reckonerをご存知でしょうか。3-shakeが提供しているノーコード型ETLツール/データ連携ツールです。ベンチャー企業の課題Reckonerに触れる前に経緯や前段の話を少しします。Reckonerを触ってみるさぁReckonerを触っていくぞ！となったものの、いきなりチーム単位で導入して使っていくのは難しいというのは経験上わかっていました。新しいことやるのにパワーは必要です。最初が肝心なので勢いよく開発メンバーのいるSlackチャンネルに突撃しました。ユーザー目線でReckonerを触ってみてわかった機能は以下。接続できるアプリケーションがあらかじめ用意されている接続できるアプリケーションは認証情報を設定するだけでデータを引っ張ってくることができる対応していないアプリケーションやサービスはHTTPリクエストを書くことができるHTTPレスポンスはcsvやJSON形式で扱うことができ、JSON Pathsでパースすることができる接続できるアプリケーションにはGoogle Spreadsheetを始め、DWHやDB、KintoneやSlackなんかも使えたりします。いくつかのHTTPリクエストを試してみて認証付きAPIを叩けることが確認できたのでサンプルで何か作ってみようかなーと考えたのですが、情シスのHello Worldをやることにしました。GitHub名寄せ表です。GitHub名寄せ表をReckonerでつくってみるではお題が決まったところでさっそくつくっていきましょう。GitHub APIを叩くGoogle Spreadsheetに書き込むGitHub APIを叩くところを用意Reckonerのワークフローを開き、HTTPを配置すると入力画面が出てくるので必要な情報を入れます。必要なヘッダについてはこちら。            APIエンドポイントやヘッダのパラメータ            JSON Pathsはこんな感じで書きますプレビューで設定したパラメータでレスポンスが受け取れているかが確認できるので、よければ保存しておきます。            APIリクエストが成功すれば結果が表示されますこれでGitHubのmembersが取れるようになりました。Google Spreadsheetの準備まずはGitHubアカウントを書き込むためのGoogle Spreadsheetを準備しておきます。            スプレッドシートIDはGoogle SpreadsheetのURLから取得したものを入れます            APIリクエストが成功すれば結果が表示されますOrganizationに入れたGitHubアカウントを追記するようにするしかしながら、ここまでで用意したものだとAPIで取れたデータを毎回上書きすることになってしまって使い物になりません。ReckonerはETLなのでデータの加工も当然ながらできます。今回はGoogle SpreadsheetとGitHub APIの差分を取って、それをInsertするようにします。            変換の差分機能を使います差分機能を使うことで新たにInviteされたGitHubアカウントを抽出することができます。            データ取得 → 差分 → Insertのフロー完成こうすることで日々運用でOrganizationにGitHubアカウントを追加してもSpreadSheetに書き込まれます。            InsertされたGitHubアカウントにメールアドレスを添えてあげれば名寄せ表は完成見事ノーコードでGitHub名寄せ表がつくれましたね。最初は使い方を覚える必要がありますが、それさえ出来てしまえば欲しいデータが簡単につくれました。いかがでしたでしょうか。簡単ではありますがETLツールReckonerを紹介しました。無料トライアルにチャレンジしてみてください。新料金プランが用意されたようなのでこちらもチェックしてみてください。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KubernetesのマニフェストをCIで検査する方針を考える]]></title>
-            <link>https://zenn.dev/tayusa/articles/ad9fafa197888b</link>
-            <guid>https://zenn.dev/tayusa/articles/ad9fafa197888b</guid>
-            <pubDate>Sat, 17 Dec 2022 03:48:50 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは 3-shake Advent Calendar 2022 17日目の記事です。https://qiita.com/advent-calendar/2022/3-shake 概要以下の気持ちでKubernetesのマニフェストを検査するツールを選定しました。ベストプラクティスに則りたい細かなレビューの手間を省きたいセキュリティリスクを排除したい保守するのが大変なので出来るだけ自分でポリシーは書きたくない。書くとしても書きやすい方法で記述したい 検査ツールの選定以下のツールからカテゴリ別に選定することにしました。スキーマ検査kubeval...]]></content:encoded>
         </item>
     </channel>
 </rss>
