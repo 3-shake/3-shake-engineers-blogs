@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 09 Feb 2023 18:33:32 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Feb 2023 18:33:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -26,7 +26,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</guid>
             <pubDate>Thu, 09 Feb 2023 02:33:16 GMT</pubDate>
-            <content:encoded><![CDATA[概要インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT というイベントで『ポストモーテムはじめました』というタイトルで登壇します。これには元記事があって良いポストモーテムを執筆するために必要な5つのポイントです。この記事に対していくつかの加筆修正を行い資料にしました。資料登壇資料になります。 speakerdeck.comあとがきポストモーテムについて考えたり調べたりすればするほど仕組みよりも組織としての心がけが大事だと思った。発表の性質や時間の都合上SREでの話に留めた。いずれ、品質管理についても言及しながらまとめていく活動もしたい。組織を作っていくなら下の二冊はとてもオススメです。失敗を後悔する「恥」として捉えてはいけない。学習する機会と捉え、次に活かせば良い。そのためのスキルが品質管理だ。心理的安全性のつくりかた　「心理的柔軟性」が困難を乗り越えるチームに変える作者:石井遼介日本能率協会マネジメントセンターAmazon失敗の科学 失敗から学習する組織、学習できない組織作者:マシュー・サイドディスカヴァー・トゥエンティワンAmazon参考資料SREとはなにかhttps://sreake.com/blog/what-is-sre/良いポストモーテムを執筆するために必要な5つのポイントhttps://sreake.com/blog/5point-good-postmortem/Part III. Practiceshttps://sre.google/sre-book/part-III-practices/SRE サイトリライアビリティエンジニアリングhttps://www.oreilly.co.jp/books/9784873117911/ウェブオペレーションhttps://www.oreilly.co.jp/books/9784873114934/Postmortem Culture: Learning from Failurehttps://sre.google/sre-book/postmortem-culture/チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよりhttps://www.amazon.co.jp/dp/B00N8J1NPQ]]></content:encoded>
+            <content:encoded><![CDATA[概要インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT というイベントで『ポストモーテムはじめました』というタイトルで登壇します。これには元記事があって良いポストモーテムを執筆するために必要な5つのポイントです。この記事に対していくつかの加筆修正を行い資料にしました。資料登壇資料になります。 speakerdeck.comあとがきポストモーテムについて考えたり調べていくと仕組みよりも組織としての心がけが大事だと思いました。発表の性質や時間の都合上SREでの話に留めたのですが、品質管理についても言及しながらまとめていく活動もしたい。組織を作っていくなら下の二冊はとてもオススメです。失敗を後悔する「恥」として捉えてはいけない。学習する機会と捉え、次に活かせば良い。そのためのスキルが品質管理。心理的安全性のつくりかた　「心理的柔軟性」が困難を乗り越えるチームに変える作者:石井遼介日本能率協会マネジメントセンターAmazon失敗の科学 失敗から学習する組織、学習できない組織作者:マシュー・サイドディスカヴァー・トゥエンティワンAmazon参考資料SREとはなにかhttps://sreake.com/blog/what-is-sre/良いポストモーテムを執筆するために必要な5つのポイントhttps://sreake.com/blog/5point-good-postmortem/Part III. Practiceshttps://sre.google/sre-book/part-III-practices/SRE サイトリライアビリティエンジニアリングhttps://www.oreilly.co.jp/books/9784873117911/ウェブオペレーションhttps://www.oreilly.co.jp/books/9784873114934/Postmortem Culture: Learning from Failurehttps://sre.google/sre-book/postmortem-culture/チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよりhttps://www.amazon.co.jp/dp/B00N8J1NPQ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[GitHub Actions から ECR に Docker イメージを push する]]></title>
