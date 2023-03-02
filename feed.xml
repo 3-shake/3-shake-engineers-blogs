@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 02 Mar 2023 05:20:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Mar 2023 18:36:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub Actions Importer を使って CI/CD を GitHub Actions に移行する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-importer</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-importer</guid>
+            <pubDate>Thu, 02 Mar 2023 08:10:59 GMT</pubDate>
+            <content:encoded><![CDATA[GitHub Actions Importer が GA になりました 🎉🎉🎉https://github.blog/2023-03-01-github-actions-importer-is-now-generally-available/GitHub Actions Importer は様々な CI サービスから GitHub Actions への移行をサポートするツールです。他の CI サービスで使用している設定ファイルを元に GitHub Actions ワークフロー定義の YAML ファイルを自動で作成することができます。2023 年 03 月 02 日現在、次の CI...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Snowflakeでのコスト管理]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/ffe6450c4cd851</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/codedeploy-agent-update/</guid>
             <pubDate>Tue, 10 Jan 2023 01:22:39 GMT</pubDate>
             <content:encoded><![CDATA[概要 Auto Scaling Group 内のインスタンスで CodeDeploy を使用する場合、Agent のバージョンアップが手間なので AMI にインストールしない方がよいです。 Systems Manager […]The post CodeDeploy Agent のバージョンアップを自動化する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[HTML/CSS を SVG に変換する Vercel 製のパッケージ「satori」を試してみる]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/satori-usage</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/satori-usage</guid>
-            <pubDate>Mon, 02 Jan 2023 10:42:56 GMT</pubDate>
-            <content:encoded><![CDATA[Next.js では Vercel's Edge Functions を使用して動的に OGP 画像を生成できる @vercel/og という Vercel 製のパッケージが公開されています。https://www.npmjs.com/package/@vercel/ogこの @vercel/og では内部的に satori という HTML/CSS を SVG に変換するパッケージが使用されています。https://www.npmjs.com/package/satori面白そうだったので簡単に試してみたメモです。こういう SVG も簡単に作れます。バッジっぽいやつ ...]]></content:encoded>
         </item>
     </channel>
 </rss>
