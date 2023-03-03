@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 02 Mar 2023 18:36:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Mar 2023 01:59:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[『2023年もSRE再考と叫びなさい!!』というタイトルで登壇しました]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/03/03/105049</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/03/03/105049</guid>
+            <pubDate>Fri, 03 Mar 2023 01:50:49 GMT</pubDate>
+            <content:encoded><![CDATA[概要エンジニア文化祭 2023というイベントに『2023年もSRE再考と叫びなさい‼️ - SREの跡を求めず SREの求めたるところを求めよ』というタイトルで登壇しました。2023年もSRE再考したいなーって思いながらこのタイトルにしました。が、別にSREの方ばかりではなくさまざまな人が聞くイベントじゃーんって思い直してガッツリ資料を作り直しました。吉と出るか京都行くか! 見守ってください。このブログは参考資料を共有するために作ったのであとから再編集する可能性が高いです資料登壇資料になります。 speakerdeck.com参考資料SRE サイトリライアビリティエンジニアリングが”ザックリ”「すっきり」分かる本: Googleが実践している新DevOps方法論SRE サイトリライアビリティエンジニアリングサイトリライアビリティワークブックWhat's the Difference Between DevOps and SRE?Solving Reliability Fears with Site Reliability EngineeringReliability When Everything Is a Platform: Why You Need to SRE Your Customersネットワーク・エフェクト 事業とプロダクトに欠かせない強力で重要なフレームワークLeanとDevOpsの科学[Accelerate] テクノロジーの戦略的活用が組織変革を加速する継続的デリバリーのソフトウェア工学:もっと早く、もっと良いソフトウェアを作るための秘訣オブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイド反脆弱性[上]――不確実な世界を生き延びる唯一の考え方2022年版 OpenTelemetryを知れば世界が平和に]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub Actions Importer を使って CI/CD を GitHub Actions に移行する]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-importer</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/go-cli-packages</guid>
             <pubDate>Tue, 10 Jan 2023 10:05:41 GMT</pubDate>
             <content:encoded><![CDATA[先日、 cLive というターミナルを自動操作する Go 製のコマンドラインツールを公開しました。https://github.com/koki-develop/clive#readmecLive で JavaScript のライブコーディングをするデモこの記事では Go でイケてる感じの CLI を作るために利用したパッケージを簡単に紹介します。cLive については以下の記事をご参照ください。https://zenn.dev/kou_pg_0131/articles/clive-introduction 利用したパッケージCobra : CLI フレームワーク...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CodeDeploy Agent のバージョンアップを自動化する]]></title>
-            <link>https://sreake.com/blog/codedeploy-agent-update/</link>
-            <guid>https://sreake.com/blog/codedeploy-agent-update/</guid>
-            <pubDate>Tue, 10 Jan 2023 01:22:39 GMT</pubDate>
-            <content:encoded><![CDATA[概要 Auto Scaling Group 内のインスタンスで CodeDeploy を使用する場合、Agent のバージョンアップが手間なので AMI にインストールしない方がよいです。 Systems Manager […]The post CodeDeploy Agent のバージョンアップを自動化する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
