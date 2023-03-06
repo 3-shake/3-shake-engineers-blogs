@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 05 Mar 2023 18:32:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Mar 2023 18:34:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Notion API を使用してデータベースを操作する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/notion-api-usage</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/notion-api-usage</guid>
+            <pubDate>Mon, 06 Mar 2023 09:13:09 GMT</pubDate>
+            <content:encoded><![CDATA[Notion で Integration を作成して Notion API を使用してデータベースを操作するまでの手順メモ。 準備 1. Integration を作成するMy integrations ページに遷移します。Create new integration をクリックします。Name には任意の Integration 名を入力します。今回は Example Integration としておきます。Associated workspace には Integration をインストールするワークスペースを選択します。自身がワークスペースの Admin レベ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[振り返り (2020 - 2022)]]></title>
             <link>https://zenn.dev/toversus/articles/8557a7fb2bc15c</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2023/01/xmllint-html-xpath/</guid>
             <pubDate>Thu, 12 Jan 2023 14:40:51 GMT</pubDate>
             <content:encoded><![CDATA[サクッと shell script で HTML の中の何かを取り出したい時があります。 そんな時に使えるのが xmllint. しっかりやるなら python の Beautiful Soup を使ったりしますが、本当に簡単なことを簡単にやりたい場合に xmllint]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[MongoDB Atlas の紹介]]></title>
-            <link>https://sreake.com/blog/mongodb-atlas/</link>
-            <guid>https://sreake.com/blog/mongodb-atlas/</guid>
-            <pubDate>Wed, 11 Jan 2023 23:57:02 GMT</pubDate>
-            <content:encoded><![CDATA[MongoDB Atlas とは MongoDB Atlas (以下 Atlas という)は、MongoDB Inc.によって作られた MongoDB の DBaaS(DB as a Service) です。 Atlas […]The post MongoDB Atlas の紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
