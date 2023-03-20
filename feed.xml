@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 19 Mar 2023 18:32:05 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Mar 2023 18:33:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[cat コマンド代替の Go 製 CLI 「gat」の紹介]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gat-introduction</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gat-introduction</guid>
+            <pubDate>Mon, 20 Mar 2023 10:10:50 GMT</pubDate>
+            <content:encoded><![CDATA[cat コマンド代替の Go 製コマンドラインツールである gat を作りました。https://github.com/koki-develop/gatgat を使うとファイルの内容をシンタックスハイライトつきで出力することができます。この記事では gat の使い方についてまとめます。インストール使い方仕組み インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ brew install koki-develop/tap/gatもしくは、 gat は Go で作られているため go install を...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Datadog Agent からの Metrics を Victoria Metrics で受ける]]></title>
             <link>https://blog.1q77.com/2023/03/send-datadog-metrics-to-victoriametrics/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/hub-purge-action-usage</guid>
             <pubDate>Mon, 30 Jan 2023 10:22:30 GMT</pubDate>
             <content:encoded><![CDATA[GitHub では README などに載せた画像は Camo という画像プロキシ経由で https://camo.githubusercontent.com/... のような URL で配信されるのですが、たまにこれらの画像が長期間キャッシュされてしまうことがあります。例えば僕の GitHub Profile には Badge Generator で作成した Zenn や Qiita のバッジを表示しているのですが、これらの画像が長期間キャッシュされて正しい数値が表示されていないことがありました。GitHub Profileこれらの画像キャッシュをクリアするシェルスクリプトなど...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitLabで指定したグループ内の全てのリポジトリを一括でcloneする]]></title>
-            <link>https://zenn.dev/tayusa/articles/ae5911391c9440</link>
-            <guid>https://zenn.dev/tayusa/articles/ae5911391c9440</guid>
-            <pubDate>Sun, 29 Jan 2023 17:07:31 GMT</pubDate>
-            <content:encoded><![CDATA[概要1個1個丹精込めて手動でcloneすることに限界を感じたので、一括で自分に関連するリポジトリをcloneする シェルスクリプト.zshrc# リポジトリのディレクトリを作成してからcloneする# 第1引数 URL(https://gitlab.example.com/diaspora/diaspora-client.git)function git_clone_to_path() {  [[ -z ${commands[git]} ]] \    && { echo 'git is required'; return 1; }  loca...]]></content:encoded>
         </item>
     </channel>
 </rss>
