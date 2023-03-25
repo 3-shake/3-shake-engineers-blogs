@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 24 Mar 2023 18:32:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Mar 2023 18:31:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[jq commandの select でハマった話]]></title>
+            <link>https://zenn.dev/satohjohn/articles/79faafa55e9a1e</link>
+            <guid>https://zenn.dev/satohjohn/articles/79faafa55e9a1e</guid>
+            <pubDate>Sat, 25 Mar 2023 16:36:44 GMT</pubDate>
+            <content:encoded><![CDATA[結論配列のjsonに対してselectする際には、配列を一度オブジェクトの抽出をしないと複製されてしまう。なので、以下ではなくjq -r  'select(.[].A | contains("特定文字列")) | .[].B' test.jsonこうしないといけないjq -r  '.[] | select(.A | contains("特定文字列")) | .B' test.json 環境$ jq --version   jq-1.6 詰まった内容以下のjson(test.json)があったときにtest.json[    {        "hog...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ふと、思いだしたときに確認するって大事ですね、という話]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/174811e1685df2</link>
@@ -230,13 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</guid>
             <pubDate>Thu, 09 Feb 2023 02:33:16 GMT</pubDate>
             <content:encoded><![CDATA[概要インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT というイベントで『ポストモーテムはじめました』というタイトルで登壇しました。この登壇には元記事があって良いポストモーテムを執筆するために必要な5つのポイントです。この記事に対していくつかの加筆修正を行い資料にしました。資料登壇資料になります。 speakerdeck.comあとがきポストモーテムについて考えたり調べていくと仕組みよりも組織としての心がけが大事だと思いました。発表の性質や時間の都合上SREでの話に留めたのですが、品質管理についても言及しながらまとめていく活動もしたい。組織を作っていくなら下の2冊はとてもオススメです。心理的安全性のつくりかた　「心理的柔軟性」が困難を乗り越えるチームに変える作者:石井遼介日本能率協会マネジメントセンターAmazon失敗の科学 失敗から学習する組織、学習できない組織作者:マシュー・サイドディスカヴァー・トゥエンティワンAmazon品質管理についてはこちらを参考にしました。失敗を後悔する「恥」として捉えてはいけない。学習する機会と捉え、次に活かせば良い。そのためのスキルが品質管理。ビジュアル品質管理の基本 第5版作者:内田 治日経BPマーケティング(日本経済新聞出版Amazon登壇した御礼をいただいた。『インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT』というイベント登壇の御礼品をいただけました。　#LT_findy pic.twitter.com/9ll5ig0ZjA— nwiizo (@nwiizo) 2023年2月21日  参考資料SREとはなにかhttps://sreake.com/blog/what-is-sre/良いポストモーテムを執筆するために必要な5つのポイントhttps://sreake.com/blog/5point-good-postmortem/Part III. Practiceshttps://sre.google/sre-book/part-III-practices/SRE サイトリライアビリティエンジニアリングhttps://www.oreilly.co.jp/books/9784873117911/ウェブオペレーションhttps://www.oreilly.co.jp/books/9784873114934/Postmortem Culture: Learning from Failurehttps://sre.google/sre-book/postmortem-culture/チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよりhttps://www.amazon.co.jp/dp/B00N8J1NPQ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions から ECR に Docker イメージを push する]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-ecr-push-image</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-ecr-push-image</guid>
-            <pubDate>Wed, 08 Feb 2023 10:03:48 GMT</pubDate>
-            <content:encoded><![CDATA[備忘録。 サンプルコード今回紹介するサンプルコードは以下のリポジトリで管理しています。https://github.com/koki-develop/github-actions-ecr-push-example 準備 1. GitHub Actions 用の ID プロバイダと IAM ロールを作成するGitHub Actions で OIDC を使用して AWS 認証を行うために、下記ドキュメントを参考に ID プロバイダと IAM ロールを作成します。https://zenn.dev/kou_pg_0131/articles/gh-actions-oidc-aw...]]></content:encoded>
         </item>
     </channel>
 </rss>
