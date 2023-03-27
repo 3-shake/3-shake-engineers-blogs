@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 26 Mar 2023 18:31:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Mar 2023 18:33:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Go 製のタイピングゲーム「Typingo」を作った]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</guid>
+            <pubDate>Mon, 27 Mar 2023 09:29:52 GMT</pubDate>
+            <content:encoded><![CDATA[Typing + Go = Typingo という語呂のいい名前が思いついてしまったので勢いで作りました。これが俗に言う命名駆動開発 ( NDD: Name-Driven Development ) です。https://github.com/koki-develop/typingoこの記事では Typingo のインストール方法から遊び方、利用技術を簡単に紹介します。インストール遊び方利用技術 インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ $ brew install koki-develop...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[PagerDuty で一定期間アラートを抑制する]]></title>
+            <link>https://zenn.dev/toshikish/articles/6958af565e6c65</link>
+            <guid>https://zenn.dev/toshikish/articles/6958af565e6c65</guid>
+            <pubDate>Mon, 27 Mar 2023 08:38:39 GMT</pubDate>
+            <content:encoded><![CDATA[PagerDuty でアラートを受け取っているプロジェクトで，以下のようにある時間帯はアラートを止めたいケースがあります。メンテナンスが予定されている。開発環境は営業時間内だけ動かすので，平日夜や土日祝日は止めたい。何も対策しないとアラートが鳴ってしまい，オンコール担当者を不用意に呼び出す結果になるので，そうならないようにきちんと設定します。 TL;DR各ケースで以下のように設定します。メンテナンス→メンテナンスウィンドウを設定平日夜・土日停止→曜日・時刻ベースのイベントルールを追加 方法1：メンテナンスウィンドウメンテナンスなどでダウンする時間帯があらかじ...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DBマイグレーションを手動コマンド実行からCloud Run Jobsに移行した話]]></title>
+            <link>https://qiita.com/bayobayo0324/items/352d8bbb1bd7bcce8844</link>
+            <guid>https://qiita.com/bayobayo0324/items/352d8bbb1bd7bcce8844</guid>
+            <pubDate>Mon, 27 Mar 2023 00:23:32 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにDBマイグレーションをステージングや本番環境に適用すること、またCI/CDに組み込んで自動化するのはバックエンド／サーバーサイド開発で必ずといっていいほど通る道です。開発体制やフェーズ、…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[jq commandの select でハマった話]]></title>
             <link>https://zenn.dev/satohjohn/articles/79faafa55e9a1e</link>
@@ -216,27 +237,6 @@
             <guid>https://sreake.com/blog/aws-ssm-automation/</guid>
             <pubDate>Thu, 16 Feb 2023 02:40:28 GMT</pubDate>
             <content:encoded><![CDATA[AWS Systems Manager（SSM）では運用に役立つ機能が提供されています。 ただし、提供されている機能が多く、今まで使用した経験があるのは一部の機能に限られていましたので、どのようなことができるのか調べてみ […]The post 運用の効率化を支える AWS Systems Manager Automation の紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions でプライベートリポジトリを checkout する]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/gh-actions-checkout-private-repo</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-checkout-private-repo</guid>
-            <pubDate>Mon, 13 Feb 2023 09:40:56 GMT</pubDate>
-            <content:encoded><![CDATA[GitHub Actions で別のプライベートリポジトリを checkout する方法のメモ。 サンプルコードこの記事で紹介するサンプルコードは以下のリポジトリで管理しています。https://github.com/koki-develop/gh-actions-checkout-private-repo-example 前置きこのドキュメントでは次の 2 通りの方法についてまとめます。Deploy keys を使う方法Personal Access Token を使う方法いずれの方法も GitHub Actions ワークフローを作成するリポジトリと chec...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Caddy の Internal TLS 証明書の有効期間を指定する]]></title>
-            <link>https://blog.1q77.com/2023/02/caddy-internal-tls-cert-lifetime/</link>
-            <guid>https://blog.1q77.com/2023/02/caddy-internal-tls-cert-lifetime/</guid>
-            <pubDate>Thu, 09 Feb 2023 14:29:32 GMT</pubDate>
-            <content:encoded><![CDATA[以前 ワンライナーで https の Reverse Proxy を実行する という記事で Caddy を使うと local での開発用に任意のドメインの証明書を簡単に発行できるし CA の証明書も OS の証明書ストアに保存してくれるた]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[『ポストモーテムはじめました』というタイトルで登壇しました。]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/09/113316</guid>
-            <pubDate>Thu, 09 Feb 2023 02:33:16 GMT</pubDate>
-            <content:encoded><![CDATA[概要インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT というイベントで『ポストモーテムはじめました』というタイトルで登壇しました。この登壇には元記事があって良いポストモーテムを執筆するために必要な5つのポイントです。この記事に対していくつかの加筆修正を行い資料にしました。資料登壇資料になります。 speakerdeck.comあとがきポストモーテムについて考えたり調べていくと仕組みよりも組織としての心がけが大事だと思いました。発表の性質や時間の都合上SREでの話に留めたのですが、品質管理についても言及しながらまとめていく活動もしたい。組織を作っていくなら下の2冊はとてもオススメです。心理的安全性のつくりかた　「心理的柔軟性」が困難を乗り越えるチームに変える作者:石井遼介日本能率協会マネジメントセンターAmazon失敗の科学 失敗から学習する組織、学習できない組織作者:マシュー・サイドディスカヴァー・トゥエンティワンAmazon品質管理についてはこちらを参考にしました。失敗を後悔する「恥」として捉えてはいけない。学習する機会と捉え、次に活かせば良い。そのためのスキルが品質管理。ビジュアル品質管理の基本 第5版作者:内田 治日経BPマーケティング(日本経済新聞出版Amazon登壇した御礼をいただいた。『インシデントにどう対応してきたか？みんなで学ぶポストモーテム Lunch LT』というイベント登壇の御礼品をいただけました。　#LT_findy pic.twitter.com/9ll5ig0ZjA— nwiizo (@nwiizo) 2023年2月21日  参考資料SREとはなにかhttps://sreake.com/blog/what-is-sre/良いポストモーテムを執筆するために必要な5つのポイントhttps://sreake.com/blog/5point-good-postmortem/Part III. Practiceshttps://sre.google/sre-book/part-III-practices/SRE サイトリライアビリティエンジニアリングhttps://www.oreilly.co.jp/books/9784873117911/ウェブオペレーションhttps://www.oreilly.co.jp/books/9784873114934/Postmortem Culture: Learning from Failurehttps://sre.google/sre-book/postmortem-culture/チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよりhttps://www.amazon.co.jp/dp/B00N8J1NPQ]]></content:encoded>
         </item>
     </channel>
 </rss>
