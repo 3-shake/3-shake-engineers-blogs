@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 28 Mar 2023 18:32:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Mar 2023 18:35:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Shell ScriptをGo言語に書き直す際に役立つ100本ノックなるものを作り始めた。]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/03/30/011930</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/03/30/011930</guid>
+            <pubDate>Wed, 29 Mar 2023 16:19:30 GMT</pubDate>
+            <content:encoded><![CDATA[概要システム運用者として働く中で、システムの自動化について考える際、まずはShell Scriptによる自動化が思い浮かびます。しかし、より効率的な方法として、2023年にはシステム運用者がGo言語を学ぶことを提案します。Go言語は、システム運用においてShell Scriptを置き換える可能性を秘めており、その習得がスムーズに進めば、運用者のスキルセットも大幅に向上するでしょう。そこで、このブログでは、システム運用で利用しているShell ScriptをGo言語に書き換える際に役立つ「100本ノック」の問題を紹介します。この問題を解くことで、運用者がGo言語の基本的な構文や機能に慣れることができ、より効率的なシステム運用が期待できます。まずは、Go言語がシステム運用者にとってなぜ魅力的なのか、その理由をいくつか挙げてみましょう。Go言語は、並行処理やエラー処理などの強力な機能を備えており、システム運用においてこれらの機能が非常に役立ちます。また、Go言語はコンパイル言語であるため、実行速度が速く、リソース消費も抑えられるという利点があります。次に、この「100本ノック」の問題について詳しく解説していきます。問題は、Go言語の基本的な構文や機能を網羅しており、運用者がGo言語の特性を理解し、実践的なスキルを身につけることができます。例えば、文字列操作やファイル入出力、構造体やインターフェースなど、Go言語の基本的な概念を学ぶことができます。また、この「100本ノック」では、実際のシステム運用で利用されるシナリオを想定した問題が多数含まれており、運用者がGo言語を習得しながら具体的なシステム運用の課題を解決できるようになります。これにより、運用者は効率的にGo言語のスキルを身につけることができるでしょう。この「100本ノック」の問題を解いていく中で、得た知識をシステム運用の現場で活用し、自身のスキルを磨いていくことが最終的な目標です。では、システム運用者がGo言語を学ぶための「100本ノック」の問題を紹介しました。これらの問題を解くことで、運用者はGo言語の基本的な構文や機能に慣れ、システム運用の効率化やスキルセットの向上が期待できます。ぜひ、Go言語の学習にチャレンジし、よりスマートなシステム運用を目指しましょう。というわけでこちらにリポジトリを作成しました。10問目までは作っていっているのでコツコツやっていきます。github.com]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[kube-proxy の externalTrafficPolicy=Local の改善]]></title>
+            <link>https://zenn.dev/toversus/articles/6eeb3b708bdff3</link>
+            <guid>https://zenn.dev/toversus/articles/6eeb3b708bdff3</guid>
+            <pubDate>Wed, 29 Mar 2023 01:31:20 GMT</pubDate>
+            <content:encoded><![CDATA[tl;dr;Service type LoadBalancer の externalTrafficPolicy: Local は、Kubernetes 1.26 まで Pod のローリング更新時にトラフィックが喪失する問題があるので注意kubernetes-sigs/cloud-provider-kind は、ローカル環境でクラウドリソース (現在は LB のみ) が絡む処理をシミュレートできて便利GKE Dataplane v2 を利用している場合、GKE 1.26.1 時点で Cilium に externalTrafficPolicy: Local の改善が入ってい...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Go 製のタイピングゲーム「Typingo」を作った]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</link>
@@ -223,20 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/18/201252</guid>
             <pubDate>Sat, 18 Feb 2023 11:12:52 GMT</pubDate>
             <content:encoded><![CDATA[概要【今更聞けない】Linuxのしくみ - Forkwell Library #16 というイベントに『自由研究には向かないウェブオペレーション - サイト運用管理を取り巻く環境の変化 Cloud Native時代に考えるLinux オペレーション』というタイトルで登壇しました。自由研究には向かないウェブオペレーションというのは2023年において我流でウェブオペレーションをやっていく限界があるという思いがあってこのタイトルにしました。が、タイトルが仰々しすぎて資料作成にとても時間がかかりました。資料登壇資料になります。 speakerdeck.comあとがき上記では我流でウェブオペレーションをやっていく限界があると言ってました。が、自由研究には向かない殺人という小説を直近で読んでいて依頼されたのでタイトルを拝借しただけでした。ウェブオペレーションに関していうとパブリッククラウドやIaCその他諸々の文化の登場や発展により2010年よりは洗練されていて実は知識体系を構築しようと思えばいくつかの括りでできたりするんじゃないかなと思って酔っ払った勢いでまとめてみた。ができたものを朝確認すると公開する自信がなかったのでやめておきました。どこかで修正して発表したいと思います。最近のアプリケーションはクラウド上のLinuxでビルドしてクラウド上のLinux でデプロイしてクラウド上のLinuxで動かすので結局様々な知識が求められるよって話でした。あと、関係ないのですが今回の登壇のためにAWSで実現するモダンアプリケーション入門を読みました。AWSを使わなくても具体的にモダンアプリケーションのインフラを考えるのにとても良い本だったので一緒にオススメしておきます。参考資料ウェブオペレーション［試して理解］Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識【増補改訂版】スーパーユーザーなら知っておくべきLinuxシステムの仕組み詳解 システム・パフォーマンス 第2版オブザーバビリティ・エンジニアリングAWSで実現するモダンアプリケーション入門 〜サーバーレス、コンテナ、マイクロサービスで何ができるのか継続的デリバリーのソフトウェア工学　もっと早く、もっと良いソフトウェアを作るための秘訣チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよ心理的安全性のつくりかた]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Helm Chart の歩き方 導入前に読みたいドキュメントについて]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/02/16/141433</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/16/141433</guid>
-            <pubDate>Thu, 16 Feb 2023 05:14:33 GMT</pubDate>
-            <content:encoded><![CDATA[Helm  を導入する前にChartについて読んでおいてほしいドキュメントをまとました。Chart の作成各ファイルの説明についてChart.yamlvalues.yaml.helmignoretemplate/templates/NOTES.txttemplates/_helpers.tplHelm について知るHelm Template Language の記法values.yaml へのアクセスHelm Template で利用できる関数Helm Chart で利用できる制御構文Named Templates を用いて一つのページで定義していく空白を管理する - の話Helm Chart をよくしていくHelm Chart のデバッグHelm Chart のリファクタリングHelm Chart のテストHelm Chart のリポジトリ化さいごに参考資料Chart の作成helm create でHelm Chart を作成します。Chart とは、Kubernetes リソースのまとまりを定義するファイル群のことです。helm create で構築したもの雛形はここでできます。中身を見れればなんとなく動きもわかるかもしれないので実際に手を動かしながら読んでもらえると嬉しいです。$ helm create mychartCreating mychart$ tree -a ./mychart./chart-namemychart/├── .helmignore├── Chart.yaml├── charts├── templates│   ├── NOTES.txt│   ├── _helpers.tpl│   ├── deployment.yaml│   ├── hpa.yaml│   ├── ingress.yaml│   ├── service.yaml│   ├── serviceaccount.yaml│   └── tests│       └── test-connection.yaml└── values.yamlこれにより、mychart ディレクトリが作成されます。特別なことがなければ基本的にはこれをベースに作成していくことになると思います。Helm CreateVim にもプラグイン があるので利用しているエディターごとに入れていただければと思います。各ファイルの説明について作成した mychart ディレクトリに移動して、Chart の設定を編集します。Chart.yamlChart.yaml は、作成した Chart のメタ情報を管理するファイルです。幾つかの必須パラメーターと追加のパラメーターがあります。詳細は公式のドキュメントを読んでください。Chart.yamlvalues.yamlvalues.yaml は、Helm Template Language で利用する変数の、デフォルト値を指定したファイルです。上書きしたい時は別途指定してあげます。チャート内のvalues.yamlファイルサブチャートの場合、親チャートのvalues.yamlファイルhelm install または helm upgrade に -f フラグを付けて渡した場合の values ファイル (helm install -f myvals.yaml ./mychart)set で渡される個々のパラメータ (helm install --set foo=bar ./mychart のように)Values Files.helmignoreChart をリポジトリ化する際には、作成したファイル一式を helm package コマンドを利用して tar ファイルにするのですが、.helmignore を利用すると、その tar ファイルに含めたくないファイルを指定できるようなります。The .helmignore filetemplate/templates/ はテンプレートファイル用のディレクトリです。テンプレートとして利用するファイルが納入されています。A First Templatetemplates/NOTES.txttemplates/NOTES.txt は、Chart をインストールやアップデートした時にターミナル上で表示される文言を記述できます。アクセスすべきURLやリリース結果が見れるものを記載したりしてます。{{ .Chart.Name }} や {{ .Chart.Version }} といった記述できます、これが Helm Template Language となります。Helm Template Language の記法については後述。Creating a NOTES.txt Filetemplates/_helpers.tpltemplates/\_helpers.tpl は、マニフェストファイルではなく、マニフェストファイル内で利用されるグローバル変数（Helm では Named Template と呼ばれます）を定義したファイルとなります。Using "Partials" and Template IncludesHelm について知るHelm Template Language の記法コメントは # の他、{{/*...*/}}のような記法を利用できます。# を利用したコメントはデバッグモードで表示される、という違いがあります。Comments (YAML Comments vs. Template Comments)values.yaml へのアクセスBuilt-in Object とは、Helm Template Lunguage で利用できるオブジェクトというかインスタンスとなります。values.yaml 等に定義した値を取得するには、Values オブジェクト内のインスタンス変数 なになに にアクセスする、みたいな感じで利用するイメージとなります。Release のほか、Valuesや Chart といった Built-in Object を利用しています。Values は、values.yaml に定義された値へアクセスできるオブジェクトです。Chart は、Chart.yaml に定義された値へアクセスできるオブジェクトです。Built-in ObjectsHelm Template で利用できる関数Helmファイルを書いていくとこうしたいあぁしたいとなると思うのですがHelm Template Language 内では、様々な関数がビルトインされています。Helmは60以上の利用可能な関数を持っています。そのうちのいくつかは、Go Tepｍplate自体で定義されています。{{ .Release.Name | quote }} という記述があったとして、.Release.Name という値に対して、パイプを介し、 quote という引用符を付与する関数を実行しているものになります。こんな感じで、実行したい関数をパイプを介して記述していくことなります。Template Function ListHelm Chart で利用できる制御構文Helm には制御構造が利用できます。 これは、テンプレートの生成の流れを制御する機能を提供します。制御構文は、以下が用意されています。if/else for creating conditional blockswith to specify a scoperange, which provides a "for each"-style loopちなみにGo Tepｍplate自体で定義されています。Flow ControlNamed Templates を用いて一つのページで定義していく名前付きテンプレートとは、単にファイルの中で定義され、名前が付けられたテンプレートのことです。Named Template は、{{ define }} ... {{ end }} アクションで定義を行い、{{ template }} や {{ include }} アクションで、その値を利用することになります。Named Templatesちなみに{{ template }} でなく、 {{ include }} しないと、パイプを介した関数の実行できないため、{{ include }} が良い。Using the 'include' Function空白を管理する - の話まず、テンプレート宣言の中括弧の構文を特別な文字で変更し、テンプレートエンジンに空白を切り詰めるように指示する。{{- xxx }} や {{ XX -}}とかで出てきているハイフンですが、これは Helm Template Lunguate を利用した行の空白を管理するものです。ハイフンの有無により空白の除去を実行してくれます。空白を消したあとにindentを追加するような形で利用したりもします。Helm Chart をよくしていくHelm Chart をデバッグしたりリファクタリングする時のヒントを書いていきます。Helm Chart のデバッグHelm Chart ではデバッグする方法をいくつか用意しています。Debugging Templateshelm lint は、Chart がベストプラクティスに沿っているかを確認するためのツールです。helm template --debug はローカルでChart template のレンダリングをテストします。困ったらこれでyaml を直接、確認します。helm install --dry-run --debugは、サーバーがテンプレートをレンダリングし、その結果のマニフェストファイルを返すという素晴らしい方法です。helm get manifestは、サーバーにインストールされているテンプレートを確認する良い方法です。Helm Chart のリファクタリングHelm Chart の品質をあげるためのヒントとコツをいくつか取り上げられています。テンプレートの関数を知り有用と判断すれば利用する文字列を引用する、整数を引用しない。これは絶対に頼む。1つのコマンドでリリースをインストールまたはアップグレードChart Development Tips and TricksHelm Chart のテストtemplates/tests/ ディレクトリ配下においたマニフェストファイルは、helm testコマンドにより実行することができます。Chart TestsHelm Chart のリポジトリ化リポジトリ化するには、index.yaml というファイルとChart 一式を固めた tar ファイルを静的 Web ホスティングサイトにアップロードすることで実現されます。The Chart Repository Guideさいごにこれもあれば読んでほしいという内容があれば名前付きで掲載させていただくので連絡いただきたいです。参考資料Helm Docs | Getting Started]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[運用の効率化を支える AWS Systems Manager Automation の紹介]]></title>
-            <link>https://sreake.com/blog/aws-ssm-automation/</link>
-            <guid>https://sreake.com/blog/aws-ssm-automation/</guid>
-            <pubDate>Thu, 16 Feb 2023 02:40:28 GMT</pubDate>
-            <content:encoded><![CDATA[AWS Systems Manager（SSM）では運用に役立つ機能が提供されています。 ただし、提供されている機能が多く、今まで使用した経験があるのは一部の機能に限られていましたので、どのようなことができるのか調べてみ […]The post 運用の効率化を支える AWS Systems Manager Automation の紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
