@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 29 Mar 2023 18:35:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Mar 2023 18:30:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -33,7 +33,7 @@
             <link>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</link>
             <guid>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</guid>
             <pubDate>Mon, 27 Mar 2023 09:29:52 GMT</pubDate>
-            <content:encoded><![CDATA[Typing + Go = Typingo という語呂のいい名前が思いついてしまったので勢いで作りました。これが俗に言う命名駆動開発 ( NDD: Name-Driven Development ) です。https://github.com/koki-develop/typingoこの記事では Typingo のインストール方法から遊び方、利用技術を簡単に紹介します。インストール遊び方利用技術 インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ $ brew install koki-develop...]]></content:encoded>
+            <content:encoded><![CDATA[Typing + Go = Typingo という語呂のいい名前が思いついてしまったので勢いで作りました。これが俗に言う命名駆動開発 ( NDD: Name-Driven Development ) です。https://github.com/koki-develop/typingoこの記事では Typingo のインストール方法から遊び方、利用技術を簡単に紹介します。インストール遊び方利用技術 インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ brew install koki-develop/t...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[PagerDuty で一定期間アラートを抑制する]]></title>
