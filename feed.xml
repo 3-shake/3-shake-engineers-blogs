@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 30 Mar 2023 18:30:51 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Mar 2023 18:30:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[[3-shakeインターンブログ] Datadog RUM について調査してみた]]></title>
+            <link>https://sreake.com/blog/datadog-rum/</link>
+            <guid>https://sreake.com/blog/datadog-rum/</guid>
+            <pubDate>Fri, 31 Mar 2023 06:18:38 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに はじめまして、スリーシェイクの Sreake 事業部インターン生の大島康暉です。Sreake 事業部は SRE 関連技術に強みを持つエンジニアによるコンサルテーションサービスを提供する事業部であり、今回 SRE […]The post [3-shakeインターンブログ] Datadog RUM について調査してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[愛ゆえにお前はLunarVimを使わねばらなぬ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/03/31/111030</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/03/31/111030</guid>
+            <pubDate>Fri, 31 Mar 2023 02:10:30 GMT</pubDate>
+            <content:encoded><![CDATA[https://www.lunarvim.org/ より引用はじめに1年前にVimからNeovimへの旅立ちを行った私は、新たなエディタの世界に足を踏み入れることに興奮を覚えました。Vimという古き良き時代のエディタから、Neovimという最先端の技術を取り入れた新世代のエディタへと変わる過程は、まさに開拓者の心構えだった。この旅立ちを経て、私はVimの持っていた独自の魅力をさらに進化させ、よりパワフルで柔軟なエディタを手に入れることができました。それはまるで、愛するパートナーと共に新たなステージへと進むような感覚であり、私たちの愛は今もなお深まり続けています。Neovimによって、私たちのエディタに対する愛は一層深まりました。そして、その愛をさらに高めるためにLunarVimという新たな選択肢が私たちの前に現れました。愛ゆえに人はLunarVimを使わねばらなぬ、そんな想いで私たちは次のステージへと進んでいきます。syu-m-5151.hatenablog.com最初に選んだのはしかし、運命のいたずらか、とある事情で新たなエディタ設定を求めて再び旅立つことを決意しました。github.com当初私はNeovim + coc.nvim + (Neo)vim Plugin で初期構想を考え手を動かしてましたが、結果として断念しました。理由として、今夜中に変更したかったこと。既存のプラグインに、そんなに力を入れていなかったこと。深夜テンションで入れ替えを行なった為に、下調べが足らずにプラグインの選定や大量に入れたプラグインの起動時間の短縮などがめっ… 難しかったからです。よい設定を求めてインターネットをさすらっているとvim-config なるリポジトリに出会いました。欲しかったプラグインがほとんど入っており、何より先ほどまで苦戦していた起動時間が短いという単語に惹かれてすぐに入れて動かしてみましたそれから半年程度なにも問題なく利用しておりました。しかし、開発が終了したことを知り、再び新しいエディタ設定を探す旅に出ることとなりました。そして、その旅の果てにLunarVimという新たな選択肢に辿り着きました。愛ゆえに人はLunarVimを使わねばらなぬ、そんな想いで私たちは次のステージへと進んでいきます。LunarVimを使っていくVSCodeで良くない？という自分の声が大きくなる。そして、止めることができない。分かる。しかし、これは愛である。愛ゆえに俺はVimを使うのです。また、LunarVim は、カスタマイズ性が高く自分にしか持てない剣を鍛えていく擬似的な感覚もあり一緒に強くなれそうな感覚があります。LunarVimを利用することで、開発者は次のようなメリットを享受できます。高いカスタマイズ性: LunarVimはVimおよびNeovimの拡張性を継承し、ユーザーが自分だけの開発環境を構築できるように設計されています。軽快なパフォーマンス: LunarVimは、最適なパフォーマンスを提供することを目指しており、起動時間の短縮やリソースの効率的な利用が期待できます。豊富なプラグイン: LunarVimは、既存のVimおよびNeovimプラグインに対応しており、機能の追加や拡張が容易に行えます。LunarVimの個人的な設定はこちらです。github.comまた、LunarVimは公式ドキュメントがしっかりしているので上から順に実施していけば基本的な操作については成熟できます。サポートが非常に充実している...。www.lunarvim.org]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Shell ScriptをGo言語に書き直す際に役立つ100本ノックなるものを作り始めた。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/03/30/011930</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/aws-iot-rule-to-timestream</guid>
             <pubDate>Mon, 20 Feb 2023 09:32:19 GMT</pubDate>
             <content:encoded><![CDATA[メッセージを Timestream に保存する IoT ルールを作成して MQTT テストクライアントで動作確認するまでの手順メモ。 手順 1. Timestream データベースを作成するTimestream データベースを作成していきます。Amazon Timestream のマネジメントコンソールで左メニューから データベース をクリックし、 データベースを作成 をクリックします。各項目を次のように入力します。項目値設定を選択標準データベース名前任意のデータベース名。今回は example とします。その他の設定は必要に応じて入...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Casbinのポリシーを動的・同期的にRDB管理するときの注意点]]></title>
-            <link>https://qiita.com/bayobayo0324/items/1aa72baafefa2dee5147</link>
-            <guid>https://qiita.com/bayobayo0324/items/1aa72baafefa2dee5147</guid>
-            <pubDate>Mon, 20 Feb 2023 01:26:43 GMT</pubDate>
-            <content:encoded><![CDATA[どんな記事？前回、Casbinで学ぶアクセス制御モデルRBACを書いたあとに、書き足りないなと感じていたので再度Casbinについて書いてみようかと。引き続きCasbinとGoについて、業務で得…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[『自由研究には向かないウェブオペレーション』というタイトルで登壇しました。]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/02/18/201252</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/02/18/201252</guid>
-            <pubDate>Sat, 18 Feb 2023 11:12:52 GMT</pubDate>
-            <content:encoded><![CDATA[概要【今更聞けない】Linuxのしくみ - Forkwell Library #16 というイベントに『自由研究には向かないウェブオペレーション - サイト運用管理を取り巻く環境の変化 Cloud Native時代に考えるLinux オペレーション』というタイトルで登壇しました。自由研究には向かないウェブオペレーションというのは2023年において我流でウェブオペレーションをやっていく限界があるという思いがあってこのタイトルにしました。が、タイトルが仰々しすぎて資料作成にとても時間がかかりました。資料登壇資料になります。 speakerdeck.comあとがき上記では我流でウェブオペレーションをやっていく限界があると言ってました。が、自由研究には向かない殺人という小説を直近で読んでいて依頼されたのでタイトルを拝借しただけでした。ウェブオペレーションに関していうとパブリッククラウドやIaCその他諸々の文化の登場や発展により2010年よりは洗練されていて実は知識体系を構築しようと思えばいくつかの括りでできたりするんじゃないかなと思って酔っ払った勢いでまとめてみた。ができたものを朝確認すると公開する自信がなかったのでやめておきました。どこかで修正して発表したいと思います。最近のアプリケーションはクラウド上のLinuxでビルドしてクラウド上のLinux でデプロイしてクラウド上のLinuxで動かすので結局様々な知識が求められるよって話でした。あと、関係ないのですが今回の登壇のためにAWSで実現するモダンアプリケーション入門を読みました。AWSを使わなくても具体的にモダンアプリケーションのインフラを考えるのにとても良い本だったので一緒にオススメしておきます。参考資料ウェブオペレーション［試して理解］Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識【増補改訂版】スーパーユーザーなら知っておくべきLinuxシステムの仕組み詳解 システム・パフォーマンス 第2版オブザーバビリティ・エンジニアリングAWSで実現するモダンアプリケーション入門 〜サーバーレス、コンテナ、マイクロサービスで何ができるのか継続的デリバリーのソフトウェア工学　もっと早く、もっと良いソフトウェアを作るための秘訣チームが機能するとはどういうことか──「学習力」と「実行力」を高める実践アプローチよ心理的安全性のつくりかた]]></content:encoded>
         </item>
     </channel>
 </rss>
