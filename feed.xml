@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 08 Apr 2023 18:30:22 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 09 Apr 2023 18:30:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[PHPカンファレンス福岡2023に｢State of DevOps 2022を読みながら、組織に適したSREの実践方法を探求する｣というproposalを出しました #phpconfuk ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/04/10/031452</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/10/031452</guid>
+            <pubDate>Sun, 09 Apr 2023 18:14:52 GMT</pubDate>
+            <content:encoded><![CDATA[fortee.jpPHPカンファレンスという舞台に、いかなる因果でDevOpsとSREの話を提案することとなりました。これは、PHPを主題とするカンファレンスでありながら、「PHPじゃないけどどうしても伝えたい話がある！」という寛大な運営方針に導かれたためでございます。そんな折、もし採択される運命に導かれたならば、我々の組織においてDevOpsとSREが如何に役立ち、開発と運用の世界で如何に応用できるか、その真髄をカンファレンスで共有することを目指しております。基本概念を理解し、現状を評価し、適切なプラクティスを選び、効果を測定し、継続的に改善することで、開発と運用の連携が強化され、効率的で信頼性の高いシステムが構築されることをお伝えする所存でございます。多くの優れた提案が集まる中で、我が提案が採択される確率は微かですが、もし運命の導きによって叶うことがあれば、福岡へと凱旋いたします。その時、遥かな地平線の果てに、願いが届くことを切に願っています。どうか、お力をお貸しください。参考PHPカンファレンス福岡2023に｢カンファレンスのつくりかた｣というproposalを出しました - Masteries]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitLab CI で artifacts:reports:dotenv を使って Job をまたいで変数を渡す]]></title>
             <link>https://blog.1q77.com/2023/04/gitlab-ci-artifacts-report-dotenv/</link>
@@ -50,7 +57,7 @@
             <content:encoded><![CDATA[はじめに はじめまして、スリーシェイクの Sreake 事業部インターン生の大島康暉です。Sreake 事業部は SRE 関連技術に強みを持つエンジニアによるコンサルテーションサービスを提供する事業部であり、今回 SRE […]The post [3-shakeインターンブログ] Datadog RUM について調査してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[愛ゆえにお前はLunarVimを使わねばらなぬ]]></title>
+            <title><![CDATA[愛ゆえにお前はVimを使わねばらなぬ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/03/31/111030</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/03/31/111030</guid>
             <pubDate>Fri, 31 Mar 2023 02:10:30 GMT</pubDate>
@@ -230,13 +237,6 @@
             <guid>https://qiita.com/bayobayo0324/items/4b21a71c5fb0e0202fbc</guid>
             <pubDate>Tue, 28 Feb 2023 01:07:37 GMT</pubDate>
             <content:encoded><![CDATA[この記事は？日々の業務のなかで、フロントエンドチームの立場でAPIを利用したりバックエンドAPIチームの立場でAPIを設計実装改修したりする私のポエムみたいなものです。みなさまが日々の業務に疲れ…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Charm 製の Go ロギングライブラリ「Log」を試してみる]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/charm-log-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/charm-log-introduction</guid>
-            <pubDate>Mon, 27 Feb 2023 09:29:55 GMT</pubDate>
-            <content:encoded><![CDATA[Charm 製の Go ロギングライブラリが出たので早速試してみたメモです。https://github.com/charmbracelet/log 検証環境Go v1.20charmbracelet/log v0.1.1 使い方 基本的な使い方以下のメソッドを使うと特定のレベルのログを出力します。log.Debug()log.Info()log.Warn()log.Error()log.Fatal()log.Print() は設定されているログレベルに関係なく出力されます。package mainimport "github.com/cha...]]></content:encoded>
         </item>
     </channel>
 </rss>
