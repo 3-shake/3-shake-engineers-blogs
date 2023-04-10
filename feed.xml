@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 09 Apr 2023 18:30:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Apr 2023 18:31:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[タニタの Health Planet API を使用して測定情報を取得する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/tanita-health-planet-api</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/tanita-health-planet-api</guid>
+            <pubDate>Mon, 10 Apr 2023 09:25:53 GMT</pubDate>
+            <content:encoded><![CDATA[最近タニタの体組成計を買いました。https://www.amazon.co.jp/dp/B07Q2WYL77Health Planet というサービスを利用して測定情報を記録しているのですが、 API が提供されていたので試してみました。https://www.healthplanet.jp/ 前提Health Planet に登録済みであることを前提とします。 1. アプリケーションを登録!Health Planet にログインしていない場合は最初に下記ページからログインしてください。ログインする ｜ Health Planet  ヘルスプラネットアプリ...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes の Probe の仕組みと考慮点]]></title>
+            <link>https://zenn.dev/toversus/articles/5d1292160f5035</link>
+            <guid>https://zenn.dev/toversus/articles/5d1292160f5035</guid>
+            <pubDate>Mon, 10 Apr 2023 02:20:29 GMT</pubDate>
+            <content:encoded><![CDATA[!Kubernetes 1.26 時点の話で、以降のマイナーバージョンで改善されている可能性があります。Kubernetes には、ワークロードの正常性を確認するための Probe という仕組みがあり、Liveness / Readiness / Startup Probe が用意されています。kubelet (Kubernetes のノード上で動作するエージェント) は、ワークロードに対して TCP Socket / HTTP GET / gRPC / Exec の中から指定されたチェックを定期的に実行します。それぞれの Probe の特性を理解して使い分けないとサービスに影響...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[PHPカンファレンス福岡2023に｢State of DevOps 2022を読みながら、組織に適したSREの実践方法を探求する｣というproposalを出しました #phpconfuk ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/04/10/031452</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/gh-actions-importer</guid>
             <pubDate>Thu, 02 Mar 2023 08:10:59 GMT</pubDate>
             <content:encoded><![CDATA[GitHub Actions Importer が GA になりました 🎉🎉🎉https://github.blog/2023-03-01-github-actions-importer-is-now-generally-available/GitHub Actions Importer は様々な CI サービスから GitHub Actions への移行をサポートするツールです。他の CI サービスで使用している設定ファイルを元に GitHub Actions ワークフロー定義の YAML ファイルを自動で作成することができます。2023 年 03 月 02 日現在、次の CI...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Snowflakeでのコスト管理]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/ffe6450c4cd851</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/ffe6450c4cd851</guid>
-            <pubDate>Tue, 28 Feb 2023 10:45:26 GMT</pubDate>
-            <content:encoded><![CDATA[Snowflakeを最近触ってみることがあったので、コスト周りについて個人的に調べたログ参考ドキュメント↓Snowflakeでのコスト管理 | Snowflake Documentation お品書きSnowflakeのコストについてSnowflakeのコスト調査Snowflakeのコスト制御 SnowflakeのコストについてSnowflakeでのコストは次の3つの領域に分類される。コンピューティング: ユーザー管理(仮想ウェアハウス)、Snowflake管理(Snowpipeなどのサーバーレス機能)、およびクラウドサービスストレージ: データステージング...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[APIのエンドポイント設計で気をつけていること~ポエム編~]]></title>
-            <link>https://qiita.com/bayobayo0324/items/4b21a71c5fb0e0202fbc</link>
-            <guid>https://qiita.com/bayobayo0324/items/4b21a71c5fb0e0202fbc</guid>
-            <pubDate>Tue, 28 Feb 2023 01:07:37 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は？日々の業務のなかで、フロントエンドチームの立場でAPIを利用したりバックエンドAPIチームの立場でAPIを設計実装改修したりする私のポエムみたいなものです。みなさまが日々の業務に疲れ…]]></content:encoded>
         </item>
     </channel>
 </rss>
