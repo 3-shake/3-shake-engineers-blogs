@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 11 Apr 2023 18:31:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Apr 2023 18:32:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,7 +15,7 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[ChatGPT:ソフトウェアの問題解決に関する提案プロンプト]]></title>
+            <title><![CDATA[ChatGPT:SREやDevOpsなどのソフトウェアの運用に伴う課題解決に関する提案を行うプロンプト]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</guid>
             <pubDate>Mon, 10 Apr 2023 23:44:28 GMT</pubDate>
