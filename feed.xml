@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 21 Apr 2023 18:31:28 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Apr 2023 18:30:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -222,7 +222,7 @@
             <link>https://zenn.dev/kou_pg_0131/articles/gat-introduction</link>
             <guid>https://zenn.dev/kou_pg_0131/articles/gat-introduction</guid>
             <pubDate>Mon, 20 Mar 2023 10:10:50 GMT</pubDate>
-            <content:encoded><![CDATA[cat コマンド代替の Go 製コマンドラインツールである gat を作りました。https://github.com/koki-develop/gatgat を使うとファイルの内容をシンタックスハイライトつきで出力することができます。この記事では gat の使い方についてまとめます。インストール使い方仕組み インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ brew install koki-develop/tap/gatもしくは、 gat は Go で作られているため go install を...]]></content:encoded>
+            <content:encoded><![CDATA[cat コマンド代替の Go 製コマンドラインツールである gat を作りました。https://github.com/koki-develop/gatgat を使うとファイルの内容をシンタックスハイライトつきで出力することができます。この記事では gat の使い方についてまとめます。インストール使い方仕組み インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ brew install gat# or$ brew install koki-develop/tap/gatもしくは、 gat は G...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Datadog Agent からの Metrics を Victoria Metrics で受ける]]></title>
