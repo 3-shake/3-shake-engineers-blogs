@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 25 Apr 2023 18:31:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Apr 2023 18:31:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[DBMSの歴史とNewSQL]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/history_of_db_and_newsql</link>
+            <guid>https://zenn.dev/nnaka2992/articles/history_of_db_and_newsql</guid>
+            <pubDate>Wed, 26 Apr 2023 14:28:19 GMT</pubDate>
+            <content:encoded><![CDATA[この記事はDBMSの登場以前から現代のDBMSを取り巻く環境までを振り返ることで、なぜNewSQLが必要とされ登場したのかをまとめます。 おことわり筆者はあくまでDBMSユーザーであり、研究者ではないため内容は個人の見解です。また対象読者はある程度DBMSに関わりがあり、OLTPやOLAP、列指向や行指向といった基本的な単語を理解しているものとします。またNewSQLの技術的詳細はスコープ外とします。 DBMS以前データベースという言葉は1950年代に米軍が情報基地を集約したことに由来します。一方で学術的なデータベースの起源はW. C. McGeeが1959年に発表...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[DBREブログ] Snowflake とは？]]></title>
+            <link>https://sreake.com/blog/what-is-snowflake/</link>
+            <guid>https://sreake.com/blog/what-is-snowflake/</guid>
+            <pubDate>Wed, 26 Apr 2023 02:37:56 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに クラウドデータウェアハウスの Snowflake についての解説です。Snowflake のアーキテクチャや料金体系、特徴、セキュリティについて説明しています。 概要 プラットフォームの概要 Snowflake […]The post [DBREブログ] Snowflake とは？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[中間結果が莫大になるときの結合を最適化する最悪ケース最適化結合をRDBMSに適応する論文を読みました]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/2023/04/26/110646</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/2023/04/26/110646</guid>
+            <pubDate>Wed, 26 Apr 2023 02:06:46 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の趣旨2018年に発表された分析ワークロードなどで発生しがちな最終結果に比べ、非常に大きな中間結果を作成してしまうクエリを多方向結合で最適化する論文を読みました。Adopting Worst-Case Optimal Joins in Relational Database Systems著者についてMichael Freitag、Maximilian Bandle、Tobias Schmidt、Alfons Kemper、Thomas Neumannによるグループの論文いずれの著者もDBMSにおける最適化を中心に研究しており、それぞれ分析ワークロードにおける最適化や最新のハードウェアにおける最適化などを研究している。問題意識従来のRDBMSにおける結合処理のほとんどはバイナリ結合に依存して複数のリレーションにまたがるクエリを処理してきた。数十年に渡る研究によりバイナリ結合は幅広い柔軟性と優れた性能を発揮するようになった。その一方でバイナリ結合による実行計画は特定のワークロードでは最適ではないケースを示すことが知られている。主な原因として実際のクエリ結果に比べて非常に大きな中間結果を生成するためである。とくにPK以外のキーによる結合が多くなる分析ワークロードではそのような状態を避けることが難しく、またグラフ分析のようなクエリパターンでも多く見られる。近年の論理的な進歩により中間結果の列挙を避ける多方向結合のアルゴリズムが開発可能になった。この手法はバイナリ結合計画より優れた実行時間を保証できるため、RDBMSの堅牢性を大幅に向上させる可能性を持っている。しかし現状最悪ケース最適化結合アルゴリズムでは以下のような問題を抱えている。1. 膨大なストレージとメンテナンスを必要とする結合に参加出来るカラムを含むインデックスを必要とする。1. RDBMSは挿入と更新のサポートが必要なものの、既存のアルゴリズムは高価な事前計算を必要とする。そのため本論文は以下の制約を満たすアプローチを提案している1. 多方向結合が有益な場合のみ多方向結合を使用するオプティマイザを必要とする。1. 実行中に効率的に実行でき、ディスクのに永続化する必要のないパフォーマントインデックスを必要とする。手法提案手法では比較ベースではなくハッシュベースの結合のため、2の「実行中に効率的に実行でき、ディスクのに永続化する必要のないパフォーマントインデックスを必要とする。」という要素の考慮を除いている。またオプティマイザについては既存のコストベースのものを拡張し適応している。提案手法では潜在的に成長している結合のカスケードを最悪の場合の最適結合に置き換えることで、最適化されたバイナリ結合計画を洗練させるヒューリスティックなアプローチを提案している。通常の結合順序最適化で使用されるのと同じカーディナリティ推定値に基づいて、中間テーブルが膨大になる結合を特定する。作業時間read22:1322:13author25:483:35summary52:5826:50感想とても難しい内容に感じてしまい、殆ど頭を通りすぎてしまった気がする。今まで最適化は触れずに来たため、理解が浅い領域だった。よくよく考えるとDBMSの話しに最適化が登場するのはあたりまえなので、今後はその方面にも触れて行きたい。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[羊を眠らせる sleep コマンド「sheep」の紹介]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/sheep-introduction</link>
@@ -110,7 +131,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</guid>
             <pubDate>Mon, 10 Apr 2023 23:44:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/04/11)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.]]></content:encoded>
+            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/04/11)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.書籍でオススメでいうと「言葉の意味とは何か」がテーマである本書。LLMとの付き合い方を考えることができるのでオススメです。働きたくないイタチと言葉がわかるロボット 人工知能から考える「人と言葉」作者:川添愛朝日出版社Amazon]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[タニタの Health Planet API を使用して測定情報を取得する]]></title>
@@ -216,27 +237,6 @@
             <guid>https://zenn.dev/satohjohn/articles/79faafa55e9a1e</guid>
             <pubDate>Sat, 25 Mar 2023 16:36:44 GMT</pubDate>
             <content:encoded><![CDATA[結論配列のjsonに対してselectする際には、配列を一度オブジェクトの抽出をしないと複製されてしまう。なので、以下ではなくjq -r  'select(.[].A | contains("特定文字列")) | .[].B' test.jsonこうしないといけないjq -r  '.[] | select(.A | contains("特定文字列")) | .B' test.json 環境$ jq --version   jq-1.6 詰まった内容以下のjson(test.json)があったときにtest.json[    {        "hog...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ふと、思いだしたときに確認するって大事ですね、という話]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/174811e1685df2</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/174811e1685df2</guid>
-            <pubDate>Fri, 24 Mar 2023 13:27:59 GMT</pubDate>
-            <content:encoded><![CDATA[本日、こんなお知らせが流れてきた。We updated our RSA SSH host key「そういえば、プライベートのPCでRSA使ってた…」と思い出したので、確認。$ ssh -T git@github.com@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@IT I...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes と名前解決]]></title>
-            <link>https://zenn.dev/toversus/articles/d9faba80f68ea2</link>
-            <guid>https://zenn.dev/toversus/articles/d9faba80f68ea2</guid>
-            <pubDate>Wed, 22 Mar 2023 07:36:38 GMT</pubDate>
-            <content:encoded><![CDATA[tl;dr外部サービスのホスト名の末尾に . (ドット) を必ず指定しましょう。✅ google.com.❌ google.com末尾にドットを指定できない (e.g. SDK 組み込み) かつ大量の名前解決が発生している場合は、Pod の DNS Config の options で ndots: 1 を指定しましょう。Kubernetes の名前解決の仕組みを理解していないと、各ノードの conntrack テーブルが溢れてパケットが破棄され、サービスに影響が出ることがあります。 背景アプリケーションが外部のサービスを呼び出す場合、ホスト名を IP アド...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[cloud runの要らなくなったリビジョンを消す]]></title>
-            <link>https://zenn.dev/satohjohn/articles/2a769b8280427d</link>
-            <guid>https://zenn.dev/satohjohn/articles/2a769b8280427d</guid>
-            <pubDate>Tue, 21 Mar 2023 02:35:43 GMT</pubDate>
-            <content:encoded><![CDATA[小ネタです。運用をしていて、たくさんリリースしているとリビジョンが増えていることとかもあるかなと思いますが、コンソール上から消すのも面倒なので、コマンドで消しましょう。というか、解説することもないので、結論と詰まった部分だけ残しておきます。 結論 ACTIVEじゃないものをすべて消す#!/bin/bashSERVICE_NAME=$1revisions=$(    gcloud run revisions list --service=$SERVICE_NAME \    --filter="status.conditions.type:Active AND s...]]></content:encoded>
         </item>
     </channel>
 </rss>
