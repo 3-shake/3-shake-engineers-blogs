@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 27 Apr 2023 18:31:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Apr 2023 18:30:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SQL ServerにおけるUDF最適化の論文を読みました]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/2023/04/28/112905</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/2023/04/28/112905</guid>
+            <pubDate>Fri, 28 Apr 2023 02:29:05 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の趣旨2017年に発表されたSQL ServerでUDFを最適化しているFroidという手法についての論文を読みました。Froid: Optimization of Imperative Programs in a Relational Database著者についてKarthik Ramachandra、Kwanghyun Park、K. Venkatesh Emani、Alan Halverson、Cesar Galindo-Legaria、Conor Cunninghamのグループによる論文。ほとんどの著者はMicrosoftに所属しており、いずれもトランザクショナルワークロードでのRDBMSの最適化や分析ワークロードにおけるRDBMS最適化の研究をしている。問題意識RDBMSではSQLによるデータ処理アプローチと、UDFやストアドプロシージャなどによる命令型のデータ処理アプローチを提供している。SQLによるデータアクセスは高度に最適化されてきた一方で、命令型のデータ処理は非効率なため性能を阻害し利用を禁止している組織すらある。UDFによるデータアクセスは非効率であるものの、SQLに比べ下記のような利点を提供するため幅広く利用されているのも事実である。1. SQL間でコードの再利用方法を提供する1. 複雑なビジネスロジックやMLアルゴリズムなどSQLでは難しい表現を可能にする1. 単純なSQLの組み合わせのため、ユーザーの意図が明確に表現できるこれらのメリットを享受するためにRDBMSにおける命令型データアクセス手法のパフォーマンスを向上しする必要があった。手法提案手法であるFroidはMicrosoft SQL Serverにおける命令型コードのパフォーマンス向上の手法として、UDFを複雑なサブクエリとしてみなすアプローチを取っている。UDFを構成する命令はDECLARE、SELECT、IF/ELSE、RETURN、他のUDF、リレーショナルオペレーションの6つに分ることができる。提案手法ではこれらの命令を一般的なT-SQLに置き換え、Apply演算により一つの関係式に結合する方法で実現している。Table 1命令が一般SQLに置き換えられることでUDFに対して、SQLに用いられていた高度な最適化を導入することが出来る。また提案手法ではい以下の理由から、SQLとして命令を置換するときにクエリ最適化時に行なうのではなくバインド時に置換をしている。1. 実際のワークロードでの実験ではほぼ全てのケースでバインド時のほうが性能がよかった1. クエリオプティマイザの変更が不要1. バインディング時に特定の最適化を行なえるとくにクエリオプティマイザの変更はSQL Serverが商用データベースなため重要であった。作業時間read28:5028:50author32:103:20summary57:0024:50]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Pull Requestで意識していること]]></title>
+            <link>https://qiita.com/bayobayo0324/items/0d986370e0de95705b6f</link>
+            <guid>https://qiita.com/bayobayo0324/items/0d986370e0de95705b6f</guid>
+            <pubDate>Fri, 28 Apr 2023 02:19:23 GMT</pubDate>
+            <content:encoded><![CDATA[どんな記事？Pull Request（以後PR）で自分がレビュイのときに意識していることをまとめてみました。PRだけじゃなくSlack等のテキストベースコミュニケーションでも同じようなことを意識…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[DBMSの歴史とNewSQL]]></title>
             <link>https://zenn.dev/nnaka2992/articles/history_of_db_and_newsql</link>
@@ -131,7 +145,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</guid>
             <pubDate>Mon, 10 Apr 2023 23:44:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/04/11)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.書籍でオススメでいうと「言葉の意味とは何か」がテーマである本書。LLMとの付き合い方を考えることができるのでオススメです。働きたくないイタチと言葉がわかるロボット 人工知能から考える「人と言葉」作者:川添愛朝日出版社Amazon]]></content:encoded>
+            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。GPT4 のみを対象にしています。GPT3.5 で改善を試みたけど4ほど良い内容が返ってこない。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/04/11)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.書籍でオススメでいうと「言葉の意味とは何か」がテーマである本書。LLMとの付き合い方を考えることができるのでオススメです。働きたくないイタチと言葉がわかるロボット 人工知能から考える「人と言葉」作者:川添愛朝日出版社Amazon]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[タニタの Health Planet API を使用して測定情報を取得する]]></title>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/toshikish/articles/6958af565e6c65</guid>
             <pubDate>Mon, 27 Mar 2023 08:38:39 GMT</pubDate>
             <content:encoded><![CDATA[PagerDuty でアラートを受け取っているプロジェクトで，以下のようにある時間帯はアラートを止めたいケースがあります。メンテナンスが予定されている。開発環境は営業時間内だけ動かすので，平日夜や土日祝日は止めたい。何も対策しないとアラートが鳴ってしまい，オンコール担当者を不用意に呼び出す結果になるので，そうならないようにきちんと設定します。 TL;DR各ケースで以下のように設定します。メンテナンス→メンテナンスウィンドウを設定平日夜・土日停止→曜日・時刻ベースのイベントルールを追加 方法1：メンテナンスウィンドウメンテナンスなどでダウンする時間帯があらかじ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[DBマイグレーションを手動コマンド実行からCloud Run Jobsに移行した話]]></title>
-            <link>https://qiita.com/bayobayo0324/items/352d8bbb1bd7bcce8844</link>
-            <guid>https://qiita.com/bayobayo0324/items/352d8bbb1bd7bcce8844</guid>
-            <pubDate>Mon, 27 Mar 2023 00:23:32 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにDBマイグレーションをステージングや本番環境に適用すること、またCI/CDに組み込んで自動化するのはバックエンド／サーバーサイド開発で必ずといっていいほど通る道です。開発体制やフェーズ、…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[jq commandの select でハマった話]]></title>
-            <link>https://zenn.dev/satohjohn/articles/79faafa55e9a1e</link>
-            <guid>https://zenn.dev/satohjohn/articles/79faafa55e9a1e</guid>
-            <pubDate>Sat, 25 Mar 2023 16:36:44 GMT</pubDate>
-            <content:encoded><![CDATA[結論配列のjsonに対してselectする際には、配列を一度オブジェクトの抽出をしないと複製されてしまう。なので、以下ではなくjq -r  'select(.[].A | contains("特定文字列")) | .[].B' test.jsonこうしないといけないjq -r  '.[] | select(.A | contains("特定文字列")) | .B' test.json 環境$ jq --version   jq-1.6 詰まった内容以下のjson(test.json)があったときにtest.json[    {        "hog...]]></content:encoded>
         </item>
     </channel>
 </rss>
