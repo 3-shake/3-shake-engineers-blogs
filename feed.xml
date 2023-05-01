@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 30 Apr 2023 18:30:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 May 2023 18:31:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コンソールに GitHub の草を生やす GitHub CLI 拡張機能「gh-grass」の紹介]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gh-grass-introduction</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gh-grass-introduction</guid>
+            <pubDate>Mon, 01 May 2023 09:19:56 GMT</pubDate>
+            <content:encoded><![CDATA[GitHub の草 ( Contribution Graph ) をどうしてもコンソールに生やしたくなることはありませんか？ありますよね？僕はありません。そんなときに便利な GitHub CLI 拡張機能「gh-grass」を作りました。https://github.com/koki-develop/gh-grassこういうことができます。他にもこんなことや、文字をカスタマイズこんなこともできます。アニメーションこの記事では gh-grass のインストール方法から基本的な使い方についてまとめます。 インストール!GitHub CLI がインストールされてい...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DBMSとクライアント間におけるデータ転送を最適化する論文を読みました]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/2023/05/01/123418</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/2023/05/01/123418</guid>
+            <pubDate>Mon, 01 May 2023 03:34:18 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の趣旨2017年に出版されたリモートDBMSとクライアント間の大量データ転送を最適化する手法を提案する論文を読みました。Don’t Hold My Data Hostage – A Case For Client Protocol Redesign著者についてMark Raasveldt、Hannes Muhleisenらのグループによる論文。いずれもCentrum Wiskunde & Informaticaの所属で、DuckDBのCxO。DBMSと分析システムにおけるパフォーマンス最適化を研究している。問題意識DBMSからクライアントプログラムに大量のデータを転送することは一般的なタスクである。例えばRやPythonなどを用いた分析システムはしばしばデータベース・インターフェースを利用してデータの取得を行なっている。一方でネットワーク越しにデータを転送することはレイテンシを増加させ、転送時間を長引かせる要因である。そのため分析用途で大量のデータ転送を避け、一部のデータをサンプルとして利用するに止まることが多い。このアプローチはパフォーマンスの低下を押さえられるものの、分析や機械学習の精度を下げることに繋がる。とくに既存のクライアントではネットワークによるレイテンシとスループットの制限に大きな影響を受けパフォーマンスを劣化させる。この問題はデータベースが別マシンやクラウドで動作するときにより大きな問題となる。手法本論文では既存のシリアライズ手法と圧縮手法によるパフォーマンスへの影響を計測し、新しいプロトコルとして以下の特性を持つ手法を提案している。1. チャンク毎のデータ転送と(デ)シリアライゼーション1. ヒューリスティックによる圧縮方法の決定1. text/binaryによるカスタムシリアライゼーションを使用する1. NULL終端によるテキストの取り扱い実験結果提案手法を実装したMonetDB(表内ではMonetDB++)とPostgreSQL(表内ではPostgreSQL++)を既存のDBMSやnetcatと比較することで評価を行なっている。TCP-Hのlineitem、American Community Survay、Airline On-Time Statisticsの3つのデータセットで評価を行なったところ、ローカル通信における非圧縮netcatを除き殆どのケースでMonetDB++系が最良のパフォーマンスを発揮し次点でPostgreSQL++系が優れた結果を残している。Table 10Table 11Table 12PostgreSQLに比べMonetDBが優れている理由はPostgreSQLの行指向データを列指向に変換するコストのためである。作業時間read31:2131:21author35:384:17summary70:1334:35感想論文出版時にはTPC/IPプロトコルが前提でQuic登場前のため、ネットワークプロトコル自体は考慮されていない。現在であればTPC/IPとQuicに適合した手法の比較が行なわれると思うので気になるところ。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[SQL ServerにおけるUDF最適化の論文を読みました]]></title>
             <link>https://nnaka2992.hatenablog.com/entry/2023/04/28/112905</link>
@@ -145,7 +159,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</guid>
             <pubDate>Mon, 10 Apr 2023 23:44:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。GPT4 のみを対象にしています。GPT3.5 で改善を試みたけど4ほど良い内容が返ってこない。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/04/11)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.書籍でオススメでいうと「言葉の意味とは何か」がテーマである本書。LLMとの付き合い方を考えることができるのでオススメです。あと、当たり前にこのブログの文章はChatGPTが生成したものを加筆、修正してます。働きたくないイタチと言葉がわかるロボット 人工知能から考える「人と言葉」作者:川添愛朝日出版社Amazon]]></content:encoded>
+            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。GPT4 のみを対象にしています。GPT3.5 で改善を試みたけど4ほど良い内容が返ってこない。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/05/01)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Please provide any references for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.書籍でオススメでいうと「言葉の意味とは何か」がテーマである本書。LLMとの付き合い方を考えることができるのでオススメです。あと、当たり前にこのブログの文章はChatGPTが生成したものを加筆、修正してます。働きたくないイタチと言葉がわかるロボット 人工知能から考える「人と言葉」作者:川添愛朝日出版社Amazon]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[タニタの Health Planet API を使用して測定情報を取得する]]></title>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/toversus/articles/6eeb3b708bdff3</guid>
             <pubDate>Wed, 29 Mar 2023 01:31:20 GMT</pubDate>
             <content:encoded><![CDATA[tl;dr;Service type LoadBalancer の externalTrafficPolicy: Local は、Kubernetes 1.26 まで Pod のローリング更新時にトラフィックが喪失する問題があるので注意kubernetes-sigs/cloud-provider-kind は、ローカル環境でクラウドリソース (現在は LB のみ) が絡む処理をシミュレートできて便利GKE Dataplane v2 を利用している場合、GKE 1.26.1 時点で Cilium に externalTrafficPolicy: Local の改善が入ってい...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Go 製のタイピングゲーム「Typingo」を作った]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/typingo-introduction</guid>
-            <pubDate>Mon, 27 Mar 2023 09:29:52 GMT</pubDate>
-            <content:encoded><![CDATA[Typing + Go = Typingo という語呂のいい名前が思いついてしまったので勢いで作りました。これが俗に言う命名駆動開発 ( NDD: Name-Driven Development ) です。https://github.com/koki-develop/typingoこの記事では Typingo のインストール方法から遊び方、利用技術を簡単に紹介します。インストール遊び方利用技術 インストールHomebrew を使用している場合は brew install を使用してインストールできます。$ brew install koki-develop/t...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PagerDuty で一定期間アラートを抑制する]]></title>
-            <link>https://zenn.dev/toshikish/articles/6958af565e6c65</link>
-            <guid>https://zenn.dev/toshikish/articles/6958af565e6c65</guid>
-            <pubDate>Mon, 27 Mar 2023 08:38:39 GMT</pubDate>
-            <content:encoded><![CDATA[PagerDuty でアラートを受け取っているプロジェクトで，以下のようにある時間帯はアラートを止めたいケースがあります。メンテナンスが予定されている。開発環境は営業時間内だけ動かすので，平日夜や土日祝日は止めたい。何も対策しないとアラートが鳴ってしまい，オンコール担当者を不用意に呼び出す結果になるので，そうならないようにきちんと設定します。 TL;DR各ケースで以下のように設定します。メンテナンス→メンテナンスウィンドウを設定平日夜・土日停止→曜日・時刻ベースのイベントルールを追加 方法1：メンテナンスウィンドウメンテナンスなどでダウンする時間帯があらかじ...]]></content:encoded>
         </item>
     </channel>
 </rss>
