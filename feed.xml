@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 11 May 2023 00:16:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 May 2023 18:30:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Connection draining for Service type LoadBalancer]]></title>
+            <link>https://zenn.dev/toversus/articles/1682d275ef1bb7</link>
+            <guid>https://zenn.dev/toversus/articles/1682d275ef1bb7</guid>
+            <pubDate>Thu, 11 May 2023 09:43:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにService リソースは Kubernetes のサービス検出を支えるコアリソースです。Service のデータプレーンとして kube-proxy を使用している場合は、各ノード上の iptables や ipvs を設定することで L4 負荷分散を実現しています。Kubernetes は、結果整合性 (Eventual Consistency) の上に成り立つ分散システムです。Kubernetes のコントロールプレーンが Pod を削除する時に、全てのノード上のルーティングルールを更新してから Pod を削除したりはしません。削除中の Pod にもトラフィックが流...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2022 年の Accelerate State of DevOps Report の内容をまとめてみた]]></title>
+            <link>https://sreake.com/blog/accelerate-state-of-devops-report-2022/</link>
+            <guid>https://sreake.com/blog/accelerate-state-of-devops-report-2022/</guid>
+            <pubDate>Thu, 11 May 2023 05:07:56 GMT</pubDate>
+            <content:encoded><![CDATA[１．はじめに Sreake 事業部でインターンしている村山です。インターンをするにあたり、DevOps の理解と最近の動向を掴むことが必要であると感じ、Accelerate State of DevOps Report  […]The post 2022 年の Accelerate State of DevOps Report の内容をまとめてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[TiDBで学ぶNewSQLのアーキテクチャ for Beginners]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/learning_tidb_internal_for_beginner</link>
+            <guid>https://zenn.dev/nnaka2992/articles/learning_tidb_internal_for_beginner</guid>
+            <pubDate>Thu, 11 May 2023 01:18:19 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこの記事ではNewSQLの特徴であるノード間の分散とトランザクションや分断耐性などがTiDBではどのような技術によって実現されているかを説明することを目的としています。Spannerの論文が2012年に発表されてから10年以上の年月が流れ、優れた論文や実装ドキュメント、個人による解説ブログなど技術的詳細について述べた資料は多くあります。加えてこの記事を入門的なものと位置づけているため各コンポーネントを網羅的に解説するというよりは、キーコンセプトをどのように実装しているのかを実験を混じえながら動作の実現方法の解説を中心に扱います。また今回はTiDBをベースに説明し...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub の Secret scanning’s push protection を試してみる]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/gh-secret-scannings-push-protection</link>
@@ -216,27 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/tanita-health-planet-api</guid>
             <pubDate>Mon, 10 Apr 2023 09:25:53 GMT</pubDate>
             <content:encoded><![CDATA[最近タニタの体組成計を買いました。https://www.amazon.co.jp/dp/B07Q2WYL77Health Planet というサービスを利用して測定情報を記録しているのですが、 API が提供されていたので試してみました。https://www.healthplanet.jp/ 前提Health Planet に登録済みであることを前提とします。 1. アプリケーションを登録!Health Planet にログインしていない場合は最初に下記ページからログインしてください。ログインする ｜ Health Planet  ヘルスプラネットアプリ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes の Probe の仕組みと考慮点]]></title>
-            <link>https://zenn.dev/toversus/articles/5d1292160f5035</link>
-            <guid>https://zenn.dev/toversus/articles/5d1292160f5035</guid>
-            <pubDate>Mon, 10 Apr 2023 02:20:29 GMT</pubDate>
-            <content:encoded><![CDATA[!Kubernetes 1.26 時点の話で、以降のマイナーバージョンで改善されている可能性があります。Kubernetes には、ワークロードの正常性を確認するための Probe という仕組みがあり、Liveness / Readiness / Startup Probe が用意されています。kubelet (Kubernetes のノード上で動作するエージェント) は、ワークロードに対して TCP Socket / HTTP GET / gRPC / Exec の中から指定されたチェックを定期的に実行します。それぞれの Probe の特性を理解して使い分けないとサービスに影響...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PHPカンファレンス福岡2023に｢State of DevOps 2022を読みながら、組織に適したSREの実践方法を探求する｣というproposalを出しました #phpconfuk ]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/04/10/031452</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/10/031452</guid>
-            <pubDate>Sun, 09 Apr 2023 18:14:52 GMT</pubDate>
-            <content:encoded><![CDATA[fortee.jpPHPカンファレンスという舞台に、いかなる因果でDevOpsとSREの話を提案することとなりました。これは、PHPを主題とするカンファレンスでありながら、「PHPじゃないけどどうしても伝えたい話がある！」という寛大な運営方針に導かれたためでございます。そんな折、もし採択される運命に導かれたならば、我々の組織においてDevOpsとSREが如何に役立ち、開発と運用の世界で如何に応用できるか、その真髄をカンファレンスで共有することを目指しております。基本概念を理解し、現状を評価し、適切なプラクティスを選び、効果を測定し、継続的に改善することで、開発と運用の連携が強化され、効率的で信頼性の高いシステムが構築されることをお伝えする所存でございます。多くの優れた提案が集まる中で、我が提案が採択される確率は微かですが、もし運命の導きによって叶うことがあれば、福岡へと凱旋いたします。その時、遥かな地平線の果てに、願いが届くことを切に願っています。どうか、お力をお貸しください。参考PHPカンファレンス福岡2023に｢カンファレンスのつくりかた｣というproposalを出しました - Masteries]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitLab CI で artifacts:reports:dotenv を使って Job をまたいで変数を渡す]]></title>
-            <link>https://blog.1q77.com/2023/04/gitlab-ci-artifacts-report-dotenv/</link>
-            <guid>https://blog.1q77.com/2023/04/gitlab-ci-artifacts-report-dotenv/</guid>
-            <pubDate>Tue, 04 Apr 2023 16:27:22 GMT</pubDate>
-            <content:encoded><![CDATA[GitLab CI である Job で変数を定義して、それを後続の Job でも使いたいなと思って調べていたら artifacts:reports:dotenv にたどり着いたのでメモ。 以下、使用例 stages: - stage1 - stage2 - stage3 - stage4 job1: stage: stage1 script: - echo "MY_VAR1=first-variable" >> dot.env artifacts: expire_in: 30 mins]]></content:encoded>
         </item>
     </channel>
 </rss>
