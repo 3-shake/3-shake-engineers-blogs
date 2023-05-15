@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 14 May 2023 18:30:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 May 2023 18:30:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Go で GitHub CLI 拡張機能を作る]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gh-cli-extension-in-go</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gh-cli-extension-in-go</guid>
+            <pubDate>Mon, 15 May 2023 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[先日 gh-grass という Go 製の GitHub CLI 拡張機能を開発してみたのですが、意外と簡単にできたので手順のメモです。gh-grass については次の記事をご参照ください。https://zenn.dev/kou_pg_0131/articles/gh-grass-introduction 拡張機能を作成する!GitHub CLI がインストールされている必要があります。GitHub CLI のインストール方法については GitHub CLI 公式リポジトリの README をご参照ください。まずは gh extension create を次のように...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[現在のDremelの実装を解説した論文を読みました ]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/2023/05/15/111420</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/2023/05/15/111420</guid>
+            <pubDate>Mon, 15 May 2023 02:14:20 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の趣旨2020年に発表されたBigQueryの元となったGoogle内で利用されている分析向けデータベースであるDremelの実装を解説した論文を読みました。Dremel: A Decade of Interactive SQL Analysis at Web Scale著者についてSergey Melnik, Andrey Gubarev, Jing Jing Long, Geoffrey Romer, Shiva Shivakumar, Matt Tolton,Theo Vassilakisら2010年のDremel発表論文の著者らと、Hossein Ahmadi, Dan Delorey, Slava Min, Mosha Pasumansky, Jeff ShuteらGoogleで分析ワークロードと分散処理に関わる著者らによる論文。概要BigQueryの元となったGoogleのDremelの10年間を振り替えってアーキテクチャについて説明した論文。Dremelは現代のクラウドネイティブ分析ツールで一般的になっている、計算リソースとストレージの分解、カラムナストレージ、in situデータ分析などを統合した最初のツールである。手法SQLの採用Googleでは殆どのデータはBigTableなどNoSQLデータベースで管理されていたため、SQLを用いないデータアクセスが主流であった。しかしトランザクション型ビッグデータシステムにおける、SQLの採用に共ないDremelでもSQLを採用した。ストレージの分離メモリの分離MapReduceのシャッフルのボトルネックを回避するためにDisaggregated Memory Shuffle Systemを採用した。In situデータ分析への対応DBMSへのデータロードを必要としないデータ分析のことで、DremelではGFSに移行するときにGoogle内で共有のストレージフォーマットを使用することでGoogle内のデータに対応した。加えてGoogle Cloud StorageやGoogle Drive、MySQL、BigTableなどからのデータ取得もフェデレーションとして対応した。サーバレスアーキテクチャフォールトトレラントリスタート、仮想スケジューリングユニットによりマルチテナントかつオンデマンドなリソースを提供可能とし、低価格な利用を可能とした。現在ではサーバレスアーキテクチャを進化させ、集中型スケジューリングやShuffle Persistent Layer、柔軟なDAG実行、動的クエリ実行などを実装することでより優れたサーバレスアーキテクチャを実現した。ネストデータにおけるカラムナストレージ[[32])]Figure 5Figure 6Figure 7クエリレイテンシの最小化インタラクティブな実行のレイテンシは大きくなる。それを解決するためにDremelではスタンバイサーバプール、マルチレベル実行ツリー、列指向スキーマ表現、CPUとIO負荷のバランス調整、ファイルオペレーションの再利用、保証されたキャパシティ、適合的なクエリスケーリングにより実現している。作業時間read27:5027:50author32:024:12summary68:5026:48]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Connection draining for Service type LoadBalancer]]></title>
             <link>https://zenn.dev/toversus/articles/1682d275ef1bb7</link>
@@ -223,20 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/column_sketch</guid>
             <pubDate>Sat, 15 Apr 2023 04:09:38 GMT</pubDate>
             <content:encoded><![CDATA[この記事の趣旨前回と同様にCMU Advanced Databas Systems Spring2023のReading Assignmentとして出ている論文を読んで行きます。最近論文を読めてなかったのですが、この記事でモーベーションが上がったので再開しました。ころころやり方を変えるのはよろしくないものの、モチベーションのために先の記事のやり方でやります。今回はColumn Sketchという名前のIndex手法を提案した論文です。Lossy Compressionを採用した当手法がどのように、高速で堅牢な検索を実現しているのかについて述べています。Column Sketches: A Scan Accelerator for Rapid and Robust Predicate EvaluationBrian Hentschel, Michael S. Kester, Stratos Idreos著者についてBrain、Michael、Stratosのグループによる論文。いずれも機械学習とデータアクセスについて研究している。問題意識既存のindex手法ではそれぞれに得意/不得意があり多くのアクセスパターンに対応できる方法がなかった。またデータ分析で用いられるような列指向ストレージに対応しているものが少なかった。Column SketchはデータをLossy Compressionを使用してindexを作成する手法でこれらの問題を解決した。手法提案手法はデータを任意のbit長に変換し、bitで表わされたデータに対して初回の検索を行なうことで大幅に検索速度を向上させた。またこの手法は数値型のみではなく、varcharなどで表わされたカテゴリカルタイプを数値として扱うことで、データ分析に必要なデータタイプに対応している。提案手法は8bit数値型であれば以下のようなマッピングによって達成される。for x, y ∈ I8, S (x) ≠ S (y) ⇒ x ≠ yfor x, y ∈ I8, S (x) < S (y) ⇒ x < y以下の図は8bitデータに対してWHERE x < 90がどのようにindex作成され評価されるかの例である。Figure2: Column Sketchindex作成段階では数値をレンジベースで任意の個数のbitに圧縮する。そして評価時には90を含むデータより大きい値をすべて取得し、90を含むレンジに対しては個別に評価を行なう。感想読んでいる段階では数値型のみに対応したindexであれば、B-treeで十分ではないかと思ったものの読み進めていくと限定的ながらも文字型にも対応していて、分析用途では必要な機能が備わっているなと思った。全文テキスト検索のような用途には応用が難しそうで、銀の弾丸はないなと感じた。作業時間read27 min27 minauthor32 min5 minsummary58 min26 min論文以外への感想今回採用した論文の読み方をやってみた思ったのは事前に1時間で読んでまとめるぞと決めたことで随分集中して論文を読めました。あと今まで論文を原文で読まなきゃという個人的な使命感があったのですが、翻訳することで随分効率があがったので今後は翻訳してしまおうと思いました。Readableは文末のrea-dableのような表記や翻訳されない部分(おそらく数式を含む文章？)があるものの、フォーマットが維持されているため原文と照しあわせながら読めば非常に効率がよかったです。毎日論文読むなら正直買いです。毎日論文読みたいので課金しました。がんばるぞ!]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ChatGPT:SREやDevOpsなどのソフトウェアの運用に伴う課題解決に関する提案を行うプロンプト]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/04/11/084428</guid>
-            <pubDate>Mon, 10 Apr 2023 23:44:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにソフトウェアの問題解決に関する提案してくれるプロンプトを利用することは、今後の開発者やエンジニアがより効率的に問題解決を行うための重要な手段の一つになります。というか毎回、適切なプロンプトを作成するのが面倒になった。このプロンプトには、ソフトウェア開発におけるベストプラクティスやDevOps、SRE方法論などの知識や経験が共有され、開発者やエンジニアの能力向上に貢献することができるようになれば良いなーと妄想しております。GPT4 のみを対象にしています。GPT3.5 で改善を試みたけど4ほど良い内容が返ってこない。効果ユーザーの問題を効果的に解決するための具体的なソリューションを提案します。DevOpsとSREの手法を活用して、ユーザーのソフトウェア開発プロセスを改善します。ユーザーとのコミュニケーションを通じて、問題解決の過程でのフィードバックを得ることができます。想定するユーザーソフトウェア開発者やDevOpsエンジニアで、ベストプラクティスや新しい技術の導入に興味がある方。経験豊富なコンサルタントや専門家のアドバイスを求めている企業やチームのメンバー。注意点提案するソリューションは、ユーザーの業界や技術スタックに適合するように調整する必要があります(こちらあまり価値がないことに気付いたので削除いたしました)。プロンプトの手順に従って、ユーザーからのフィードバックを適切に反映するように注意してください。顧客の承認が得られるまで、適切な提案を続けてください。プロンプト(2023/05/01)# Goal:- You suggest software best practices, DevOps, and SRE methodologies properly and appropriately according to the following rules and steps.# Context:- You are an experienced DevOps engineer and software developer.- You are a supportive and attentive consultant.- Please use Japanese.# Rules- You must keep acting like the consultant, DevOps engineer, and software developer defined in the Context above throughout the Steps below.- You always remember that you're in the Context described above.# Steps: execute the following steps one by one.- Ask the customer what problem they want to solve.- Confirm that the target issue has been correctly identified.- If the confirmation is approved, proceed to the next step. If not, return to the second step.- Based on the customer's situation, make several suggestions for resolving the issue, including specific best practices, tools, or methodologies.- Please provide an appropriate software implementation, if any, for your proposed solution.- Please provide any references for your proposed solution.- Ask for feedback on the suggestions you made. If a positive message is given, further explain the suggestion if you made it. If not, make another suggestion.- Ask if the customer wants to repeat the steps in solving the same issue or if they want you to make a new proposal. If they want to repeat, go back to the second step. If not, give a positive message so that they get the issue they want to solve.書籍でオススメでいうと「言葉の意味とは何か」がテーマである本書。LLMとの付き合い方を考えることができるのでオススメです。あと、当たり前にこのブログの文章はChatGPTが生成したものを加筆、修正してます。働きたくないイタチと言葉がわかるロボット 人工知能から考える「人と言葉」作者:川添愛朝日出版社Amazon]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[タニタの Health Planet API を使用して測定情報を取得する]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/tanita-health-planet-api</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/tanita-health-planet-api</guid>
-            <pubDate>Mon, 10 Apr 2023 09:25:53 GMT</pubDate>
-            <content:encoded><![CDATA[最近タニタの体組成計を買いました。https://www.amazon.co.jp/dp/B07Q2WYL77Health Planet というサービスを利用して測定情報を記録しているのですが、 API が提供されていたので試してみました。https://www.healthplanet.jp/ 前提Health Planet に登録済みであることを前提とします。 1. アプリケーションを登録!Health Planet にログインしていない場合は最初に下記ページからログインしてください。ログインする ｜ Health Planet  ヘルスプラネットアプリ...]]></content:encoded>
         </item>
     </channel>
 </rss>
