@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 24 May 2023 18:31:06 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 May 2023 01:37:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[OLAPデータベースを支える技術]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/technics_behind_analytical_database</link>
+            <guid>https://zenn.dev/nnaka2992/articles/technics_behind_analytical_database</guid>
+            <pubDate>Thu, 25 May 2023 00:02:49 GMT</pubDate>
+            <content:encoded><![CDATA[今年に入ってからCarnegie Mellon UniversityのAdvanced Database SystemsでReading Assignmentとして出ている論文リストで必須とされているものや講義資料を読みました。https://nnaka2992.hatenablog.com/archive/category/論文この記事では紹介されていた論文やAdvanced Database Systemsの講義資料・動画を振り替えることで、BigQueryやRedShift、Snowflakeといった最新の分析用データベースがどのように優れたパフォーマンスを実現しているかを考え...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes の運用効率化を ChatGPT-4 で実現する 障害対応編]]></title>
             <link>https://sreake.com/blog/kubernetes-operation-with-chatgpt4/</link>
@@ -204,6 +211,13 @@
             <content:encoded><![CDATA[この記事の趣旨2018年に発表された"Everything You Always Wanted to Know AboutCompiled and Vectorized Queries But Were Afraid to Ask"という論文を読みました。最新のクエリエンジンの特性をまとめ、どのようなワークロードに向くのかという指針を示すないようです。Everything You Always Wanted to Know About Compiled and Vectorized Queries But Were Afraid to AskTimo Kersten, Viktor Leis, Alfons Kemper, Thomas Neumann, Andrew Pavlo, Peter Boncz著者についてTimo Kersten, Viktor Leis, Alfons Kemper, Thomas Neumann, Andrew Pavlo, Peter Bonczのグループによる論文。いずれも大規模データにおけるクエリパフォーマスや最適化に関する研究を行なっている。問題意識分析ワークロードに向いた最新のクエリエンジンはベクトル化またはデータ中心のコード生成に基づいている。どちらのモデルも従来のエンジンに比べオーバーヘッドが少く、非常に効率的なものの概念的には大きく異なっている。この2つのモデルの違いは、DBMSの実行エンジンのソースコードの構成とその性能特性を決定する基本的なもので、クエリ実行モデルを超える多くの設計で異なる。本論文はことなる2つのモデルを再実装し、環境差異のないマシンで実行することでそれぞれのモデルがどのように違うのか。どのような用途に最適なのかを検証している。手法検証手法は著者らがC++で再実装したデータ中心モデルの「Taper」とベクトル化中心の「Tectorwise」を同一のマシンでパフォーマンス検証を行っている。検証項目は以下から成る1. インメモリOLAPワークロードでのマイクロアーキテクチャ分析1. SIMDの利点の検証1. マルチコアCPUにおけるクエリ並列化1. 異なるハードウェアでのパフォーマンス結果インメモリOLAPワークロードでのマイクロアーキテクチャ分析Figure 3: Performance – TPC-H SF=1, 1 threadSIMDの利点の検証SIMDを評価するにはTectorwiseのみを用いた。SIMDではスカラーなデータをベクトルに変換するペナルティは少く、最大8.4倍の性能向上が確認された。Figure 6: Scalar vs. SIMD Selection in TectorwiseマルチコアCPUにおけるクエリ並列化異なるハードウェアでのパフォーマンスIntel Skylake、Intel Knights Landing、AMD Ryzenで対照実験を行なったものの、いずれのハードウェアでもTyper、Tectorwiseともに有効に動作した。作業時間read29:2629:26author33:233:57summary76:3742:44感想VoectorwiseとHyperのいずれを使うべきか。どちらが優れているかといった疑問に答えるないようだった。]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[ポリテクセンターのススメ]]></title>
+            <link>https://zenn.dev/satoken/articles/polytech-susume</link>
+            <guid>https://zenn.dev/satoken/articles/polytech-susume</guid>
+            <pubDate>Fri, 21 Apr 2023 00:57:44 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに各都道府県には職業能力開発促進センター（ポリテクセンター）と呼ばれる職業訓練を行う施設があります。プログラマやインフラエンジニアになるためにここ数年スクールを受講するのが流行っていますが、今回はこのポリテクセンターをおすすめしたいと思います。ポリテクセンターでは求職者向け訓練と在職者向け訓練があります。求職者向け訓練はこれから会社に就職するために6ヶ月ほど訓練を受講します。在職者向け訓練はすでに会社に就職している人向けの1〜3日ほどの内容を絞った講座形式になります。 求職者向け訓練例えば神奈川県にあるポリテクセンター関東では以下の求職者向け訓練があります。...]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[鼻中隔湾曲症の手術をした]]></title>
             <link>https://pranc1ngpegasus.hatenablog.com/entry/2023/04/20/120509?utm_source=feed</link>
             <guid>https://pranc1ngpegasus.hatenablog.com/entry/2023/04/20/120509?utm_source=feed</guid>
@@ -223,20 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/numa_aware_query_evaluation_framework</guid>
             <pubDate>Tue, 18 Apr 2023 01:01:35 GMT</pubDate>
             <content:encoded><![CDATA[この記事の趣旨"Morsel-Driven Parallelism: A NUMA-Aware Query Evaluation Framework forthe Many-Core Age"という2014年に発表された、多コアサーバにおけるクエリ最適化手法をあつかった論文を読みました。[Morsel-Driven Parallelism: A NUMA-Aware QueryEvaluation Framework for the Many-Core Age](https://15721.courses.cs.cmu.edu/spring2023/papers/07-scheduling/p743-leis.pdf)Viktor Leis, Peter Boncz, Alfons Kemper, Thomas Neumann著者についてViktor Leis、 Peter Boncz、 Alfons Kemper、Thomas Neumannのグループによる研究いずれもデータベースと 高速化かを中心に研究している。問題意識コンピュータアーキテクチャの進化にともない、二つのあたらしい問題が生じた。多コアを利用するためにクエリを数百のスレッドに均等に分散させるそれをNUMA(Non-Uniform Memory Access)による順序通りではないメモリアクセスで実現する必要がある。これらの要因からplanベースの並列処理による不可分散とコンテキストスイッチとボトルネックが問題になりスケールが難しかった。NUMAによってデータとアクセススレッドがどのチップに配置されるかによって、データ項目のアクセスコストが異なるため、コンピュータ自体がネットワークになっており、多コア並列化では、RAMやキャッシュ階層を考慮する必要がある。この論文ではMoral-drivenクエリ実行フレームワークを提案している。手法提案手法は並列クエリ処理のため、morselドリブンクエリ評価フレームワークを提示した。これはメニーコア時代の分析クエリ性能の主要なボトルネックである負荷分散、スレッド同期、メモリアクセス局所性およびリソース弾力性を解決することを目的としている。ベースとなるアイデアは以下の2つに分けられる。メモリ上のデータをmorselと呼ばれる小さなバッチに分割し、バッチごとに処理を実行したあとにそれぞれの処理結果をグローバルハッシュテーブルとしてまとめる。Figure 3: NUMA-aware processing of the build-phaseディスパッチャと呼ばれる並行パイプライン制御を行ない、ワーカースレッドをタスクに割り当てるFigure 5: Dispatcher assigns pipeline-jobs on morsels to threads depending on the coreまとめとして著者はきめ細かいスケジューリング、完全演算子並列化、低オーバーヘッド同期、NUMA対応スケジューリングの原理を用いて、他のシステムでもメニーコアスケーリングを改善できると示唆している。作業時間read28:3628:36author32:453:09summary60:3727:52感想近現代のサーバアーキテクチャで主流になっているNUMAでのクエリパフォーマンス向上のための論文のため、古典的なものに比べ概念が難しいものが多い。もう少し理解を深めたい。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Go の Fuzzy Finder ライブラリ「go-fzf」の紹介]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/go-fzf-introduction</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/go-fzf-introduction</guid>
-            <pubDate>Mon, 17 Apr 2023 10:01:33 GMT</pubDate>
-            <content:encoded><![CDATA[Go の Fuzzy Finder ライブラリである go-fzf を作りました。https://github.com/koki-develop/go-fzfgo-fzf を使用すると次のような Fuzzy Finder を簡単に実装することができます。上の例で実行している main.go の内容はこれだけです。main.gopackage mainimport (	"fmt"	"log"	"github.com/koki-develop/go-fzf")func main() {	items := []string{"hello", "world", ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[列指向DBMSにおけるデータを提案した論文を読みました]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/hyper_pipelining_query_execution</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/hyper_pipelining_query_execution</guid>
-            <pubDate>Mon, 17 Apr 2023 01:16:56 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の趣旨"MonetDB/X100: Hyper-Pipelining Query Execution"という2005年に発表された、列指向DBMSを提案した論文を読んでいきます。分析ワークロード向けRDBMSにおける初期実装であるMonetDBを扱った論文で、提案時期が2005年と古くはあるものの現代のDWHの礎となる内容です。MonetDB/X100: Hyper-Pipelining Query ExecutionPeter Boncz, Marcin Zukowski, Niels Nes著者についてPeter Boncz、Marcin Zukowski、Niels Nseのグループによる論文。いずれの著者も機械学習や分析におけるDBMSについて研究している。問題意識2005年当時のDBMSは他のアプリケーションに比べ、IPCが低くなる傾向にあった。原因はほとんどのDBMSがコンパイラの最適化を阻害する実装だったためである。これはRDBMSが実装された当時に比べCPUやコンパイラが発達したためで、この論文ではC-store DBMSであるMonetDBと従来のR-store DBMSをそれぞれTPC-Hで評価を行い、パフォーマンス阻害要件と最適化方法を提案している。手法CPUによるIF文の処理方法はDBMSにとっては選択性が低く、そういった実行は予測不可能でありクエリ実行を著しく劣らせた。提案手法ではMonetDB/X100として効率的なシーケンシャルアクセスに向けた、C-storeストレージとクエリエンジンを実装した。RAMは提案手法のデータアクセスと同様の方法で圧縮して保存し、Cacheではなベクトル化された処理にもとづくパイプライン実装を使用した。CPUにおいてもベクトル型における式計算を提供し、コンパイラが高効率な処理を生成した。結果として提案手法は従来のDBMS実行に比べTPC-Hで優れた性能をしめした。作業時間read21:3221:32author29:007:28summary56:2027:20感想2005年と古く、またVolcano-likeなど知らない概念も登場した。提案内容としては現代のDWHが採用しているものだった。論文外の感想今回本文を読む時間を大幅に短くしてみたが、それにともない理解度も低下した気がする。やっぱり30分以上で読むのがよさそう。]]></content:encoded>
         </item>
     </channel>
 </rss>
