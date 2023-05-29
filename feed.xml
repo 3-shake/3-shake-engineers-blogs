@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 28 May 2023 18:30:31 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 May 2023 18:30:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Terraform 1.5 で既存リソースからの HCL 生成ができるようになるので試してみる]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/tf-generate-config</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/tf-generate-config</guid>
+            <pubDate>Mon, 29 May 2023 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Terraform 1.5 のベータ版がリリースされています。https://github.com/hashicorp/terraform/releases/tag/v1.5.0-beta1https://github.com/hashicorp/terraform/releases/tag/v1.5.0-beta2Terraform 1.5 で追加される機能の中には以下のようなものが含まれています。import ブロックterraform plan の -generate-config-out オプションTerraform では手作業などで作成済みの既存リソースも...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OLAPデータベースを支える技術]]></title>
             <link>https://zenn.dev/nnaka2992/articles/technics_behind_analytical_database</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/counter_control_flow_divergence_in_compiled_query_pipelines</guid>
             <pubDate>Thu, 20 Apr 2023 02:00:20 GMT</pubDate>
             <content:encoded><![CDATA[この記事の趣旨2020年に提案された"Make the most out of your SIMD investments: counter control flowdivergence in compiled query pipelines"という論文を読みました。SIMDによるベクトル処理の最適化とRDBでの応用について扱った、最適化に関する論文です。Make the most out of your SIMD investments: counter control flow divergence in compiled query pipelinesHarald Lang, Linnea Passing, Andreas Kipf, Peter Boncz, Thomas Neumann, Alfons Kemper著者についてHarald Lang、 Linnea Passing、 Andreas Kipf、 Peter Boncz、 Thomas Neumann、 Alfons Kemperのグループによる研究いずれも最新のアーキテクチャでのクエリ最適化やデータ分析における検索手法などを研究している。問題意識CPUの発展にともないあたらしいCPUアーキテクチャが登場した。Single Instruction Multiple Data(SIMD)ではRDBはSIMDによるベクトル処理能力の向上により、クエリコンパイラの実行パイプライン全体をベクトル化して高度なデータ並列性の恩恵を受けることが出来るようになった。一方でクエリ全体をベクトル化して実行することで、SIMDによるクエリ評価が忙しくなる。SIMD評価で結果に寄与しない評価が単純にオーバーヘッドとなってしまう。手法本論文ではリフィルアルゴリズムとそのアルゴリズムをクエリパイプラインプランに統合する手法で上記の問題の解決を試みている。リフィルアルゴリズムは基本的に新しい要素を宛先レジスタの希望する位置にコピーするアルゴリズムで、メモリからレジスタとレジスタからレジスタへのコピーの2パターンが存在する。クエリパイプラインプランに統合するリフィル戦略ではConsume EverythingパターンとPartial Consumeパターンが存在する。Consum Everything戦略は、タプルをバッファリングするために使用される追加のベクターレジスタを割り当てる方法で利用率が低い場合、オペレータはこれらのタプルの処理を延期する。つまり、この反復ではボディは実行されず(条件が満たされない場合)、代わりにアクティブなタプルがこれらのバッファレジスタに移動することになる。Partial Consume戦略ではconsume()コードを入力の一部に適用する方法で、制御フローを前のオペレータに戻し、アクティブなデータ断片のみをベクトルレジスタに残すことで実行を延期している。作業時間read29:4029:40author33:404:00summary60:0426:36感想前回に引続き個人的には難しいと感じる論文だった。2000年前後の提案にくらべ、2015年前後の論文ではハードウェアアーキテクチャを中心とした手法がピックアップされている。単純に自分の知識不足、理解力不足なので勉強するしかない。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[NUMAアーキテクチャでのクエリ最適化に関する論文を読みました]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/numa_aware_query_evaluation_framework</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/numa_aware_query_evaluation_framework</guid>
-            <pubDate>Tue, 18 Apr 2023 01:01:35 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の趣旨"Morsel-Driven Parallelism: A NUMA-Aware Query Evaluation Framework forthe Many-Core Age"という2014年に発表された、多コアサーバにおけるクエリ最適化手法をあつかった論文を読みました。[Morsel-Driven Parallelism: A NUMA-Aware QueryEvaluation Framework for the Many-Core Age](https://15721.courses.cs.cmu.edu/spring2023/papers/07-scheduling/p743-leis.pdf)Viktor Leis, Peter Boncz, Alfons Kemper, Thomas Neumann著者についてViktor Leis、 Peter Boncz、 Alfons Kemper、Thomas Neumannのグループによる研究いずれもデータベースと 高速化かを中心に研究している。問題意識コンピュータアーキテクチャの進化にともない、二つのあたらしい問題が生じた。多コアを利用するためにクエリを数百のスレッドに均等に分散させるそれをNUMA(Non-Uniform Memory Access)による順序通りではないメモリアクセスで実現する必要がある。これらの要因からplanベースの並列処理による不可分散とコンテキストスイッチとボトルネックが問題になりスケールが難しかった。NUMAによってデータとアクセススレッドがどのチップに配置されるかによって、データ項目のアクセスコストが異なるため、コンピュータ自体がネットワークになっており、多コア並列化では、RAMやキャッシュ階層を考慮する必要がある。この論文ではMoral-drivenクエリ実行フレームワークを提案している。手法提案手法は並列クエリ処理のため、morselドリブンクエリ評価フレームワークを提示した。これはメニーコア時代の分析クエリ性能の主要なボトルネックである負荷分散、スレッド同期、メモリアクセス局所性およびリソース弾力性を解決することを目的としている。ベースとなるアイデアは以下の2つに分けられる。メモリ上のデータをmorselと呼ばれる小さなバッチに分割し、バッチごとに処理を実行したあとにそれぞれの処理結果をグローバルハッシュテーブルとしてまとめる。Figure 3: NUMA-aware processing of the build-phaseディスパッチャと呼ばれる並行パイプライン制御を行ない、ワーカースレッドをタスクに割り当てるFigure 5: Dispatcher assigns pipeline-jobs on morsels to threads depending on the coreまとめとして著者はきめ細かいスケジューリング、完全演算子並列化、低オーバーヘッド同期、NUMA対応スケジューリングの原理を用いて、他のシステムでもメニーコアスケーリングを改善できると示唆している。作業時間read28:3628:36author32:453:09summary60:3727:52感想近現代のサーバアーキテクチャで主流になっているNUMAでのクエリパフォーマンス向上のための論文のため、古典的なものに比べ概念が難しいものが多い。もう少し理解を深めたい。]]></content:encoded>
         </item>
     </channel>
 </rss>
