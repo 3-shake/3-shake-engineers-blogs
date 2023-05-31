@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 30 May 2023 18:31:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 May 2023 18:30:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Redis公式のGoクライアントライブラリrueidisを試してみた]]></title>
+            <link>https://qiita.com/bayobayo0324/items/8ac3e27eef360a316ad2</link>
+            <guid>https://qiita.com/bayobayo0324/items/8ac3e27eef360a316ad2</guid>
+            <pubDate>Wed, 31 May 2023 12:02:25 GMT</pubDate>
+            <content:encoded><![CDATA[This 記事 is 何？Twitterぼんやり見てたらRedis公式のGo用クライアントライブラリが出てたとかで、自身のプロジェクトにどの程度簡単に入れられるのかなーと思い試してみました。公式…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Terraform 1.5 で既存リソースからの HCL 生成ができるようになるので試してみる]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/tf-generate-config</link>
@@ -230,13 +237,6 @@
             <guid>https://pranc1ngpegasus.hatenablog.com/entry/2023/04/20/120509?utm_source=feed</guid>
             <pubDate>Thu, 20 Apr 2023 03:05:09 GMT</pubDate>
             <content:encoded><![CDATA[生まれつき鼻の骨が曲がっており、左鼻の気道がかなり狭かった。起床時に酸欠による頭痛がしたり、左鼻だけ化膿したり、右鼻が詰まると口呼吸になったり、息ができなくて溺れている感覚で目が覚めたり影響がたくさんあった。左右の鼻を隔てる壁のことを鼻中隔といい、それが曲がっていることを鼻中隔湾曲症というらしい。27年抱えてきた問題を解決すべく総合病院にて手術を受けたのでまとめる。症状の名前鼻中隔湾曲症および肥厚性鼻炎手術の内容全身麻酔の状態で手術を行った。まず、鼻から内視鏡を入れ、曲がった軟骨を切除した。次に、粘膜が厚くなっているために気道を狭くしていることもわかったので同時に切除減量した。術後の経過麻酔から覚めると、両鼻にガーゼが詰め込まれた状態になっていた。これは止血のためと、軟骨を切除したために低下した鼻の強度を支えるためのものであった。両鼻にガーゼが詰まっているので強制的に口呼吸が必要になり、夜間がめっちゃつらかった。また出血もそこそこあったので、血の海になることを覚悟しながら床に就いた。これからガーゼは術後3日目に取り外し、鼻の中を湿らせて回復を早めるために2~4週間ほど両鼻に綿球を入れて生活する。鼻の表面にはキズがないので、マスクをつけていれば見た目は普通の状態で生活できそうだ。両鼻に綿球が入っていて鼻で呼吸ができないため会話すらしづらいのが難点である。まとめ術後1ヶ月もすれば綿球からも開放されてもとの生活に戻れる見込みである。呼吸がしやすくなるはずなので睡眠の効率や疲れやすさの改善などさまざまな改善が楽しみである。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SIMDによるベクトル処理の最適化とRDBでの応用について扱った、最適化に関する論文を読みました]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/counter_control_flow_divergence_in_compiled_query_pipelines</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/counter_control_flow_divergence_in_compiled_query_pipelines</guid>
-            <pubDate>Thu, 20 Apr 2023 02:00:20 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の趣旨2020年に提案された"Make the most out of your SIMD investments: counter control flowdivergence in compiled query pipelines"という論文を読みました。SIMDによるベクトル処理の最適化とRDBでの応用について扱った、最適化に関する論文です。Make the most out of your SIMD investments: counter control flow divergence in compiled query pipelinesHarald Lang, Linnea Passing, Andreas Kipf, Peter Boncz, Thomas Neumann, Alfons Kemper著者についてHarald Lang、 Linnea Passing、 Andreas Kipf、 Peter Boncz、 Thomas Neumann、 Alfons Kemperのグループによる研究いずれも最新のアーキテクチャでのクエリ最適化やデータ分析における検索手法などを研究している。問題意識CPUの発展にともないあたらしいCPUアーキテクチャが登場した。Single Instruction Multiple Data(SIMD)ではRDBはSIMDによるベクトル処理能力の向上により、クエリコンパイラの実行パイプライン全体をベクトル化して高度なデータ並列性の恩恵を受けることが出来るようになった。一方でクエリ全体をベクトル化して実行することで、SIMDによるクエリ評価が忙しくなる。SIMD評価で結果に寄与しない評価が単純にオーバーヘッドとなってしまう。手法本論文ではリフィルアルゴリズムとそのアルゴリズムをクエリパイプラインプランに統合する手法で上記の問題の解決を試みている。リフィルアルゴリズムは基本的に新しい要素を宛先レジスタの希望する位置にコピーするアルゴリズムで、メモリからレジスタとレジスタからレジスタへのコピーの2パターンが存在する。クエリパイプラインプランに統合するリフィル戦略ではConsume EverythingパターンとPartial Consumeパターンが存在する。Consum Everything戦略は、タプルをバッファリングするために使用される追加のベクターレジスタを割り当てる方法で利用率が低い場合、オペレータはこれらのタプルの処理を延期する。つまり、この反復ではボディは実行されず(条件が満たされない場合)、代わりにアクティブなタプルがこれらのバッファレジスタに移動することになる。Partial Consume戦略ではconsume()コードを入力の一部に適用する方法で、制御フローを前のオペレータに戻し、アクティブなデータ断片のみをベクトルレジスタに残すことで実行を延期している。作業時間read29:4029:40author33:404:00summary60:0426:36感想前回に引続き個人的には難しいと感じる論文だった。2000年前後の提案にくらべ、2015年前後の論文ではハードウェアアーキテクチャを中心とした手法がピックアップされている。単純に自分の知識不足、理解力不足なので勉強するしかない。]]></content:encoded>
         </item>
     </channel>
 </rss>
