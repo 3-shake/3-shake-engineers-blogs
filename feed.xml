@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 05 Jun 2023 18:30:54 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jun 2023 18:30:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[OPEN AI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話]]></title>
+            <link>https://sreake.com/blog/mermaid-with-openai-api/</link>
+            <guid>https://sreake.com/blog/mermaid-with-openai-api/</guid>
+            <pubDate>Tue, 06 Jun 2023 02:44:12 GMT</pubDate>
+            <content:encoded><![CDATA[前段 Sreake事業部の橋本です。 ChatGPTで話題のOPEN AIのモデルは、現在画像の取り扱いはまだ発展途上です。文章から画像を作るAPIや画像入力が検討されていますが、システム運用にクリティカルに使えそうにな […]The post OPEN AI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Redis公式のGoクライアントライブラリrueidisを試してみた]]></title>
             <link>https://qiita.com/bayobayo0324/items/8ac3e27eef360a316ad2</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/satoken/articles/polytech-susume</guid>
             <pubDate>Fri, 21 Apr 2023 00:57:44 GMT</pubDate>
             <content:encoded><![CDATA[はじめに各都道府県には職業能力開発促進センター（ポリテクセンター）と呼ばれる職業訓練を行う施設があります。プログラマやインフラエンジニアになるためにここ数年スクールを受講するのが流行っていますが、今回はこのポリテクセンターをおすすめしたいと思います。ポリテクセンターでは求職者向け訓練と在職者向け訓練があります。求職者向け訓練はこれから会社に就職するために6ヶ月ほど訓練を受講します。在職者向け訓練はすでに会社に就職している人向けの1〜3日ほどの内容を絞った講座形式になります。 求職者向け訓練例えば神奈川県にあるポリテクセンター関東では以下の求職者向け訓練があります。...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[鼻中隔湾曲症の手術をした]]></title>
-            <link>https://pranc1ngpegasus.hatenablog.com/entry/2023/04/20/120509?utm_source=feed</link>
-            <guid>https://pranc1ngpegasus.hatenablog.com/entry/2023/04/20/120509?utm_source=feed</guid>
-            <pubDate>Thu, 20 Apr 2023 03:05:09 GMT</pubDate>
-            <content:encoded><![CDATA[生まれつき鼻の骨が曲がっており、左鼻の気道がかなり狭かった。起床時に酸欠による頭痛がしたり、左鼻だけ化膿したり、右鼻が詰まると口呼吸になったり、息ができなくて溺れている感覚で目が覚めたり影響がたくさんあった。左右の鼻を隔てる壁のことを鼻中隔といい、それが曲がっていることを鼻中隔湾曲症というらしい。27年抱えてきた問題を解決すべく総合病院にて手術を受けたのでまとめる。症状の名前鼻中隔湾曲症および肥厚性鼻炎手術の内容全身麻酔の状態で手術を行った。まず、鼻から内視鏡を入れ、曲がった軟骨を切除した。次に、粘膜が厚くなっているために気道を狭くしていることもわかったので同時に切除減量した。術後の経過麻酔から覚めると、両鼻にガーゼが詰め込まれた状態になっていた。これは止血のためと、軟骨を切除したために低下した鼻の強度を支えるためのものであった。両鼻にガーゼが詰まっているので強制的に口呼吸が必要になり、夜間がめっちゃつらかった。また出血もそこそこあったので、血の海になることを覚悟しながら床に就いた。これからガーゼは術後3日目に取り外し、鼻の中を湿らせて回復を早めるために2~4週間ほど両鼻に綿球を入れて生活する。鼻の表面にはキズがないので、マスクをつけていれば見た目は普通の状態で生活できそうだ。両鼻に綿球が入っていて鼻で呼吸ができないため会話すらしづらいのが難点である。まとめ術後1ヶ月もすれば綿球からも開放されてもとの生活に戻れる見込みである。呼吸がしやすくなるはずなので睡眠の効率や疲れやすさの改善などさまざまな改善が楽しみである。]]></content:encoded>
         </item>
     </channel>
 </rss>
