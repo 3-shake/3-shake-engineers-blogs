@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 06 Jun 2023 18:30:55 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Jun 2023 18:31:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,18 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[OPEN AI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話]]></title>
+            <title><![CDATA[お前のパケットはもう死んでいる。TCPに死亡フラグを実装してみた]]></title>
+            <link>https://zenn.dev/satoken/articles/golang-rfc9401</link>
+            <guid>https://zenn.dev/satoken/articles/golang-rfc9401</guid>
+            <pubDate>Wed, 07 Jun 2023 00:32:17 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにプロトコルの仕様などIETFが発行しているRFCにはジョークRFCというものが存在しています。伝書鳩でIP通信するとか、コーヒーポットを制御するなどが有名です。鳥類キャリアによるIPHyper Text Coffee Pot Control Protocol (HTCPCP/1.0) 日本語訳今年そんなジョークRFCに、TCPに死亡フラグを実装するというRFC9401が追加されました。The Addition of the Death (DTH) Flag to TCP 日本語訳この記事ではこのTCPに死亡フラグを実装するというRFC9401を真面目に実装してみ...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話]]></title>
             <link>https://sreake.com/blog/mermaid-with-openai-api/</link>
             <guid>https://sreake.com/blog/mermaid-with-openai-api/</guid>
             <pubDate>Tue, 06 Jun 2023 02:44:12 GMT</pubDate>
-            <content:encoded><![CDATA[前段 Sreake事業部の橋本です。 ChatGPTで話題のOPEN AIのモデルは、現在画像の取り扱いはまだ発展途上です。文章から画像を作るAPIや画像入力が検討されていますが、システム運用にクリティカルに使えそうにな […]The post OPEN AI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <content:encoded><![CDATA[前段 Sreake事業部の橋本です。 ChatGPTで話題のOpenAIのモデルは、現在画像の取り扱いはまだ発展途上です。文章から画像を作るAPIや画像入力が検討されていますが、システム運用にクリティカルに使えそうになる […]The post OpenAI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Redis公式のGoクライアントライブラリrueidisを試してみた]]></title>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/2023/04/21/104506</guid>
             <pubDate>Fri, 21 Apr 2023 01:45:06 GMT</pubDate>
             <content:encoded><![CDATA[この記事の趣旨2018年に発表された"Everything You Always Wanted to Know AboutCompiled and Vectorized Queries But Were Afraid to Ask"という論文を読みました。最新のクエリエンジンの特性をまとめ、どのようなワークロードに向くのかという指針を示すないようです。Everything You Always Wanted to Know About Compiled and Vectorized Queries But Were Afraid to AskTimo Kersten, Viktor Leis, Alfons Kemper, Thomas Neumann, Andrew Pavlo, Peter Boncz著者についてTimo Kersten, Viktor Leis, Alfons Kemper, Thomas Neumann, Andrew Pavlo, Peter Bonczのグループによる論文。いずれも大規模データにおけるクエリパフォーマスや最適化に関する研究を行なっている。問題意識分析ワークロードに向いた最新のクエリエンジンはベクトル化またはデータ中心のコード生成に基づいている。どちらのモデルも従来のエンジンに比べオーバーヘッドが少く、非常に効率的なものの概念的には大きく異なっている。この2つのモデルの違いは、DBMSの実行エンジンのソースコードの構成とその性能特性を決定する基本的なもので、クエリ実行モデルを超える多くの設計で異なる。本論文はことなる2つのモデルを再実装し、環境差異のないマシンで実行することでそれぞれのモデルがどのように違うのか。どのような用途に最適なのかを検証している。手法検証手法は著者らがC++で再実装したデータ中心モデルの「Taper」とベクトル化中心の「Tectorwise」を同一のマシンでパフォーマンス検証を行っている。検証項目は以下から成る1. インメモリOLAPワークロードでのマイクロアーキテクチャ分析1. SIMDの利点の検証1. マルチコアCPUにおけるクエリ並列化1. 異なるハードウェアでのパフォーマンス結果インメモリOLAPワークロードでのマイクロアーキテクチャ分析Figure 3: Performance – TPC-H SF=1, 1 threadSIMDの利点の検証SIMDを評価するにはTectorwiseのみを用いた。SIMDではスカラーなデータをベクトルに変換するペナルティは少く、最大8.4倍の性能向上が確認された。Figure 6: Scalar vs. SIMD Selection in TectorwiseマルチコアCPUにおけるクエリ並列化異なるハードウェアでのパフォーマンスIntel Skylake、Intel Knights Landing、AMD Ryzenで対照実験を行なったものの、いずれのハードウェアでもTyper、Tectorwiseともに有効に動作した。作業時間read29:2629:26author33:233:57summary76:3742:44感想VoectorwiseとHyperのいずれを使うべきか。どちらが優れているかといった疑問に答えるないようだった。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ポリテクセンターのススメ]]></title>
-            <link>https://zenn.dev/satoken/articles/polytech-susume</link>
-            <guid>https://zenn.dev/satoken/articles/polytech-susume</guid>
-            <pubDate>Fri, 21 Apr 2023 00:57:44 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに各都道府県には職業能力開発促進センター（ポリテクセンター）と呼ばれる職業訓練を行う施設があります。プログラマやインフラエンジニアになるためにここ数年スクールを受講するのが流行っていますが、今回はこのポリテクセンターをおすすめしたいと思います。ポリテクセンターでは求職者向け訓練と在職者向け訓練があります。求職者向け訓練はこれから会社に就職するために6ヶ月ほど訓練を受講します。在職者向け訓練はすでに会社に就職している人向けの1〜3日ほどの内容を絞った講座形式になります。 求職者向け訓練例えば神奈川県にあるポリテクセンター関東では以下の求職者向け訓練があります。...]]></content:encoded>
         </item>
     </channel>
 </rss>
