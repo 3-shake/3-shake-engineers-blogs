@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 07 Jun 2023 18:31:31 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Jun 2023 18:30:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 1.27 以降のバッチ処理の改善]]></title>
+            <link>https://zenn.dev/toversus/articles/d6065bea460871</link>
+            <guid>https://zenn.dev/toversus/articles/d6065bea460871</guid>
+            <pubDate>Thu, 08 Jun 2023 03:46:32 GMT</pubDate>
+            <content:encoded><![CDATA[Kubernetes 1.27 以降で実装済みまたは予定されているバッチ処理の改善に繋がる KEP や Kubernetes のサブプロジェクトの現状を見ていきます。 KEP-3673: Kubelet limit of Parallel Image Pulls!Kubernetes 1.27 時点でアルファ機能です。1.28 でベータを目指していますが、設定はデフォルトで無効化されています。Pod の起動にノードのスケールアウトが必要な場合に、Pod の起動時間の短縮が期待できます。バッチ処理の Pod が一斉に起動するケースで恩恵を受けられそうです。Kubelet は...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[お前のパケットはもう死んでいる。TCPに死亡フラグを実装してみた]]></title>
             <link>https://zenn.dev/satoken/articles/golang-rfc9401</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/2023/04/23/231628</guid>
             <pubDate>Sun, 23 Apr 2023 14:16:28 GMT</pubDate>
             <content:encoded><![CDATA[この記事の趣旨2016年に発表された"An Experimental Comparison of Thirteen Relational Equi-Joins in Main Memory"という論文を読みました。様々な結合手法を包括的に比較した論文でどのような結合方法がどのような時に適しているかを示しています。An Experimental Comparison of Thirteen Relational Equi-Joins in Main Memory著者についてStefan Schuh、Xiao Chen、Jens Dittrichのグループによる論文。いずれもDBMSや分析システム、Hadoopなどにおける検索高速化・最適化の研究を行なっている。問題意識関係結合はほとんど全てのクエリプランにおいて中核をなす処理であり、定期的に研究・改良され再検討されてきた。新たな手法が提案され実験を行なわれるものの、それぞれ結果において比較を困難にする要素や幾らかの矛盾を孕んでいた。例えば同じハッシュベースの結合アルゴリズムの比較でも実装が異なったり、複数の論文でパフォーマンス比較で正反対の結果を示しているためである。そのため単純に論文執筆時点で最も高速な結合アルゴリズムを結論づけることが困難であった。手法本論文では結合方法を以下の3つに分類した1. パーティションベースハッシュジョインパーティションに分割し結合する手法。ハッシュテーブルの構築と結合されるデータの探索のキャッシュミスを最小にする事を目的としている。非パーティションベースハッシュジョインパーティションテーブルを構築しながら結合を行なう手法で、マルチスレッドと順番に依存しない実行によりキャッシュミスのパフォーマンス劣化を隠蔽している。ソートマージジョインSIMDによりベクトル化される。検証ではこれらの結合方法を以下の3つのテストで使用するために、全部で13のアルゴリズムを検証している。1. ブラックボックス比較ブラックボックス的に比較する。ホワイトボックス比較ブラックボックス比較で検証する結合方法に先行研究で示された最適化を施した上で比較を行なう。パラレルラディックスジョイン比較Table 2結果パーティション結合の一種であるリモート書込みを排除したCPR系アルゴリズムは小さな入力に対して有効ではないスケールの大きい結合ではとくに理由が無い場合、パーティションベースのジョインを利用する大きなサイズのページを利用するソフトウェアライトコンバインバッファ()を利用するパーティションジョインでは適切なパーティションビットを利用するできるかぎりシンプルなアルゴリズムを利用するNUMAを考慮したアルゴリズムを利用する実行時間とクエリ時間は同一ではない作業時間read31:3431:34author35:183:46summary77:5042:32]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コンパイルとベクトル化による最適化のパフォーマンスを比較した論文を読みました]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/2023/04/21/104506</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/2023/04/21/104506</guid>
-            <pubDate>Fri, 21 Apr 2023 01:45:06 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の趣旨2018年に発表された"Everything You Always Wanted to Know AboutCompiled and Vectorized Queries But Were Afraid to Ask"という論文を読みました。最新のクエリエンジンの特性をまとめ、どのようなワークロードに向くのかという指針を示すないようです。Everything You Always Wanted to Know About Compiled and Vectorized Queries But Were Afraid to AskTimo Kersten, Viktor Leis, Alfons Kemper, Thomas Neumann, Andrew Pavlo, Peter Boncz著者についてTimo Kersten, Viktor Leis, Alfons Kemper, Thomas Neumann, Andrew Pavlo, Peter Bonczのグループによる論文。いずれも大規模データにおけるクエリパフォーマスや最適化に関する研究を行なっている。問題意識分析ワークロードに向いた最新のクエリエンジンはベクトル化またはデータ中心のコード生成に基づいている。どちらのモデルも従来のエンジンに比べオーバーヘッドが少く、非常に効率的なものの概念的には大きく異なっている。この2つのモデルの違いは、DBMSの実行エンジンのソースコードの構成とその性能特性を決定する基本的なもので、クエリ実行モデルを超える多くの設計で異なる。本論文はことなる2つのモデルを再実装し、環境差異のないマシンで実行することでそれぞれのモデルがどのように違うのか。どのような用途に最適なのかを検証している。手法検証手法は著者らがC++で再実装したデータ中心モデルの「Taper」とベクトル化中心の「Tectorwise」を同一のマシンでパフォーマンス検証を行っている。検証項目は以下から成る1. インメモリOLAPワークロードでのマイクロアーキテクチャ分析1. SIMDの利点の検証1. マルチコアCPUにおけるクエリ並列化1. 異なるハードウェアでのパフォーマンス結果インメモリOLAPワークロードでのマイクロアーキテクチャ分析Figure 3: Performance – TPC-H SF=1, 1 threadSIMDの利点の検証SIMDを評価するにはTectorwiseのみを用いた。SIMDではスカラーなデータをベクトルに変換するペナルティは少く、最大8.4倍の性能向上が確認された。Figure 6: Scalar vs. SIMD Selection in TectorwiseマルチコアCPUにおけるクエリ並列化異なるハードウェアでのパフォーマンスIntel Skylake、Intel Knights Landing、AMD Ryzenで対照実験を行なったものの、いずれのハードウェアでもTyper、Tectorwiseともに有効に動作した。作業時間read29:2629:26author33:233:57summary76:3742:44感想VoectorwiseとHyperのいずれを使うべきか。どちらが優れているかといった疑問に答えるないようだった。]]></content:encoded>
         </item>
     </channel>
 </rss>
