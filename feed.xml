@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 18 Jun 2023 18:30:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Jun 2023 18:31:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[アプリ開発者のための Kubernetes 講座]]></title>
+            <link>https://zenn.dev/toshikish/articles/6a06017747cbba</link>
+            <guid>https://zenn.dev/toshikish/articles/6a06017747cbba</guid>
+            <pubDate>Mon, 19 Jun 2023 06:03:18 GMT</pubDate>
+            <content:encoded><![CDATA[これは何Kubernetes クラスタ管理者とアプリケーション開発者が分業しているプロジェクトで，開発者が必ずしも Kubernetes に詳しくない場合を想定し，開発時に使いそうなコマンドをまとめたものです。クラスタ管理者から開発者にこのドキュメントを適宜改変して渡し，開発者がある程度自立して操作できるようになることで，管理者への問い合わせ負荷を減らすのが狙いです。場合によってはハンズオンで講座を開いてもよいでしょう。 ドキュメント案ここでは Amazon EKS でクラスタを構築する場合の例を示します。別のインフラに構築している場合は適宜書き換えてください。 事...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Terraform 静的検査ツール比較]]></title>
             <link>https://zenn.dev/tayusa/articles/9829faf765ab67</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kou_pg_0131/articles/gh-grass-introduction</guid>
             <pubDate>Mon, 01 May 2023 09:19:56 GMT</pubDate>
             <content:encoded><![CDATA[GitHub の草 ( Contribution Graph ) をどうしてもコンソールに生やしたくなることはありませんか？ありますよね？僕はありません。そんなときに便利な GitHub CLI 拡張機能「gh-grass」を作りました。https://github.com/koki-develop/gh-grassこういうことができます。他にもこんなことや、文字をカスタマイズこんなこともできます。アニメーションこの記事では gh-grass のインストール方法から基本的な使い方についてまとめます。 インストール!GitHub CLI がインストールされてい...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[DBMSとクライアント間におけるデータ転送を最適化する論文を読みました]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/2023/05/01/123418</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/2023/05/01/123418</guid>
-            <pubDate>Mon, 01 May 2023 03:34:18 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の趣旨2017年に出版されたリモートDBMSとクライアント間の大量データ転送を最適化する手法を提案する論文を読みました。Don’t Hold My Data Hostage – A Case For Client Protocol Redesign著者についてMark Raasveldt、Hannes Muhleisenらのグループによる論文。いずれもCentrum Wiskunde & Informaticaの所属で、DuckDBのCxO。DBMSと分析システムにおけるパフォーマンス最適化を研究している。問題意識DBMSからクライアントプログラムに大量のデータを転送することは一般的なタスクである。例えばRやPythonなどを用いた分析システムはしばしばデータベース・インターフェースを利用してデータの取得を行なっている。一方でネットワーク越しにデータを転送することはレイテンシを増加させ、転送時間を長引かせる要因である。そのため分析用途で大量のデータ転送を避け、一部のデータをサンプルとして利用するに止まることが多い。このアプローチはパフォーマンスの低下を押さえられるものの、分析や機械学習の精度を下げることに繋がる。とくに既存のクライアントではネットワークによるレイテンシとスループットの制限に大きな影響を受けパフォーマンスを劣化させる。この問題はデータベースが別マシンやクラウドで動作するときにより大きな問題となる。手法本論文では既存のシリアライズ手法と圧縮手法によるパフォーマンスへの影響を計測し、新しいプロトコルとして以下の特性を持つ手法を提案している。1. チャンク毎のデータ転送と(デ)シリアライゼーション1. ヒューリスティックによる圧縮方法の決定1. text/binaryによるカスタムシリアライゼーションを使用する1. NULL終端によるテキストの取り扱い実験結果提案手法を実装したMonetDB(表内ではMonetDB++)とPostgreSQL(表内ではPostgreSQL++)を既存のDBMSやnetcatと比較することで評価を行なっている。TCP-Hのlineitem、American Community Survay、Airline On-Time Statisticsの3つのデータセットで評価を行なったところ、ローカル通信における非圧縮netcatを除き殆どのケースでMonetDB++系が最良のパフォーマンスを発揮し次点でPostgreSQL++系が優れた結果を残している。Table 10Table 11Table 12PostgreSQLに比べMonetDBが優れている理由はPostgreSQLの行指向データを列指向に変換するコストのためである。作業時間read31:2131:21author35:384:17summary70:1334:35感想論文出版時にはTPC/IPプロトコルが前提でQuic登場前のため、ネットワークプロトコル自体は考慮されていない。現在であればTPC/IPとQuicに適合した手法の比較が行なわれると思うので気になるところ。]]></content:encoded>
         </item>
     </channel>
 </rss>
