@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 25 Jun 2023 18:32:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Jun 2023 18:33:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,11 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[アプリ開発者のための Kubernetes 講座]]></title>
+            <title><![CDATA[アプリ開発者のための kubectl 講座]]></title>
             <link>https://zenn.dev/toshikish/articles/6a06017747cbba</link>
             <guid>https://zenn.dev/toshikish/articles/6a06017747cbba</guid>
             <pubDate>Mon, 19 Jun 2023 06:03:18 GMT</pubDate>
-            <content:encoded><![CDATA[これは何Kubernetes クラスタ管理者とアプリケーション開発者が分業しているプロジェクトで，開発者が必ずしも Kubernetes に詳しくない場合を想定し，開発時に使いそうなコマンドをまとめたものです。クラスタ管理者から開発者にこのドキュメントを適宜改変して渡し，開発者がある程度自立して操作できるようになることで，管理者への問い合わせ負荷を減らすのが狙いです。場合によってはハンズオンで講座を開いてもよいでしょう。 ドキュメント案ここでは Amazon EKS でクラスタを構築する場合の例を示します。別のインフラに構築している場合は適宜書き換えてください。 事...]]></content:encoded>
+            <content:encoded><![CDATA[これは何Kubernetes クラスタ管理者とアプリケーション開発者が分業しているプロジェクトで，開発者が必ずしも Kubernetes に詳しくない場合を想定し，開発時に使いそうな kubectl のコマンドをまとめたものです。クラスタ管理者から開発者にこのドキュメントを適宜改変して渡し，開発者がある程度自立して操作できるようになることで，管理者への問い合わせ負荷を減らすのが狙いです。場合によってはハンズオンで講座を開いてもよいでしょう。 ドキュメント案ここでは Amazon EKS でクラスタを構築する場合の例を示します。別のインフラに構築している場合は適宜書き換え...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Terraform 静的検査ツール比較]]></title>
