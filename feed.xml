@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 03 Jul 2023 09:26:55 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jul 2023 18:32:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,19 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[光に負けルナ~Google Cloudでのマルチリージョンデータベースについて~]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/to_beat_light_speed_on_google_cloud_databases</link>
+            <guid>https://zenn.dev/nnaka2992/articles/to_beat_light_speed_on_google_cloud_databases</guid>
+            <pubDate>Mon, 03 Jul 2023 15:39:08 GMT</pubDate>
+            <content:encoded><![CDATA[クラウドを利用する一番のメリットの一つとしてオンデマンドでリソースを調達し、アクセス負荷に応じてスケールイン・アウト出来ることが上げられます。そのため大体のアプリケーションではシングルリージョンまたは隣接するリージョン2~3程度で運用を始めることが多いと思います。(日本の場合asia-northeast-1とasia-northeast-2など)アプリケーションがグローバルに拡大すると、それだけ物理的な距離が広がりユーザ・サーバ間のアクセスにかかる時間が拡大します。例えばユーザ・サーバ共に日本にある場合(沖縄・北海道間約3,000km)、ネットワークによる遅延は片道約15ms以下...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[スリーシェイクに入社しました！]]></title>
+            <link>https://bells17.medium.com/3-shake-279ea982b977?source=rss-713cf42ce34d------2</link>
+            <guid>https://bells17.medium.com/3-shake-279ea982b977?source=rss-713cf42ce34d------2</guid>
+            <pubDate>Mon, 03 Jul 2023 14:10:50 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[SREの専門家が集まったチームで『SREの探求』の社内輪読会を完遂しました。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/07/03/094713</link>
@@ -223,20 +236,6 @@
             <guid>https://zenn.dev/nnaka2992/articles/learning_tidb_internal_for_beginner</guid>
             <pubDate>Thu, 11 May 2023 01:18:19 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこの記事ではNewSQLの特徴であるノード間の分散とトランザクションや分断耐性などがTiDBではどのような技術によって実現されているかを説明することを目的としています。Spannerの論文が2012年に発表されてから10年以上の年月が流れ、優れた論文や実装ドキュメント、個人による解説ブログなど技術的詳細について述べた資料は多くあります。加えてこの記事を入門的なものと位置づけているため各コンポーネントを網羅的に解説するというよりは、キーコンセプトをどのように実装しているのかを実験を混じえながら動作の実現方法の解説を中心に扱います。また今回はTiDBをベースに説明し...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub の Secret scanning’s push protection を試してみる]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/gh-secret-scannings-push-protection</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/gh-secret-scannings-push-protection</guid>
-            <pubDate>Wed, 10 May 2023 10:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[GitHub の Secret scanning's push protection がパブリックリポジトリで無料で使えるようになりました 🎉🎉🎉https://github.blog/changelog/2023-05-09-secret-scannings-push-protection-is-available-on-public-repositories-for-free/Secret scanning's push protection を使うと、例えば AWS のアクセスキーなどといったシークレットをリポジトリへ push するのをブロックすることができます。シークレッ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[はてなブログのコードブロックを”クリップボードにコピーする方法”について]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/05/09/181943</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/05/09/181943</guid>
-            <pubDate>Tue, 09 May 2023 09:19:43 GMT</pubDate>
-            <content:encoded><![CDATA[はてなブログの設定から、Markdown記法で書いた記事にコードブロックのコピーボタンを自動的に追加することができます。また、こちらのブログは完全に非公式ですし自分のブログ以外では試してません。🦾 デザインの設定まず、はてなブログの管理画面にログインし、デザイン設定を開きます。🦾 CSS の設定を行うデザイン設定で、「カスタマイズ」タブをクリックし、「デザインCSS」を開きます。ここで、先ほど紹介したコピーボタンのスタイルを追加します。pre.code {  position: relative;}.copy-button {  position: absolute;  top: 4px;  right: 4px;  display: inline-block;  padding: 8px 16px;  border: none;  border-radius: 4px;  background-color: #1e90ff;  color: #ffffff;  cursor: pointer;  font-size: 14px;  font-weight: bold;  text-decoration: none;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  transition: background-color 0.3s, box-shadow 0.3s;  opacity: 0;  transition: opacity 0.3s;}pre.code:hover .copy-button {  opacity: 1;}.copy-button:hover {  background-color: #2980b9;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);}.copy-button:focus {  outline: none;}.copy-button:active {  box-shadow: none;  transform: translateY(2px);}🦾 フッターHTMLの設定を行う 次に、「カスタマイズ」タブの「フッターHTML」に、以下のコードを追加します。<script>  document.addEventListener('DOMContentLoaded', function() {    // コードブロックを取得    var codeBlocks = document.querySelectorAll('pre.code');        // すべてのコードブロックにコピーボタンを追加    for (var i = 0; i < codeBlocks.length; i++) {      var copyButton = document.createElement('button');      copyButton.className = 'copy-button';      copyButton.textContent = 'Copy code';      copyButton.onclick = function() {        var codeElem = this.parentNode.querySelector('code') || this.parentNode;        var textArea = document.createElement('textarea');        textArea.value = codeElem.textContent.replace(/Copy code$/, ''); // "Copy code" テキストを削除        document.body.appendChild(textArea);        textArea.select();        document.execCommand('copy');        document.body.removeChild(textArea);      }      codeBlocks[i].appendChild(copyButton);    }  });</script>🔍 確認していくhttps://syu-m-5151.hatenablog.com/entry/2023/04/11/084428 にて確認]]></content:encoded>
         </item>
     </channel>
 </rss>
