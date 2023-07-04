@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 04 Jul 2023 08:07:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Jul 2023 08:07:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,13 +14,6 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
-        <item>
-            <title><![CDATA[2023年7月版キャッシュレス生活まとめ]]></title>
-            <link>https://pranc1ngpegasus.hatenablog.com/entry/2023/07/04/162557?utm_source=feed</link>
-            <guid>https://pranc1ngpegasus.hatenablog.com/entry/2023/07/04/162557?utm_source=feed</guid>
-            <pubDate>Tue, 04 Jul 2023 07:25:57 GMT</pubDate>
-            <content:encoded><![CDATA[前回からだいぶ変わったので更新。pranc1ngpegasus.hatenablog.com図および下記文章における「夫」は筆者を指す。主なアップデート内容夫が副業として個人事業を開業しましたメインのクレジットカードがプラチナプリファードになりましたSBI証券へのつみたてNISA入金経路がハイブリッド預金経由になりました妻がiDeCoをはじめました2023年に生まれた第二子を追加しましたまとめメインのクレジットカードをプラチナプリファードに変更しました。ポイント還元率が高い加盟店が我が家がよく使う加盟店だったので嬉しいかぎりです。]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[光に負けルナ~Google Cloudでのマルチリージョンデータベースについて~]]></title>
             <link>https://zenn.dev/nnaka2992/articles/to_beat_light_speed_on_google_cloud_databases</link>
@@ -236,6 +229,13 @@
             <guid>https://nnaka2992.hatenablog.com/entry/2023/05/15/111420</guid>
             <pubDate>Mon, 15 May 2023 02:14:20 GMT</pubDate>
             <content:encoded><![CDATA[この記事の趣旨2020年に発表されたBigQueryの元となったGoogle内で利用されている分析向けデータベースであるDremelの実装を解説した論文を読みました。Dremel: A Decade of Interactive SQL Analysis at Web Scale著者についてSergey Melnik, Andrey Gubarev, Jing Jing Long, Geoffrey Romer, Shiva Shivakumar, Matt Tolton,Theo Vassilakisら2010年のDremel発表論文の著者らと、Hossein Ahmadi, Dan Delorey, Slava Min, Mosha Pasumansky, Jeff ShuteらGoogleで分析ワークロードと分散処理に関わる著者らによる論文。概要BigQueryの元となったGoogleのDremelの10年間を振り替えってアーキテクチャについて説明した論文。Dremelは現代のクラウドネイティブ分析ツールで一般的になっている、計算リソースとストレージの分解、カラムナストレージ、in situデータ分析などを統合した最初のツールである。手法SQLの採用Googleでは殆どのデータはBigTableなどNoSQLデータベースで管理されていたため、SQLを用いないデータアクセスが主流であった。しかしトランザクション型ビッグデータシステムにおける、SQLの採用に共ないDremelでもSQLを採用した。ストレージの分離メモリの分離MapReduceのシャッフルのボトルネックを回避するためにDisaggregated Memory Shuffle Systemを採用した。In situデータ分析への対応DBMSへのデータロードを必要としないデータ分析のことで、DremelではGFSに移行するときにGoogle内で共有のストレージフォーマットを使用することでGoogle内のデータに対応した。加えてGoogle Cloud StorageやGoogle Drive、MySQL、BigTableなどからのデータ取得もフェデレーションとして対応した。サーバレスアーキテクチャフォールトトレラントリスタート、仮想スケジューリングユニットによりマルチテナントかつオンデマンドなリソースを提供可能とし、低価格な利用を可能とした。現在ではサーバレスアーキテクチャを進化させ、集中型スケジューリングやShuffle Persistent Layer、柔軟なDAG実行、動的クエリ実行などを実装することでより優れたサーバレスアーキテクチャを実現した。ネストデータにおけるカラムナストレージ[[32])]Figure 5Figure 6Figure 7クエリレイテンシの最小化インタラクティブな実行のレイテンシは大きくなる。それを解決するためにDremelではスタンバイサーバプール、マルチレベル実行ツリー、列指向スキーマ表現、CPUとIO負荷のバランス調整、ファイルオペレーションの再利用、保証されたキャパシティ、適合的なクエリスケーリングにより実現している。作業時間read27:5027:50author32:024:12summary68:5026:48]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Connection draining for Service type LoadBalancer]]></title>
+            <link>https://zenn.dev/toversus/articles/1682d275ef1bb7</link>
+            <guid>https://zenn.dev/toversus/articles/1682d275ef1bb7</guid>
+            <pubDate>Thu, 11 May 2023 09:43:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにService リソースは Kubernetes のサービス検出を支えるコアリソースです。Service のデータプレーンとして kube-proxy を使用している場合は、各ノード上の iptables や ipvs を設定することで L4 負荷分散を実現しています。Kubernetes は、結果整合性 (Eventual Consistency) の上に成り立つ分散システムです。Kubernetes のコントロールプレーンが Pod を削除する時に、全てのノード上のルーティングルールを更新してから Pod を削除したりはしません。削除中の Pod にもトラフィックが流...]]></content:encoded>
         </item>
     </channel>
 </rss>
