@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 03 Jul 2023 18:32:46 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Jul 2023 01:30:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -63,11 +63,25 @@
             <content:encoded><![CDATA[はじめに PagerDutyはインシデントの管理、オンコール通知のサービスとして、とても優秀なサービスです。直近も、様々な新機能が出ていますが、旧機能から新機能への移行も同時に行われています。 弊社では、PagerDut […]The post PagerDutyがたくさん機能追加しているみたいなのでまとめてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Terraformで実践するAWS IAM Identity Center（AWS Single Sign-On）のユーザー管理戦略]]></title>
+            <link>https://qiita.com/yokoo-an209/items/569ac1ba517b076e8cde</link>
+            <guid>https://qiita.com/yokoo-an209/items/569ac1ba517b076e8cde</guid>
+            <pubDate>Wed, 21 Jun 2023 04:05:23 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにAWS IAM Identity Center（AWS Single Sign-On）を使用して、ユーザー管理を考えていく上で、Terraformを使用して構成管理を実現しようと思います。作成したコードはgithub上に上がっているので、ご参考ください…]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[アプリ開発者のための kubectl 講座]]></title>
             <link>https://zenn.dev/toshikish/articles/6a06017747cbba</link>
             <guid>https://zenn.dev/toshikish/articles/6a06017747cbba</guid>
             <pubDate>Mon, 19 Jun 2023 06:03:18 GMT</pubDate>
             <content:encoded><![CDATA[これは何Kubernetes クラスタ管理者とアプリケーション開発者が分業しているプロジェクトで，開発者が必ずしも Kubernetes に詳しくない場合を想定し，開発時に使いそうな kubectl のコマンドをまとめたものです。クラスタ管理者から開発者にこのドキュメントを適宜改変して渡し，開発者がある程度自立して操作できるようになることで，管理者への問い合わせ負荷を減らすのが狙いです。場合によってはハンズオンで講座を開いてもよいでしょう。 ドキュメント案ここでは Amazon EKS でクラスタを構築する場合の例を示します。別のインフラに構築している場合は適宜書き換え...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[夏に向けて、体もコンテナイメージも減量（軽量化）させよう！]]></title>
+            <link>https://qiita.com/yokoo-an209/items/0297808af40c1a74928e</link>
+            <guid>https://qiita.com/yokoo-an209/items/0297808af40c1a74928e</guid>
+            <pubDate>Mon, 19 Jun 2023 02:46:48 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにdockerで構築しているNext.jsのフロントエンドアプリケーションのimageをAmazon ECRにpushしようとしたときに、pushのあまりの遅さにびっくりしたのがことの発端で…]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Terraform 静的検査ツール比較]]></title>
@@ -222,20 +236,6 @@
             <guid>https://zenn.dev/toversus/articles/1682d275ef1bb7</guid>
             <pubDate>Thu, 11 May 2023 09:43:47 GMT</pubDate>
             <content:encoded><![CDATA[はじめにService リソースは Kubernetes のサービス検出を支えるコアリソースです。Service のデータプレーンとして kube-proxy を使用している場合は、各ノード上の iptables や ipvs を設定することで L4 負荷分散を実現しています。Kubernetes は、結果整合性 (Eventual Consistency) の上に成り立つ分散システムです。Kubernetes のコントロールプレーンが Pod を削除する時に、全てのノード上のルーティングルールを更新してから Pod を削除したりはしません。削除中の Pod にもトラフィックが流...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2022 年の Accelerate State of DevOps Report の内容をまとめてみた]]></title>
-            <link>https://sreake.com/blog/accelerate-state-of-devops-report-2022/</link>
-            <guid>https://sreake.com/blog/accelerate-state-of-devops-report-2022/</guid>
-            <pubDate>Thu, 11 May 2023 05:07:56 GMT</pubDate>
-            <content:encoded><![CDATA[１．はじめに Sreake 事業部でインターンしている村山です。インターンをするにあたり、DevOps の理解と最近の動向を掴むことが必要であると感じ、Accelerate State of DevOps Report  […]The post 2022 年の Accelerate State of DevOps Report の内容をまとめてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[TiDBで学ぶNewSQLのアーキテクチャ for Beginners]]></title>
-            <link>https://zenn.dev/nnaka2992/articles/learning_tidb_internal_for_beginner</link>
-            <guid>https://zenn.dev/nnaka2992/articles/learning_tidb_internal_for_beginner</guid>
-            <pubDate>Thu, 11 May 2023 01:18:19 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにこの記事ではNewSQLの特徴であるノード間の分散とトランザクションや分断耐性などがTiDBではどのような技術によって実現されているかを説明することを目的としています。Spannerの論文が2012年に発表されてから10年以上の年月が流れ、優れた論文や実装ドキュメント、個人による解説ブログなど技術的詳細について述べた資料は多くあります。加えてこの記事を入門的なものと位置づけているため各コンポーネントを網羅的に解説するというよりは、キーコンセプトをどのように実装しているのかを実験を混じえながら動作の実現方法の解説を中心に扱います。また今回はTiDBをベースに説明し...]]></content:encoded>
         </item>
     </channel>
 </rss>
