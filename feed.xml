@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 10 Jul 2023 18:33:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Jul 2023 18:33:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[OpenAI APIを利用してパブリッククラウドの権限要約をしてくれるCLIコマンドを作成した]]></title>
+            <link>https://sreake.com/blog/summarize-permission-with-openai/</link>
+            <guid>https://sreake.com/blog/summarize-permission-with-openai/</guid>
+            <pubDate>Tue, 11 Jul 2023 07:01:52 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部の橋本です。前回の記事から引き続き、OpenAIのGPTモデルを利用してDevOps、SREの領域でのtext AIの有効活用を考えていきます。 運用の自動化、構築支援などに活用できると嬉しい […]The post OpenAI APIを利用してパブリッククラウドの権限要約をしてくれるCLIコマンドを作成した first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[メールが届いたら Google Home で音声で通知する]]></title>
             <link>https://blog.1q77.com/2023/07/ses-lambda-and-cloud-pubsub/</link>
@@ -229,13 +236,6 @@
             <guid>https://sreake.com/blog/gitlab-trouble-case-study/</guid>
             <pubDate>Tue, 16 May 2023 02:23:30 GMT</pubDate>
             <content:encoded><![CDATA[本ドキュメントでは、トラブルシューティングの事例を取り上げ、それぞれのトラブルの原因調査の流れと判明した原因、解決方法について記載します。 また、トラブルシューティングを円滑に進められるように心がけていることをご紹介しま […]The post GitLab トラブル事例紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Go で GitHub CLI 拡張機能を作る]]></title>
-            <link>https://zenn.dev/kou_pg_0131/articles/gh-cli-extension-in-go</link>
-            <guid>https://zenn.dev/kou_pg_0131/articles/gh-cli-extension-in-go</guid>
-            <pubDate>Mon, 15 May 2023 09:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[先日 gh-grass という Go 製の GitHub CLI 拡張機能を開発してみたのですが、意外と簡単にできたので手順のメモです。gh-grass については次の記事をご参照ください。https://zenn.dev/kou_pg_0131/articles/gh-grass-introduction 拡張機能を作成する!GitHub CLI がインストールされている必要があります。GitHub CLI のインストール方法については GitHub CLI 公式リポジトリの README をご参照ください。まずは gh extension create を次のように...]]></content:encoded>
         </item>
     </channel>
 </rss>
