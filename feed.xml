@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 31 Jul 2023 18:31:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Aug 2023 18:31:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[gonew を使って Go プロジェクトのテンプレートを活用する]]></title>
+            <link>https://zenn.dev/kou_pg_0131/articles/gonew-introduction</link>
+            <guid>https://zenn.dev/kou_pg_0131/articles/gonew-introduction</guid>
+            <pubDate>Tue, 01 Aug 2023 12:34:36 GMT</pubDate>
+            <content:encoded><![CDATA[公式から gonew というツールが公開されました。https://go.dev/blog/gonewhttps://pkg.go.dev/golang.org/x/tools/cmd/gonewgonew を使うことで既存の Go プロジェクトのテンプレートを使い、素早く開発を始めることができるようになります。現時点で公式からは以下のテンプレートが公開されています。hellohelloserver他にも Google Cloud チームや Service Weaver チームからも様々なテンプレートが公開されています。GoogleCloudPlatform/go-...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[YugabyteDBのドキュメントを全部読む Day2]]></title>
             <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_2</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/satoken/articles/golang-rfc9401</guid>
             <pubDate>Wed, 07 Jun 2023 00:32:17 GMT</pubDate>
             <content:encoded><![CDATA[はじめにプロトコルの仕様などIETFが発行しているRFCにはジョークRFCというものが存在しています。伝書鳩でIP通信するとか、コーヒーポットを制御するなどが有名です。鳥類キャリアによるIPHyper Text Coffee Pot Control Protocol (HTCPCP/1.0) 日本語訳今年そんなジョークRFCに、TCPに死亡フラグを実装するというRFC9401が追加されました。The Addition of the Death (DTH) Flag to TCP 日本語訳この記事ではこのTCPに死亡フラグを実装するというRFC9401を真面目に実装してみ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenAI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話]]></title>
-            <link>https://sreake.com/blog/mermaid-with-openai-api/</link>
-            <guid>https://sreake.com/blog/mermaid-with-openai-api/</guid>
-            <pubDate>Tue, 06 Jun 2023 02:44:12 GMT</pubDate>
-            <content:encoded><![CDATA[前段 Sreake事業部の橋本です。 ChatGPTで話題のOpenAIのモデルは、現在画像の取り扱いはまだ発展途上です。文章から画像を作るAPIや画像入力が検討されていますが、システム運用にクリティカルに使えそうになる […]The post OpenAI API を利用して Terraform から構成図っぽい Mermaid を出力してくれるコマンドを作った話 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
