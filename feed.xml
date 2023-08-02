@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 01 Aug 2023 18:31:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Aug 2023 18:30:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day3]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_3</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_3</guid>
+            <pubDate>Wed, 02 Aug 2023 16:13:24 GMT</pubDate>
+            <content:encoded><![CDATA[YugabyteDBのドキュメントを全部読む Day3前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Key Concepts > Universeを読みました。今回はArchitecture > Key Concepts > YB-TServer serviceを読みます。ドキュメントのバージョンは最新のv2.19 previewです。それはそれとして技術系の単語をカタカナ表記で誤魔化していて、体系的に学んでいないことがバレてしまう。特にストレージまわりが分からない……YB-TServer serviceYB-TServer(YugabyteDB Tablet Servcer)はユーザからの受けつけたYugabyteDBクラスタへのリクエストのI/Oの処理をする。テーブルのデータは一つ以上のTablet peerに分割(シャーディング)される。peerの数はレプリケーションファクターによって決定される。YB-TServerは一つ以上のTablet peerをホストする。Tablet peerはRaftグループを形成してグループ間でデータの複製を行ない、タブレットはYB-TServer上で最大の効率になるように管理される。Server-global block cacheブロックキャッシュは一つTB-TServer上の異なるタブレット間で共有される。YB-TServerのメモリ効率は一つのテーブルからの読み込みが多いほど最適化される。Space AmplificationYugabyteDBではSize-tired Compactionというライトアンプリフィケーション1が小さい圧縮方式を利用している。Size-tired Compactionはスペースアンプリフィケーション2が大きいという問題があるが、YugabyteDBではテーブルは複数のタブレットに分割され、タブレット間でのConcurrent Compactionは特定の最大値まで絞られるため問題になりにくい。YugabyteDBでは凡そ10-20%のスペースアンプリフィケーションにおさまる。つまりSize-tired Compaction一単位が扱うデータ量を小さく(タブレット化)して、同時に実行される圧縮処理数を絞ることで特定のタイミングで圧縮に使用されるストレージ容量を抑えているということ？Throttled compactionsYB-TServerではタブレット間で実行される圧縮処理の同時実行数を制限することで、圧縮処理が多量のリソースを占有することを防いでいる。この機能は圧縮されるファイル同士のサイズを比べ、実行される圧縮処理が妥当であることを確認することで実現されている。Small and large compaction queuesYB-TServerでは圧縮処理を大きい圧縮処理と小さい圧縮処理に分けて優先度を決めることで、I/Oが大きな場合でもシステムの機能を保っている。YugabyteDBでは圧縮処理数を制限することに加え、様々な最適化を実行することで圧縮処理の影響を最小化している。Manual compactionYugabyteDBではyb-admin utilityのcompact_tableコマンドにより、任意のタイミングでテーブルに対して圧縮を実行することが出来る。この方法はデータが新しく書き込まれない場合や、DDLやTTLの超過によるデータ削除時によりデータが断片化したときに有効である。Statistics-based full compactions to improve read performanceYugabyteDBでは読み込まれたkey-valueペアをDocDBレベルで監視している。監視対象となる時間軸はauto-compact-stat-window-secondsで管理されている。YugabyteDBがデータ読み込み時に多量の廃棄されたデータのスキップを検知した場合、full compactionがトリガーされ不要なキーの削除が行なわれる。Full compactionがトリガーされる詳細な条件は対象の時間軸で以下が満された時である。廃棄されたキーとアクティブなキーが読まれる割り合いがauto-compact-percent-obsoleteで定義された閾値を超たとき。廃棄されたキーの読み込みauto-compact-min-obsolete-keys-foundで定義された閾値を超たとき。この機能はTTLを設定したテーブルと互換性があり、TTL file expirationが有効なテーブルではスケジュールされた圧縮を実行しない。Scheduled full compactionsYugabyteDBでは全てのデータに対するデータ圧縮をスケジュール実行することが出来る。スケジュール実行はscheduled-full-compaction-frequency-hoursとscheduled-full-compaction-jitter-factor-percentageのフラグで管理される。この機能は大量のDELETEとUPDATEを定常的に実行するワークロードでのパフォーマンスとディスクスペースの再割り当てに有効である。スケジュール化したデータ圧縮はTTLと互換しているが、TTL file expirationとは互換していない。つまりスケジュールされた圧縮は実行されない。Server-global memstore limitServer-global memstore limitは一つのYB-TServer上のタブレット間でシェアされるメモリサイズを追跡し、強制する。この機能はタブレット間の書き込みに偏りがある場合に有効である。一つのテーブルに書き込みが集中しているばあい、メモリ制限以上のメモリを割り当てることでパフォーマンスを向上させることが出来る。Auto-sizing of block cache and memstoreBlock Cacheとmemstoreは何れも多量のメモリを使用している。これらはtablet-peer間で共有されるリソースのため、メモリ管理とこれらのコンポーネントの様々な環境に合せたサイジングを容易にしている。YB-TServerでは自動で特定の割合のメモリをBlock CacheとMemstoreに割り当てる。Distributing tablet load uniformly across data disks複数のSSDを利用するハードウェアでは、テーブルのデータ(SSTable)とWALはテーブル毎に利用可能なディスクに均等に分散される。このストライピングと呼ばれる負荷分散は、それぞれのディスクがそれぞれのテーブルの負荷を均等に処理することを保証する。SSDで実際に書き込んだデータより書き込み量が増幅する現象。もちろんライトアンプリフィケーションが小さいほうが望ましい。↩↩]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[gonew を使って Go プロジェクトのテンプレートを活用する]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/gonew-introduction</link>
@@ -229,13 +236,6 @@
             <guid>https://blog.1q77.com/2023/06/rtx/</guid>
             <pubDate>Wed, 07 Jun 2023 01:25:11 GMT</pubDate>
             <content:encoded><![CDATA[nodeenv とか rbenv とか tfenv とか XXenv がそれぞれ .xxx-version というファイルにそのディレクトリ配下で使用する software の version を指定するという仕様があり、それらをまとめてやってくれる asdf というツールが登場]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[お前のパケットはもう死んでいる。TCPに死亡フラグを実装してみた]]></title>
-            <link>https://zenn.dev/satoken/articles/golang-rfc9401</link>
-            <guid>https://zenn.dev/satoken/articles/golang-rfc9401</guid>
-            <pubDate>Wed, 07 Jun 2023 00:32:17 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにプロトコルの仕様などIETFが発行しているRFCにはジョークRFCというものが存在しています。伝書鳩でIP通信するとか、コーヒーポットを制御するなどが有名です。鳥類キャリアによるIPHyper Text Coffee Pot Control Protocol (HTCPCP/1.0) 日本語訳今年そんなジョークRFCに、TCPに死亡フラグを実装するというRFC9401が追加されました。The Addition of the Death (DTH) Flag to TCP 日本語訳この記事ではこのTCPに死亡フラグを実装するというRFC9401を真面目に実装してみ...]]></content:encoded>
         </item>
     </channel>
 </rss>
