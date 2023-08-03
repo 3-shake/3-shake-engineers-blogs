@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 02 Aug 2023 18:30:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 03 Aug 2023 18:31:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day4]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_4</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_4</guid>
+            <pubDate>Thu, 03 Aug 2023 14:48:34 GMT</pubDate>
+            <content:encoded><![CDATA[前回](https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_3)からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Key Concepts > YB-TServer serviceを読みました。今回はArchitecture > Key Concepts > YB-Master serviceを読みます。ドキュメントのバージョンは最新のv2.19 previewです。YB-Master serviceYB-Masterサービスはテーブルやそのタブレットの場所、ユーザー・ロールの権限といったシステムのメタデータとレコードの管理を行っている。それに加えYB-Masterはロードバランシングやレプリケーションの開始といったバックグラウンドオペレーションの管理や、テーブルのCREATEやALTER、DROPといった様々な管理オペレーションの責任を持つ。YB-MasterはRaft Groupを組むことで高可用性を実現し、またテーブルに対するI/Oの単一障害点にならない。Functions of YB-MasterYB-Masterはシステムの重要な機能を複数持っている。Coordination of universe-wide administrative operationsCREATE TABLEやALTER TABLE、DROP TABLEといったユーザーからのリクエスト処理やバックアップの実行などUniverseをまたぐオペレーション実行の調整を担当している。YB-Masterではこれらのオペレーションがテーブルを保持するYB-TServerの状態に関わらず、全てのテーブルに伝搬されることを保証する。YugabyteDBは分散システムのため、Universeをまたぐ処理中にYB-TServerに障害が発生し一部のタブレットへの適用に失敗してもオペレーションの結果に問題が発生しないことが重要だからである。Storage of system metadataそれぞれのYB-Masterではネームスペースやテーブル、ロール、パーミッション、YB-TServerへ割り当てたテーブル情報を含むシステムメタデータを保存している。これらのシステムレコードはYB-Masterを対象にRaftグループを組みレプリケーションすることで冗長性を実現している。またシステムレコードはYB-Masterが管理するDocDBに保存される。Authoritative source of tablet assignments to YB-TServersYB-Masterは全てのテーブルとそれらをホストするYB-TServerの情報を保存している。一般のクライアントではそれらの情報はクライアントからクエリレイヤなどを通して取得された上で、クライアントにメタデータを返しデータアクセスが行なわれる。一方でスマートクライアントではYB-Masterに保存されたメタデータを利用して特定のYB-TServerが保持するタブレットやキャッシュを利用することが出来るため、データアクセス時のネットワークをまたぐ通信を減らすことができパフォーマンスを高めることができる。Background operationsいくつかのオペレーションはUniverseのライフタイムを通してバックグラウンドで行なうことで、フォアグラウンドのRead/Writeに影響を与えずに実行することが出来る。Data placement and load balancingYB-MasterのリーダーはCREATE TABLE時にタブレットの初期配置をYB-TServerをまたいで行なう。そのときにユーザー定義のデータ配置制約を強制し均一な読み込みを保証する。Universeのライフタイム中のノード追加や障害が発生しても、負荷分散を継続しデータ配置の制約を自動的に適用する。Leader balancing複数のYB-TServerに配置されたタブレットへのアクセスがUniverseをまたいで分散されることを保証している一方で、YB-Masterは対象となるノード1間でそれぞれのノードが同じ数のtablet-peer leader2をもつことを保証する。Rereplication of data on extended YB-TServer failureYB-Masterは全てのYB-TServerからハードビートシグナルを受け取ることでYB-TServerの死活監視を行なっている。そしてYB-MasterはYB-TServerの異常を検知したときに、どれぐらいのあいだYB-TServerが異常であったかを追跡する。閾値を超えると、YB-Masterは障害中のYB-TServerに配置されていたタブレットを再配置するYB-TServerを探し、レプリケーションを実行する。レプリケーションはYB-Masterリーダーに抑制された状態で実行されるため、Universeのフォアグラウンドオペレーションには影響をおよぼさない。Raft Groupのリーダーになれるノード↩↩]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[K8sGPT Deep Dive というタイトルで登壇しました #CNDF]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/08/03/155326</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/03/155326</guid>
+            <pubDate>Thu, 03 Aug 2023 06:53:26 GMT</pubDate>
+            <content:encoded><![CDATA[概要CloudNative Days Fukuoka 2023というイベントに『K8sGPT Deep Dive KubernetesクラスタのAI駆動型分析について』というタイトルで登壇しました。クラウドネイティブとAIを組み合わせることの深い洞察を共有することができ、私自身がエンジニアとして働くなかで、K8sGPTの最新の進化とその可能性について詳しく語る機会はなかなかなく、この経験を活かしていきたい。資料を作っている中で話したいことがどんどん増えていってめちゃくちゃ困った。また、その中でAIOpsについても触れることができ、非常に充実した時間でした。AIOpsはAIと運用管理の統合を指し、それによりIT運用の効率化や自動化が可能となります。その重要性と可能性を伝えることができたので良かった。登壇が終わった今でも、K8sGPTやAIOpsについてさらに知識を深め、クラウドネイティブの世界にどのように最適化された解決策を提供できるかについて考え続けています。参加者の皆さんからもたくさんのフィードバックを頂き、今後の研究や開発の参考になりました。私がこのプレゼンテーションのために読み込んだ複数の本の中で、特に皆さんにお勧めしたい一冊を挙げるとすれば、「大規模言語モデルは新たな知能か――ChatGPTが変えた世界」だと言えます。なぜなら、専門家でも初心者でも、難解な数学を使わずに重要な概念を理解できるように作られているからです。大規模言語モデルは新たな知能か　ＣｈａｔＧＰＴが変えた世界 (岩波科学ライブラリー)作者:岡野原 大輔岩波書店Amazon資料登壇資料になります。このブログの目的は参考資料をいちいち探さなくていいようにありますのでご活用ください。 speakerdeck.com参考文献公式ページ | K8sGPTGitHub | K8sGPTGitHub | K8sGPT OperatorDocs | K8sGPTOperator patternK8sGPT OperatorHow to Get Started With AIOpsPrompt Engineering Guideオブザーバビリティ・エンジニアリングKubernetes基盤を自律的に支えるController化の実装Tips / forkwell-202303-amsy810-k8sAutomation and Machine Learning with Site Reliability EngineeringTEMPLE: Six Pillars of ObservabilityAI時代に向けたクラウドにおける信頼性エンジニアリングの未来構想 / DICOMO2022 6A-1大規模言語モデルは新たな知能か――ChatGPTが変えた世界 (岩波科学ライブラリー)ChatGPTの頭の中 (ハヤカワ新書)言語の本質　ことばはどう生まれ、進化したかAI vs. 教科書が読めない子どもたち【ITIL4公認】ITIL 4の基本 図解と実践]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[YugabyteDBのドキュメントを全部読む Day3]]></title>
             <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_3</link>
@@ -222,20 +236,6 @@
             <guid>https://zenn.dev/bells17/articles/netlink-goexample</guid>
             <pubDate>Thu, 08 Jun 2023 18:03:10 GMT</pubDate>
             <content:encoded><![CDATA[Go言語でNetlinkを少し触ったのでメモ。具体的にはGo言語でNetlinkというネットワーク関連のライブラリを使ってStatic Routeを設定したりするサンプルを作ったりした。https://github.com/bells17/netlink-gosample Netlinkとは調べた範囲だと、Linuxカーネルのサブシステムの1つで、ルーティングテーブルの管理などのネットワーク関連の設定などを行う際に利用されるもの、という理解をしている。Netlinkは、Linuxカーネルとユーザ空間プロセス間の、またはカーネル内の通信を提供するためのIPC（Inter-pro...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 1.27 以降のバッチ処理の改善]]></title>
-            <link>https://zenn.dev/toversus/articles/d6065bea460871</link>
-            <guid>https://zenn.dev/toversus/articles/d6065bea460871</guid>
-            <pubDate>Thu, 08 Jun 2023 03:46:32 GMT</pubDate>
-            <content:encoded><![CDATA[Kubernetes 1.27 以降で実装済みまたは予定されているバッチ処理の改善に繋がる KEP や Kubernetes のサブプロジェクトの現状を見ていきます。 KEP-3673: Kubelet limit of Parallel Image Pulls!Kubernetes 1.27 時点でアルファ機能です。1.28 でベータを目指していますが、設定はデフォルトで無効化されています。Pod の起動にノードのスケールアウトが必要な場合に、Pod の起動時間の短縮が期待できます。バッチ処理の Pod が一斉に起動するケースで恩恵を受けられそうです。Kubelet は...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[asdf の代わりに rtx を使う]]></title>
-            <link>https://blog.1q77.com/2023/06/rtx/</link>
-            <guid>https://blog.1q77.com/2023/06/rtx/</guid>
-            <pubDate>Wed, 07 Jun 2023 01:25:11 GMT</pubDate>
-            <content:encoded><![CDATA[nodeenv とか rbenv とか tfenv とか XXenv がそれぞれ .xxx-version というファイルにそのディレクトリ配下で使用する software の version を指定するという仕様があり、それらをまとめてやってくれる asdf というツールが登場]]></content:encoded>
         </item>
     </channel>
 </rss>
