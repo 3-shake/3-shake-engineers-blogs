@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 08 Aug 2023 18:31:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Aug 2023 18:32:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2023年8月10日現在 でLunarVim と Copilot.lua でのマルチラインサポートの改善方法 ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/08/10/021934</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/10/021934</guid>
+            <pubDate>Wed, 09 Aug 2023 17:19:34 GMT</pubDate>
+            <content:encoded><![CDATA[github.comLunarVimユーザーとして、私はNeovimでcopilot.luaを頻繁に利用しています。しかし、マルチラインのサポートに関してはいくつかの課題がありました。もっというとどこかのタイミングでCopilotが一行ずつしかサジェストされなくなりました。この問題に対して、一部のコードを修正することで、この課題を解決する方法を見つけました。問題点Copilot.lua(Copilot.vimも同様に)の中のagent.jsには、マルチライン入力の停止点を示すコード h.stop=["\n"] が含まれています。この設定により、一部の場面でマルチラインサポートが期待通りに動作しないことがありました。解決方法私が採用した方法は、このh.stop=["\n"]をh.stop=["\n\n\n"]に変更することです。この小さな変更により、マルチラインのサポートが大幅に向上します。以下のコマンドを実行することで、この変更を簡単に適用することができます。MAC でのsed 利用なのでこのようなコマンドになります。各環境で合わせていただきたいです。sed -i '' 's/h\.stop=\["\\\\n"\]/h\.stop=\["\\\\n\\\\n\\\\n"\]/' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js変更が正しく適用されたかどうかを確認するには、以下のコマンドを実行します。grep -o '.\{30\}h.stop=\[.\{30\}' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js結果この変更を適用した後、マルチラインサポートが明らかに向上しました。興味があれば最初に紹介したIssue に動画が添付されていたのでご覧ください。LunarVimとCopilot.luaの組み合わせは非常に強力ですが、小さな調整によりさらに快適に使うことができます。このハックが他のユーザーにも役立つことを願っています。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cloud Run を活用した Pull Request 単位での Ad hoc 開発環境作成]]></title>
+            <link>https://sreake.com/blog/pull-request-based-adhoc-env/</link>
+            <guid>https://sreake.com/blog/pull-request-based-adhoc-env/</guid>
+            <pubDate>Wed, 09 Aug 2023 03:10:37 GMT</pubDate>
+            <content:encoded><![CDATA[きっかけ 開発時、feature ブランチの Pull Request （以下、PR）ごとに実行環境が準備されると便利だよねというところから、PR ごとに開発環境を構築される仕組みを作ることになりました。 使用技術スタッ […]The post Cloud Run を活用した Pull Request 単位での Ad hoc 開発環境作成 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Terraform 1.6 で追加されそうな terraform test コマンドを試してみる]]></title>
             <link>https://zenn.dev/kou_pg_0131/articles/tf-1_6_alpha-test-command</link>
@@ -222,20 +236,6 @@
             <guid>https://zenn.dev/tayusa/articles/79a3f54d8f21bc</guid>
             <pubDate>Sun, 11 Jun 2023 17:18:13 GMT</pubDate>
             <content:encoded><![CDATA[はじめにk8sのバージョンが上がるとAPIが再編成されたりアップグレードされたりします。新しいAPIが出ると古いAPIは非推奨になり最終的には削除されます。なので、k8sのバージョンアップ時はDeprecated API Migration Guideなどを見て非推奨のapiVersionが使われていないか確認して時には修正する必要があります。https://kubernetes.io/docs/reference/using-api/deprecation-guide/例CronJob の batch/v1beta1 -> batch/v1 plutoplu...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Istio Canary Upgrade by Helm]]></title>
-            <link>https://zenn.dev/tayusa/articles/03cf961e2409bd</link>
-            <guid>https://zenn.dev/tayusa/articles/03cf961e2409bd</guid>
-            <pubDate>Sun, 11 Jun 2023 17:17:37 GMT</pubDate>
-            <content:encoded><![CDATA[前提helmfileを利用istioのrevisionTagを利用関係のない設定は省略 Upgradeの前にInstall ディレクトリ構成├── helmfile_istio-base.yaml├── helmfile_istio-ingressgateway.yaml├── helmfile_istiod-1-16-0.yaml└── values    ├── istio-base.yaml    ├── istio-ingressgateway.yaml    └── istiod.yaml helmfile helmfile_isti...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Helmに入門したので、躓いたところを振り返る]]></title>
-            <link>https://zenn.dev/tayusa/articles/e9285c6c4c09a1</link>
-            <guid>https://zenn.dev/tayusa/articles/e9285c6c4c09a1</guid>
-            <pubDate>Sun, 11 Jun 2023 17:16:25 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにアプリのマニフェストを管理するのにKustomizeを使っていたのですが、同じようなマニフェストが乱立したので管理を楽にするためにHelmに移行しました。Helmを一から書いたのは初めてだったので、躓いた点をここに残します。 quote関数の進数変換0から始まる数値をquote関数を使って文字列にすると進数変換が起こり想定した値ではなくなる下記のようなtemplateでidとして0000000060のような値を渡すと、8進数として解釈され10進数である48に変換されてしまいます。...id: {{ .id | quote }}...0から始まる数値はtem...]]></content:encoded>
         </item>
     </channel>
 </rss>
