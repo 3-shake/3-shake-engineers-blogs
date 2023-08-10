@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 09 Aug 2023 18:32:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Aug 2023 18:30:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,32 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[SREからPlatform Engineerへの拡大 というタイトルで登壇しました]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/08/10/150412</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/10/150412</guid>
+            <pubDate>Thu, 10 Aug 2023 06:04:12 GMT</pubDate>
+            <content:encoded><![CDATA[概要Cloud Operator Days Tokyo 2023 で SREからPlatform Engineerへの拡大 というテーマでの登壇を果たしました。オンデマンド配信なのでいずれ見れるようになると思います。今回のサブタイトルは【運用の新時代】とし、それにちなんでメインタイトルを考えました。資料の作成過程で、話したい内容がどんどんと増えてきてしまい、20分という限られた時間での発表が一大課題となりました。内容の整理に際して、具体と抽象 ―世界が変わって見える知性のしくみ という本を参照し、大変役立ちました。具体と抽象作者:細谷 功dZERO（インプレス）Amazon資料このブログでは、Cloud Operator Days Tokyo 2023での登壇内容をまとめております。資料作成時に参照したさまざまな参考情報も掲載していますので、読者の皆様が別途情報を探す手間を省けるよう心掛けました。ぜひ、本ブログをご活用ください。文字多くて分かりにくいのは分かってます。脳内整理はできているのですが資料を読みやすくすると20分に何も収まらず...。 speakerdeck.com参考文献O’Reilly Japan – SRE サイトリライアビリティエンジニアリングO’Reilly Japan – サイトリライアビリティワークブックO’Reilly Japan – SREの探求SRE at Google: How to structure your SRE team | Google Cloud BlogレトロスペクティブガイドWhat Is Platform Engineering?Top Strategic Technology Trends for 2023: Platform EngineeringMaking the Business Case for a Dedicated Platform Engineering TeamSRE NEXTPlatform Engineering Meetupチームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計The History of DevOps ReportsEffective DevOpsオブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイド]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Control Tower 徹底調査]]></title>
+            <link>https://sreake.com/blog/learn-about-aws-control-tower/</link>
+            <guid>https://sreake.com/blog/learn-about-aws-control-tower/</guid>
+            <pubDate>Thu, 10 Aug 2023 05:52:55 GMT</pubDate>
+            <content:encoded><![CDATA[AWS Control Tower とは AWS Control Tower とは Landing Zone を実装するための AWS のマネージドサービスです。統制を取りつつマルチアカウントを管理する仕組みです。 La […]The post AWS Control Tower 徹底調査 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[HarnessでGKEクラスタにCDパイプラインを構築する]]></title>
+            <link>https://qiita.com/yokoo-an209/items/57e2e4c00394c9da85f7</link>
+            <guid>https://qiita.com/yokoo-an209/items/57e2e4c00394c9da85f7</guid>
+            <pubDate>Thu, 10 Aug 2023 05:22:38 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに実務においてHarnessを使用する機会があったので、お試しがてらGKEクラスタ上にCDパイプラインの構築を行います。（※なお、今回はHarnessの使用に焦点を当てているため、CIの実…]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[2023年8月10日現在 でLunarVim と Copilot.lua でのマルチラインサポートの改善方法 ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/08/10/021934</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/10/021934</guid>
             <pubDate>Wed, 09 Aug 2023 17:19:34 GMT</pubDate>
-            <content:encoded><![CDATA[github.comLunarVimユーザーとして、私はNeovimでcopilot.luaを頻繁に利用しています。しかし、マルチラインのサポートに関してはいくつかの課題がありました。もっというとどこかのタイミングでCopilotが一行ずつしかサジェストされなくなりました。この問題に対して、一部のコードを修正することで、この課題を解決する方法を見つけました。問題点Copilot.lua(Copilot.vimも同様に)の中のagent.jsには、マルチライン入力の停止点を示すコード h.stop=["\n"] が含まれています。この設定により、一部の場面でマルチラインサポートが期待通りに動作しないことがありました。解決方法私が採用した方法は、このh.stop=["\n"]をh.stop=["\n\n\n"]に変更することです。この小さな変更により、マルチラインのサポートが大幅に向上します。以下のコマンドを実行することで、この変更を簡単に適用することができます。MAC でのsed 利用なのでこのようなコマンドになります。各環境で合わせていただきたいです。sed -i '' 's/h\.stop=\["\\\\n"\]/h\.stop=\["\\\\n\\\\n\\\\n"\]/' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js変更が正しく適用されたかどうかを確認するには、以下のコマンドを実行します。grep -o '.\{30\}h.stop=\[.\{30\}' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js結果この変更を適用した後、マルチラインサポートが明らかに向上しました。興味があれば最初に紹介したIssue に動画が添付されていたのでご覧ください。LunarVimとCopilot.luaの組み合わせは非常に強力ですが、小さな調整によりさらに快適に使うことができます。このハックが他のユーザーにも役立つことを願っています。]]></content:encoded>
+            <content:encoded><![CDATA[github.comLunarVimユーザーとして、私はNeovimでcopilot.luaを頻繁に利用しています。しかし、マルチラインのサポートに関してはいくつかの課題がありました。もっというとどこかのタイミングでCopilotが一行ずつしかサジェストされなくなりました。この問題に対して、一部のコードを修正することで、この課題を解決する方法を見つけました。問題点Copilot.lua(Copilot.vimも同様に)の中のagent.jsには、マルチライン入力の停止点を示すコード h.stop=["\n"] が含まれています。この設定により、一部の場面でマルチラインサポートが期待通りに動作しないことがありました。解決方法私が採用した方法は、このh.stop=["\n"]をh.stop=["\n\n\n"]に変更することです。この小さな変更により、マルチラインのサポートが大幅に向上します。以下のコマンドを実行することで、この変更を簡単に適用することができます。MAC でのsed 利用なのでこのようなコマンドになります。各環境で合わせていただきたいです。sed -i '' 's/h\.stop=\["\\\\n"\]/h\.stop=\["\\\\n\\\\n\\\\n"\]/' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js変更が正しく適用されたかどうかを確認するには、以下のコマンドを実行します。grep -o '.\{30\}h.stop=\[.\{30\}' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js結果この変更を適用した後、マルチラインサポートが明らかに向上しました。興味があれば最初に紹介したIssue に動画が添付されていたのでご覧ください。LunarVimとCopilot.luaの組み合わせは非常に強力ですが、小さな調整によりさらに快適に使うことができます。このハックが他のユーザーにも役立つことを願っています。後日談この変更を適用した後でマルチラインサポートは向上したのですが一部条件ではまだ、vscodeのような挙動ができません。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Cloud Run を活用した Pull Request 単位での Ad hoc 開発環境作成]]></title>
@@ -215,27 +236,6 @@
             <guid>https://blog.1q77.com/2023/06/editcap/</guid>
             <pubDate>Thu, 15 Jun 2023 14:46:42 GMT</pubDate>
             <content:encoded><![CDATA[ちょっと大きめ (時間範囲の広い) pcap ファイルがあって、wireshark で見るにしてもちょっと大きすぎるなということがありました。 見たい時間帯だけに絞ったファイル]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub の Reusable workflow で working-directory に変数を使う]]></title>
-            <link>https://zenn.dev/toshikish/articles/be970407f02098</link>
-            <guid>https://zenn.dev/toshikish/articles/be970407f02098</guid>
-            <pubDate>Thu, 15 Jun 2023 05:22:24 GMT</pubDate>
-            <content:encoded><![CDATA[やりたいことGitHub Actions の reusable workflow で，作業ディレクトリを入力変数で変えたい場合を考えます。on:  workflow_call:    inputs:      workdir:        required: true        type: string うまくいかない方法ワークフロー全体のステップのデフォルト設定 defaults.run.working-directory では，現時点ではコンテキストと式が許可されていません。したがって，入力変数でディレクトリ名を受け取って上記に入れても動作しません。...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KubeconformをGitLab CIに組み込んで、k8sのマニフェストがAPIの仕様に沿うか検査する]]></title>
-            <link>https://zenn.dev/tayusa/articles/1aa96e6ceb838a</link>
-            <guid>https://zenn.dev/tayusa/articles/1aa96e6ceb838a</guid>
-            <pubDate>Sun, 11 Jun 2023 17:19:45 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにk8sマニフェストを普段管理していないメンバーがマニフェストのファイルを変更する場面があります。その際のレビューを出来るだけ自動化したくkubeconformを導入しました。 KubeconformマニフェストがAPIの仕様に沿うか検査してくれます。https://github.com/yannh/kubeconform自分でスキーマを用意すればIstio、Argo Rollouts、Argo Workflowsのような外部のAPIも検査できます。 スキーマの生成スキーマの生成はpythonのスクリプトが用意されているので、これをCRDを引数で渡し実行しま...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[plutoをGitLab CIに組み込んで非推奨のk8s apiVersionを検出する]]></title>
-            <link>https://zenn.dev/tayusa/articles/79a3f54d8f21bc</link>
-            <guid>https://zenn.dev/tayusa/articles/79a3f54d8f21bc</guid>
-            <pubDate>Sun, 11 Jun 2023 17:18:13 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにk8sのバージョンが上がるとAPIが再編成されたりアップグレードされたりします。新しいAPIが出ると古いAPIは非推奨になり最終的には削除されます。なので、k8sのバージョンアップ時はDeprecated API Migration Guideなどを見て非推奨のapiVersionが使われていないか確認して時には修正する必要があります。https://kubernetes.io/docs/reference/using-api/deprecation-guide/例CronJob の batch/v1beta1 -> batch/v1 plutoplu...]]></content:encoded>
         </item>
     </channel>
 </rss>
