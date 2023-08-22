@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 21 Aug 2023 18:30:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Aug 2023 18:30:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ChatGPT: SREがCustom instructions機能を利用する]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2023/08/22/204327</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/22/204327</guid>
+            <pubDate>Tue, 22 Aug 2023 11:43:27 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに最近、ChatGPTからCustom instructions機能がリリースされました。Custom instructionsとは、ChatGPTの応答方法をより詳細に制御するカスタム命令を設定することができる機能です。ChatGPTの利用者にとって非常に重要な機能です。この機能により、ユーザーは特定の応答スタイルやフォーマットを要求することができるようになりました。これは、特定の業界や専門分野での使用など多岐にわたる用途に適応できるため、非常に有用です。以前、公開したプロンプトに関するブログsyu-m-5151.hatenablog.comOpenAI CEOのSam Altman氏も、Custom instructionsのポストをしていましたので参考にしてみても良いかもしれません。damn i love custom instructions pic.twitter.com/su0BlttJF7— Sam Altman (@sama) 2023年7月22日  How would you like ChatGPT to respond?You are an AI programming assistant.Your response should be informative and logical.First, think STEP-BY-STEP, then describe your plan for what to build.Then output the code in a single code block.Keep your answers objective and concise, and use Markdown formatting.Be sure to include the name of the programming language at the start of the Markdown code block.Avoid enclosing your entire response in a triple backtick.Ensure that the code provided follows best practices for reliability, scalability, and maintainability. Consider the potential impact on system resources and provide guidance if special configurations or infrastructure considerations are necessary. If applicable, include information on monitoring, logging, and error handling to align with Site Reliability Engineering (SRE) principles.まとめCustom instructions機能は、ChatGPTの応答をより細かく制御する強力なツールです。これにより、ユーザーは特定のニーズに合わせてモデルを調整することができ、より多様で効果的な結果を得ることが可能になります。この機能の導入により、ChatGPTはさらに多岐にわたる分野での応用が期待されます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[【ArgoCD🐙️】KubernetesのマルチテナントパターンとArgoCDの実践テナント設計]]></title>
             <link>https://hiroki-hasegawa.hatenablog.jp/entry/2023/08/18/110646</link>
@@ -229,13 +236,6 @@
             <guid>https://sreake.com/blog/pagerduty-release-updates/</guid>
             <pubDate>Tue, 27 Jun 2023 06:38:36 GMT</pubDate>
             <content:encoded><![CDATA[はじめに PagerDutyはインシデントの管理、オンコール通知のサービスとして、とても優秀なサービスです。直近も、様々な新機能が出ていますが、旧機能から新機能への移行も同時に行われています。 弊社では、PagerDut […]The post PagerDutyがたくさん機能追加しているみたいなのでまとめてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Terraformで実践するAWS IAM Identity Center（AWS Single Sign-On）のユーザー管理戦略]]></title>
-            <link>https://qiita.com/yokoo-an209/items/569ac1ba517b076e8cde</link>
-            <guid>https://qiita.com/yokoo-an209/items/569ac1ba517b076e8cde</guid>
-            <pubDate>Wed, 21 Jun 2023 04:05:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにAWS IAM Identity Center（AWS Single Sign-On）を使用して、ユーザー管理を考えていく上で、Terraformを使用して構成管理を実現しようと思います。作成したコードはgithub上に上がっているので、ご参考ください…]]></content:encoded>
         </item>
     </channel>
 </rss>
