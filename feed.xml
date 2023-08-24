@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 23 Aug 2023 18:30:27 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Aug 2023 18:30:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ChatGPT × Slack = ChatOpsを実現する「h1-slack-bot」の紹介]]></title>
+            <link>https://sreake.com/blog/chatgpt-slack-integration/</link>
+            <guid>https://sreake.com/blog/chatgpt-slack-integration/</guid>
+            <pubDate>Thu, 24 Aug 2023 07:04:08 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部インターン生の井上です。私はSreake事業部にてSRE技術の調査と研究を行う目的で2023年3月6日から長期インターン生として参加しています。 本記事では、ChatOps […]The post ChatGPT × Slack = ChatOpsを実現する「h1-slack-bot」の紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[YugabyteDBのドキュメントを全部読む Day6]]></title>
             <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_6</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/satohjohn/articles/25bc5879de7832</guid>
             <pubDate>Wed, 28 Jun 2023 12:03:00 GMT</pubDate>
             <content:encoded><![CDATA[概要Cloud Runのmetricsをデフォルトで取得している指標(metrics)以外の指標が他に欲しい場合、どうするのが良いのかを考えてみました。ちょうどCloud RunのSidecar機能がでたので、それを使います。他の指標を、ここではJVMのmetricsとします。Cloud Run上のJVMのmetricsが取れて何が嬉しいのかについては、一旦考えません。後にCloud Runの最大起動時間が増えた場合は、意味があるかもしれません。 構成図にすると以下のような感じになります。Cloud RunでSpring Bootアプリケーションを立ち上げClou...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ロクに勉強してこなかったエンジニアが輪読会参加とかPCA受験に向けて勉強とかしてみた話]]></title>
-            <link>https://qiita.com/bayobayo0324/items/56f93f50fa0115dc4d6d</link>
-            <guid>https://qiita.com/bayobayo0324/items/56f93f50fa0115dc4d6d</guid>
-            <pubDate>Tue, 27 Jun 2023 12:31:17 GMT</pubDate>
-            <content:encoded><![CDATA[この記事について40歳でフリーランスから転職をきっかけに会社員エンジニアになって、社内のエンジニアの熱意に影響を受けて勉強をはじめてみた中年エンジニアの感想とか気づきとかです。先に結論勉強する…]]></content:encoded>
         </item>
     </channel>
 </rss>
