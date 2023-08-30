@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 29 Aug 2023 18:31:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Aug 2023 18:30:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day7]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_7</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_7</guid>
+            <pubDate>Wed, 30 Aug 2023 16:03:36 GMT</pubDate>
+            <content:encoded><![CDATA[前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Core functions > Table Creationを読みました。今回はArchitecture > Core functions > Write I/O pathを読みます。ドキュメントのバージョンは最新のv2.19 previewです。Write I/O pathWrite I/O pathはYQLレイヤーで処理され、タブレットリーダーによってレプリケーションの準備が行なわれるシングルキーでの書き込みとして例示することが出来る。アトミックなアップデートを共なう複数キーでの分散トランザクションなど複雑なケースについては分散トランザクションに記載する。Write operation processing by YQL layerユーザーが発行したYQLクエリレイヤに作用するライトリクエストはポートから適切なAPI(YQLまたはYCQL)を経由して行なわれる。このユーザーリクエストはYQLレイヤで内部キーに変換される。シャーディングで説明するように、それぞれのキーは一つのタブレットが所有する。どのタブレットがキーを所有するか特定するために、YQLレイヤはYB-MasterにRPC1呼び出しを実行する。そのレスポンスは将来の利用のためにキャッシュされる。YugabyteDBはタブレットの場所をキャッシュし直接参照することでネットワークホップを減らすことで、YQLレイヤが直接適切なYB-TServerにホストされるタブレットリーダーにリクエストを送信することが出来るスマートクライアントを持つ。YQLレイヤがローカルノードにタブレットリーダーを見つけた場合、RPCはローカルファンクションコールになりリクエストをシリアライズとデシリアライズしてネットワーク越しに送信する時間を節約することが出来る。その後YQLレイヤはタブレットリーダーをホストするYB-TServerへの書き込みを発行する。この書き込みはキーを所有するRaftグループのタブレットリーダーによって処理される。Preparation of the operation for replication by tablet leader下記の図はタブレットリーダーがレプリケーションを実行する処理を説明している。タブレットのRaft Groupリーダーは以下の処理を実行する。現在実行されている処理が現在のスキーマに対応しているかを判別するキーに対してローカルin-memoryロックマネージャーを利用してロックを取得する。このロック機構はフォロワーには存在しない必要であればデータを読み込む(read-modify-writeや条件付きアップデート命令など)DocDBに書き込まれる変更のバッチを準備する。この書き込みバッチは殆ど最終的にRocksDBに書き込まれるKey-Valueペアに近く、それぞれのキーの末尾に最終的なhybrid timestampが添えられていないだけであるRaft replication of the write operation書き込みのRaftレプリケーション処理の流れは以下のように説明することが出来る。リーダーがバッチをRaft logにアペンドし、書き込みのためのhybrid timestampを選択するRaftを利用しデータをピアーに複製する成功したRaft replicationのデータをローカルのDocDBに反映するユーザーに成功を返すフォロワータブレットはRaftを利用したデータの複製を受けつけ、コミットされた事が分ったタイミングでその複製をローカルのDocDBに反映する。リーダーは以下のようにコミットポイントに於ける後続のRPCリクエストの進行を進める。書き込みバッチを含むRaftエントリーは過半数以上のタブレットRaft Groupピアーに複製されるRaftのサブシステムから"Replication Successful"のコールバックを取得したあと、リーダーはローカルのDocDBにバッチの書き込みを適用するリーダーからの次の更新でエントリーがコミットされたことがフォロワーに通知され、フォロワーはそれぞれのRocksDBインスタンスにバッチの書き込みを適用する。Response to the clientInformation Pending2Exampleskとvという値をKという行とVという行をもつテーブルT1に挿入する例について考える3。この例ではユーザーアプリケーションがランダムなYugabyteDBサーバにWriteクエリを送信し、そのサーバがリクエストを適切にルーティングすると仮定して簡略化している。特にYCQLではYugabyteDB Smart Clientを使うことで、余分なネットワークホップを避けることが出来る。↩原文ママ。過去のバージョンでも記載無し↩INSERT INTO T1 (K,V) VALUES('k','v')ということ↩]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ChatGPT × Slack = ChatOpsを実現する「h1-slack-bot」の紹介]]></title>
             <link>https://sreake.com/blog/chatgpt-slack-integration/</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/nnaka2992/articles/code_reading_with_copilot</guid>
             <pubDate>Wed, 28 Jun 2023 14:41:21 GMT</pubDate>
             <content:encoded><![CDATA[GitHub Copilot便利ですね。2021年にTechnical Previewとして発表された時から便利だ便利だと言われていたGitHub Copilotに、2023年の4月末ごろからデビューしました。デビューしたは良いものの最近は仕事ではコーディングよりアーキテクト的な方面でのお仕事が多かったり、個人の時間でもコーディングするよりOSSのコードを読むことのほうが多くコーディングのアシスタントツールとしては使いこなせていません。そのため最近はPostgreSQLのコードを読むときのアシスタントとして利用することが多いです。なのでこの記事ではCopilotでコードリーディン...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud RunのSidecarでJVMのmetricsの取得してみた]]></title>
-            <link>https://zenn.dev/satohjohn/articles/25bc5879de7832</link>
-            <guid>https://zenn.dev/satohjohn/articles/25bc5879de7832</guid>
-            <pubDate>Wed, 28 Jun 2023 12:03:00 GMT</pubDate>
-            <content:encoded><![CDATA[概要Cloud Runのmetricsをデフォルトで取得している指標(metrics)以外の指標が他に欲しい場合、どうするのが良いのかを考えてみました。ちょうどCloud RunのSidecar機能がでたので、それを使います。他の指標を、ここではJVMのmetricsとします。Cloud Run上のJVMのmetricsが取れて何が嬉しいのかについては、一旦考えません。後にCloud Runの最大起動時間が増えた場合は、意味があるかもしれません。 構成図にすると以下のような感じになります。Cloud RunでSpring Bootアプリケーションを立ち上げClou...]]></content:encoded>
         </item>
     </channel>
 </rss>
