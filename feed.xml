@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 04 Sep 2023 18:30:33 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Sep 2023 18:31:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[LookMLとは]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/18a4a04b98dcb8</link>
+            <guid>https://zenn.dev/nedoko_dok0dko/articles/18a4a04b98dcb8</guid>
+            <pubDate>Tue, 05 Sep 2023 10:46:35 GMT</pubDate>
+            <content:encoded><![CDATA[これは何？Looker内にある機能である「LookML」について調べたことをまとめた個人的備忘録。 LookMLとはLookMLの紹介  |  Looker  |  Google CloudLookML は、Looker Modeling Language の略です。セマンティックデータモデルを作成するためにLookerで使用される言語です。LookMLを使用して、SQLデータベース内のディメンション、集計、計算、およびデータの関係を記述できます。LookMLは「Looker上で利用できる独自の言語」のことをさす　別にMLや機械学習は関係ないLookerは、Lo...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Nodejs(Nest.js)のアプリケーションのbuildを高速化、slim化してみようの会]]></title>
             <link>https://zenn.dev/satohjohn/articles/c05d29f5d68e0c</link>
@@ -230,12 +237,6 @@
             <guid>https://zenn.dev/nnaka2992/articles/to_beat_light_speed_on_google_cloud_databases</guid>
             <pubDate>Mon, 03 Jul 2023 15:39:08 GMT</pubDate>
             <content:encoded><![CDATA[クラウドを利用する一番のメリットの一つとしてオンデマンドでリソースを調達し、アクセス負荷に応じてスケールイン・アウト出来ることが上げられます。そのため大体のアプリケーションではシングルリージョンまたは隣接するリージョン2~3程度で運用を始めることが多いと思います。(日本の場合asia-northeast-1とasia-northeast-2など)アプリケーションがグローバルに拡大すると、それだけ物理的な距離が広がりユーザ・サーバ間のアクセスにかかる時間が拡大します。例えばユーザ・サーバ共に日本にある場合(沖縄・北海道間約3,000km)、ネットワークによる遅延は片道約15ms以下...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイクに入社しました！]]></title>
-            <link>https://bells17.medium.com/3-shake-279ea982b977?source=rss-713cf42ce34d------2</link>
-            <guid>https://bells17.medium.com/3-shake-279ea982b977?source=rss-713cf42ce34d------2</guid>
-            <pubDate>Mon, 03 Jul 2023 14:10:50 GMT</pubDate>
         </item>
     </channel>
 </rss>
