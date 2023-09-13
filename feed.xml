@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 12 Sep 2023 18:30:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Sep 2023 18:31:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cloud Deployを使ったCloud Runのリリース]]></title>
+            <link>https://zenn.dev/satohjohn/articles/7e6a70edc8f36e</link>
+            <guid>https://zenn.dev/satohjohn/articles/7e6a70edc8f36e</guid>
+            <pubDate>Wed, 13 Sep 2023 05:47:13 GMT</pubDate>
+            <content:encoded><![CDATA[概要Cloud RunのリリースにCloud Deployを使ってみます。 そもそもCloud Deployとはhttps://cloud.google.com/deploy?hl=jaGKE、Cloud Runのリリースを管理できるサービスになります。リリースフローを記載したパイプラインの定義を作成し、パイプラインを作成したら、フローを管理できるようになります。各フローでは基本内部でskaffoldを通して、Cloud Buildが実行される形です。Cloud Deployを使うと以下のような、リリースフローになるかと思います。Cloud BuildでImageを...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub ActionsでWorkload Identityでの認証を入れてGoogle CloudのAPIを叩く]]></title>
             <link>https://zenn.dev/satohjohn/articles/1645be8e83eab6</link>
@@ -230,13 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/07/13/131433</guid>
             <pubDate>Thu, 13 Jul 2023 04:14:33 GMT</pubDate>
             <content:encoded><![CDATA[概要開発生産性Conferenceというイベントに『Cloud Native の作法 - 成熟度モデルを活用したCloud Nativeへの道筋』というタイトルで登壇しました。生産性に関するイベントなんですけど現場のエンジニアをやっている僕には開発生産性について語ることってあんまりないようなーって思いながら最近、成熟度モデルについて調べていたのでこのタイトルにしました。途中で開発生産性について語るのを諦めてガッツリ資料を作り直しましたので生暖かく見守ってください。あと、ちょっと前に書籍を送って頂きましたが📖 Twitter での告知を忘れていたのでしておきます。読んだ感想としては入門書では決してないですが成熟度モデルでいうとレベル2の段階では読んでほしいと思う書籍になります。また、豊富にドキュメントへのリンクが貼ってあるのでKubernetesという荒野に道を示す地図になると思います(この文章はChatGPTではなく俺が生成した)。Kubernetesの知識地図 —— 現場での基礎から本番運用まで作者:青山 真也,小竹 智士,長谷川 誠,川部 勝也,岩井 佑樹,杉浦 智基技術評論社Amazon資料登壇資料になります。このブログの目的は参考資料をいちいち探さなくていいようにありますのでご活用ください。 speakerdeck.com参考文献Cloud Native Maturity ModelCloud Native TransformationDesign Patterns for Cloud Native ApplicationsIntro to the Cloud Native Maturity Model - Danielle Cook, Simon Forster, Robbie Glenn & John FormanSRE サイトリライアビリティエンジニアリングが”ザックリ”「すっきり」分かる本: Googleが実践している新DevOps方法論SRE サイトリライアビリティエンジニアリングサイトリライアビリティワークブックCloud Native成熟度モデルがWeb公開されましたWhat's the Difference Between DevOps and SRE?Solving Reliability Fears with Site Reliability EngineeringReliability When Everything Is a Platform: Why You Need to SRE Your CustomersThe History of DevOps ReportsEffective DevOpsPlatform Engineeringへの招待Platform Team と 社内政治 〜 出でよ、Platform Champion 〜 / Platform Team and Internal Politics - Platform Engineering Meetup #2Platform Engineering at MercariEMPOWERED 普通のチームが並外れた製品を生み出すプロダクトリーダーシッププロダクトマネジメントのすべて 事業戦略・IT開発・UXデザイン・マーケティングからチーム・組織運営まで正しいものを正しくつくる　プロダクトをつくるとはどういうことなのか、あるいはアジャイルのその先についてエンジニアリング組織論への招待　～不確実性に向き合う思考と組織のリファクタリング]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenAI APIを利用してパブリッククラウドの権限要約をしてくれるCLIコマンドを作成した]]></title>
-            <link>https://sreake.com/blog/summarize-permission-with-openai/</link>
-            <guid>https://sreake.com/blog/summarize-permission-with-openai/</guid>
-            <pubDate>Tue, 11 Jul 2023 07:01:52 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部の橋本です。前回の記事から引き続き、OpenAIのGPTモデルを利用してDevOps、SREの領域でのtext AIの有効活用を考えていきます。 運用の自動化、構築支援などに活用できると嬉しい […]The post OpenAI APIを利用してパブリッククラウドの権限要約をしてくれるCLIコマンドを作成した first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
