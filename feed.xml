@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 19 Sep 2023 18:31:41 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Sep 2023 18:31:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,11 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[雑なブログが書きたいのでOpen InterpreterのDockerfile を書くTipsとか]]></title>
+            <title><![CDATA[Open InterpreterのDockerfile を書いたのでTipsとか]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/09/20/002920</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/09/20/002920</guid>
             <pubDate>Tue, 19 Sep 2023 15:29:20 GMT</pubDate>
-            <content:encoded><![CDATA[Dockerfile のベストプラクティスを考える機会はありますが皆さんの意見も聞きたい。今回は噂の便利ツール、Open Interpreterのような外部コマンドをどんどん実行して環境を作り変えるようなタイプのツールの場合にはとても有用です。そのようなツールを利用する時のDockerfile について考えていきます。リポジトリは以下になります。github.comGitHub Actionsとの連携GitHub Actionsは、CI/CD（継続的インテグレーションと継続的デリバリー）を簡単に実装できるツールです。特に、trivy.ymlとdocker-publishを利用することで、セキュリティのスキャンとDockerイメージの自動公開が可能です。trivy.ymlの利用trivy.ymlは、Trivyという脆弱性スキャナーをGitHub Actionsで動かすための設定ファイルです。この設定を利用することで、Dockerイメージに存在するセキュリティの脆弱性を自動で検出できます。docker-publishの追加docker-publishは、DockerイメージをDocker Hubや他のレジストリに自動で公開するためのGitHub Actionsのワークフローです。これにより、新しいバージョンのOpen Interpreterがリリースされた際に、手動でイメージをビルド・プッシュする手間が省けます。Renovate.jsonの利用renovate.jsonは、依存関係を自動で更新する設定ファイルですが、これを使うとOpen Interpreterが依存しているライブラリやパッケージが新しくなったときに、自動でプルリクエストが作られるんです。そうすることで、いつも最新の状態を保てるわけですから、セキュリティリスクも減らせます。さらに、Pythonのパッケージも自動で更新したい場合は、requirements.txtを使って設定しておくと便利です。これにより、Pythonの依存パッケージも最新の状態を維持できるようになります。Dockerfileを書く際の注意点Dockerfileを書く際には、以下のようなポイントに注意を払うと良いでしょう。軽量なベースイメージの使用不必要なパッケージを含まない軽量なベースイメージを使用することで、ビルド時間とイメージサイズを削減できます。FROM python:3.11キャッシュの最適化RUNコマンドを効率的に配置することで、Dockerキャッシュを最適化できます。RUN apt-get update && \  apt-get upgrade -y && \  apt-get install -y --no-install-recommends git && \  rm -rf /var/lib/apt/lists/*不必要なパッケージの削除--no-install-recommendsオプションを使用して、不必要なパッケージをインストールしないようにします。  apt-get install -y --no-install-recommends git && \作業ディレクトリの設定WORKDIRを設定することで、その後のコマンドの実行ディレクトリを明示的に指定できます。WORKDIR /root機密情報はコンテナイメージに絶対に埋め込まない社内で有識者へ投げたら機密情報をビルドイメージに追加することを指摘されたので運用時の手癖やミスで何処かのレイヤーに不用意に埋め込まないようにしたgithub.comまとめDockerでOpen Interpreterを運用する際には他にもいろいろ考えるべきことがあると思うので皆さんと議論したいのでIssue待ってます。]]></content:encoded>
+            <content:encoded><![CDATA[Dockerfile のベストプラクティスを考える機会はありますが皆さんの意見も聞きたい。今回は噂の便利ツール、Open Interpreterのような外部コマンドをどんどん実行して環境を作り変えるようなタイプのツールの場合にはDockerはとても有用です。そのようなツールを利用する時のDockerfile について考えていきます。リポジトリは以下になります。github.comGitHub Actionsとの連携GitHub Actionsは、CI/CD（継続的インテグレーションと継続的デリバリー）をGithub 上に簡単に実装できるツールです。今回は、trivy.ymlとdocker-publishを利用することで、セキュリティのスキャンとDockerイメージの自動公開が可能です。github.comtrivy.ymlの利用trivy.ymlは、Trivyという脆弱性スキャナーをGitHub Actionsで動かすための設定ファイルです。この設定を利用することで、Dockerイメージに存在するセキュリティの脆弱性を自動で検出できます。docker-publishの追加docker-publishは、DockerイメージをDocker Hubや他のレジストリに自動で公開するためのGitHub Actionsのワークフローです。これにより、新しいバージョンのOpen Interpreterがリリースされた際に、手動でイメージをビルド・プッシュする手間が省けます。Renovate.jsonの利用renovate.jsonは、依存関係を自動で更新する設定ファイルですが、これを使うとOpen Interpreterが依存しているライブラリやパッケージが新しくなったときに、自動でプルリクエストが作られるんです。そうすることで、いつも最新の状態を保てるわけですから、セキュリティリスクも減らせます。さらに、Pythonのパッケージも自動で更新したい場合は、requirements.txtを使って設定しておくと便利です。これにより、Pythonの依存パッケージも最新の状態を維持できるようになります。github.comDockerfileを書く際の注意点私は以下のようなDockerfileを書きましたその際に以下のようなポイントを意識して書いたので参考にしてください。github.com軽量なベースイメージの使用不必要なパッケージを含まない軽量なベースイメージを使用することで、ビルド時間とイメージサイズを削減できます。FROM python:3.11キャッシュの最適化RUNコマンドを効率的に配置することで、Dockerキャッシュを最適化できます。RUN apt-get update && \  apt-get upgrade -y && \  apt-get install -y --no-install-recommends git && \  rm -rf /var/lib/apt/lists/*不必要なパッケージの削除--no-install-recommendsオプションを使用して、不必要なパッケージをインストールしないようにします。  apt-get install -y --no-install-recommends git && \作業ディレクトリの設定WORKDIRを設定することで、その後のコマンドの実行ディレクトリを明示的に指定できます。WORKDIR /root機密情報はコンテナイメージに絶対に埋め込まない社内で有識者へ投げたら機密情報をビルドイメージに追加することを指摘されたので運用時の手癖やミスで何処かのレイヤーに不用意に埋め込まないようにしたgithub.comまとめDockerでOpen Interpreterを運用する際には他にもいろいろ考えるべきことがあると思うので皆さんと議論したいのでIssue待ってます。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[BigQueryの行列レベルのアクセス制御について]]></title>
