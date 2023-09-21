@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 20 Sep 2023 18:31:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Sep 2023 18:31:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[WSL 2 で外部ストレージをマウント]]></title>
+            <link>https://blog.1q77.com/2023/09/wsl2-mount-volume/</link>
+            <guid>https://blog.1q77.com/2023/09/wsl2-mount-volume/</guid>
+            <pubDate>Thu, 21 Sep 2023 14:08:28 GMT</pubDate>
+            <content:encoded><![CDATA[Laptop を Linux で使用していた時の遺産を WSL 環境でも使おうと XFS でフォーマットされた USB 接続の HDD をマウントする方法がないかなと思って調べたメモ。 Microsoft のドキュメントにありました。 Linux]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Open InterpreterのDockerfile を書いたのでTipsとか]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/09/20/002920</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/learn-about-four-keys/</guid>
             <pubDate>Fri, 21 Jul 2023 09:56:19 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部でインターンをしている村山です。私は以前に、2022年のAccelerate State of DevOps Reportについて調査を行いました。DevOps Reportでは、Four K […]The post Four Keys とは？考え方から導入まで徹底検証してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes の upstream のキャッチアップ]]></title>
-            <link>https://zenn.dev/toversus/articles/52b107ab103712</link>
-            <guid>https://zenn.dev/toversus/articles/52b107ab103712</guid>
-            <pubDate>Thu, 20 Jul 2023 10:18:32 GMT</pubDate>
-            <content:encoded><![CDATA[先日、Kubernetes Meetup Tokyo #59 で「KEP から眺める Kubernetes」というタイトルで発表しました。発表の後で Kubernetes の upstream のキャッチアップ方法について質問を受けました。その場で回答はしたのですが、ちょうど社内の共有会で似たような話をしたところだったので、加筆修正したものを公開しておきます。 はじめにKubernetes の upstream を追いかけ始めて 1 年ちょっと経ったので、その経験をまとめます。Kubernetes の upstream やエコシステムを観察しているだけで、コントリビュータではありま...]]></content:encoded>
         </item>
     </channel>
 </rss>
