@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 24 Sep 2023 18:30:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Sep 2023 18:31:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Kubernetes における秘密情報の管理方法]]></title>
+            <link>https://sreake.com/blog/kubernetes-secret-management/</link>
+            <guid>https://sreake.com/blog/kubernetes-secret-management/</guid>
+            <pubDate>Mon, 25 Sep 2023 08:35:29 GMT</pubDate>
+            <content:encoded><![CDATA[自己紹介 竹下 2023年8月21日からインターンに参加している早稲田大学基幹理工学研究科 M1 竹下です。SRE関連の技術と，自身が研究しているセキュリティ分野との関係性を学びたいと思い、インターンに参加しました。 中 […]The post Kubernetes における秘密情報の管理方法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[EventBridge Scheduler からの Lambda 関数起動に Lambda Permission は不要]]></title>
             <link>https://zenn.dev/toshikish/articles/743f69389aa99c</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_2</guid>
             <pubDate>Wed, 26 Jul 2023 15:03:13 GMT</pubDate>
             <content:encoded><![CDATA[YugabyteDBのドキュメントを全部読む Day2前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Design goalsを読みました。今回はArchitecture > Key Concepts > Universeを読みます。また画像は同ドキュメントより引用しています。UniverseYugabyteDBは耐久性とスケーラビリティを兼ねそなえた分散データベースを達成するために、Universe1と呼ばれるノードのグループを持っている。Universeはビジネス要件やレイテンシの兼ね合いでシングルゾーン、単一リージョンマルチゾーン、マルチリージョン、同期・非同期レプリケーションなどを選択することが出来る。UnivereはClusterと表現されることもある。データの構成Universeは一つ以上のネームスペースを持つことができ、またネームスペースは一つ以上のテーブルを持つことができる。YugabyteDBではUniverse上に存在するノードにまたがって保持されるテーブルを設定に従って、シャーディングし、レプリケーション、ロードバランシングを行なう。YugabyteDBはノードやディスク、ゾーンなどに発生した障害に自動で対応し、必要であればデータを新規に分散、レプリケーションを行なう。ネームスペースはYSQLではデータベースに対応し、ほかのDBにおけるネームスペースに対応する2。YCQLではキースペースに対応し、Cassandraのキースペースに対応している。サービスコンポーネントUniverseはYugabyteDB Tablet Server(YB-TServer)とYugabyteDB Master Server(YB-Master)の二つで構成されている。YB-MasterとYB-TServerはRaftにより分散されており、高可用性を達成している。YB-Tserverはテーブルを始めとしたユーザーデータの保存、提供を担当する。YB-Masterはシステムのメタデータを管理し、システム全体のテーブルに対するDDLやメンテナンスの実行、ロードバランシングといったオペレーションを管理する。UniverseとClusterUniverseは一つのプライマリクラスタとゼロ個以上のレプリカクラスタによって構成されている。プライマリクラスタプライマリクラスタはRead/Write両方の実行と、プライマリクラスタ内のノード間の同期的なレプリケーションを担当する。リードレプリカクラスタリードレプリカクラスタはRead処理のみを実行する。Write処理は自動的にプライマリクラスタにルーティングされる。リードレプリカクラスタを利用することで、地理的に分散したデータに対する読み取りの遅延を小さくすることができる。データはプライマリクラスタから非同期的にとりこまれる。これはRaftの書き込みには関与しないRaftオブザーバとして機能する。GoogleのCloud Spannerでも同様にUniverseと呼ばれている↩PostgreSQLではSchemaの裏側に存在するデータ構造↩]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day1]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_1</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_1</guid>
-            <pubDate>Tue, 25 Jul 2023 15:01:52 GMT</pubDate>
-            <content:encoded><![CDATA[Day1最近Twitter改めXで「俺はDBのドキュメント端から端まで読んで強くなった」というX's1を複数みかけました。周りのエンジニアに一歩差をつける方法として、フレームワークやミドルウェアやライブラリのドキュメントを最初から最後までちゃんと読む、というのがあって、これはマジでコスパ抜群です。— 徳永広夢 (@tokuhirom) July 21, 2023 確かに私のRedisはこれ。 https://t.co/2y1E01aLGw— maru (@maruloop) July 22, 2023 私のMySQLもこれ。 https://t.co/BxiOjeQVPk— yoku0825 (@yoku0825) July 22, 2023 俺のpostgresqlもこれ。 https://t.co/URRjyXCpGI— そーだい@初代ALF (@soudai1025) July 22, 2023 PostgreSQL系NewSQLで最強になりたいのでYugabyteDBのドキュメントを順番に読んで行きます。ドキュメントはv2.19に対応したものです。手始めにArchitectureの一番先頭にあるDesign goalsから読みはじめます。また画像は同ドキュメントより引用しています。Design goalsYugabyteDBは以下を達成することを目標としている。1. 分散トランザクションを提供しながら強い一貫性を保証する。2. Query APIを再発明せず、既存のクエリ言語への互換を達成する。3. 高いパフォーマンスを保証する。4. 地理的に分散したデプロイを可能にする。5. Cloud Native Databaseとしてデザインする。一貫性分断耐性YugabyteDBはCAPの定理で言えばCPを中心に高い可用性を供えたデータベースネットワーク分断などを起因とするSplit BrainはRaft Group内であたらしいリーダーを選出することで対応している。YugabyteDBではLeader Leaseという障害が発生しても常に一つのリーダが存在することを保証する仕組みを実装している。直列化可能性single-row Linearizable writeをサポートしている。ACIDトランザクションYugabyteDBではSeriarizable、Repetable Read、Read Committed Isolationの三つの分離レベルをサポートしている。YSQL APIではこれら3つの分離レベルをサポートしているが、YCQLではRepeatable Readのみに対応している。Query APIYugabyteDBではYSQLとYCQLという2種類のQuery APIをサポートしている。YSQLYSQLはPostgreSQLに互換したAPIでPostgreSQLのクエリレイヤを再利用している。新しい変更は互換性を崩さない。YSQLは新しいPostgreSQLに互換しつづけることを目標としている。YCQLYCQLはCassandraのクエイ言語から派生した半リレーショナルなクエリ言語で、Webスケールな膨大なwriteに対応してスケールし素早いデータ取得を目標としている。パフォーマンスC++で実装されているため高いパフォーマンスと巨大なHeap(RAM)をCacheとして利用できる。SSDとNVMeに最適化している。高いWriteスループットとクライアントの同時実行性、高いデータ密度、増加し続けるデータへの対応を目標としている。地理的分散Zone、Multi Region、Multi Cloudいずれにも対応している。これに対応するために、ノード障害やトラヒックのルーティングなどに対応できる必要がある。クラウドネイティブアーキテクチャパブリッククラウドやオンプレミスで利用される一般てきなハードウェアで利用可能にする。原子時計のような特別なものに依存しない。Kubernatesに対応している。OSSで提供している。https://twitter.com/SawyerMerritt/status/1683365478582951936↩]]></content:encoded>
         </item>
     </channel>
 </rss>
