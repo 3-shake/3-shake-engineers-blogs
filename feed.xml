@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 29 Sep 2023 18:31:36 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Sep 2023 18:30:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[DietPi で DNLA サーバー]]></title>
+            <link>https://blog.1q77.com/2023/09/minidlna-on-dietpi/</link>
+            <guid>https://blog.1q77.com/2023/09/minidlna-on-dietpi/</guid>
+            <pubDate>Sat, 30 Sep 2023 08:33:09 GMT</pubDate>
+            <content:encoded><![CDATA[Raspberry Pi 4 を買った週に Raspberry Pi 5 が発表されてちょっと悔しいところですが Windows XP 時代から OS を更新しながら使っていた古いデスクトップPCを処分したのでそこで使っていた HDD をラズパ]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes における秘密情報の管理方法]]></title>
             <link>https://sreake.com/blog/kubernetes-secret-management/</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_3</guid>
             <pubDate>Wed, 02 Aug 2023 16:13:24 GMT</pubDate>
             <content:encoded><![CDATA[YugabyteDBのドキュメントを全部読む Day3前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Key Concepts > Universeを読みました。今回はArchitecture > Key Concepts > YB-TServer serviceを読みます。ドキュメントのバージョンは最新のv2.19 previewです。また画像は同ドキュメントより引用しています。それはそれとして技術系の単語をカタカナ表記で誤魔化していて、体系的に学んでいないことがバレてしまう。特にストレージまわりが分からない……YB-TServer serviceYB-TServer(YugabyteDB Tablet Servcer)はユーザからの受けつけたYugabyteDBクラスタへのリクエストのI/Oの処理をする。テーブルのデータは一つ以上のTablet peerに分割(シャーディング)される。peerの数はレプリケーションファクターによって決定される。YB-TServerは一つ以上のTablet peerをホストする。Tablet peerはRaftグループを形成してグループ間でデータの複製を行ない、タブレットはYB-TServer上で最大の効率になるように管理される。Server-global block cacheブロックキャッシュは一つTB-TServer上の異なるタブレット間で共有される。YB-TServerのメモリ効率は一つのテーブルからの読み込みが多いほど最適化される。Space AmplificationYugabyteDBではSize-tired Compactionというライトアンプリフィケーション1が小さい圧縮方式を利用している。Size-tired Compactionはスペースアンプリフィケーション2が大きいという問題があるが、YugabyteDBではテーブルは複数のタブレットに分割され、タブレット間でのConcurrent Compactionは特定の最大値まで絞られるため問題になりにくい。YugabyteDBでは凡そ10-20%のスペースアンプリフィケーションにおさまる。つまりSize-tired Compaction一単位が扱うデータ量を小さく(タブレット化)して、同時に実行される圧縮処理数を絞ることで特定のタイミングで圧縮に使用されるストレージ容量を抑えているということ？Throttled compactionsYB-TServerではタブレット間で実行される圧縮処理の同時実行数を制限することで、圧縮処理が多量のリソースを占有することを防いでいる。この機能は圧縮されるファイル同士のサイズを比べ、実行される圧縮処理が妥当であることを確認することで実現されている。Small and large compaction queuesYB-TServerでは圧縮処理を大きい圧縮処理と小さい圧縮処理に分けて優先度を決めることで、I/Oが大きな場合でもシステムの機能を保っている。YugabyteDBでは圧縮処理数を制限することに加え、様々な最適化を実行することで圧縮処理の影響を最小化している。Manual compactionYugabyteDBではyb-admin utilityのcompact_tableコマンドにより、任意のタイミングでテーブルに対して圧縮を実行することが出来る。この方法はデータが新しく書き込まれない場合や、DDLやTTLの超過によるデータ削除時によりデータが断片化したときに有効である。Statistics-based full compactions to improve read performanceYugabyteDBでは読み込まれたkey-valueペアをDocDBレベルで監視している。監視対象となる時間軸はauto-compact-stat-window-secondsで管理されている。YugabyteDBがデータ読み込み時に多量の廃棄されたデータのスキップを検知した場合、full compactionがトリガーされ不要なキーの削除が行なわれる。Full compactionがトリガーされる詳細な条件は対象の時間軸で以下が満された時である。廃棄されたキーとアクティブなキーが読まれる割り合いがauto-compact-percent-obsoleteで定義された閾値を超たとき。廃棄されたキーの読み込みauto-compact-min-obsolete-keys-foundで定義された閾値を超たとき。この機能はTTLを設定したテーブルと互換性があり、TTL file expirationが有効なテーブルではスケジュールされた圧縮を実行しない。Scheduled full compactionsYugabyteDBでは全てのデータに対するデータ圧縮をスケジュール実行することが出来る。スケジュール実行はscheduled-full-compaction-frequency-hoursとscheduled-full-compaction-jitter-factor-percentageのフラグで管理される。この機能は大量のDELETEとUPDATEを定常的に実行するワークロードでのパフォーマンスとディスクスペースの再割り当てに有効である。スケジュール化したデータ圧縮はTTLと互換しているが、TTL file expirationとは互換していない。つまりスケジュールされた圧縮は実行されない。Server-global memstore limitServer-global memstore limitは一つのYB-TServer上のタブレット間でシェアされるメモリサイズを追跡し、強制する。この機能はタブレット間の書き込みに偏りがある場合に有効である。一つのテーブルに書き込みが集中しているばあい、メモリ制限以上のメモリを割り当てることでパフォーマンスを向上させることが出来る。Auto-sizing of block cache and memstoreBlock Cacheとmemstoreは何れも多量のメモリを使用している。これらはtablet-peer間で共有されるリソースのため、メモリ管理とこれらのコンポーネントの様々な環境に合せたサイジングを容易にしている。YB-TServerでは自動で特定の割合のメモリをBlock CacheとMemstoreに割り当てる。Distributing tablet load uniformly across data disks複数のSSDを利用するハードウェアでは、テーブルのデータ(SSTable)とWALはテーブル毎に利用可能なディスクに均等に分散される。このストライピングと呼ばれる負荷分散は、それぞれのディスクがそれぞれのテーブルの負荷を均等に処理することを保証する。SSDで実際に書き込んだデータより書き込み量が増幅する現象。もちろんライトアンプリフィケーションが小さいほうが望ましい。↩↩]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day2]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_2</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_2</guid>
-            <pubDate>Wed, 26 Jul 2023 15:03:13 GMT</pubDate>
-            <content:encoded><![CDATA[YugabyteDBのドキュメントを全部読む Day2前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Design goalsを読みました。今回はArchitecture > Key Concepts > Universeを読みます。また画像は同ドキュメントより引用しています。UniverseYugabyteDBは耐久性とスケーラビリティを兼ねそなえた分散データベースを達成するために、Universe1と呼ばれるノードのグループを持っている。Universeはビジネス要件やレイテンシの兼ね合いでシングルゾーン、単一リージョンマルチゾーン、マルチリージョン、同期・非同期レプリケーションなどを選択することが出来る。UnivereはClusterと表現されることもある。データの構成Universeは一つ以上のネームスペースを持つことができ、またネームスペースは一つ以上のテーブルを持つことができる。YugabyteDBではUniverse上に存在するノードにまたがって保持されるテーブルを設定に従って、シャーディングし、レプリケーション、ロードバランシングを行なう。YugabyteDBはノードやディスク、ゾーンなどに発生した障害に自動で対応し、必要であればデータを新規に分散、レプリケーションを行なう。ネームスペースはYSQLではデータベースに対応し、ほかのDBにおけるネームスペースに対応する2。YCQLではキースペースに対応し、Cassandraのキースペースに対応している。サービスコンポーネントUniverseはYugabyteDB Tablet Server(YB-TServer)とYugabyteDB Master Server(YB-Master)の二つで構成されている。YB-MasterとYB-TServerはRaftにより分散されており、高可用性を達成している。YB-Tserverはテーブルを始めとしたユーザーデータの保存、提供を担当する。YB-Masterはシステムのメタデータを管理し、システム全体のテーブルに対するDDLやメンテナンスの実行、ロードバランシングといったオペレーションを管理する。UniverseとClusterUniverseは一つのプライマリクラスタとゼロ個以上のレプリカクラスタによって構成されている。プライマリクラスタプライマリクラスタはRead/Write両方の実行と、プライマリクラスタ内のノード間の同期的なレプリケーションを担当する。リードレプリカクラスタリードレプリカクラスタはRead処理のみを実行する。Write処理は自動的にプライマリクラスタにルーティングされる。リードレプリカクラスタを利用することで、地理的に分散したデータに対する読み取りの遅延を小さくすることができる。データはプライマリクラスタから非同期的にとりこまれる。これはRaftの書き込みには関与しないRaftオブザーバとして機能する。GoogleのCloud Spannerでも同様にUniverseと呼ばれている↩PostgreSQLではSchemaの裏側に存在するデータ構造↩]]></content:encoded>
         </item>
     </channel>
 </rss>
