@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 09 Oct 2023 18:31:59 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Oct 2023 18:31:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、 インシデント管理・運用プラットフォーム「PagerDuty」の導入支援サービスを正式リリース]]></title>
+            <link>https://sreake.com/blog/pagerduty-package/</link>
+            <guid>https://sreake.com/blog/pagerduty-package/</guid>
+            <pubDate>Tue, 10 Oct 2023 00:50:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイクが提供するSRE総合支援サービス「Sreake（スリーク）」は、新たに 、システムのインシデント対応を一元化するプラットフォーム「PagerDuty」の導入支援サービス「PagerDutyパッケージ」を正式リリースいたしました。The post スリーシェイク、 インシデント管理・運用プラットフォーム「PagerDuty」の導入支援サービスを正式リリース first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[『SREとPlatform Engineerの交差点:2つの領域の交差と組織への適用』というタイトルで登壇しました]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/10/05/233555</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/pull-request-based-adhoc-env/</guid>
             <pubDate>Wed, 09 Aug 2023 03:10:37 GMT</pubDate>
             <content:encoded><![CDATA[きっかけ 開発時、feature ブランチの Pull Request （以下、PR）ごとに実行環境が準備されると便利だよねというところから、PR ごとに開発環境を構築される仕組みを作ることになりました。 使用技術スタッ […]The post Cloud Run を活用した Pull Request 単位での Ad hoc 開発環境作成 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day4]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_4</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_4</guid>
-            <pubDate>Thu, 03 Aug 2023 14:48:34 GMT</pubDate>
-            <content:encoded><![CDATA[前回](https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs_3)からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Key Concepts > YB-TServer serviceを読みました。今回はArchitecture > Key Concepts > YB-Master serviceを読みます。ドキュメントのバージョンは最新のv2.19 previewです。また画像は同ドキュメントより引用しています。YB-Master serviceYB-Masterサービスはテーブルやそのタブレットの場所、ユーザー・ロールの権限といったシステムのメタデータとレコードの管理を行っている。それに加えYB-Masterはロードバランシングやレプリケーションの開始といったバックグラウンドオペレーションの管理や、テーブルのCREATEやALTER、DROPといった様々な管理オペレーションの責任を持つ。YB-MasterはRaft Groupを組むことで高可用性を実現し、またテーブルに対するI/Oの単一障害点にならない。Functions of YB-MasterYB-Masterはシステムの重要な機能を複数持っている。Coordination of universe-wide administrative operationsCREATE TABLEやALTER TABLE、DROP TABLEといったユーザーからのリクエスト処理やバックアップの実行などUniverseをまたぐオペレーション実行の調整を担当している。YB-Masterではこれらのオペレーションがテーブルを保持するYB-TServerの状態に関わらず、全てのテーブルに伝搬されることを保証する。YugabyteDBは分散システムのため、Universeをまたぐ処理中にYB-TServerに障害が発生し一部のタブレットへの適用に失敗してもオペレーションの結果に問題が発生しないことが重要だからである。Storage of system metadataそれぞれのYB-Masterではネームスペースやテーブル、ロール、パーミッション、YB-TServerへ割り当てたテーブル情報を含むシステムメタデータを保存している。これらのシステムレコードはYB-Masterを対象にRaftグループを組みレプリケーションすることで冗長性を実現している。またシステムレコードはYB-Masterが管理するDocDBに保存される。Authoritative source of tablet assignments to YB-TServersYB-Masterは全てのテーブルとそれらをホストするYB-TServerの情報を保存している。一般のクライアントではそれらの情報はクライアントからクエリレイヤなどを通して取得された上で、クライアントにメタデータを返しデータアクセスが行なわれる。一方でスマートクライアントではYB-Masterに保存されたメタデータを利用して特定のYB-TServerが保持するタブレットやキャッシュを利用することが出来るため、データアクセス時のネットワークをまたぐ通信を減らすことができパフォーマンスを高めることができる。Background operationsいくつかのオペレーションはUniverseのライフタイムを通してバックグラウンドで行なうことで、フォアグラウンドのRead/Writeに影響を与えずに実行することが出来る。Data placement and load balancingYB-MasterのリーダーはCREATE TABLE時にタブレットの初期配置をYB-TServerをまたいで行なう。そのときにユーザー定義のデータ配置制約を強制し均一な読み込みを保証する。Universeのライフタイム中のノード追加や障害が発生しても、負荷分散を継続しデータ配置の制約を自動的に適用する。Leader balancing複数のYB-TServerに配置されたタブレットへのアクセスがUniverseをまたいで分散されることを保証している一方で、YB-Masterは対象となるノード1間でそれぞれのノードが同じ数のtablet-peer leader2をもつことを保証する。Rereplication of data on extended YB-TServer failureYB-Masterは全てのYB-TServerからハードビートシグナルを受け取ることでYB-TServerの死活監視を行なっている。そしてYB-MasterはYB-TServerの異常を検知したときに、どれぐらいのあいだYB-TServerが異常であったかを追跡する。閾値を超えると、YB-Masterは障害中のYB-TServerに配置されていたタブレットを再配置するYB-TServerを探し、レプリケーションを実行する。レプリケーションはYB-Masterリーダーに抑制された状態で実行されるため、Universeのフォアグラウンドオペレーションには影響をおよぼさない。Raft Groupのリーダーになれるノード↩↩]]></content:encoded>
         </item>
     </channel>
 </rss>
