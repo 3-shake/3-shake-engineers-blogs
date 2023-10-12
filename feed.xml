@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Oct 2023 18:32:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Oct 2023 18:32:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Vertex AI Searchによる社内knowlegeの要約ツールをつくってみた]]></title>
+            <link>https://sreake.com/blog/vertex-ai-search-summary-tool/</link>
+            <guid>https://sreake.com/blog/vertex-ai-search-summary-tool/</guid>
+            <pubDate>Thu, 12 Oct 2023 03:46:53 GMT</pubDate>
+            <content:encoded><![CDATA[こんにちは、初めましての方もそうでない方も、Sreake事業部 佐藤慧太(@SatohJohn)です。 今回Google CloudのVertex AI Search(旧Enterprise Search)について検証の […]The post Vertex AI Searchによる社内knowlegeの要約ツールをつくってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、 インシデント管理・運用プラットフォーム「PagerDuty」の導入支援サービスを正式リリース]]></title>
             <link>https://sreake.com/blog/pagerduty-package/</link>
@@ -230,13 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/10/021934</guid>
             <pubDate>Wed, 09 Aug 2023 17:19:34 GMT</pubDate>
             <content:encoded><![CDATA[github.comLunarVimユーザーとして、私はNeovimでcopilot.luaを頻繁に利用しています。しかし、マルチラインのサポートに関してはいくつかの課題がありました。もっというとどこかのタイミングでCopilotが一行ずつしかサジェストされなくなりました。この問題に対して、一部のコードを修正することで、この課題を解決する方法を見つけました。問題点Copilot.lua(Copilot.vimも同様に)の中のagent.jsには、マルチライン入力の停止点を示すコード h.stop=["\n"] が含まれています。この設定により、一部の場面でマルチラインサポートが期待通りに動作しないことがありました。解決方法私が採用した方法は、このh.stop=["\n"]をh.stop=["\n\n\n"]に変更することです。この小さな変更により、マルチラインのサポートが大幅に向上します。以下のコマンドを実行することで、この変更を簡単に適用することができます。MAC でのsed 利用なのでこのようなコマンドになります。各環境で合わせていただきたいです。sed -i '' 's/h\.stop=\["\\\\n"\]/h\.stop=\["\\\\n\\\\n\\\\n"\]/' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js変更が正しく適用されたかどうかを確認するには、以下のコマンドを実行します。grep -o '.\{30\}h.stop=\[.\{30\}' ~/.local/share/lunarvim/site/pack/lazy/opt/copilot.lua/copilot/dist/agent.js結果この変更を適用した後、マルチラインサポートが明らかに向上しました。興味があれば最初に紹介したIssue に動画が添付されていたのでご覧ください。LunarVimとCopilot.luaの組み合わせは非常に強力ですが、小さな調整によりさらに快適に使うことができます。このハックが他のユーザーにも役立つことを願っています。後日談この変更を適用した後でマルチラインサポートは向上したのですが一部条件ではまだ、vscodeのような挙動ができません。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Run を活用した Pull Request 単位での Ad hoc 開発環境作成]]></title>
-            <link>https://sreake.com/blog/pull-request-based-adhoc-env/</link>
-            <guid>https://sreake.com/blog/pull-request-based-adhoc-env/</guid>
-            <pubDate>Wed, 09 Aug 2023 03:10:37 GMT</pubDate>
-            <content:encoded><![CDATA[きっかけ 開発時、feature ブランチの Pull Request （以下、PR）ごとに実行環境が準備されると便利だよねというところから、PR ごとに開発環境を構築される仕組みを作ることになりました。 使用技術スタッ […]The post Cloud Run を活用した Pull Request 単位での Ad hoc 開発環境作成 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
