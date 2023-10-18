@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 17 Oct 2023 18:32:33 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Oct 2023 18:32:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Application Integrationについて]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/365af68bb280e7</link>
+            <guid>https://zenn.dev/nedoko_dok0dko/articles/365af68bb280e7</guid>
+            <pubDate>Wed, 18 Oct 2023 09:20:05 GMT</pubDate>
+            <content:encoded><![CDATA[whatGoogle Cloudの「Application Integration」というサービスについて軽く調べたことをまとめたログ関連してiPaasについても調べたことを記載する Application Integrationとはhttps://cloud.google.com/application-integration?hl=jaGoogle Cloudが提供するIntegration Platform as a Service（iPaaS）ソリューションビジュアルエディタを利用することによって、以下がノーコードで行えるイベントによるトリガーの...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloud Asset Inventoryとは]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/e80d73d4f28a79</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/learn-about-aws-control-tower/</guid>
             <pubDate>Thu, 10 Aug 2023 05:52:55 GMT</pubDate>
             <content:encoded><![CDATA[AWS Control Tower とは AWS Control Tower とは Landing Zone を実装するための AWS のマネージドサービスです。統制を取りつつマルチアカウントを管理する仕組みです。 La […]The post AWS Control Tower 徹底調査 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[HarnessでGKEクラスタにCDパイプラインを構築する]]></title>
-            <link>https://qiita.com/yokoo-an209/items/57e2e4c00394c9da85f7</link>
-            <guid>https://qiita.com/yokoo-an209/items/57e2e4c00394c9da85f7</guid>
-            <pubDate>Thu, 10 Aug 2023 05:22:38 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに実務においてHarnessを使用する機会があったので、お試しがてらGKEクラスタ上にCDパイプラインの構築を行います。（※なお、今回はHarnessの使用に焦点を当てているため、CIの実…]]></content:encoded>
         </item>
     </channel>
 </rss>
