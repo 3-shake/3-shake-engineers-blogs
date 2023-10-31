@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 30 Oct 2023 18:31:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 Oct 2023 18:31:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Time-Slicing GPUs を Kubernetes で利用する]]></title>
+            <link>https://sreake.com/blog/kubernetes-time-slicing-gpu/</link>
+            <guid>https://sreake.com/blog/kubernetes-time-slicing-gpu/</guid>
+            <pubDate>Tue, 31 Oct 2023 08:39:06 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Kubernetes にて、1つのGPUを複数コンテナ (※ Pod内の複数コンテナ、複数のPodを指す) で使い倒したい。そんな時はありますでしょうか。本記事では、NVIDIA/k8s-device-plug […]The post Time-Slicing GPUs を Kubernetes で利用する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ShellCheckで自動化の品質を向上させる]]></title>
+            <link>https://sreake.com/blog/shellcheck-automation-enhancement/</link>
+            <guid>https://sreake.com/blog/shellcheck-automation-enhancement/</guid>
+            <pubDate>Tue, 31 Oct 2023 02:32:20 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Site Reliability Engineering (SRE) の領域では、トイル (toil) の削減と効率的なオペレーションが大きな課題となっています。トイルというのは、手作業で繰り返し行う作業のこと […]The post ShellCheckで自動化の品質を向上させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[YugabyteDBのドキュメントを全部読む Day9]]></title>
             <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs/9_core_functions_high_availability</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/google-cloud-cost-check-with-palm-api-for-text/</guid>
             <pubDate>Wed, 16 Aug 2023 05:06:08 GMT</pubDate>
             <content:encoded><![CDATA[前段 Sreake事業部の橋本です。 Generative AIをSRE活動に活用する場合に大きく分けて以下のような2ケースが考えられます。これまで1つめのtoil削減の実装をGenerative AIに含まれる学習デー […]The post PaLM API for textで作るGoogle Cloudコストチェッカー first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[WezTerm で快適な WSL2 環境にする]]></title>
-            <link>https://blog.1q77.com/2023/08/wezterm-on-windows/</link>
-            <guid>https://blog.1q77.com/2023/08/wezterm-on-windows/</guid>
-            <pubDate>Sat, 12 Aug 2023 11:07:01 GMT</pubDate>
-            <content:encoded><![CDATA[家の自分用 Laptop はずっと Linux を使ってきましたが、数か月前に Inspiron 14 に買い替えたタイミングで Ubuntu 22.04 にしてからやっぱり不便だなあとも思っていました。(InputMethod の切]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SREからPlatform Engineerへの拡大 というタイトルで登壇しました]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/08/10/150412</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/08/10/150412</guid>
-            <pubDate>Thu, 10 Aug 2023 06:04:12 GMT</pubDate>
-            <content:encoded><![CDATA[概要Cloud Operator Days Tokyo 2023 で SREからPlatform Engineerへの拡大 というテーマでの登壇を果たしました。オンデマンド配信なのでいずれ見れるようになると思います。今回のサブタイトルは【運用の新時代】とし、それにちなんでメインタイトルを考えました。資料の作成過程で、話したい内容がどんどんと増えてきてしまい、20分という限られた時間での発表が一番の課題となりました。内容の整理に際して、具体と抽象 ―世界が変わって見える知性のしくみ という本を参照し、大変役立ちました。具体と抽象作者:細谷 功dZERO（インプレス）Amazon資料このブログでは、Cloud Operator Days Tokyo 2023での登壇内容をまとめております。資料作成時に参照したさまざまな参考情報も掲載していますので、読者の皆様が別途情報を探す手間を省けるよう心掛けました。ぜひ、本ブログをご活用ください。文字多くて分かりにくいのは分かってます。脳内整理はできているのですが資料を読みやすくすると20分に何も収まらず...。 speakerdeck.com参考文献O’Reilly Japan – SRE サイトリライアビリティエンジニアリングあなたらしくSREO’Reilly Japan – サイトリライアビリティワークブックO’Reilly Japan – SREの探求SRE at Google: How to structure your SRE team | Google Cloud BlogレトロスペクティブガイドWhat Is Platform Engineering?Top Strategic Technology Trends for 2023: Platform EngineeringMaking the Business Case for a Dedicated Platform Engineering TeamSRE NEXTPlatform Engineering Meetupチームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計The History of DevOps ReportsEffective DevOpsオブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイド]]></content:encoded>
         </item>
     </channel>
 </rss>
