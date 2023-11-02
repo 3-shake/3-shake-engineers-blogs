@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 02 Nov 2023 06:02:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Nov 2023 18:31:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Amazon ECSイベントをCloudWatch Logsへ収集する]]></title>
+            <link>https://zenn.dev/yuu0w0yuu/articles/df3a9fdef609e2</link>
+            <guid>https://zenn.dev/yuu0w0yuu/articles/df3a9fdef609e2</guid>
+            <pubDate>Thu, 02 Nov 2023 08:33:22 GMT</pubDate>
+            <content:encoded><![CDATA[きっかけECSは、Container Insightsを有効化することでクラスタやサービスといった各レイヤのパフォーマンスメトリクスをCloudWatchに収集できる。一方で、以下のようなケースにおいて一定の仮説を導くためには、このメトリクスだけではやや不足感があるため、発生したイベントやその結果を別の方式で監視したくなった。メトリクスがスパイクしたタイミングで何が起きていたか？デプロイを実行したが結果はどうだったか？デプロイが失敗したが原因は何か？などなど・・調べてみると、ECSはいくつかの種類のイベントをEventBridgeに送信しており、これをルールで拾って...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Time-Slicing GPUs を Kubernetes で利用する]]></title>
             <link>https://sreake.com/blog/kubernetes-time-slicing-gpu/</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs/5_core_functions_universe_creation</guid>
             <pubDate>Wed, 16 Aug 2023 13:49:19 GMT</pubDate>
             <content:encoded><![CDATA[前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Key Concepts > YB-Master serviceを読みました。今回はArchitecture > Core functions > Universe creationを読みます。ドキュメントのバージョンは最新のv2.19 previewです。また画像は同ドキュメントより引用しています。Universe creationYugabyteDBのユニバース作成は複数のステップを含む。Start YB-MastersYBユニバース作成の最初のステップはレプリケーションファクターで指定された数だけYB-Masterを作成することである。作成されたYB-Masterはそれぞれを認識している。YB-Masterはユニバース内でユニークなID(UUID)をそれぞれに割り当て、それぞれを認識しあったあとにリーダーエレクションを実行する。このステップの終りにYB-Masterの中のひとつがリーダーとして確立される。Start YB-TServersノードの数だけYB-TServerを起動し、それぞれにマスターのアドレスを渡す。それぞれのYB-TServerはマスターにハートビートを送信し、正常に動作していることを確認する。ハートビートはYB-TServerが現在ホストしているタブレットとその負荷情報についても通信するが、この時点ではタブレットにデータは登録されていない。Examples4ノードからなるYBユニバースにテーブルを作成する場合について考える。テーブルのレプリケーションファクターは3とする。3つのマスターがcreateモードで起動される。これはマスターがすでに起動しているために発生するエラーを防ぐために明示的に実行される。リーダーエレクションを実行し、リーダーを選出する。YB-TServerが起動し、全てのYB-TServerがマスターにハートビートを送信する。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PaLM API for textで作るGoogle Cloudコストチェッカー]]></title>
-            <link>https://sreake.com/blog/google-cloud-cost-check-with-palm-api-for-text/</link>
-            <guid>https://sreake.com/blog/google-cloud-cost-check-with-palm-api-for-text/</guid>
-            <pubDate>Wed, 16 Aug 2023 05:06:08 GMT</pubDate>
-            <content:encoded><![CDATA[前段 Sreake事業部の橋本です。 Generative AIをSRE活動に活用する場合に大きく分けて以下のような2ケースが考えられます。これまで1つめのtoil削減の実装をGenerative AIに含まれる学習デー […]The post PaLM API for textで作るGoogle Cloudコストチェッカー first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
