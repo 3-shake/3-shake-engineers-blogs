@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 07 Nov 2023 18:31:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Nov 2023 18:31:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -82,7 +82,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2023/10/05/233555</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/10/05/233555</guid>
             <pubDate>Thu, 05 Oct 2023 14:35:55 GMT</pubDate>
-            <content:encoded><![CDATA[概要Platform Engineering Meetup #5 で SREとPlatform Engineerの交差点:2つの領域の交差と組織への適用 というテーマで登壇をしました。SREからPlatform Engineerへの拡大のセルフリバイバルになります。このブログでは、参考資料を見るために利用してください。気が向いたら続き書く資料 speakerdeck.com参考文献O’Reilly Japan – SRE サイトリライアビリティエンジニアリングO’Reilly Japan – サイトリライアビリティワークブックO’Reilly Japan – SREの探求SRE at Google: How to structure your SRE team | Google Cloud BlogレトロスペクティブガイドWhat Is Platform Engineering?What Team Structure is Right for DevOps to Flourish?Making the Business Case for a Dedicated Platform Engineering TeamCNCF Platforms White PaperSRE NEXTPlatform Engineering Meetupチームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計The History of DevOps ReportsEffective DevOpsTop Strategic Technology Trends for 2023: Platform Engineering道を照らす: プラットフォーム エンジニアリング、ゴールデンパス、セルフサービスのパワーオブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイドネットワーク・エフェクト　事業とプロダクトに欠かせない強力で重要なフレームワークINSPIRED 熱狂させる製品を生み出すプロダクトマネジメント]]></content:encoded>
+            <content:encoded><![CDATA[概要資料参考文献概要Platform Engineering Meetup #5 で SREとPlatform Engineerの交差点:2つの領域の交差と組織への適用 というテーマで登壇をしました。SREからPlatform Engineerへの拡大のセルフリバイバルになります。このブログでは、参考資料を見るために利用してください。気が向いたら続き書く資料 speakerdeck.com参考文献O’Reilly Japan – SRE サイトリライアビリティエンジニアリングO’Reilly Japan – サイトリライアビリティワークブックO’Reilly Japan – SREの探求SRE at Google: How to structure your SRE team | Google Cloud BlogレトロスペクティブガイドWhat Is Platform Engineering?What Team Structure is Right for DevOps to Flourish?Making the Business Case for a Dedicated Platform Engineering TeamCNCF Platforms White PaperSRE NEXTPlatform Engineering Meetupチームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計The History of DevOps ReportsEffective DevOpsTop Strategic Technology Trends for 2023: Platform Engineering道を照らす: プラットフォーム エンジニアリング、ゴールデンパス、セルフサービスのパワーオブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイドネットワーク・エフェクト　事業とプロダクトに欠かせない強力で重要なフレームワークINSPIRED 熱狂させる製品を生み出すプロダクトマネジメント]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[SREとPlatform Engineerの違いを3つのポイントで理解する]]></title>
