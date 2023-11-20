@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 19 Nov 2023 18:30:24 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Nov 2023 08:16:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、Google Cloud Japan の「Google Cloud Partner Top Engineer 2024」にて3名のエンジニアが受賞]]></title>
+            <link>https://sreake.com/blog/google-cloud-partner-top-engineer-2024/</link>
+            <guid>https://sreake.com/blog/google-cloud-partner-top-engineer-2024/</guid>
+            <pubDate>Mon, 20 Nov 2023 00:50:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイクは、この度 Google Cloud Japan の「Google Cloud Partner Top Engineer 2024」において、スリーシェイクから3名のエンジニアが受賞したことをお知らせいたします。The post スリーシェイク、Google Cloud Japan の「Google Cloud Partner Top Engineer 2024」にて3名のエンジニアが受賞 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ChatGPTのFunctionCallをGolangで試してみる]]></title>
             <link>https://sreake.com/blog/chatgpt-function-call-with-golang/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/container-security-comparison/</guid>
             <pubDate>Mon, 11 Sep 2023 07:22:29 GMT</pubDate>
             <content:encoded><![CDATA[自己紹介 高島 陸斗 千葉工業大学修士1年生の高島陸斗です。大学院では、コンピュータによる数値計算の厳密解との誤差がどの程度あるのかを調べる精度保証の精度を上げるための研究をしています。サイバーセキュリティに興味があり、 […]The post コンテナセキュリティ TetragonとPodSecurity/seccompの機能比較 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[BigQueryのオンデマンド料金におけるコスト管理方法についてメモ]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/f0da04c4a70ea6</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/f0da04c4a70ea6</guid>
-            <pubDate>Mon, 11 Sep 2023 01:56:24 GMT</pubDate>
-            <content:encoded><![CDATA[whatBigQueryにおけるコスト管理方法について、公式ドキュメントを元にメモしたログ今回はオンデマンド料金について記載のため、定額料金(BigQuery Editions)に関しては記載しない 高額請求が来てしまうパターンとはよく見かける/耳にするのは以下のような場合(あくまで一例)大量にデータをスキャンするクエリを実行するselect * 系のクエリを投げる(Table Patitionを利用したテーブルの場合)partitionで指定しないでクエリを投げる料金がかかるクエリをバッチなど利用して連続で実行してしまうTable Patition...]]></content:encoded>
         </item>
     </channel>
 </rss>
