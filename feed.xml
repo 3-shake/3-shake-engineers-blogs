@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 26 Nov 2023 18:30:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Nov 2023 18:31:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[KEP-4188: New kubelet gRPC API with endpoint returning local pods info]]></title>
+            <link>https://zenn.dev/toversus/articles/791c7916e21059</link>
+            <guid>https://zenn.dev/toversus/articles/791c7916e21059</guid>
+            <pubDate>Mon, 27 Nov 2023 08:23:13 GMT</pubDate>
+            <content:encoded><![CDATA[!KEP 持ち寄り会 #1 の登壇資料です。2023/11/27 時点の KEP-4188 の内容です。Kubernetes 1.29 時点で機能として入っていないので注意して下さい。また、後半の文章は考察を含んでおり、正確な情報でない可能性があります。 概要KEP-4188 は、Kubelet に Pod Conditions を公開する gRPC API を追加する KEP です。Pod Conditions は Status フィールドに含まれています。❯ kubectl get pods -n kube-system coredns-5d78c9869d-8gglh ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHubとCircleCIからFour Keysを計測する]]></title>
             <link>https://sreake.com/blog/four-keys-with-github-circleci/</link>
@@ -230,13 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/09/20/002920</guid>
             <pubDate>Tue, 19 Sep 2023 15:29:20 GMT</pubDate>
             <content:encoded><![CDATA[Dockerfile のベストプラクティスを考える機会はありますが皆さんの意見も聞きたい。今回は噂の便利ツール、Open Interpreterのような外部コマンドをどんどん実行して環境を作り変えるようなタイプのツールの場合にはDockerはとても有用です。そのようなツールを利用する時のDockerfile について考えていきます。リポジトリは以下になります。github.comGitHub Actionsとの連携GitHub Actionsは、CI/CD（継続的インテグレーションと継続的デリバリー）をGithub 上に簡単に実装できるツールです。今回は、trivy.ymlとdocker-publishを利用することで、セキュリティのスキャンとDockerイメージの自動公開が可能です。github.comtrivy.ymlの利用trivy.ymlは、Trivyという脆弱性スキャナーをGitHub Actionsで動かすための設定ファイルです。この設定を利用することで、Dockerイメージに存在するセキュリティの脆弱性を自動で検出できます。docker-publishの追加docker-publishは、DockerイメージをDocker Hubや他のレジストリに自動で公開するためのGitHub Actionsのワークフローです。これにより、新しいバージョンのOpen Interpreterがリリースされた際に、手動でイメージをビルド・プッシュする手間が省けます。Renovate.jsonの利用renovate.jsonは、依存関係を自動で更新する設定ファイルですが、これを使うとOpen Interpreterが依存しているライブラリやパッケージが新しくなったときに、自動でプルリクエストが作られるんです。そうすることで、いつも最新の状態を保てるわけですから、セキュリティリスクも減らせます。さらに、Pythonのパッケージも自動で更新したい場合は、requirements.txtを使って設定しておくと便利です。これにより、Pythonの依存パッケージも最新の状態を維持できるようになります。github.comDockerfileを書く際の注意点私は以下のようなDockerfileを書きましたその際に以下のようなポイントを意識して書いたので参考にしてください。github.com軽量なベースイメージの使用不必要なパッケージを含まない軽量なベースイメージを使用することで、ビルド時間とイメージサイズを削減できます。FROM python:3.11キャッシュの最適化RUNコマンドを効率的に配置することで、Dockerキャッシュを最適化できます。RUN apt-get update && \  apt-get upgrade -y && \  apt-get install -y --no-install-recommends git && \  rm -rf /var/lib/apt/lists/*不必要なパッケージの削除--no-install-recommendsオプションを使用して、不必要なパッケージをインストールしないようにします。  apt-get install -y --no-install-recommends git && \作業ディレクトリの設定WORKDIRを設定することで、その後のコマンドの実行ディレクトリを明示的に指定できます。WORKDIR /root機密情報はコンテナイメージに絶対に埋め込まない社内で有識者へ投げたら機密情報をビルドイメージに追加することを指摘されたので運用時の手癖やミスで何処かのレイヤーに不用意に埋め込まないようにしたgithub.comまとめDockerでOpen Interpreterを運用する際には他にもいろいろ考えるべきことがあると思うので皆さんと議論したいのでIssue待ってます。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[BigQueryの行列レベルのアクセス制御について]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/bc6a413eb623c7</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/bc6a413eb623c7</guid>
-            <pubDate>Thu, 14 Sep 2023 11:46:25 GMT</pubDate>
-            <content:encoded><![CDATA[whatBigQueryにおける「行列レベル」のアクセス制御について調べたことをまとめる そもそも: 行・列単位に対してのアクセス制御は可能なのか?A. できるそれぞれ記載していく 列単位https://cloud.google.com/bigquery/docs/column-level-security-intro?hl=ja列に対して事前定義したポリシータグと呼ばれるものを付与することで、特定のアカウントやグループだけが列にアクセスできる。アクセスポリシーはSQLを実行する際に確認され、許可されていないメンバーからのクエリはAccess Denitedと...]]></content:encoded>
         </item>
     </channel>
 </rss>
