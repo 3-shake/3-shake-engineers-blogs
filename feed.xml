@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 30 Nov 2023 18:32:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Dec 2023 18:31:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[データベースエンジニアのためのDB on Kubernetes入門ガイド]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/db_on_k8s_guide_for_db_engineers</link>
+            <guid>https://zenn.dev/nnaka2992/articles/db_on_k8s_guide_for_db_engineers</guid>
+            <pubDate>Thu, 30 Nov 2023 23:30:01 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 1日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめに1959年にW. C. McGeeがデータベースという概念を提唱してから約65年、様々なアーキテクチャのデータベースが提案され様々なプラットフォームで利用されてきました。古くはメインフレームを中心に動作していたデータベースは、マイコンブームとともにそのアーキテクチャを変えながらにオープン系システムへと主戦場を移して行きました。オープン系が主流になってからもその進化は止まることなく、ベア...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[データベース輪読会をやってみた話]]></title>
             <link>https://sreake.com/blog/database-reading-circle/</link>
@@ -138,7 +145,7 @@
             <link>https://zenn.dev/yuu0w0yuu/articles/df3a9fdef609e2</link>
             <guid>https://zenn.dev/yuu0w0yuu/articles/df3a9fdef609e2</guid>
             <pubDate>Thu, 02 Nov 2023 08:33:22 GMT</pubDate>
-            <content:encoded><![CDATA[きっかけECSは、Container Insightsを有効化することでクラスタやサービスといった各レイヤのパフォーマンスメトリクスをCloudWatchに収集できる。一方で、以下のようなケースにおいて一定の仮説を導くためには、このメトリクスだけではやや不足感があるため、発生したイベントやその結果を別の方式で監視したくなった。メトリクスがスパイクしたタイミングで何が起きていたか？デプロイを実行したが結果はどうだったか？デプロイが失敗したが原因は何か？などなど・・調べてみると、ECSはいくつかの種類のイベントをEventBridgeに送信しており、これをルールで拾って...]]></content:encoded>
+            <content:encoded><![CDATA[この記事は、3-shake Advent Calendar 2023 1日目のエントリ記事です。 きっかけECSは、Container Insightsを有効化することでクラスタやサービスといった各レイヤのパフォーマンスメトリクスをCloudWatchに収集できる。一方で、以下のようなケースにおいて一定の仮説を導くためには、このメトリクスだけではやや不足感があるため、発生したイベントやその結果を別の方式で監視したくなった。メトリクスがスパイクしたタイミングで何が起きていたか？デプロイを実行したが結果はどうだったか？デプロイが失敗したが原因は何か？などなど・・調べてみ...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Time-Slicing GPUs を Kubernetes で利用する]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/google-cloud-specialization/</guid>
             <pubDate>Fri, 22 Sep 2023 00:50:00 GMT</pubDate>
             <content:encoded><![CDATA[Google Cloud – Sell エンゲージメントモデルにおけるプレミアパートナーである株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、Google Cl […]The post スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「インフラストラクチャ – サービス」のスペシャライゼーション認定を取得 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[WSL 2 で外部ストレージをマウント]]></title>
-            <link>https://blog.1q77.com/2023/09/wsl2-mount-volume/</link>
-            <guid>https://blog.1q77.com/2023/09/wsl2-mount-volume/</guid>
-            <pubDate>Thu, 21 Sep 2023 14:08:28 GMT</pubDate>
-            <content:encoded><![CDATA[Laptop を Linux で使用していた時の遺産を WSL 環境でも使おうと XFS でフォーマットされた USB 接続の HDD をマウントする方法がないかなと思って調べたメモ。 Microsoft のドキュメントにありました。 Linux]]></content:encoded>
         </item>
     </channel>
 </rss>
