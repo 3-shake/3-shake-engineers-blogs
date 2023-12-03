@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 02 Dec 2023 18:30:17 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Dec 2023 18:30:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[吉祥寺.pm35 でLTしてきました。 #kichijojipm]]></title>
+            <link>https://blog.masasuzu.net/entry/2023/12/03/161754</link>
+            <guid>https://blog.masasuzu.net/entry/2023/12/03/161754</guid>
+            <pubDate>Sun, 03 Dec 2023 07:17:54 GMT</pubDate>
+            <content:encoded><![CDATA[吉祥寺.pm こと 句会吉祥寺.pm35 に参加して、LTしてきました。kichijojipm.connpass.com資料はこちら。言いたいこととしてはベストプラクティスなんてないよ。一般的によりよいプラクティスやパターンはあるけど、どんなときには適用できる銀の弾丸的なものはないから、自身の組織とサービスに合わせてくみ上げていきましょうということ。正解はひとつ!じゃない!!その上で、ざっくりとどんな選択肢と選択するための観点を述べていきました。まだ全然ブラッシュアップできるのでどこかでまとめてブログに書きたいところです。ちなみに最後に出てくる あなたらしく○○ は同僚のスライドのパロディです。毎回時間オーバーするのでトークで申し込んだ方が良いのでは?というツッコミはごもっともです。懇親会でもTerraformのお悩みとか短いですが話せて楽しかったです。また参加したいですね。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2023年 俺が愛した本たち 技術書編]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/12/02/141455</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2023/09/minidlna-on-dietpi/</guid>
             <pubDate>Sat, 30 Sep 2023 08:33:09 GMT</pubDate>
             <content:encoded><![CDATA[Raspberry Pi 4 を買った週に Raspberry Pi 5 が発表されてちょっと悔しいところですが Windows XP 時代から OS を更新しながら使っていた古いデスクトップPCを処分したのでそこで使っていた HDD をラズパ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes における秘密情報の管理方法]]></title>
-            <link>https://sreake.com/blog/kubernetes-secret-management/</link>
-            <guid>https://sreake.com/blog/kubernetes-secret-management/</guid>
-            <pubDate>Mon, 25 Sep 2023 08:35:29 GMT</pubDate>
-            <content:encoded><![CDATA[自己紹介 竹下 2023年8月21日からインターンに参加している早稲田大学基幹理工学研究科 M1 竹下です。SRE関連の技術と，自身が研究しているセキュリティ分野との関係性を学びたいと思い、インターンに参加しました。 中 […]The post Kubernetes における秘密情報の管理方法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
