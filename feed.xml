@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 05 Dec 2023 03:35:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Dec 2023 18:31:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[はんだ付けから始めるEmbedded Rust on Espressif]]></title>
+            <link>https://zenn.dev/satoken/articles/rust-on-esp1</link>
+            <guid>https://zenn.dev/satoken/articles/rust-on-esp1</guid>
+            <pubDate>Tue, 05 Dec 2023 16:22:25 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに突然ですがここに秋月電子で購入したESP32-C3があります。1個310円と他のESP32と比べても安価でCPUにRISC-Vを使ったチップです。https://akizukidenshi.com/catalog/g/gM-17493/以下のドキュメントはESP32シリーズを製造しているEspressifによるRustのハンズオンドキュメントです。今回これを読みながらESP32-C3でRustを動かして遊んでみます。Embedded Rust on EspressifThe Rust on ESP BookESP32単体ではPCと接続してプログラムを書き込め...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Chainguard imagesについて調べてみた]]></title>
+            <link>https://zenn.dev/bells17/articles/chainguard-images</link>
+            <guid>https://zenn.dev/bells17/articles/chainguard-images</guid>
+            <pubDate>Tue, 05 Dec 2023 03:58:09 GMT</pubDate>
+            <content:encoded><![CDATA[※この記事は3-shake Advent Calendar 2023 シリーズ1の12月5日の記事です最近Chainguard imagesというdistrolessコンテナイメージについて知ったので、簡単に調べてみました。 Chainguard imagesとは？Chainguard imagesはChainguard社によって提供されているdistrolessを中心としたセキュアなコンテナイメージ群だ、という理解です。Wolfiという(おそらくこれもChainguard社が開発している)コンテナ・クラウドネイティブ用途向けのLinux undistroなOSを利用して各C...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ECSの可用性設計を4つの軸で整理する]]></title>
             <link>https://sreake.com/blog/ecs-availability-4-factors/</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/nedoko_dok0dko/articles/365af68bb280e7</guid>
             <pubDate>Wed, 18 Oct 2023 09:20:05 GMT</pubDate>
             <content:encoded><![CDATA[whatGoogle Cloudの「Application Integration」というサービスについて軽く調べたことをまとめたログ関連してiPaasについても調べたことを記載する Application Integrationとはhttps://cloud.google.com/application-integration?hl=jaGoogle Cloudが提供するIntegration Platform as a Service（iPaaS）ソリューションビジュアルエディタを利用することによって、以下がノーコードで行えるイベントによるトリガーの...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Asset Inventoryとは]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/e80d73d4f28a79</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/e80d73d4f28a79</guid>
-            <pubDate>Fri, 13 Oct 2023 10:27:12 GMT</pubDate>
-            <content:encoded><![CDATA[whatGoogle Cloud のCloud Asset Inventoryについて調べてわかったことの個人まとめ Cloud Asset Inventoryとはhttps://cloud.google.com/asset-inventory/docs/overview?hl=jaCloud Asset Inventory は、時系列データベースに基づいてインベントリ サービスを提供します。このデータベースは、Google Cloud のアセット メタデータの 35 日間分の履歴を保持します。過去 35 日間変更がない既存のアセットの場合、Cloud Asset ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vertex AI Searchによる社内knowlegeの要約ツールをつくってみた]]></title>
-            <link>https://sreake.com/blog/vertex-ai-search-summary-tool/</link>
-            <guid>https://sreake.com/blog/vertex-ai-search-summary-tool/</guid>
-            <pubDate>Thu, 12 Oct 2023 03:46:53 GMT</pubDate>
-            <content:encoded><![CDATA[こんにちは、初めましての方もそうでない方も、Sreake事業部 佐藤慧太(@SatohJohn)です。 今回Google CloudのVertex AI Search(旧Enterprise Search)について検証の […]The post Vertex AI Searchによる社内knowlegeの要約ツールをつくってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
