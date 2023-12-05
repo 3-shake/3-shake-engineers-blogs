@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 04 Dec 2023 18:32:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Dec 2023 03:35:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ECSの可用性設計を4つの軸で整理する]]></title>
+            <link>https://sreake.com/blog/ecs-availability-4-factors/</link>
+            <guid>https://sreake.com/blog/ecs-availability-4-factors/</guid>
+            <pubDate>Tue, 05 Dec 2023 02:48:59 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは！Sreake事業部 志羅山です。今年3月に3-shakeに入社し、長野県からリモートで仕事をしています（東京にも定期的に行ってます）。 最近、とあるお客様環境におけるECS（AWSのフルマネージド型 […]The post ECSの可用性設計を4つの軸で整理する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloud Loggingについて]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/ef07acbb983d01</link>
@@ -27,6 +34,20 @@
             <guid>https://blog.masasuzu.net/entry/2023/12/03/161754</guid>
             <pubDate>Sun, 03 Dec 2023 07:17:54 GMT</pubDate>
             <content:encoded><![CDATA[吉祥寺.pm こと 句会吉祥寺.pm35 に参加して、LTしてきました。kichijojipm.connpass.com資料はこちら。言いたいこととしてはベストプラクティスなんてないよ。一般的によりよいプラクティスやパターンはあるけど、どんなときには適用できる銀の弾丸的なものはないから、自身の組織とサービスに合わせてくみ上げていきましょうということ。正解はひとつ!じゃない!!その上で、ざっくりとどんな選択肢と選択するための観点を述べていきました。まだ全然ブラッシュアップできるのでどこかでまとめてブログに書きたいところです。ちなみに最後に出てくる あなたらしく○○ は同僚のスライドのパロディです。毎回時間オーバーするのでトークで申し込んだ方が良いのでは?というツッコミはごもっともです。懇親会でもTerraformのお悩みとか短いですが話せて楽しかったです。また参加したいですね。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Auroraアップグレード時のBlue/Green Deploymentsの利用]]></title>
+            <link>https://zenn.dev/hakushou41/articles/70b83066cd1741</link>
+            <guid>https://zenn.dev/hakushou41/articles/70b83066cd1741</guid>
+            <pubDate>Sun, 03 Dec 2023 07:12:32 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 4日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめにAmazon Aurora2系について、標準サポート終了日(2024/10/31)まで1年を切りました。依然として、Aurora2系を利用しているシステムは多いのではないでしょうか。アプリケーションのテストや検証を考えると早めに動いていかなければならない時期となりました。本記事では、アップグレード方式・方針の一つとして、AWSからも推奨されているRDS Blue/Green Deplo...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Playwright Test generatorを利用したE2Eテスト ことはじめ]]></title>
+            <link>https://zenn.dev/hakushou41/articles/65bc815b14354f</link>
+            <guid>https://zenn.dev/hakushou41/articles/65bc815b14354f</guid>
+            <pubDate>Sat, 02 Dec 2023 15:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 3日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめに現在、私はマイクロサービスを運用するSREとして活動しています。運用チームやSREが主導となって実施するメンテナンスやアップデート作業などでは、アップデート後の動作確認として、ブラウザを介したWebアプリケーションの簡易目視確認をします。これらの確認項目は、手順書へ項目を記載し、必要に応じてエビデンスをスクリーンショットで取得する必要があります。確認作業を網羅的にしようとすればするほど...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[2023年 俺が愛した本たち 技術書編]]></title>
@@ -216,27 +237,6 @@
             <guid>https://sreake.com/blog/vertex-ai-search-summary-tool/</guid>
             <pubDate>Thu, 12 Oct 2023 03:46:53 GMT</pubDate>
             <content:encoded><![CDATA[こんにちは、初めましての方もそうでない方も、Sreake事業部 佐藤慧太(@SatohJohn)です。 今回Google CloudのVertex AI Search(旧Enterprise Search)について検証の […]The post Vertex AI Searchによる社内knowlegeの要約ツールをつくってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、 インシデント管理・運用プラットフォーム「PagerDuty」の導入支援サービスを正式リリース]]></title>
-            <link>https://sreake.com/blog/pagerduty-package/</link>
-            <guid>https://sreake.com/blog/pagerduty-package/</guid>
-            <pubDate>Tue, 10 Oct 2023 00:50:00 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイクが提供するSRE総合支援サービス「Sreake（スリーク）」は、新たに 、システムのインシデント対応を一元化するプラットフォーム「PagerDuty」の導入支援サービス「PagerDutyパッケージ」を正式リリースいたしました。The post スリーシェイク、 インシデント管理・運用プラットフォーム「PagerDuty」の導入支援サービスを正式リリース first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[『SREとPlatform Engineerの交差点:2つの領域の交差と組織への適用』というタイトルで登壇しました]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2023/10/05/233555</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2023/10/05/233555</guid>
-            <pubDate>Thu, 05 Oct 2023 14:35:55 GMT</pubDate>
-            <content:encoded><![CDATA[概要資料参考文献概要Platform Engineering Meetup #5 で SREとPlatform Engineerの交差点:2つの領域の交差と組織への適用 というテーマで登壇をしました。SREからPlatform Engineerへの拡大のセルフリバイバルになります。このブログでは、参考資料を見るために利用してください。気が向いたら続き書く資料 speakerdeck.com参考文献O’Reilly Japan – SRE サイトリライアビリティエンジニアリングO’Reilly Japan – サイトリライアビリティワークブックO’Reilly Japan – SREの探求SRE at Google: How to structure your SRE team | Google Cloud BlogレトロスペクティブガイドWhat Is Platform Engineering?What Team Structure is Right for DevOps to Flourish?Making the Business Case for a Dedicated Platform Engineering TeamCNCF Platforms White PaperSRE NEXTPlatform Engineering Meetupチームトポロジー　価値あるソフトウェアをすばやく届ける適応型組織設計The History of DevOps ReportsEffective DevOpsTop Strategic Technology Trends for 2023: Platform Engineering道を照らす: プラットフォーム エンジニアリング、ゴールデンパス、セルフサービスのパワーオブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイドネットワーク・エフェクト　事業とプロダクトに欠かせない強力で重要なフレームワークINSPIRED 熱狂させる製品を生み出すプロダクトマネジメント]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SREとPlatform Engineerの違いを3つのポイントで理解する]]></title>
-            <link>https://sreake.com/blog/3-diffs-with-sre-and-platform-engineer/</link>
-            <guid>https://sreake.com/blog/3-diffs-with-sre-and-platform-engineer/</guid>
-            <pubDate>Wed, 04 Oct 2023 03:49:57 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに プラットフォームエンジニアリング（Platform Engineering）とサイト信頼性エンジニアリング（SRE, Site Reliability Engineering）はともに、ITインフラとアプリケー […]The post SREとPlatform Engineerの違いを3つのポイントで理解する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
