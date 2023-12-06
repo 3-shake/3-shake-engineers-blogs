@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 05 Dec 2023 18:31:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Dec 2023 18:32:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[はんだ付けから始めるEmbedded Rust on Espressif(2)]]></title>
+            <link>https://zenn.dev/satoken/articles/rust-on-esp2</link>
+            <guid>https://zenn.dev/satoken/articles/rust-on-esp2</guid>
+            <pubDate>Wed, 06 Dec 2023 15:45:17 GMT</pubDate>
+            <content:encoded><![CDATA[前回まではLEDを光らせてきました。光り物はもう十分なので他のことをやります。これは温湿度が取得できるDHT11センサーです。https://akizukidenshi.com/catalog/g/gM-07003/これを利用して温湿度を取得してみます。DHT11とESP32を以下のように配線します。ちょうど同じことをやっている方がいるので新しくプロジェクトを作成してそのままコードをコピペします。https://www.youtube.com/watch?v=5qYswqbZUDshttps://github.com/shanemmattner/ESP32-C3_Ru...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AlloyDB omni on Kubernetesを眺める]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/viewing_alloydb_omni_operator</link>
+            <guid>https://zenn.dev/nnaka2992/articles/viewing_alloydb_omni_operator</guid>
+            <pubDate>Tue, 05 Dec 2023 23:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは以下のアドベントカレンダーの6日目の記事です。3-shake Advent Calendar 2023 シリーズ1昨日は@bells17さんによるChainguard imagesについて調べてみたでした。PostgreSQL Advent Calendar 2023 シリーズ2Kubernetes Advent Calendar 2023昨日は@yassan168さんによるRKE2ノードのCiliumを使ったeBPFな帯域制限をする話でした。 背景を眺める2023年10月12日にAlloyDB OmniのGAに併せてAlloyDB Omni o...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[はんだ付けから始めるEmbedded Rust on Espressif]]></title>
             <link>https://zenn.dev/satoken/articles/rust-on-esp1</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/shellcheck-automation-enhancement/</guid>
             <pubDate>Tue, 31 Oct 2023 02:32:20 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Site Reliability Engineering (SRE) の領域では、トイル (toil) の削減と効率的なオペレーションが大きな課題となっています。トイルというのは、手作業で繰り返し行う作業のこと […]The post ShellCheckで自動化の品質を向上させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[YugabyteDBのドキュメントを全部読む Day9]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs/9_core_functions_high_availability</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/reading_yugabytedb_docs/9_core_functions_high_availability</guid>
-            <pubDate>Sat, 21 Oct 2023 15:12:37 GMT</pubDate>
-            <content:encoded><![CDATA[前回からつづいてYugabyteDBのドキュメントを読んでいきます。前回はArchitecture > Core functions > Read I/O pathを読みました。今回はArchitecture > Core functions > High Availabilityを読みます。ドキュメントのバージョンは最新のv2.19 previewです。また画像は同ドキュメントより引用しています。High availabilityYugabyteDBは一貫性と分断耐性を兼ね備えたデータベースであると同時にリーダーの障害時に新しいリーダーとしてフェイルオーバー出来るアクティブレプリカを持つことで高可用性(HA)を達成している。もしノードに障害が発生した場合、そのノード上で動作するYB-TServerとYB-Masterの停止を引き起こす。YB-TServer failureYB-TServerはYSQLレイヤとアクティブなIOを提供するピアーリーダータブレットを含むタブレットをホストする。YSQレイヤとタブレットピアーフォロワーとタブレットピアーリーダーで発生した障害はそれぞれ特別な方法であつかわれる。YQL failureアプリケーションの視点からみればYQLはステートレスである。そのためクライアントが発行したリクエストは単純に他ノードのYQLにリクエストが送信される。スマートクライアントを利用している場合、スマートクライアントは理想的なYB-TServerの場所をタブレットが所有するキーから検索し、リクエストを直接そのノードに転送する。Tablet peer follower failureタブレットピアーフォロワーはクリティカルパスではない。この障害はユーザーリクエストへの可用性に影響しない。Tablet peer leader failureタブレットピアーリーダーの障害は数秒以内にRaftレベルのリーダー選出を自動的にトリガーし、他のYB-TServerに配置されているタブレットピアーが新しいリーダーとして選出される。タブレットピアリーダーに障害が発生した場合、可用性が損なわている時間は約3秒(ハードビートの感覚がデフォルトの500msの場合)である。YB-Master failureYB-Masterは通常のIOオペレーションではクリティカルパスでは無いため、ユニバースを動作させるのに影響は無い。しかしYB-Masterは異るノードで動作するピアーのRaftグループの一部であるため。このピアーのうちの一つがアクティブなマスターで残りがアクティブスタンバイである。YB-Masterのリーダーであるアクティブマスターに障害が発生した場合、ピアーはリーダーの障害を検知し、新なアクティブマスターであるYB-Masterのリーダーを障害時に数秒以内で再選出する。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Application Integrationについて]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/365af68bb280e7</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/365af68bb280e7</guid>
-            <pubDate>Wed, 18 Oct 2023 09:20:05 GMT</pubDate>
-            <content:encoded><![CDATA[whatGoogle Cloudの「Application Integration」というサービスについて軽く調べたことをまとめたログ関連してiPaasについても調べたことを記載する Application Integrationとはhttps://cloud.google.com/application-integration?hl=jaGoogle Cloudが提供するIntegration Platform as a Service（iPaaS）ソリューションビジュアルエディタを利用することによって、以下がノーコードで行えるイベントによるトリガーの...]]></content:encoded>
         </item>
     </channel>
 </rss>
