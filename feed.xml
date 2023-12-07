@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 06 Dec 2023 18:32:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Dec 2023 18:32:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,18 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[はんだ付けから始めるEmbedded Rust on Espressif(3)]]></title>
+            <link>https://zenn.dev/satoken/articles/rust-on-esp3</link>
+            <guid>https://zenn.dev/satoken/articles/rust-on-esp3</guid>
+            <pubDate>Thu, 07 Dec 2023 16:40:18 GMT</pubDate>
+            <content:encoded><![CDATA[prometheusで値を取得する前回まででESP32をWifiに接続してDHT11から温湿度を返す簡単なAPIサーバが作成できました。JSONを返すのを変更してprometheusでmetricsを取得できるように変更してみます。HTTPのハンドラ部分のURLを/からmetricsにしてpromethuesの書式を返すように変更しました。    let mut server = EspHttpServer::new(&Configuration::default())?;    server.fn_handler("/metrics", Method::Get, ...]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[はんだ付けから始めるEmbedded Rust on Espressif(2)]]></title>
             <link>https://zenn.dev/satoken/articles/rust-on-esp2</link>
             <guid>https://zenn.dev/satoken/articles/rust-on-esp2</guid>
             <pubDate>Wed, 06 Dec 2023 15:45:17 GMT</pubDate>
-            <content:encoded><![CDATA[前回まではLEDを光らせてきました。光り物はもう十分なので他のことをやります。これは温湿度が取得できるDHT11センサーです。https://akizukidenshi.com/catalog/g/gM-07003/これを利用して温湿度を取得してみます。DHT11とESP32を以下のように配線します。ちょうど同じことをやっている方がいるので新しくプロジェクトを作成してそのままコードをコピペします。https://www.youtube.com/watch?v=5qYswqbZUDshttps://github.com/shanemmattner/ESP32-C3_Ru...]]></content:encoded>
+            <content:encoded><![CDATA[温湿度の取得前回まではLEDを光らせてきました。光り物はもう十分なので他のことをやります。これは温湿度が取得できるDHT11センサーです。これを利用して温湿度を取得してみます。https://akizukidenshi.com/catalog/g/gM-07003/以下のように回路を組みます。ちょうど同じことをやっている方がいるので新しくプロジェクトを作成してそのままコードをコピペします。https://www.youtube.com/watch?v=5qYswqbZUDshttps://github.com/shanemmattner/ESP32-C3_Rus...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[AlloyDB omni on Kubernetesを眺める]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/kubernetes-time-slicing-gpu/</guid>
             <pubDate>Tue, 31 Oct 2023 08:39:06 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Kubernetes にて、1つのGPUを複数コンテナ (※ Pod内の複数コンテナ、複数のPodを指す) で使い倒したい。そんな時はありますでしょうか。本記事では、NVIDIA/k8s-device-plug […]The post Time-Slicing GPUs を Kubernetes で利用する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ShellCheckで自動化の品質を向上させる]]></title>
-            <link>https://sreake.com/blog/shellcheck-automation-enhancement/</link>
-            <guid>https://sreake.com/blog/shellcheck-automation-enhancement/</guid>
-            <pubDate>Tue, 31 Oct 2023 02:32:20 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Site Reliability Engineering (SRE) の領域では、トイル (toil) の削減と効率的なオペレーションが大きな課題となっています。トイルというのは、手作業で繰り返し行う作業のこと […]The post ShellCheckで自動化の品質を向上させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
