@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 09 Dec 2023 18:30:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Dec 2023 18:30:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GolangでSQSのメッセージを取得する]]></title>
+            <link>https://zenn.dev/tayusa/articles/ef4c30c0449a6e</link>
+            <guid>https://zenn.dev/tayusa/articles/ef4c30c0449a6e</guid>
+            <pubDate>Sun, 10 Dec 2023 00:00:01 GMT</pubDate>
+            <content:encoded><![CDATA[キューの取得特に考えることはなくconfig.LoadDefaultConfig()とsqs.NewFromConfig()で取得できるpackage mainimport (	"context"	"github.com/aws/aws-sdk-go-v2/config"	"github.com/aws/aws-sdk-go-v2/service/sqs"	"log")func main() {	ctx := context.Background()	cfg, err := config.LoadDefaultConfig(ctx)	if err !...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitLab CIでKICSを実行する]]></title>
+            <link>https://zenn.dev/tayusa/articles/d28865c5ce49c6</link>
+            <guid>https://zenn.dev/tayusa/articles/d28865c5ce49c6</guid>
+            <pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[やることTerraformの静的解析を行うKICSの結果をgitlab-commentでMRに出力するhttps://github.com/yuyaban/gitlab-commentKICSの結果を基にMRにReviewdogで指摘するhttps://github.com/reviewdog/reviewdog KICSの実行$ kics scan --config kics.yamlkics.yamlpath: "." # クエリのパスoutput-path: "." # 結果のパスreport-formats: json # 結果を...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Golangでk8s Deploymentを再起動させる]]></title>
+            <link>https://zenn.dev/tayusa/articles/a7df40b7d6fd5b</link>
+            <guid>https://zenn.dev/tayusa/articles/a7df40b7d6fd5b</guid>
+            <pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[やることclient-goを使って複数のDeploymentを同時に再起動させる Golang Deploymentの取得Pod内であればrest.InClusterConfig()でPodのServiceAccountを使用するconfigを取得できるclientset.AppsV1().Deployments(namespace).Get(ctx, deploymentName, metav1.GetOptions{}) でDeploymentを取得NamespaceとDeploymentの名前が必要k8s.gopackage maini...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[TypeScript で LangChain の最初の一歩]]></title>
             <link>https://zenn.dev/satohjohn/articles/9415f85be332e6</link>
@@ -216,27 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2023/11/14/154603</guid>
             <pubDate>Tue, 14 Nov 2023 06:46:03 GMT</pubDate>
             <content:encoded><![CDATA[Infrastructure as Codeの概念とTerraformの役割Infrastructure as Code (IaC) は、現代のインフラ管理の根幹を成すものです。IaCがどんなものか様々な言論があると思いますが、ここではソフトウェア開発のプラクティスに基づくインフラストラクチャ自動化のアプローチとIaC 本に準拠しておきます。IaCによる自動化、バージョン管理、テスト、そして継続的インテグレーションなどのプラクティスは、システム管理の世界に革命をもたらしました。ちなみに個人的には各々のプラクティスを一つずつ実践しない度にIaCの価値は一つずつ確実に下がっていくものだと確信してます。ですが、各々にコストがかかるものなので各プラクティスをどこまで実践するかは非常に難しい問題だとも同時に思います。その中で周知の事実だとは思いますがTerraformは、これらのプラクティスを宣言的なインフラストラクチャの管理、定義、および構成に応用することで、効率性と柔軟性の高いインフラストラクチャ管理を可能にします。このツールは、設計から実装までの過程を劇的に変える可能性を秘めています。Infrastructure as Codeの概念とTerraformの役割に関する参考リンクInfrastructure as Code - AWSInfrastructure as Code - Google CloudIntroduction to Terraform - HashiCorpInfrastructure as Codeの原則とTerraformInfrastructure as Codeの原則には、以下のような要素が含まれます​​:簡単に再現できるシステム: Terraformを使用することで、インフラストラクチャをコードとして定義し、簡単に再現可能なシステムを構築できます。使い捨てにできるシステム: サーバーなどのリソースを一時的なものとして扱い、必要に応じて簡単に生成・破棄できます。統一的なシステム: 全てのインフラストラクチャのコンポーネントを統一的な方法で管理します。反復できるプロセス: 同じ設定を繰り返し適用することで、一貫性と信頼性を保ちます。これらの原則に基づいて、Terraformは以下のような機能を提供します:リソースの自動生成と管理: Terraformを使用すると、インフラストラクチャのリソースを自動的に生成・管理できます。宣言的なインフラの構築: Terraformを通じて、インフラストラクチャの状態を宣言的に定義し、計画的かつ一貫性のある方法でインフラを構築・更新します。バージョン管理のサポート: Terraformの設定ファイルはバージョン管理システムで管理でき、変更履歴を追跡できます。モジュールと再利用可能なコンポーネント: Terraformではモジュールを使って、コードの再利用性を高めます。なのでそれ以外のプラクティスに関しては別のソリューションで実現してあげる必要があります。Terraformの条件分岐のテクニックと利用場面もう少し能書きを垂れるかなって思ったんですけどもう飽きたので普通にテクニックや使い方の話をしていきます。Terraformは基本的に宣言的なインフラ定義ツールですが、宣言的だけでは現実の複雑な要求を満たすのが難しい場合があります。そのため、Terraformは手続き型プログラミングに近い柔軟性も提供します。条件分岐やループなど、より具体的な制御が必要な場面で役立つ機能を組み込んで、効率的かつ柔軟なインフラ管理を実現しています。それでは、これらのテクニックや利用場面について、具体的な例を交えて詳しく見ていきましょう。ループ (countとfor_each)ループは、同じタイプのリソースを複数回作成する際に便利です。countやfor_eachを使用して、コードの重複を避けながら、効率的にリソースを管理できます。利用場面A: 異なる環境に同一種類のリソースを複数作成resource "aws_instance" "dev_servers" {  count         = 5  instance_type = "t2.micro"  # その他の設定}利用場面B: 複数のユーザーにIAMロールを割り当てresource "aws_iam_user" "users" {  for_each = toset(["alice", "bob", "charlie"])  name     = each.value  # その他の設定}条件分岐 (countを使用)条件分岐を使用すると、環境やパラメータに基づいてリソースの作成を制御できます。これにより、開発環境と本番環境などで異なるリソース設定を実現できます。利用場面A: 本番環境でのみデータベースのインスタンスを作成resource "aws_db_instance" "prod_db" {  count = var.is_production ? 1 : 0  # データベースの設定}利用場面B: 開発環境ではリソースを作成せず、本番環境でのみ特定のリソース（例: S3バケット）を作成したい場合。resource "aws_s3_bucket" "prod_bucket" {  count  = var.env == "prod" ? 1 : 0  bucket = "my-production-bucket"  acl    = "private"}ここではvar.env変数がprod（本番環境）の場合にのみS3バケットを作成します利用場面C: 特定の機能フラグ（例: 監視機能の有効化）がオンの場合にのみ、関連リソース（例: CloudWatchアラーム）をデプロイしたい。resource "aws_cloudwatch_metric_alarm" "example_alarm" {  count               = var.enable_monitoring ? 1 : 0  alarm_name          = "High-CPU-Utilization"  comparison_operator = "GreaterThanThreshold"  evaluation_periods  = "2"  threshold           = "80"  # その他の設定}この例では、var.enable_monitoringがtrueの場合にのみCloudWatchアラームを作成します。ゼロダウンタイムデプロイメント (create_before_destroyを使用)ゼロダウンタイムデプロイメントは、システムやアプリケーションの更新時にサービスを停止することなく、新しいバージョンへの移行を行う手法です。Terraformにおけるゼロダウンタイムデプロイメントでは、create_before_destroyライフサイクル設定を使用して、新しいリソースを古いリソースを削除する前に作成します。これにより、サービスが継続的に稼働しつつ、背後で安全にリソースの更新や交換が行われます。利用場面A: アプリケーションの更新時に新旧インスタンスの平滑な切り替えresource "aws_instance" "app_server" {  ami           = "ami-newversion"  instance_type = "t2.micro"  lifecycle {    create_before_destroy = true  }  # その他の設定}このコードは、新しいAMIでEC2インスタンスを作成します。create_before_destroyがtrueに設定されているため、新しいインスタンスが完全に起動し、運用準備が整うまで旧インスタンスは削除されません。これにより、アプリケーションの更新中もサービスが継続して提供されます。利用場面B: インフラのリファクタリング時に既存リソースの無停止更新resource "aws_s3_bucket" "storage" {  bucket = "my-new-bucket-name"  lifecycle {    create_before_destroy = true  }  # その他の設定}この設定では、新しいS3バケットが作成される際、既存のバケットは新しいバケットの設定が完了し、利用可能になるまで保持されます。これにより、データの移行やバケットの設定変更が行われる際にも、サービスの中断を回避できます。ゼロダウンタイムデプロイメントの限界ゼロダウンタイムデプロイメントは最高だと思った皆様、悲報です。ゼロダウンタイムデプロイメントを行う際にcreate_before_destroyを使用すると、いくつかの問題点があります。特に、オートスケーリングポリシーを使うと、デプロイメントごとに自動スケーリンググループ（ASG）のサイズが最小サイズに戻ることが問題です。これは、デプロイメント時にサーバー数が本来の数より少なくなる可能性があるためです。解決策として、カスタムスクリプトを使用してAWS APIでデプロイメント前のインスタンス数を取得する方法があります。しかし、より重要なのは、複雑なタスクにはネイティブな解決策を使用することが望ましいということです。たとえば、AWSではinstance refreshというオートスケーリンググループ用のネイティブソリューションが提供されており、これはAWSによって完全に管理され、エラー処理も適切です。ただし、このプロセスは時に遅いことが欠点です。一般的には、instance refreshのようなネイティブなデプロイメントオプションを使うことが推奨されています。なので、Providerの実装次第という部分もあると思います。Lifecycle をちゃんとやっていると、柔軟性と安全性が格段に向上するlifecycle引数は、リソースの作成と破棄に関するカスタムルールを作成することで、Terraform操作の流れを制御します。これにより、特定のリソースの変更やインフラへの影響を防ぎつつ、リソースニーズに基づいて潜在的なダウンタイムを最小限に抑えることができます​​。prevent_destroy: このオプションは、特定のリソースの削除を防ぐために使用されます。例えば、ある属性の変更によりリソースの置換が必要になりダウンタイムが発生する可能性がある場合、prevent_destroyを使ってリソースの削除を防ぐことができます​​。create_before_destroy: この属性を使用すると、古いリソースを破棄する前に新しいリソースを作成できます。これにより、リソースの置換によるダウンタイムを避けることが可能です。create_before_destroyがない場合、Terraformはまずインスタンスを破棄し、その後再作成しますが、これによりダウンタイムが発生する可能性があります​​。ignore_changes: Terraformのワークフロー外で行われた変更を無視するために使用されます。例えば、AWS CLIで行われた変更をignore_changesを使ってTerraformの操作に影響しないようにすることができますlifecycleの学びの意義は、インフラ管理の柔軟性と安全性を高めることにあります。異なるlifecycleオプションを使用することで、意図しないリソースの削除を防いだり、インフラの再作成時のダウンタイムを最小限に抑えたり、外部からの変更をTerraformのプランに影響させないようにすることができます。これにより、Terraformを使ったインフラの管理がより安全かつ効率的になります。結論とかこれらの使い方はもちろんのこと原則を理解しながら活用することで、インフラストラクチャの管理において幸せな世界観を目指していきましょう。『Terraform: Up & Running』の日本語版第3版のリリースを心から祝福してます。この本は、Terraformの基本から応用までを幅広くカバーし、多くの開発者やシステム管理者にとってよても良い本となることでしょう。手元においておいて本当に損がない書籍かと思います。詳解 Terraform 第3版 ―Infrastructure as Codeを実現する作者:Yevgeniy Brikmanオーム社Amazon参考資料Count: Repeating ResourcesFor Each: Repeating a Module Multiple TimesConditional ExpressionsResource Lifecycle: create_before_destroyManage resource lifecycleTerraform by HashiCorpIntroduction to TerraformZero Downtime Updates with TerraformTerraformチュートリアル - HashiCorp LearnTerraform Best Practices余談Ansible やDockerではどのようにループや条件分岐を実現しているかAnsibleでは組み込まれている機能で実現できますがDockerでは、ループや条件分岐は通常、Dockerfile内では直接実現できません。しかし、Docker Composeやスクリプトを使用して間接的にこれらを処理することができます。Kubernetesでも、ループや条件分岐はマニフェストファイル（YAML）内で直接的にはサポートされていませんが、Helmチャートのようなテンプレートエンジンを使用することで、これらの動作を実現できます。Helmは条件分岐や変数の代入などを可能にするテンプレート機能を提供しているのでそれぞれ紹介します。ループloopキーワードを使用して繰り返しタスクを実行します。- name: パッケージのインストール  yum:    name: "{{ item }}"    state: present  loop:    - httpd    - memcachedAnsible Loopsこの例では、.Values.services内の各サービスに対してループを行い、それぞれのnameとportを出力しています。{{- range .Values.services }}- name: {{ .name }}  port: {{ .port }}{{- end }}HelmチャートのテンプレートDocker Composeでのループと条件分岐Docker Composeでは直接的なループや条件分岐のサポートはありませんが、環境変数を利用して擬似的にこれらを実現できます。services:  web:    image: "webapp:${WEBAPP_TAG}"    environment:      - DEBUG=${DEBUG_MODE}この例では、WEBAPP_TAGとDEBUG_MODE環境変数を使用しています。条件分岐ステートメントを使用して、特定の条件に基づいてタスクを実行します。- name: 開発環境でのみ実行するタスク  command: echo "これは開発環境用のタスクです"  when: env == 'development'- name: 本番環境でのみ実行するタスク  command: echo "これは本番環境用のタスクです"  when: env == 'production'Ansible Conditionals{{- if .Values.debug }}environment: "development"{{- else }}environment: "production"{{- end }}ここでは、.Values.debugの値に基づいて環境を設定しています。debugがtrueならdevelopment、そうでなければproductionが選択されます。Helmのテンプレート関数この節では、Ansible、Docker、そしてKubernetesにおけるループと条件分岐の実装方法を比較しました。これらのツールはそれぞれに独自のアプローチを持っており、その違いを理解することで、適切なツール選択や実装戦略を行う上での参考になります。また、異なるツールでどのように同じ問題を解決しているかを知ることは、より深い技術的理解や柔軟な対応能力を身につけるために重要です。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、生成AIを活用したSRE業務自動化への取り組みを発表]]></title>
-            <link>https://sreake.com/blog/generative-ai-sre/</link>
-            <guid>https://sreake.com/blog/generative-ai-sre/</guid>
-            <pubDate>Tue, 14 Nov 2023 00:50:00 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイクが提供するSRE総合支援サービス「Sreake（スリーク）」は、「 Google Cloud 生成 AI パートナー エコシステム 」を活用して、SREの業務を自動化・効率化し、これまでの人的リソースへの依存度を軽減する取り組みを開始することをお知らせいたします。The post スリーシェイク、生成AIを活用したSRE業務自動化への取り組みを発表 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[MinIO Client で Amazon S3 や Cloudflare R2 を利用する]]></title>
-            <link>https://blog.1q77.com/2023/11/minio-client/</link>
-            <guid>https://blog.1q77.com/2023/11/minio-client/</guid>
-            <pubDate>Sun, 12 Nov 2023 11:13:31 GMT</pubDate>
-            <content:encoded><![CDATA[Cloudflare R2 は egress の費用がかからないということで手元のファイルのバックアップに使ってみようかなと思ったときにクライアントとして何を使おうかな aws cli 使うほどじゃないしなという]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Golangで行うポートスキャナ自作ではじめるペネトレーションテスト]]></title>
-            <link>https://zenn.dev/satoken/articles/golang-port-scanner</link>
-            <guid>https://zenn.dev/satoken/articles/golang-port-scanner</guid>
-            <pubDate>Fri, 03 Nov 2023 03:30:25 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにオライリーでポートスキャナ自作ではじめるペネトレーションテストという本が発売されました。2章ではScapyを利用して実際にパケットを作成して、nmapのようなポートスキャナ自作します。パケットのカプセル化などNWの仕組みから丁寧に解説されていてとても良書だと思います。ただ筆者はPythonよりGolang派なので2章のプログラムをGolangに書き換えてみました。https://github.com/sat0ken/go-port-scanner※オリジナルはこちらhttps://github.com/oreilly-japan/pentest-starting...]]></content:encoded>
         </item>
     </channel>
 </rss>
