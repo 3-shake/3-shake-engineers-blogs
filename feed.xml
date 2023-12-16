@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 15 Dec 2023 18:31:44 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Dec 2023 18:30:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[terraform test: 基本機能]]></title>
+            <link>https://zenn.dev/kyohei_saito/articles/a32b5a11c81e97</link>
+            <guid>https://zenn.dev/kyohei_saito/articles/a32b5a11c81e97</guid>
+            <pubDate>Sat, 16 Dec 2023 14:58:00 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2023 17 日目の記事です！ この記事に書いてあることこの記事を含め 3 回に渡って terraform test の機能を紹介します。terraform test: 基本機能 <- 今ここterraform test: 応用機能terraform test: 細かい挙動 terraform test とはなにか 概要terraform test は Terraform module を実際に plan / apply して動作を確認するツールです。ドキュメントにも明記されている通り、主な使...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[sbt-github-acitons を使った CI の構築とプロジェクトの publish について]]></title>
             <link>https://zenn.dev/nomadblacky/articles/4c6a03aa5289c4</link>
@@ -194,7 +201,7 @@
             <link>https://zenn.dev/hakushou41/articles/65bc815b14354f</link>
             <guid>https://zenn.dev/hakushou41/articles/65bc815b14354f</guid>
             <pubDate>Sat, 02 Dec 2023 15:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 3日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめに現在、私はマイクロサービスを運用するSREとして活動しています。運用チームやSREが主導となって実施するメンテナンスやアップデート作業などでは、アップデート後の動作確認として、ブラウザを介したWebアプリケーションの簡易目視確認をします。これらの確認項目は、手順書へ項目を記載し、必要に応じてエビデンスをスクリーンショットで取得する必要があります。確認作業を網羅的にしようとすればするほど...]]></content:encoded>
+            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 3日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめに現在、私はマイクロサービスを運用するSREを支援する人として活動しています。運用チームやSREが主導となって実施するメンテナンスやアップデート作業などでは、アップデート後の動作確認として、ブラウザを介したWebアプリケーションの簡易目視確認をします。これらの確認項目は、手順書へ項目を記載し、必要に応じてエビデンスをスクリーンショットで取得する必要があります。確認作業を網羅的にしようとす...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[2023年 俺が愛した本たち 技術書編]]></title>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/toversus/articles/791c7916e21059</guid>
             <pubDate>Mon, 27 Nov 2023 08:23:13 GMT</pubDate>
             <content:encoded><![CDATA[!KEP 持ち寄り会 #1 の登壇資料です。2023/11/27 時点の KEP-4188 の内容です。Kubernetes 1.29 時点で機能として入っていないので注意して下さい。また、後半の文章は考察を含んでおり、正確な情報でない可能性があります。 概要KEP-4188 は、Kubelet に Pod Conditions を公開する gRPC API を追加する KEP です。Pod Conditions は Status フィールドに含まれています。❯ kubectl get pods -n kube-system coredns-5d78c9869d-8gglh ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHubとCircleCIからFour Keysを計測する]]></title>
-            <link>https://sreake.com/blog/four-keys-with-github-circleci/</link>
-            <guid>https://sreake.com/blog/four-keys-with-github-circleci/</guid>
-            <pubDate>Wed, 22 Nov 2023 01:25:41 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部でインターンをしている村山です。私は以前に、DORAチームの提案したFour Keysという指標の計測システムの調査・検証を行いました。以前の検証では、GitHubとGitLab、及びモックデ […]The post GitHubとCircleCIからFour Keysを計測する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
