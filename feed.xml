@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 16 Dec 2023 18:30:35 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Dec 2023 18:31:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[terraform test: 応用機能]]></title>
+            <link>https://zenn.dev/kyohei_saito/articles/52ce184522aae9</link>
+            <guid>https://zenn.dev/kyohei_saito/articles/52ce184522aae9</guid>
+            <pubDate>Sun, 17 Dec 2023 14:58:00 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2023 18 日目の記事です！ この記事に書いてあることこの記事を含め 3 回に渡って terraform test の機能を紹介します。terraform test: 基本機能terraform test: 応用機能 <- 今ここterraform test: 細かい挙動 はじめに前回の記事では、 terraform test の基本的な機能の紹介をしました。前回の記事の内容でも十分に terraform module のテストを書くことができると思います。しかし、今回紹介する応用的な機能を使...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Step Functionsを利用してAWSリソースの自動起動停止を行う]]></title>
+            <link>https://qiita.com/ys1/items/21744f39676286b2c321</link>
+            <guid>https://qiita.com/ys1/items/21744f39676286b2c321</guid>
+            <pubDate>Sun, 17 Dec 2023 14:55:57 GMT</pubDate>
+            <content:encoded><![CDATA[概要本記事ではStep Functionsを利用して、AWSリソースを自動で起動停止する方法について記載します。主にコスト削減のために、開発環境を夜間停止するなどで利用することを想定しています。今回は以下のようなことを実施する方法について説明しま…]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Inplace pod vertical Scalingについて調べる]]></title>
+            <link>https://qiita.com/ys1/items/2bd32750977960b7ef33</link>
+            <guid>https://qiita.com/ys1/items/2bd32750977960b7ef33</guid>
+            <pubDate>Sun, 17 Dec 2023 14:53:50 GMT</pubDate>
+            <content:encoded><![CDATA[概要この記事ではKubernetes 1.27で新たに導入されたIn-place pod vertical Scalingに関して調べたことを共有しますIn-place pod vertical…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[terraform test: 基本機能]]></title>
             <link>https://zenn.dev/kyohei_saito/articles/a32b5a11c81e97</link>
@@ -216,27 +237,6 @@
             <guid>https://qiita.com/yteraoka/items/0d793d06cddccad73b0b</guid>
             <pubDate>Fri, 01 Dec 2023 22:02:03 GMT</pubDate>
             <content:encoded><![CDATA[この記事は、3-shake Advent Calendar 2023 2日目のエントリ記事です。2023年10月に Docker Desktop for Apple silicon での Rose…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[データベースエンジニアのためのDB on Kubernetes入門ガイド]]></title>
-            <link>https://zenn.dev/nnaka2992/articles/db_on_k8s_guide_for_db_engineers</link>
-            <guid>https://zenn.dev/nnaka2992/articles/db_on_k8s_guide_for_db_engineers</guid>
-            <pubDate>Thu, 30 Nov 2023 23:30:01 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 1日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめに1959年にW. C. McGeeがデータベースという概念を提唱してから約65年、様々なアーキテクチャのデータベースが提案され様々なプラットフォームで利用されてきました。古くはメインフレームを中心に動作していたデータベースは、マイコンブームとともにそのアーキテクチャを変えながらにオープン系システムへと主戦場を移して行きました。オープン系が主流になってからもその進化は止まることなく、ベア...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[データベース輪読会をやってみた話]]></title>
-            <link>https://sreake.com/blog/database-reading-circle/</link>
-            <guid>https://sreake.com/blog/database-reading-circle/</guid>
-            <pubDate>Wed, 29 Nov 2023 03:45:53 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに こんにちは。株式会社スリーシェイク Sreake 事業部に所属している @suganamao です。Sreake 事業部は技術力が求められる領域で豊富な経験を持つ SRE の専門家が集まったチームです。事業部に […]The post データベース輪読会をやってみた話 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KEP-4188: New kubelet gRPC API with endpoint returning local pods info]]></title>
-            <link>https://zenn.dev/toversus/articles/791c7916e21059</link>
-            <guid>https://zenn.dev/toversus/articles/791c7916e21059</guid>
-            <pubDate>Mon, 27 Nov 2023 08:23:13 GMT</pubDate>
-            <content:encoded><![CDATA[!KEP 持ち寄り会 #1 の登壇資料です。2023/11/27 時点の KEP-4188 の内容です。Kubernetes 1.29 時点で機能として入っていないので注意して下さい。また、後半の文章は考察を含んでおり、正確な情報でない可能性があります。 概要KEP-4188 は、Kubelet に Pod Conditions を公開する gRPC API を追加する KEP です。Pod Conditions は Status フィールドに含まれています。❯ kubectl get pods -n kube-system coredns-5d78c9869d-8gglh ...]]></content:encoded>
         </item>
     </channel>
 </rss>
