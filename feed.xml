@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 18 Dec 2023 06:42:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Dec 2023 18:32:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[terraform test: 細かい挙動]]></title>
+            <link>https://zenn.dev/kyohei_saito/articles/eac62818b7217d</link>
+            <guid>https://zenn.dev/kyohei_saito/articles/eac62818b7217d</guid>
+            <pubDate>Mon, 18 Dec 2023 14:58:00 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2023 19 日目の記事です！ この記事に書いてあることこの記事を含め 3 回に渡って terraform test の機能を紹介します。terraform test: 基本機能terraform test: 応用機能terraform test: 細かい挙動 <- 今ここ はじめに前回の記事では、 terraform test の応用的な機能の紹介をしました。この記事では、 terraform test の挙動について説明します。 terraform test: 細かい挙動 state...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[3-SHAKE SRE Tech Talk #8（k8sの話もたくさん）]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2023/12/18/234306</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2023/12/18/234306</guid>
+            <pubDate>Mon, 18 Dec 2023 14:43:06 GMT</pubDate>
+            <content:encoded><![CDATA[この記事はKubernetes Advent Calendar 202319日目の記事です。私は12月1日に株式会社スリーシェイクに入社した、小渕と申します。kubernetesは初心者ですが、Sreake事業部のSREとしてしっかりキャッチアップして頑張ってまいります。3-shake.connpass.comさて、12月18日に弊社の勉強会「3-shake SRE Tech Talk #8」が行われました。半分以上はKubernetesの話だったので、この勉強会の話題を書きたいと思います。↓開催中メモ代わりにX(旧Twitter)への自分の投稿はこちら（全部スレッドで連なっています）19時から弊社スリーシェイクの勉強会を開催します！お時間のある方は是非ご参加ください！https://t.co/wu271V6Pbw#SRETT— Shu Kobuchi(こぶシュー) (@shu_kob) 2023年12月18日   Xにて#SRETTで検索した投稿(最新)はこちら↓セッション毎に分けて、書いてます。スリーシェイク技術顧問 青山真也さん「KubeCon + CloudNativeCon NA 2023 Sessions for Site Reliability Engineers」最初はメインセッション。スリーシェイク技術顧問で、サイバーエージェントの青山真也さん「KubeCon + CloudNativeCon NA 2023 Sessions for Site Reliability Engineers」kubernetesユーザの方にはお馴染み、日本のkubernetesの第一人者の方です。↓スライドはこちら speakerdeck.com冒頭、ちらっとKubernetes完全ガイド第3版の話が進んでいるという「おお！」となるお話も！↑こちらは第2版です。k8sユーザのバイブルですよね。私も紙書籍版を持っています。楽しみですね！さて、セッションの内容としては、イベントのご紹介、参加者数の推移から、Keynoteで発表された2023年3月のDatadogの障害の話へ。全てのデータセンターで60%のnodeが1時間ダウンした大規模な障害だったそう。恐ろしいですね！！DatadogのK8sクラスタのnodeはUbuntu 22.04にVer. UP Rolloutをしていっているが、20.04と22.04の間にあった必要のないルーティングポリシーを消す変更があり、障害に繋がったとのことです。Auto Scalingが走って、救われた面もあるが、50%強のスケールアウトを一気にしようとすると課題も多々ありました。他人事ではなく、障害時に復旧するレベルでオートスケールを設計する必要がある、というのが教訓でした！二つ目のお話「OpenTelemetry」OpenTelemetryとは、Traceデータを収集するSDKで、YAMLで書くよりも、OTTLで書くと、コードの記述量が少なくて済むメリットも！PrometheusからOpenTelemetry Collectorに置き換えると、約1/5にリソース消費を抑えられるなどのメリットもあるそうです。ただし、Otelは多少バグがあるので使用上は注意とのことでした。他に、Argoの話もしてくださいました。Config Management Plugins(CMP)を使うと、HelmやKustomizeでない任意のツールでArgoCDと連携できるとのこと！青山さんのメインセッションの後は、6名の方のLT！社外の方3名、社内3名です。スリーシェイク高村さん「障害対応のススメ」 speakerdeck.com新人SREはエキスパートSREとペアで障害対応しよう！というお話。ペアで障害対応することにより、新人だけでなく、エキスパートSREも自分だけでは把握しきれない分も把握できます。「ペアプログラミング」ならぬ「ペア障害対応」いいですね！ポストモーテム作成も！私もスリーシェイクの一員として早くやってみたいですね！ペア障害で属人化解消というメリットもあります！incident-response.connpass.com「Incident Response Meetup vol.1」という良さげな勉強会もあるのとのこと！でした！mixi 清水さん「今年1年のEKS運用振り返り」 speakerdeck.commixiさんのサービス「みてね」はEKSを使用しているそうで、運用の苦労話も聞けました。OOMKilledが起こることもあり、CPU、メモリ等リソース調整しないといけないのは大変ですね。Railsアプリはメモリを食い、再起動かからないとメモリ消費が増えてくるそうです。定期的に再起動かけるようにして対応したそうです。手動運用でアップデートが放置されがちだった箇所も、自動アップデートもできるようにしたのはすごいですね。kubectlでPod作業するのを禁止したりだとか。その代わり踏み台からのアクセスできるようにしたり。k8s運用の勉強になりました。スリーシェイク bells17さん「KubernetesとCoreDNS」 speakerdeck.com自分もEKSでCoreDNSのステータス低下問題に悩まされたことがあったので、ありがたいお話でした。bells17さんお得意のK8sのコードリーディングでCoreDNSのロジックに迫っていってました。CoreDNSのデプロイからnameserverにIPアドレスを設定するまでの流れと、CoreDNSによるService/Podの名前解決を解説してもらいました。Kubernetes 側で定義されている DNS の仕様に従って、CoreDNS 側で Kubernetes 用の plugin が実装されてるとのこと。私もkubernetesの力をつけて、bells17さんの話を理解できるように頑張っていきます！ZLab yosshi_さん「Grafana Agent を用いた Continuous Profiling」qiita.comqiita.comGrafana Agentで eBPF が使われているそうです。eBPF だと kernel level で情報がとれるので、より詳細な情報を取れるのではないか、という期待があるとのことでした。Grafana Agentのgolang pullもあり、対象言語はGo言語のみで、取得対象はpprofの情報になるので、CPU以外にもメモリ等の情報も収集可能とのことでした。スリーシェイク まさすずさん「Terraform使いがPulumiに入門する」 speakerdeck.comTerraform(HCL)の記述力に限界を感じていたので、Pulumiを使い始めた。とのことでした。Pulumiとは任意のプログラミング言語でインフラ構築可能なプロビジョニングツールです。TerraformやAnsibleなどインフラのツールって柔軟性に欠けるので、任意のプログラミング言語で柔軟にインフラ構築できるのはいいですよね！Pulumi Cloudは個人で使う分には無料とのことでした！FLUX cstokuさん「へーしゃで起こったGoogle Cloud課金事故事例」Cloud Logging で Log Storage cost が爆増。ログレベル Debug でメッセージが出力されるバッチが (バグで) 何回も呼ばれるようになっていた、とのことでした。Cloud Loggingではログレベルに気をつけましょう！また、Cloud Storageにて、Archive時に大量課金事故が発生したそうです。これはArchiveで費用が嵩むのは仕方がないものの、想定できておらず、予算がつけれてなかったとのことでした。それから、BigQueryをTerraformでLogical StorageからPhysical Storageに変更しようとしたら、変更されておらず、Active Logical Strageでコスト増！原因はドキュメントに乗っていたクエリが間違っており、さらに、知らないうちに正しいものに更新されていた。という大変な思いも。ドキュメントも鵜呑みにはできないですね。課金事故勉強になりました！アンケート参加してくださった方ありがとうございました。アンケートのご記入にもご協力くださいm(._.)mdocs.google.comアドベントカレンダー次回へのバトンタッチKubernetes Advent Calendar 202312月20日はHiroshi Hayakawaさんの記事です。お楽しみに！]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[terraform test: 応用機能]]></title>
             <link>https://zenn.dev/kyohei_saito/articles/52ce184522aae9</link>
@@ -223,20 +237,6 @@
             <guid>https://blog.masasuzu.net/entry/2023/12/03/161754</guid>
             <pubDate>Sun, 03 Dec 2023 07:17:54 GMT</pubDate>
             <content:encoded><![CDATA[吉祥寺.pm こと 句会吉祥寺.pm35 に参加して、LTしてきました。kichijojipm.connpass.com資料はこちら。言いたいこととしてはベストプラクティスなんてないよ。一般的によりよいプラクティスやパターンはあるけど、どんなときには適用できる銀の弾丸的なものはないから、自身の組織とサービスに合わせてくみ上げていきましょうということ。正解はひとつ!じゃない!!その上で、ざっくりとどんな選択肢と選択するための観点を述べていきました。まだ全然ブラッシュアップできるのでどこかでまとめてブログに書きたいところです。ちなみに最後に出てくる あなたらしく○○ は同僚のスライドのパロディです。毎回時間オーバーするのでトークで申し込んだ方が良いのでは?というツッコミはごもっともです。懇親会でもTerraformのお悩みとか短いですが話せて楽しかったです。また参加したいですね。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Auroraアップグレード時のBlue/Green Deploymentsの利用]]></title>
-            <link>https://zenn.dev/hakushou41/articles/70b83066cd1741</link>
-            <guid>https://zenn.dev/hakushou41/articles/70b83066cd1741</guid>
-            <pubDate>Sun, 03 Dec 2023 07:12:32 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 4日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめにAmazon Aurora2系について、標準サポート終了日(2024/10/31)まで1年を切りました。依然として、Aurora2系を利用しているシステムは多いのではないでしょうか。アプリケーションのテストや検証を考えると早めに動いていかなければならない時期となりました。本記事では、アップグレード方式・方針の一つとして、AWSからも推奨されているRDS Blue/Green Deplo...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Playwright Test generatorを利用したE2Eテスト ことはじめ]]></title>
-            <link>https://zenn.dev/hakushou41/articles/65bc815b14354f</link>
-            <guid>https://zenn.dev/hakushou41/articles/65bc815b14354f</guid>
-            <pubDate>Sat, 02 Dec 2023 15:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[このエントリーは3-shake Advent Calendar 2023 3日目の記事です。株式会社スリーシェイクのメンバーが各々自由に技術・非技術ネタを投稿するカレンダーとなります。 はじめに現在、私はマイクロサービスを運用するSREを支援する人として活動しています。運用チームやSREが主導となって実施するメンテナンスやアップデート作業などでは、アップデート後の動作確認として、ブラウザを介したWebアプリケーションの簡易目視確認をします。これらの確認項目は、手順書へ項目を記載し、必要に応じてエビデンスをスクリーンショットで取得する必要があります。確認作業を網羅的にしようとす...]]></content:encoded>
         </item>
     </channel>
 </rss>
