@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 19 Dec 2023 18:30:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Dec 2023 18:31:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[テーブル構造変更に伴う認可・権限管理を設計実装してみて思ったこと]]></title>
+            <link>https://qiita.com/bayobayo0324/items/a2fcc5eee9930bd2009a</link>
+            <guid>https://qiita.com/bayobayo0324/items/a2fcc5eee9930bd2009a</guid>
+            <pubDate>Tue, 19 Dec 2023 22:00:39 GMT</pubDate>
+            <content:encoded><![CDATA[※この記事は3-shake Advent Calendar 2023の20日目の記事ですはじめまして、@bayobayo0324 です。株式会社スリーシェイクでクラウド型データ連携ツール「Rec…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS経験者がGCPに入門]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2023/12/19/190734</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/bells17/articles/chainguard-images</guid>
             <pubDate>Tue, 05 Dec 2023 03:58:09 GMT</pubDate>
             <content:encoded><![CDATA[※この記事は3-shake Advent Calendar 2023 シリーズ1の12月5日の記事です最近Chainguard imagesというdistrolessコンテナイメージについて知ったので、簡単に調べてみました。 Chainguard imagesとは？Chainguard imagesはChainguard社によって提供されているdistrolessを中心としたセキュアなコンテナイメージ群だ、という理解です。Wolfiという(おそらくこれもChainguard社が開発している)コンテナ・クラウドネイティブ用途向けのLinux undistroなOSを利用して各C...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ECSの可用性設計を4つの軸で整理する]]></title>
-            <link>https://sreake.com/blog/ecs-availability-4-factors/</link>
-            <guid>https://sreake.com/blog/ecs-availability-4-factors/</guid>
-            <pubDate>Tue, 05 Dec 2023 02:48:59 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに こんにちは！Sreake事業部 志羅山です。今年3月に3-shakeに入社し、長野県からリモートで仕事をしています（東京にも定期的に行ってます）。 最近、とあるお客様環境におけるECS（AWSのフルマネージド型 […]The post ECSの可用性設計を4つの軸で整理する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
