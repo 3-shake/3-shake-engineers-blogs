@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 20 Dec 2023 18:31:25 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Dec 2023 06:21:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -103,7 +103,7 @@
             <link>https://zenn.dev/nedoko_dok0dko/articles/c00b941f10501f</link>
             <guid>https://zenn.dev/nedoko_dok0dko/articles/c00b941f10501f</guid>
             <pubDate>Thu, 14 Dec 2023 15:31:58 GMT</pubDate>
-            <content:encoded><![CDATA[※ 3-shake Advent Calendar 2023の15日目のエントリー記事です。今年は数年離れていたデータエンジニアを再スタートし、データ基盤構築やGoogleCloudのProfessional試験を受けて合格したり…とテッキーな事に触れることが多い年でした。最近はDBやSRE領域に触れる機会もあり、自分の知識不足に凹みながらも「今は学ぶ時期だ」と1つずつ知識を拾い集めています。そんな盛りだくさんだった2023年も大詰め、アドベントカレンダーを書く機会をいただきました。語ることは勿論データエンジニア……ではなくCSSについての記事です!テーマは「自由」だと偉い人が...]]></content:encoded>
+            <content:encoded><![CDATA[※ 3-shake Advent Calendar 2023の15日目のエントリー記事です。※ 12/21追記: CSS Advent Calendar 2023の21日目のエントリー記事として追加しました。投稿期間とズレてしまっていますが、CSSアドベントカレンダー盛り上がりの一助になればと思います。今年は数年離れていたデータエンジニアを再スタートし、データ基盤構築やGoogleCloudのProfessional試験を受けて合格したり…とテッキーな事に触れることが多い年でした。最近はDBやSRE領域に触れる機会もあり、自分の知識不足に凹みながらも「今は学ぶ時期だ」と1つずつ知識...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Karpenter を Amazon EKS で使う]]></title>
@@ -218,6 +218,13 @@
             <content:encoded><![CDATA[温湿度の取得前回まではLEDを光らせてきました。光り物はもう十分なので他のことをやります。これは温湿度が取得できるDHT11センサーです。これを利用して温湿度を取得してみます。https://akizukidenshi.com/catalog/g/gM-07003/以下のように回路を組みます。ちょうど同じことをやっている方がいるので新しくプロジェクトを作成してそのままコードをコピペします。https://www.youtube.com/watch?v=5qYswqbZUDshttps://github.com/shanemmattner/ESP32-C3_Rus...]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[エンプラ企業におけるK8s DrivenなCloudNative Journeyを思う年の瀬]]></title>
+            <link>https://zenn.dev/yokoo_an209/articles/4ce4ce0d795239</link>
+            <guid>https://zenn.dev/yokoo_an209/articles/4ce4ce0d795239</guid>
+            <pubDate>Wed, 06 Dec 2023 11:01:49 GMT</pubDate>
+            <content:encoded><![CDATA[このエントリーは 以下のアドベントカレンダーの記事です3-shake Advent Calendar 2023 ：7日目Kubernetes Advent Calendar 2023 : 8日目 背景現在、エンプラ企業のお客さんに対してSREとしてCloudNativeな技術やk8sを使用して支援を行なっているがその中でkubernetesそもそもの利用について少し考える機会があった。k8sにおける技術的・組織的課題はどの組織においてもあるが、ステークホルダーが多岐にわたるエンプラ企業ではその課題はさらに多くなり、また解決も難しくなる。課題に対して深く長く向き合うほ...]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[AlloyDB omni on Kubernetesを眺める]]></title>
             <link>https://zenn.dev/nnaka2992/articles/viewing_alloydb_omni_operator</link>
             <guid>https://zenn.dev/nnaka2992/articles/viewing_alloydb_omni_operator</guid>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/satoken/articles/rust-on-esp1</guid>
             <pubDate>Tue, 05 Dec 2023 16:22:25 GMT</pubDate>
             <content:encoded><![CDATA[はじめに突然ですがここに秋月電子で購入したESP32-C3があります。1個310円と他のESP32と比べても安価でCPUにRISC-Vを使ったチップです。https://akizukidenshi.com/catalog/g/gM-17493/以下のドキュメントはESP32シリーズを製造しているEspressifによるRustのハンズオンドキュメントです。今回これを読みながらESP32-C3でRustを動かして遊んでみます。Embedded Rust on EspressifThe Rust on ESP BookESP32単体ではPCと接続してプログラムを書き込め...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Chainguard imagesについて調べてみた]]></title>
-            <link>https://zenn.dev/bells17/articles/chainguard-images</link>
-            <guid>https://zenn.dev/bells17/articles/chainguard-images</guid>
-            <pubDate>Tue, 05 Dec 2023 03:58:09 GMT</pubDate>
-            <content:encoded><![CDATA[※この記事は3-shake Advent Calendar 2023 シリーズ1の12月5日の記事です最近Chainguard imagesというdistrolessコンテナイメージについて知ったので、簡単に調べてみました。 Chainguard imagesとは？Chainguard imagesはChainguard社によって提供されているdistrolessを中心としたセキュアなコンテナイメージ群だ、という理解です。Wolfiという(おそらくこれもChainguard社が開発している)コンテナ・クラウドネイティブ用途向けのLinux undistroなOSを利用して各C...]]></content:encoded>
         </item>
     </channel>
 </rss>
