@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 25 Dec 2023 18:30:34 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Dec 2023 18:30:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud 検証環境を頑張りすぎず良い感じに整えた話]]></title>
+            <link>https://sreake.com/blog/make-better-google-cloud-verification/</link>
+            <guid>https://sreake.com/blog/make-better-google-cloud-verification/</guid>
+            <pubDate>Mon, 25 Dec 2023 23:43:35 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは！Sreake事業部 横尾（@866mfs）です。 3-shakeでは、社員なら誰でもGoogle Cloud の各種サービスを検証できる、検証環境アカウント（ここでは ”test.org” と表記） […]The post Google Cloud 検証環境を頑張りすぎず良い感じに整えた話 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetesのソースコードを読む Kubelet編]]></title>
             <link>https://qiita.com/ys1/items/7a455c602424e591fe38</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/tayusa/articles/d28865c5ce49c6</guid>
             <pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[やることTerraformの静的解析を行うKICSの結果をgitlab-commentでMRに出力するhttps://github.com/yuyaban/gitlab-commentKICSの結果を基にMRにReviewdogで指摘するhttps://github.com/reviewdog/reviewdog KICSの実行$ kics scan --config kics.yamlkics.yamlpath: "." # クエリのパスoutput-path: "." # 結果のパスreport-formats: json # 結果を...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Golangでk8s Deploymentを再起動させる]]></title>
-            <link>https://zenn.dev/tayusa/articles/a7df40b7d6fd5b</link>
-            <guid>https://zenn.dev/tayusa/articles/a7df40b7d6fd5b</guid>
-            <pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[やることclient-goを使って複数のDeploymentを同時に再起動させる Golang Deploymentの取得Pod内であればrest.InClusterConfig()でPodのServiceAccountを使用するconfigを取得できるclientset.AppsV1().Deployments(namespace).Get(ctx, deploymentName, metav1.GetOptions{}) でDeploymentを取得NamespaceとDeploymentの名前が必要k8s.gopackage maini...]]></content:encoded>
         </item>
     </channel>
 </rss>
