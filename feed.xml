@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 27 Dec 2023 18:30:43 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Dec 2023 02:27:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Googleが提供するBIツール「Looker」とは？]]></title>
+            <link>https://sreake.com/blog/learn-about-looker/</link>
+            <guid>https://sreake.com/blog/learn-about-looker/</guid>
+            <pubDate>Thu, 28 Dec 2023 00:11:29 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 2023年10月30日、Googleが提供するBIツール「Looker」が政府認定クラウドサービス(通称 ISMAP) に認定されました。「Looker」が“政府認定クラウドサービス”に　Google提供のBI […]The post Googleが提供するBIツール「Looker」とは？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Cloud 検証環境を頑張りすぎず良い感じに整えた話]]></title>
             <link>https://sreake.com/blog/make-better-google-cloud-verification/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/tayusa/articles/ef4c30c0449a6e</guid>
             <pubDate>Sun, 10 Dec 2023 00:00:01 GMT</pubDate>
             <content:encoded><![CDATA[キューの取得特に考えることはなくconfig.LoadDefaultConfig()とsqs.NewFromConfig()で取得できるpackage mainimport (	"context"	"github.com/aws/aws-sdk-go-v2/config"	"github.com/aws/aws-sdk-go-v2/service/sqs"	"log")func main() {	ctx := context.Background()	cfg, err := config.LoadDefaultConfig(ctx)	if err !...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitLab CIでKICSを実行する]]></title>
-            <link>https://zenn.dev/tayusa/articles/d28865c5ce49c6</link>
-            <guid>https://zenn.dev/tayusa/articles/d28865c5ce49c6</guid>
-            <pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[やることTerraformの静的解析を行うKICSの結果をgitlab-commentでMRに出力するhttps://github.com/yuyaban/gitlab-commentKICSの結果を基にMRにReviewdogで指摘するhttps://github.com/reviewdog/reviewdog KICSの実行$ kics scan --config kics.yamlkics.yamlpath: "." # クエリのパスoutput-path: "." # 結果のパスreport-formats: json # 結果を...]]></content:encoded>
         </item>
     </channel>
 </rss>
