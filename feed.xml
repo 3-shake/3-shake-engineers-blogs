@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 06 Jan 2024 18:30:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jan 2024 18:30:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[WSL の Linux から Windows のブラウザで URL を開く]]></title>
+            <link>https://blog.1q77.com/2024/01/open-browser-in-wsl/</link>
+            <guid>https://blog.1q77.com/2024/01/open-browser-in-wsl/</guid>
+            <pubDate>Sun, 07 Jan 2024 11:43:53 GMT</pubDate>
+            <content:encoded><![CDATA[課題 # WSL の Linux 内で awscli を使って SSO 認証する場合の aws sso login 実行時や GitHub の CLI である gh ( cli.github.com ) コマンドで gh auth login を実行した場合に可能であれば自動でブラウザで指定の URL が開かれますが、]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[技術書やブログ、登壇資料の参考文献は読んだ方がいい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2023/12/31/221026</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/toversus/articles/88ce2ea66b532d</guid>
             <pubDate>Wed, 13 Dec 2023 00:43:43 GMT</pubDate>
             <content:encoded><![CDATA[Kubernetes 1.27 で KEP-3329: Retriable and non-retriable Pod failures for Jobs の一部として実装された [k/k#115331]: Give terminal phase correctly to all pods that will not be restarted により、Pod 停止時のフェーズが Running から Succeeded か Failed に遷移するようになりました。しかし、この変更が以下の予期せぬ問題を引き起こすことになります。[k/k#117018]: daemonset stuc...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions で multi-platform container image を build して ECR に push する]]></title>
-            <link>https://qiita.com/yteraoka/items/e1f89d28da4ba5078660</link>
-            <guid>https://qiita.com/yteraoka/items/e1f89d28da4ba5078660</guid>
-            <pubDate>Tue, 12 Dec 2023 22:01:45 GMT</pubDate>
-            <content:encoded><![CDATA[AWS の EKS や ECS では x86_64 も Graviton の arm64 も選択可能です、どちらでも使うかもしれない Container image は multi-platform…]]></content:encoded>
         </item>
     </channel>
 </rss>
