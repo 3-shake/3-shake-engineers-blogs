@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 08 Jan 2024 18:32:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jan 2024 18:30:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[PipeCDのインストールとカスタマイズ]]></title>
+            <link>https://sreake.com/blog/pipecd-installation/</link>
+            <guid>https://sreake.com/blog/pipecd-installation/</guid>
+            <pubDate>Tue, 09 Jan 2024 04:09:23 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の荒木です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。 前回の記事では、Kubernetes […]The post PipeCDのインストールとカスタマイズ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[PipeCDの概要]]></title>
+            <link>https://sreake.com/blog/pipecd-overview/</link>
+            <guid>https://sreake.com/blog/pipecd-overview/</guid>
+            <pubDate>Tue, 09 Jan 2024 04:05:16 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の荒木です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。 この記事の目的は、Kubernete […]The post PipeCDの概要 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[WSL の Linux から Windows のブラウザで URL を開く]]></title>
             <link>https://blog.1q77.com/2024/01/open-browser-in-wsl/</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/earn-google-cloud-partner-top-engineer-2024/</guid>
             <pubDate>Thu, 14 Dec 2023 05:15:38 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 今回、ありがたいことに、 Google Cloud Partner Top Engineer 2024(以降PTE)になりましたのでその軌跡をまとめます。 コチラの資料によって PTE になりたい人が増えてくれ […]The post Google Cloud Partner Top Engineer 2024 になりました first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Fault Injection Service で EKS の障害テストを行う]]></title>
-            <link>https://zenn.dev/kyohei_saito/articles/6d1bcc1fe8610e</link>
-            <guid>https://zenn.dev/kyohei_saito/articles/6d1bcc1fe8610e</guid>
-            <pubDate>Wed, 13 Dec 2023 22:22:00 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2023 14 日目の記事です！ この記事に書いてあることこの記事では、AWS Fault Injection Service をつかって、EKS 上の Pod の障害テストを行う方法を説明します。この記事を書こうと思ったモチベーションとして、EKS 上のアプリケーションで障害テストをするために AWS Fault Injection Service (以降、「FIS」と記載します) を使用しようとしたところ、導入手順がいまいち分からなかったため、残しておこうと思ったためです。EC2 に障害を注入する場合は導入手順はシ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[Kubernetes 1.27] Pod 停止時のフェーズ遷移の変更]]></title>
-            <link>https://zenn.dev/toversus/articles/88ce2ea66b532d</link>
-            <guid>https://zenn.dev/toversus/articles/88ce2ea66b532d</guid>
-            <pubDate>Wed, 13 Dec 2023 00:43:43 GMT</pubDate>
-            <content:encoded><![CDATA[Kubernetes 1.27 で KEP-3329: Retriable and non-retriable Pod failures for Jobs の一部として実装された [k/k#115331]: Give terminal phase correctly to all pods that will not be restarted により、Pod 停止時のフェーズが Running から Succeeded か Failed に遷移するようになりました。しかし、この変更が以下の予期せぬ問題を引き起こすことになります。[k/k#117018]: daemonset stuc...]]></content:encoded>
         </item>
     </channel>
 </rss>
