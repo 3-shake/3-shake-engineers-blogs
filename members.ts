@@ -255,18 +255,6 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
-    id: "jigyakkuma",
-    name: "Shinji Yamada",
-    role: "Corporate Engineer",
-    bio: "Shonan life",
-    avatarSrc: "/avatars/jigyakkuma.png",
-    sources: ["https://blog.jigyakkuma.org/index.xml"],
-    includeUrlRegex: "",
-    twitterUsername: "jigyakkuma_",
-    githubUsername: "jigyakkuma",
-    websiteUrl: "https://blog.jigyakkuma.org",
-  },
-  {
     id: "SatohJohn",
     name: "SatohJohn",
     role: "Software Developer",
