@@ -77,6 +77,9 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     if (items) allPostItems = [...allPostItems, ...items];
   }
   allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
-  fs.ensureDirSync('.contents');
-  fs.writeJsonSync('.contents/posts.json', allPostItems);
+  fs.ensureDirSync(".contents");
+
+  // Unicodeの行区切り文字 (line separator) を示すLS (U+2028)、段落区切り文字 (paragraph separator) を示すPS (U+2029)を削除する必要がある。
+  const json = JSON.stringify(allPostItems).replaceAll(/[\u2028\u2029]/g, "");
+  fs.writeFileSync(".contents/posts.json", json);
 })();
