@@ -41,7 +41,7 @@ export const members: Member[] = [
     id: "nwiizo",
     name: "nwiizo",
     role: "Software Developer",
-    bio: "Brogrammer",
+    bio: "The Passionate Programmer",
     avatarSrc: "/avatars/nwiizo.jpeg",
     sources: ["https://syu-m-5151.hatenablog.com/feed", "https://zenn.dev/nwiizo/feed", "https://speakerdeck.com/nwiizo.rss"],
     includeUrlRegex: "",
