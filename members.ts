@@ -476,7 +476,7 @@ export const members: Member[] = [
     role: "Software Developer",
     bio: "mammalian",
     avatarSrc: "/avatars/kobuchi.jpeg",
-    sources: ["https://shu-kob.hateblo.jp/feed"],
+    sources: ["https://shu-kob.hateblo.jp/feed", "https://speakerdeck.com/shukob.rss"],
     includeUrlRegex: "",
     twitterUsername: "shu_kob",
     githubUsername: "shu-kob",
