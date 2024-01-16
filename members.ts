@@ -43,7 +43,7 @@ export const members: Member[] = [
     role: "Software Developer",
     bio: "Brogrammer",
     avatarSrc: "/avatars/nwiizo.jpeg",
-    sources: ["https://syu-m-5151.hatenablog.com/feed", "https://zenn.dev/nwiizo/feed", "https://speakerdeck.com/nwiizo.rss"],
+    sources: ["https://syu-m-5151.hatenablog.com/feed", "https://zenn.dev/nwiizo/feed"],
     includeUrlRegex: "",
     twitterUsername: "nwiizo",
     githubUsername: "nwiizo",
