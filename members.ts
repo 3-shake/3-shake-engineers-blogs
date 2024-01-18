@@ -19,7 +19,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "tarako_chan",
     avatarSrc: "/avatars/tozastation.jpg",
-    sources: ["https://qiita.com/tozastation/feed"],
+    sources: ["https://qiita.com/tozastation/feed", "https://tozastation.hashnode.dev/rss.xml", "https://zenn.dev/tozastation/feed"],
     includeUrlRegex: "",
     twitterUsername: "tozastation",
     githubUsername: "tozastation",
