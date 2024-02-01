@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 31 Jan 2024 18:30:24 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Feb 2024 01:49:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[生成AI活用の事例共有 - 大企業と中小企業・スタートアップでの違いに参加]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/02/01/094735</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/02/01/094735</guid>
+            <pubDate>Thu, 01 Feb 2024 00:47:35 GMT</pubDate>
+            <content:encoded><![CDATA[2023年12月1日にスリーシェイクに入社し、SRE構築総合支援サービスSreake事業部のエンジニアとして2ヶ月が経ちました。私は生成AIアプリケーション開発を行なっており、ちょうど良さげな勉強会に参加したので、参加レポートを書きたいと思います。chatgptllm.connpass.com参加したのは、LLM Tokyo主催の「生成AI活用の事例共有 - 大企業と中小企業・スタートアップでの違い」。主催者は株式会社pipon代表の北爪聖也さん( @Seiyan1 )。北爪さんともう一人の登壇者が株式会社LangCore代表の北原麦郎さん(@yuno_miyako2 )。LangCore北原さんの事例発表最初は、LangCore北原さんの事例発表。LangCoreはAIの受託開発を行なっており、モジュール化して様々な案件に対応できるようにしている。生成AIで個人の生産性向上よりも大きなインパクトを出せるようにすることが目標。苦戦する案件もあるが、思った以上の成果を出せた案件もあった。大企業が生成AIを活用するモチベーションは他社から遅れを取らないようにするため、というのが最も大きい。検証項目は大きく分けて以下の3つ。中小企業、スタートアップにおけるAI案件の課題としては、予算が限られていること。案件の流れとしては以下。ヒアリングpipon北爪さんの事例発表・化粧品メーカーでの事例化粧品メーカーが動物実験を減らすため、生成AIで実験結果の推測をする・コンサルティングファームで社内の業務効率化大量の類似した質問をChatGPT+RAGでさばく・製薬会社のマーケティング売れる営業とそうでない営業の効果測定・自動車会社生成AIを使った新規事業の模索質疑応答質問「スケジューリングまでLLMでできるのか？」www.itmedia.co.jp質問「行政の生成AIPoCで94%の精度では使えないという事例があったが、100%の精度が求められることはあるのか？」アバターが間違えても、可愛いと捉えられるので導入しやすい。」「生成AIを使わなくても既存技術で解決できる課題も多かった。」「何でもLLM回答を得るのではなく、コスト削減のために、キャッシュを使って、同じ質問に同じ回答を返すようなことをしている。」検証ツール：AzureだとAzure Machine Learning プロンプト フローがあり、テストに使える。「ファインチューニング、アノテーションはコストがかかるのであまりやらない。RAGを使う。」[f:id:shu-kob:20240201094408j:plain]pipon北爪さんはKindleでLLM書籍を出版されていて、2月13日(火)に出版記念イベントを開催されるそうです。（参加費は懇親会込みで4,000円）chatgptllm.connpass.com感想とまとめ私も生成AI開発をやり始めたところですが、数多くの案件を手がけてきた方々の話を聞けて、イメージが湧くとともにモチベーションが上がりました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[raspberry piで学ぶ組込みLinuxデバイスドライバ開発]]></title>
             <link>https://zenn.dev/satoken/articles/try-lkm-raspi</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/nomadblacky/articles/173ea1f829eafa</guid>
             <pubDate>Fri, 22 Dec 2023 13:07:06 GMT</pubDate>
             <content:encoded><![CDATA[この記事は、3-shake Advent Calendar 2023 の 22 日目の記事です。 はじめに私の所属する株式会社スリーシェイクでは、Reckoner というデータパイプライン構築の SaaS を開発しています。https://reckoner.io/「SaaSをつなぐ。業務が変わる。ビジネスが進化する。」直感的なユーザーインターフェイスで、多種多様な SaaS のデータをつなぎ合わせることで、データ活用・データの民主化を実現します。 課題Reckoner では、データの取得・加工・保存部分を Scala で実装しており、データの連携先として、MySQL ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Network Firewall と NAT ゲートウェイの配置]]></title>
-            <link>https://zenn.dev/toshikish/articles/d7d15cd01a8584</link>
-            <guid>https://zenn.dev/toshikish/articles/d7d15cd01a8584</guid>
-            <pubDate>Fri, 22 Dec 2023 07:17:39 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにAWS Network Firewall（以下 NWFW）の導入例を探してアーキテクチャ図を眺めていると，説明されている図によって NAT ゲートウェイ（以下 NATGW）との配置がまちまちであることに気づきます。つまり，プライベート・パブリックサブネットのシンプルな構成の場合，インターネット宛ての通信経路は大別するとプライベートサブネット→ NATGW→ NWFW →インターネットプライベートサブネット→ NWFW → NATGW →インターネットの2種類が存在します。それぞれのアーキテクチャの違いと，どちらを選定すべきかの指針についてまとめます。 1....]]></content:encoded>
         </item>
     </channel>
 </rss>
