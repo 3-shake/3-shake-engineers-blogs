@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 10 Feb 2024 18:30:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Feb 2024 18:30:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,12 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloudの管理を楽にする、 トイルを減らすクラウドガバナンス]]></title>
+            <link>https://speakerdeck.com/parupappa2929/google-cloudnoguan-li-wole-nisuru-toiruwojian-rasukuraudogabanansu</link>
+            <guid>https://speakerdeck.com/parupappa2929/google-cloudnoguan-li-wole-nisuru-toiruwojian-rasukuraudogabanansu</guid>
+            <pubDate>Sun, 11 Feb 2024 05:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[私のメンターがくれた初めてのターミナル管理、それはtmuxで私は新卒でした。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/02/06/110341</link>
@@ -230,13 +236,6 @@
             <guid>https://zenn.dev/tozastation/articles/737871319fb33b</guid>
             <pubDate>Thu, 28 Dec 2023 07:16:37 GMT</pubDate>
             <content:encoded><![CDATA[K8sGPT とはIt has SRE experience codified into its analyzers and helps to pull out the most relevant information to enrich it with AI.README.md, k8sgpt, https://github.com/k8sgpt-ai/k8sgptREADME.md の引用ですが、SRE Experience が Analyzerに体系化されており、最も関連性の高い情報を引き出してAIで補完するのに役立つと書かれています。 SRE Experien...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[K8sGPT: Overview]]></title>
-            <link>https://tozastation.hashnode.dev/k8sgpt-overview</link>
-            <guid>https://tozastation.hashnode.dev/k8sgpt-overview</guid>
-            <pubDate>Thu, 28 Dec 2023 05:55:08 GMT</pubDate>
-            <content:encoded><![CDATA[What is K8sGPTIt has SRE experience codified into its analyzers and helps to pull out the most relevant information to enrich it with AI.README.md, k8sgpt, https://github.com/k8sgpt-ai/k8sgptSRE Experience & AnalyzersA class called Analyzer is defined for each resource in Kubernetes. Analyzer has Core (Pod, PVC, ReplicaSet, etc...) and Optional (HPA, PDB, NetworkPolicy, etc ...). You can choose your own or leave it to the default. See here for a complete list. Analyzer has validations defined for each resource. The content of this validation is connected to 'SRE experience'. Verification content is manually defined.Example: SRE ExperienceDeployment AnalyzerRegarding Replicas, Desire and Actual do not match. (here impl.)PVC AnalyzerIf the PVC status is Pending and EventReason is Provisioning Failed.Node AnalyzerIf the node status corresponds to Node Not Ready or DiskPressure, MemoryPressure, PIDPressure, NetworkUnavailableWhere is GPT used?K8sGPT will send the following prompts along with the findings from the Analyzer. In the prompt below, you can see that we are asking GPT to provide a solution based on the error.Simplify the following Kubernetes error message delimited by triple dashes written in --- %s --- language; --- %s ---.Provide the most possible solution in a step by step style in no more than 280 characters.Write the output in the following format: Error: {Explain error here} Solution: {Step by step solution here}https://github.com/k8sgpt-ai/k8sgpt/blob/main/pkg/ai/prompts.goContributingIf you would like to implement this kind of functionality in Analyzer based on your knowledge of Kubernetes operations, please read this document! (here)]]></content:encoded>
         </item>
     </channel>
 </rss>
