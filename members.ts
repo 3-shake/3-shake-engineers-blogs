@@ -510,7 +510,7 @@ export const members: Member[] = [
   {
     id: "kurita",
     name: "Kurita Keigo",
-    role: "long-term internship sutudent",
+    role: "long-term internship student",
     bio: "I want to enginner the reliablity of the site",
     avatarSrc: "/avatars/kurita.jpg",
     sources: ["https://kechigon.hatenablog.com/feed"],
