@@ -506,5 +506,17 @@ export const members: Member[] = [
     twitterUsername: "",
     githubUsername: "",
     websiteUrl: "",
+  },
+  {
+    id: "kurita",
+    name: "Kurita Keigo",
+    role: "long-term internship student",
+    bio: "I want to enginner the reliablity of the site",
+    avatarSrc: "/avatars/kurita.jpg",
+    sources: ["https://kechigon.hatenablog.com/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "kechigon",
+    githubUsername: "kechigon",
+    websiteUrl: "https://www.wantedly.com/id/keigo_kurita_e",
   },  
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
