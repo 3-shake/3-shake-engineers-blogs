@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 14 Feb 2024 02:18:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Feb 2024 07:18:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[個人開発でWebアプリの開発とデプロイの流れ]]></title>
+            <link>https://kechigon.hatenablog.com/entry/2024/02/13/125853</link>
+            <guid>https://kechigon.hatenablog.com/entry/2024/02/13/125853</guid>
+            <pubDate>Tue, 13 Feb 2024 03:58:53 GMT</pubDate>
+            <content:encoded><![CDATA[個人でWebサービスを開発したいけど、どのような流れで作っていけばいいのかわからない方向けです。個人開発でWebアプリを開発、デプロイをしたのでその流れを共有したいと思います。作ったもの麻雀戦績管理アプリ名付けて「PungPals」。雀荘などのオフラインでの対戦結果を残し、個人成績やランキングを確認できます。pungpals-service-xstpolfd4q-an.a.run.app開発とデプロイの流れ1.要件定義、設計実装がスムーズに進むために、しっかりとしておきましょう。以前記事を書いたので、参考にしてください。kechigon.hatenablog.com2.技術選定今回作ったアプリケーションはDjangoで開発し、Cloud Runにデプロイしています。選定理由は、Django: 経験があるから。Cloud Run: Djangoアプリのデプロイ方法の公式ドキュメントがあった(後ほど説明します)、マネージドな部分とカスタムできる部分のバランスがちょうどよかったから。でした。以下これらの技術を使って、開発デプロイまでの流れを説明していきます。3.Djangoを使ってアプリケーションを作成Djangoにはチュートリアルがあり、はじめての Django アプリ作成、その 1 | Django ドキュメント | Djangoはじめての Django アプリ作成、その2 | Django ドキュメント | Djangoはじめての Django アプリ作成、その 3 | Django ドキュメント | Djangoはじめての Django アプリ作成、その 4 | Django ドキュメント | Djangoを読めば開発方法がわかると思います。環境構築をし、実装し、ローカルで動作確認をしながら開発していきます。4.Cloud run へのデプロイDjangoアプリのCloud runへのデプロイ方法は公式ドキュメントにまとめられているので、これを見ながら進めます。cloud.google.comDjangoアプリケーションを環境に合わせて設定した後コンテナ化し、Cloud Runに載せます。それに伴い、Cloud SQL(データベース)、Secret Manager(シークレット管理)、Cloud Storage(静的アセットの保存など)、Cloud Build(CI/CD)、Artifact Registry(コンテナレジストリ)の作成、設定も行います。ドキュメントではGCRを使っていますが、現在非推奨なので、Artifact Registryをコンテナレジストリとして使用します。cloud.google.comオプションですが、GCPへのリソースの作成はTerraformを利用すると、構成管理ができ便利です。作成するインフラの図以上のことを行った後のGitHubリポジトリPungPalsのコードは公開しているので、参考にしていただければと思います。github.comこれから今後は、運用面の課題解決や集客などを行っていく予定なので、ブログにしていくつもりです！]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Cloudの管理を楽にする、 トイルを減らすクラウドガバナンス]]></title>
             <link>https://speakerdeck.com/parupappa2929/google-cloudnoguan-li-wole-nisuru-toiruwojian-rasukuraudogabanansu</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/tozastation/articles/3e2b9e887639f4</guid>
             <pubDate>Thu, 28 Dec 2023 08:26:54 GMT</pubDate>
             <content:encoded><![CDATA[Filter 一覧➜  k8sgpt filters listActive:> ReplicaSet> PersistentVolumeClaim> Service> StatefulSet> Node> Pod> Deployment> Ingress> CronJob> ValidatingWebhookConfiguration> MutatingWebhookConfigurationUnused:> HTTPRoute> HorizontalPodAutoScaler...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[K8sGPT: 概要]]></title>
-            <link>https://zenn.dev/tozastation/articles/737871319fb33b</link>
-            <guid>https://zenn.dev/tozastation/articles/737871319fb33b</guid>
-            <pubDate>Thu, 28 Dec 2023 07:16:37 GMT</pubDate>
-            <content:encoded><![CDATA[K8sGPT とはIt has SRE experience codified into its analyzers and helps to pull out the most relevant information to enrich it with AI.README.md, k8sgpt, https://github.com/k8sgpt-ai/k8sgptREADME.md の引用ですが、SRE Experience が Analyzerに体系化されており、最も関連性の高い情報を引き出してAIで補完するのに役立つと書かれています。 SRE Experien...]]></content:encoded>
         </item>
     </channel>
 </rss>
