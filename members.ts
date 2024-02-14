@@ -515,7 +515,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/kurita.jpg",
     sources: ["https://kechigon.hatenablog.com/feed"],
     includeUrlRegex: "",
-    twitterUsername: "kechigon",
+    twitterUsername: "kechigongon",
     githubUsername: "kechigon",
     websiteUrl: "https://www.wantedly.com/id/keigo_kurita_e",
   },  
