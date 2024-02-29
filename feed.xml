@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 28 Feb 2024 18:30:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Feb 2024 18:31:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE をShared VPC で構築する際の苦悩~]]></title>
+            <link>https://zenn.dev/yokoo_an209/articles/1818360b9c7821</link>
+            <guid>https://zenn.dev/yokoo_an209/articles/1818360b9c7821</guid>
+            <pubDate>Thu, 29 Feb 2024 07:23:09 GMT</pubDate>
+            <content:encoded><![CDATA[このブログは、【Google Cloud】GDG Tokyo Monthly Online Tech Talksにて発表した内容を元にしています。登壇時の資料はこちらになります。https://speakerdeck.com/parupappa2929/suan-imogan-imoarushared-vpc-gong-you-vpc-gkewoshared-vpcdegou-zhu-suruji-noku-nao はじめにGoogle Cloud Shared VPC（共有VPC）はネットワークリソースの集中管理ができる一方で、リソース利用に関して制約があったり、エンプラ企業...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Astroでブログを作ってる]]></title>
             <link>https://abnoumaru.com/tech/2024-02-27-create-blog-from-astro-template/</link>
@@ -29,7 +36,7 @@
             <content:encoded><![CDATA[GitHub Actions の Self-hosted Runner を安く用意する方法を探していたところ、 Azure の Container Apps Jobs というのが便利に使えるらしいというのを見つけたので試してみる。 チュートリアル:Azure Container Apps ジョブを使]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE を Shared VPC で構築する際の苦悩 ~]]></title>
+            <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE Autopilot を Shared VPC で構築する際の苦悩 ~]]></title>
             <link>https://speakerdeck.com/parupappa2929/suan-imogan-imoarushared-vpc-gong-you-vpc-gkewoshared-vpcdegou-zhu-suruji-noku-nao</link>
             <guid>https://speakerdeck.com/parupappa2929/suan-imogan-imoarushared-vpc-gong-you-vpc-gkewoshared-vpcdegou-zhu-suruji-noku-nao</guid>
             <pubDate>Thu, 22 Feb 2024 05:00:00 GMT</pubDate>
@@ -228,13 +235,6 @@
             <guid>https://sreake.com/blog/pipecd-installation/</guid>
             <pubDate>Tue, 09 Jan 2024 04:09:23 GMT</pubDate>
             <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の荒木です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。 前回の記事では、Kubernetes […]The post PipeCDのインストールとカスタマイズ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PipeCDの概要]]></title>
-            <link>https://sreake.com/blog/pipecd-overview/</link>
-            <guid>https://sreake.com/blog/pipecd-overview/</guid>
-            <pubDate>Tue, 09 Jan 2024 04:05:16 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の荒木です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。 この記事の目的は、Kubernete […]The post PipeCDの概要 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
