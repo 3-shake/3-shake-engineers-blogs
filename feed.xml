@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 29 Feb 2024 18:31:01 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Mar 2024 18:31:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[生成AI入門]]></title>
+            <link>https://speakerdeck.com/shukob/sheng-cheng-airu-men</link>
+            <guid>https://speakerdeck.com/shukob/sheng-cheng-airu-men</guid>
+            <pubDate>Sat, 02 Mar 2024 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[今話題の生成AIについて簡単に技術概要をお話ししたのち、LangChain、プロンプトエンジニアリング、RAG（Retrieval Augmented Generation）、Embedding、グラウンディングなどを実装の手法などを紹介しました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE をShared VPC で構築する際の苦悩~]]></title>
             <link>https://zenn.dev/yokoo_an209/articles/1818360b9c7821</link>
@@ -36,7 +43,7 @@
             <content:encoded><![CDATA[GitHub Actions の Self-hosted Runner を安く用意する方法を探していたところ、 Azure の Container Apps Jobs というのが便利に使えるらしいというのを見つけたので試してみる。 チュートリアル:Azure Container Apps ジョブを使]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE Autopilot を Shared VPC で構築する際の苦悩 ~]]></title>
+            <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE を Shared VPC で構築する際の苦悩 ~]]></title>
             <link>https://speakerdeck.com/parupappa2929/suan-imogan-imoarushared-vpc-gong-you-vpc-gkewoshared-vpcdegou-zhu-suruji-noku-nao</link>
             <guid>https://speakerdeck.com/parupappa2929/suan-imogan-imoarushared-vpc-gong-you-vpc-gkewoshared-vpcdegou-zhu-suruji-noku-nao</guid>
             <pubDate>Thu, 22 Feb 2024 05:00:00 GMT</pubDate>
@@ -228,13 +235,6 @@
             <guid>https://zenn.dev/tozastation/articles/711f2bff2cc656</guid>
             <pubDate>Wed, 10 Jan 2024 00:17:57 GMT</pubDate>
             <content:encoded><![CDATA[Kubernetes クラスタ構築 AMD64 コンテナ環境セットアップ ~ Lima VM ~https://github.com/lima-vm/limaGetting Started については README.md 参照Limaでは、事前に定義した内容でVMを作ることができますDocker 環境を構築する場合のサンプルも公開されていますhttps://github.com/lima-vm/lima/blob/master/examples/docker.yaml今回は、amd64 の VM を作成したいため、docker.yaml に以下の行を追記...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PipeCDのインストールとカスタマイズ]]></title>
-            <link>https://sreake.com/blog/pipecd-installation/</link>
-            <guid>https://sreake.com/blog/pipecd-installation/</guid>
-            <pubDate>Tue, 09 Jan 2024 04:09:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の荒木です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。 前回の記事では、Kubernetes […]The post PipeCDのインストールとカスタマイズ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
