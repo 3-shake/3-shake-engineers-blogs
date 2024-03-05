@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 04 Mar 2024 18:30:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Mar 2024 18:30:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -40,7 +40,7 @@
             <link>https://blog.1q77.com/2024/02/container-apps-jobs-self-hosted-github-actions-runner/</link>
             <guid>https://blog.1q77.com/2024/02/container-apps-jobs-self-hosted-github-actions-runner/</guid>
             <pubDate>Fri, 23 Feb 2024 10:05:41 GMT</pubDate>
-            <content:encoded><![CDATA[GitHub Actions の Self-hosted Runner を安く用意する方法を探していたところ、 Azure の Container Apps Jobs というのが便利に使えるらしいというのを見つけたので試してみる。 チュートリアル:Azure Container Apps ジョブを使]]></content:encoded>
+            <content:encoded><![CDATA[GitHub Actions の Self-hosted Runner を安く用意する方法を探していたところ、 Azure の Container Apps Jobs というのが便利に使えるらしいというのを見つけたので試してみる。 チュートリアル:Az]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[酸いも甘いもある Shared VPC（共有VPC） ~ GKE を Shared VPC で構築する際の苦悩 ~]]></title>
@@ -115,7 +115,7 @@
             <link>https://blog.1q77.com/2024/02/update-terraform-version-in-circleci-with-renovate/</link>
             <guid>https://blog.1q77.com/2024/02/update-terraform-version-in-circleci-with-renovate/</guid>
             <pubDate>Sun, 04 Feb 2024 10:37:36 GMT</pubDate>
-            <content:encoded><![CDATA[Circle CI の terraform Orb で terraform の version を指定するには次のようにしますが、この terraform_version の値に変数を 使うことが出来ず、tf ファイルや .tool-versions から読み出した値を使うことが出来ませんでした。 - terraform/install: terraform_version: 1.7.2 GitHub]]></content:encoded>
+            <content:encoded><![CDATA[Circle CI の terraform Orb で terraform の version を指定するには次のようにしますが、この terraform_version の値に変数を 使うことが出来ず、tf ファイルや .tool-versions から読み出した値を使うことが出来ませ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[raspberry piで学ぶ組込みLinuxデバイスドライバ開発Part2]]></title>
@@ -143,7 +143,7 @@
             <link>https://blog.1q77.com/2024/01/install-docker-plugins-on-mac/</link>
             <guid>https://blog.1q77.com/2024/01/install-docker-plugins-on-mac/</guid>
             <pubDate>Fri, 26 Jan 2024 12:36:56 GMT</pubDate>
-            <content:encoded><![CDATA[Docker Desktop for Mac であれば何もしなくても docker compose コマンドは使えるようになっているのですが、Lima で docker を使っている場合などで Homebrew で docker をインストールしていると docker compose や docker buildx を使えるよ]]></content:encoded>
+            <content:encoded><![CDATA[Docker Desktop for Mac であれば何もしなくても docker compose コマンドは使えるようになっているのですが、Lima で docker を使っている場合などで Homebrew で docker をインストールしていると]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[このSRE本がすごい！2024年版]]></title>
@@ -178,7 +178,7 @@
             <link>https://blog.1q77.com/2024/01/smtp-auth-plain-with-openssl-command/</link>
             <guid>https://blog.1q77.com/2024/01/smtp-auth-plain-with-openssl-command/</guid>
             <pubDate>Tue, 23 Jan 2024 02:44:23 GMT</pubDate>
-            <content:encoded><![CDATA[Amazon SES で SMTP を使ってメール送信したい場合、IAM User の credentials をちょいと加工してやる必要があります。 Amazon SES SMTP 認証情報を取得 これで、変換した値が正しいことを確認するために実際に]]></content:encoded>
+            <content:encoded><![CDATA[Amazon SES で SMTP を使ってメール送信したい場合、IAM User の credentials をちょいと加工してやる必要があります。 Amazon SES SMTP 認証情報を取得 これで、変換した値が正しいことを]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[PostgreSQLのsqldefによるDBスキーマ管理で遊んだ。 ]]></title>
