@@ -519,4 +519,16 @@ export const members: Member[] = [
     githubUsername: "kechigon",
     websiteUrl: "https://www.wantedly.com/id/keigo_kurita_e",
   },  
+  {
+    id: "kaita-nakamura",
+    name: "Kaita Nakamura",
+    role: "SRE",
+    bio: "kaita",
+    avatarSrc: "/avatars/kaitanakamura.jpg",
+    sources: ["https://zenn.dev/z63d/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "z63d",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
