@@ -505,7 +505,7 @@ export const members: Member[] = [
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "",
-    websiteUrl: "https://zenn.dev/kojake_300",
+    websiteUrl: "https://speakerdeck.com/kojake_300",
   },
   {
     id: "kurita",
