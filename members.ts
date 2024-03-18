@@ -501,11 +501,11 @@ export const members: Member[] = [
     role: "SRE",
     bio: "Splatoon",
     avatarSrc: "/avatars/yuki_iwasaki.png",
-    sources: ["https://qiita.com/kojake_300/feed"],
+    sources: ["https://qiita.com/kojake_300/feed","https://zenn.dev/kojake_300/feed"],
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "",
-    websiteUrl: "",
+    websiteUrl: "https://speakerdeck.com/kojake_300",
   },
   {
     id: "kurita",
