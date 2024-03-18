@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 18 Mar 2024 06:27:39 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Mar 2024 18:30:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Skaffoldの良さを色々語る]]></title>
+            <link>https://zenn.dev/kojake_300/articles/11945f2047b22b</link>
+            <guid>https://zenn.dev/kojake_300/articles/11945f2047b22b</guid>
+            <pubDate>Mon, 18 Mar 2024 11:24:43 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は、2024/3/15に登壇したJagu'e'r クラウドネイティブ分科会　俺の考える最強のCI/CDのリマスターになります。 k8sアプリケーション開発の悩み突然ですが皆さん、k8sでアプリを動かす時にこんな悩み、イライラはありませんか？k8sで検証する時には必ず通る道だと思います。効率よく検証するにはどうしたものか、、Skaffoldはそんな悩みを解決してくれます😄 Skaffoldとは？ 概要Skaffold[1]は、コンテナベース及びKubernetesアプリケーションの継続的開発(Continuous Development = CD)を容易...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Tagpr で tag trigger の workflow が実行されなくてハマった話]]></title>
             <link>https://blog.1q77.com/2024/03/tagpr/</link>
@@ -228,13 +235,6 @@
             <guid>https://sreake.com/blog/google-cloud-cost-checker-agent/</guid>
             <pubDate>Thu, 25 Jan 2024 02:17:39 GMT</pubDate>
             <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部インターン生の井上です。私はSreake事業部にてSRE技術の調査と研究を行う目的で2023年3月6日から長期インターン生として参加しています。 この記事では、” […]The post Google Cloudコスト増減の定期監視とアドバイスを行うCostChecker-Agentの紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[限定公開のGKE上でセキュアなGithub Actionsのrunnerを構築]]></title>
-            <link>https://zenn.dev/kojake_300/articles/7be501d3fc4e72</link>
-            <guid>https://zenn.dev/kojake_300/articles/7be501d3fc4e72</guid>
-            <pubDate>Wed, 24 Jan 2024 11:08:37 GMT</pubDate>
-            <content:encoded><![CDATA[モチベーションGithub Actionsのセルフホストランナーでは、long pollingによりrunner側でingressのfirewallを設定せずにrunnerをデプロイ出来るというのを最近知ったので、GKEで検証していこうと思います。 構成ざっくりですがこんな感じ。GKEは限定公開のクラスタとして構築し、踏み台サーバからGKEにリクエストを送ります。Github Actionsとの通信のためにVPCにはCloud NATをアタッチします。 前提条件terraformで構築するため、予めインストールしておくこと。(検証はv1.0.0) 構築手順...]]></content:encoded>
         </item>
     </channel>
 </rss>
