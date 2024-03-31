@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 30 Mar 2024 18:30:30 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 18:30:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[PGUnconf #46 でPostgreSQL の開発するときにまず何からすればいいかを聞いてきた]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/zatu/20240323_pgunconf.md</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/zatu/20240323_pgunconf.md</guid>
+            <pubDate>Sun, 31 Mar 2024 14:30:29 GMT</pubDate>
+            <content:encoded><![CDATA[PGUnconf #46 でPostgreSQL の開発するときにまず何からすればいいかを聞いてきた概要2024年3月23日に第46回 PostgreSQLアンカンファレンス@東京が開催されました。PostgreSQLアンカンファレンスは日本PostgreSQLユーザー会が主催するイベントでPostgreSQLユーザーはもちろん、PostgreSQLのコントリンビューターやコミッターも参加しているイベントです。その中でPostgreSQL メジャーコントリビューターであり、コミッターでもある@masahiko_sawadaさんが、PGConn 2024でMAKING POSTGRESQL HACKING MORE INCLUSIVEというセッションでPostgreSQLコミュニティーがどうすればより初心者にオープンになれるか？ という内容でディスカッションするそうです。そこに向けてアイデアはあるか？ 困ってることはないか？ という相談？ をされていました。経験豊富な方々は実践的な案を出していましたが、私はPostgreSQLにコードコントリビュートしたいけど何からすればいいのか分らないという状態だったのでこの機会に相談してみました。自分のレベル感Cはすこし読める。すこし書けるPostgreSQLのソースコードはsimple_query_execの関数をひととおり読んで、なんとなくどこで何しているか分かるPostgreSQLのメーリングリストはとりあえず入った何が分からなかったのか？そもそもPostgreSQLはメーリングリストとパッチの文化なのでGitHub/Labなどになれた身からするとよく分からないです。またGitHubで管理されているOSSでは良くあるgood first issueのようなものも存在しないため、新規参入者には難しいと感じていました。なにからすればいいのか？PGUnconfでは以下のようなアドバイスを受けました。チュートリアルをなぞってドキュメント通りに動かないものを修正する初心者向けコンテンツへの追記は初心者にしか出来ないので、是非おねがいしたいとのことでした既存のパッチで放置されているもの(Headでビルドできないようなもの)をアップデートするメーリングリストのディスカッションを眺めてネタを探す新規機能を試してバグをさがし、修正するCommitFestに参加するまとめ1のネタを探してみつつ、PostgreSQL17のリリースが近いので4に取りくんでみようと思います。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[新しくなった Workload Identity Federation for GKE を試してみる]]></title>
+            <link>https://zenn.dev/yokoo_an209/articles/new-workload-identity-federation-for-gke</link>
+            <guid>https://zenn.dev/yokoo_an209/articles/new-workload-identity-federation-for-gke</guid>
+            <pubDate>Sun, 31 Mar 2024 12:32:38 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにGKE の Workload Identity 連携（Workload Identity Federation for GKE）がアップデートされたということで、早速試してみました。https://cloud.google.com/kubernetes-engine/docs/concepts/workload-identity#configure-workloads なにが変わったのかこれまで、GKE で Workload Identity 連携を使う場合、Google Cloud の Service Account（以降：GSA） を Kubernetes の ...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Terraform / GKE で実現する ExternalSecretOperator テンプレート]]></title>
+            <link>https://zenn.dev/yokoo_an209/articles/external-secret-operator</link>
+            <guid>https://zenn.dev/yokoo_an209/articles/external-secret-operator</guid>
+            <pubDate>Sun, 31 Mar 2024 06:11:06 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにGKEのSecretの管理に External Secret Operator を利用することがありました。備忘も兼ねて、周辺知識も補足しながら、今後の使い回しのできるようにTerraform / GKEでのExternal Secret Operatorのテンプレートを作成しました。【前提】Cluster : GKE Autopilot 1.27GKEのWorkload Identityは有効化されているマニフェスト管理helm : helmfileIaC : Terraform今回は、Service Account キーの使用ではなく、W...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[BigQuery の Object テーブルと Gemini-pro-vision リモートモデルを使って pdf を要約してみる]]></title>
             <link>https://zenn.dev/satohjohn/articles/0cc45efca800e3</link>
@@ -215,26 +236,6 @@
             <guid>https://kechigon.hatenablog.com/entry/2024/02/13/125853</guid>
             <pubDate>Tue, 13 Feb 2024 03:58:53 GMT</pubDate>
             <content:encoded><![CDATA[個人でWebサービスを開発したいけど、どのような流れで作っていけばいいのかわからない方向けです。個人開発でWebアプリを開発、デプロイをしたのでその流れを共有したいと思います。作ったもの麻雀戦績管理アプリ名付けて「PungPals」。雀荘などのオフラインでの対戦結果を残し、個人成績やランキングを確認できます。pungpals-service-xstpolfd4q-an.a.run.app開発とデプロイの流れ1.要件定義、設計実装がスムーズに進むために、しっかりとしておきましょう。以前記事を書いたので、参考にしてください。kechigon.hatenablog.com2.技術選定今回作ったアプリケーションはDjangoで開発し、Cloud Runにデプロイしています。選定理由は、Django: 経験があるから。Cloud Run: Djangoアプリのデプロイ方法の公式ドキュメントがあった(後ほど説明します)、マネージドな部分とカスタムできる部分のバランスがちょうどよかったから。でした。以下これらの技術を使って、開発デプロイまでの流れを説明していきます。3.Djangoを使ってアプリケーションを作成Djangoにはチュートリアルがあり、はじめての Django アプリ作成、その 1 | Django ドキュメント | Djangoはじめての Django アプリ作成、その2 | Django ドキュメント | Djangoはじめての Django アプリ作成、その 3 | Django ドキュメント | Djangoはじめての Django アプリ作成、その 4 | Django ドキュメント | Djangoを読めば開発方法がわかると思います。環境構築をし、実装し、ローカルで動作確認をしながら開発していきます。4.Cloud run へのデプロイDjangoアプリのCloud runへのデプロイ方法は公式ドキュメントにまとめられているので、これを見ながら進めます。cloud.google.comDjangoアプリケーションを環境に合わせて設定した後コンテナ化し、Cloud Runに載せます。それに伴い、Cloud SQL(データベース)、Secret Manager(シークレット管理)、Cloud Storage(静的アセットの保存など)、Cloud Build(CI/CD)、Artifact Registry(コンテナレジストリ)の作成、設定も行います。ドキュメントではGCRを使っていますが、現在非推奨なので、Artifact Registryをコンテナレジストリとして使用します。cloud.google.comオプションですが、GCPへのリソースの作成はTerraformを利用すると、構成管理ができ便利です。作成するインフラの図以上のことを行った後のGitHubリポジトリPungPalsのコードは公開しているので、参考にしていただければと思います。github.comこれから今後は、運用面の課題解決や集客などを行っていく予定なので、ブログにしていくつもりです！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloudの管理を楽にする、 トイルを減らすクラウドガバナンス]]></title>
-            <link>https://speakerdeck.com/parupappa2929/google-cloudnoguan-li-wole-nisuru-toiruwojian-rasukuraudogabanansu</link>
-            <guid>https://speakerdeck.com/parupappa2929/google-cloudnoguan-li-wole-nisuru-toiruwojian-rasukuraudogabanansu</guid>
-            <pubDate>Sun, 11 Feb 2024 05:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Tech Blogが生えました]]></title>
-            <link>https://abnoumaru.com/tech/2024-02-10-start-tech-blog/</link>
-            <guid>https://abnoumaru.com/tech/2024-02-10-start-tech-blog/</guid>
-            <pubDate>Sat, 10 Feb 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Astroのほぼテンプレで作ったブログにTech Blogを生やした]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[私のメンターがくれた初めてのターミナル管理、それはtmuxで私は新卒でした。]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2024/02/06/110341</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2024/02/06/110341</guid>
-            <pubDate>Tue, 06 Feb 2024 02:03:41 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに2024年2月5日夜の東京 外は雪が降っている。tmuxとの出会いは、新卒としての初めての職場でした。メンターがターミナルの管理において最初に紹介してくれたのがtmuxで、この出会いが私の開発効率と作業環境を大きく変革しました。tmuxの基礎を学んだ後、私は自分の開発環境をさらにカスタマイズし、tmuxを日々の作業効率化のために積極的に使い始めました。ここでは、私が実際に使っているtmuxの設定と、日常的に使うコマンドを紹介します。これらは、より快適なターミナル操作環境を実現するために役立ちます。この過程で、tmuxはただのツール以上のものになり、私の開発作業における最適なパートナーになりました。tmuxを使いこなすことで、複数のプロジェクトを同時に管理する能力が向上し、長時間の作業も中断せずに続けられるようになりました。リモートワークが増えた今では、tmuxのセッション管理機能が特に役立っています。サーバーに接続した状態で作業を行い、一時的に他のタスクに切り替えても、再びtmuxセッションに戻れば瞬時に作業を再開できます。tmuxを通じて、私はターミナル操作に関してプロフェッショナルな開発者としての成長していると実感しています。あとやっている感がとても出ているので好きです。tmuxとはtmuxは「ターミナルマルチプレクサ（Terminal Multiplexer）」の略称で、Linux系OSを中心に利用されています。このツールを使うと、一つのターミナルウィンドウ内で複数のセッション、ウィンドウ、ペインを効率的に管理することが可能になります。github.comセッションの管理： 一つのターミナルで複数のセッションを持ち、それぞれ独立した作業スペースとして利用できます。仕事とプライベート、複数のプロジェクト間でセッションを分けることができるため、タスクの切り替えがスムーズになります。ウィンドウとペイン： 一つのセッション内で、複数のウィンドウを開くことができ、さらにウィンドウをペインと呼ばれる小分けにすることが可能です。これにより、同一画面内で複数の作業を並行して行うことができ、効率的なマルチタスクが実現します。セッションの維持： tmuxの最大の特徴の一つは、ターミナルを終了してもセッションが維持されることです。これにより、長時間かかるコマンドを実行中にログアウトしてしまったり、接続が切れてしまったりしても、作業が中断される心配がありません。tmux設定のカスタマイズ私の.tmux.confファイルには、効率的なターミナル操作を可能にするための様々なカスタマイズが施されています。これらの設定を通じて、tmuxを自分にとって最適な作業環境に変えることができました。github.comプレフィックスキーの変更: デフォルト設定のCtrl+bをCtrl+qに変更しました。これは、より操作性の良いキーバインドに変更することで、他のショートカットキーとの競合を避け、操作のスムーズさを向上させるためです。キーバインドのカスタマイズ: vimを頻繁に使用することから、ペインの移動やリサイズをvim風に設定しています。これにより、キーボード操作の一貫性を保ちながら、直感的で迅速なウィンドウ管理を実現しています。ペインの分割: よく使用する|キーでペインを縦に分割し、-キーでペインを横に分割するように設定しました。これにより、柔軟かつ迅速に作業スペースをカスタマイズすることが可能になります。ステータスバーのカスタマイズ: ステータスバーには、現在のセッションの状態や時刻など、必要な情報を表示するよう設定しています。これにより、作業中に一目で状況を確認できるようになり、生産性の向上に貢献しています。プラグインの利用: tmux-resurrectやtmux-continuumなどのプラグインを導入しています。これらのプラグインは、セッションの自動保存や復元を可能にし、長時間にわたる作業や一時的な中断からのスムーズな再開を支援します。セッションの保存と復元は、プレフィックスキーに続けてCtrl+sで保存、Ctrl+rで復元することができます。これにより、突然のシステム停止や作業の中断が発生しても、簡単に前の状態に戻ることができます。さらに、tmuxのプラグインエコシステムは非常に豊富で、tmux-pluginsのリストからは、あらゆるニーズに応える特別なプラグインを見つけることができます。自分の作業フローに合わせて、最適なプラグインを選択し、tmux環境をさらにパワフルで柔軟なものにカスタマイズすることが可能です。よく利用するtmuxコマンドtmuxを効率的に使用するためには、日常的に役立つコマンドを知っておくことが重要です。ここでは、特に重宝するコマンドを紹介します。どんな時にでも味方になってくれるチートシートです。ちなみにチートシートには入れてないのですがprefix + e で全てのペインの操作、prefix + Eでそれらの解除などもインフラエンジニアとしては非常に重宝します。github.com以下は、日々の作業で特に役立つコマンドです。新規セッションの開始: tmux new -s <セッション名>コマンドで、特定の名前を持つ新規セッションを開始します。この機能を活用することで、プロジェクトやタスクごとにセッションを分け、作業を整理しやすくなります。セッションの一覧表示と切り替え: tmux lsコマンドで現在のセッション一覧を表示し、tmux attach -t <セッション名>またはtmux a -t <セッション名>で特定のセッションにアタッチします。これにより、複数のプロジェクトや作業を効率的に管理し、スムーズに切り替えることができます。ペインとウインドウの操作: tmuxでは、ペインの分割やウインドウの作成、移動、リサイズを柔軟に行うことができます。これらの操作をカスタマイズしたキーバインドで行うことで、必要に応じて作業スペースを自由に調整し、マルチタスク作業を効率的に進めることができます。マウス操作の有効化: set-option -g mouse onコマンドにより、tmux内でのマウス操作を有効にすることができます。マウスでペインを選択したり、サイズを調整したりすることが可能になり、キーボードとマウスを組み合わせた直感的な操作が実現します。これらのコマンドは、tmuxを使ってターミナル操作を効率化し、生産性を高めるための基本となります。tmuxをより深く理解し、活用することで、開発作業をより快適に、より効率的に行うことができるでしょう。さいごにtmuxとの出会いは、私の開発効率と作業環境を大きく変えただけでなく、インフラエンジニアとしての成長にも大きく寄与しました。日々の作業でtmuxを使いこなすことで、システムの監視、ログの分析、複数のサーバーへの同時操作など、インフラ管理の幅広いタスクを効率的にこなすスキルを身につけることができました。また、セッションの持続性は、長時間実行するプロセスの管理や、中断された作業の再開といった面で、インフラ作業の品質を向上させるのに役立ちました。tmuxのカスタマイズ性と拡張性を活かして、個人の作業環境を最適化することは、単に作業を効率化するだけではなく、技術者としての視野を広げ、問題解決能力を養う機会となりました。tmuxを深く理解し活用することで、インフラエンジニアリングの知識を実践的に拡張し、より複雑なシステムと効果的に向き合う力を養うことができました。tmux は3.4 がリリースされており今でも進化を続けている。愛している。github.comtmuxは、単なるツール以上の存在となり、私の技術的な成長を支えてくれる貴重なパートナーです。これからもtmuxを活用し続けることでしょう。しかし、人は変わる。実はZellijやターミナルもMAC標準なものを利用しているがAlacrittyが気になっているので検証と導入を進めている。]]></content:encoded>
         </item>
     </channel>
 </rss>
