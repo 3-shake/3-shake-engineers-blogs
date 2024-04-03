@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 02 Apr 2024 18:31:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Apr 2024 18:31:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -54,6 +54,13 @@
             <link>https://speakerdeck.com/masasuzu/2024-03-29-srett9-cloudsqlnoke-yong-xing</link>
             <guid>https://speakerdeck.com/masasuzu/2024-03-29-srett9-cloudsqlnoke-yong-xing</guid>
             <pubDate>Fri, 29 Mar 2024 04:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[社内ChatBot (h1-slack-bot)にClaude 3を追加した話(+α)]]></title>
+            <link>https://sreake.com/blog/chatgpt-slack-integration-claude-3/</link>
+            <guid>https://sreake.com/blog/chatgpt-slack-integration-claude-3/</guid>
+            <pubDate>Fri, 29 Mar 2024 02:50:00 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部インターン生の井上です。私はSreake事業部にてSRE技術の調査と研究を行う目的で2023年3月6日から長期インターン生として参加しています。 この記事では、Anthro […]The post 社内ChatBot (h1-slack-bot)にClaude 3を追加した話(+α) first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Platform Engineering on Kubernetes を読んでCloud Native の現在地を理解する]]></title>
@@ -228,13 +235,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/02/21/225145</guid>
             <pubDate>Wed, 21 Feb 2024 13:51:45 GMT</pubDate>
             <content:encoded><![CDATA[Google Cloud Platdorm(GCP)認定資格の第一歩、Cloud Digital Leaderに合格しました！ちなみに、これまでの私の保有IT資格は、基本情報、応用情報、AWSクラウドプラクティショナーです。AWS資格の第一歩、クラウドプラクティショナーはUdemyの模擬試験を1周したら合格できたので、同様にGoogle Cloud Digital LeaderもUdemyの模擬試験を1周以上したら合格できました。なお、AWSは最初、ソリューションアーキテクトアソシエイト受けたものの勉強不足で落ち、クラウドプラクティショナーならなんとかなるのでは？と思い、その2週間後に受けたら受かりました。Udemyの模擬試験は途中保存もでき、採点、不正解のみ見直しなどができて便利ですよね。次はGCPのAssociate Cloud Engineerに挑戦したいと思います！皆さんもUdemyで勉強してIT資格をとりましょう！AWSやGCPの資格をとるならUdemyで学ぼう！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Terraform workspace使って思ったこと]]></title>
-            <link>https://sreake.com/blog/terraform-workspace/</link>
-            <guid>https://sreake.com/blog/terraform-workspace/</guid>
-            <pubDate>Sun, 18 Feb 2024 14:28:59 GMT</pubDate>
-            <content:encoded><![CDATA[背景 そこまで大きな案件でもなく、 環境間の差分もあまりなさそうだったため 何より使ったことないから試してみようっていう好奇心 ある案件にて上記の理由から、Terraform workspaceを採用しました。 今回は、 […]The post Terraform workspace使って思ったこと first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
