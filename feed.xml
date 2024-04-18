@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 17 Apr 2024 18:30:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Apr 2024 18:31:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud Next ‘24 参加レポート]]></title>
+            <link>https://sreake.com/blog/google-cloud-next-24-report/</link>
+            <guid>https://sreake.com/blog/google-cloud-next-24-report/</guid>
+            <pubDate>Wed, 17 Apr 2024 23:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[参加レポート タイトルの通りラスベガスにて4/9から11まで開催されていた Google Cloud Next’24 に参加してきました。 今回は Google Cloud Partner Top Engineer 20 […]The post Google Cloud Next ‘24 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[EKS] Amazon Linux 2023 への移行]]></title>
             <link>https://zenn.dev/toversus/articles/a4bbd2047bbba1</link>
@@ -229,13 +236,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/03/10/225747</guid>
             <pubDate>Sun, 10 Mar 2024 13:57:47 GMT</pubDate>
             <content:encoded><![CDATA[2024年3月2日(土)、Open Source Conference 2024 Online/Spring でセミナー発表し、event.ospn.jp同年3月10日(日)、Open Source Conference 2024 Tokyo/Spring でブース出展しました。event.ospn.jpOnline/Springのセミナー（以下、オンラインセミナー）では、日本生成AIユーザ会として、生成AI入門というテーマで発表させていただきました。日本生成AIユーザ会のデビュー戦でした。これまで日本暗号通貨ユーザ会などでブロックチェーン関連の発表はたくさんしてきましたが、生成AIの発表は初めて。無事発表できてよかったです。 speakerdeck.comyoutu.beなお、オンラインセミナーでは日本暗号通貨ユーザ会の発表は今回しておりません。日本生成AIユーザ会と日本暗号通貨ユーザ会の2つの発表をやることはしんどいので、1つだけにしました。一方、3月10日OSC東京はブース展示会でした。会場は東京都立産業貿易センター台東館で、最寄りは浅草駅。天気もよく、浅草駅前の吾妻橋交差点から見える東京スカイツリーとアサヒビール本社屋上の金色のオブジェが綺麗に見えました！浅草からの風景↓金色のオブジェは聖火台の炎を表現していたのですね！今知りましたwwww.asahibeer.co.jpブース展示会では、日本生成AIユーザ会と日本暗号通貨ユーザ会の合同出展という形にしました。出展しております！#osc24tk#genai_users#ccstudy pic.twitter.com/O0vcEGWkd0— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月10日   ブースにはたくさんの方にきていただき、生成AI、暗号通貨(ブロックチェーン)ともに興味を持っていただけました。OSC東京の休憩で、坦々麺 一龍 浅草本店へ。昨年春の浅草でのOSC東京にてここで食べて美味しかったので、再来店。かなりの細麺、正方形の器になり、進化してました。美味しかった！#osc24tk#genai_users#ccstudy pic.twitter.com/wvscqgtHHj— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月10日   日本生成AIユーザ会と日本暗号通貨ユーザ会のブースに、リナックくんが遊びに来たで！#Linuc#リナックくん#osc24tk#genai_users#ccstudy pic.twitter.com/R9CLB7FG4g— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月10日   皆様お疲れ様でした！運営の皆様、出展させていただきありがとうございました。ブースに来ていただいた皆様ありがとうございました。これまでOSCのブース出展は、日本暗号通貨ユーザ会だけで行ってきましたが、今回、日本生成AIユーザ会でも出展することで新たな気付きもたくさん得られました。秋のOSC東京ではもっとブースをパワーアップして挑みたいと思います！日本暗号通貨ユーザ会は次回、3月22日(金)20:00〜「ビットコイン・ブロックチェーン入門」という講義形式(※)のオンライン勉強会を開催します。※講義形式というのは、ハンズオンや輪読ではないということです。発表者が説明して、質問を受け付けます。当てたりしませんので、ご安心をw！cryptocurrency.connpass.com日本生成AIユーザ会は次回、4月5日(金)20:00〜「生成AIアプリケーション開発入門ハンズオン」というハンズオン形式のオンライン勉強会を開催します。ハンズオンですが、難しくなく皆さんがついてこられて、かつ楽しい内容にします！genai-users.connpass.comどちらもぜひご参加ください！これからも両コミュニティをよろしくお願いいたしますm(._.)m]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud 主催 Generative AI Summit Tokyo '24に参加]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/03/08/095543</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/03/08/095543</guid>
-            <pubDate>Fri, 08 Mar 2024 00:55:43 GMT</pubDate>
-            <content:encoded><![CDATA[2024年3月7日、GOOGLE CLOUD 主催 Generative AI Summit Tokyo '24 に参加しました！cloudonair.withgoogle.com株式会社スリーシェイクはスポンサーを務めておりました。基調講演を除き、観たセッションはXにてスレッドで軽く実況を書いています。Google Cloud Generative AI Summit「生成 AI 時代に Google Kubernetes Engine は何を解決してくれるのか」を聞きます！https://t.co/c0HW6f9xVP#gc_genai— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月7日   Google Cloud Generative AI Summit「Chugai DX × GenAI の裏側 : 製薬業界の IT エンジニアが挑む次世代の業務最適化」https://t.co/fbqXCTorEq#gc_genai  #track1— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月7日   弊社の発表！「SRE@scale: 生成 AI で実現するスリーシェイクが考える拡張性のある SRE の取り組み」https://t.co/lv5Rd15qLb#gc_genai #track4— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月7日   Google Cloud Generative AI Summit Tokyo '24住友ゴム工業株式会社さん「製造業における生成 AI を使った業務効率化への取り組み」https://t.co/XGSFieexyF#gc_genai #track1— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月7日   Google Cloud Generative AI Summit Tokyo '24株式会社トップゲートさん「文書管理の未来：Document AI と Vertex Search を利用した紙文書管理」https://t.co/SIHbwTcJPb#gc_genai #track3— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月7日   Google Cloud Generative AI Summit Tokyo '24株式会社サテライトオフィスさん「2000 社導入、生成 AI 活用最前線　サテライト AI のご紹介」https://t.co/brrAlihedB#gc_genai #track3— Shu Kobuchi(こぶシュー) (@shu_kob) 2024年3月7日   全体を通しての感想は、キラーアプリはまだ出てきていないものの、早期に生成AIを触り始めた企業さんは、事例をどんどん作っていると言う印象でした。私も生成AIに携わるものとして、モチベーションが上がったので、日々の業務に邁進していきたいと思います！]]></content:encoded>
         </item>
     </channel>
 </rss>
