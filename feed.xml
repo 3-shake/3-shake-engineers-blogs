@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 29 Apr 2024 18:32:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Apr 2024 18:32:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、 Google Cloud Infrastructure Modernization 支援パートナープログラムに賛同]]></title>
+            <link>https://sreake.com/blog/gcim/</link>
+            <guid>https://sreake.com/blog/gcim/</guid>
+            <pubDate>Tue, 30 Apr 2024 07:15:12 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 クラウドへのインフラストラクチャ移行を支援する Google Cloud Infrastructure Moderniza […]The post スリーシェイク、 Google Cloud Infrastructure Modernization 支援パートナープログラムに賛同 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[Kubernetes 1.30] Dynamic Resource Allocation の再構築]]></title>
+            <link>https://zenn.dev/toversus/articles/5bbd68e507f28d</link>
+            <guid>https://zenn.dev/toversus/articles/5bbd68e507f28d</guid>
+            <pubDate>Tue, 30 Apr 2024 06:43:41 GMT</pubDate>
+            <content:encoded><![CDATA[!Kubernetes 1.30 時点でアルファ機能のため、実装が大きく変わる可能性があります。[Kubernetes 1.27] Dynamic Resource Allocation のいまで紹介した Dynamic Resource Allocation (DRA) の内部的な仕組みに Kubernetes 1.30 で大きく変更が入ることになりました。内部的な仕組みの変更なので、ユーザー視点ではこれまでと利用方法は変わりません。ResourceClass に追加されたフィールドを有効にしないと新しい仕組みが使えないため、クラスタ管理者は対応が必要になります。世界的に AI...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Wireguard Exporter と Grafana Alloy で VPN 通信量を可視化]]></title>
             <link>https://blog.1q77.com/2024/04/wireguard-exporter/</link>
@@ -222,20 +236,6 @@
             <guid>https://blog.1q77.com/2024/03/tagpr/</guid>
             <pubDate>Fri, 15 Mar 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[最近 tagpr という便利ツールの存在を知って試していたのですが、使い方が悪くてハマったのでメモ。 tagpr とは 作者さまの記事を参照ください。 リリース用のpu]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Helm chart を GitHub Container Registry に host する]]></title>
-            <link>https://blog.1q77.com/2024/03/helm-push-to-ghcr/</link>
-            <guid>https://blog.1q77.com/2024/03/helm-push-to-ghcr/</guid>
-            <pubDate>Thu, 14 Mar 2024 15:13:39 GMT</pubDate>
-            <content:encoded><![CDATA[背景 最近は書いたアプリを Kubernetes に deploy することも多い。 その際に helm で簡単に deploy できるようになっていると便利ということで Helm chart を Git に入れておいても良いのだけ]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Docker Desktop のアンインストールと Lima の導入]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2024/03/14/083605</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2024/03/14/083605</guid>
-            <pubDate>Wed, 13 Mar 2024 23:36:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにDocker Desktop は多くの開発者にとって便利なツールですが、さまざまな理由で Lima への移行を検討するケースもあります。この記事では、MAC でDocker Desktop をアンインストールし、Lima を導入する過程を説明します。Limaはcontainerd を実行するための Linux 仮想マシン (通常は macOS 上) 、2022 年 9 月 14 日にサンドボックス成熟度レベルで CNCF に承認されてます。参考文献LimaInstallation | LimaUsage | LimaDocker Desktop のアンインストールDocker Desktop のアンインストールは、公式ドキュメントの指示に従って行うことができます。アンインストールはシステムの設定やリソースの解放に役立ち、Lima の導入の準備を整えます。# CLI から Docker Desktop をアンインストールすることもできます。さようなら。/Applications/Docker.app/Contents/MacOS/uninstall# Docker Desktop をアンインストールした後、削除できるファイルがいくつか残るので合わせて削除rm -rf ~/Library/Group\ Containers/group.com.dockerrm -rf ~/Library/Containers/com.docker.dockerrm -rf ~/.docker参照: Docker Desktop アンインストール方法Lima のインストールLima は、macOS で Linux 仮想マシンを容易に管理するためのツールです。Docker コンテナの実行環境として Lima を使用することで、Docker Desktop と同等の機能を低リソースで利用できます。Lima のインストールプロセスは以下のコマンドで行います。# Lima インスタンスの作成:# `docker` という名前の Lima インスタンスを Docker のテンプレートを使って作成します。limactl create --name=docker template://docker# Lima インスタンスの起動:# 作成した `docker` インスタンスを起動します。limactl start docker# 稼働中の Lima インスタンスの一覧表示:# 現在稼働中の Lima インスタンスの状態を表示します。limactl lsNAME       STATUS     SSH                VMTYPE    ARCH       CPUS    MEMORY    DISK      DIRdocker     Running    127.0.0.1:65015    qemu      aarch64    4       4GiB      100GiB    ~/.lima/dockerDocker CLI のインストールLima がインストールされた後、Docker コマンドラインインターフェース (CLI) をインストールする必要があります。以下のコマンドを使用して、macOS 用の Docker CLI をダウンロードし、インストールします。今回はdocker-25.0.4.tgzをダウンロードしますがこちらを参考に最新版をinstallしてください。# Docker CLI バイナリのダウンロード:# macOS 用の Docker CLI バイナリをダウンロードします。curl -L -O https://download.docker.com/mac/static/stable/aarch64/docker-25.0.4.tgz# ダウンロードしたアーカイブの展開:# ダウンロードした tar.gz アーカイブを展開します。# 毎回、調べているので悲しいtar -xvzf docker-25.0.4.tgz# Docker CLI の移動:# 展開した Docker CLI をシステムの PATH の一部である /usr/local/bin に移動します。パスはどこでもいいけどブログなので...。mv docker/docker /usr/local/bin/参照: macOS でのクライアントバイナリのインストール修正: brew install でのdockerのインストール勝手に--caskとか付けて全部入るなーって思っていたのですがbrew install dockerのみの場合にはDocker CLIのみをインストールすることができますbrew install docker我らがteraoka 師匠から教えていただきました。参照: Lima で vz + rosetta を使って ARM VM 上で x86_64 バイナリを実行する #Docker - QiitaLima-Docker の設定Lima と Docker CLI がセットアップされたら、Lima ベースの Docker 環境を利用するための設定を行います。以下のコマンドで Docker コンテキストを作成し、利用を開始します。# Docker コンテキストの作成:# `lima-docker` という名前の Docker コンテキストを作成し、Lima インスタンス上の Docker デーモンに接続します。docker context create lima-docker --docker "host=unix:///Users/<username>/.lima/docker/sock/docker.sock"# 作成した Docker コンテキストの使用:# `lima-docker` コンテキストをアクティブにして、以降の `docker` コマンドが Lima インスタンスを対象に実行されるようにします。docker context use lima-docker# Docker コンテナの実行 (テスト):# Docker 環境が正しく設定されているかを確認するため、hello-world イメージを実行します。docker run hello-world# Docker での nginx コンテナの実行:# nginx イメージをバックグラウンドで実行し、ポート 8181 をコンテナのポート 80 にフォワードします。docker run --name lima-test-nginx -d -p 8181:80 nginxこれらのステップを完了することで、Lima 上で Docker コンテナを実行し、管理することができるようになります。おまけ:KIND (Kubernetes IN Docker) の利用KIND (Kubernetes IN Docker) は、Docker 上に軽量な Kubernetes クラスタを構築するためのツールです。Lima 環境上で Docker を利用している場合でも、KIND を使用して Kubernetes のテスト環境を簡単にセットアップできます。# KIND クラスタの作成:# 新しい Kubernetes クラスタを作成します。このクラスタは Docker コンテナ内に構築されます。$ kind create cluster# 作成されたクラスタの一覧表示:# 現在 KIND によって作成されたクラスタの一覧を表示します。$ kind get clusterskind# クラスタ情報の取得:# 作成した KIND クラスタのコントロールプレーンやサービスの情報を取得します。$ kubectl cluster-info --context kind-kindKubernetes control plane is running at https://127.0.0.1:51050CoreDNS is running at https://127.0.0.1:51050/api/v1/namespaces/kube-system/services/kube-dns:dns/proxyTo further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.# 全てのネームスペースで動作している Pod の一覧表示:# クラスタ内の全ネームスペースにわたる Pod の状態を確認します。$ kubectl get pod -ANAMESPACE            NAME                                         READY   STATUS    RESTARTS   AGEkube-system          coredns-76f75df574-5glm8                     1/1     Running   0          87skube-system          coredns-76f75df574-jwn6z                     1/1     Running   0          87skube-system          etcd-kind-control-plane                      1/1     Running   0          103skube-system          kindnet-qlftc                                1/1     Running   0          86skube-system          kube-apiserver-kind-control-plane            1/1     Running   0          102skube-system          kube-controller-manager-kind-control-plane   1/1     Running   0          100skube-system          kube-proxy-6nwnv                             1/1     Running   0          86skube-system          kube-scheduler-kind-control-plane            1/1     Running   0          100slocal-path-storage   local-path-provisioner-7577fdbbfb-vd28d      1/1     Running   0          87sおわり。結論Docker Desktop のアンインストールと Lima の導入に焦点を当てました。本記事で紹介した手順を通じて、開発環境を効率的に管理し、Docker コンテナの実行を最適化することが可能です。参考文献Docker Desktop アンインストール方法macOS でのクライアントバイナリのインストール]]></content:encoded>
         </item>
     </channel>
 </rss>
