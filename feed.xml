@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 30 Apr 2024 18:32:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 May 2024 18:31:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【2024年夏期インターン】SREの技術について学びたいインターン募集！]]></title>
+            <link>https://sreake.com/blog/summer_intern/</link>
+            <guid>https://sreake.com/blog/summer_intern/</guid>
+            <pubDate>Wed, 01 May 2024 03:27:01 GMT</pubDate>
+            <content:encoded><![CDATA[リモートで開催する2週間程度で、技術に関する研究を行うインターンシッププログラムとなっています！当社SREエンジニアがメンターとしてサポートし、知識に不安をお持ちの方のために事前学習の期間を設けておりますので、インフラ、 […]The post 【2024年夏期インターン】SREの技術について学びたいインターン募集！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、 Google Cloud Infrastructure Modernization 支援パートナープログラムに賛同]]></title>
             <link>https://sreake.com/blog/gcim/</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/kojake_300/articles/11945f2047b22b</guid>
             <pubDate>Mon, 18 Mar 2024 11:24:43 GMT</pubDate>
             <content:encoded><![CDATA[この記事は、2024/3/15に登壇したJagu'e'r クラウドネイティブ分科会　俺の考える最強のCI/CDのリマスターになります。 k8sアプリケーション開発の悩み突然ですが皆さん、k8sでアプリを動かす時にこんな悩み、イライラはありませんか？k8sで検証する時には必ず通る道だと思います。効率よく検証するにはどうしたものか、、Skaffoldはそんな悩みを解決してくれます😄 Skaffoldとは？ 概要Skaffold[1]は、コンテナベース及びKubernetesアプリケーションの継続的開発(Continuous Development = CD)を容易...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Tagpr で tag trigger の workflow が実行されなくてハマった話]]></title>
-            <link>https://blog.1q77.com/2024/03/tagpr/</link>
-            <guid>https://blog.1q77.com/2024/03/tagpr/</guid>
-            <pubDate>Fri, 15 Mar 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[最近 tagpr という便利ツールの存在を知って試していたのですが、使い方が悪くてハマったのでメモ。 tagpr とは 作者さまの記事を参照ください。 リリース用のpu]]></content:encoded>
         </item>
     </channel>
 </rss>
