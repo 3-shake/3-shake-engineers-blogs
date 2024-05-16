@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 15 May 2024 18:32:23 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 May 2024 18:31:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SLOいつ決めましょう？]]></title>
+            <link>https://speakerdeck.com/abnoumaru/sloitujue-memasiyou</link>
+            <guid>https://speakerdeck.com/abnoumaru/sloitujue-memasiyou</guid>
+            <pubDate>Thu, 16 May 2024 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[第3木曜LT会というイベントの「SREどうでしょう」という会でSLOはいつ決めたらよいか？自分なりに考えた結果を発表したLT資料https://metaps.connpass.com/event/313921/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloud SQL(MySQL)とSpring Bootの画像検索アプリケーション作成]]></title>
             <link>https://sreake.com/blog/cloudsql-spring-boot-image-search-app/</link>
@@ -229,13 +236,6 @@
             <link>https://speakerdeck.com/masasuzu/2024-03-29-srett9-cloudsqlnoke-yong-xing</link>
             <guid>https://speakerdeck.com/masasuzu/2024-03-29-srett9-cloudsqlnoke-yong-xing</guid>
             <pubDate>Fri, 29 Mar 2024 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[社内ChatBot (h1-slack-bot)にClaude 3を追加した話(+α)]]></title>
-            <link>https://sreake.com/blog/chatgpt-slack-integration-claude-3/</link>
-            <guid>https://sreake.com/blog/chatgpt-slack-integration-claude-3/</guid>
-            <pubDate>Fri, 29 Mar 2024 02:50:00 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部インターン生の井上です。私はSreake事業部にてSRE技術の調査と研究を行う目的で2023年3月6日から長期インターン生として参加しています。 この記事では、Anthro […]The post 社内ChatBot (h1-slack-bot)にClaude 3を追加した話(+α) first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
