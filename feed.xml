@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 17 May 2024 18:32:50 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 18 May 2024 18:31:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,25 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[AlloyDBの性能を眺める]]></title>
+            <title><![CDATA[Pulumi コマンド を GitHub Actions で実行する]]></title>
+            <link>https://zenn.dev/z63d/articles/0d6b3ee4e9a44e</link>
+            <guid>https://zenn.dev/z63d/articles/0d6b3ee4e9a44e</guid>
+            <pubDate>Sat, 18 May 2024 05:30:31 GMT</pubDate>
+            <content:encoded><![CDATA[背景副業で Pulumi を使っています。プロバイダーなどのパッケージのバージョン更新をサボっていたのですが、対応しようと思い Renovate で更新するようにしました。しかし、PR が来た時点では Pulumi の差分が分かりません。ローカルで pulumi preview を実行して差分がないことを毎回確認するのは面倒なので GitHub Actions で pulumi preview を実行して PR のコメントで差分を表示してもらうことにしました。 環境Pulumi + TypeScriptGoogle Cloud 実装していく複数環境（Stack）で ...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SLOいつ決めましょう？というタイトルで #第3木曜LT会 に登壇した]]></title>
+            <link>https://abnoumaru.com/tech/2024-05-18-third-thursday-lt/</link>
+            <guid>https://abnoumaru.com/tech/2024-05-18-third-thursday-lt/</guid>
+            <pubDate>Sat, 18 May 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[登壇してきました]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CloudSQL for PostgreSQLのベンチマークと比較して理解するAlloyDBの特徴]]></title>
             <link>https://zenn.dev/nnaka2992/articles/compare_alloydb_and_postgres</link>
             <guid>https://zenn.dev/nnaka2992/articles/compare_alloydb_and_postgres</guid>
             <pubDate>Fri, 17 May 2024 15:16:13 GMT</pubDate>
-            <content:encoded><![CDATA[概要Google Cloudが提供するPostgreSQL互換データベースであるAlloyDBのパフォーマンスをトランザクション用途・分析用途の双方から検証する。今回の検証ではAlloyDBの上限を見定めるのではなく、CloudSQLと比べてどのようなパフォーマンスになるを目的とする。 検証方法同一VPC上でプロビジョニングしたAlloyDBとCloudSQL for PostgreSQLに対して、Compute Engine上のHammerDBからTPC-C LikeなベンチマークとTPC-H Likeなベンチマークを実行する。Compute Engineとデータベース...]]></content:encoded>
+            <content:encoded><![CDATA[概要Google Cloudが提供するPostgreSQL互換データベースであるAlloyDBのパフォーマンスをトランザクション用途・分析用途の双方から検証する。今回の検証ではAlloyDBの上限を見定めるのではなく、CloudSQLと比べてどのようなパフォーマンスになるを目的とする。 TL;DR絞り込み条件がインデックスに限定されない場合、AlloyDBのパフォーマンスメリットが特に大きくなる。絞り込み条件がインデックスに限定され、かつデータサイズが小さい場合、CloudSQL for PostgreSQLのコストパフォーマンスが大きくなる。現将・将来のワークロード...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[Kubernetes 1.30] kube-proxy の nftables モード]]></title>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/yokoo_an209/articles/new-workload-identity-federation-for-gke</guid>
             <pubDate>Sun, 31 Mar 2024 12:32:38 GMT</pubDate>
             <content:encoded><![CDATA[はじめにGKE の Workload Identity 連携（Workload Identity Federation for GKE）がアップデートされたということで、早速試してみました。https://cloud.google.com/kubernetes-engine/docs/concepts/workload-identity#configure-workloads なにが変わったのかこれまで、GKE で Workload Identity 連携を使う場合、Google Cloud の Service Account（以降：GSA） を Kubernetes の ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Terraform / GKE で実現する ExternalSecretOperator テンプレート]]></title>
-            <link>https://zenn.dev/yokoo_an209/articles/external-secret-operator</link>
-            <guid>https://zenn.dev/yokoo_an209/articles/external-secret-operator</guid>
-            <pubDate>Sun, 31 Mar 2024 06:11:06 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにGKEのSecretの管理に External Secret Operator を利用することがありました。備忘も兼ねて、周辺知識も補足しながら、今後の使い回しのできるようにTerraform / GKEでのExternal Secret Operatorのテンプレートを作成しました。【前提】Cluster : GKE Autopilot 1.27GKEのWorkload Identityは有効化されているマニフェスト管理helm : helmfileIaC : Terraform今回は、Service Account キーの使用ではなく、W...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[BigQuery の Object テーブルと Gemini-pro-vision リモートモデルを使って pdf を要約してみる]]></title>
-            <link>https://zenn.dev/satohjohn/articles/0cc45efca800e3</link>
-            <guid>https://zenn.dev/satohjohn/articles/0cc45efca800e3</guid>
-            <pubDate>Sat, 30 Mar 2024 17:44:21 GMT</pubDate>
-            <content:encoded><![CDATA[概要pdf などの非構造化データを GCS に配置した際に BQ で分析するってどうすんねんというところをやってみる流れとしては以下を実施するpdf などを gcs に配置するBigQuery Connection の作成する必要な権限付与を行うBQ で Object テーブルを作成するBQ でリモートモデルを作成するObject テーブルを使って pdf の要約をする 必要なことBigQuery Connection API の有効化 手順 pdf などを GCS に配置するここは何も考えないで GCS に pdf を配置する例えば、今回...]]></content:encoded>
         </item>
     </channel>
 </rss>
