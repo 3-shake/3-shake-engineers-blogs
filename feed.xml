@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 18 May 2024 18:31:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 May 2024 18:31:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Oracle Dataabse 19cの検証環境が欲しいからProxmoxに環境構築する]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/install_oracle_19c_to_proxmox</link>
+            <guid>https://zenn.dev/nnaka2992/articles/install_oracle_19c_to_proxmox</guid>
+            <pubDate>Sun, 19 May 2024 14:18:18 GMT</pubDate>
+            <content:encoded><![CDATA[概要300年ぶりぐらいに、ローカル環境(非Cloud環境)でホストしたOracle Databaseが欲くなったので、自宅にあるProxmoxへインストールします。 前提Proxmoxにダウンロード済みのOracle Linux 9のイメージを利用する。利用するOracle Databaseは19cとする。検証環境のため本番用途に適した設定ではない。 Proxmox VMを建ち上げる Oracle Database 19cのサーバ要件今回関係あるもののみ抜粋しています。OSOracle Linux 9およびRed Hat互換カーネル: 5.14.0-...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Pulumi コマンド を GitHub Actions で実行する]]></title>
             <link>https://zenn.dev/z63d/articles/0d6b3ee4e9a44e</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/zatu/20240323_pgunconf.md</guid>
             <pubDate>Sun, 31 Mar 2024 14:30:29 GMT</pubDate>
             <content:encoded><![CDATA[PGUnconf #46 でPostgreSQL の開発するときにまず何からすればいいかを聞いてきた概要2024年3月23日に第46回 PostgreSQLアンカンファレンス@東京が開催されました。PostgreSQLアンカンファレンスは日本PostgreSQLユーザー会が主催するイベントでPostgreSQLユーザーはもちろん、PostgreSQLのコントリンビューターやコミッターも参加しているイベントです。その中でPostgreSQL メジャーコントリビューターであり、コミッターでもある@masahiko_sawadaさんが、PGConn 2024でMAKING POSTGRESQL HACKING MORE INCLUSIVEというセッションでPostgreSQLコミュニティーがどうすればより初心者にオープンになれるか？ という内容でディスカッションするそうです。そこに向けてアイデアはあるか？ 困ってることはないか？ という相談？ をされていました。経験豊富な方々は実践的な案を出していましたが、私はPostgreSQLにコードコントリビュートしたいけど何からすればいいのか分らないという状態だったのでこの機会に相談してみました。自分のレベル感Cはすこし読める。すこし書けるPostgreSQLのソースコードはsimple_query_execの関数をひととおり読んで、なんとなくどこで何しているか分かるPostgreSQLのメーリングリストはとりあえず入った何が分からなかったのか？そもそもPostgreSQLはメーリングリストとパッチの文化なのでGitHub/Labなどになれた身からするとよく分からないです。またGitHubで管理されているOSSでは良くあるgood first issueのようなものも存在しないため、新規参入者には難しいと感じていました。なにからすればいいのか？PGUnconfでは以下のようなアドバイスを受けました。チュートリアルをなぞってドキュメント通りに動かないものを修正する初心者向けコンテンツへの追記は初心者にしか出来ないので、是非おねがいしたいとのことでした既存のパッチで放置されているもの(Headでビルドできないようなもの)をアップデートするメーリングリストのディスカッションを眺めてネタを探す新規機能を試してバグをさがし、修正するCommitFestに参加するまとめ1のネタを探してみつつ、PostgreSQL17のリリースが近いので4に取りくんでみようと思います。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[新しくなった Workload Identity Federation for GKE を試してみる]]></title>
-            <link>https://zenn.dev/yokoo_an209/articles/new-workload-identity-federation-for-gke</link>
-            <guid>https://zenn.dev/yokoo_an209/articles/new-workload-identity-federation-for-gke</guid>
-            <pubDate>Sun, 31 Mar 2024 12:32:38 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにGKE の Workload Identity 連携（Workload Identity Federation for GKE）がアップデートされたということで、早速試してみました。https://cloud.google.com/kubernetes-engine/docs/concepts/workload-identity#configure-workloads なにが変わったのかこれまで、GKE で Workload Identity 連携を使う場合、Google Cloud の Service Account（以降：GSA） を Kubernetes の ...]]></content:encoded>
         </item>
     </channel>
 </rss>
