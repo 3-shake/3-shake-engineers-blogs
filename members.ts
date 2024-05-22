@@ -105,7 +105,7 @@ export const members: Member[] = [
     role: "JB",
     bio: "tez",
     avatarSrc: "/avatars/tezuka.jpeg",
-    sources: ["https://qiita.com/TT_Private/feed"],
+    sources: ["https://qiita.com/TT_Private/feed","https://speakerdeck.com/takuyatezuka.rss"],
     includeUrlRegex: "qiita.com/TT_Private",
     twitterUsername: "tt0603",
     githubUsername: "taku-tez",
