@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 24 May 2024 18:32:28 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 May 2024 18:31:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -47,7 +47,7 @@
             <link>https://zenn.dev/z63d/articles/0d6b3ee4e9a44e</link>
             <guid>https://zenn.dev/z63d/articles/0d6b3ee4e9a44e</guid>
             <pubDate>Sat, 18 May 2024 05:30:31 GMT</pubDate>
-            <content:encoded><![CDATA[背景副業で Pulumi を使っています。プロバイダーなどのパッケージのバージョン更新をサボっていたのですが、対応しようと思い Renovate で更新するようにしました。しかし、PR が来た時点では Pulumi の差分が分かりません。ローカルで pulumi preview を実行して差分がないことを毎回確認するのは面倒なので GitHub Actions で pulumi preview を実行して PR のコメントで差分を表示してもらうことにしました。 環境Pulumi + TypeScriptGoogle Cloud 実装していく複数環境（Stack）で ...]]></content:encoded>
+            <content:encoded><![CDATA[背景副業で Pulumi を使っています。プロバイダーなどのパッケージのバージョン更新をサボっていたのですが、対応しようと思い Renovate で更新するようにしました。しかし、PR が来た時点では Pulumi の差分が分かりません。ローカルで pulumi preview を実行して差分がないことを毎回確認するのは面倒なので GitHub Actions で pulumi preview を実行して PR のコメントで差分を表示してもらうことにしました。 環境Pulumi CloudPulumi + TypeScriptGoogle Cloud 実装していく...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[SLOいつ決めましょう？というタイトルで #第3木曜LT会 に登壇した]]></title>
