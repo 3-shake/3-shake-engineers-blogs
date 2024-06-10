@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 09 Jun 2024 18:32:08 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Jun 2024 18:33:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,25 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[Google CloudのRapid evaluation APIを利用したLLMの評価手法]]></title>
+            <link>https://sreake.com/blog/google-cloud-rapid-evaluation-api-verification/</link>
+            <guid>https://sreake.com/blog/google-cloud-rapid-evaluation-api-verification/</guid>
+            <pubDate>Mon, 10 Jun 2024 09:31:15 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。 本記事では、LLMの評価手法とし […]The post Google CloudのRapid evaluation APIを利用したLLMの評価手法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Google Cloud主催パートナー向けイベントで「Google Cloud で利用できるRDBのベクトル検索を徹底解剖！」を話しました。]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/compare_vector_searches_on_google_clouds_rdb</link>
+            <guid>https://zenn.dev/nnaka2992/articles/compare_vector_searches_on_google_clouds_rdb</guid>
+            <pubDate>Sun, 09 Jun 2024 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2024年6月5日にGoogle Cloudがパートナー向けに開催したデータ関連の非公開イベントで「Google Cloud で利用できるRDBのベクトル検索を徹底解剖！」というLTを話しました。https://speakerdeck.com/nnaka2992/google-cloud-deli-yong-dekirurdbnobekutorujian-suo-woche-di-jie-pou非公開イベントのため録画がなかったり、LT枠だった関係で省略してしまった部分があったりしたためブログでより詳細な説明資料のようなものを書きました。 背景Google Cloudが提供する...]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Google Cloud Vertex AI Agent Builderの使い方]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/06/07/171514</link>
             <guid>https://shu-kob.hateblo.jp/entry/2024/06/07/171514</guid>
             <pubDate>Fri, 07 Jun 2024 08:15:14 GMT</pubDate>
-            <content:encoded><![CDATA[RAG(Retrieval-Augmented Generation)RAG（Retrieval Augmented Generation：検索拡張生成）は、検索機能と生成AIを組み合わせた技術です。従来の生成AIは、学習した情報に基づいてしか回答を生成できませんでしたが、RAGは外部の知識ベースから情報を検索し、生成AIの回答に組み込むことで、より正確で幅広い情報を提供することができます。Google Cloudのマネージドサービスの説明今回のハンズオンで使用するGoogle Cloudのマネージドサービスの説明をします。Cloud StorageGoogle Cloud Storage（GCS）は、Google Cloud 上で動作するオブジェクトストレージサービスです。あらゆる種類のデータを安全かつスケーラブルに保存することができ、データ分析、機械学習、アプリケーション開発など、様々な用途に活用できます。Vertex AIVertex AIは、Google Cloud上で動作する、AIモデルの開発と運用を統合的に支援するプラットフォームです。データサイエンティスト、機械学習エンジニア、開発者など、様々なユーザーが効率的に AIや機械学習(ML) モデルを構築、トレーニング、デプロイ、運用できるよう、機能を提供します。GeminiなどのLLMはVertex AI上で使用できます。Vertex AI Agent BuilderVertex AI Agent Builderは、Google Cloud上で動作する、生成 AI エージェントを簡単に構築、デプロイ、管理できるプラットフォームです。元々はVertex AI Search and Conversationと呼ばれていました。コードを記述することなく、自然言語を使用して、インテリジェントな会話型 AI とプロセス自動化エージェントを作成できます。RAGを簡単に作成でき、今回のハンズオンではRAG作成のために利用します。Google Cloudを用いたRAGハンズオンGoogle CloudはGoogleアカウントがあると、簡単に使い始めることができます。初めて使う場合は$300 相当の無料クレジットが付与されます。Cloud Storageのコンソール画面を開きましょう。画面上側の「作成」を押してください。バケットの名前をつけて、画面をスクロールして、一番下の「作成」のボタンを押してください。「このバケットに対する公開アクセス禁止を適用する」にはデフォルトでチェックマークが入っているかと思います。ここにはチェックマークをつけておくことをおすすめします。「確認」ボタンを押します。バケットができました。RAGに入れるPDFを入手したいと思いますが、私はインターネット上で無料入手できる情報処理推進機構(IPA)のものを10種ダウンロードしました。皆さんはご自身の好きなPDFをお使いください。非機能要件記述とアーキテクチャ記述ガイドhttps://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ps6vr700000077he-att/000005155.pdfプロジェクトマネジメントの見える化https://www.ipa.go.jp/archive/files/000004090.pdf情報処理システム高信頼化教訓活用ガイドブック(ITサービス編)https://www.ipa.go.jp/archive/files/000051041.pdf情報セキュリティ対策ベンチマークから情報セキュリティ監査へhttps://www.ipa.go.jp/archive/files/000011534.pdf経営に活かす IT 投資の最適化 ～ 情報システムを安心して快適に使うために ～https://www.ipa.go.jp/archive/files/000004568.pdf安全なウェブサイト運営にむけてhttps://www.ipa.go.jp/security/todokede/vuln/ug65p90000019gda-att/000089537.pdf初めての情報セキュリティ対策https://www.ipa.go.jp/security/guide/ps6vr70000007pkg-att/09_hazimete_slide.pdf新・5分でできる！情報セキュリティ自社診断https://www.ipa.go.jp/security/guide/sme/ug65p90000019c86-att/000055848.pdfIPA脆弱性対策コンテンツリファレンスhttps://www.ipa.go.jp/security/guide/ssf7ph000000fjhe-att/000051352.pdfECサイト構築・運用セキュリティガイドラインhttps://www.ipa.go.jp/security/guide/vuln/ps6vr7000000acvt-att/000109337.pdfアップロード後、ファイルがあることを確認できます。Agent Builderを使って、RAGを作っていきましょう。Cloud Storageのドキュメントをベクトル化してAgent Builderに蓄えます。コンソール上で簡単にできます。Agent Builderのコンソール画面を開き、左のサイドバーからデータストアを開いてください。「データストアの作成」ボタンを押します。画面下にスクロールして、「Cloud Storage」を選択します。インポートするファイル・フォルダを選択します。先ほど作成したフォルダを選択しましょう。今回はPDFですので、データの種類は「非構造化ドキュメント」を選択したままにしてください。データストアの構成を決めていきましょう。Locationはデフォルトの「global」のままでいきましょう。データストア名を入力します。「作成」ボタンを押してデータストアを構成していきます。データストアが構成できました。作ったデータストアを見ていきましょう。「アクティビティ」タブを開くと、データのインポート状況を確認できます。時間がかかる場合もあります。終わるまで待ちましょう。データのインポートが完了しました。Agent Builderのサイドバーの「アプリ」からアプリを作成していきます。「CREATE APP」を選択します。内容は「汎用」のままでいいです。下にスクロールします。「アプリ名」、「会社名」を入力し、「続行」ボタンを押します。作成したデータストアを選択します。下にスクロールして、「作成」ボタンを押します。アプリが作成できました。サイドバーの「プレビュー」を押しましょう。検索フォームに入力して、検索をしていきましょう。ここで、「システム障害の予防策」と検索すると、関連する順番にPDFを羅列してくれ、検索文に関連するページも表示してくれます。今回はIPAのドキュメントで行いましたが、技術PDFをRAGに入れておくと、調査が捗りそうですね。なお、オライリー書籍をEBookで購入すると、PDF版を入手でき、RAG作成に重宝しそうです。複数人でRAGを使う場合は、著作権侵害にならないよう十分ご注意ください。法人では社内文書をRAGに配置することで、これまでの検索ではすぐに得られなかった情報へのアクセススピードが上がります。社内データの活用はDXの第一歩でもあります。生成AIの活用を機に、DXを進めていきましょう！GeminiGeminiは、Google AIが開発したマルチモーダル生成AIモデルです。2023年12月にBardとして発表され、2024年2月にGeminiへと改名されました。マルチモーダルとは、テキストだけでなく、画像や音声などのデータも扱うこともでき、より創造的で表現力豊かなコンテンツを作成することができます。また、高度な情報検索が可能で、Google検索の検索結果を活用することで、最新の情報や、専門性の高い知識にもアクセスできます。文章生成、言語翻訳、要約、コード生成、画像生成、音声生成など、様々なタスクを実行することができます。プレビュー版のGemini-1.5は100万トークンに対応しています。この記事もGeminiのWeb版を無料で使用して書いています。https://gemini.google.com/app]]></content:encoded>
+            <content:encoded><![CDATA[RAG(Retrieval-Augmented Generation)RAG（Retrieval Augmented Generation：検索拡張生成）は、検索機能と生成AIを組み合わせた技術です。従来の生成AIは、学習した情報に基づいてしか回答を生成できませんでしたが、RAGは外部の知識ベースから情報を検索し、生成AIの回答に組み込むことで、より正確で幅広い情報を提供することができます。Google Cloudのマネージドサービスの説明今回のハンズオンで使用するGoogle Cloudのマネージドサービスの説明をします。Cloud StorageGoogle Cloud Storage（GCS）は、Google Cloud 上で動作するオブジェクトストレージサービスです。あらゆる種類のデータを安全かつスケーラブルに保存することができ、データ分析、機械学習、アプリケーション開発など、様々な用途に活用できます。Vertex AIVertex AIは、Google Cloud上で動作する、AIモデルの開発と運用を統合的に支援するプラットフォームです。データサイエンティスト、機械学習エンジニア、開発者など、様々なユーザーが効率的に AIや機械学習(ML) モデルを構築、トレーニング、デプロイ、運用できるよう、機能を提供します。GeminiなどのLLMはVertex AI上で使用できます。Vertex AI Agent BuilderVertex AI Agent Builderは、Google Cloud上で動作する、生成 AI エージェントを簡単に構築、デプロイ、管理できるプラットフォームです。元々はVertex AI Search and Conversationと呼ばれていました。コードを記述することなく、自然言語を使用して、インテリジェントな会話型 AI とプロセス自動化エージェントを作成できます。RAGを簡単に作成でき、今回のハンズオンではRAG作成のために利用します。Google Cloudを用いたRAGハンズオンGoogle CloudはGoogleアカウントがあると、簡単に使い始めることができます。初めて使う場合は$300 相当の無料クレジットが付与されます。Cloud Storageのコンソール画面を開きましょう。画面上側の「作成」を押してください。バケットの名前をつけて、画面をスクロールして、一番下の「作成」のボタンを押してください。「このバケットに対する公開アクセス禁止を適用する」にはデフォルトでチェックマークが入っているかと思います。ここにはチェックマークをつけておくことをおすすめします。「確認」ボタンを押します。バケットができました。RAGに入れるPDFを入手したいと思いますが、私はインターネット上で無料入手できる情報処理推進機構(IPA)のものを10種ダウンロードしました。皆さんはご自身の好きなPDFをお使いください。非機能要件記述とアーキテクチャ記述ガイドhttps://www.ipa.go.jp/archive/digital/iot-en-ci/jyouryuu/hikinou/ps6vr700000077he-att/000005155.pdfプロジェクトマネジメントの見える化https://www.ipa.go.jp/archive/files/000004090.pdf情報処理システム高信頼化教訓活用ガイドブック(ITサービス編)https://www.ipa.go.jp/archive/files/000051041.pdf情報セキュリティ対策ベンチマークから情報セキュリティ監査へhttps://www.ipa.go.jp/archive/files/000011534.pdf経営に活かす IT 投資の最適化 ～ 情報システムを安心して快適に使うために ～https://www.ipa.go.jp/archive/files/000004568.pdf安全なウェブサイト運営にむけてhttps://www.ipa.go.jp/security/todokede/vuln/ug65p90000019gda-att/000089537.pdf初めての情報セキュリティ対策https://www.ipa.go.jp/security/guide/ps6vr70000007pkg-att/09_hazimete_slide.pdf新・5分でできる！情報セキュリティ自社診断https://www.ipa.go.jp/security/guide/sme/ug65p90000019c86-att/000055848.pdfIPA脆弱性対策コンテンツリファレンスhttps://www.ipa.go.jp/security/guide/ssf7ph000000fjhe-att/000051352.pdfECサイト構築・運用セキュリティガイドラインhttps://www.ipa.go.jp/security/guide/vuln/ps6vr7000000acvt-att/000109337.pdfアップロード後、ファイルがあることを確認できます。Agent Builderを使って、RAGを作っていきましょう。Cloud Storageのドキュメントをベクトル化してAgent Builderに蓄えます。コンソール上で簡単にできます。Agent Builderのコンソール画面を開き、左のサイドバーからデータストアを開いてください。「データストアの作成」ボタンを押します。画面下にスクロールして、「Cloud Storage」を選択します。インポートするファイル・フォルダを選択します。先ほど作成したフォルダを選択しましょう。今回はPDFですので、データの種類は「非構造化ドキュメント」を選択したままにしてください。データストアの構成を決めていきましょう。Locationはデフォルトの「global」のままでいきましょう。データストア名を入力します。「作成」ボタンを押してデータストアを構成していきます。データストアが構成できました。作ったデータストアを見ていきましょう。「アクティビティ」タブを開くと、データのインポート状況を確認できます。時間がかかる場合もあります。終わるまで待ちましょう。データのインポートが完了しました。Agent Builderのサイドバーの「アプリ」からアプリを作成していきます。「CREATE APP」を選択します。「検索」を選択します。内容は「汎用」のままでいいです。下にスクロールします。「アプリ名」、「会社名」を入力し、「続行」ボタンを押します。作成したデータストアを選択します。下にスクロールして、「作成」ボタンを押します。アプリが作成できました。サイドバーの「プレビュー」を押しましょう。検索フォームに入力して、検索をしていきましょう。ここで、「システム障害の予防策」と検索すると、関連する順番にPDFを羅列してくれ、検索文に関連するページも表示してくれます。今回はIPAのドキュメントで行いましたが、技術PDFをRAGに入れておくと、調査が捗りそうですね。なお、オライリー書籍をEBookで購入すると、PDF版を入手でき、RAG作成に重宝しそうです。複数人でRAGを使う場合は、著作権侵害にならないよう十分ご注意ください。法人では社内文書をRAGに配置することで、これまでの検索ではすぐに得られなかった情報へのアクセススピードが上がります。社内データの活用はDXの第一歩でもあります。生成AIの活用を機に、DXを進めていきましょう！GeminiGeminiは、Google AIが開発したマルチモーダル生成AIモデルです。2023年12月にBardとして発表され、2024年2月にGeminiへと改名されました。マルチモーダルとは、テキストだけでなく、画像や音声などのデータも扱うこともでき、より創造的で表現力豊かなコンテンツを作成することができます。また、高度な情報検索が可能で、Google検索の検索結果を活用することで、最新の情報や、専門性の高い知識にもアクセスできます。文章生成、言語翻訳、要約、コード生成、画像生成、音声生成など、様々なタスクを実行することができます。プレビュー版のGemini-1.5は100万トークンに対応しています。この記事もGeminiのWeb版を無料で使用して書いています。https://gemini.google.com/app]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[オブザーバビリティ再入門みたいなイベントで登壇しました。再入門だけが創造的な勉強会みたいな主張をした。 #o11y_mackerel]]></title>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/istio-ambient-mesh-inpod-redirection/</guid>
             <pubDate>Tue, 23 Apr 2024 06:05:05 GMT</pubDate>
             <content:encoded><![CDATA[先日Istio 1.21.0がリリースされ ambient meshにinpod redirectionが実装されました。（ambient meshはまだalphaなので本番環境では非推奨です） inpod redire […]The post Istio Ambient Mesh の inpod redirection 試してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Dev Containerを使ってみよう]]></title>
-            <link>https://zenn.dev/bells17/articles/devcontainer-2024</link>
-            <guid>https://zenn.dev/bells17/articles/devcontainer-2024</guid>
-            <pubDate>Mon, 22 Apr 2024 18:05:48 GMT</pubDate>
-            <content:encoded><![CDATA[Dev Containerを使ってみようDev Containerを使う上で知っておくと良さげな情報のまとめ記事です前にRemote SSHでDev Containerの環境を構築する記事を書いたので、今回はDev Container全般の情報をまとめてみましたhttps://zenn.dev/bells17/articles/remote-ssh-devcontainer tl;drDev Containerを使うと開発環境をコンテナで構築できるよ(ランタイムとかツール類含めて！)docker composeだとアプリケーションを動作させる環境は作れるけどDev C...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[「セキュリティ・キャンプ全国大会2024」にスリーシェイクのエンジニアが講師として登壇]]></title>
-            <link>https://sreake.com/blog/security/</link>
-            <guid>https://sreake.com/blog/security/</guid>
-            <pubDate>Mon, 22 Apr 2024 01:07:46 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）に在籍するエンジニアが、独立行政法人情報処理推進機構と一般社団法人セキュリティ・キャンプ協議会が共催する「セキュリティ・キャンプ […]The post 「セキュリティ・キャンプ全国大会2024」にスリーシェイクのエンジニアが講師として登壇 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
