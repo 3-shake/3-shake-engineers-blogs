@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 11 Jun 2024 18:33:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Jun 2024 18:33:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[KubernetesにおけるCELの記述方法まとめ]]></title>
+            <link>https://sreake.com/blog/kubernetes-cel-description/</link>
+            <guid>https://sreake.com/blog/kubernetes-cel-description/</guid>
+            <pubDate>Wed, 12 Jun 2024 03:33:38 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Kubernetes 1.30でValidating Admission Policyの機能がGAするなど、開発中の新機能にCELが組み込まれるケースが増えています。今後Kuberneteで使われる機会が増えそ […]The post KubernetesにおけるCELの記述方法まとめ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのRapid evaluation APIを利用したLLMの評価手法]]></title>
             <link>https://sreake.com/blog/google-cloud-rapid-evaluation-api-verification/</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2024/04/wireguard-exporter/</guid>
             <pubDate>Sun, 28 Apr 2024 12:57:31 GMT</pubDate>
             <content:encoded><![CDATA[先日、家のラズパイに Grafana Alloy をセットアップしてメトリクス可視化の環境はできているので WireGuard での VPN 通信のメトリクスを可視化してみようかなと試してみまし]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Istio Ambient Mesh の inpod redirection 試してみた]]></title>
-            <link>https://sreake.com/blog/istio-ambient-mesh-inpod-redirection/</link>
-            <guid>https://sreake.com/blog/istio-ambient-mesh-inpod-redirection/</guid>
-            <pubDate>Tue, 23 Apr 2024 06:05:05 GMT</pubDate>
-            <content:encoded><![CDATA[先日Istio 1.21.0がリリースされ ambient meshにinpod redirectionが実装されました。（ambient meshはまだalphaなので本番環境では非推奨です） inpod redire […]The post Istio Ambient Mesh の inpod redirection 試してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
