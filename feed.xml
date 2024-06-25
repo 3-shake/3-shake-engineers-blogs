@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 24 Jun 2024 18:33:17 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 25 Jun 2024 18:33:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ReckonerとATBeX Service LinkのGCP接続を検証してみた]]></title>
+            <link>https://sreake.com/blog/reckoner-atbex-service-link-gcp/</link>
+            <guid>https://sreake.com/blog/reckoner-atbex-service-link-gcp/</guid>
+            <pubDate>Tue, 25 Jun 2024 07:15:31 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部のsatokenです。 普段はお客様向けのSRE案件も担当していますが、弊社SaaSのReckonerのSREも兼務しています。 これまでReckonerからDataソースにアクセスするときは […]The post ReckonerとATBeX Service LinkのGCP接続を検証してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Go開発者のための遊び場を用意する - Kindで始めるKubernetesの開発環境構築]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/06/21/135855</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/z63d/articles/496f787cda423c</guid>
             <pubDate>Sun, 05 May 2024 04:36:28 GMT</pubDate>
             <content:encoded><![CDATA[概要Pulumi ESC (Environments, Secrets, and Configuration)クラウドインフラとアプリケーションの secret と configuration を管理できるPulumi Cloud で利用可能なマネージドサービス2023/10 にリリース現在はプレビュー段階 ドキュメントに記載されている内容をざっくり要約Pulumi ESC はクラウド環境における secret と configuration の複雑さに対処し、メンテナンスの負担を軽減し、コストのかかるミスを減らし、「secure by default」な体制を構...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[リトライ処理を追加するとバッチが安定することがあることもそこそこあるので「avast/retry-go」を使ってみる]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2024/05/02/114958</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2024/05/02/114958</guid>
-            <pubDate>Thu, 02 May 2024 02:49:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにインフラエンジニアは日々の業務でプログラムを書く機会が多く、その中で処理の実行やHTTPの通信などでリトライ処理を実装する必要があることが少なくありません。リトライ処理を実装する必要は必ずしもなくても、実装することでバッチが安定することがあります。もっと言っておくとリトライ処理を実装することで、一時的なエラーによる処理の失敗を回避し、バッチ処理の安定性が向上する可能性があります。実行基盤によってジョブの再試行の自動化、最大再試行回数を設定するやPod失敗のバックオフポリシーなどとの兼ね合いを考える必要もあると思います。あとはマジでガー不のバグを引き寄せることもあるので注意が必要です。はじめにシンプルな例最大リトライ回数の指定次のリトライまでの待ち時間の設定特定の例外のみリトライするケースさいごに今回はGolangには「retry-go」というリトライ処理を簡潔に実装できるライブラリがあり、これを使うと非常に簡単にリトライ機能を追加できます。シェルスクリプトでも簡単に実装できるのですが今回は紹介しない。avast/retry-goは、リトライ処理を実装するための便利なライブラリです。このライブラリを使えば、ごく少ない行数でリトライ機能を実装できます。github.comインストールはgo get github.com/avast/retry-goで行えます。このライブラリの使い方は非常に簡単です。リトライ対象の処理をラップするだけで、設定した回数とウェイト時間に従ってリトライが実行されます。設定可能なオプションも豊富で、リトライ条件やログ出力など細かなカスタマイズも可能です。リトライ処理の実装は、単純に見えて一歩踏み込もうとすると意外と難しい面があります。retyr-goを使えば、そういった難しさから開放され、安定したリトライ処理を簡単に実装できます。バッチ処理の安定性向上に役立つことは間違いありません。Golangを使ったプログラミングにおいて、retry-goはリトライ処理の実装を格段に簡単にしてくれる強力なライブラリです。ぜひ一度試してみてはいかがでしょうか。シンプルな例使い方は簡単で、retry.Doを使って対象の関数をラップするだけでリトライ処理を実装できます。例外が発生した場合にはリトライが行われ、何も例外が発生しなければ値が返ってきます。package mainimport (    "fmt"    "math/rand"    "github.com/avast/retry-go")func randomErrorSimple() error {    num := rand.Intn(10)    if num > 2 {        fmt.Printf("Error: num=%d\n", num)        return fmt.Errorf("Error!")    }    fmt.Printf("Success: num=%d\n", num)    return nil}func main() {    err := retry.Do(        randomErrorSimple,    )    if err != nil {        fmt.Printf("Error: %v\n", err)    }}実際に実行してみる。3回失敗して4回目にError値が返っていないので通常に終了。$ go run main.goError: num=5Error: num=4Error: num=3Success: num=0最大リトライ回数の指定retry.Attemptsを使うと、指定した回数だけリトライを行うことができます。指定した回数に達した後に例外が発生した場合はエラーが返されます。package mainimport (    "fmt"    "github.com/avast/retry-go")func errorWithMaxAttempts() error {    fmt.Println("Error occurred!")    return fmt.Errorf("Error occurred!")}func main() {    retryWithMaxAttempts()}func retryWithMaxAttempts() {    err := retry.Do(        errorWithMaxAttempts,        retry.Attempts(3),    )    if err != nil {        fmt.Println("3 times failed")    }}実際に実行すると3回失敗して終了している。$ go run main.go Error occurred!Error occurred!Error occurred!3 times failed次のリトライまでの待ち時間の設定retry.Delayを使って、次のリトライまで指定した時間待つことができます。例えば、APIのレート制限に引っかかって例外が発生した場合などに便利です。package mainimport (    "fmt"    "time"    "github.com/avast/retry-go")func errorWithDelay() error {    now := time.Now().Format("15:04:05")    fmt.Printf("Error occurred!: %s\n", now)    return fmt.Errorf("Error occurred!")}func main() {    retryWithDelay()}func retryWithDelay() {    err := retry.Do(        errorWithDelay,        retry.Attempts(3),        retry.Delay(3*time.Second),    )    if err != nil {        fmt.Println("3 times failed")    }}実行結果は以下のようになる。ちゃんと待ち時間を指定できている。$ go run main.go Error occurred!: 01:35:16Error occurred!: 01:35:20Error occurred!: 01:35:263 times failed特定の例外のみリトライするケースretry.RetryIfでリトライする場合の例外条件を指定することができます。特定の例外が発生した場合のみリトライ処理を行うことができます。package mainimport (    "fmt"    "github.com/avast/retry-go")func errorWithSpecificError(num int) error {    if num == 0 {        fmt.Println("0 is invalid")        return fmt.Errorf("value error")    }    return fmt.Errorf("Error occurred!: num=%d", num)}func main() {    retryWithSpecificError()}func retryWithSpecificError() {    err := retry.Do(        func() error { return errorWithSpecificError(0) },        retry.Attempts(3),        retry.RetryIf(func(err error) bool { return err.Error() == "value error" }),    )    if err != nil {        fmt.Println("Value Error occurred")    }    err = retry.Do(        func() error { return errorWithSpecificError(1) },    )    if err != nil {        fmt.Printf("%v\n", err)    }}実行結果です。$ go run main.go0 is invalid0 is invalid0 is invalidValue Error occurredさいごにretry-goを使用することでお手軽にリトライ処理を追加できて便利です。特に、最大リトライ回数の設定、次のリトライまでの待ち時間の設定、特定の例外のみリトライするケースなど、様々な状況に対応できる機能が用意されています。他にも色々な機能があるので気になった方は公式ドキュメントを見てみてください。github.com]]></content:encoded>
         </item>
     </channel>
 </rss>
