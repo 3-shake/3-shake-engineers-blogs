@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 06 Jul 2024 04:24:42 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Jul 2024 18:32:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -61,7 +61,7 @@
             <link>https://speakerdeck.com/hiroki_hasegawa/marutipurodakutonozu-zhi-demaikurosabisuakitekutiyawozhi-erucicdpuratutohuomushe-ji</link>
             <guid>https://speakerdeck.com/hiroki_hasegawa/marutipurodakutonozu-zhi-demaikurosabisuakitekutiyawozhi-erucicdpuratutohuomushe-ji</guid>
             <pubDate>Fri, 28 Jun 2024 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA["Findy開発生産性Conference" の発表資料です✊🏻生産性を支えるためのプラットフォームエンジニアリング事例として、以下の３つの取り組みを紹介しました！・プラットフォーム設計導入のために、横断的コミュニケーションが必要である・プラットフォームエンジニアリングで、マルチプロダクトの生産性を支える・プラットフォームエンジニアリングで、各マイクロサービスの生産性を支える🐦 ツイート：https://x.com/Hiroki__IT/status/1806559579180011572]]></content:encoded>
+            <content:encoded><![CDATA["Findy開発生産性Conference" の発表資料です✊🏻生産性を支えるためのプラットフォームエンジニアリング事例として、以下の３つの取り組みを紹介しました！・プラットフォーム設計導入のために、横断的コミュニケーションが必要である・プラットフォームエンジニアリングで、マルチプロダクトの生産性を支える・プラットフォームエンジニアリングで、各マイクロサービスの生産性を支える🐦 ツイート：https://x.com/Hiroki__IT/status/1806559579180011572✍🏻 社内レポート：https://note.3-shake.com/n/n8efac1be167d]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[運用者の各領域で向き合うLLM]]></title>
