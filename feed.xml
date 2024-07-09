@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 08 Jul 2024 18:33:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jul 2024 18:33:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[『Platform Engineering とSREの門』という間違ったみたいなタイトルで登壇しました。 #PEK2024]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2024/07/09/215147</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2024/07/09/215147</guid>
+            <pubDate>Tue, 09 Jul 2024 12:51:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこんにちは。先日、Platform Engineering Kaigi 2024にて「Platform Engineering とSREの門」というタイトルで登壇させていただきました。www.cnia.ioPlatform EngineeringとSREは、多くのソフトウェアエンジニアにとっては馴染みのない分野かもしれません。私自身、最初はこれらを比較することに抵抗がありました。しかし、SNSで不毛に続くやり取りを見ていると本当に鬱陶しいと感じるようになりこの戦争を終わらせに来た!!!!みたいなノリで登壇し始めました。ここ数年の経験を通じて、Platform EngineeringとSREが目指す先は同じだということがわかっていました。システムの信頼性と開発生産性、効率性の向上という似たような目標に向かって、異なるアプローチで取り組んでいるのです。これらの分野の強みを理解し、比較することでより効果的でそれぞれの組織らしいシステム運用が可能になると考えました。具体と抽象作者:細谷 功dZERO（インプレス）Amazon今回のセッションでは、両分野の特徴と、それらを融合させることの意義について話させていただきました。メテオブラックドラゴン召喚です。アプローチや視点を変えることで得られる新たな知見や、より良いソリューションの可能性について共有できたと思います。多くの方から貴重なフィードバックをいただき、大変嬉しく思います。これらの意見は、モチベーションに繋がるのでありがたいです。なお、Platform EngineeringとSREを比較する登壇は今回で3回目となりました。今後は、特別な要望がない限り、この主題での自主的な登壇は控えさせていただこうと考えています。ただし、ご要望があれば喜んでお話しさせていただきますので、お気軽にお声がけください。登壇資料普通に笑いが起きるかなって思ってたんですけど大きくスベりました。 speakerdeck.com今回の発表では、予想と異なる反応があり、自分の考えと聴衆の期待にズレがあったことを実感しました。がこういった経験も、今後の改善につながる貴重なフィードバックだと捉えています。まず、登壇したことが偉いので、はい。参考資料今回のイベントを含め、Platform Engineering、SRE、開発生産性、プロダクトマネジメントに関する優れた資料が多数存在します。以下に、これらの分野について理解を深めるのに役立つ資料をリストアップしました。これらの資料は、理論的な基礎から実践的なアプローチまで幅広くカバーしており、各分野の最新トレンドや洞察を得るのに適しています。また、実際の現場での適用例や、組織設計、チーム構築に関する情報も含まれています。興味のある分野や、現在直面している課題に応じて、以下の資料を参照することをおすすめします。これらの知見は、より効果的なシステム運用や組織づくりに貢献するでしょう。O'Reilly Japan – SRE サイトリライアビリティエンジニアリングO'Reilly Japan – サイトリライアビリティワークブックO'Reilly Japan – SREの探求Becoming SRESRE at Google: How to structure your SRE teamレトロスペクティブガイドWhat Is Platform Engineering?Top Strategic Technology Trends for 2023: Platform EngineeringMaking the Business Case for a Dedicated Platform Engineering TeamSRE NEXTPlatform Engineering MeetupチームトポロジーSLO サービスレベル目標Effective DevOpsオブザーバビリティ・エンジニアリングWebエンジニアのための監視システム実装ガイドマイクロサービスの現場からプラットフォームエンジニアリングの可能性を探る！CNCF Platforms White Paper道を照らす: プラットフォーム エンジニアリング、ゴールデンパス、セルフサービスのパワーPlatform Engineering on Kubernetes開発生産性について議論する前に知っておきたいことPlatform Engineering 101What is platform engineering?実践チームトポロジー： プラットフォーム性とイネイブリング性の戦略【資料公開】30分で分かった気になるチームトポロジーTeam dynamics: Five keys to building effective teamsThe History of DevOps Reports作りすぎない技術 - API時代の開発努力の在り方について考えるタクシーアプリ『GO』におけるプラットフォームエンジニアリングの実践The DevOps Handbook, 2nd EditionGrokking Continuous Deliveryこれらの資料を通じて、技術と組織の両面からシステム運用の改善について学ぶことができます。継続的な学習と実践を通じて、より良いエンジニアリング文化の構築に貢献できることを願っています。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Pull requestの概要の作成とコードの改善を提案するツールを作ってみた]]></title>
+            <link>https://sreake.com/blog/pr-guardian/</link>
+            <guid>https://sreake.com/blog/pr-guardian/</guid>
+            <pubDate>Tue, 09 Jul 2024 11:10:06 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部でインターンをしている村山です。 今回は、PR Guardianというツールの開発と検証をしました。PR GuardianはPull Requestの概要の作成、コードの改 […]The post Pull requestの概要の作成とコードの改善を提案するツールを作ってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Platform Engineering と SRE の門 ]]></title>
+            <link>https://speakerdeck.com/nwiizo/platform-engineering-to-sre-nomen</link>
+            <guid>https://speakerdeck.com/nwiizo/platform-engineering-to-sre-nomen</guid>
+            <pubDate>Tue, 09 Jul 2024 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Platform Engineering とSREの門 というタイトルで登壇しました。入門のタイポではありません。イベント名: Platform Engineering Kaigi 2024イベントURL:https://www.cnia.io/pek2024/登壇ブログ:『Platform Engineering とSREの門』という間違ったみたいなタイトルで登壇しました。 #PEK2024https://syu-m-5151.hatenablog.com/entry/2024/07/09/215147]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[数字に振り回されず完璧を目指さない為に - Implementing Service Level Objectives の読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/07/05/163659</link>
@@ -216,27 +237,6 @@
             <guid>https://zenn.dev/nnaka2992/articles/compare_alloydb_and_postgres</guid>
             <pubDate>Fri, 17 May 2024 15:16:13 GMT</pubDate>
             <content:encoded><![CDATA[概要Google Cloudが提供するPostgreSQL互換データベースであるAlloyDBのパフォーマンスをトランザクション用途・分析用途の双方から検証する。今回の検証ではAlloyDBの上限を見定めるのではなく、CloudSQLと比べてどのようなパフォーマンスになるを目的とする。 TL;DR絞り込み条件がインデックスに限定されない場合、AlloyDBのパフォーマンスメリットが特に大きくなる。絞り込み条件がインデックスに限定され、かつデータサイズが小さい場合、CloudSQL for PostgreSQLのコストパフォーマンスが大きくなる。現将・将来のワークロード...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[Kubernetes 1.30] kube-proxy の nftables モード]]></title>
-            <link>https://zenn.dev/toversus/articles/dcb888d73f0615</link>
-            <guid>https://zenn.dev/toversus/articles/dcb888d73f0615</guid>
-            <pubDate>Thu, 16 May 2024 23:43:33 GMT</pubDate>
-            <content:encoded><![CDATA[kube-proxyService へのトラフィックをプロキシするコンポーネントのデフォルト実装e.g.) Cluster IP への通信を Pod IP にリダイレクトするEndpointSlice, Service, Node などのオブジェクトの変更を検知して Service を介したトラフィックのルーティングを可能にするContainer Network Interface (CNI) vs kube-proxyCNI が Pod 間で通信できるように Pod IP の払い出しやルーティングをセットアップするPod は一時的なものかつ Pod ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SLOいつ決めましょう？]]></title>
-            <link>https://speakerdeck.com/abnoumaru/sloitujue-memasiyou</link>
-            <guid>https://speakerdeck.com/abnoumaru/sloitujue-memasiyou</guid>
-            <pubDate>Thu, 16 May 2024 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[第3木曜LT会というイベントの「SREどうでしょう」という会でSLOはいつ決めたらよいか？自分なりに考えた結果を発表したLT資料https://metaps.connpass.com/event/313921/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud SQL(MySQL)とSpring Bootの画像検索アプリケーション作成]]></title>
-            <link>https://sreake.com/blog/cloudsql-spring-boot-image-search-app/</link>
-            <guid>https://sreake.com/blog/cloudsql-spring-boot-image-search-app/</guid>
-            <pubDate>Wed, 15 May 2024 00:02:44 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Google Cloud Next ’24 にて Cloud SQL for MySQL にて Embedding データを入れられるようになったというアナウンスが有りました。 https://cl […]The post Cloud SQL(MySQL)とSpring Bootの画像検索アプリケーション作成 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
