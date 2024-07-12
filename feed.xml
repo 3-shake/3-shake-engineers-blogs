@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 11 Jul 2024 18:33:26 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Jul 2024 18:34:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud Geminiのマルチモーダルを体験 (ハンズオン)]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/07/12/185724</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/07/12/185724</guid>
+            <pubDate>Fri, 12 Jul 2024 09:57:24 GMT</pubDate>
+            <content:encoded><![CDATA[genai-users.connpass.com↑こちらの勉強会の資料になります。PDFファイルを読み取らせるPDFファイルは複数アップロード可能合計10MBまで1ファイル300ページまでモデルに、gemini-1.5-flash-001 を選択すると、タイムアウトするgemini-1.5-pro-001 の方がよい音声データをBigQueryでテキスト化して解析zenn.dev動画の処理も可能60秒を超える音声は処理できない模様長い音声を処理するSpeech-to-Textを利用]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Istioによるトラフィック制御で仮想待合室システムを目指すけどもやな]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/07/10/120448</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/z63d/articles/0d6b3ee4e9a44e</guid>
             <pubDate>Sat, 18 May 2024 05:30:31 GMT</pubDate>
             <content:encoded><![CDATA[背景副業で Pulumi を使っています。プロバイダーなどのパッケージのバージョン更新をサボっていたのですが、対応しようと思い Renovate で更新するようにしました。しかし、PR が来た時点では Pulumi の差分が分かりません。ローカルで pulumi preview を実行して差分がないことを毎回確認するのは面倒なので GitHub Actions で pulumi preview を実行して PR のコメントで差分を表示してもらうことにしました。 環境Pulumi CloudPulumi + TypeScriptGoogle Cloud 実装していく...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SLOいつ決めましょう？というタイトルで #第3木曜LT会 に登壇した]]></title>
-            <link>https://abnoumaru.com/tech/2024-05-18-third-thursday-lt/</link>
-            <guid>https://abnoumaru.com/tech/2024-05-18-third-thursday-lt/</guid>
-            <pubDate>Sat, 18 May 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[登壇してきました]]></content:encoded>
         </item>
     </channel>
 </rss>
