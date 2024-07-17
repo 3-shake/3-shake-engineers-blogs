@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 16 Jul 2024 18:33:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 18:34:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[モダンインフラの基礎を学ぼう！実践コンテナ入門]]></title>
+            <link>https://speakerdeck.com/bells17/motaninhuranoji-chu-woxue-hou-shi-jian-kontenaru-men</link>
+            <guid>https://speakerdeck.com/bells17/motaninhuranoji-chu-woxue-hou-shi-jian-kontenaru-men</guid>
+            <pubDate>Wed, 17 Jul 2024 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[技育CAMPアカデミアでの発表資料ですhttps://talent.supporterz.jp/events/8cb9a300-506c-4d9d-b2af-e9924e0209a2/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Grafana Beylaの出来るコト出来ないコト]]></title>
             <link>https://zenn.dev/kojake_300/articles/4238a66124d095</link>
@@ -27,6 +34,13 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2024/07/15/234513</guid>
             <pubDate>Mon, 15 Jul 2024 14:45:13 GMT</pubDate>
             <content:encoded><![CDATA[はじめに前回の記事でKubernetesとIstioを使ってトラフィック制御システムを作ったわけですが、そんな複雑なものを作っておいて「はい、終わり」じゃあんまりですよね。Istio in Action (English Edition)作者:Posta, Christian E.,Maloku, RinorManningAmazon今回は、その中身をちゃんと理解しようというわけです。Kiali、Jaeger、Grafana、それにEnvoy APIといった名前を聞いて、尻込みしてしまう人がいるかもしれません。でも心配いりません。これらのツールを使えば、Istioの設定がどのように動いているか、チェックできます。ちなみに、この情報は Istio にやたらと詳しい地下強制労働者さんから聞いた話です。彼の知識には頭が下がります。正直、面倒くさいと思う部分もありますが、こういうツールがあるおかげで、私たちはこんな複雑なシステムを扱えているんですよね。まあ、眠くならないように頑張って説明しますから、少しはついてきてください。きっと最後には「へぇ、こんなことができるんだ」って思えるはずです。...たぶん。1. Istio のゆかいなアドオンのインストールと設定1.1 Prometheusのインストールまず、Prometheusをインストールします。Prometheusは、メトリクスの収集と保存を担当します。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/prometheus.yaml1.2 Kialiのインストール次に、Kialiをインストールします。Kialiは、サービスメッシュの可視化とモニタリングを提供します。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/kiali.yaml1.3 JaegerのインストールJaegerは、分散トレーシングを提供し、マイクロサービス間の要求の流れを可視化します。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/jaeger.yaml1.4 Grafanaのインストール最後に、Grafanaをインストールします。Grafanaは、メトリクスの視覚化とダッシュボード作成のためのツールです。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/grafana.yaml1.5 インストールの確認すべてのコンポーネントが正常にデプロイされたことを確認します。kubectl get pods -n istio-system2. 各ツールへのアクセス設定2.1 Kialiへのアクセスkubectl port-forward svc/kiali 20001:20001 -n istio-systemブラウザで http://localhost:20001 にアクセスしてKialiのダッシュボードを開きます。2.2 Jaegerへのアクセスkubectl port-forward svc/tracing 16686:80 -n istio-systemブラウザで http://localhost:16686 にアクセスしてJaegerのUIを開きます。2.3 Grafanaへのアクセスkubectl port-forward svc/grafana 3000:3000 -n istio-systemブラウザで http://localhost:3000 にアクセスしてGrafanaのダッシュボードを開きます。]3. Kialiを使用したIstio設定の可視化3.1 サービスグラフの確認Kialiのダッシュボードで「Graph」タブを選択し、「Namespace」で「default」を選択します。ここで、前回設定したwaiting-room-appサービスとそのトラフィックフローを確認できます。3.2 VirtualServiceの確認「Istio Config」タブを選択し、「VirtualService」を探します。waiting-room-vsをクリックすると、詳細な設定を確認できます。トラフィックルーティングルールタイムアウト設定リトライ設定フォールト注入（遅延）設定3.3 DestinationRuleの確認同じく「Istio Config」タブで、「DestinationRule」のwaiting-room-drを確認します。接続プール設定負荷分散設定異常検知設定3.4 Gatewayの確認「Istio Config」タブで「Gateway」のwaiting-room-gatewayを確認し、外部トラフィックの受け入れ設定を確認します。4. Jaegerを使用したトレーシングの確認JaegerのUIで、サービス名（例：waiting-room-app）を選択し、トレースを検索します。各トレースは、リクエストがシステムを通過する際の詳細な経路と時間を示します。トレースの詳細を確認し、各スパンのレイテンシーを分析します。これにより、どの部分で遅延が発生しているかを特定できます。エラーが発生した場合にはトレースを確認し、問題の原因を特定します。5. Grafanaを使用したメトリクスの可視化Grafanaは、Istioで構築されたシステムのメトリクス可視化ツールとして活用できる可能性があります。主に以下の3つの側面から構成されることが考えられます：Istio関連の既存ダッシュボード（Mesh、Service、Workload）の活用システム固有のカスタムダッシュボード作成（リクエスト数、レスポンスタイムなど）重要メトリクスに対するアラート設定これらの機能を通じて、システムのパフォーマンスと健全性をより効果的に監視し、潜在的な問題の早期発見や運用判断の一助となる可能性があります。6. Envoy APIを使用した詳細設定の確認Envoy APIを使用することで、Istioの詳細な設定を確認できる可能性があります。以下に、主要な設定を確認する方法を示します。6.1 クラスター設定の確認クラスター設定を確認するには、以下のコマンドを実行します。kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump | grep -n -e '@type.*ClustersConfigDump' -e 'waiting-room-app'このコマンドにより、waiting-room-appサービスに関連するクラスター設定が表示される可能性があります。接続プールの設定や異常検知の設定を確認できるかもしれません。6.2 リスナー設定の確認リスナー設定を確認するには、以下のコマンドを実行します。kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump | grep -n -e '@type.*ListenersConfigDump' -e 'route_config_name'この出力から、VirtualServiceで設定したトラフィックルーティングルールやフォールト注入の設定を確認できる可能性があります。6.3 ルート設定の確認ルート設定を確認するには、以下のコマンドを実行します。kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump | grep -n -e '@type.*RoutesConfigDump' -e 'route_config_name'この出力から、VirtualServiceで設定したタイムアウトやリトライの設定を確認できるかもしれません。6.4 設定の詳細分析より詳細な分析が必要な場合は、設定をファイルに保存し、ローカル環境で解析することも考えられます：kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump > envoy_config.jsonこれらの方法を通じて、Envoy APIを使用したIstioの詳細設定の確認ができる可能性があります。ただし、実際の出力や確認できる情報は、システムの構成や設定によって異なる場合があることにご注意ください。7. 統合分析と最適化7.1 パフォーマンスの総合評価Kiali、Jaeger、Grafana、およびEnvoy APIから得られた情報を統合して、システム全体のパフォーマンスを評価します。7.2 ボトルネックの特定各ツールの情報を突き合わせて、システムのボトルネックを特定します。例えば、Jaegerのトレースで特定の処理に時間がかかっていることが分かり、同時にGrafanaでそのサービスのCPU使用率が高いことが確認できれば、そのサービスのリソース割り当てを見直す必要があるかもしれません。7.3 設定の最適化特定された問題に基づいて、Istioの設定（VirtualService、DestinationRule、Gatewayなど）を最適化します。例えば、タイムアウトの調整、リトライ回数の変更、負荷分散ポリシーの修正などを行います。7.4 継続的なモニタリングと改善設定変更後も継続的にシステムをモニタリングし、パフォーマンスの変化を観察します。必要に応じて更なる最適化を行います。8. まとめさて、長々と説明してきましたが、結局のところ何が言いたかったかって？本記事の要点は、Kiali、Jaeger、Grafana、そしてEnvoy APIといった各種ツールが、Istioの運用管理において非常に有用だということです。これらのツールを適切に活用することで、Istioの複雑な設定や動作状況を詳細に可視化し、効率的に分析することが可能になります。結果として、システムの挙動をより深く理解し、適切に管理できるようになるのです。Jaegerでシステムの動きを追跡し、Grafanaでそれを見やすいグラフに変換する。そうすることで、システムの挙動が少しずつ見えてくる。潜在的な問題？ そりゃあ、早めに見つかれば御の字ですよ。でも、見つけられるようになったこと自体がすごいんです。次回は何をするかって？ はいはい、トラフィックの流れを観察して、待ち行列をもっと効率的に管理する方法を探ります。リアルタイムで監視して、状況に応じて設定を調整する...なんて、ちょっとワクワクしませんか？ ...いや、本当に楽しみにしてる人もいるんですよ。知らんけど。確かに、こういった作業は面倒くさく感じることもあります。でも、これらのツールのおかげで、複雑なシステムが滑らかに動いていることが確認できるんです。結局のところ、ユーザーに最高の体験を提供できること、それが仕事の醍醐味じゃないでしょうか。...まあ、お疲れ様でした。次回も適度にご期待ください。参考リンクKiali - Observability for IstioJaeger - Open source, end-to-end distributed tracingGrafana - The open observability platformIstio - Debugging Envoy and IstiodEnvoy - Admin interfaceIstio - Traffic Management Best PracticesPrometheus - Getting StartedIstio - Observability]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ShellScriptで自動化を楽にしたい時に知っておいても良いこと]]></title>
+            <link>https://sreake.com/blog/shellscript-good-practices/</link>
+            <guid>https://sreake.com/blog/shellscript-good-practices/</guid>
+            <pubDate>Sun, 14 Jul 2024 23:08:45 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは、皆さん。今日は、シェルスクリプトを使った高度な自動化のベストプラクティスとパターンについて解説します。これらは、ちょっとした知識で実行でき、作業を大幅に効率化できるTipsです。シェルスクリプトは、 […]The post ShellScriptで自動化を楽にしたい時に知っておいても良いこと first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Google Cloud Geminiのマルチモーダルを体験 (ハンズオン)]]></title>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/nnaka2992/articles/play_with_cloud_sql_vector_search</guid>
             <pubDate>Sun, 26 May 2024 15:54:14 GMT</pubDate>
             <content:encoded><![CDATA[Google Cloud Next '24でGoogle Cloudが提供するすべてのマネージドデータベースにベクトル検索の機能が追加されました。[1]今回はそのなかのCloud SQL for PostgreSQLにフォーカスしてベクトル検索機能を試します。 Cloud SQL for PostgreSQL インスタンススペックエディションEnterprisevCPU2RAM8GBストレージタイプSSDZoneasia-northeast1接続パブリックIPを有効化 必要な設定を行うデータベースを作成す...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Geminiはトーク分析ツールに取って代わるか]]></title>
-            <link>https://sreake.com/blog/gemini-talk-analysis/</link>
-            <guid>https://sreake.com/blog/gemini-talk-analysis/</guid>
-            <pubDate>Fri, 24 May 2024 10:28:39 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 初めまして、Sreake事業部アプリケーション開発支援チームの大美です。 先日、Googleのマルチモーダル生成AIモデル Gemini 1.5 Pro のコンテキストウィンドウが100万→200万トークンにア […]The post Geminiはトーク分析ツールに取って代わるか first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloudのプロンプト比較機能を用いた、言語モデルにおけるプロンプト設計]]></title>
-            <link>https://sreake.com/blog/google-cloud-prompt-design/</link>
-            <guid>https://sreake.com/blog/google-cloud-prompt-design/</guid>
-            <pubDate>Fri, 24 May 2024 09:52:32 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。 本記事では、Google Clo […]The post Google Cloudのプロンプト比較機能を用いた、言語モデルにおけるプロンプト設計 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
