@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 22 Jul 2024 18:33:45 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2024 07:44:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、SRE NEXT 2024 にDIAMONDスポンサーとして協賛]]></title>
+            <link>https://sreake.com/blog/srenext2024/</link>
+            <guid>https://sreake.com/blog/srenext2024/</guid>
+            <pubDate>Tue, 23 Jul 2024 01:18:53 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 2024年8月3日（土）・8月4日（日）に@Abema Towersで開催される「SRE NEXT 2024」にDIAMO […]The post スリーシェイク、SRE NEXT 2024 にDIAMONDスポンサーとして協賛 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[はじめてさわるReact & JavaScript with TypeScript: たった3時間でわかる"超"ビギナー入門書 （React & TypeScript入門）]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/07/22/232727</link>
@@ -26,7 +33,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2024/07/22/165742</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2024/07/22/165742</guid>
             <pubDate>Mon, 22 Jul 2024 07:57:42 GMT</pubDate>
-            <content:encoded><![CDATA[社のブログがバズった。わりと嬉しい。しかし、仕事の一環として書いた記事がここまで反響を呼ぶとは思ってもみませんでした。sreake.comみんなシェルスクリプトが好きなんやなこの記事の反響を見て、本当に驚いたのは、予想以上に多くの人々がシェルスクリプトに興味を持っていることでした。正直、こんなにシェルスクリプトが愛されているとは思っていませんでした（みんな隠しながら生きてます？もしくは好きではないです？）。ShellCheckを紹介する記事は全く飛ばなかったのはとても悲しいです(ｺｯﾁｲｲｷｼﾞﾖﾝﾃﾞﾈ)。sreake.comちょっと余談ですが、私とシェルスクリプトとの出会いについてお話しします。私は学生時代にシェルスクリプトにどっぷりとハマりました（特に詳しかったわけでも、めちゃくちゃ凝ったことをしていたわけではありませんが）。福岡で学生をしていた時、papironさんが主催されていたシェル芸勉強会：福岡サテライトに参加したことがきっかけで、シェルスクリプトの面白さに夢中になってしまいました。papironさんは、当時まだ知識も経験も浅かった私にも丁寧に教えてくださいました。おそらく、その経験がなければ、シェルスクリプトをここまで好きになることはなかったでしょう。また、この経験があったからこそ、今度は自分が見知らぬ若者に優しく接したり、勉強会に積極的に参加したりするようになったのだと思います。この出会いは、私のキャリアと技術に対する姿勢に大きな影響を与えました。シェルスクリプトの魅力を知り、コミュニティの大切さを学んだことは、かけがえのない財産となっています。シェルスクリプトの魅力は、その手軽さと強力さのバランスにあると思います。ちょっとしたタスクの自動化から複雑なシステム運用まで、幅広く対応できる柔軟性があります。また、ほとんどのUNIX系システムで標準で利用できるため、環境を選ばない点も大きな魅力です。今回の反響を見て、改めてシェルスクリプトの重要性を再確認しました。新しい言語やツールが次々と登場する中でも、シェルスクリプトは依然として多くの開発者や運用者にとって必要不可欠なツールであり続けています。その理由は、シンプルさと強力さ、そして長年培われてきた豊富なノウハウの蓄積にあるのではないでしょうか。これからも、シェルスクリプトを使った効率的な運用や自動化の方法について、積極的に情報を共有していきたいと思います。これはほぼ日記技術の世界は日々進化していますが、シェルスクリプトの基本的な考え方や自動化へのアプローチは、これからも価値を持ち続けるでしょう。新しい技術との組み合わせによって、さらに強力なツールになる可能性も秘めています。みなさんも、ぜひシェルスクリプトの世界を探索してみてください。きっと新しい発見があるはずです。そして、あなたの経験や知識を他の人と共有することで、このコミュニティがさらに豊かになっていくことを願っています。シェルスクリプトについてより深く学びたい方には、「マスタリングLinuxシェルスクリプト 第2版 ―Linuxコマンド、bashスクリプト、シェルプログラミング実践入門」をおすすめします。この本は、シェルスクリプトの基礎から応用まで幅広くカバーしており、実践的なスキルを身につけるのに役立つでしょう。マスタリングLinuxシェルスクリプト 第2版 ―Linuxコマンド、bashスクリプト、シェルプログラミング実践入門作者:Mokhtar Ebrahim,Andrew Mallettオライリー・ジャパンAmazon]]></content:encoded>
+            <content:encoded><![CDATA[社のブログがバズった。予想外の反響に驚きつつも、嬉しさを感じています。仕事の一環として書いた記事がここまで反響を呼ぶとは思ってもみませんでした。sreake.comシェルスクリプトの隠れた人気この記事の反響を見て、予想以上に多くの人々がシェルスクリプトに興味を持っていることに驚きました。正直、こんなにシェルスクリプトが愛されているとは思っていませんでした（みんな隠しながら生きてます？もしくは好きではないです？）。一方で、ShellCheckを紹介する記事があまり注目されなかったのは残念です。sreake.comシェルスクリプトとの出会い私のシェルスクリプトとの出会いは学生時代に遡ります。福岡でpapironさんが主催されていたシェル芸勉強会：福岡サテライトに参加したことが、シェルスクリプトの面白さに目覚めるきっかけとなりました。(あれ？募集がconnpassになってる)。papironさんの丁寧な指導のおかげで、知識も経験も浅かった私がシェルスクリプトの魅力に惹かれていきました。この経験は、私の技術キャリアと学習姿勢に大きな影響を与えました。今では自分も見知らぬ若者にも優しく接し、楽しかったという経験から勉強会にも積極的に参加するようになりました。逆に雑に扱われた人みたいなリストを作成しているのでいつか何らかの方法で発表しようとおもいます。シェルスクリプトの魅力シェルスクリプトの魅力は、その手軽さと強力さのバランスにあります。ちょっとしたタスクの自動化から複雑なシステム運用まで、幅広く対応できる柔軟性があります。また、ほとんどのUNIX系システムで標準で利用できるため、環境を選ばない点も大きな魅力です。今回の反響を見て、改めてシェルスクリプトの重要性を再確認しました。新しい言語やツールが次々と登場する中でも、シェルスクリプトは依然として多くの開発者や運用者にとって必要不可欠なツールであり続けています。その理由は、シンプルさと強力さ、そして長年培われてきた豊富なノウハウの蓄積にあるのではないでしょうか。これはほぼ日記技術の世界は日々進化していますが、シェルスクリプトの基本的な考え方や自動化へのアプローチは、これからも価値を持ち続けるでしょう。新しい技術との組み合わせによって、さらに強力なツールになる可能性も秘めています。みなさんも、ぜひシェルスクリプトの世界を探索してみてください。きっと新しい発見があるはずです。そして、あなたの経験や知識を他の人と共有することで、このコミュニティがさらに豊かになっていくことを願っています。シェルスクリプトについてより深く学びたい方には、「マスタリングLinuxシェルスクリプト 第2版 ―Linuxコマンド、bashスクリプト、シェルプログラミング実践入門」をおすすめします。この本は、シェルスクリプトの基礎から応用まで幅広くカバーしており、実践的なスキルを身につけるのに役立つでしょう。マスタリングLinuxシェルスクリプト 第2版 ―Linuxコマンド、bashスクリプト、シェルプログラミング実践入門作者:Mokhtar Ebrahim,Andrew Mallettオライリー・ジャパンAmazon]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Webサイトを自律攻撃するLLMのロジックを考えた]]></title>
@@ -83,6 +90,13 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2024/07/15/234513</guid>
             <pubDate>Mon, 15 Jul 2024 14:45:13 GMT</pubDate>
             <content:encoded><![CDATA[はじめに前回の記事でKubernetesとIstioを使ってトラフィック制御システムを作ったわけですが、そんな複雑なものを作っておいて「はい、終わり」じゃあんまりですよね。Istio in Action (English Edition)作者:Posta, Christian E.,Maloku, RinorManningAmazon今回は、その中身をちゃんと理解しようというわけです。Kiali、Jaeger、Grafana、それにEnvoy APIといった名前を聞いて、尻込みしてしまう人がいるかもしれません。でも心配いりません。これらのツールを使えば、Istioの設定がどのように動いているか、チェックできます。ちなみに、この情報は Istio にやたらと詳しい地下強制労働者さんから聞いた話です。彼の知識には頭が下がります。正直、面倒くさいと思う部分もありますが、こういうツールがあるおかげで、私たちはこんな複雑なシステムを扱えているんですよね。まあ、眠くならないように頑張って説明しますから、少しはついてきてください。きっと最後には「へぇ、こんなことができるんだ」って思えるはずです。...たぶん。1. Istio のゆかいなアドオンのインストールと設定1.1 Prometheusのインストールまず、Prometheusをインストールします。Prometheusは、メトリクスの収集と保存を担当します。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/prometheus.yaml1.2 Kialiのインストール次に、Kialiをインストールします。Kialiは、サービスメッシュの可視化とモニタリングを提供します。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/kiali.yaml1.3 JaegerのインストールJaegerは、分散トレーシングを提供し、マイクロサービス間の要求の流れを可視化します。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/jaeger.yaml1.4 Grafanaのインストール最後に、Grafanaをインストールします。Grafanaは、メトリクスの視覚化とダッシュボード作成のためのツールです。kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/addons/grafana.yaml1.5 インストールの確認すべてのコンポーネントが正常にデプロイされたことを確認します。kubectl get pods -n istio-system2. 各ツールへのアクセス設定2.1 Kialiへのアクセスkubectl port-forward svc/kiali 20001:20001 -n istio-systemブラウザで http://localhost:20001 にアクセスしてKialiのダッシュボードを開きます。2.2 Jaegerへのアクセスkubectl port-forward svc/tracing 16686:80 -n istio-systemブラウザで http://localhost:16686 にアクセスしてJaegerのUIを開きます。2.3 Grafanaへのアクセスkubectl port-forward svc/grafana 3000:3000 -n istio-systemブラウザで http://localhost:3000 にアクセスしてGrafanaのダッシュボードを開きます。]3. Kialiを使用したIstio設定の可視化3.1 サービスグラフの確認Kialiのダッシュボードで「Graph」タブを選択し、「Namespace」で「default」を選択します。ここで、前回設定したwaiting-room-appサービスとそのトラフィックフローを確認できます。3.2 VirtualServiceの確認「Istio Config」タブを選択し、「VirtualService」を探します。waiting-room-vsをクリックすると、詳細な設定を確認できます。トラフィックルーティングルールタイムアウト設定リトライ設定フォールト注入（遅延）設定3.3 DestinationRuleの確認同じく「Istio Config」タブで、「DestinationRule」のwaiting-room-drを確認します。接続プール設定負荷分散設定異常検知設定3.4 Gatewayの確認「Istio Config」タブで「Gateway」のwaiting-room-gatewayを確認し、外部トラフィックの受け入れ設定を確認します。4. Jaegerを使用したトレーシングの確認JaegerのUIで、サービス名（例：waiting-room-app）を選択し、トレースを検索します。各トレースは、リクエストがシステムを通過する際の詳細な経路と時間を示します。トレースの詳細を確認し、各スパンのレイテンシーを分析します。これにより、どの部分で遅延が発生しているかを特定できます。エラーが発生した場合にはトレースを確認し、問題の原因を特定します。5. Grafanaを使用したメトリクスの可視化Grafanaは、Istioで構築されたシステムのメトリクス可視化ツールとして活用できる可能性があります。主に以下の3つの側面から構成されることが考えられます：Istio関連の既存ダッシュボード（Mesh、Service、Workload）の活用システム固有のカスタムダッシュボード作成（リクエスト数、レスポンスタイムなど）重要メトリクスに対するアラート設定これらの機能を通じて、システムのパフォーマンスと健全性をより効果的に監視し、潜在的な問題の早期発見や運用判断の一助となる可能性があります。6. Envoy APIを使用した詳細設定の確認Envoy APIを使用することで、Istioの詳細な設定を確認できる可能性があります。以下に、主要な設定を確認する方法を示します。6.1 クラスター設定の確認クラスター設定を確認するには、以下のコマンドを実行します。kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump | grep -n -e '@type.*ClustersConfigDump' -e 'waiting-room-app'このコマンドにより、waiting-room-appサービスに関連するクラスター設定が表示される可能性があります。接続プールの設定や異常検知の設定を確認できるかもしれません。6.2 リスナー設定の確認リスナー設定を確認するには、以下のコマンドを実行します。kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump | grep -n -e '@type.*ListenersConfigDump' -e 'route_config_name'この出力から、VirtualServiceで設定したトラフィックルーティングルールやフォールト注入の設定を確認できる可能性があります。6.3 ルート設定の確認ルート設定を確認するには、以下のコマンドを実行します。kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump | grep -n -e '@type.*RoutesConfigDump' -e 'route_config_name'この出力から、VirtualServiceで設定したタイムアウトやリトライの設定を確認できるかもしれません。6.4 設定の詳細分析より詳細な分析が必要な場合は、設定をファイルに保存し、ローカル環境で解析することも考えられます：kubectl exec -it $(kubectl get pod -l app=waiting-room-app -o jsonpath='{.items[0].metadata.name}') -c istio-proxy -- curl localhost:15000/config_dump > envoy_config.jsonこれらの方法を通じて、Envoy APIを使用したIstioの詳細設定の確認ができる可能性があります。ただし、実際の出力や確認できる情報は、システムの構成や設定によって異なる場合があることにご注意ください。7. 統合分析と最適化7.1 パフォーマンスの総合評価Kiali、Jaeger、Grafana、およびEnvoy APIから得られた情報を統合して、システム全体のパフォーマンスを評価します。7.2 ボトルネックの特定各ツールの情報を突き合わせて、システムのボトルネックを特定します。例えば、Jaegerのトレースで特定の処理に時間がかかっていることが分かり、同時にGrafanaでそのサービスのCPU使用率が高いことが確認できれば、そのサービスのリソース割り当てを見直す必要があるかもしれません。7.3 設定の最適化特定された問題に基づいて、Istioの設定（VirtualService、DestinationRule、Gatewayなど）を最適化します。例えば、タイムアウトの調整、リトライ回数の変更、負荷分散ポリシーの修正などを行います。7.4 継続的なモニタリングと改善設定変更後も継続的にシステムをモニタリングし、パフォーマンスの変化を観察します。必要に応じて更なる最適化を行います。8. まとめさて、長々と説明してきましたが、結局のところ何が言いたかったかって？本記事の要点は、Kiali、Jaeger、Grafana、そしてEnvoy APIといった各種ツールが、Istioの運用管理において非常に有用だということです。これらのツールを適切に活用することで、Istioの複雑な設定や動作状況を詳細に可視化し、効率的に分析することが可能になります。結果として、システムの挙動をより深く理解し、適切に管理できるようになるのです。Jaegerでシステムの動きを追跡し、Grafanaでそれを見やすいグラフに変換する。そうすることで、システムの挙動が少しずつ見えてくる。潜在的な問題？ そりゃあ、早めに見つかれば御の字ですよ。でも、見つけられるようになったこと自体がすごいんです。次回は何をするかって？ はいはい、トラフィックの流れを観察して、待ち行列をもっと効率的に管理する方法を探ります。リアルタイムで監視して、状況に応じて設定を調整する...なんて、ちょっとワクワクしませんか？ ...いや、本当に楽しみにしてる人もいるんですよ。知らんけど。確かに、こういった作業は面倒くさく感じることもあります。でも、これらのツールのおかげで、複雑なシステムが滑らかに動いていることが確認できるんです。結局のところ、ユーザーに最高の体験を提供できること、それが仕事の醍醐味じゃないでしょうか。...まあ、お疲れ様でした。次回も適度にご期待ください。参考リンクKiali - Observability for IstioJaeger - Open source, end-to-end distributed tracingGrafana - The open observability platformIstio - Debugging Envoy and IstiodEnvoy - Admin interfaceIstio - Traffic Management Best PracticesPrometheus - Getting StartedIstio - Observability]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[「Efficient Linux コマンドライン」から学んだこと]]></title>
+            <link>https://zenn.dev/moz_sec/articles/2a849651de3fe1</link>
+            <guid>https://zenn.dev/moz_sec/articles/2a849651de3fe1</guid>
+            <pubDate>Mon, 15 Jul 2024 08:51:51 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに本記事では、「Efficient Linux コマンドライン」を読んで、私自身が新たに学んだことについてメモしています。私がすでに知っていた情報については本記事に書いていないため、興味があればお手元に買って読んでみてください。この記事には書いていないこともたくさん書いてあります。この本の対象読者としては、Linuxの勉強を1からしたい人というよりは、Linuxをそこそこ触ったことがある人になると思います。"そこそこ触ったことがある"のレベルとしては、コマンドでディレクトリを変更したり、プログラムを実行したりしていれば十分です。336ページとそこまで長くもなく、またLi...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ShellScriptで自動化を楽にしたい時に知っておいても良いこと]]></title>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/kubecon-eu-2024-cloud-native-ai-dayreducing-cross-zone-egress-at-spotify-with-custom-grpc-load-balancing/</guid>
             <pubDate>Wed, 19 Jun 2024 01:18:15 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは、Sreake事業部の永瀬滉平です！ 今回はKubeCon EU 2024に参加してきましたので、中でも気になったセッションをピックアップしてご紹介したいと思います。 セッションについて 取り上げるセ […]The post [Kubecon EU 2024: Cloud Native AI Day]Reducing Cross-Zone Egress at Spotify with Custom gRPC Load Balancing のご紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KubernetesにおけるCELの記述方法まとめ]]></title>
-            <link>https://sreake.com/blog/kubernetes-cel-description/</link>
-            <guid>https://sreake.com/blog/kubernetes-cel-description/</guid>
-            <pubDate>Wed, 12 Jun 2024 03:33:38 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Kubernetes 1.30でValidating Admission Policyの機能がGAするなど、開発中の新機能にCELが組み込まれるケースが増えています。今後Kubernetesで使われる機会が増え […]The post KubernetesにおけるCELの記述方法まとめ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google CloudのRapid evaluation APIを利用したLLMの評価手法]]></title>
-            <link>https://sreake.com/blog/google-cloud-rapid-evaluation-api-verification/</link>
-            <guid>https://sreake.com/blog/google-cloud-rapid-evaluation-api-verification/</guid>
-            <pubDate>Mon, 10 Jun 2024 09:31:15 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。 本記事では、LLMの評価手法とし […]The post Google CloudのRapid evaluation APIを利用したLLMの評価手法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
