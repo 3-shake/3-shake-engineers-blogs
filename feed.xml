@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 25 Jul 2024 18:33:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 26 Jul 2024 18:32:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Azure OpenAI Service Dev Day  オープニングセッション]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/07/26/233218</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/07/26/233218</guid>
+            <pubDate>Fri, 26 Jul 2024 14:32:18 GMT</pubDate>
+            <content:encoded><![CDATA[shu-kob.hateblo.jp2024年7月25日 Azure OpenAI Service Dev Day に参加してきました。セッション1つずつ書いて行きたいと思います。9:30-10:00 オープニングセッション 吉田 真吾 / 三宅 和之 / 榎並利晃(敬称略)オープニングセッションは、パネルディスカッション形式でした。一般的にオープニングセッションは基調講演が多い中、パネルディスカッション形式のオープニングセッションは聴きやすく面白かったです。1日の流れを総括する形で、丸一日の流れがわかったのはよかったです。生成AIカンファレンスに参加する上でとても参考になりました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Azure OpenAI Service Dev Day]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/07/25/235929</link>
@@ -230,13 +237,6 @@
             <guid>https://speakerdeck.com/nwiizo/yun-yong-zhe-noge-ling-yu-dexiang-kihe-ullm</guid>
             <pubDate>Fri, 28 Jun 2024 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[運用者の各領域で向き合うLLM というタイトルで登壇しました。イベント名: Cloud Operator Days Tokyo 2024 イベントURL:https://cloudopsdays.com/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ReckonerとATBeX Service LinkのGCP接続を検証してみた]]></title>
-            <link>https://sreake.com/blog/reckoner-atbex-service-link-gcp/</link>
-            <guid>https://sreake.com/blog/reckoner-atbex-service-link-gcp/</guid>
-            <pubDate>Tue, 25 Jun 2024 07:15:31 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部のsatokenです。 普段はお客様向けのSRE案件も担当していますが、弊社SaaSのReckonerのSREも兼務しています。 これまでReckonerからDataソースにアクセスするときは […]The post ReckonerとATBeX Service LinkのGCP接続を検証してみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
