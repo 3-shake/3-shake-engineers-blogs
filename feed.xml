@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 27 Jul 2024 18:33:08 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Jul 2024 18:33:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud BigQueryのクエリ数を確認する方法]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/07/28/224600</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/07/28/224600</guid>
+            <pubDate>Sun, 28 Jul 2024 13:46:00 GMT</pubDate>
+            <content:encoded><![CDATA[Google Cloud BigQueryに複数のユーザがいたとして、監査目的で、ユーザごとに実行したクエリ数を確認する必要がある時、Cloud Audit Logsを使います。監査のための詳細な情報提供や、ユーザーやシステムの操作追跡ができます。Cloud Audit Logsはユーザーやサービスアカウントによって行われたAPIコールの監査情報を提供します。IAMと管理 > 監査ログで、BigQueryの監査ログを有効にした後、BigQueryで操作を行うと、下記のようのログが表示されていることを確認できます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのCloud Pub/Subが何かがよくわからないので調べてみた]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/07/27/223851</link>
@@ -230,13 +237,6 @@
             <guid>https://speakerdeck.com/abnoumaru/maikurosabisunoxian-chang-karapuratutohuomuenziniaringunoke-neng-xing-wotan-ru</guid>
             <pubDate>Fri, 28 Jun 2024 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[開発生産性Conference 2024に登壇したときの資料です。技術的な内容は後半を担当してくれた https://speakerdeck.com/hiroki_hasegawa/marutipurodakutonozu-zhi-demaikurosabisuakitekutiyawozhi-erucicdpuratutohuomushe-ji にまかせています。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[♾️ マルチプロダクトの組織でマイクロサービスアーキテクチャを支えるCICDプラットフォーム設計]]></title>
-            <link>https://speakerdeck.com/hiroki_hasegawa/marutipurodakutonozu-zhi-demaikurosabisuakitekutiyawozhi-erucicdpuratutohuomushe-ji</link>
-            <guid>https://speakerdeck.com/hiroki_hasegawa/marutipurodakutonozu-zhi-demaikurosabisuakitekutiyawozhi-erucicdpuratutohuomushe-ji</guid>
-            <pubDate>Fri, 28 Jun 2024 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA["Findy開発生産性Conference" の発表資料です✊🏻生産性を支えるためのプラットフォームエンジニアリング事例として、以下の３つの取り組みを紹介しました！・プラットフォーム設計導入のために、横断的コミュニケーションが必要である・プラットフォームエンジニアリングで、マルチプロダクトの生産性を支える・プラットフォームエンジニアリングで、各マイクロサービスの生産性を支える🐦 ツイート：https://x.com/Hiroki__IT/status/1806559579180011572✍🏻 社内レポート：https://note.3-shake.com/n/n8efac1be167d]]></content:encoded>
         </item>
     </channel>
 </rss>
