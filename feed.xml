@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 07 Aug 2024 12:24:41 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Aug 2024 18:34:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[オブザーバビリティ・エンジニアリング輪読会 第6章「イベントをトレースにつなぐ」]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/08/07/235951</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/08/07/235951</guid>
+            <pubDate>Wed, 07 Aug 2024 14:59:51 GMT</pubDate>
+            <content:encoded><![CDATA[スリーシェイクでは、毎週輪読会をやっているのですが、 今使用している書籍は「オブザーバビリティ・エンジニアリング」です。オブザーバビリティ・エンジニアリング作者:Charity Majors,Liz Fong-Jones,George Mirandaオーム社Amazonshu-kob.hateblo.jp第5章の話をしましたが、本日は第6章「イベントをトレースにつなぐ」を担当しました。スカラー値だけのメトリクスではなく、構造化データでリクエストのイベントがわかるのは便利ですし、アプリケーションエンジニアとしても、しっかりオブザーバビリティを使っていきたいと思いました。この本の最初の方は抽象的な話が多かったですが、次第に具体的な話が入ってきて、頭に入ってきやすくなりました。しっかり読んで実力をつけようと思います。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[サイト信頼性エンジニア（SRE）として、インシデント時に迅速に初期対応する]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/06/235936</link>
@@ -229,13 +236,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/07/19/234519</guid>
             <pubDate>Fri, 19 Jul 2024 14:45:19 GMT</pubDate>
             <content:encoded><![CDATA[7月16日に受けたGoogle Cloud Certified - Professional Cloud DevOps Engineerに合格しました。6月26日に1回目の受験をしてそのときは不合格だったのですが、2回目で合格しました。2回目で合格した秘訣は、Udemyの模擬試験を変えたからです。【2024年版】Google Cloud 認定資格 Professional DevOps Engineer 問題集はとてもいい問題集でした。この問題集のおかげで合格できました！なお、私は東京都在住で、遠隔ではなく、テストセンター派ですが、高田馬場テストセンターと市ヶ谷テストセンターの2箇所どちらかを使用しています。1回目受験は市ヶ谷テストセンター、2回目は高田馬場テストセンターでした。他に、新宿、渋谷、池袋など主要駅にテストセンターがありますが、これらは混んでいて希望する日時で取りずらいです。日時が比較的空いている高田馬場、市ヶ谷を愛用しています。なお、市ヶ谷テストセンターに初めて行ったときは迷いました。Google Map通りの場所でしたが、このビルにテストセンターが入っているなんて！という感じだったので（苦笑）建物の外観を載せておきます。皆さんもGoogle Cloudをはじめ、IT系の認定試験にチャレンジしましょう！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[モダンインフラの基礎を学ぼう！実践コンテナ入門]]></title>
-            <link>https://speakerdeck.com/bells17/motaninhuranoji-chu-woxue-hou-shi-jian-kontenaru-men</link>
-            <guid>https://speakerdeck.com/bells17/motaninhuranoji-chu-woxue-hou-shi-jian-kontenaru-men</guid>
-            <pubDate>Wed, 17 Jul 2024 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[技育CAMPアカデミアでの発表資料ですhttps://talent.supporterz.jp/events/8cb9a300-506c-4d9d-b2af-e9924e0209a2/]]></content:encoded>
         </item>
     </channel>
 </rss>
