@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 06 Aug 2024 18:34:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Aug 2024 01:01:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -48,6 +48,12 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/08/03/225134</guid>
             <pubDate>Sat, 03 Aug 2024 13:51:34 GMT</pubDate>
             <content:encoded><![CDATA[3-shake.connpass.com弊社スリーシェイクが運営するSRE勉強会SRE Tech Talkを8月23日(金)18:30から渋谷で開催します！今回初めてのオンサイト開催ということで、Google Cloudさんの渋谷オフィスをお借りします。渋谷駅直結の「渋谷ストリーム」内にあります！※オンラインでも参加可能です。オンサイト参加は無料の懇親会付きです。ぜひご参加ください！今回、私は裏方として手伝うと思いますが、懇親会でぜひ交流できればと思います。私はSREではなく、生成AIアプリケーション開発エンジニアですが。弊社スリーシェイクメンバーとも交流してください！フリーランスの方へrelance.jpスリーシェイクでは、フリーランスエージェントサービスもやっております。ぜひご登録ください！]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[【SRE-NEXT 2024】内製化を見据えた効果的なSRE支援のアプローチ / SRE support approach]]></title>
+            <link>https://speakerdeck.com/kojake_300/sre-next-2024-nei-zhi-hua-wojian-ju-etaxiao-guo-de-nasrezhi-yuan-noapuroti</link>
+            <guid>https://speakerdeck.com/kojake_300/sre-next-2024-nei-zhi-hua-wojian-ju-etaxiao-guo-de-nasrezhi-yuan-noapuroti</guid>
+            <pubDate>Sat, 03 Aug 2024 04:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Google Cloud Next Tokyo ’24 2日目「安心してください履いてますよ」]]></title>
@@ -230,13 +236,6 @@
             <guid>https://speakerdeck.com/bells17/motaninhuranoji-chu-woxue-hou-shi-jian-kontenaru-men</guid>
             <pubDate>Wed, 17 Jul 2024 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[技育CAMPアカデミアでの発表資料ですhttps://talent.supporterz.jp/events/8cb9a300-506c-4d9d-b2af-e9924e0209a2/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Grafana Beylaの出来るコト出来ないコト]]></title>
-            <link>https://zenn.dev/kojake_300/articles/4238a66124d095</link>
-            <guid>https://zenn.dev/kojake_300/articles/4238a66124d095</guid>
-            <pubDate>Mon, 15 Jul 2024 15:07:47 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は、2024/6/28に登壇したJagu'e'r Jagu'e'r O11y-SRE × CloudNative コラボ Meetupのリマスターになります。 分散トレーシングの悩み突然ですが皆さん、分散トレーシングを実装する際、一度はこんなことを考えた経験はありませんか？特にクラウドインフラ出身の私は、意気揚々と分散トレーシングを実装しようとした時に、アプリケーションコードが書けずに全く歯が立たなかった苦い経験があります。。。でも、、ということで、本記事ではBeylaとは何者なのか、従来の分散トレーシングとは何が違うのかを解説していきます！💪 分散トレーシ...]]></content:encoded>
         </item>
     </channel>
 </rss>
