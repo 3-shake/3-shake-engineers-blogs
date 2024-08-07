@@ -491,7 +491,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/kaitanakamura.jpg",
     sources: ["https://zenn.dev/z63d/feed"],
     includeUrlRegex: "",
-    twitterUsername: "",
+    twitterUsername: "z63d_",
     githubUsername: "z63d",
     websiteUrl: "",
   },
