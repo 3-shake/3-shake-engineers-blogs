@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 09 Aug 2024 18:34:13 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Aug 2024 18:32:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Toilを無くせるのはSREだけではない。生成AIもToilを無くすための道具]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/08/10/211541</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/08/10/211541</guid>
+            <pubDate>Sat, 10 Aug 2024 12:15:41 GMT</pubDate>
+            <content:encoded><![CDATA[こんばんは！今日2024年8月10日(土)からお盆休みの方も多いのではないでしょうか？お休みの方はしっかりリフレッシュしてください。さて、このブログのタイトルは「Toilを無くして徒然なるままに日暮し硯に向かひたい」兼好法師の『徒然草』「徒然なるままに日暮し 硯に向かいて」から引用しています。「Toilを無くす」というとSREの言葉であり、スリーシェイクの社員として意識しているのですが、私は生成AIアプリケーション開発エンジニアであり、生成AIも「Toilを無くす」ものだと思っています。生成AIアプリケーションを使わなくても、WebブラウザからGeminiやChatGPT生成AIを使って、エンジニアでなくても誰でも気軽に生成AIを使うことができます。生成AIでみんなのToilがなくなって、「特に何も予定もなく、ただ何となく一日中、書斎で本を読んだり文章を書いたりして過ごしている」ような世界になればと思っていますw本を読んだり、文章を書いたりだけでなく、遊びでもいいでしょうし、クリエイティブな活動ができれば何でもいいと思います。そんな楽しい世界を創っていけたらと思います！！今回はポエム会にしてみました（笑）]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのApp Engine Cron サービスとは]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/09/235611</link>
@@ -229,13 +236,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/07/22/232727</guid>
             <pubDate>Mon, 22 Jul 2024 14:27:27 GMT</pubDate>
             <content:encoded><![CDATA[shu-kob.hateblo.jp前回の記事では、Reactのkindle Unlimited本の紹介をしましたが、その次の勉強として、同じ著者三好アキさんの以下の電子書籍「はじめてさわるReact & JavaScript with TypeScript: たった3時間でわかる"超"ビギナー入門書 （React & TypeScript入門）」もわかりやすく進めやすくてオススメでした。はじめてさわるReact & JavaScript with TypeScript: たった3時間でわかる"超"ビギナー入門書 （React & TypeScript入門）作者:三好アキAmazonこちらもKindle Unlimited対象です。前回紹介した「はじめてつくるReactアプリ: HTMLとCSSの知識だけで始められるReact開発！ 」は、最初からTypeScriptで書いてますが、「はじめてさわるReact & JavaScript with TypeScript: たった3時間でわかる"超"ビギナー入門書 （React & TypeScript入門）」は最初JavaScriptで書いた後、TypeScriptに直していくので、こちらをReactの勉強で使う最初の書籍にしてもいいかもしれません。三好アキさんのKindle Unlimited書籍は多くあるので、Unlimited会員の方は活用しましょう！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[シェルスクリプトのTipsを書いたブログがバズった。あるいは無名な若者にも優しくする。]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2024/07/22/165742</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2024/07/22/165742</guid>
-            <pubDate>Mon, 22 Jul 2024 07:57:42 GMT</pubDate>
-            <content:encoded><![CDATA[社のブログがバズった。予想外の反響に驚きつつも、嬉しさを感じています。仕事の一環として書いた記事がここまで反響を呼ぶとは思ってもみませんでした。sreake.comシェルスクリプトの隠れた人気この記事の反響を見て、予想以上に多くの人々がシェルスクリプトに興味を持っていることに驚きました。正直、こんなにシェルスクリプトが愛されているとは思っていませんでした（みんな隠しながら生きてます？もしくは好きではないです？）。一方で、ShellCheckを紹介する記事があまり注目されなかったのは残念です。sreake.comシェルスクリプトとの出会い私のシェルスクリプトとの出会いは学生時代に遡ります。福岡でpapironさんが主催されていたシェル芸勉強会：福岡サテライトに参加したことが、シェルスクリプトの面白さに目覚めるきっかけとなりました。(あれ？募集がconnpassになってる)。papironさんの丁寧な指導のおかげで、知識も経験も浅かった私がシェルスクリプトの魅力に惹かれていきました。この経験は、私の技術キャリアと学習姿勢に大きな影響を与えました。今では自分も見知らぬ若者にも優しく接し、楽しかったという経験から勉強会にも積極的に参加するようになりました。逆に雑に扱われた人みたいなリストを作成しているのでいつか何らかの方法で発表しようとおもいます。シェルスクリプトの魅力シェルスクリプトの魅力は、その手軽さと強力さのバランスにあります。ちょっとしたタスクの自動化から複雑なシステム運用まで、幅広く対応できる柔軟性があります。また、ほとんどのUNIX系システムで標準で利用できるため、環境を選ばない点も大きな魅力です。今回の反響を見て、改めてシェルスクリプトの重要性を再確認しました。新しい言語やツールが次々と登場する中でも、シェルスクリプトは依然として多くの開発者や運用者にとって必要不可欠なツールであり続けています。その理由は、シンプルさと強力さ、そして長年培われてきた豊富なノウハウの蓄積にあるのではないでしょうか。これはほぼ日記技術の世界は日々進化していますが、シェルスクリプトの基本的な考え方や自動化へのアプローチは、これからも価値を持ち続けるでしょう。新しい技術との組み合わせによって、さらに強力なツールになる可能性も秘めています。みなさんも、ぜひシェルスクリプトの世界を探索してみてください。きっと新しい発見があるはずです。そして、あなたの経験や知識を他の人と共有することで、その時に無名な若者を入れることでコミュニティがさらに豊かになっていくことを願っています。技術を学ぶことは大切ですが、同時に人との関わりも大切にしてください。誰かが困っているときは手を差し伸べ、自分が困ったときは助けを求める勇気を持ちましょう。そうすることで、私たちのコミュニティはより強く、より温かいものになっていくはずです。シェルスクリプトについてより深く学びたい方にはブログも良いですが、「マスタリングLinuxシェルスクリプト 第2版 ―Linuxコマンド、bashスクリプト、シェルプログラミング実践入門」をおすすめします。この本は、シェルスクリプトの基礎から応用まで幅広くカバーしており、実践的なスキルを身につけるのに役立ちます。マスタリングLinuxシェルスクリプト 第2版 ―Linuxコマンド、bashスクリプト、シェルプログラミング実践入門作者:Mokhtar Ebrahim,Andrew Mallettオライリー・ジャパンAmazon]]></content:encoded>
         </item>
     </channel>
 </rss>
