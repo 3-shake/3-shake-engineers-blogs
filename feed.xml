@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 12 Aug 2024 18:34:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Aug 2024 18:34:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Geminiマルチモーダルプログラミングハンズオン]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/08/13/193929</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/08/13/193929</guid>
+            <pubDate>Tue, 13 Aug 2024 10:39:29 GMT</pubDate>
+            <content:encoded><![CDATA[genai-users.connpass.comこの記事は上記ハンズオン勉強会の資料です。準備設定秘密鍵がダウンロードされます。git clone https://github.com/shu-kob/gemini-multimodalcd gemini-multimodalダウンロードした秘密鍵を gemini-multimodal/ 配下に配置し、環境変数の設定ファイルに記載（ ここでは .zprofile ）export GOOGLE_APPLICATION_CREDENTIALS="/Users/username/programing/gemini-multimodal/projectid-abcdefg.json"source ~/.zprofilecloud.google.compip install --upgrade pippip install vertexai音声解析cloud.google.comGoogle Cloud Storageに音声をアップロードします。aicross.co.jpここでは、コールセンターを模擬した音声を自分で収録したファイルを使います。project_id と audio_file_uri を変更します。python3 audio.pyTraceback (most recent call last):  File "/Users/kobuchishu/programing/gemini-multimodal/audio.py", line 1, in <module>    import vertexaiModuleNotFoundError: No module named 'vertexai'というエラーが出るときは下記を参照qiita.com公式サイトからインストールしていたらなるっぽいです。以下をお試しください。zenn.dev画像・動画解析cloud.google.com画像解析Google Cloud Storageに画像をアップロードします。project_id と image_file_uri を変更します。python3 image.py動画解析pixabay.comフリー動画サイトなどから動画を収集します。Google Cloud Storageに動画をアップロードします。project_id と video_file_uri を変更します。python3 video.py今後のイベント情報langchain.connpass.com↑小渕登壇しますオンサイトのみで一般参加は2名オーバーこの日天気悪いかも気をつけてお越しください3-shake.connpass.com↑小渕は運営やっております。SREのイベントですが、LLMのオブザーバビリティという話があります！無料懇親会付きです！pages.sreake.com↑小渕登壇します。無料懇親会付きです！]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Docker Build Check について検証をしてみた]]></title>
+            <link>https://sreake.com/blog/docker-build-check/</link>
+            <guid>https://sreake.com/blog/docker-build-check/</guid>
+            <pubDate>Tue, 13 Aug 2024 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは、Sreake 事業部 佐藤慧太@(SatohJohn) です。 以下の docker build check という機能について、検証をし、Google Cloud の Cloud Build に組 […]The post Docker Build Check について検証をしてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Cloud Professional Cloud Architectに合格]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/12/224136</link>
@@ -222,20 +236,6 @@
             <guid>https://sreake.com/blog/cloud-operator-days-tokyo-2024-%e3%81%ab%e3%82%b9%e3%83%aa%e3%83%bc%e3%82%b7%e3%82%a7%e3%82%a4%e3%82%af%e3%81%ae%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%8c%e8%ac%9b%e5%b8%ab%e3%81%a8/</guid>
             <pubDate>Thu, 25 Jul 2024 01:11:09 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）に在籍するエンジニアが、Cloud Operator Days 2024 実行委員会が主催する「Cloud Operator D […]The post Cloud Operator Days Tokyo 2024 にスリーシェイクのエンジニアが登壇 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[7月25日はAzure OpenAI Service Dev Dayに行ってきます]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/07/24/234959</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/07/24/234959</guid>
-            <pubDate>Wed, 24 Jul 2024 14:49:59 GMT</pubDate>
-            <content:encoded><![CDATA[生成AIのカンファレンスも増えてきましたね。shu-kob.hateblo.jp今年3月7日はGoogle Cloud Generative AI Summitに行ったり、gen-ai-conf.org5月8日は生成AIカンファレンスに行ってました。azureai.connpass.comそして、7月25日は生成AIカンファレンスに行って参ります！昔お会いしたことがある方何名かが登壇するので楽しみです！参加後、レポートを書きたいと思います！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GeminiでGoogleのいろんなサービスと連携していい感じ]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/07/23/235952</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/07/23/235952</guid>
-            <pubDate>Tue, 23 Jul 2024 14:59:52 GMT</pubDate>
-            <content:encoded><![CDATA[https://gemini.google.com/app/GeminiはGoogleが開発した生成AIだからこそ、GoogleマップやGoogleホテルと連携して便利ですね。今回は雑談チックでした。]]></content:encoded>
         </item>
     </channel>
 </rss>
