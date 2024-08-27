@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 26 Aug 2024 18:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Aug 2024 18:34:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,6 +15,13 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[Google Cloud エンジニアおよび Google Cloud パートナー2社による生成AI利活用を進めるためのプロセス]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/08/27/235840</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/08/27/235840</guid>
+            <pubDate>Tue, 27 Aug 2024 14:58:40 GMT</pubDate>
+            <content:encoded><![CDATA[pages.sreake.comイベントで登壇していました。ご参加くださった方はありがとうございました！良い評価をいただけたようで光栄です！今回、「生成AI利活用を進めるためのプロセス」というテーマだったので、普段私があまり話さないことも話せて新鮮でした。genai-users.connpass.com普段は、日本生成AIユーザ会でハンズオンをやっているように、具体的技術を話すことが多いので。今回とても良い経験になりました。今後も良い発表ができるよう精進していきます！]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[後継者不足のCOBOLを生成AIに引き継ぎ]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/26/235854</link>
             <guid>https://shu-kob.hateblo.jp/entry/2024/08/26/235854</guid>
@@ -22,7 +29,7 @@
             <content:encoded><![CDATA[www.itmedia.co.jpIT media AI+より。虚構新聞かと思いましたが（笑）、本当にようです。ベトナムの研究者が論文を出したのですね。日本でもCOBOLで書かれたシステムはまだまだ残っていますが、COBOL書けるエンジニアが高齢になってきて、後継者不足でもあります。海外もベトナムも同様なのですね。リプレイスしていくのも大事かと思いますが、全部のCOBOLシステムのリプレイスも難しいでしょうし、リプレイスしつつも、生成AIに書かせるのが現実解なのかもしれません。]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[ブログを書く時にやっていること]]></title>
+            <title><![CDATA[テックブログを書く時にやっていること]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/08/26/210112</link>
             <guid>https://syu-m-5151.hatenablog.com/entry/2024/08/26/210112</guid>
             <pubDate>Mon, 26 Aug 2024 12:01:12 GMT</pubDate>
@@ -228,13 +235,6 @@
             <link>https://speakerdeck.com/parupappa2929/google-cloud-next-recap-gke-cloud-run</link>
             <guid>https://speakerdeck.com/parupappa2929/google-cloud-next-recap-gke-cloud-run</guid>
             <pubDate>Thu, 08 Aug 2024 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[オブザーバビリティ・エンジニアリング輪読会 第6章「イベントをトレースにつなぐ」]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/07/235951</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/07/235951</guid>
-            <pubDate>Wed, 07 Aug 2024 14:59:51 GMT</pubDate>
-            <content:encoded><![CDATA[スリーシェイクでは、毎週輪読会をやっているのですが、 今使用している書籍は「オブザーバビリティ・エンジニアリング」です。オブザーバビリティ・エンジニアリング作者:Charity Majors,Liz Fong-Jones,George Mirandaオーム社Amazonshu-kob.hateblo.jp第5章の話をしましたが、本日は第6章「イベントをトレースにつなぐ」を担当しました。スカラー値だけのメトリクスではなく、構造化データでリクエストのイベントがわかるのは便利ですし、アプリケーションエンジニアとしても、しっかりオブザーバビリティを使っていきたいと思いました。この本の最初の方は抽象的な話が多かったですが、次第に具体的な話が入ってきて、頭に入ってきやすくなりました。しっかり読んで実力をつけようと思います。]]></content:encoded>
         </item>
     </channel>
 </rss>
