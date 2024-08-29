@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 28 Aug 2024 18:34:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Aug 2024 18:34:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[オライリーのAWS生成AI本]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/08/29/234143</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/08/29/234143</guid>
+            <pubDate>Thu, 29 Aug 2024 14:41:43 GMT</pubDate>
+            <content:encoded><![CDATA[AWSではじめる生成AI ―RAGアプリケーション開発から、基盤モデルの微調整、マルチモーダルAI活用までを試して学ぶ作者:Chris Fregly,Antje Barth,Shelbee EigenbrodeオライリージャパンAmazonそういや、オライリージャパンからAWSの生成AI本出てますね。欲しいと思いながらも買うてない。現状、自身の仕事のほとんどはGoogle cloudなので、AWS書籍どうしようかと思ってますが、面白そうなら買うてみるしか！翻訳はAWS Japanの久富木 隆一さん。AWSの中の人が翻訳しているので確かでしょうね！]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitLab Runnerによる簡易的なCICDの設計と実装]]></title>
+            <link>https://sreake.com/blog/gitlab-runner-cicd/</link>
+            <guid>https://sreake.com/blog/gitlab-runner-cicd/</guid>
+            <pubDate>Thu, 29 Aug 2024 05:34:28 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の高島です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。普段は、情報系の大学院生で、数値解析に […]The post GitLab Runnerによる簡易的なCICDの設計と実装 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[「SREをはじめよう」(Becoming SRE邦訳)が出版]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/28/235736</link>
@@ -222,20 +236,6 @@
             <guid>https://zenn.dev/yokoo_an209/articles/google-next-recap-cloud-run</guid>
             <pubDate>Fri, 09 Aug 2024 01:18:24 GMT</pubDate>
             <content:encoded><![CDATA[これはなに？先日、Google Cloud Next Tokyo’24が開催されました。Google Cloud Next Tokyo ’24 の セッションを（勝手に）Recap したものになります前回の GKE 編に引き続き、今回は Cloud Runについての最新アップデートのご紹介です！https://zenn.dev/yokoo_an209/articles/google-next-recap-gke セッション進化するコンテナ環境: Google Kubernetes Engine と Cloud Run の最新アップデートと使い所を徹底解説https:/...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google CloudのPersistent Disk SSDやMemcacheについて]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/08/224333</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/08/224333</guid>
-            <pubDate>Thu, 08 Aug 2024 13:43:33 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloudの勉強をしている中で、Persistent Disk SSDやMemcacheが出てきたので、これらの話題を。Persistent Disk SSDとは？Google Cloud Platform（GCP）のPersistent Disk SSDは、仮想マシン（VM）インスタンスに持続的なブロックストレージを提供するサービスです。SSD（Solid State Drive）を採用しているため、従来のHDDと比較して高速なI/O処理が可能です。その分高価です。Google CloudのMemcacheとは？Google CloudのMemcacheは、キーバリュー形式のデータを一時的に保存するための高速なインメモリデータストアです。メモリ内キャッシュのMemcacheは高速なRead/Writeが可能です。普段使わないマネージドサービスですが、しっかり勉強しようと思います。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SRE支援の効果的なアプローチについて(SRE NEXT 2024登壇のRecap)]]></title>
-            <link>https://zenn.dev/kojake_300/articles/b977011a04fce4</link>
-            <guid>https://zenn.dev/kojake_300/articles/b977011a04fce4</guid>
-            <pubDate>Thu, 08 Aug 2024 09:18:01 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は、SRE NEXT 2024で、株式会社スリーシェイクのスポンサーセッションとして登壇した「内製化を見据えた効果的なSRE支援のアプローチ」をセルフでRecapしたものになります。 はじめに株式会社スリーシェイクのSreake事業部に所属しています。2024年8月3日、4日に開催された SRE NEXT 2024 に「内製化を見据えた効果的なSRE支援のアプローチ」という題で登壇しました。20分の枠なのに60枚弱のスライドを作成するという暴挙に出てしまい、端折りながらの説明となってしまったため、Recapとして登壇内容を解説します。 想定読者本登壇資料は、SRE...]]></content:encoded>
         </item>
     </channel>
 </rss>
