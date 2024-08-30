@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 29 Aug 2024 18:34:38 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 18:34:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SRETT#10 ~ 夏のSRE祭り！アーカイブ動画公開！]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/08/30/230631</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/08/30/230631</guid>
+            <pubDate>Fri, 30 Aug 2024 14:06:31 GMT</pubDate>
+            <content:encoded><![CDATA[shu-kob.hateblo.jp2024年8月23日に弊社スリーシェイクのコミュニティ勉強会「SRETT #10 ~ 夏のSRE祭り！」が開催されました。www.youtube.comアーカイブ動画も公開されています！当日ご参加できなかった方もぜひご覧ください！自分は当日誘導係をやっていて、最初の菱田さんのセッション「SRE NEXT 2024 で形にしたバトンを渡せる仕組み」は最後のちょびっとだけしか聴けていないから、観ようかな。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CCoEとは]]></title>
+            <link>https://sreake.com/blog/ccoe%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/ccoe%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに CCoEとは クラウド活用に関する様々な課題 CCoE導入の際のポイント CCoEの導入事例 Sreakeでできること 1. はじめに 現在、さまざまな業界の多種多様なシステムにおいて、クラウドサービス­ […]The post CCoEとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetesとは]]></title>
+            <link>https://sreake.com/blog/kubernetes/</link>
+            <guid>https://sreake.com/blog/kubernetes/</guid>
+            <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに Kubernetesの特徴と代表的な機能 Kubernetesを導入する際のポイント Kubernetesの導入事例 Sreakeでできること 1. はじめに 多様で複雑な現代のソフトウェア開発において、 […]The post Kubernetesとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[オライリーのAWS生成AI本]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/29/234143</link>
@@ -215,27 +236,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/08/10/211541</guid>
             <pubDate>Sat, 10 Aug 2024 12:15:41 GMT</pubDate>
             <content:encoded><![CDATA[こんばんは！今日2024年8月10日(土)からお盆休みの方も多いのではないでしょうか？お休みの方はしっかりリフレッシュしてください。さて、このブログのタイトルは「Toilを無くして徒然なるままに日暮し硯に向かひたい」兼好法師の『徒然草』「徒然なるままに日暮し 硯に向かいて」から引用しています。「Toilを無くす」というとSREの言葉であり、スリーシェイクの社員として意識しているのですが、私は生成AIアプリケーション開発エンジニアであり、生成AIも「Toilを無くす」ものだと思っています。生成AIアプリケーションを使わなくても、WebブラウザからGeminiやChatGPT生成AIを使って、エンジニアでなくても誰でも気軽に生成AIを使うことができます。生成AIでみんなのToilがなくなって、「特に何も予定もなく、ただ何となく一日中、書斎で本を読んだり文章を書いたりして過ごしている」ような世界になればと思っていますw本を読んだり、文章を書いたりだけでなく、遊びでもいいでしょうし、クリエイティブな活動ができれば何でもいいと思います。そんな楽しい世界を創っていけたらと思います！！今回はポエム会にしてみました（笑）]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google CloudのApp Engine Cron サービスとは]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/09/235611</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/09/235611</guid>
-            <pubDate>Fri, 09 Aug 2024 14:56:11 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloudの勉強をしている中で、App Engine Cron サービスが出てきたので、記しておこうと思います。App Engine Cron サービスとは？Google Cloud PlatformのApp Engineで利用できる、定期的にタスクを実行するための機能です。Cronと聞いてピンとくる方もいるかもしれませんが、あのCronと似たような働きをします。具体的にどんなことができるの？定期的なデータ更新: データベースのデータを毎日更新したり、キャッシュをクリアしたりといった作業を自動化できます。バッチ処理: 大量のデータを一括処理するようなバッチ処理をスケジュールできます。レポート作成: 定期的にレポートを作成し、メールで送信したり、ストレージに保存したりできます。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud Next Tokyo’24 勝手にRecap コンテナ最新アップデート紹介 ~ GKE 編 ~]]></title>
-            <link>https://zenn.dev/yokoo_an209/articles/google-next-recap-gke</link>
-            <guid>https://zenn.dev/yokoo_an209/articles/google-next-recap-gke</guid>
-            <pubDate>Fri, 09 Aug 2024 01:18:24 GMT</pubDate>
-            <content:encoded><![CDATA[これはなに？先日、Google Cloud Next Tokyo’24が開催されました。Google Cloud Next Tokyo ’24 の セッションを（勝手に）Recap したものになります基調講演のアーカイブも公開されているので、見逃した方はぜひご覧くださいhttps://cloudonair.withgoogle.com/events/next-tokyo-24気になる箇所だけ見たい方は、目次から飛んでください！ セッション進化するコンテナ環境: Google Kubernetes Engine と Cloud Run の最新アップデートと使い所を徹底解...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud Next Tokyo’24 勝手にRecap コンテナ最新アップデート紹介 ~ Cloud Run 編 ~]]></title>
-            <link>https://zenn.dev/yokoo_an209/articles/google-next-recap-cloud-run</link>
-            <guid>https://zenn.dev/yokoo_an209/articles/google-next-recap-cloud-run</guid>
-            <pubDate>Fri, 09 Aug 2024 01:18:24 GMT</pubDate>
-            <content:encoded><![CDATA[これはなに？先日、Google Cloud Next Tokyo’24が開催されました。Google Cloud Next Tokyo ’24 の セッションを（勝手に）Recap したものになります前回の GKE 編に引き続き、今回は Cloud Runについての最新アップデートのご紹介です！https://zenn.dev/yokoo_an209/articles/google-next-recap-gke セッション進化するコンテナ環境: Google Kubernetes Engine と Cloud Run の最新アップデートと使い所を徹底解説https:/...]]></content:encoded>
         </item>
     </channel>
 </rss>
