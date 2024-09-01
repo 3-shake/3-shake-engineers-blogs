@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 31 Aug 2024 18:33:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Sep 2024 18:33:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[LangChainでgithubリポジトリのソースコードを読む方法]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/09/01/235529</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/09/01/235529</guid>
+            <pubDate>Sun, 01 Sep 2024 14:55:29 GMT</pubDate>
+            <content:encoded><![CDATA[shu-kob.hateblo.jp昨日の記事に関連して、今回はLangChainでgithubリポジトリのソースコードを読む方法です。github.com↑サンプルソースコードを載せています。js.langchain.com↑使い方はこちら実行例ts-node githubLoader.ts https://github.com/shu-kob/langchain-sample-codeDocument {  pageContent: "import { CheerioWebBaseLoader } from '@langchain/community/document_loaders/web/cheerio'\n" +    "import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'\n" +    "import { HtmlToTextTransformer } from '@langchain/community/document_transformers/html_to_text'\n" +    '\n' +    'const url = process.argv[2]\n' +    '\n' +    'async function webLoad (url: string) {\n' +    '  const loader = new CheerioWebBaseLoader(url)\n' +    '  const docs = await loader.load()\n' +    "  const splitter = RecursiveCharacterTextSplitter.fromLanguage('html')\n" +    '  const transformer = new HtmlToTextTransformer()\n' +    '  const sequence = splitter.pipe(transformer)\n' +    '  const newDocuments = await sequence.invoke(docs)\n' +    "  console.log('newDocuments:')\n" +    '  console.log(newDocuments)\n' +    '}\n' +    '\n' +    'webLoad(url)\n',  metadata: {    source: 'cheerioWebBaseLoader.ts',    repository: 'https://github.com/shu-kob/langchain-sample-code',    branch: 'main'  },  id: undefined}Document {  pageContent: "import { GithubRepoLoader } from '@langchain/community/document_loaders/web/github'\n" +    '\n' +    'const url = process.argv[2]\n' +    '\n' +    'async function readSorceCodesFromGithub(url: string) {\n' +    '\n' +    '  const loader = new GithubRepoLoader(\n' +    '    url,\n' +    '    {\n' +    '      branch: "main", // Defaultブランチが "master" でないか注意。他のブランチも選択可能\n' +    '      recursive: true,\n' +    '      processSubmodules: true,\n' +    '      unknown: "warn",\n' +    '      maxConcurrency: 5, // Defaults to 2\n' +    '      ignorePaths: ["*.json", "*.yaml", "*.yml", "*config*", "*.md", "Dockerfile", "*ignore", ".eslintrc.js", "*.svg"] // 除外するファイルパス\n' +    '    }\n' +    '  );\n' +    '\n' +    '  for await (const doc of loader.loadAsStream()) {\n' +    '    console.log(doc)\n' +    '  }\n' +    '};\n' +    '\n' +    'readSorceCodesFromGithub(url)\n',  metadata: {    source: 'githubLoader.ts',    repository: 'https://github.com/shu-kob/langchain-sample-code',    branch: 'main'  },  id: undefined}Document {  pageContent: "import * as cheerio from 'cheerio'\n" +    '\n' +    'const url = process.argv[2]\n' +    '\n' +    'async function webLoad (url: string) {\n' +    '  // HTMLの取得\n' +    '  const response = await fetch(url)\n' +    '  const htmlText = await response.text()\n' +    '  const cheerioText = cheerio.load(htmlText)\n' +    '\n' +    '  // styleとscriptを除去\n' +    "  cheerioText('style').remove()\n" +    "  cheerioText('script').remove()\n" +    '\n' +    "  const bodyContent: string = cheerioText('body').text().replace(/\\s+/g, '')\n" +    '\n' +    "  console.log('bodyContent:')\n" +    '  console.log(bodyContent)\n' +    '  return bodyContent\n' +    '}\n' +    '\n' +    'webLoad(url)\n',  metadata: {    source: 'webLoad.ts',    repository: 'https://github.com/shu-kob/langchain-sample-code',    branch: 'main'  },  id: undefined}これらのソースコードをプロンプトに含めて、生成AIに投げます。例えば、GitHubリポジトリの仕様を聞くなどです。多くの場合、ソースコードの文量は多くなり、それなりのトークン数になるので、200万トークン対応のGemini-1.5などを使うのが良いでしょう。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[LangChainでURLからWebページの中身を読み込む方法]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/08/31/223416</link>
@@ -229,13 +236,6 @@
             <guid>https://sreake.com/blog/docker-build-check/</guid>
             <pubDate>Tue, 13 Aug 2024 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは、Sreake 事業部 佐藤慧太@(SatohJohn) です。 以下の docker build check という機能について、検証をし、Google Cloud の Cloud Build に組 […]The post Docker Build Check について検証をしてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud Professional Cloud Architectに合格]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/12/224136</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/12/224136</guid>
-            <pubDate>Mon, 12 Aug 2024 13:41:36 GMT</pubDate>
-            <content:encoded><![CDATA[お盆休みいかがお過ごしでしょうか？8/10, 11, 12と3連休だった方は13からのお仕事頑張ってください。8/13以降も休みの方は引き続き休みをお楽しみください。さて、8月10日に受けたGoogle Cloud Certified - Professional Cloud Architectに合格しました！shu-kob.hateblo.jp以前合格したGoogle Cloud Certified - Professional Cloud DevOps Engineerに続き、Google Cloudプロフェッショナル2つ目です！実はDevOpsもCloud Architectもそれぞれ初回で落ちて2回目で受かっています。初回は勉強、理解不足でしたね。なお、私のGoogle Cloud経験は1年未満なので、実戦が少ない分、勉強を頑張らねばなりません。Udemyの以下の模擬試験がオススメです！click.linksynergy.comGoogle Cloudをお使いの皆さんも認定試験にチャレンジしてみてください！]]></content:encoded>
         </item>
     </channel>
 </rss>
