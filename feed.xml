@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 02 Sep 2024 18:34:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Sep 2024 18:34:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloudの生成AIサンプルアプリEnterprise Knowledge Solution (EKS)]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/09/03/235705</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/09/03/235705</guid>
+            <pubDate>Tue, 03 Sep 2024 14:57:05 GMT</pubDate>
+            <content:encoded><![CDATA[github.comGoogle Cloudの生成AIサンプルアプリ「Enterprise Knowledge Solution」 (EKS)がGitHubで公開されています。EKSはAmazon Elastic Kubernetes Serviceと紛らわしい（苦笑）「Enterprise Knowledge Solution」 はIAPとCloud RunベースでUI付きの生成AIアプリケーションをさっとデプロイできるようです。私はまだ試せていないですが、是非とも触ってみたいですね。terraformでデプロイできる模様。これは面白そう。コードも参考になりそうですね。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Github Actions で見る tfsec と Trivy の今 ~ Terraform 静的解析]]></title>
+            <link>https://zenn.dev/yokoo_an209/articles/trivy-for-terraform</link>
+            <guid>https://zenn.dev/yokoo_an209/articles/trivy-for-terraform</guid>
+            <pubDate>Tue, 03 Sep 2024 14:17:49 GMT</pubDate>
+            <content:encoded><![CDATA[Github Actionsでtfsecを実装する際に、以下を発見して良いなと思ったので試してみたhttps://tech.crassone.jp/posts/how_tfsec-pr-commenter-action_was_introduced_to_significantly_reduce_the_execution_time_of_terraform_security_scans# https://aquasecurity.github.io/tfsec/v1.0.11/getting-started/configuration/github-actions/pr-comme...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Github ActionsでCross ProjectのDirect Workload Identity Federationを試す]]></title>
+            <link>https://zenn.dev/yokoo_an209/articles/direct-workloadidentity-federation</link>
+            <guid>https://zenn.dev/yokoo_an209/articles/direct-workloadidentity-federation</guid>
+            <pubDate>Tue, 03 Sep 2024 02:12:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに現在、Workload Identity Federation の認証は以下2種類があります。Direct Workload Identity Federation（推奨、本記事の内容）Workload Identity Federation through a Service Account（従来の方法）今回は、Github Actions上で、Direct Workload Identity Federation を使用して Google Cloud の Cross Project（プロジェクトをまたぎ）でのアクセスが可能か検証します。 Direct ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[LangChain Meetup Tokyo #2に登壇し、LangChainでWebサイトの内容取得やGitHubソースコード取得、というタイトルで発表しました]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/09/02/224106</link>
@@ -215,27 +236,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/08/17/230505</guid>
             <pubDate>Sat, 17 Aug 2024 14:05:05 GMT</pubDate>
             <content:encoded><![CDATA[つくって、壊して、直して学ぶ Kubernetes入門作者:高橋 あおい翔泳社AmazonKubernetesの入門書「つくって、壊して、直して学ぶ Kubernetes入門」Kindle版が期間限定で半額です！（2024年8月17日現在、終了まで5日）この書籍は、難解と言われるkubernetesをタイトル通りつくって、壊すハンズオンにより実践的に学べます！漫画も豊富に描いてあり、とっつきやすいです！私もこの半額キャンペーンでKindle版を買うて読んでいる最中です。発売も2024年4月なので、情報も新しいです。IT技術書はすぐに情報が古くなるので、最新の情報を読んでいく必要がありますからね。Kubernetesの入門書籍はこちらがダントツ一推しだと思います！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OSC(オープンソースカンファレンス) 2024 Online/Fallに日本生成AIユーザ会で申し込んだ]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/16/235654</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/16/235654</guid>
-            <pubDate>Fri, 16 Aug 2024 14:56:54 GMT</pubDate>
-            <content:encoded><![CDATA[最近ブログを毎日書いていて、ネタが尽きてきたのですが（苦笑）、今日はOSC(オープンソースカンファレンス) 2024 Online/Fallに日本生成AIユーザ会で申し込んだのでした。event.ospn.jp10月18日(金)と19(土)で19(土)でのセミナー発表を希望しています。OSCはオープンソースの祭典で、日本生成AIユーザ会はOSC 2024 Online/Springで産声を上げました。shu-kob.hateblo.jpwww.ospn.jpOSCは全国で開催され、私も昔はいろいろ行きました。東京、大阪、京都、名古屋、浜名湖（浜松）、北海道（札幌）event.ospn.jp10月26日(土)に浅草で開催されるOSC東京Fallにも出展しようと思います！ちょっと先ですが、お会いできることを楽しみにしています！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[WindowsでGitをセットアップするには]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/15/235944</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/15/235944</guid>
-            <pubDate>Thu, 15 Aug 2024 14:59:44 GMT</pubDate>
-            <content:encoded><![CDATA[私は仕事もプライベートもMacですが、仕事にてWindowsでGitを使うにはどうすればいいという相談を受けました。www.sourcetreeapp.comSourcetreeを推しときましたが、他には、Git for Windows という手もありますね。gitforwindows.org有料だけど、forkがいいという噂。git-fork.com自分の環境だけでなく、他の人の環境の相談にも乗れるようにキャッチアップ頑張ります！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LLMを利用して、APIを自動でテストするツールを作ってみる]]></title>
-            <link>https://sreake.com/blog/llm-api-test-automation/</link>
-            <guid>https://sreake.com/blog/llm-api-test-automation/</guid>
-            <pubDate>Wed, 14 Aug 2024 22:24:42 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。本記事では、LLMとテストツールを […]The post LLMを利用して、APIを自動でテストするツールを作ってみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
