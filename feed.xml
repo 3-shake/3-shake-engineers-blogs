@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 03 Sep 2024 18:34:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Sep 2024 18:34:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Mini-Omni OSSでSpeech-to-Speechができるようになる？]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/09/04/233919</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/09/04/233919</guid>
+            <pubDate>Wed, 04 Sep 2024 14:39:19 GMT</pubDate>
+            <content:encoded><![CDATA[arxiv.orgGPT-4oの進化系で、リアルタイム音声会話のできる生成AIがOSSで出たようです。github.comその名もMini-Omni。小型モデルでどうリアルタイム音声会話を実現したのか興味深いですね。生成AIでリアルタイム音声会話は難しく、Speech-to-Text-to-Speechという変換手順を踏む必要があり、時間がかかっていたところ、リアルタイム、つまりSpeech-to-Speechで早く処理できるようになった、ということですね。ぜひ論文を読んでみたいと思います。以下、AbstractをGeminiで訳してみました。（OpenAIちゃうんかいw）言語モデルの進歩とMini-Omni言語モデルの最近の進歩は、大きな成果を上げています。GPT-4oは新たなマイルストーンとして、人間とのリアルタイム会話が可能となり、人間に近い自然な流暢さを示しています。このような人間とコンピュータのインタラクションを実現するには、音声モダリティで直接推論を行い、ストリーミングで出力生成できるモデルが必要となります。しかし、これは現在の学術的なモデルではまだ実現できていません。これらのモデルは通常、音声合成のために追加のTTSシステムに依存しており、望ましくない遅延が生じます。本論文では、リアルタイム音声インタラクションが可能なオーディオベースのエンドツーエンド会話モデルであるMini-Omniを紹介します。この機能を実現するために、テキスト指示による音声生成方法と、推論時のバッチ並列戦略を提案しています。この手法は、元のモデルの言語能力を最小限の劣化で保持するのに役立ち、他の研究がリアルタイムインタラクション機能を確立できるようにします。このトレーニング方法を「Any Model Can Talk」と呼んでいます。また、音声出力を最適化したモデルをファインチューニングするためのVoiceAssistant-400Kデータセットも紹介します。私たちの知る限り、Mini-Omniはリアルタイム音声インタラクションのための最初の完全なエンドツーエンド、オープンソースモデルであり、今後の研究に貴重な可能性を提供します。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Cloudの生成AIサンプルアプリEnterprise Knowledge Solution (EKS)]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/09/03/235705</link>
@@ -229,13 +236,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/08/18/233512</guid>
             <pubDate>Sun, 18 Aug 2024 14:35:12 GMT</pubDate>
             <content:encoded><![CDATA[2024年。お盆休みをとって、8月19日(月)から仕事再開の方も多いと思います。最初に何をして、スムーズに仕事を再開できるかを書きたいと思います。Slackを使っていることを前提として書きます。夏季休暇の時期は自由で、自分はお盆休みとっても、とっていない方がメンションを飛ばしていることもあると思います。Slackのアクティビティで確認しましょう。量が多ければ、タスクを登録しましょう。JiraやNotionなどのカンバンボードに。Googleカレンダーを使用している場合は、カレンダー上でタスクを登録する手もあります。私はカンバンボードに加えて、ちょっとした作業はカレンダー上にタスクを登録したりしています。たくさんのメンションが来ている方もいらっしゃるかもしれませんが、一つずつ確実に消化していきましょう！お盆休み明けのお仕事頑張りましょうね！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[つくって、壊して、直して学ぶ Kubernetes入門 Kindle版が期間限定で半額]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/17/230505</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/17/230505</guid>
-            <pubDate>Sat, 17 Aug 2024 14:05:05 GMT</pubDate>
-            <content:encoded><![CDATA[つくって、壊して、直して学ぶ Kubernetes入門作者:高橋 あおい翔泳社AmazonKubernetesの入門書「つくって、壊して、直して学ぶ Kubernetes入門」Kindle版が期間限定で半額です！（2024年8月17日現在、終了まで5日）この書籍は、難解と言われるkubernetesをタイトル通りつくって、壊すハンズオンにより実践的に学べます！漫画も豊富に描いてあり、とっつきやすいです！私もこの半額キャンペーンでKindle版を買うて読んでいる最中です。発売も2024年4月なので、情報も新しいです。IT技術書はすぐに情報が古くなるので、最新の情報を読んでいく必要がありますからね。Kubernetesの入門書籍はこちらがダントツ一推しだと思います！]]></content:encoded>
         </item>
     </channel>
 </rss>
