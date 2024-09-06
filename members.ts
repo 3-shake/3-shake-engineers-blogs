@@ -136,18 +136,6 @@ export const members: Member[] = [
     websiteUrl: "https://github.com/atsuya0",
   },
   {
-    id: "abnoumaru",
-    name: "abe chan",
-    role: "Group Leader",
-    bio: "I like 🍅 / 🍜 / 🌮 / 🐑 / 🍝 / 🥙",
-    avatarSrc: "/avatars/abnoumaru.jpeg",
-    sources: ["https://abnoumaru.com/rss.xml", "https://zenn.dev/abnoumaru/feed", "https://qiita.com/abnoumaru/feed", "https://speakerdeck.com/abnoumaru.rss"],
-    includeUrlRegex: "",
-    twitterUsername: "",
-    githubUsername: "abnoumaru",
-    websiteUrl: "https://www.wantedly.com/id/abnoumaru",
-  },
-  {
     id: "masasuzu",
     name: "SUZUKI, Masashi",
     role: "SRE",
