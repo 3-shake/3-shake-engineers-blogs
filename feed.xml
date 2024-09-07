@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 06 Sep 2024 18:34:34 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Sep 2024 18:33:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[test]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/09/07/235934</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/09/07/235934</guid>
+            <pubDate>Sat, 07 Sep 2024 14:59:34 GMT</pubDate>
+            <content:encoded><![CDATA[test]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[生成AIにおけるベクトルインデックス]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/09/06/234850</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/yokoo_an209/articles/otel-datadog-demo</guid>
             <pubDate>Thu, 22 Aug 2024 04:46:25 GMT</pubDate>
             <content:encoded><![CDATA[はじめにOpenTelemetry には Community Demo が用意されている。demo ではKubernetesと Dockerでのお試し方法が記載されている。今回は、minikube を使用し、Kubernetes 上で試したいと思ったのだが、demoでは OpenTelemetry の Exporter のバックエンドとして、Jaeger, Prometheus(Grafana) が使用されているが、その他のバックエンドは自分で構築してね〜となっているhttps://opentelemetry.io/docs/demo/kubernetes-deploymen...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud DLP（Data Loss Prevention）を使ってデータのマスキングしてみた]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/21/230415</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/21/230415</guid>
-            <pubDate>Wed, 21 Aug 2024 14:04:15 GMT</pubDate>
-            <content:encoded><![CDATA[DLP（Data Loss Prevention）とは？DLP（Data Loss Prevention）は、直訳で「データ損失防止」を意味し、企業や組織が保有する機密データや個人情報などの漏えいを防止するための仕組み、またはそのプロセス全体を指します。DLPの目的は、以下の通りです。機密データの特定: 個人情報、クレジットカード番号、社会保障番号など、企業にとって重要なデータを特定します。データの分類: 特定されたデータを、機密レベルや種類などに応じて分類します。データの保護: 分類されたデータに対して、アクセス制限、暗号化、匿名化などの適切な保護策を施します。データ漏えいの検出: データ漏えいが発生した場合、早期に検出し、その原因を特定します。Google CloudでDLPを使用してみたGoogle Cloud Storage上にある個人情報を含むテスト用テキストデータを用意し、下記記事の通り、コンソール上だけで個人情報のマスキングができました！便利！ops.jig-saw.comGeminiだけだとプロンプトを工夫してもマスキングはしてくれなかったので、DLPと併用しましょう。なお、要約文中に個人情報を入れるな、というプロンプトは言うことを聞いてくれました。]]></content:encoded>
         </item>
     </channel>
 </rss>
