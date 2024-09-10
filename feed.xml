@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 10 Sep 2024 11:34:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Sep 2024 22:33:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apple Intelligence触ってみたい]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/09/10/235654</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/09/10/235654</guid>
+            <pubDate>Tue, 10 Sep 2024 14:56:54 GMT</pubDate>
+            <content:encoded><![CDATA[k-tai.watch.impress.co.jpiPhone16で、Apple Intelligenceという名の生成AIが搭載されるようですね。Xなどではいまいち、盛り上がりに欠けているものの、生成AIを生業にするものとしては、触ってみたいです。Google PixelがGeminiを搭載したAIスマホとして売り出されていますが、iPhone・Apple Watch・Macユーザとしては、引き続きiPhoneですかね。Geminiは好きなので、Google Pixel欲しい気もしますがww]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GKE Observabilityツール – Cloud Service MeshとCiliumの比較]]></title>
             <link>https://sreake.com/blog/cloud-service-mesh-cilium-comparison/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/learn-about-cilium-l2-announcement/</guid>
             <pubDate>Fri, 23 Aug 2024 01:10:11 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部でインターンをしている小林です。 本記事では、Cilium v1.14で追加されたCilium L2 Announcementを検証しました。 Kubernetes External Load […]The post Cilium L2 Announcement を使ってみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2024年8月23日(金)は渋谷とオンラインにて3-shake SRE Tech Talk #10]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/22/214001</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/22/214001</guid>
-            <pubDate>Thu, 22 Aug 2024 12:40:01 GMT</pubDate>
-            <content:encoded><![CDATA[shu-kob.hateblo.jp以前も書きましたが、2024年8月23日(金)は渋谷とオンラインにて3-shake SRE Tech Talk #10 です。初のオンサイト開催！（オンラインも併用）18:30からGoogle Cloudさんの渋谷オフィスで行います。無料の懇親会もあります。オンサイトは定員40人のところ、前日の8月22日21:36現在、37人と、3人の空きがあります。タイムテーブルはこちら株式会社Topotal 菱田 健太氏「SRE NEXT 2024 で形にしたバトンを渡せる仕組み」株式会社スリーシェイク 阿部貴晶「LLMのO11yに触れる」グーグルクラウドジャパン合同会社 中谷 祐輔氏「スポンサーセッション」弊社スリーシェイクからは「LLMのO11yに触れる」というテーマで、生成AIのオブザーバビリティの話があります。私も会場誘導係として、参加予定です。生成AIに興味ある方もぜひご参加ください。]]></content:encoded>
         </item>
     </channel>
 </rss>
