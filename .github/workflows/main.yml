@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '28 18 * * *' # 3:28 AM JST every day
-    - cron: '28 6 * * *'  # 3:28 PM JST every day
+    - cron: '30 22 * * *' # 7:30 AM JST every day
+    - cron: '30 11 * * *' # 8:30 PM JST every day
   workflow_dispatch:
 
 jobs:
