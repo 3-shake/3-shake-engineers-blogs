@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Sep 2024 22:33:30 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Sep 2024 11:34:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -68,7 +68,7 @@
             <link>https://speakerdeck.com/nwiizo/2024nian-ban-yun-yong-zhe-tatinollm</link>
             <guid>https://speakerdeck.com/nwiizo/2024nian-ban-yun-yong-zhe-tatinollm</guid>
             <pubDate>Fri, 06 Sep 2024 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Cloud Operator Days 2024 クロージングイベントhttps://cloudopsdays.com/closing/この発表資料は、LLM（大規模言語モデル）によるIT運用の可能性と課題を探っています。AIOpsの概念を基に、LLMがインシデント対応、ドキュメンテーション、コード分析などの運用タスクをどのように改善できるかを説明しています。同時に、LLMの「幻覚」や不完全性といった課題も指摘し、適切な利用方法やプロンプトエンジニアリングの重要性を強調しています。登壇時ブログhttps://syu-m-5151.hatenablog.com/entry/2024/09/06/154607]]></content:encoded>
+            <content:encoded><![CDATA[Cloud Operator Days 2024 クロージングイベントhttps://cloudopsdays.com/closing/とても、端的に言うと「プロンプトエンジニアリングをしよう」って話。この発表資料は、LLM（大規模言語モデル）によるIT運用の可能性と課題を探っています。AIOpsの概念を基に、LLMがインシデント対応、ドキュメンテーション、コード分析などの運用タスクをどのように改善できるかを説明しています。同時に、LLMの「幻覚」や不完全性といった課題も指摘し、適切な利用方法やプロンプトエンジニアリングの重要性を強調しています。登壇時ブログhttps://syu-m-5151.hatenablog.com/entry/2024/09/06/154607]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Google Cloud Gemini向けの生成AIのプロンプトエンジニアリング]]></title>
