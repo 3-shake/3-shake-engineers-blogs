@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 24 Sep 2024 22:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Sep 2024 11:34:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、Google Cloud 主催の Modern Infra & Apps Summit ’24 に協賛]]></title>
+            <link>https://sreake.com/blog/moderninfra_appssummit/</link>
+            <guid>https://sreake.com/blog/moderninfra_appssummit/</guid>
+            <pubDate>Wed, 25 Sep 2024 01:11:18 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2024年10月8日（火）にGoogle 渋谷オフィスで開催される「Modern Infra & Apps Summit ’24」 (主催：グーグル・クラウド・ジャパン合同会社) にスポンサーとして協賛し、セッション登壇することをお知らせします。The post スリーシェイク、Google Cloud 主催の Modern Infra & Apps Summit ’24 に協賛 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Argo CDによるKubernetesマルチテナント構成の検討]]></title>
             <link>https://sreake.com/blog/kubernetes-multi-tenants-by-argo-cd/</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/08/27/235840</guid>
             <pubDate>Tue, 27 Aug 2024 14:58:40 GMT</pubDate>
             <content:encoded><![CDATA[pages.sreake.comイベントで登壇していました。ご参加くださった方はありがとうございました！良い評価をいただけたようで光栄です！今回、「生成AI利活用を進めるためのプロセス」というテーマだったので、普段私があまり話さないことも話せて新鮮でした。genai-users.connpass.com普段は、日本生成AIユーザ会でハンズオンをやっているように、具体的技術を話すことが多いので。今回とても良い経験になりました。今後も良い発表ができるよう精進していきます！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[後継者不足のCOBOLを生成AIに引き継ぎ]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/26/235854</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/26/235854</guid>
-            <pubDate>Mon, 26 Aug 2024 14:58:54 GMT</pubDate>
-            <content:encoded><![CDATA[www.itmedia.co.jpIT media AI+より。虚構新聞かと思いましたが（笑）、本当にようです。ベトナムの研究者が論文を出したのですね。日本でもCOBOLで書かれたシステムはまだまだ残っていますが、COBOL書けるエンジニアが高齢になってきて、後継者不足でもあります。海外もベトナムも同様なのですね。リプレイスしていくのも大事かと思いますが、全部のCOBOLシステムのリプレイスも難しいでしょうし、リプレイスしつつも、生成AIに書かせるのが現実解なのかもしれません。]]></content:encoded>
         </item>
     </channel>
 </rss>
