@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 29 Sep 2024 22:33:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Sep 2024 11:34:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,41 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[インテックとスリーシェイク、クラウド事業領域で協業し、ユーザー企業のDXを推進 ～両社の得意分野を活かしたクラウドシフトとモダン開発を実現～]]></title>
+            <link>https://sreake.com/blog/intec_3shake/</link>
+            <guid>https://sreake.com/blog/intec_3shake/</guid>
+            <pubDate>Mon, 30 Sep 2024 05:01:51 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2024年10月8日（火）にGoogle 渋谷オフィスで開催される「Modern Infra & Apps Summit ’24」 (主催：グーグル・クラウド・ジャパン合同会社) にスポンサーとして協賛し、セッション登壇することをお知らせします。The post インテックとスリーシェイク、クラウド事業領域で協業し、ユーザー企業のDXを推進 ～両社の得意分野を活かしたクラウドシフトとモダン開発を実現～ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DevEXとは]]></title>
+            <link>https://sreake.com/blog/devex%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/devex%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Mon, 30 Sep 2024 01:35:53 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに DevExとは何か DevExがアプリケーションとインフラにもたらすメリット DevExを始める時のポイント 代表的なDevEx技術 DevExに関する事例 Sreakeでできること 1. はじめに De […]The post DevEXとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DevOpsとは]]></title>
+            <link>https://sreake.com/blog/devops%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/devops%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Mon, 30 Sep 2024 01:35:30 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに DevOpsとは何か DevOpsがもたらすメリット DevOpsを始める時のポイント DevOpsに関連する技術や組織 DevOpsに関する事例 Sreakeでできること 1. はじめに DevOpsは […]The post DevOpsとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[オブザーバビリティとは]]></title>
+            <link>https://sreake.com/blog/%e3%82%aa%e3%83%96%e3%82%b6%e3%83%bc%e3%83%90%e3%83%93%e3%83%aa%e3%83%86%e3%82%a3%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/%e3%82%aa%e3%83%96%e3%82%b6%e3%83%bc%e3%83%90%e3%83%93%e3%83%aa%e3%83%86%e3%82%a3%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Mon, 30 Sep 2024 01:35:09 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに オブザーバビリティとは、従来の監視との違い 代表的なオブザーバビリティツールと機能の特徴 オブザーバビリティツール導入のポイント オブザーバビリティツールの導入事例 Sreakeでできること 1. はじめ […]The post オブザーバビリティとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クラウドセキュリティとは]]></title>
+            <link>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Mon, 30 Sep 2024 01:34:40 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに クラウドシステムのセキュリティリスクとは クラウドシステムの代表的なセキュリティ対策 セキュリティ対策の実施に必要なこと Sreakeでできること 1. はじめに 近年、企業のIT環境は急速にクラウド化が […]The post クラウドセキュリティとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、Google Cloud 主催の Modern Infra & Apps Summit ’24 に協賛]]></title>
             <link>https://sreake.com/blog/moderninfra_appssummit/</link>
@@ -202,41 +237,6 @@
             <guid>https://sreake.com/blog/ccoe%e3%81%a8%e3%81%af/</guid>
             <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[目次 はじめに CCoEとは クラウド活用に関する様々な課題 CCoE導入の際のポイント CCoEの導入事例 Sreakeでできること 1. はじめに 現在、さまざまな業界の多種多様なシステムにおいて、クラウドサービス­ […]The post CCoEとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetesとは]]></title>
-            <link>https://sreake.com/blog/kubernetes/</link>
-            <guid>https://sreake.com/blog/kubernetes/</guid>
-            <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[目次 はじめに Kubernetesの特徴と代表的な機能 Kubernetesを導入する際のポイント Kubernetesの導入事例 Sreakeでできること 1. はじめに 多様で複雑な現代のソフトウェア開発において、 […]The post Kubernetesとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[オライリーのAWS生成AI本]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/29/234143</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/29/234143</guid>
-            <pubDate>Thu, 29 Aug 2024 14:41:43 GMT</pubDate>
-            <content:encoded><![CDATA[AWSではじめる生成AI ―RAGアプリケーション開発から、基盤モデルの微調整、マルチモーダルAI活用までを試して学ぶ作者:Chris Fregly,Antje Barth,Shelbee EigenbrodeオライリージャパンAmazonそういや、オライリージャパンからAWSの生成AI本出てますね。欲しいと思いながらも買うてない。現状、自身の仕事のほとんどはGoogle cloudなので、AWS書籍どうしようかと思ってますが、面白そうなら買うてみるしか！翻訳はAWS Japanの久富木 隆一さん。AWSの中の人が翻訳しているので確かでしょうね！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitLab Runnerによる簡易的なCICDの設計と実装]]></title>
-            <link>https://sreake.com/blog/gitlab-runner-cicd/</link>
-            <guid>https://sreake.com/blog/gitlab-runner-cicd/</guid>
-            <pubDate>Thu, 29 Aug 2024 05:34:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の高島です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。普段は、情報系の大学院生で、数値解析に […]The post GitLab Runnerによる簡易的なCICDの設計と実装 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[「SREをはじめよう」(Becoming SRE邦訳)が出版]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/28/235736</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/28/235736</guid>
-            <pubDate>Wed, 28 Aug 2024 14:57:36 GMT</pubDate>
-            <content:encoded><![CDATA[SREをはじめよう ―個人と組織による信頼性獲得への第一歩作者:David N. Blank-EdelmanオライリージャパンAmazon「Becoming SRE」の邦訳である「SREをはじめよう」が2024/10/8オライリージャパンから発売されます！翻訳は、オライリーのSRE系の邦訳を数多く手掛けられてきた山口 能迪さん（Google所属）個人がSREになる、組織がSREになるという二面で書かれているようで、今からとても楽しみです！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud エンジニアおよび Google Cloud パートナー2社による生成AI利活用を進めるためのプロセス]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/08/27/235840</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/08/27/235840</guid>
-            <pubDate>Tue, 27 Aug 2024 14:58:40 GMT</pubDate>
-            <content:encoded><![CDATA[pages.sreake.comイベントで登壇していました。ご参加くださった方はありがとうございました！良い評価をいただけたようで光栄です！今回、「生成AI利活用を進めるためのプロセス」というテーマだったので、普段私があまり話さないことも話せて新鮮でした。genai-users.connpass.com普段は、日本生成AIユーザ会でハンズオンをやっているように、具体的技術を話すことが多いので。今回とても良い経験になりました。今後も良い発表ができるよう精進していきます！]]></content:encoded>
         </item>
     </channel>
 </rss>
