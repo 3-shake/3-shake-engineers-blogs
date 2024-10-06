@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 06 Oct 2024 11:34:51 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Oct 2024 22:33:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[tinygo + koebitenを自作したGopherくん基板で動かしてみる]]></title>
+            <link>https://zenn.dev/satoken/articles/tinygo-koebiten</link>
+            <guid>https://zenn.dev/satoken/articles/tinygo-koebiten</guid>
+            <pubDate>Sun, 06 Oct 2024 11:44:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにkoebiten はもともと ebiten というGoでゲームを作るためのライブラリを tinygo を利用してマイコン上で動くようにsago35さんが移植したものです。koebiten自体は現在sago35さんが設計されたキーボード基板(zero-kb02)で動くようになっていますが、これを改造して自分で作成しているGopherくん基板で動かしてみました。 koebitenの改造sago35さんが設計された zero-kb02 と僕のGopherくん基板ではHW構成や回路が異なります。まず zero-kb02 では rp2040-zero というマイコンを利用...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、Generative AI Summit Tokyo ’24 Fall に協賛]]></title>
             <link>https://sreake.com/blog/generative-ai-summit-tokyo-24-fall/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/satohjohn/articles/4e7a1e5e3140e1</guid>
             <pubDate>Mon, 02 Sep 2024 03:41:10 GMT</pubDate>
             <content:encoded><![CDATA[概要Project IDX (以下 IDX) は Google Cloud の Cloud Workstations をベースに Google がホストする仮想実装環境を提供してくれるサービスになります。https://idx.dev/PWA 対応しているため、install して利用することが可能です。（私は、 https://open-vsx.org/extension/k--kato/intellij-idea-keybindings こちらの extensions を利用しているため keybind を考えると install したほうが扱いやすいというのがあります)...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LangChainでgithubリポジトリのソースコードを読む方法]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/09/01/235529</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/09/01/235529</guid>
-            <pubDate>Sun, 01 Sep 2024 14:55:29 GMT</pubDate>
-            <content:encoded><![CDATA[shu-kob.hateblo.jp昨日の記事に関連して、今回はLangChainでgithubリポジトリのソースコードを読む方法です。github.com↑サンプルソースコードを載せています。js.langchain.com↑使い方はこちら実行例npx ts-node githubLoader.ts https://github.com/shu-kob/langchain-sample-codeDocument {  pageContent: "import { CheerioWebBaseLoader } from '@langchain/community/document_loaders/web/cheerio'\n" +    "import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'\n" +    "import { HtmlToTextTransformer } from '@langchain/community/document_transformers/html_to_text'\n" +    '\n' +    'const url = process.argv[2]\n' +    '\n' +    'async function webLoad (url: string) {\n' +    '  const loader = new CheerioWebBaseLoader(url)\n' +    '  const docs = await loader.load()\n' +    "  const splitter = RecursiveCharacterTextSplitter.fromLanguage('html')\n" +    '  const transformer = new HtmlToTextTransformer()\n' +    '  const sequence = splitter.pipe(transformer)\n' +    '  const newDocuments = await sequence.invoke(docs)\n' +    "  console.log('newDocuments:')\n" +    '  console.log(newDocuments)\n' +    '}\n' +    '\n' +    'webLoad(url)\n',  metadata: {    source: 'cheerioWebBaseLoader.ts',    repository: 'https://github.com/shu-kob/langchain-sample-code',    branch: 'main'  },  id: undefined}Document {  pageContent: "import { GithubRepoLoader } from '@langchain/community/document_loaders/web/github'\n" +    '\n' +    'const url = process.argv[2]\n' +    '\n' +    'async function readSorceCodesFromGithub(url: string) {\n' +    '\n' +    '  const loader = new GithubRepoLoader(\n' +    '    url,\n' +    '    {\n' +    '      branch: "main", // Defaultブランチが "master" でないか注意。他のブランチも選択可能\n' +    '      recursive: true,\n' +    '      processSubmodules: true,\n' +    '      unknown: "warn",\n' +    '      maxConcurrency: 5, // Defaults to 2\n' +    '      ignorePaths: ["*.json", "*.yaml", "*.yml", "*config*", "*.md", "Dockerfile", "*ignore", ".eslintrc.js", "*.svg"] // 除外するファイルパス\n' +    '    }\n' +    '  );\n' +    '\n' +    '  for await (const doc of loader.loadAsStream()) {\n' +    '    console.log(doc)\n' +    '  }\n' +    '};\n' +    '\n' +    'readSorceCodesFromGithub(url)\n',  metadata: {    source: 'githubLoader.ts',    repository: 'https://github.com/shu-kob/langchain-sample-code',    branch: 'main'  },  id: undefined}Document {  pageContent: "import * as cheerio from 'cheerio'\n" +    '\n' +    'const url = process.argv[2]\n' +    '\n' +    'async function webLoad (url: string) {\n' +    '  // HTMLの取得\n' +    '  const response = await fetch(url)\n' +    '  const htmlText = await response.text()\n' +    '  const cheerioText = cheerio.load(htmlText)\n' +    '\n' +    '  // styleとscriptを除去\n' +    "  cheerioText('style').remove()\n" +    "  cheerioText('script').remove()\n" +    '\n' +    "  const bodyContent: string = cheerioText('body').text().replace(/\\s+/g, '')\n" +    '\n' +    "  console.log('bodyContent:')\n" +    '  console.log(bodyContent)\n' +    '  return bodyContent\n' +    '}\n' +    '\n' +    'webLoad(url)\n',  metadata: {    source: 'webLoad.ts',    repository: 'https://github.com/shu-kob/langchain-sample-code',    branch: 'main'  },  id: undefined}これらのソースコードをプロンプトに含めて、生成AIに投げます。例えば、GitHubリポジトリの仕様を聞くなどです。多くの場合、ソースコードの文量は多くなり、それなりのトークン数になるので、200万トークン対応のGemini-1.5などを使うのが良いでしょう。]]></content:encoded>
         </item>
     </channel>
 </rss>
