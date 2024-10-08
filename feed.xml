@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 07 Oct 2024 22:34:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Oct 2024 11:34:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,12 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Why adopt GitOps with ArgoCD ?]]></title>
+            <link>https://speakerdeck.com/parupappa2929/why-adopt-gitops-with-argocd</link>
+            <guid>https://speakerdeck.com/parupappa2929/why-adopt-gitops-with-argocd</guid>
+            <pubDate>Mon, 07 Oct 2024 04:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[tinygo + koebitenを自作したGopherくん基板で動かしてみる]]></title>
             <link>https://zenn.dev/satoken/articles/tinygo-koebiten</link>
@@ -230,13 +236,6 @@
             <guid>https://speakerdeck.com/shukob/langchaindewebsaitononei-rong-qu-de-yagithubsosukodoqu-de</guid>
             <pubDate>Mon, 02 Sep 2024 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://langchain.connpass.com/event/329185/LangChainでは、Webサイトの内容取得やGitHubソースコード取得もできます。使用してみた所感も交えてこれらの機能のご紹介をします。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Project IDX での Web アプリケーション開発]]></title>
-            <link>https://zenn.dev/satohjohn/articles/4e7a1e5e3140e1</link>
-            <guid>https://zenn.dev/satohjohn/articles/4e7a1e5e3140e1</guid>
-            <pubDate>Mon, 02 Sep 2024 03:41:10 GMT</pubDate>
-            <content:encoded><![CDATA[概要Project IDX (以下 IDX) は Google Cloud の Cloud Workstations をベースに Google がホストする仮想実装環境を提供してくれるサービスになります。https://idx.dev/PWA 対応しているため、install して利用することが可能です。（私は、 https://open-vsx.org/extension/k--kato/intellij-idea-keybindings こちらの extensions を利用しているため keybind を考えると install したほうが扱いやすいというのがあります)...]]></content:encoded>
         </item>
     </channel>
 </rss>
