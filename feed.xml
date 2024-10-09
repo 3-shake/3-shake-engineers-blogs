@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 08 Oct 2024 22:34:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Oct 2024 11:34:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[FishでGoパッケージを一括更新したいのでワンライナー]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2024/10/09/180510</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2024/10/09/180510</guid>
+            <pubDate>Wed, 09 Oct 2024 09:05:10 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにGoプログラマーにとって、パッケージを最新の状態に保つことは重要な作業だ。しかし、複数のパッケージを個別に更新するのは時間がかかり、効率が悪い。そこで今回は、Fishシェルを使用してGoパッケージを一括更新する堅牢なワンライナーを紹介する。このワンライナーは、様々な環境設定に対応できる柔軟性を持ち、効率的にパッケージを更新できる強力なツールだ。ワンライナーの全容まずは、このワンライナーの全体像を見てみよう。set -l gobin (go env GOBIN); test -z "$gobin" && set gobin (go env GOPATH)/bin; for f in $gobin/*; if test -x $f; set pkg (go version -m $f | awk '/mod /{print $2}'); test -n "$pkg" && go install "$pkg@latest"; end; end一見複雑に見えるこのコマンドだが、実は論理的に構成された複数の処理の組み合わせである。以下、各部分の役割と動作原理を詳しく解説していく。ワンライナーの解剖dic.pixiv.net1. GOBINの設定と確認set -l gobin (go env GOBIN); test -z "$gobin" && set gobin (go env GOPATH)/bin;この部分は、Goバイナリのインストール先ディレクトリを特定する役割を果たす。set -l gobin (go env GOBIN)：GOBINの値を取得し、ローカル変数gobinに格納する。test -z "$gobin" && set gobin (go env GOPATH)/bin：gobinが空の場合（つまりGOBINが設定されていない場合）、GOPATH/binをデフォルトとして使用する。この処理により、GOBINの設定の有無に関わらず適切なディレクトリを使用できる柔軟性を確保している。2. ディレクトリ内のファイル処理for f in $gobin/*; ...; end$gobinディレクトリ内の全ファイルに対してループ処理を行う。これにより、インストールされている全てのGoバイナリを対象に処理を実行できる。3. 実行可能ファイルの選別if test -x $f; ...; endtest -x $fで、ファイル$fが実行可能かどうかをチェックする。これにより、実行可能なバイナリファイルのみを処理対象とし、不要なファイルを除外している。4. パッケージ情報の抽出set pkg (go version -m $f | awk '/mod /{print $2}')go version -m $fコマンドでバイナリファイルのモジュール情報を取得し、awkコマンドを使用してパッケージ名を抽出する。この結果をpkg変数に格納する。5. パッケージの更新test -n "$pkg" && go install "$pkg@latest"pkg変数が空でないことを確認し、有効なパッケージ名が得られた場合のみgo install "$pkg@latest"を実行して最新バージョンにアップデートする。このワンライナーの利点環境適応性: GOBINの設定の有無に関わらず動作する。安全性: 実行可能ファイルのみを処理し、有効なパッケージ名が得られた場合のみ更新を試みる。効率性: 一行で全ての処理を完結させ、高速に実行できる。汎用性: 様々なGo開発環境で使用できる。使用上の注意点このワンライナーは、Fishシェル専用である。Bash等の他のシェルでは動作しない。GOPATHが正しく設定されていることを前提としている。大量のパッケージがある場合、実行に時間がかかる可能性がある。まとめ本記事で紹介したワンライナーは、Goプログラマーの日常的なタスクを大幅に簡略化し、開発環境を最新に保つ強力なツールとなる。環境設定の違いに柔軟に対応し、安全かつ効率的にパッケージを更新できる点が大きな魅力だ。このワンライナーを自分の開発フローに組み込むことで、常に最新のGoパッケージを使用した、より効率的で安全な開発が可能になる。ぜひ試してみてほしい。Goプログラミングの世界は日々進化している。このワンライナーを活用し、最新の機能や改善を逃さず、より良いコードを書く手助けとしてほしい。他にいい方法があればおしえてください。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[tinygo + koebitenを自作したGopherくん基板で動かしてみる]]></title>
             <link>https://zenn.dev/satoken/articles/tinygo-koebiten</link>
@@ -230,13 +237,6 @@
             <guid>https://speakerdeck.com/shukob/langchaindewebsaitononei-rong-qu-de-yagithubsosukodoqu-de</guid>
             <pubDate>Mon, 02 Sep 2024 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://langchain.connpass.com/event/329185/LangChainでは、Webサイトの内容取得やGitHubソースコード取得もできます。使用してみた所感も交えてこれらの機能のご紹介をします。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Project IDX での Web アプリケーション開発]]></title>
-            <link>https://zenn.dev/satohjohn/articles/4e7a1e5e3140e1</link>
-            <guid>https://zenn.dev/satohjohn/articles/4e7a1e5e3140e1</guid>
-            <pubDate>Mon, 02 Sep 2024 03:41:10 GMT</pubDate>
-            <content:encoded><![CDATA[概要Project IDX (以下 IDX) は Google Cloud の Cloud Workstations をベースに Google がホストする仮想実装環境を提供してくれるサービスになります。https://idx.dev/PWA 対応しているため、install して利用することが可能です。（私は、 https://open-vsx.org/extension/k--kato/intellij-idea-keybindings こちらの extensions を利用しているため keybind を考えると install したほうが扱いやすいというのがあります)...]]></content:encoded>
         </item>
     </channel>
 </rss>
