@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 09 Oct 2024 22:34:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Oct 2024 11:34:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、「Biz/Zine Day 2024 Autumn」に出展]]></title>
+            <link>https://sreake.com/blog/biz-zine-day-2024-autumn/</link>
+            <guid>https://sreake.com/blog/biz-zine-day-2024-autumn/</guid>
+            <pubDate>Thu, 10 Oct 2024 01:18:48 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）が提供するSRE総合支援サービス「Sreake（スリーク）」は、2024年10月30日(水) に開催される「Biz/Zine Day 2024 Autumn」にブース出展することをお知らせします。The post スリーシェイク、「Biz/Zine Day 2024 Autumn」に出展 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[FishでGoパッケージを一括更新したいのでワンライナー]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/10/09/180510</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/09/02/224106</guid>
             <pubDate>Mon, 02 Sep 2024 13:41:06 GMT</pubDate>
             <content:encoded><![CDATA[langchain.connpass.comLangChain Meetup Tokyo #2に登壇してきました。私は「LangChainでWebサイトの内容取得やGitHubソースコード取得」というタイトルで発表しました！次は @shu_kob によるLangChainでWebサイトの内容取得やGitHubソースコード取得👏 #LangChainJP pic.twitter.com/ryvFxqv6M1— こぎそ | Algomatic (@kgsi) 2024年9月2日   写真撮っていただけてました。ありがとうございます。ChatGPT/LangChainによるチャットシステム構築［実践］入門作者:吉田 真吾,大嶋 勇樹技術評論社Amazon「ChatGPT/LangChainによるチャットシステム構築［実践］入門」の著者、吉田 真吾さん、大嶋 勇樹さんにもお会いできました。お二人の会社、株式会社ジェネラティブエージェンツのCEO西見公宏さんにもお会いでき、コロッケそばさん、技術者としてステキ‼️ #langchainjp pic.twitter.com/N1GE4ArjJ0— 𝙎𝙝𝙞𝙣𝙜𝙤 吉田真吾 (@yoshidashingo) 2024年9月2日   65歳で登壇されたコロッケそばさんかっこよかったです！ speakerdeck.com↑私の資料はこちらにアップロードしています。様々な学びがあり、もっと生成AIを頑張ろう、と思えた刺激的なMeetupでした！]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LangChainでWebサイトの内容取得やGitHubソースコード取得]]></title>
-            <link>https://speakerdeck.com/shukob/langchaindewebsaitononei-rong-qu-de-yagithubsosukodoqu-de</link>
-            <guid>https://speakerdeck.com/shukob/langchaindewebsaitononei-rong-qu-de-yagithubsosukodoqu-de</guid>
-            <pubDate>Mon, 02 Sep 2024 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://langchain.connpass.com/event/329185/LangChainでは、Webサイトの内容取得やGitHubソースコード取得もできます。使用してみた所感も交えてこれらの機能のご紹介をします。]]></content:encoded>
         </item>
     </channel>
 </rss>
