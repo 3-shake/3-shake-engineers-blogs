@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 13 Oct 2024 22:33:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Oct 2024 11:34:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[[Sidecar Containers] Pod Eviction 時のメッセージの改善]]></title>
+            <link>https://zenn.dev/toversus/articles/d78254ad757094</link>
+            <guid>https://zenn.dev/toversus/articles/d78254ad757094</guid>
+            <pubDate>Mon, 14 Oct 2024 07:39:56 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに先日 Kubernetes で報告されていたバグを修正する PR を送りました。その時に、今後 Kubernetes へのコントリビュートを考えている方の参考になればと思い、どう取り組んだか (Issue の読み解き方やローカル環境での再現、コードの修正、テストの追加などの一通りの流れ) を脳内ダンプして言語化してみました。それを社内向けに共有していたのですが、PR も無事にマージされたので、一部加筆修正して記事として公開します。Issue: [Sidecar Containers] Eviction message should account for the sid...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、「Biz/Zine Day 2024 Autumn」に出展]]></title>
             <link>https://sreake.com/blog/biz-zine-day-2024-autumn/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/yokoo_an209/articles/direct-workloadidentity-federation</guid>
             <pubDate>Tue, 03 Sep 2024 02:12:47 GMT</pubDate>
             <content:encoded><![CDATA[はじめに現在、Workload Identity Federation の認証は以下2種類があります。Direct Workload Identity Federation（推奨、本記事の内容）Workload Identity Federation through a Service Account（従来の方法）今回は、Github Actions上で、Direct Workload Identity Federation を使用して Google Cloud の Cross Project（プロジェクトをまたぎ）でのアクセスが可能か検証します。 Direct ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LangChain Meetup Tokyo #2に登壇し、LangChainでWebサイトの内容取得やGitHubソースコード取得、というタイトルで発表しました]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/09/02/224106</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/09/02/224106</guid>
-            <pubDate>Mon, 02 Sep 2024 13:41:06 GMT</pubDate>
-            <content:encoded><![CDATA[langchain.connpass.comLangChain Meetup Tokyo #2に登壇してきました。私は「LangChainでWebサイトの内容取得やGitHubソースコード取得」というタイトルで発表しました！次は @shu_kob によるLangChainでWebサイトの内容取得やGitHubソースコード取得👏 #LangChainJP pic.twitter.com/ryvFxqv6M1— こぎそ | Algomatic (@kgsi) 2024年9月2日   写真撮っていただけてました。ありがとうございます。ChatGPT/LangChainによるチャットシステム構築［実践］入門作者:吉田 真吾,大嶋 勇樹技術評論社Amazon「ChatGPT/LangChainによるチャットシステム構築［実践］入門」の著者、吉田 真吾さん、大嶋 勇樹さんにもお会いできました。お二人の会社、株式会社ジェネラティブエージェンツのCEO西見公宏さんにもお会いでき、コロッケそばさん、技術者としてステキ‼️ #langchainjp pic.twitter.com/N1GE4ArjJ0— 𝙎𝙝𝙞𝙣𝙜𝙤 吉田真吾 (@yoshidashingo) 2024年9月2日   65歳で登壇されたコロッケそばさんかっこよかったです！ speakerdeck.com↑私の資料はこちらにアップロードしています。様々な学びがあり、もっと生成AIを頑張ろう、と思えた刺激的なMeetupでした！]]></content:encoded>
         </item>
     </channel>
 </rss>
