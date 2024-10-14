@@ -7,15 +7,8 @@ export const ScrollableMembers: React.FC = () => {
   const [randomMembers, setRandomMembers] = useState(members);
 
   useEffect(() => {
-    const shuffleMembers = () => {
-      const shuffled = [...members].sort(() => 0.5 - Math.random());
-      setRandomMembers(shuffled.slice(0, 8)); // Display 8 random members
-    };
-
-    shuffleMembers();
-    const interval = setInterval(shuffleMembers, 60000); // Reshuffle every minute
-
-    return () => clearInterval(interval);
+    const shuffledMembers = [...members].sort(() => 0.5 - Math.random());
+    setRandomMembers(shuffledMembers.slice(0, 8)); // 8人のランダムなメンバーを表示
   }, []);
 
   return (
