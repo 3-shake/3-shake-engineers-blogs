@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 17 Oct 2024 22:34:18 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Oct 2024 11:34:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[生成AI入門]]></title>
+            <link>https://speakerdeck.com/shukob/sheng-cheng-airu-men-340f58db-c1be-4877-92b9-7fbf1df3105e</link>
+            <guid>https://speakerdeck.com/shukob/sheng-cheng-airu-men-340f58db-c1be-4877-92b9-7fbf1df3105e</guid>
+            <pubDate>Sat, 19 Oct 2024 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://genai-users.connpass.com/event/333130/OSCオンラインで生成AIの基礎知識から、実際に活用できる技術まで、幅広く解説しました。生成AIとは何か、その仕組みを解説します。生成AIモデルを比較し、具体的なユースケースを紹介します。プロンプトエンジニアリング、RAG (Retrieval Augmented Generation)などの技術を説明します。オープンソースライブラリLangChainについてご紹介します。最後に生成AIが社会に与える影響や、今後の展望について考えます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[k6 DevTools recorder を使ってみた]]></title>
             <link>https://zenn.dev/z63d/articles/0da90534fe5964</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/09/05/235035</guid>
             <pubDate>Thu, 05 Sep 2024 14:50:35 GMT</pubDate>
             <content:encoded><![CDATA[cloud.google.com生成AIのプロンプトエンジニアリングは様々な手法がありますが、Gemini for Google Cloudなんて出ているのですね。Google Cloud のプロダクトとサービスに関しては、Geminiは学習済のようで、詳しいようです。読んで勉強したいと思います。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Mini-Omni OSSでSpeech-to-Speechができるようになる？]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/09/04/233919</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/09/04/233919</guid>
-            <pubDate>Wed, 04 Sep 2024 14:39:19 GMT</pubDate>
-            <content:encoded><![CDATA[arxiv.orgGPT-4oの進化系で、リアルタイム音声会話のできる生成AIがOSSで出たようです。github.comその名もMini-Omni。小型モデルでどうリアルタイム音声会話を実現したのか興味深いですね。生成AIでリアルタイム音声会話は難しく、Speech-to-Text-to-Speechという変換手順を踏む必要があり、時間がかかっていたところ、リアルタイム、つまりSpeech-to-Speechで早く処理できるようになった、ということですね。ぜひ論文を読んでみたいと思います。以下、AbstractをGeminiで訳してみました。（OpenAIちゃうんかいw）言語モデルの進歩とMini-Omni言語モデルの最近の進歩は、大きな成果を上げています。GPT-4oは新たなマイルストーンとして、人間とのリアルタイム会話が可能となり、人間に近い自然な流暢さを示しています。このような人間とコンピュータのインタラクションを実現するには、音声モダリティで直接推論を行い、ストリーミングで出力生成できるモデルが必要となります。しかし、これは現在の学術的なモデルではまだ実現できていません。これらのモデルは通常、音声合成のために追加のTTSシステムに依存しており、望ましくない遅延が生じます。本論文では、リアルタイム音声インタラクションが可能なオーディオベースのエンドツーエンド会話モデルであるMini-Omniを紹介します。この機能を実現するために、テキスト指示による音声生成方法と、推論時のバッチ並列戦略を提案しています。この手法は、元のモデルの言語能力を最小限の劣化で保持するのに役立ち、他の研究がリアルタイムインタラクション機能を確立できるようにします。このトレーニング方法を「Any Model Can Talk」と呼んでいます。また、音声出力を最適化したモデルをファインチューニングするためのVoiceAssistant-400Kデータセットも紹介します。私たちの知る限り、Mini-Omniはリアルタイム音声インタラクションのための最初の完全なエンドツーエンド、オープンソースモデルであり、今後の研究に貴重な可能性を提供します。]]></content:encoded>
         </item>
     </channel>
 </rss>
