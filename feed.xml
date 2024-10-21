@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 21 Oct 2024 11:34:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Oct 2024 22:34:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[KubernetesセキュリティDeep Dive]]></title>
+            <link>https://sreake.com/blog/kubernetes-security-deep-dive/</link>
+            <guid>https://sreake.com/blog/kubernetes-security-deep-dive/</guid>
+            <pubDate>Mon, 21 Oct 2024 11:49:27 GMT</pubDate>
+            <content:encoded><![CDATA[自己紹介 高橋 楓 公立千歳科学技術大学理工学部2年の高橋楓です。普段は趣味や他社の長期インターンにてソフトウェア開発を行っており、インフラ基盤にはDockerを利用しています。しかし、KubernetesやGoogle […]The post KubernetesセキュリティDeep Dive first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[生成AI入門]]></title>
             <link>https://speakerdeck.com/shukob/sheng-cheng-airu-men-340f58db-c1be-4877-92b9-7fbf1df3105e</link>
@@ -230,13 +237,6 @@
             <guid>https://speakerdeck.com/nwiizo/2024nian-ban-yun-yong-zhe-tatinollm</guid>
             <pubDate>Fri, 06 Sep 2024 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Cloud Operator Days 2024 クロージングイベントhttps://cloudopsdays.com/closing/とても、端的に言うと「プロンプトエンジニアリングをしよう」って話。この発表資料は、LLM（大規模言語モデル）によるIT運用の可能性と課題を探っています。AIOpsの概念を基に、LLMがインシデント対応、ドキュメンテーション、コード分析などの運用タスクをどのように改善できるかを説明しています。同時に、LLMの「幻覚」や不完全性といった課題も指摘し、適切な利用方法やプロンプトエンジニアリングの重要性を強調しています。登壇時ブログhttps://syu-m-5151.hatenablog.com/entry/2024/09/06/154607]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud Gemini向けの生成AIのプロンプトエンジニアリング]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/09/05/235035</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/09/05/235035</guid>
-            <pubDate>Thu, 05 Sep 2024 14:50:35 GMT</pubDate>
-            <content:encoded><![CDATA[cloud.google.com生成AIのプロンプトエンジニアリングは様々な手法がありますが、Gemini for Google Cloudなんて出ているのですね。Google Cloud のプロダクトとサービスに関しては、Geminiは学習済のようで、詳しいようです。読んで勉強したいと思います。]]></content:encoded>
         </item>
     </channel>
 </rss>
