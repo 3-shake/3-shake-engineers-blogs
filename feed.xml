@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 27 Oct 2024 22:34:05 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Oct 2024 11:34:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cilium Node IPAM LBによるロードバランシング]]></title>
+            <link>https://sreake.com/blog/cilium-node-ipam-lb-load-balancing/</link>
+            <guid>https://sreake.com/blog/cilium-node-ipam-lb-load-balancing/</guid>
+            <pubDate>Mon, 28 Oct 2024 05:08:45 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに Ciliumのロードバランシング方法 Node IPAM LB 検証 環境構築 Serviceの作成 externalTrafficPolicy ノードの制限 実装 まとめ 参照 はじめに Sreake事 […]The post Cilium Node IPAM LBによるロードバランシング first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[技術がなければ作れない、必要がなければ存在している資格がない - Platform Engineering: A Guide for Technical, Product, and People Leaders の読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/10/25/060600</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/09/06/234850</guid>
             <pubDate>Fri, 06 Sep 2024 14:48:50 GMT</pubDate>
             <content:encoded><![CDATA[生成AIにおけるベクトルインデックス：詳細解説ベクトルインデックスとは？ベクトルインデックスは、生成AIにおいて、テキスト、画像、音声などの非構造化データを、数値のベクトルに変換し、そのベクトル間の類似度に基づいて検索や推薦を行うための技術です。なぜベクトルに変換するのか？意味の理解: 単語の並びだけでなく、単語間の関係性や文脈を数値として表現することで、コンピュータがより深くテキストの意味を理解できるようになります。高速な検索: 高次元空間上のベクトル間の距離を計算することで、従来のキーワード検索よりも高速かつ正確に類似したデータを検索できます。多様なデータの統合: テキストだけでなく、画像や音声などもベクトルに変換することで、異なる種類のデータを統一的に扱うことができます。ベクトルインデックスの仕組みベクトル化: テキストや画像などを、ニューラルネットワークなどのモデルを用いて数値のベクトルに変換します。インデックス作成: 変換されたベクトルを、効率的に検索できるようにインデックスを作成します。ベクトル検索: ユーザーのクエリをベクトル化し、作成されたインデックスから最も類似したベクトルを検索します。ベクトルインデックスの活用事例検索エンジン: キーワードだけでなく、文章の意味に基づいたより精度の高い検索を実現します。推薦システム: ユーザーの興味関心に基づいた商品やコンテンツを推薦します。チャットボット: ユーザーの質問に対して、より自然な回答を生成します。画像検索: 画像の内容に基づいた検索や、類似画像の検索を行います。ベクトルインデックスのメリット高精度な検索: キーワードマッチングだけでなく、意味に基づいた検索が可能になります。柔軟なデータ処理: テキストだけでなく、画像や音声など、様々な種類のデータを扱えます。スケーラビリティ: 大量のデータを効率的に処理できます。ベクトルインデックスの課題次元数の呪い: 高次元空間での計算コストが大きくなることがあります。モデルの選択: どのモデルを用いてベクトルに変換するかが、性能に大きく影響します。解釈の難しさ: ベクトル表現が抽象的であり、人間が直感的に理解することが難しい場合があります。今後の展望ベクトルインデックスは、生成AIのさらなる発展に不可欠な技術です。より大規模なデータセットへの対応、より高精度なベクトル化モデルの開発、そして、ベクトル表現の解釈に関する研究が進められていくことが期待されます。具体的な活用事例eコマース: ユーザーの過去の購入履歴や検索履歴に基づいた商品推薦カスタマーサポート: チャットボットによるFAQ検索や、ユーザーの問い合わせに対する自動応答医療: 医療論文の検索や、診断支援金融: リスク評価や不正検知まとめベクトルインデックスは、生成AIの性能を飛躍的に向上させるための重要な技術です。様々な分野での応用が期待されており、今後もその重要性はますます高まっていくでしょう。さらに詳しく知りたい場合は、以下のキーワードで検索してみてください。ベクトルデータベースベクトル検索自然言語処理機械学習ニューラルネットワーク何か他に聞きたいことがあれば、お気軽にご質問ください。より具体的な質問の例:特定のベクトルデータベースについて詳しく知りたいベクトルインデックスを構築する際の注意点ベクトルインデックスを生成AIの開発にどのように活用できるかこれらの質問に対して、より詳細な情報を提供できます。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Run GPU + Ollama gemma2 のパフォーマンスを図ってみる]]></title>
-            <link>https://zenn.dev/satohjohn/articles/912b4c718a8d74</link>
-            <guid>https://zenn.dev/satohjohn/articles/912b4c718a8d74</guid>
-            <pubDate>Fri, 06 Sep 2024 08:31:03 GMT</pubDate>
-            <content:encoded><![CDATA[概要Google Cloud 上で申請することで、Cloud Run GPU が使えるようになったので実行してみます。https://cloud.google.com/run/docs/configuring/services/gpu?hl=ja申請フォームGoogle Cloud では以下のように、サンプルが載っているので一旦それの通りの沿って、Gemma2 を起動するアプリケーションを作成します。https://cloud.google.com/run/docs/tutorials/gpu-gemma2-with-ollama?hl=jaとはいえ、それだけだとそのまま...]]></content:encoded>
         </item>
     </channel>
 </rss>
