@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 30 Oct 2024 22:34:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 31 Oct 2024 11:34:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Kubernetes Gateway API 入門]]></title>
+            <link>https://zenn.dev/tayusa/articles/786e3c11e631fe</link>
+            <guid>https://zenn.dev/tayusa/articles/786e3c11e631fe</guid>
+            <pubDate>Thu, 31 Oct 2024 02:57:25 GMT</pubDate>
+            <content:encoded><![CDATA[ちょうど1年前にGAとなったKubernetesのGateway APIを触る機会がなかったので、個人的に理解を深めるようと思います。https://kubernetes.io/blog/2023/10/31/gateway-api-ga/ Gateway API とは？L4とL7ルーティングを担う次世代のKubernetes Ingress、Load Balancing、Service Mesh APIsです。汎用的で表現力があり役割が分離できるように設計されています。役割指向Kubernetesのサービスネットワークの利用と設定を行う組織の役割を表現したAPIリソースに...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[WebサイトやGitHubソースコードを処理 (ハンズオン)]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/10/29/190456</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/cloud-service-mesh-cilium-comparison/</guid>
             <pubDate>Mon, 09 Sep 2024 04:55:11 GMT</pubDate>
             <content:encoded><![CDATA[はじめに extended Berkley Packet Filter (eBPF) は、Linuxのカーネルに組み込まれた技術で、カーネルに直接変更を加えることなくプログラムを安全にカーネル内で実行することを可能にしま […]The post GKE Observabilityツール – Cloud Service MeshとCiliumの比較 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud MonitoringおよびCloud Loggingを用いた監視とアラート通知]]></title>
-            <link>https://sreake.com/blog/monitoring-and-alerting-with-cloud-monitoring-and-cloud-logging/</link>
-            <guid>https://sreake.com/blog/monitoring-and-alerting-with-cloud-monitoring-and-cloud-logging/</guid>
-            <pubDate>Mon, 09 Sep 2024 01:05:46 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに はじめまして。Sreake事業部インターン生の高島です。2023年10月から長期インターン生としてKubernetes関連技術の習得とSRE技術の調査・検証を行っています。普段は、情報系の大学院生で、数値解析に […]The post Cloud MonitoringおよびCloud Loggingを用いた監視とアラート通知 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
