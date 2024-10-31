@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 31 Oct 2024 11:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 31 Oct 2024 15:18:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【CloudNative Entry】入社課題で学んだことTips]]></title>
+            <link>https://zenn.dev/melanmeg/articles/f52c5aaa895523</link>
+            <guid>https://zenn.dev/melanmeg/articles/f52c5aaa895523</guid>
+            <pubDate>Thu, 31 Oct 2024 15:03:05 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに10月から 3-shake に入社した melanmeg です。入社時課題が始まって、 やったこと・わかったこと をここに整理してみました！!内容は「クラウドネイティブのエントリーレベルのスキルを身に着ける」といったものになります前職ではAWS・Azureを触っていたため、今回Google Cloudで課題を進めることにしました。今まで触ってこなかったのでクラウドごとの特徴を知れる良い学びになりました。早速、整理したことを紹介していきます。 課題一言でいうと、『クラウドネイティブのエントリーレベルのスキルを身に着けるを目標の元、k8sクラスタ構築からwo...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes Gateway API 入門]]></title>
             <link>https://zenn.dev/tayusa/articles/786e3c11e631fe</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/09/10/235654</guid>
             <pubDate>Tue, 10 Sep 2024 14:56:54 GMT</pubDate>
             <content:encoded><![CDATA[k-tai.watch.impress.co.jpiPhone16で、Apple Intelligenceという名の生成AIが搭載されるようですね。Xなどではいまいち、盛り上がりに欠けているものの、生成AIを生業にするものとしては、触ってみたいです。Google PixelがGeminiを搭載したAIスマホとして売り出されていますが、iPhone・Apple Watch・Macユーザとしては、引き続きiPhoneですかね。Geminiは好きなので、Google Pixel欲しい気もしますがww]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GKE Observabilityツール – Cloud Service MeshとCiliumの比較]]></title>
-            <link>https://sreake.com/blog/cloud-service-mesh-cilium-comparison/</link>
-            <guid>https://sreake.com/blog/cloud-service-mesh-cilium-comparison/</guid>
-            <pubDate>Mon, 09 Sep 2024 04:55:11 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに extended Berkley Packet Filter (eBPF) は、Linuxのカーネルに組み込まれた技術で、カーネルに直接変更を加えることなくプログラムを安全にカーネル内で実行することを可能にしま […]The post GKE Observabilityツール – Cloud Service MeshとCiliumの比較 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
