@@ -507,4 +507,16 @@ export const members: Member[] = [
     githubUsername: "moz-sec",
     websiteUrl: "https://moz-sec.com/",
   },
+  {
+    id: "melanmeg",
+    name: "Naoya Yamamoto",
+    role: "SRE",
+    bio: "konpeko~",
+    avatarSrc: "/avatars/melanmeg.png",
+    sources: ["https://zenn.dev/melanmeg/feed","https://speakerdeck.com/melanmeg.rss"],
+    includeUrlRegex: "",
+    twitterUsername: "melanmeg",
+    githubUsername: "melanmeg",
+    websiteUrl: "https://lit.link/melanmeg",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
