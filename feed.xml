@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 31 Oct 2024 22:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Nov 2024 11:34:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[FinOpsとは 〜クラウドネイティブ・SRE・CCoEの導入によるFinOpsの実践〜]]></title>
+            <link>https://sreake.com/blog/finops%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/finops%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Fri, 01 Nov 2024 04:08:54 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに FinOpsとは クラウド利用コストに関する課題 Finopsの実現に必要なこと、導入方法 FinOpsの取り組み例 結論 1. はじめに 現在、さまざまな業界の多種多様なシステムにおいて、クラウドサービ […]The post FinOpsとは 〜クラウドネイティブ・SRE・CCoEの導入によるFinOpsの実践〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クラウドネイティブとは 〜新時代を切り拓くためのCCoE・SRE導入と実践〜]]></title>
+            <link>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%a8%e3%81%af/</link>
+            <guid>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%a8%e3%81%af/</guid>
+            <pubDate>Fri, 01 Nov 2024 04:08:34 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに クラウドネイティブとは何か クラウドネイティブが、システム開発や運用にもたらすメリット クラウドネイティブなシステムを構築、運用するためのポイントや始め方 代表的なクラウドネイティブ技術 クラウドネイティ […]The post クラウドネイティブとは 〜新時代を切り拓くためのCCoE・SRE導入と実践〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Platform Engineeringとは  〜SRE導入で目指す開発者体験の革新〜]]></title>
+            <link>https://sreake.com/blog/platform-engineering/</link>
+            <guid>https://sreake.com/blog/platform-engineering/</guid>
+            <pubDate>Fri, 01 Nov 2024 04:08:14 GMT</pubDate>
+            <content:encoded><![CDATA[目次 はじめに Platform Engineeringとは何か Platform Engineeringがもたらすメリット Platform Engineeringを始める時のポイント 代表的なPlatform Eng […]The post Platform Engineeringとは  〜SRE導入で目指す開発者体験の革新〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[【CloudNative Entry】入社課題で学んだことTips]]></title>
             <link>https://zenn.dev/melanmeg/articles/f52c5aaa895523</link>
@@ -216,27 +237,6 @@
             <guid>https://sreake.com/blog/kubernetes-load-balancing-comparison-on-platform-engineering-view-point/</guid>
             <pubDate>Fri, 13 Sep 2024 02:59:01 GMT</pubDate>
             <content:encoded><![CDATA[自己紹介 井上 裕介 千葉工業大学 情報科学部 情報工学科 学部4年の井上裕介と申します。大学では主に遺伝的アルゴリズムの改良に関する研究を行っています。2023年のサマーインターンから引き続きSreake事業部にて技術 […]The post Platform Engineering の視点から考える、Kubernetes Load Balancing の比較 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「DevOps – サービス」のスペシャライゼーション認定を取得]]></title>
-            <link>https://sreake.com/blog/google-cloud-partner-advantage-devops/</link>
-            <guid>https://sreake.com/blog/google-cloud-partner-advantage-devops/</guid>
-            <pubDate>Fri, 13 Sep 2024 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloud Sell および Service エンゲージメントモデルのプレミアパートナーである株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、Google Cloud Partner Advantage プログラムにおいて、「DevOps - サービス」のスペシャライゼーション認定を取得したことをお知らせします。The post スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「DevOps – サービス」のスペシャライゼーション認定を取得 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AIを用いたOCR]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/09/11/223456</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/09/11/223456</guid>
-            <pubDate>Wed, 11 Sep 2024 13:34:56 GMT</pubDate>
-            <content:encoded><![CDATA[OCRとは、Optical Character Recognitionの略で、日本語では光学文字認識といいます。OCRとは何か？OCRは、スキャンした書類や画像に含まれる文字を、コンピュータが読み取り、テキストデータに変換する技術です。つまり、紙に書かれた文字をデジタルの文字に変えて、パソコンで編集したり、検索したりできるようにするものです。OCRの仕組み画像の取り込み: スキャナーやデジタルカメラで、文字が書かれた紙の画像を撮影します。画像の前処理: 画像のノイズ除去や歪みの修正など、文字認識を円滑に行うための処理を行います。文字の切り出し: 画像から文字を一つずつ切り出します。文字の認識: 切り出した文字を、事前に登録された文字のパターンと照合し、どの文字か判定します。テキストデータへの変換: 認識された文字を、テキストデータに変換します。OCRの活用例書類のデジタル化: 紙の書類をスキャンしてテキストデータに変換することで、電子化し、保管や検索を効率化できます。データ入力の自動化: 請求書や領収書などの文字情報を自動的に読み込むことで、データ入力の手間を大幅に削減できます。検索の効率化: テキストデータに変換された文書は、キーワード検索が可能になり、必要な情報に素早くアクセスできます。翻訳: OCRでテキストデータに変換した後に、翻訳ソフトウェアを使って他の言語に翻訳することができます。OCRのメリット作業の効率化: 手作業でのデータ入力に比べて、大幅に作業時間を短縮できます。正確性の向上: 人による入力ミスを減らすことができ、データの正確性を高めます。コスト削減: 人件費の削減につながります。ペーパーレス化: 紙の書類を電子化することで、保管スペースを削減し、環境にも優しいです。OCRの種類OCRには、大きく分けて以下の2種類があります。OCRエンジン: ソフトウェア開発者が、OCR機能を自社のアプリケーションに組み込むために利用するソフトウェアです。OCRサービス: クラウド上で提供されるOCR機能で、APIなどを利用して簡単にOCR機能を導入できます。OCRの選び方OCRを選ぶ際には、以下の点に注意しましょう。認識精度: どの程度の精度で文字を認識できるか。対応言語: どの言語に対応しているか。対応フォント: どのフォントに対応しているか。対応ファイル形式: どのファイル形式に対応しているか。価格: 有料か無料か、料金体系はどうか。AIを用いたOCRcloud.google.comGoogle CloudなどパブリッククラウドでOCR機能が提供されています。Geminiで使用することもできます。OCRの活用の幅が広がり、工数削減に役立ちそうですね。まとめOCRは、紙の文書をデジタル化し、業務効率化に貢献する便利な技術です。様々な分野で活用されており、今後もその重要性はますます高まっていくでしょう。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apple Intelligence触ってみたい]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/09/10/235654</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/09/10/235654</guid>
-            <pubDate>Tue, 10 Sep 2024 14:56:54 GMT</pubDate>
-            <content:encoded><![CDATA[k-tai.watch.impress.co.jpiPhone16で、Apple Intelligenceという名の生成AIが搭載されるようですね。Xなどではいまいち、盛り上がりに欠けているものの、生成AIを生業にするものとしては、触ってみたいです。Google PixelがGeminiを搭載したAIスマホとして売り出されていますが、iPhone・Apple Watch・Macユーザとしては、引き続きiPhoneですかね。Geminiは好きなので、Google Pixel欲しい気もしますがww]]></content:encoded>
         </item>
     </channel>
 </rss>
