@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 05 Nov 2024 11:34:15 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Nov 2024 22:34:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -61,7 +61,7 @@
             <link>https://blog.atusy.net/2024/11/01/nix-r-is-tough/</link>
             <guid>https://blog.atusy.net/2024/11/01/nix-r-is-tough/</guid>
             <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[先日、nix-shellでRを使うという記事を書きましたが、Nixで入れたRをふだん使いするのはしんどいな……と感じています。いかんせん、R]]></content:encoded>
+            <content:encoded><![CDATA[先日、nix-shellでRを使うという記事を書きましたが、Nixで入れたRをふだん使いするのはしんどいな……と感じています。いかんせん、R本体もパッケージも最新のものを使えない現状があります。nix本家が対応に困ってる2024-11-01時点で最新のRは4.4.2ですが、nixで利用可能なRは4.4.1で止まっています。どうにも、パッケージの依存関係の都合で更新したくてもできない状況になっているようです。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[【CloudNative Entry】入社課題で学んだことTips]]></title>
@@ -96,7 +96,7 @@
             <link>https://blog.atusy.net/2024/10/25/r-logger/</link>
             <guid>https://blog.atusy.net/2024/10/25/r-logger/</guid>
             <pubDate>Fri, 25 Oct 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[先日「Rでndjson形式のログを解析する]」の記事を書いた流れで、そういえばRでログを出力する方法を知らないな思ったので調べてみました。 R]]></content:encoded>
+            <content:encoded><![CDATA[先日「Rでndjson形式のログを解析する]」の記事を書いた流れで、そういえばRでログを出力する方法を知らないな思ったので調べてみました。Rでログを扱うパッケージはいくつかありますが、開発が盛んなのはloggerパッケージのようです。最近（2024年8月がごろ）はHadleyも開発に入っているので、安心感がありますね。loggerパッケージのWebサイトには、類似パッケージの紹介もあるので、他を見当したい場合も、まずはここを見てみるとよいでしょう。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[技術がなければ作れない、必要がなければ存在している資格がない - Platform Engineering: A Guide for Technical, Product, and People Leaders の読書感想文]]></title>
@@ -117,7 +117,7 @@
             <link>https://blog.atusy.net/2024/10/22/anaylze-ndjson-logs-in-r/</link>
             <guid>https://blog.atusy.net/2024/10/22/anaylze-ndjson-logs-in-r/</guid>
             <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[最近、ndjson形式のログをRで解析しました。やはりtidyverseを使える体験のよさは他の追随を許しません。 ただ、ndjson形式を直]]></content:encoded>
+            <content:encoded><![CDATA[最近、ndjson形式のログをRで解析しました。やはりtidyverseを使える体験のよさは他の追随を許しません。ただ、ndjson形式を直接読み込む方法を知らずに、jqコマンドを使って通常のJSON形式に変換してから読み込んでいました（cat file.ndjson | jq -c -s . > file.json）。読み込みからRで完結したいと思ったので、方法を調べてみました。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[KubernetesセキュリティDeep Dive]]></title>
@@ -180,7 +180,7 @@
             <link>https://blog.atusy.net/2024/10/07/nix-shell-and-r/</link>
             <guid>https://blog.atusy.net/2024/10/07/nix-shell-and-r/</guid>
             <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[NixはLinuxやUnix向けのパッケージマネージャーです。 nix-env --install Rとしてグローバルに利用可能なRをインストールすることもできますが、 nix-shell --package R]]></content:encoded>
+            <content:encoded><![CDATA[NixはLinuxやUnix向けのパッケージマネージャーです。nix-env --install Rとしてグローバルに利用可能なRをインストールすることもできますが、nix-shell --package Rして一時的なR環境をbash上に構築することもできます。R本体やパッケージのバージョン指定も可能なので、プロジェクトごとにパッケージのバージョン指定が異なる場合や、グローバル環境にインストールしたパッケージとプロジェクト用パッケージで依存関係が衝突する場合に便利です。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[tinygo + koebitenを自作したGopherくん基板で動かしてみる]]></title>
@@ -215,7 +215,7 @@
             <link>https://blog.atusy.net/2024/10/02/trying-nix/</link>
             <guid>https://blog.atusy.net/2024/10/02/trying-nix/</guid>
             <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[NixはLinuxやUnix向けのパッケージマネージャーです。ぱっと5つメリットをあげるとこんなところでしょうか。 様々なLinuxディストリ]]></content:encoded>
+            <content:encoded><![CDATA[NixはLinuxやUnix向けのパッケージマネージャーです。ぱっと5つメリットをあげるとこんなところでしょうか。様々なLinuxディストリビューションやmacOSで使える再現性がありロールバックも可能入れたいパッケージごとに依存関係を独立して管理するので、Aを入れるにはBのバージョンアップが必要みたいな問題が起きない特定のプロジェクト（ディレクトリ）ごとに使うパッケージを変えられる設定ファイルも含めた構成管理ソフトウェアとしても使える最近、スリーシェイクに転職して、職場のPCがmacOSになりました。以前は仕事もプライベートもmanjaro linuxで統一していたのでとりあえずparuを使えばよかったのですが、そうも言ってられないので、Nixを使ってみることにしました。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[継続的デプロイメントの継続的な学習 - Continuous Deployment の読書感想文]]></title>
