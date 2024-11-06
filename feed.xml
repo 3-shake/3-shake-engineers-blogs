@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 06 Nov 2024 11:34:21 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Nov 2024 22:34:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SREの前に]]></title>
+            <link>https://speakerdeck.com/nwiizo/srenoqian-ni</link>
+            <guid>https://speakerdeck.com/nwiizo/srenoqian-ni</guid>
+            <pubDate>Wed, 06 Nov 2024 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2024年11月06日(水) 18:00～19:00の予定に遅刻してしまい、大変申し訳ございませんでした。お詫びとして、当初非公開予定であった資料を公開させていただきます。SREの前に - 運用の原理と方法論公式URL: https://talent.supporterz.jp/events/2ed2656a-13ab-409c-a1d9-df8383be25fd/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、「SRE総合支援コンサルティングサービス」および「Datadog導入支援サービス」を AWS Marketplace で提供開始]]></title>
             <link>https://sreake.com/blog/datadog_aws-marketplace/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/intec_3shake/</guid>
             <pubDate>Mon, 30 Sep 2024 05:01:51 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2024年10月8日（火）にGoogle 渋谷オフィスで開催される「Modern Infra & Apps Summit ’24」 (主催：グーグル・クラウド・ジャパン合同会社) にスポンサーとして協賛し、セッション登壇することをお知らせします。The post インテックとスリーシェイク、クラウド事業領域で協業し、ユーザー企業のDXを推進 ～両社の得意分野を活かしたクラウドシフトとモダン開発を実現～ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[DevEXとは]]></title>
-            <link>https://sreake.com/blog/devex%e3%81%a8%e3%81%af/</link>
-            <guid>https://sreake.com/blog/devex%e3%81%a8%e3%81%af/</guid>
-            <pubDate>Mon, 30 Sep 2024 01:35:53 GMT</pubDate>
-            <content:encoded><![CDATA[目次 はじめに DevExとは何か DevExがアプリケーションとインフラにもたらすメリット DevExを始める時のポイント 代表的なDevEx技術 DevExに関する事例 Sreakeでできること 1. はじめに De […]The post DevEXとは first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
