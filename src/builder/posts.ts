@@ -7,8 +7,8 @@ export default {};
 type FeedItem = {
   title: string;
   link: string;
-  contentSnippet?: string;
-  isoDate?: string;
+  contentSnippet?: string | undefined;
+  isoDate?: string | undefined;
   dateMiliSeconds: number;
 };
 
@@ -25,7 +25,6 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
       return [];
     }
 
-    // return item which has title and link
     return feed.items
       .map(({ title, contentSnippet, link, isoDate }) => {
         if (!title || !link) {
@@ -33,13 +32,14 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
           return null;
         }
         
-        return {
+        const item: FeedItem = {
           title,
-          contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ''),
           link,
+          contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ''),
           isoDate,
           dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
         };
+        return item;
       })
       .filter((item): item is FeedItem => item !== null);
   } catch (error) {
@@ -74,7 +74,6 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     authorId: id,
   }));
 
-  // remove items which not matches includeUrlRegex
   if (includeUrlRegex) {
     const regex = new RegExp(includeUrlRegex);
     postItems = postItems.filter((item) => {
@@ -86,7 +85,6 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     });
   }
 
-  // remove items which matches excludeUrlRegex
   if (excludeUrlRegex) {
     const regex = new RegExp(excludeUrlRegex);
     postItems = postItems.filter((item) => {
