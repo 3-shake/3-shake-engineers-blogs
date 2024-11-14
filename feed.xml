@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 13 Nov 2024 22:34:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Nov 2024 11:34:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、Think IT連載「Kubernetesスペシャリストが注目する関連ツール探求」が連載開始から1周年]]></title>
+            <link>https://sreake.com/blog/kubernetes-2/</link>
+            <guid>https://sreake.com/blog/kubernetes-2/</guid>
+            <pubDate>Thu, 14 Nov 2024 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、インプレスグループが運営するエンジニア向け技術解説サイト「Think IT」にて連載中の「Kubernetesスペシャリストが注目する関連ツール探求」が、連載開始から1周年を迎えることをお知らせします。The post スリーシェイク、Think IT連載「Kubernetesスペシャリストが注目する関連ツール探求」が連載開始から1周年 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、「CloudNative Days Winter 2024」に出展・登壇]]></title>
             <link>https://sreake.com/blog/cloudnative-days-winter-2024/</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2024/10/07/nix-shell-and-r/</guid>
             <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[NixはLinuxやUnix向けのパッケージマネージャーです。nix-env --install Rとしてグローバルに利用可能なRをインストールすることもできますが、nix-shell --package Rして一時的なR環境をbash上に構築することもできます。R本体やパッケージのバージョン指定も可能なので、プロジェクトごとにパッケージのバージョン指定が異なる場合や、グローバル環境にインストールしたパッケージとプロジェクト用パッケージで依存関係が衝突する場合に便利です。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[tinygo + koebitenを自作したGopherくん基板で動かしてみる]]></title>
-            <link>https://zenn.dev/satoken/articles/tinygo-koebiten</link>
-            <guid>https://zenn.dev/satoken/articles/tinygo-koebiten</guid>
-            <pubDate>Sun, 06 Oct 2024 11:44:00 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにkoebiten はもともと ebiten というGoでゲームを作るためのライブラリを tinygo を利用してマイコン上で動くようにsago35さんが移植したものです。koebiten自体は現在sago35さんが設計されたキーボード基板(zero-kb02)で動くようになっていますが、これを改造して自分で作成しているGopherくん基板で動かしてみました。 koebitenの改造sago35さんが設計された zero-kb02 と僕のGopherくん基板ではHW構成や回路が異なります。まず zero-kb02 では rp2040-zero というマイコンを利用...]]></content:encoded>
         </item>
     </channel>
 </rss>
