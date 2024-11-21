@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 21 Nov 2024 11:34:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Nov 2024 22:34:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rのパッケージ内でloggerパッケージを使う]]></title>
+            <link>https://blog.atusy.net/2024/12/09/logger-in-r-package/</link>
+            <guid>https://blog.atusy.net/2024/12/09/logger-in-r-package/</guid>
+            <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Rのloggerパッケージをパッケージ開発に使う場合、.onLoad関数内でログレベルなどの設定しよう。.onLoad関数のpkgname引数をlogger::log_thresholdなどの設定関数のnamespace引数に渡すと、パッケージ内のログだけを対象に設定を変更できます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[先人の知見から学ぶ、その経験則]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/11/20/122114</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/z63d/articles/0da90534fe5964</guid>
             <pubDate>Wed, 16 Oct 2024 12:00:33 GMT</pubDate>
             <content:encoded><![CDATA[k6 DevTools recorder とはk6 のブラウザテストのスクリプトを生成してくれるツール（Chrome 拡張機能）です。Chrome DevTools Recorder を使って記録したフローをスクリプトに変換してくれます。https://grafana.com/docs/k6/latest/using-k6/test-authoring/create-tests-from-recordings/using-the-devtools-recorder/ 使ってみるCreate a script from a recording に使い方が書いてあります。C...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、「Developers X Summit 2024」に出展]]></title>
-            <link>https://sreake.com/blog/developers-x-summit-2024/</link>
-            <guid>https://sreake.com/blog/developers-x-summit-2024/</guid>
-            <pubDate>Tue, 15 Oct 2024 01:36:55 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）が提供するSRE総合支援サービス「Sreake（スリーク）」は、2024年11月14日(木) に開催される「Developers X Summit 2024」にブース出展することをお知らせします。The post スリーシェイク、「Developers X Summit 2024」に出展 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
