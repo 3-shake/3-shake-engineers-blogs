@@ -531,4 +531,15 @@ export const members: Member[] = [
     githubUsername: "atusy",
     websiteUrl: "https://blog.atusy.net/",
   },
+  {
+    id: "yyamada",
+    name: "Yunosuke Yamada",
+    avatarSrc: "/avatars/yyamada.jpg",
+    role: "Full Stack Engineer",
+    bio: "筋トレ / LLM / Webアプリケーション",
+    source: ["https://zenn.dev/kimitsu/feed"],
+    githubUsername: "YunosukeY",
+    twitterUsername: "east_k1mitsu",
+    websiteUrl: "https://linktr.ee/kimitsu",
+  }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
