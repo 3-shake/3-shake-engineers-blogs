@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 24 Nov 2024 22:34:08 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Nov 2024 06:30:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,6 +27,13 @@
             <guid>https://blog.atusy.net/2024/11/22/atodeyomanakata/</guid>
             <pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[アトデヨム、ウソジャナイ、ヨムノタノシー]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Reckoner における Datadog Browser Test の活用事例 / Datadog Browser Test at Reckoner]]></title>
+            <link>https://speakerdeck.com/nomadblacky/datadog-browser-test-at-reckoner</link>
+            <guid>https://speakerdeck.com/nomadblacky/datadog-browser-test-at-reckoner</guid>
+            <pubDate>Wed, 20 Nov 2024 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Japan Datadog User Group Meetup#6https://datadog-jp.connpass.com/event/334594/]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[先人の知見から学ぶ、その経験則]]></title>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2024/10/22/anaylze-ndjson-logs-in-r/</guid>
             <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[最近、ndjson形式のログをRで解析しました。やはりtidyverseを使える体験のよさは他の追随を許しません。ただ、ndjson形式を直接読み込む方法を知らずに、jqコマンドを使って通常のJSON形式に変換してから読み込んでいました（cat file.ndjson | jq -c -s . > file.json）。読み込みからRで完結したいと思ったので、方法を調べてみました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KubernetesセキュリティDeep Dive]]></title>
-            <link>https://sreake.com/blog/kubernetes-security-deep-dive/</link>
-            <guid>https://sreake.com/blog/kubernetes-security-deep-dive/</guid>
-            <pubDate>Mon, 21 Oct 2024 11:49:27 GMT</pubDate>
-            <content:encoded><![CDATA[自己紹介 高橋 楓 公立千歳科学技術大学理工学部2年の高橋楓です。普段は趣味や他社の長期インターンにてソフトウェア開発を行っており、インフラ基盤にはDockerを利用しています。しかし、KubernetesやGoogle […]The post KubernetesセキュリティDeep Dive first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
