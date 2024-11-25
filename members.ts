@@ -429,7 +429,7 @@ export const members: Member[] = [
     role: "Software Engineer @ Reckoner",
     bio: "Scala / Observability",
     avatarSrc: "/avatars/nomadblacky.jpg",
-    sources: ["https://zenn.dev/nomadblacky/feed"],
+    sources: ["https://zenn.dev/nomadblacky/feed", "https://speakerdeck.com/nomadblacky.rss"],
     includeUrlRegex: "",
     twitterUsername: "nomadblacky",
     githubUsername: "NomadBlacky",
