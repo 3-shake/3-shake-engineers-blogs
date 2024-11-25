@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 25 Nov 2024 07:12:12 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Nov 2024 11:34:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【ISUCON14対策】private-isuチャレンジ記]]></title>
+            <link>https://zenn.dev/melanmeg/articles/a8ece09570279f</link>
+            <guid>https://zenn.dev/melanmeg/articles/a8ece09570279f</guid>
+            <pubDate>Mon, 25 Nov 2024 09:01:34 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに2024/12/8(日)に開催のISUCON14へ向けて練習した記録です。お題は private-isu と呼ばれるISUCON練習問題の中でも、特にメジャーなものを解くことにしました。結論として、最終スコアは44,2852点でした。ここに辿り着く道のりは険しかったです💦練習リポジトリ：https://github.com/melanmeg/private-isu-challengeまた、パフォーマンス改善タスクを求められる現場の方々にも、実際に役立つテクニックも恐らくあるはずで、興味のある方、色んな方に読んでいただけると嬉しいです。改善したことだけ知りたい方...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[私の為のNvChadのキーマッピングガイド]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/11/24/171651</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/aws_partner/</guid>
             <pubDate>Wed, 23 Oct 2024 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 アマゾン ウェブ サービス（以下AWS）の AWS パートナープログラムにおける「内製化支援推進 AWS パートナー」に認定されたことをお知らせします。The post スリーシェイク、 「内製化支援推進 AWS パートナー」認定を取得 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Rでndjson形式のログを解析する]]></title>
-            <link>https://blog.atusy.net/2024/10/22/anaylze-ndjson-logs-in-r/</link>
-            <guid>https://blog.atusy.net/2024/10/22/anaylze-ndjson-logs-in-r/</guid>
-            <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[最近、ndjson形式のログをRで解析しました。やはりtidyverseを使える体験のよさは他の追随を許しません。ただ、ndjson形式を直接読み込む方法を知らずに、jqコマンドを使って通常のJSON形式に変換してから読み込んでいました（cat file.ndjson | jq -c -s . > file.json）。読み込みからRで完結したいと思ったので、方法を調べてみました。]]></content:encoded>
         </item>
     </channel>
 </rss>
