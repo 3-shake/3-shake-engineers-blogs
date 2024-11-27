@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 27 Nov 2024 11:34:28 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Nov 2024 22:35:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -20,6 +20,13 @@
             <guid>https://sreake.com/blog/kubecon-cloud-nativecon-north-america-2024-report/</guid>
             <pubDate>Wed, 27 Nov 2024 00:28:01 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは！3-shak inc, で SRE をやっている横尾(@866mfs)です。 2024/11/12 ~ 2024/11/15 に開催された、 KubeCon + CloudNativeCo […]The post KubeCon + Cloud NativeCon North America 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[mini.aiで日本語の括弧の中身をrepeatableに編集する]]></title>
+            <link>https://blog.atusy.net/2024/11/27/mini-ai-ja/</link>
+            <guid>https://blog.atusy.net/2024/11/27/mini-ai-ja/</guid>
+            <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[mini.aiとremapをうまく活用するとaj[で「foo」のような日本語の括弧に対して発動するテキストオブジェクトをdot-repeatableに実装できることに気付きました。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Neovimのイベントタイミングガイド]]></title>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/melanmeg/articles/f52c5aaa895523</guid>
             <pubDate>Thu, 31 Oct 2024 15:03:05 GMT</pubDate>
             <content:encoded><![CDATA[はじめに10月から 3-shake に入社した melanmeg です。入社時課題が始まって、 やったこと・わかったこと をここに整理してみました！!内容は「クラウドネイティブのエントリーレベルのスキルを身に着ける」といったものになります前職ではAWS・Azureを触っていたため、今回Google Cloudで課題を進めることにしました。今まで触ってこなかったのでクラウドごとの特徴を知れる良い学びになりました。早速、整理したことを紹介していきます。 課題一言でいうと、『クラウドネイティブのエントリーレベルのスキルを身に着けるを目標の元、k8sクラスタ構築からwo...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes Gateway API 入門]]></title>
-            <link>https://zenn.dev/tayusa/articles/786e3c11e631fe</link>
-            <guid>https://zenn.dev/tayusa/articles/786e3c11e631fe</guid>
-            <pubDate>Thu, 31 Oct 2024 02:57:25 GMT</pubDate>
-            <content:encoded><![CDATA[ちょうど1年前にGAとなったKubernetesのGateway APIを触る機会がなかったので、個人的に理解を深めるようと思います。https://kubernetes.io/blog/2023/10/31/gateway-api-ga/ Gateway API とは？L4とL7ルーティングを担う次世代のKubernetes Ingress、Load Balancing、Service Mesh APIsです。汎用的で表現力があり役割が分離できるように設計されています。役割指向Kubernetesのサービスネットワークの利用と設定を行う組織の役割を表現したAPIリソースに...]]></content:encoded>
         </item>
     </channel>
 </rss>
