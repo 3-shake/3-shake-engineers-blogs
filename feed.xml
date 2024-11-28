@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 28 Nov 2024 12:38:03 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2024 22:34:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,6 +27,13 @@
             <guid>https://sreake.com/blog/google-cloud-partner-top-engineer-2025/</guid>
             <pubDate>Thu, 28 Nov 2024 06:00:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 3-shakeで、Engineering Team Lead / SRE をやっている横尾（@866mfs）です 今回、3-shake では、佐藤 慧太(@SatohJohn), 横尾 杏之介(@866mfs) […]The post 3-shake における組織的な Google Cloud Partner Top Engineer 推進について first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[コミュニティ紹介: Kubernetes Meetup Novice]]></title>
+            <link>https://speakerdeck.com/bells17/komiyuniteishao-jie-kubernetes-meetup-novice</link>
+            <guid>https://speakerdeck.com/bells17/komiyuniteishao-jie-kubernetes-meetup-novice</guid>
+            <pubDate>Thu, 28 Nov 2024 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Cloud Native Days Winter 2024のCommunity & Beginner LTでお話した資料です。https://pfem.notion.site/CNDW2024-Community-Beginner-LT-13821b0141e0800cb403c880cb4d2738]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[KubeCon + Cloud NativeCon North America 参加レポート]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%a8%e3%81%af/</guid>
             <pubDate>Fri, 01 Nov 2024 04:08:34 GMT</pubDate>
             <content:encoded><![CDATA[1. はじめに クラウドネイティブとは、クラウドの特性を最適に活用することを目指すアプローチや考え方のことです。 2006年にクラウドコンピューティングという言葉が誕生し、インターネット技術を利用してサービスを提供するコ […]The post クラウドネイティブとは 〜新時代を切り拓くためのCCoE・SRE導入と実践〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Platform Engineeringとは  〜SRE導入で目指す開発者体験の革新〜]]></title>
-            <link>https://sreake.com/blog/platform-engineering/</link>
-            <guid>https://sreake.com/blog/platform-engineering/</guid>
-            <pubDate>Fri, 01 Nov 2024 04:08:14 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに Platform Engineeringとは、開発ポータルなどの共通的なツールやサービスを高度に整備し、開発者体験(DevEx)とソフトウェアデリバリの生産性を向上させるための取り組みです。 これは、企業 […]The post Platform Engineeringとは  〜SRE導入で目指す開発者体験の革新〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
