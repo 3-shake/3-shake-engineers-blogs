@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 27 Nov 2024 22:35:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Nov 2024 11:34:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、Google Cloud Japan の「 Google Cloud Partner Top Engineer 2025 」にて3名のエンジニアが受賞]]></title>
+            <link>https://sreake.com/blog/%e3%82%b9%e3%83%aa%e3%83%bc%e3%82%b7%e3%82%a7%e3%82%a4%e3%82%af%e3%80%81google-cloud-japan-%e3%81%ae%e3%80%8c-google-cloud-partner-top-engineer-2025-%e3%80%8d%e3%81%ab%e3%81%a63%e5%90%8d%e3%81%ae/</link>
+            <guid>https://sreake.com/blog/%e3%82%b9%e3%83%aa%e3%83%bc%e3%82%b7%e3%82%a7%e3%82%a4%e3%82%af%e3%80%81google-cloud-japan-%e3%81%ae%e3%80%8c-google-cloud-partner-top-engineer-2025-%e3%80%8d%e3%81%ab%e3%81%a63%e5%90%8d%e3%81%ae/</guid>
+            <pubDate>Thu, 28 Nov 2024 06:03:47 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）のエンジニア3名が、Google Cloud Japan が高い技術力を持ったエンジニアを表彰するプログラムである「 Google Cloud Partner Top Engineer 2025 」に選出されたことをお知らせします。The post スリーシェイク、Google Cloud Japan の「 Google Cloud Partner Top Engineer 2025 」にて3名のエンジニアが受賞 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[3-shake における組織的な Google Cloud Partner Top Engineer 推進について]]></title>
+            <link>https://sreake.com/blog/google-cloud-partner-top-engineer-2025/</link>
+            <guid>https://sreake.com/blog/google-cloud-partner-top-engineer-2025/</guid>
+            <pubDate>Thu, 28 Nov 2024 06:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 3-shakeで、Engineering Team Lead / SRE をやっている横尾（@866mfs）です 今回、3-shake では、佐藤 慧太(@SatohJohn), 横尾 杏之介(@866mfs) […]The post 3-shake における組織的な Google Cloud Partner Top Engineer 推進について first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[KubeCon + Cloud NativeCon North America 参加レポート]]></title>
             <link>https://sreake.com/blog/kubecon-cloud-nativecon-north-america-2024-report/</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/platform-engineering/</guid>
             <pubDate>Fri, 01 Nov 2024 04:08:14 GMT</pubDate>
             <content:encoded><![CDATA[1. はじめに Platform Engineeringとは、開発ポータルなどの共通的なツールやサービスを高度に整備し、開発者体験(DevEx)とソフトウェアデリバリの生産性を向上させるための取り組みです。 これは、企業 […]The post Platform Engineeringとは  〜SRE導入で目指す開発者体験の革新〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Nixで最新のR環境を構築できなくてしんどい]]></title>
-            <link>https://blog.atusy.net/2024/11/01/nix-r-is-tough/</link>
-            <guid>https://blog.atusy.net/2024/11/01/nix-r-is-tough/</guid>
-            <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[先日、nix-shellでRを使うという記事を書きましたが、Nixで入れたRをふだん使いするのはしんどいな……と感じています。いかんせん、R本体もパッケージも最新のものを使えない現状があります。nix本家が対応に困ってる2024-11-01時点で最新のRは4.4.2ですが、nixで利用可能なRは4.4.1で止まっています。どうにも、パッケージの依存関係の都合で更新したくてもできない状況になっているようです。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【CloudNative Entry】入社課題で学んだことTips]]></title>
-            <link>https://zenn.dev/melanmeg/articles/f52c5aaa895523</link>
-            <guid>https://zenn.dev/melanmeg/articles/f52c5aaa895523</guid>
-            <pubDate>Thu, 31 Oct 2024 15:03:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに10月から 3-shake に入社した melanmeg です。入社時課題が始まって、 やったこと・わかったこと をここに整理してみました！!内容は「クラウドネイティブのエントリーレベルのスキルを身に着ける」といったものになります前職ではAWS・Azureを触っていたため、今回Google Cloudで課題を進めることにしました。今まで触ってこなかったのでクラウドごとの特徴を知れる良い学びになりました。早速、整理したことを紹介していきます。 課題一言でいうと、『クラウドネイティブのエントリーレベルのスキルを身に着けるを目標の元、k8sクラスタ構築からwo...]]></content:encoded>
         </item>
     </channel>
 </rss>
