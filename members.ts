@@ -376,18 +376,6 @@ export const members: Member[] = [
     websiteUrl: "https://bells17.io/",
   },
   {
-    id: "yokoo-an209",
-    name: "Annosuke Yokoo",
-    role: "SRE",
-    bio: "Buchiagemasu!",
-    avatarSrc: "/avatars/yokoo.jpeg",
-    sources: ["https://qiita.com/yokoo-an209/feed", "https://zenn.dev/yokoo_an209/feed", "https://speakerdeck.com/parupappa2929.rss"],
-    includeUrlRegex: "",
-    twitterUsername: "866mfs",
-    githubUsername: "parupappa",
-    websiteUrl: "",
-  },
-  {
     id: "hide-1",
     name: "Shuichi Inoue",
     role: "long-term internship student",
