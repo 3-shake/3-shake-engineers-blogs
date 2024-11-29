@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 28 Nov 2024 22:34:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Nov 2024 11:34:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -34,6 +34,13 @@
             <guid>https://speakerdeck.com/bells17/komiyuniteishao-jie-kubernetes-meetup-novice</guid>
             <pubDate>Thu, 28 Nov 2024 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Cloud Native Days Winter 2024のCommunity & Beginner LTでお話した資料です。https://pfem.notion.site/CNDW2024-Community-Beginner-LT-13821b0141e0800cb403c880cb4d2738]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[メインテーマはKubernetes]]></title>
+            <link>https://speakerdeck.com/nwiizo/meintemahakubernetes</link>
+            <guid>https://speakerdeck.com/nwiizo/meintemahakubernetes</guid>
+            <pubDate>Thu, 28 Nov 2024 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2024年16:20-17:00（Track A）にて「メインテーマはKubernetes」というタイトルで登壇します。セッションURL:https://event.cloudnativedays.jp/cndw2024/talks/2373公式URL:https://event.cloudnativedays.jp/cndw2024/]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[KubeCon + Cloud NativeCon North America 参加レポート]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/finops%e3%81%a8%e3%81%af/</guid>
             <pubDate>Fri, 01 Nov 2024 04:08:54 GMT</pubDate>
             <content:encoded><![CDATA[1. はじめに 現在、さまざまな業界の多種多様なシステムにおいて、クラウドサービス­­が広く活用されています。 クラウドネイティブなシステムは、状況に応じて迅速に構築できること、柔軟にスケールできること等の利点がある一方 […]The post FinOpsとは 〜クラウドネイティブ・SRE・CCoEの導入によるFinOpsの実践〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[クラウドネイティブとは 〜新時代を切り拓くためのCCoE・SRE導入と実践〜]]></title>
-            <link>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%a8%e3%81%af/</link>
-            <guid>https://sreake.com/blog/%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e3%83%8d%e3%82%a4%e3%83%86%e3%82%a3%e3%83%96%e3%81%a8%e3%81%af/</guid>
-            <pubDate>Fri, 01 Nov 2024 04:08:34 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに クラウドネイティブとは、クラウドの特性を最適に活用することを目指すアプローチや考え方のことです。 2006年にクラウドコンピューティングという言葉が誕生し、インターネット技術を利用してサービスを提供するコ […]The post クラウドネイティブとは 〜新時代を切り拓くためのCCoE・SRE導入と実践〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
