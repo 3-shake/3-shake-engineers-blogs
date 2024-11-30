@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 30 Nov 2024 11:34:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Nov 2024 22:34:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Geminiのビジネス利用でのメリットを語る]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/11/30/233039</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/11/30/233039</guid>
+            <pubDate>Sat, 30 Nov 2024 14:30:39 GMT</pubDate>
+            <content:encoded><![CDATA[この記事はGCP(Google Cloud Platform) Advent Calendar 2024 1日目の記事です。2024年はIT業界にとって、最も話題に上がったトピックは生成AIだったのではないでしょうか？2023年までは生成AIと家は、ChatGPTでしたが、2024年はGoogleがBardをリブランディングして、Gemini（ジェミニ）とし、しのぎを削っています。私はGoogle Cloudのパートナー企業である株式会社スリーシェイク Sreake事業部にて、Geminiを用いた生成AIアプリケーション開発に携わっており、Geminiのビジネス利用でのメリットを語りたいと思います。Gemini-1.5-Proは最大200万トークンの読み込みが可能Geminiの強みの中で、最も他の生成AIモデルと差別化できているのが、トークン数の長さです。これにより、動画解析などへの利用もしやすくなりました。Geminiはマルチモーダルなので、音声、画像、動画なども処理可能です。量の目安としては以下になります。書籍15〜20冊程度の分量動画約2時間音声約22時間BigQueryで容易にデータ分析基盤を構築可能他のクラウドには同様のサービスがなく、同じ機能を実現するためには複数のサービスを組み合わせる必要があります。AzureやAWS、オンプレのデータはそのままで読み込みだけ行う機能もあります。今お使いのシステム構成はほぼ変えず、追加構築可能となります。Geminiは他のモデルと比較してトークンあたりの利用料が安いGoogle Cloud上で稼働させるのに最適化しているためです。他社のクラウドで使える生成AIモデルは別会社のものなので、クラウドも生成AIもGoogleのGeminiによって、この点も強みです！もしもGeminiの出力結果が著作権侵害で係争が発生してもGoogle Cloudがサポート他クラウドにはないサービスです。こちらも、クラウドも生成AIも会社が揃っている強みと言えるでしょう。真実性1位！Gemini 1.5 ProがNIKKEI Digital Governanceが調査した真実性のスコアで1位となりました！以下の記事は最初日経で見れていたと思うのですが、今はNIKKEI Digital Governanceに登録しないと見れないようです。博識のGoogle､主観強いMeta　生成AIの｢真実性｣を検証上記画像は下記記事から引用させていただきました。note.com2024年もあと少し。2025年もGeminiとともに生成AIを盛り上げていきたいと思います！GCP(Google Cloud Platform) Advent Calendar 2024 次の記事はknak72さんによる「企業のセキュリティ強化に！ Chrome Enterprise Premium のURLフィルタリングとマルウェアスキャン機能」です。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[3-shake Advent Calendar 2024 やっていきます #3SHAKE]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/11/30/142710</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/generative-ai-summit-tokyo-24-fall-2/</guid>
             <pubDate>Tue, 05 Nov 2024 01:02:35 GMT</pubDate>
             <content:encoded><![CDATA[Sreake事業部インターン生の荒木です。先日Generative AI Summit Tokyo ’24 Fallに参加してまいりました！本イベントで得られた知見や、セッションの様子などを紹介します。 内容 […]The post Generative AI Summit Tokyo ’24 Fallに参加しました first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes Pod で Wasm と Linux コンテナを並行して実行する]]></title>
-            <link>https://zenn.dev/z63d/articles/cccf07c5a36ab3</link>
-            <guid>https://zenn.dev/z63d/articles/cccf07c5a36ab3</guid>
-            <pubDate>Sun, 03 Nov 2024 03:34:49 GMT</pubDate>
-            <content:encoded><![CDATA[!雑なメモ、誤情報に注意 概要KubeCon + CloudNativeCon North America 2024 の Running WebAssembly (Wasm) Workloads Side-by-Side with Container Workloads が気になったので事前に少し調べたメモ。runwasi は Sidecar パターンを拡張します。Pod で軽量な Wasm を Linux コンテナの Sidecar として実行するメリットが色々あります。という話だと思う。 runwasishim を開発するライブラリ、shim プロセスをつくるものと...]]></content:encoded>
         </item>
     </channel>
 </rss>
