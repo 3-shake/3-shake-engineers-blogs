@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 29 Nov 2024 22:34:45 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Nov 2024 11:34:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[3-shake Advent Calendar 2024 やっていきます #3SHAKE]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2024/11/30/142710</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2024/11/30/142710</guid>
+            <pubDate>Sat, 30 Nov 2024 05:27:10 GMT</pubDate>
+            <content:encoded><![CDATA[こんにちは、nwiizoです。晩秋の肌寒さが身にしみるこの11月も今日で終わりですね。ついこの前、昨年のAdvent Calendarで記事埋めを依頼され、慌ただしく準備した記憶が鮮明です。まったく、時の流れとは不思議なものです。今年もスリーシェイクのAdvent Calendarを開催することができます。この企画が実現したのは、ひとえに社内の方々の温かいご協力の賜物であり、その事実に深い感謝の念を抱いております。qiita.comスリーシェイクは「インフラをシンプルにしてイノベーションを起こす」というビジョンのもと、クラウド、セキュリティ、データ連携、HR領域で4つのサービスを展開しているテクノロジーカンパニーです。3-shake.com先日、シリーズB追加ラウンドとしてNTTデータ、SCSKから10億円の資金調達を実施し、資本業務提携を締結するニュースが出るなど、着実に成長を続けています。prtimes.jp今年のAdvent Calendarでも、エンジニアの技術的な記事だけでなく、スリーシェイクで働く様々な職種のメンバーによる記事をお届けする予定です。エンジニア以外にも営業、カスタマーサクセス、広報、経営企画など、多様なバックグラウンドを持つメンバーたちが、それぞれの視点からスリーシェイクでの経験や日々の発見を共有していきます。なぜ技術的な記事に限定しないのか。それは、私たちが目指すイノベーションには、技術だけでなく、様々な専門性や視点が必要だと考えているからです。このAdvent Calendarを通じて、スリーシェイクがどのような会社で、どんな人たちが働いているのか、より深く知っていただければ幸いです。記事の更新情報は、スリーシェイクの公式Xアカウント（@3shake_Inc）でお知らせしていきますので、ぜひフォローをお願いします！また、Advent Calendarも合わせてチェックしていただければと思います。成長を続けるスリーシェイクの「今」を知るきっかけとして、どうぞお楽しみください！jobs-3-shake.com]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、Google Cloud Japan の「 Google Cloud Partner Top Engineer 2025 」にて3名のエンジニアが受賞]]></title>
             <link>https://sreake.com/blog/%e3%82%b9%e3%83%aa%e3%83%bc%e3%82%b7%e3%82%a7%e3%82%a4%e3%82%af%e3%80%81google-cloud-japan-%e3%81%ae%e3%80%8c-google-cloud-partner-top-engineer-2025-%e3%80%8d%e3%81%ab%e3%81%a63%e5%90%8d%e3%81%ae/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/z63d/articles/cccf07c5a36ab3</guid>
             <pubDate>Sun, 03 Nov 2024 03:34:49 GMT</pubDate>
             <content:encoded><![CDATA[!雑なメモ、誤情報に注意 概要KubeCon + CloudNativeCon North America 2024 の Running WebAssembly (Wasm) Workloads Side-by-Side with Container Workloads が気になったので事前に少し調べたメモ。runwasi は Sidecar パターンを拡張します。Pod で軽量な Wasm を Linux コンテナの Sidecar として実行するメリットが色々あります。という話だと思う。 runwasishim を開発するライブラリ、shim プロセスをつくるものと...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[FinOpsとは 〜クラウドネイティブ・SRE・CCoEの導入によるFinOpsの実践〜]]></title>
-            <link>https://sreake.com/blog/finops%e3%81%a8%e3%81%af/</link>
-            <guid>https://sreake.com/blog/finops%e3%81%a8%e3%81%af/</guid>
-            <pubDate>Fri, 01 Nov 2024 04:08:54 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに 現在、さまざまな業界の多種多様なシステムにおいて、クラウドサービス­­が広く活用されています。 クラウドネイティブなシステムは、状況に応じて迅速に構築できること、柔軟にスケールできること等の利点がある一方 […]The post FinOpsとは 〜クラウドネイティブ・SRE・CCoEの導入によるFinOpsの実践〜 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
