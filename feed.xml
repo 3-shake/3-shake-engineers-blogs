@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 01 Dec 2024 11:34:14 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2024 22:34:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年の崖から考える我々のパーパス（序章）]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/12/01/232229</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/12/01/232229</guid>
+            <pubDate>Sun, 01 Dec 2024 14:22:29 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこの記事は3-shake Advent Calendar 2024 シリーズ1の2日目の記事です。1日目はシリーズ1がYutaro ShirayamaさんのポストCloud9？クラウドIDE CoderでPlatform Engineeringを実践する2日目はシリーズ2がYoshinori Teraokaさんのvector で kubernetes の container log を CloudWatch Logs に転送するでした。なお、シリーズ2の2日目はshingo919さんの 「九州1周旅行がなかなか大変だった話を書きます！」です。2025年の崖今回は「2025年の崖」について軽くご紹介したいと思います。いよいよ2025年になりますが、ITでは「2025年の崖」という言葉が存在します。2025年の崖がある中で、スリーシェイクのSreake事業部が果たす役割を考えていきたいと思います。「2025年の崖」をググったら色々出てきますが、経済産業省のレポートが1次情報源的かつわかりやすいでしょう。www.meti.go.jpなお、DXレポート ～ITシステム「2025年の崖」の克服とDXの本格的な展開～（サマリー）はスライド5枚にまとまっており、さっと読みやすいです。「2025年の崖」は要するに何なのかというと、IT人材が不足しており、レガシーシステムを保守するのに限界が来ている。DXも推進しないといけない。何とかしないともう後が無い。という状況。2015年時点で、IT人材の不足が約17万人とされていたところ、2025年には約43万人にまで上ります。既存のレガシーシステムの保守がブラックボックス、属人的になっており、DX化の足枷に → デジタル競争の敗者に技術的負債が溜まる一方保守運用の担い手不足で、サイバーセキュリティ事故が起きやすくこんな厳しい状況を打破するには、ユーザとベンダーそれぞれで対策していく必要があります。ユーザは人材・資金を保守からDXにシフトベンダーも同様に人材・資金を保守からDXにシフトベンダーはAI、アジャイル、マイクロサービス等最新技術を用いたビジネスにシフトやることはわかっていても、そう簡単にはいきません。ただし、スリーシェイクのSreake事業では、内製化支援も行っており、これまで数々の企業様の支援を行ってまいりました。Sreakeという商材は難しく、入社して1年が経った私もストンと腹落ちできる説明ができないままでしたが、「2025年の崖」をどう克服するかが我々のパーパスだと感じました。私は生成AIアプリケーション開発支援というDXを担当しておりますが、案件の推進を通して、「DX推進」を語れるようになっていきたいと思います。今回は、序章のような形で今後も2025年の崖について書いていければと思います。次の3-shake Advent Calendar 2024はシリーズ1がkechigonさんの「Google Cloud monitoringのアラートをGitHub issueに通知する」シリーズ2がtryu___さんの「kubebuilder使ってpodの監視してみた」です。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[vector で kubernetes の container log を CloudWatch Logs に転送する]]></title>
+            <link>https://qiita.com/yteraoka/items/df0777cdcb403a7af750</link>
+            <guid>https://qiita.com/yteraoka/items/df0777cdcb403a7af750</guid>
+            <pubDate>Sun, 01 Dec 2024 12:20:46 GMT</pubDate>
+            <content:encoded><![CDATA[Vector とはvector は timber とともに買収され datadog がメンテナンスしているオープンソースプロジェクトのようです。(Datadog acquires Timber T…]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[週間アトデ 2024-12-01]]></title>
+            <link>https://blog.atusy.net/2024/12/01/atodeyomanakata/</link>
+            <guid>https://blog.atusy.net/2024/12/01/atodeyomanakata/</guid>
+            <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[アトデヨム、ウソジャナイ、ヨムノタノシー]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Geminiのビジネス利用でのメリットを語る]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/11/30/233039</link>
@@ -216,27 +237,6 @@
             <guid>https://blog.atusy.net/2024/11/07/git-rebase/</guid>
             <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[レビューやログを振り返る時のために、Gitのコミットログを整理するrebase作業が、少しでも楽になるよう個人的に気をつけているポイントをまとめました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SREの前に]]></title>
-            <link>https://speakerdeck.com/nwiizo/srenoqian-ni</link>
-            <guid>https://speakerdeck.com/nwiizo/srenoqian-ni</guid>
-            <pubDate>Wed, 06 Nov 2024 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2024年11月06日(水) 18:00～19:00の予定に遅刻してしまい、大変申し訳ございませんでした。お詫びとして、当初非公開予定であった資料を公開させていただきます。元々、公開する予定ではなかったので補足が足りない部分などあると思いますのでご容赦下さい。ブログなどで補足情報出すかもなので気になればフォローしてください- https://syu-m-5151.hatenablog.com/- https://x.com/nwiizoSREの前に - 運用の原理と方法論公式URL: https://talent.supporterz.jp/events/2ed2656a-13ab-409c-a1d9-df8383be25fd/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、「SRE総合支援コンサルティングサービス」および「Datadog導入支援サービス」を AWS Marketplace で提供開始]]></title>
-            <link>https://sreake.com/blog/datadog_aws-marketplace/</link>
-            <guid>https://sreake.com/blog/datadog_aws-marketplace/</guid>
-            <pubDate>Tue, 05 Nov 2024 02:34:26 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）が提供する「SRE総合支援コンサルティングサービス」および「DataDog導入支援サービス」を AWS Marketplace で提供開始したことをお知らせします。The post スリーシェイク、「SRE総合支援コンサルティングサービス」および「Datadog導入支援サービス」を AWS Marketplace で提供開始 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Generative AI Summit Tokyo ’24 Fallに参加しました]]></title>
-            <link>https://sreake.com/blog/generative-ai-summit-tokyo-24-fall-2/</link>
-            <guid>https://sreake.com/blog/generative-ai-summit-tokyo-24-fall-2/</guid>
-            <pubDate>Tue, 05 Nov 2024 01:02:35 GMT</pubDate>
-            <content:encoded><![CDATA[Sreake事業部インターン生の荒木です。先日Generative AI Summit Tokyo ’24 Fallに参加してまいりました！本イベントで得られた知見や、セッションの様子などを紹介します。 内容 […]The post Generative AI Summit Tokyo ’24 Fallに参加しました first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
