@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 02 Dec 2024 11:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Dec 2024 22:35:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Transformer論文を生成AIで要約してみた]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/12/02/233507</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/12/02/233507</guid>
+            <pubDate>Mon, 02 Dec 2024 14:35:07 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は生成AI Advent Calendar 2024の3日目の記事です。AIの歴史は60年ほどで、「冬の時代」と呼ばれる停滞期もありましたが、昨今の生成AIの発展は「Transformer」と呼ばれる論文から始まりました。この「Transformer」論文をわかりやすいように生成AIに要約させてみました。arxiv.org「Transformer」論文は上記サイトで見ることができます。論文の正式名称は「Attention Is All You Need」で、現在 v7。右側のAccess Paper:から閲覧することができます。なお、PDFの直リンクはこちらGoogle CloudのVertex AIでGeminiに要約させた結果は以下です。プロンプト「この論文を日本語で高校3年生レベルにもわかるように要約してください。」この論文は、「Transformer」という、機械翻訳などのシーケンス変換タスクに革新をもたらした新しいニューラルネットワークアーキテクチャを提案しています。高校3年生にもわかるように要約すると、以下のようになります。従来の機械翻訳の問題点:従来の機械翻訳は、RNN（再帰型ニューラルネットワーク）という技術を主に使っていました。RNNは文章を単語ごとに順番に処理していくため、長い文章だと処理に時間がかかります。また、並列処理が難しいため、計算速度を上げるのが困難でした。Transformerの革新的な点:Transformerは、「Attention（注意機構）」という仕組みに完全に基づいており、RNNのような順番に処理する仕組みを完全に排除しました。Attention機構は、翻訳したい単語を生成する際に、入力文全体の中でどの単語に注目すべきかを判断する仕組みです。人間の翻訳作業で例えると、翻訳する際に原文の関連する部分に注目するのと同じような働きをします。この仕組みにより、以下の利点が生まれました。並列処理が可能: 単語を順番に処理する必要がないため、並列処理が可能になり、計算速度が大幅に向上しました。長い文章への対応力向上: RNNでは、文章が長くなるほど精度が落ちやすいという問題がありましたが、Attention機構は入力文全体を一度に見ることができるため、長い文章でも高い精度を維持できます。Transformerの成果:Transformerは、従来のモデルよりも高い精度を達成し、さらに学習時間も大幅に短縮しました。具体的には、英語からドイツ語への翻訳と英語からフランス語への翻訳タスクで、当時の最高精度を更新しました。Transformerの仕組みを簡単に説明すると:Transformerは、エンコーダとデコーダという2つの部分から構成されています。エンコーダ: 入力文を解析し、各単語の意味をベクトル表現に変換します。デコーダ: エンコーダの出力とAttention機構を利用して、翻訳文を生成します。エンコーダとデコーダは、それぞれ複数の層が積み重なった構造になっています。各層は、Attention機構と全結合層という2つのサブ層から構成されています。Transformerの今後の展望:Transformerは、テキスト以外のデータ（画像、音声、動画など）にも応用できる可能性があり、様々な分野での活用が期待されています。また、文章生成をより効率的に行うための研究も進められています。簡単に言うと、Transformerは、人間の「注意」の仕組みに似た仕組みを使って、従来よりも高速で高精度な機械翻訳を実現した画期的な技術です。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025年の崖から考える我々のパーパス（序章）]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2024/12/01/232229</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/database-reliability-engineering-reading-circle/</guid>
             <pubDate>Fri, 08 Nov 2024 04:00:52 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは。株式会社スリーシェイク Sreake 事業部に所属している @Sugo Fumitaka です。Sreake 事業部は技術力が求められる領域で豊富な経験を持つ SRE の専門家が集まったチームです。 […]The post データベースリライアビリティエンジニアリング輪読会 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[git rebaseの苦労を減らすための覚え書き]]></title>
-            <link>https://blog.atusy.net/2024/11/07/git-rebase/</link>
-            <guid>https://blog.atusy.net/2024/11/07/git-rebase/</guid>
-            <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[レビューやログを振り返る時のために、Gitのコミットログを整理するrebase作業が、少しでも楽になるよう個人的に気をつけているポイントをまとめました。]]></content:encoded>
         </item>
     </channel>
 </rss>
