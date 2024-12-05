@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 04 Dec 2024 22:35:28 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Dec 2024 11:34:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[「SRE Kaigi 2025」にスリーシェイクのエンジニアが登壇]]></title>
+            <link>https://sreake.com/blog/sre_kaigi_2025/</link>
+            <guid>https://sreake.com/blog/sre_kaigi_2025/</guid>
+            <pubDate>Thu, 05 Dec 2024 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）に在籍するエンジニアが、2025年1月26日（日）に開催される「SRE Kaigi 2025」にセッション登壇することをお知らせします。The post 「SRE Kaigi 2025」にスリーシェイクのエンジニアが登壇 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Rustによる郵便番号検索API (yubin_api) の技術解説]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/12/04/233641</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/nnaka2992/articles/use_pgbigm_on_cloudsql</guid>
             <pubDate>Sat, 16 Nov 2024 11:12:07 GMT</pubDate>
             <content:encoded><![CDATA[アプリケーションを開発しているとアプリケーションログの分析や、JSONデータに対する分析など全文検索機能を求められることがたびたびあります。そういった場合はElasticsearchのように全文検索に特化したデータベースを導入することが多いです。しかし単純な文章の検索[^特にトランザクション用途]や小規模に利用される場合ばわざわざ専用のデータベースを管理作りたくないというケースが多いです。今回はPostgreSQLで利用可能な全文検索インデックスの拡張機能であるpg_bigmを紹介します。 検証環境の作成 CloudSQL 構成Cloud SQL EditionsE...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コマンドの引数にJSONやYAMLを使うと便利かも]]></title>
-            <link>https://blog.atusy.net/2024/11/16/json-as-cmd-args/</link>
-            <guid>https://blog.atusy.net/2024/11/16/json-as-cmd-args/</guid>
-            <pubDate>Sat, 16 Nov 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[コマンドの引数をいっそJSONやYAMLにしちゃうと、シェルスクリプトの引数処理でwhileループを回避できる、配列など複雑な値もJSONの枠組みで扱える、JSONSchemaでバリデーションできると、嬉しいことが沢山かも。]]></content:encoded>
         </item>
     </channel>
 </rss>
