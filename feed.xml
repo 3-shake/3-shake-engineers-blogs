@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 08 Dec 2024 22:34:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Dec 2024 11:34:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -152,7 +152,7 @@
             <link>https://speakerdeck.com/nwiizo/meintemahakubernetes</link>
             <guid>https://speakerdeck.com/nwiizo/meintemahakubernetes</guid>
             <pubDate>Thu, 28 Nov 2024 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2024年16:20-17:00（Track A）にて「メインテーマはKubernetes」というタイトルで登壇します。セッションURL:https://event.cloudnativedays.jp/cndw2024/talks/2373公式URL:https://event.cloudnativedays.jp/cndw2024/]]></content:encoded>
+            <content:encoded><![CDATA[2024年16:20-17:00（Track A）にて「メインテーマはKubernetes」というタイトルで登壇します。公式URL:https://event.cloudnativedays.jp/cndw2024/セッションURL:https://event.cloudnativedays.jp/cndw2024/talks/2373]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[KubeCon + Cloud NativeCon North America 参加レポート]]></title>
