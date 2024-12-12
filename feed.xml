@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 12 Dec 2024 11:34:15 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Dec 2024 22:35:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ｻｯとかざして即起動! 推しグッズを神曲再生アイテムに(*°∀°)]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/9db9d10902ec03</link>
+            <guid>https://zenn.dev/nedoko_dok0dko/articles/9db9d10902ec03</guid>
+            <pubDate>Thu, 12 Dec 2024 15:00:01 GMT</pubDate>
+            <content:encoded><![CDATA[※3-shake Advent Calendar 2024の13日目のエントリー記事です。本日、12月13日は金曜日。世の中では「ジェイソンの日」なんて言われています。とはいえ、生まれてこの方ジェイソンの映画を見ることがなかったためこの手の話についてはかなり縁遠い気がしていします。(JSONの方先に連想しちゃいますし)むしろ「華金だーー＼(^o^)／」くらいしか考えていません。それしかありません。そんな社会人です。さて、今年もやってまいりましたアドベントカレンダー。2024年も引き続き参加させていただく運びとなりました。テーマは前回同様「技術・非技術関係なし!自由!」ということ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Japan.R 2024で地域コミュニティのOsaka.Rについて発表した]]></title>
             <link>https://blog.atusy.net/2024/12/12/japanr-logging/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/kubecon-cloud-nativecon-north-america-2024-report/</guid>
             <pubDate>Wed, 27 Nov 2024 00:28:01 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは！3-shak inc, で SRE をやっている横尾(@866mfs)です。 2024/11/12 ~ 2024/11/15 に開催された、 KubeCon + CloudNativeCo […]The post KubeCon + Cloud NativeCon North America 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[mini.aiで日本語の括弧の中身をrepeatableに編集する]]></title>
-            <link>https://blog.atusy.net/2024/11/27/mini-ai-ja/</link>
-            <guid>https://blog.atusy.net/2024/11/27/mini-ai-ja/</guid>
-            <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[mini.aiとremapをうまく活用するとaj[で「foo」のような日本語の括弧に対して発動するテキストオブジェクトをdot-repeatableに実装できることに気付きました。]]></content:encoded>
         </item>
     </channel>
 </rss>
