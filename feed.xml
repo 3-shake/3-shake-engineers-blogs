@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 14 Dec 2024 11:34:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Dec 2024 22:34:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Japan.R 2024に参加した]]></title>
+            <link>https://blog.atusy.net/2024/12/15/japanr-2024/</link>
+            <guid>https://blog.atusy.net/2024/12/15/japanr-2024/</guid>
+            <pubDate>Sun, 15 Dec 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Hadley氏を筆頭に、本番環境や実務でRを使う話が多くて印象深かった回。色々な話を聞けてよかった。2019年以来のオフライン開催で久しくお会いしていなかった方とお話できたこと、光栄にも私に会ってみたかったという方に挨拶頂けたりブログが参考になったと言っていただけたこと、発表に対して直に感想をやりとりできたことなど、現地入りしてよかったなあと思います。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[KubeCon NA 2024: Database DevOps: CD for Stateful Applicationsのセッションレポート]]></title>
+            <link>https://nnaka2992.hatenablog.com/entry/2024/12/14/database_devops_cd_for_stateful_applications</link>
+            <guid>https://nnaka2992.hatenablog.com/entry/2024/12/14/database_devops_cd_for_stateful_applications</guid>
+            <pubDate>Sat, 14 Dec 2024 18:55:02 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は以下アドベントカレンダー14日目の記事です。3-shake Advent Calendar 2024 シリーズ2Kubernetes Advent Calendar 2024 シリーズ1Database DevOps: CD for Stateful Applications セッションレポートセッション概要:https://kccncna2024.sched.com/event/1i7na/database-devops-cd-for-stateful-applications-stephen-atwell-harnessio-christopher-crow-pure-storage?linkback=grid-fullセッションスライドhttps://static.sched.com/hosted_files/kccncna2024/86/Harness-Portworx%20Kubecon%202024.pdfこの記事内の画像は全てこのスライドより引用しています。セッション動画  www.youtube.comこのレポートでは、KubeCon + CloudNativeCon North America 2024 のセッション「Database DevOps: CD for Stateful Applications」の内容をまとめたもので、DatabaseのDevOpsとステートフルアプリケーションの継続的デリバリについてです。データベースCDの課題と解決策セッションでは、データパイプラインのデータテストをデリバリパイプラインに統合することの重要性が強調されていました。従来、データベースのテストは、BIツールなどを用いたカスタマイズされた方法で行われることが多かったようですが、最も信頼性の高いテスト方法は、新旧バージョンで同じデータに対してテストを実行することだとスピーカーは主張していました。そして、Kubernetesはこのようなテストを大幅に簡略化できるとのことでした。この主張は、データベースの変更がアプリケーション全体に及ぼす影響を正確に把握し、本番環境へのデプロイ前に潜在的な問題を早期に発見するために非常に重要です。Kubernetesによるデータベース運用の進化セッションで紹介されたアーキテクチャの進化は、Kubernetesがデータベース運用にもたらす利点を明確に示していました。初期のアーキテクチャでは、アプリケーション、データベース、インフラストラクチャの変更が個別に管理されていましたが、発展したアーキテクチャでは、これらが統合されたCI/CDパイプラインで管理されています。この統合により、アプリケーション、データベース、インフラストラクチャの変更をE2Eでテストできるようになり、本番環境へのデプロイリスクを大幅に軽減できます。このアーキテクチャの進化は、マイクロサービスアーキテクチャやクラウドネイティブ開発との親和性が高いと言えます。マイクロサービスでは、個々のサービスが独立してデプロイされるため、データベースの変更が他のサービスに及ぼす影響を正確に把握することが重要です。Kubernetesはこのような複雑な依存関係を管理し、安全なデプロイを実現するための強力なプラットフォームを提供します。デモのオーバービューセッションでは、具体的なスキーママイグレーションのシナリオを例に、ダウンタイムゼロでのデータベース変更を実現する方法が紹介されていました。WarehouseテーブルのLocationカラムの衝突問題を解決するために、CityとStateカラムを追加し、Locationカラムとの同期をトリガーで実現する方法は、実務で非常に役立つアプローチです。この手法は、データベースの変更によるアプリケーションへの影響を最小限に抑え、ユーザー体験を損なうことなくシステムを進化させることを可能にします。デモで利用されるCDパイプラインデモで適用されるデータベースへの変更個人的にはこのようなユースケースのテストシナリオは複雑になることが多いと考えていたため、自動化を行うには相当のカスタマイズが必要になると思っていたので、この後のデモの手軽さには非常に驚かされました。デモのハイライトとHarnessの活用youtu.beこのセッションはデモが全体のほとんどを閉めています。デモ開始時点のリンクがブログ記事の中盤にあるので、デモ部分だけでもご覧になることを強く推奨します。セッションのデモでは、Harnessというツールが使用され、変更プロセスとロールバック手順が分かりやすく可視化されていました。Harnessは、GitLab CI/CDやGitHub ActionsのようなUIを提供し、各ステップの成功/失敗を容易に確認できる点が優れていると感じました。特に、ArgoCDとの連携によるデータベースとアプリケーションの協調動作は、複雑なデプロイプロセスを簡素化する上で非常に効果的です。デモで紹介された、望ましい状態になっていないことを確認し、変更を加えるプロセスは、実践的な知見を提供していました。また、データベースの変更セットの一部として事前にロールバック手順を定義しておくことは、本番環境での予期せぬ問題発生時に迅速な対応を可能にするベストプラクティスと言えるでしょう。LiquibaseやFlywayなどのツールはこのような機能を提供しており、データベースDevOpsの実践において不可欠です。HarnessではデータベースのDevOpsをアプリケーション、インフラストラクチャー込みで実現しており、非常に理想的なツールのように見えました。一方でこのセッションのスピーカーのひとりはHarnes.ioのエンジニアであるため、ポジショントークや見せたい部分しか見せていないことが十分考えられるので全てを鵜呑みにするのは危険です。それを差し引いても興味深いデモだったので、セッションで紹介された技術スタックを検証してみたいと思っています。まとめこのセッションは、Kubernetesとツールを活用することで、データベースの変更を安全かつ効率的に行う方法を示していました。E2Eテスト、ダウンタイムゼロのスキーママイグレーション、そしてロールバック手順の自動化は、データベースDevOpsを実現するための重要な要素です。これらの手法を適切に組み合わせることで、開発速度を向上させながら、システムの安定性と信頼性を維持することが可能になります。しかし、ここで紹介された手法は全ての状況に適用できるわけではありません。例えば、大規模なデータベースや複雑なトランザクション処理を行うシステムでは、ダウンタイムゼロのマイグレーションが困難な場合があります。そのようなケースでは、段階的なロールアウトやカナリアリリースなどの手法を検討する必要があります. また、ツールの導入や運用にはコストがかかるため、組織の規模やリソースに合わせて適切なツールを選択することが重要です。今後のデータベース運用においては、自動化と可観測性をさらに強化し、自己修復機能を備えた自律的なデータベース運用を目指していくことが重要だと考えます。Kubernetesやクラウドネイティブ技術は、この目標を実現するための基盤となるでしょう。またこのセッションを見るまで、個人的にDatabase on KubernetesはKubernetesを利用している組織でマネージドデータベースのコストを安くしたい場合や、データを自分たちのコントロールできる場所におきたい時に利用する選択肢と思っていました。しかしデータベースをKubenetesにデプロイすることでアプリケーションと密接に結合したテストを簡単に行えることがわかり、データベースの運用コストさえ許容できれば、他のメリットがなくてもデータベースをKubernetesで運用するのは十分ありなのではないかと意見が変わりました。今後は単なるデータベースのホスティング環境としてのKubernetes以外の部分にも注目していきたいです。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[初回実行が遅ければ遅延初期化でやればいいじゃない - RustのTUIアプリケーション改善]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2024/12/14/121545</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/%e3%82%b9%e3%83%aa%e3%83%bc%e3%82%b7%e3%82%a7%e3%82%a4%e3%82%af%e3%80%81google-cloud-japan-%e3%81%ae%e3%80%8c-google-cloud-partner-top-engineer-2025-%e3%80%8d%e3%81%ab%e3%81%a63%e5%90%8d%e3%81%ae/</guid>
             <pubDate>Thu, 28 Nov 2024 06:03:47 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）のエンジニア3名が、Google Cloud Japan が高い技術力を持ったエンジニアを表彰するプログラムである「 Google Cloud Partner Top Engineer 2025 」に選出されたことをお知らせします。The post スリーシェイク、Google Cloud Japan の「 Google Cloud Partner Top Engineer 2025 」にて3名のエンジニアが受賞 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[3-shake における組織的な Google Cloud Partner Top Engineer 推進について]]></title>
-            <link>https://sreake.com/blog/google-cloud-partner-top-engineer-2025/</link>
-            <guid>https://sreake.com/blog/google-cloud-partner-top-engineer-2025/</guid>
-            <pubDate>Thu, 28 Nov 2024 06:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 3-shakeで、Engineering Team Lead / SRE をやっている横尾（@866mfs）です 今回、3-shake では、佐藤 慧太(@SatohJohn), 横尾 杏之介(@866mfs) […]The post 3-shake における組織的な Google Cloud Partner Top Engineer 推進について first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コミュニティ紹介: Kubernetes Meetup Novice]]></title>
-            <link>https://speakerdeck.com/bells17/komiyuniteishao-jie-kubernetes-meetup-novice</link>
-            <guid>https://speakerdeck.com/bells17/komiyuniteishao-jie-kubernetes-meetup-novice</guid>
-            <pubDate>Thu, 28 Nov 2024 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Cloud Native Days Winter 2024のCommunity & Beginner LTでお話した資料です。https://pfem.notion.site/CNDW2024-Community-Beginner-LT-13821b0141e0800cb403c880cb4d2738]]></content:encoded>
         </item>
     </channel>
 </rss>
