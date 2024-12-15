@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 15 Dec 2024 04:37:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Dec 2024 11:34:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Reckoner における Datadog Error Tracking の活用事例]]></title>
+            <link>https://zenn.dev/nomadblacky/articles/1901ceb9154c7b</link>
+            <guid>https://zenn.dev/nomadblacky/articles/1901ceb9154c7b</guid>
+            <pubDate>Sun, 15 Dec 2024 10:35:38 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は、3-shake Advent Calendar 2024 の 15 日目の記事です。 はじめに私の所属する株式会社スリーシェイクでは、Reckoner というデータパイプライン構築の SaaS を開発しています。https://reckoner.io/「SaaSをつなぐ。業務が変わる。ビジネスが進化する。」直感的なユーザーインターフェイスで、多種多様な SaaS のデータをつなぎ合わせることで、データ活用・データの民主化を実現します。Reckoner では多種多様な連携先に対応しているため、様々なエラーが発生する可能性があります。そのため、エラーの迅速な発見と...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Japan.R 2024に参加した]]></title>
             <link>https://blog.atusy.net/2024/12/15/japanr-2024/</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/12/01/232229</guid>
             <pubDate>Sun, 01 Dec 2024 14:22:29 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこの記事は3-shake Advent Calendar 2024 シリーズ1の2日目の記事です。1日目はシリーズ1がYutaro ShirayamaさんのポストCloud9？クラウドIDE CoderでPlatform Engineeringを実践する2日目はシリーズ2がYoshinori Teraokaさんのvector で kubernetes の container log を CloudWatch Logs に転送するでした。なお、シリーズ2の2日目はshingo919さんの 九州旅行記（ドライブでの九州一週旅行は大変だった！）です。2025年の崖今回は「2025年の崖」について軽くご紹介したいと思います。いよいよ2025年になりますが、ITでは「2025年の崖」という言葉が存在します。2025年の崖がある中で、スリーシェイクのSreake事業部が果たす役割を考えていきたいと思います。「2025年の崖」をググったら色々出てきますが、経済産業省のレポートが1次情報源的かつわかりやすいでしょう。www.meti.go.jpなお、DXレポート ～ITシステム「2025年の崖」の克服とDXの本格的な展開～（サマリー）はスライド5枚にまとまっており、さっと読みやすいです。「2025年の崖」は要するに何なのかというと、IT人材が不足しており、レガシーシステムを保守するのに限界が来ている。DXも推進しないといけない。何とかしないともう後が無い。という状況。2015年時点で、IT人材の不足が約17万人とされていたところ、2025年には約43万人にまで上ります。既存のレガシーシステムの保守がブラックボックス、属人的になっており、DX化の足枷に → デジタル競争の敗者に技術的負債が溜まる一方保守運用の担い手不足で、サイバーセキュリティ事故が起きやすくこんな厳しい状況を打破するには、ユーザとベンダーそれぞれで対策していく必要があります。ユーザは人材・資金を保守からDXにシフトベンダーも同様に人材・資金を保守からDXにシフトベンダーはAI、アジャイル、マイクロサービス等最新技術を用いたビジネスにシフトやることはわかっていても、そう簡単にはいきません。ただし、スリーシェイクのSreake事業では、内製化支援も行っており、これまで数々の企業様の支援を行ってまいりました。Sreakeという商材は難しく、入社して1年が経った私もストンと腹落ちできる説明ができないままでしたが、「2025年の崖」をどう克服するかが我々のパーパスだと感じました。私は生成AIアプリケーション開発支援というDXを担当しておりますが、案件の推進を通して、「DX推進」を語れるようになっていきたいと思います。今回は、序章のような形で今後も2025年の崖について書いていければと思います。次の3-shake Advent Calendar 2024はシリーズ1がkechigonさんの「Google Cloud monitoringのアラートをGitHub issueに通知する」シリーズ2がtryu___さんの「kubebuilder使ってpodの監視してみた」です。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[vector で kubernetes の container log を CloudWatch Logs に転送する]]></title>
-            <link>https://qiita.com/yteraoka/items/df0777cdcb403a7af750</link>
-            <guid>https://qiita.com/yteraoka/items/df0777cdcb403a7af750</guid>
-            <pubDate>Sun, 01 Dec 2024 12:20:46 GMT</pubDate>
-            <content:encoded><![CDATA[Vector とはvector は timber とともに買収され datadog がメンテナンスしているオープンソースプロジェクトのようです。(Datadog acquires Timber T…]]></content:encoded>
         </item>
     </channel>
 </rss>
