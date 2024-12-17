@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 16 Dec 2024 22:35:02 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Dec 2024 11:34:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,18 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[プロンプトエンジニアリング プログラミング ハンズオン]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2024/12/17/185729</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2024/12/17/185729</guid>
+            <pubDate>Tue, 17 Dec 2024 09:57:29 GMT</pubDate>
+            <content:encoded><![CDATA[genai-users.connpass.comこの記事は上記勉強会の資料です。shu-kob.hateblo.jp↑上記記事を参考にサービスアカウントの設定をしてください。※ Google Cloudの無料期間が終了していると、課金されますが、ハンズオンの内容だけだと数百円もいかないと考えています。料金は確実には言えないので、Google Cloudはご自身の責任でご使用ください。github.com↑今回のサンプルコードgit clone https://github.com/shu-kob/prompt_engineeringcd prompt_engineeringpip install vertexaiLangChainを使わずVertex AIのライブラリを使用シンプルなVertex AIでGeminiを実行project_id = "PROJECT_ID" # 書き換える実行python3 generate_content.pyresponse = model.generate_content(  "プロンプトエンジニアリングとは")プロンプトを変更して実行してみましょう。Zero Shot プロンプティングproject_id = "PROJECT_ID" # 書き換える実行python3 zero_shot_prompting.pyprompt = """以下はニュース記事のタイトルです。「政治」「経済」「芸能」「スポーツ」「科学」「その他」のうち1つに分類してください。回答だけ一言で出力してください===========================紅白出場歌手の選考基準 NHK公開"""プロンプトを変更して実行してみましょう。Few Shot プロンプティングproject_id = "PROJECT_ID" # 書き換える実行python3 few_shot_prompting.pyprompt = """以下はニュース記事のタイトルです。「政治」「経済」「芸能」「スポーツ」「科学」「その他」のうち1つに分類してください。回答だけ一言で出力してください===========================「紅白出場歌手の選考基準 NHK公開」===========================以下は例です「G20 バイデン氏不在で集合写真」:政治「岡田将生&高畑充希結婚 SNS反応」:芸能"""プロンプトを変更して実行してみましょう。LangChainを使用langchain_google_vertexai を使用pip install langchain_google_vertexaipython3 invoke.pymessages = [  ("human", "ネコの鳴き真似をしてください。"),]プロンプトを変更して実行してみましょう。PromptTemplateを使用pip install langchain_corepip install pydantic==2.9.0実行python3 prompt_template.pyプロンプトテンプレートやQuestionを変更して実行してみましょう。ChatPromptTemplateを使用実行python3 prompt_template.pyprompt_template = ChatPromptTemplate.from_messages([    ("system", "ステップバイステップで考えてください。"),    ("human", "{question}"),])question = """10 + 2 * 3 - 4 * 2"""システムプロンプトやQuestionを変更して実行してみましょう。参考資料python.langchain.compython.langchain.com参考文献LangChainとLangGraphによるRAG・AIエージェント［実践］入門Google Gemini 1.5／LlamaIndex／LangChain 人工知能プログラミング実践入門]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Cloud Run GPU 上の PaliGemma2 に私の娘は可愛いと言わせるまで]]></title>
             <link>https://zenn.dev/satohjohn/articles/33b27212b3a55e</link>
             <guid>https://zenn.dev/satohjohn/articles/33b27212b3a55e</guid>
             <pubDate>Mon, 16 Dec 2024 11:20:30 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は 3-shake アドベントカレンダー シーズン1 16日目の記事になります。3-shake に入社してそろそろ丸2年が経過しようとしており、感慨深く思っております。こういうカレンダーをちゃんと埋められているのをみていても、アウトプットという形で自己研鑽や表現を行う素晴らしいメンバーが多いなと日々日々感じております。そんな中で書けるのも良い経験だと感じております。という前置きを入れつつ、今回は生成 AI の中でも OSS でマルチモーダルな LLM である PaliGemma2 を使ってみたという形で書かせていただきます。正直11月初めは最初は PaliGemma だったん...]]></content:encoded>
+            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2024 シーズン1 16日目の記事 & Jagu'e'r Advent Calendar 2024 4日目の記事 になります。3-shake に入社してそろそろ丸2年が経過しようとしており、感慨深く思っております。こういうカレンダーをちゃんと埋められているのをみていても、アウトプットという形で自己研鑽や表現を行う素晴らしいメンバーが多いなと日々日々感じております。そんな中で書けるのも良い経験だと感じております。という前置きを入れつつ、今回は生成 AI の中でも OSS でマルチモーダルな LLM である PaliG...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[週間アトデ 2024-12-16]]></title>
@@ -230,13 +237,6 @@
             <guid>https://qiita.com/yteraoka/items/aea03d50288375f85183</guid>
             <pubDate>Tue, 03 Dec 2024 15:14:17 GMT</pubDate>
             <content:encoded><![CDATA[ArgoCD の GitOps で Merge 前に manifest の差分を見たいArgoCD は Application リソースで source に指定した Git などの定義と実際に K…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LLMのモデル更新や廃止による影響を考える]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/12/03/232856</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/12/03/232856</guid>
-            <pubDate>Tue, 03 Dec 2024 14:28:56 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は、MLOps（LLMOps、生成AIOps） Advent Calendar 2024 4日目の記事です。生成AIの普及により、アプリケーションに組み込んで実運用を始めた方も増えてきたと思います。LLMOpsをする中で気をつけたいことを考えてみました。モデルの更新まず、思い浮かぶのがモデルの更新よる影響です。モデルの更新によって性能が上がるなどのメリットを享受できる反面、挙動変更によって、困ることもあります。私の場合、システムの実運用では無いですが、LLM技術書のサンプルコードが動かなくなる事態がありました。06_agent/agent_5.py で2回目の実行結果が正しく表示されません · Issue #3 · harukaxq/langchain-book · GitHubgpt-3.5-turboをAgentとして使用したときの挙動が変わったという内容です。アプリに組み込んでいたら、機能が使えなくなる可能性があり、使えなくなった場合の代替案も用意しておく必要があると考えました。また、LLMのリリース情報もウォッチしておく必要があるでしょう。Geminiはリリースの最新情報を日本語で提供しています。gemini.google.comChatGPTはリリースノートを英語のみですが提供しています。ChatGPT — Release Notes | OpenAI Help CenterAnthropic製品（Claude）のリリースノートは日本語で提供されています。docs.anthropic.comモデルの廃止モデルの廃止もウォッチする必要があるでしょう。GPT-3.5 Turbo終了はニュースになりました。xtech.nikkei.com↑日経クロステックの有料会員記事ですが、会員でなくても1ページ目で内容は把握できます。learn.microsoft.comAzure OpenAIでは、GPTの各種マイナーバージョンが提供されていますが、適宜廃止になるので注意が必要です。廃止になる場合、モデルのVersion UPが必要なので、早めに開発環境でVersion UPしたモデルの挙動確認をする必要があるでしょう。Version UPしたモデルだと、LLMの利用料が高くなることも念頭に置いて、コスト試算しましょう。まとめモデル更新や廃止を早く知るために、LLM公式サイトのリリースノートなどのウォッチをして、早めに対策をしましょう。]]></content:encoded>
         </item>
     </channel>
 </rss>
