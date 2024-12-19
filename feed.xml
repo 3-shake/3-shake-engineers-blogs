@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 19 Dec 2024 11:34:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Dec 2024 22:33:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cloudflareで管理しているドメインのアクセス解析をGraphQLでやってみる]]></title>
+            <link>https://blog.atusy.net/2024/12/20/cloudflare-graphql-analytics-api/</link>
+            <guid>https://blog.atusy.net/2024/12/20/cloudflare-graphql-analytics-api/</guid>
+            <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Cloudflareのダッシュボード上で確認できるWeb Analyticsの生データが欲しかったので、方法を調べてみた。ベースとなるクエリはブラウザの開発者ツールからコピペできるので便利。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[今までアウトプットしてこなかった私が、今年からアウトプットを始めてわかったこと]]></title>
             <link>https://speakerdeck.com/melanmeg/jin-madeautopututositekonakatutasi-ga-jin-nian-karaautopututowoshi-metewakatutakoto</link>
@@ -229,13 +236,6 @@
             <link>https://speakerdeck.com/moz_sec_/lima-containerd-nerdctl-1</link>
             <guid>https://speakerdeck.com/moz_sec_/lima-containerd-nerdctl-1</guid>
             <pubDate>Sat, 07 Dec 2024 05:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[セキュアな LLM アプリ開発：OWASP Top 10 for LLM 2025 と Vertex AI による実践]]></title>
-            <link>https://zenn.dev/kimitsu/articles/owasp-for-llm-2025-and-vertex-ai</link>
-            <guid>https://zenn.dev/kimitsu/articles/owasp-for-llm-2025-and-vertex-ai</guid>
-            <pubDate>Sat, 07 Dec 2024 00:14:53 GMT</pubDate>
-            <content:encoded><![CDATA[本記事は 3-shake Advent Calendar 2024 シリーズ 1 の 7 日目の記事です。 はじめにOWASP Top 10 for LLM Applications の 2025 年版が 11 月 18 日に発表されました。[1]OWASP Top 10 は Web アプリケーションのセキュリティリスクの中で最も重要な 10 個をリスト化したものであり、OWASP Top 10 for LLM Applications は名前の通り LLM を利用したアプリケーションに関するものです。本家は数年に一度の改訂ですが、こちらは LLM の技術進歩が早いためほぼ毎年...]]></content:encoded>
         </item>
     </channel>
 </rss>
