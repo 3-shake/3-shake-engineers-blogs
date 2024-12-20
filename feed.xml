@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 19 Dec 2024 22:33:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Dec 2024 11:34:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク所属の早川大貴がクラウドネイティブ技術を推進するCNCF Ambassadorsに就任]]></title>
+            <link>https://sreake.com/blog/cncf_ambassadors/</link>
+            <guid>https://sreake.com/blog/cncf_ambassadors/</guid>
+            <pubDate>Fri, 20 Dec 2024 08:39:11 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）所属の早川大貴が、クラウドネイティブ技術を推進するCNCF Ambassadorsに就任したことをお知らせします。The post スリーシェイク所属の早川大貴がクラウドネイティブ技術を推進するCNCF Ambassadorsに就任 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[生成AIでGitHubソースコード取得して仕様書を作成]]></title>
+            <link>https://speakerdeck.com/shukob/sheng-cheng-aidegithubsosukodoqu-de-siteshi-yang-shu-wozuo-cheng</link>
+            <guid>https://speakerdeck.com/shukob/sheng-cheng-aidegithubsosukodoqu-de-siteshi-yang-shu-wozuo-cheng</guid>
+            <pubDate>Fri, 20 Dec 2024 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://generative-ai-conf.connpass.com/event/335205/2024生成AI革命期を振り返る忘年会にて、「生成AIでGitHubソースコード取得して仕様書を作成する」というテーマでLTさせていただきました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloudflareで管理しているドメインのアクセス解析をGraphQLでやってみる]]></title>
             <link>https://blog.atusy.net/2024/12/20/cloudflare-graphql-analytics-api/</link>
@@ -223,19 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/2024/12/11/when_life_gives_you_containers_make_an_open_source_rds_a_kubernetes_love_story</guid>
             <pubDate>Sun, 08 Dec 2024 02:42:58 GMT</pubDate>
             <content:encoded><![CDATA[この記事は以下アドベントカレンダー11日目の記事です。3-shake Advent Calendar 2024 シリーズ2Kubernetes Advent Calendar 2024 シリーズ1When Life Gives You Containers, Make an Open Source RDS: A Kubernetes Love Story セッションレポートセッション概要:https://kccncna2024.sched.com/event/1i7kn/when-life-gives-you-containers-make-an-open-source-rds-a-kubernetes-love-story-sergey-pronin-perconaセッション動画:https://www.youtube.com/watch?v=0gSSmdNB-Zoこのセッションは、オープンソースRDS、あるいはオープンソースDBaaSをKubernetes上で構築・運用する道のりを、物語風に語っています。セッションを通して、Kubernetes上でデータベースを運用することへの不安や課題を解消し、そのメリットと可能性を提示することを目指していると感じました。なぜKubernetesでデータベースを動かすのか？セッション冒頭では、スピーカーが4年前はKubernetesでデータベースを動かすことに懐疑的だったものの、現在は大きく考えが変わっていることが語られています。その理由として、クラウドニュートラル戦略、コスト削減、そして自動化の3点が挙げられています。特に自動化は、高可用性構成、Blue/Greenデプロイ、フェイルオーバーなどを容易にする点で重要です。これらのメリットは、マイクロサービスアーキテクチャやクラウドネイティブ開発において、データベース運用を効率化し、DevOps実践を促進する上で大きな力となります。従来の運用では、データベースのデプロイや管理に多くの手作業が必要でしたが、Kubernetesと自動化ツールを組み合わせることで、これらの作業を大幅に簡素化し、開発スピードの向上に貢献できます。一方、Kubernetes上でのデータベース運用に対する懸念として、パフォーマンスの劣化、Kubernetes自体の成熟度、そして複雑さが挙げられています。これらの懸念は、データベースエンジニアとして当然抱くものであり、セッション全体を通してこれらの懸念への回答が提示されています。このセクションでは、Kubernetes上でデータベースを運用する上でのメリットと課題が明確に示されており、導入を検討する上で重要なポイントが提示されています。特に、クラウドネイティブな環境におけるデータベース運用の重要性が強調されていました。また単純なメリット・デメリット以上にユーザーの感情面にフォーカスしているところが印象的でした。Chapter 1: Enthusiasm and Kubernetes 101: Kubernetesの基本と進化この章では、Kubernetes上でデータベースを動かすための基本的なステップが段階的に示されています。Pod、Persistent Volume Claim (PVC)、Service、Secret、ConfigMap、StatefulSet、そしてHA構成のためのエージェントとProxyの導入といった流れは、Kubernetesにおけるデータベース運用の進化を理解する上で非常に有用です。特に、StatefulSetの導入は、データベースのようなステートフルアプリケーションの運用において大きな進歩です。Podの順序付けられたデプロイ、安定したネットワークID、永続ストレージへのアクセスなど、StatefulSetが提供する機能は、データベースの高可用性と安定運用に不可欠です。しかし、これらの構成要素を手作業で管理することは複雑でエラーを起こしやすいため、IaCの導入が推奨されています。IaCを用いることで、インフラストラクチャのコード化、自動化、バージョン管理が可能となり、再現性と信頼性の高いデプロイを実現できます。TerraformやAnsible、ArgoCD、HelmなどのIaCツールは、Kubernetesの構成管理を簡素化し、複数環境へのデプロイを容易にします。これは、DevOpsの原則である「Infrastructure as Code」を実践する上で非常に重要なステップです。この章では、Kubernetes上でデータベースを動かすための基本的な構成要素と、IaCの重要性が説明されています。IaCを用いることで、複雑なKubernetes環境を効率的に管理し、再現性と信頼性を向上させることができる点が強調されていました。またIaCのパラメータを変更することで複数環境をデプロイできるところからDBaaSの最初の一歩を踏み出したととらえることができました。Chapter 2: Disillusionment and Operators 101: OperatorによるDay 2 Operationの簡素化IaCによってデプロイは容易になりますが、運用、つまりDay 2 Operationは依然として複雑です。アップグレード、スケーリング、フェイルオーバー、バックアップ、モニタリング、メンテナンス、リカバリといったタスクは、手作業で行うと大きな負担となります。ここでOperatorが登場します。Operatorは、Kubernetesの拡張機能であり、特定のアプリケーションのデプロイと管理を自動化します。データベースOperatorは、データベースのライフサイクル全体を管理し、Day 2 Operationを大幅に簡素化します。Operatorの導入により、データベース管理者はKubernetesの内部構造を深く理解する必要がなくなり、データベース運用に集中できます。これは、運用コストの削減と効率性の向上に大きく貢献します。また、Operatorは宣言的な設定をサポートしており、運用作業の自動化と標準化を促進します。しかし、Operatorだけでは真のDBaaSとは言えません。セルフサービスポータル、マルチクラスタ対応、詳細なモニタリング、課金機能など、DBaaSに必要な機能は多岐に渡ります。この章では、OperatorがDay 2 Operationを簡素化する上で重要な役割を果たすことが説明されています。Operatorは、データベース管理者の負担を軽減し、運用効率を向上させる強力なツールです。これはデータベースエンジニアといわれるロールが採用市場に少ない日本では特に重要な点です。大規模なデータベース運用に合わせてデータベースエンジニアの採用を増やすことは難しいため、様々なツールを利用して負荷を下げ、省力化し、より本質的な業務を行う必要があるためです。一方でOperatorだけではDBaaSの全てをカバーできない点にも注意が必要です。Chapter 3: Hope and DBaaS: Percona Everestの紹介Percona Everestは、オープンソースのDBaaSソリューションであり、Kubernetes上でデータベースサービスを提供します。ReactとMaterial UIで構築された直感的なUI、Golangで実装されたバックエンド、そしてAPIによるアクセスを提供することで、ユーザーフレンドリーな操作性を実現しています。Everestのアーキテクチャは、複数のOperatorをOperator Managerで管理する構造を採用しています。これにより、Operatorのバージョン管理、依存関係の解決、相互運用性の確保が容易になります。ユーザーは、GUIまたはAPIを介してデータベースサービスを操作し、そのリクエストはEverest Operatorによって各データベースOperatorに変換されます。Everestは、オープンソースDBaaSとして、ベンダーロックインを回避し、柔軟なデータベース運用を可能にします。また、コミュニティベースの開発により、迅速な機能追加とバグ修正が期待できます。この章では、Percona EverestがオープンソースDBaaSとして、Kubernetes上でデータベースサービスを提供する仕組みが説明されています。Everestは、ユーザーフレンドリーなUI、Operator ManagerによるOperator管理、そしてオープンソースとしてのメリットを提供することで、柔軟で効率的なデータベース運用を支援します。セッション中ではGUIやAPIは利用しない導入例もあると話されており、個人的にはKubernetesリソースの管理に余計なUIを追加する方法は大規模化したときにデメリットが増えるのではないかと感じました。またこのセッションのスピーカーはPerconaのエンジニアであるためある程度ポジショントークが含まれているであろうことも注意が必要です。Epilogue: Kubernetesとデータベースの未来セッションの締めくくりとして、Kubernetes上でのデータベース運用は困難な側面もあるものの、OperatorやDBaaSソリューションの活用により、効率的でスケーラブルな運用が可能になることが強調されています。Kubernetes上でデータベースを運用することは、もはや一部の先進的な企業だけの選択肢ではなく、一般的な選択肢になりつつあります。クラウドネイティブな環境でデータベースを運用することは、ビジネスの俊敏性と競争力を高める上で重要な要素となります。Kubernetes上でのデータベース運用に対する不安や懸念を解消し、その可能性を示す上で非常に有益な内容でした。Percona EverestのようなオープンソースDBaaSソリューションの登場は、Kubernetesにおけるデータベース運用の楽にする選択肢の一つと言えるでしょう。まとめこのセッションを通して、Kubernetes上でのデータベース運用は、進化を続け、成熟しつつあることが理解できました。初期の懸念は解消されつつあり、OperatorやDBaaSソリューションの登場により、運用効率とスケーラビリティが大幅に向上しています。特に定型的なデプロイと運用を自動化できることでデータベースエンジニアはアプリケーション特性に応じた最適化やリリースマネジメントといったユーザーに価値を提供することを最大化することに注力することができます。今後、Kubernetes上でのデータベース運用はさらに普及し、クラウドネイティブなアプリケーション開発の中核を担うことになるでしょう。一定以上の規模の組織ではオンプレ回帰やクラウドコストの最小化といった観点からKubernetes上にデータベースをホストするソリューションが求められ生ます。そのためデータベースエンジニアは、Kubernetesの基礎知識を習得し、OperatorやDBaaSソリューションの活用方法を学ぶことで、より効率的で本質的な業務を遂行できるようになるはずです。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[バッチ処理をCloud RunからCloud Run jobsに変更してみた話]]></title>
-            <link>https://qiita.com/bayobayo0324/items/71f7e19a051261d1adfc</link>
-            <guid>https://qiita.com/bayobayo0324/items/71f7e19a051261d1adfc</guid>
-            <pubDate>Sat, 07 Dec 2024 22:06:20 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は3-shake Advent Calendar 2024 シリーズ1の8日目の記事ですはじめましてあるいはこんにちは、@bayobayo0324 です。株式会社スリーシェイクでクラウド…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Lima+containerd+nerdctlで作るコンテナ環境/lima_containerd_nerdctl]]></title>
-            <link>https://speakerdeck.com/moz_sec_/lima-containerd-nerdctl-1</link>
-            <guid>https://speakerdeck.com/moz_sec_/lima-containerd-nerdctl-1</guid>
-            <pubDate>Sat, 07 Dec 2024 05:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
