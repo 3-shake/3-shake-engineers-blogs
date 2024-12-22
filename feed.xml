@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 22 Dec 2024 11:34:05 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Dec 2024 22:32:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Workforce Identity + Auth0 で Vertex AI Search の ACL 制御を行う]]></title>
+            <link>https://zenn.dev/satohjohn/articles/a422ee68dd3485</link>
+            <guid>https://zenn.dev/satohjohn/articles/a422ee68dd3485</guid>
+            <pubDate>Sun, 22 Dec 2024 18:03:43 GMT</pubDate>
+            <content:encoded><![CDATA[3-shake AdventCalendar 第2シーズン 23日目の記事になります。2回目の登場です。今回は真面目な(?)技術記事になります。私としては前回書いた記事も大真面目でしたが。 概要今回やりたいこととしては、ウェブアプリケーション上で Id Provider(以後 IdP) 認証をして、その結果を利用して Vertex AI Agent Builder の Search 機能(以後めんどいので旧称の Vertex AI Search として説明) の ACL による検索の権限管理を行うというものです。今回 IdP として Auth0 を利用します。そのため、少し A...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS Signerにおけるコンテナ署名の実装]]></title>
             <link>https://blog.masasuzu.net/entry/2024/12/22/132803</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2024/12/09/awesome-my-neovim/</guid>
             <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Vim/Neovimに興味を持ってほしくて、私のNeovimのカッコイイところ集を作ってみました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[「Cloud Run functions」にコンテナがデプロイできるの知ってる？]]></title>
-            <link>https://zenn.dev/kimitsu/articles/deploy-container-to-cloud-run-functions</link>
-            <guid>https://zenn.dev/kimitsu/articles/deploy-container-to-cloud-run-functions</guid>
-            <pubDate>Sun, 08 Dec 2024 13:16:22 GMT</pubDate>
-            <content:encoded><![CDATA[!本記事はネタ記事です！Cloud Run functions は Google Cloud の FaaS です。ユーザはコンテナ、ランタイム、Web サーバーを管理することなく、コードを書くだけでデプロイすることができます。本来はコンテナ化が不要な Cloud Run functions ですが、コンテナをデプロイできることをご存知でしょうか。 Cloud Run functions の仕組みユーザが Cloud Run functions にデプロイしたコードは複数の抽象化レイヤーの上で動きます。[1]一番内側にユーザが書いたコードがあり、その下にはまず Func...]]></content:encoded>
         </item>
     </channel>
 </rss>
