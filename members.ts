@@ -540,5 +540,16 @@ export const members: Member[] = [
     githubUsername: "k-ngs",
     twitterUsername: "koh_naga",
     websiteUrl: "",
+  },
+  {
+    id: "iota",
+    name: "Itaru Ota",
+    avatarSrc: "/avatars/iota.jpg",
+    role: "Full Stack Engineer",
+    bio: "A.R.E.",
+    sources: ["https://zenn.dev/iorandd/feed"],
+    githubUsername: "Ota1022",
+    twitterUsername: "iorandd",
+    websiteUrl: "https://ota1022.github.io/",
   }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
