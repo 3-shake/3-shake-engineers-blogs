@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 13 Jan 2025 22:32:17 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Jan 2025 11:34:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイクのエンジニアが翻訳を担当した『Kubernetesで実践する Platform Engineering』が2月19日に発売]]></title>
+            <link>https://sreake.com/blog/platform-engineering-in-practice-with-kubernetes/</link>
+            <guid>https://sreake.com/blog/platform-engineering-in-practice-with-kubernetes/</guid>
+            <pubDate>Tue, 14 Jan 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、当社エンジニア4名が翻訳を担当した『Kubernetesで実践する Platform Engineering』が翔泳社より2025年2月19日に発売されることをお知らせします。The post スリーシェイクのエンジニアが翻訳を担当した『Kubernetesで実践する Platform Engineering』が2月19日に発売 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[既にあるものを正しく使うあるいは、インフラストラクチャをつくるとはどういうことなのか]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/01/12/202120</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2024/12/16/atodeyomanakata/</guid>
             <pubDate>Mon, 16 Dec 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[アトデヨム、ウソジャナイ、ヨムノタノシー]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KubeCon NA 2024: Goodbye etcd! Running Kubernetes on Distributed PostgreSQLのセッションレポート]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/2024/12/15/goodbyte_etcd_running_kubernetes_on_distributed_postgresql</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/2024/12/15/goodbyte_etcd_running_kubernetes_on_distributed_postgresql</guid>
-            <pubDate>Sun, 15 Dec 2024 14:16:36 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は以下アドベントカレンダー15日目の記事です。3-shake Advent Calendar 2024 シリーズ2Kubernetes Advent Calendar 2024 シリーズ2Goodbye etcd! Running Kubernetes on Distributed PostgreSQL セッションレポートセッション概要 https://kccncna2024.sched.com/event/1i7rt/goodbye-etcd-running-kubernetes-on-distributed-postgresql-denis-magda-yugabyteセッション動画 www.youtube.comこのセッションはKubernetesクラスタのメタデータストアとして利用されるetcdをDistributed PostgreSQLであるYugabyteDBに置き換えた方法を紹介し、デモを行っています。What's etcd?セッションはetcdの解説から始まりました。etcdは分散可能で可用性の高いキーバリューストアであり、シンプルながらも強力なデータベースとして機能します。Raftプロトコルを用いることで、複数のマシンやVMで構成されたクラスタ全体にわたって変更を複製し、ノード障害発生時にも一貫したデータと継続的な動作を保証します。Kubernetesはこのetcdをメタデータストアとして活用し、サービスのポート数やデプロイメントのPod数といったクラスタの状態を管理しています。このセクションはetcdの役割を明確に示し、Kubernetesにおける重要性を理解する上で有用でした。etcdがKubernetesの心臓部と言える重要な役割を担っていることを再認識させられました。Why some are not happy with etcdetcdは多くのKubernetesクラスタで標準的に利用されていますが、大規模環境（100～1000ノード）ではスケーラビリティに課題があることが指摘されました。このようなケースでは、etcdから分散データベースへの移行が必要となります。さらに、etcdプロジェクトへのコントリビュータ不足も懸念材料として挙げられており、Kubernetesが必要とする機能追加への対応が遅れる可能性が示唆されました。このセクションは、etcdの潜在的な問題点を浮き彫りにし、代替手段を検討する必要性を示唆しています。特に大規模運用を想定している場合、etcdのスケーラビリティの限界は深刻な問題になり得ます。KineKineはKubernetesクラスタとリレーショナルデータベース間の仲介役として機能するシミュレータレイヤです。etcd APIをSQLに変換することで、PostgreSQLやMySQLのようなリレーショナルデータベースをKubernetesのメタデータストアとして利用可能にします。Kubernetes APIサーバーが発行したetcd APIをKineがSQLに変換し、データベースに実行することで、etcdの代替を実現します。このセクションはKineの動作原理を簡潔に説明し、リレーショナルデータベースをKubernetesと統合する仕組みを理解する上で重要です。Kineの存在によって、既存のデータベース基盤を活用したKubernetes運用が可能になります。Hands-onデモ環境はGoogle Cloud上の3つのCompute Engine（us-westリージョンの異なるゾーン）に構築されたk3sクラスタで、純粋なPostgreSQLと分散型PostgreSQLであるYugabyteDBの2つのシナリオが示されました。純粋なPostgreSQLは単一VMで、YugabyteDBは3台のVMで実行され、マルチゾーン、マルチリージョン、マルチクラウド/オンプレミス環境への拡張可能性が示唆されました。このセクションはデモ環境の概要を説明し、異なるデータベース構成でのKubernetes運用の可能性を示しています。実環境に近い構成でのデモは、KineとYugabyteDBの有効性を理解する上で非常に役立ちます。Kubernetes on Pure PostgreSQLyoutu.beこのデモでは、PostgreSQLが動作するサーバ上でk3sを実行し、Kineが必要とするオブジェクトがPostgreSQLに作成される様子、そしてk3s自体の動作確認が示されました。既存のPostgreSQL環境へのKubernetesの導入を検討する際に、このデモは具体的な手順と動作イメージを提供してくれます。データベース管理者にとって、Kineによるデータベースへの影響を視覚的に確認できる点は非常に重要です。Kubernetes on YugabyteDBYugabyteDBとは？YugabyteDBは、PostgreSQL互換の分散SQLデータベースです。クエリレイヤはPostgreSQLからフォークされ、ストレージレイヤはLSMツリーベースの実装1を採用しています。複数サーバ・複数リージョンでの運用が可能で、クエリ分散やノード障害時の継続動作を実現します。etcdと同様にRaftプロトコルを利用することで、データの一貫性を確保し、ネットワーク分断時のスプリットブレインにも対応します。このセクションはYugabyteDBの特徴を説明し、高可用性と分散性を備えたデータベースとしての利点を明確に示しています。etcdの代替としてYugabyteDBを検討する際に、この情報は非常に重要です。デモyoutu.beYugabyteDBクラスタ上でk3sを実行するデモでは、PostgreSQLの場合とほぼ同様の手順でKubernetesを起動できることが示されました。YugabyteDBのダッシュボードを用いて、データベースの情報やKineが作成した情報を確認できる点も強調されました。さらに、Kubernetesのサンプルアプリを起動することで、etcdベースのKubernetesと同等の動作が確認されました。1台のCompute Engineを停止させることでYugabyteDBノードの障害をシミュレートし、データベースとKubernetesが継続して動作することを実証しました。このデモは、YugabyteDBの耐障害性と高可用性を視覚的に示し、実運用環境での信頼性を裏付けています。結論このセッションは、KineとYugabyteDBを用いることで、etcdの代替としてリレーショナルデータベースをKubernetesのメタデータストアとして利用できることを示しました。特に、YugabyteDBの分散性と耐障害性は、大規模Kubernetesクラスタの運用においてetcdのスケーラビリティやコントリビュータ不足といった課題を解決する可能性を示唆しています。ただし、YugabyteDBの導入には運用コストや学習コストといった新たな課題も発生するため、etcdとの比較検討が必要です。同様にセッションではKineをネイティブに利用しているk3sを利用していますが、k3sはあくまでKubernetesの軽量ディストリビューションであるため完全に同じものではないため、本当にk3sで良いのかという比較検討も必要になります。またセッション内では100を超えるノードから構成されるKubernetesクラスタではetcdのスケーラビリティが足りず、他のメタデータストアが必要になると紹介していますが、なぜ必要になるかは説明が不足していると感じました。これはKubernetesクラスタが大規模化することでAPIサーバが発行するクエリがetcdの対応可能な10000 rpsを越え始めるためです。より詳細な説明はGoogle Cloudの65000ノードを越えるGKEクラスタをSpannerでホストしていることを紹介しているブログが参考になるでしょう。cloud.google.com]]></content:encoded>
         </item>
     </channel>
 </rss>
