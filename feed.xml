@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 16 Jan 2025 11:34:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Jan 2025 22:32:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[vim-jpラジオ#25・#26聞いた - 2025年最初のテーマはEmacs！？]]></title>
+            <link>https://blog.atusy.net/2025/01/16/vim-jp-radio-25/</link>
+            <guid>https://blog.atusy.net/2025/01/16/vim-jp-radio-25/</guid>
+            <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[VimmerもEmacsやろう！小指を鍛えて生き残ろう！]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[なんとなくRustで書いたNeovimプラグイン - cargo.nvim の話]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/01/15/110831</link>
@@ -230,13 +237,6 @@
             <guid>https://shu-kob.hateblo.jp/entry/2024/12/17/185729</guid>
             <pubDate>Tue, 17 Dec 2024 09:57:29 GMT</pubDate>
             <content:encoded><![CDATA[genai-users.connpass.comこの記事は上記勉強会の資料です。shu-kob.hateblo.jp↑上記記事を参考にサービスアカウントの設定をしてください。※ Google Cloudの無料期間が終了していると、課金されますが、ハンズオンの内容だけだと数百円もいかないと考えています。料金は確実には言えないので、Google Cloudはご自身の責任でご使用ください。github.com↑今回のサンプルコードgit clone https://github.com/shu-kob/prompt_engineeringcd prompt_engineeringpip install vertexaiLangChainを使わずVertex AIのライブラリを使用シンプルなVertex AIでGeminiを実行project_id = "PROJECT_ID" # 書き換える実行python3 generate_content.pyresponse = model.generate_content(  "プロンプトエンジニアリングとは")プロンプトを変更して実行してみましょう。Zero Shot プロンプティングproject_id = "PROJECT_ID" # 書き換える実行python3 zero_shot_prompting.pyprompt = """以下はニュース記事のタイトルです。「政治」「経済」「芸能」「スポーツ」「科学」「その他」のうち1つに分類してください。回答だけ一言で出力してください===========================紅白出場歌手の選考基準 NHK公開"""プロンプトを変更して実行してみましょう。Few Shot プロンプティングproject_id = "PROJECT_ID" # 書き換える実行python3 few_shot_prompting.pyprompt = """以下はニュース記事のタイトルです。「政治」「経済」「芸能」「スポーツ」「科学」「その他」のうち1つに分類してください。回答だけ一言で出力してください===========================「紅白出場歌手の選考基準 NHK公開」===========================以下は例です「G20 バイデン氏不在で集合写真」:政治「岡田将生&高畑充希結婚 SNS反応」:芸能"""プロンプトを変更して実行してみましょう。LangChainを使用langchain_google_vertexai を使用pip install langchain_google_vertexaipython3 invoke.pymessages = [  ("human", "ネコの鳴き真似をしてください。"),]プロンプトを変更して実行してみましょう。PromptTemplateを使用pip install langchain_corepip install pydantic==2.9.0実行python3 prompt_template.pyプロンプトテンプレートやQuestionを変更して実行してみましょう。ChatPromptTemplateを使用実行python3 chat_prompt_template.pyprompt_template = ChatPromptTemplate.from_messages([    ("system", "ステップバイステップで考えてください。"),    ("human", "{question}"),])question = """10 + 2 * 3 - 4 * 2"""システムプロンプトやQuestionを変更して実行してみましょう。参考資料python.langchain.compython.langchain.com参考文献LangChainとLangGraphによるRAG・AIエージェント［実践］入門Google Gemini 1.5／LlamaIndex／LangChain 人工知能プログラミング実践入門]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Run GPU 上の PaliGemma2 に私の娘は可愛いと言わせるまで]]></title>
-            <link>https://zenn.dev/satohjohn/articles/33b27212b3a55e</link>
-            <guid>https://zenn.dev/satohjohn/articles/33b27212b3a55e</guid>
-            <pubDate>Mon, 16 Dec 2024 11:20:30 GMT</pubDate>
-            <content:encoded><![CDATA[この記事は 3-shake Advent Calendar 2024 シーズン1 16日目の記事 & Jagu'e'r Advent Calendar 2024 4日目の記事 になります。3-shake に入社してそろそろ丸2年が経過しようとしており、感慨深く思っております。こういうカレンダーをちゃんと埋められているのをみていても、アウトプットという形で自己研鑽や表現を行う素晴らしいメンバーが多いなと日々日々感じております。そんな中で書けるのも良い経験だと感じております。という前置きを入れつつ、今回は生成 AI の中でも OSS でマルチモーダルな LLM である PaliG...]]></content:encoded>
         </item>
     </channel>
 </rss>
