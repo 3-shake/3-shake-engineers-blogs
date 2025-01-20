@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 19 Jan 2025 22:33:05 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Jan 2025 11:34:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[n週刊アトデ 2025-01-20]]></title>
+            <link>https://blog.atusy.net/2025/01/20/atodeyomanakata/</link>
+            <guid>https://blog.atusy.net/2025/01/20/atodeyomanakata/</guid>
+            <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[アトデヨム、ウソジャナイ、ヨムノタノシー]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[vim-jpラジオ#25・#26聞いた - 2025年最初のテーマはEmacs！？]]></title>
             <link>https://blog.atusy.net/2025/01/16/vim-jp-radio-25/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/melanmeg/articles/dd0b9606352fb9</guid>
             <pubDate>Tue, 17 Dec 2024 22:00:02 GMT</pubDate>
             <content:encoded><![CDATA[はじめにどうもです。3-shake の melanmeg です今回は dotfiles 紹介です。エンジニアにとっては、dotfiles は作業効率を上げるための 自分用チートシート のように感じています。もしくは これまで コツコツと積み上げてきた財産 ...ですかね。普段から使い慣れた環境をどこでも再現できるようにしておくことで、複数の端末で素早く自分好みの環境を用意できます！シェルやVSCodeのカスタマイズ、Gitの便利設定、そして新しいVMでの簡単なセットアップ方法を紹介します。dotfiles管理の魅力を共有し、皆さんの環境構築がもっと楽しくなればと思います🙇...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[プロンプトエンジニアリング プログラミング ハンズオン]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/2024/12/17/185729</link>
-            <guid>https://shu-kob.hateblo.jp/entry/2024/12/17/185729</guid>
-            <pubDate>Tue, 17 Dec 2024 09:57:29 GMT</pubDate>
-            <content:encoded><![CDATA[genai-users.connpass.comこの記事は上記勉強会の資料です。shu-kob.hateblo.jp↑上記記事を参考にサービスアカウントの設定をしてください。※ Google Cloudの無料期間が終了していると、課金されますが、ハンズオンの内容だけだと数百円もいかないと考えています。料金は確実には言えないので、Google Cloudはご自身の責任でご使用ください。github.com↑今回のサンプルコードgit clone https://github.com/shu-kob/prompt_engineeringcd prompt_engineeringpip install vertexaiLangChainを使わずVertex AIのライブラリを使用シンプルなVertex AIでGeminiを実行project_id = "PROJECT_ID" # 書き換える実行python3 generate_content.pyresponse = model.generate_content(  "プロンプトエンジニアリングとは")プロンプトを変更して実行してみましょう。Zero Shot プロンプティングproject_id = "PROJECT_ID" # 書き換える実行python3 zero_shot_prompting.pyprompt = """以下はニュース記事のタイトルです。「政治」「経済」「芸能」「スポーツ」「科学」「その他」のうち1つに分類してください。回答だけ一言で出力してください===========================紅白出場歌手の選考基準 NHK公開"""プロンプトを変更して実行してみましょう。Few Shot プロンプティングproject_id = "PROJECT_ID" # 書き換える実行python3 few_shot_prompting.pyprompt = """以下はニュース記事のタイトルです。「政治」「経済」「芸能」「スポーツ」「科学」「その他」のうち1つに分類してください。回答だけ一言で出力してください===========================「紅白出場歌手の選考基準 NHK公開」===========================以下は例です「G20 バイデン氏不在で集合写真」:政治「岡田将生&高畑充希結婚 SNS反応」:芸能"""プロンプトを変更して実行してみましょう。LangChainを使用langchain_google_vertexai を使用pip install langchain_google_vertexaipython3 invoke.pymessages = [  ("human", "ネコの鳴き真似をしてください。"),]プロンプトを変更して実行してみましょう。PromptTemplateを使用pip install langchain_corepip install pydantic==2.9.0実行python3 prompt_template.pyプロンプトテンプレートやQuestionを変更して実行してみましょう。ChatPromptTemplateを使用実行python3 chat_prompt_template.pyprompt_template = ChatPromptTemplate.from_messages([    ("system", "ステップバイステップで考えてください。"),    ("human", "{question}"),])question = """10 + 2 * 3 - 4 * 2"""システムプロンプトやQuestionを変更して実行してみましょう。参考資料python.langchain.compython.langchain.com参考文献LangChainとLangGraphによるRAG・AIエージェント［実践］入門Google Gemini 1.5／LlamaIndex／LangChain 人工知能プログラミング実践入門]]></content:encoded>
         </item>
     </channel>
 </rss>
