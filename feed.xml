@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 23 Jan 2025 22:33:15 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Jan 2025 11:34:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイクにおけるOSSの取り組み]]></title>
+            <link>https://speakerdeck.com/bells17/surisieikuniokeruossnoqu-rizu-mi</link>
+            <guid>https://speakerdeck.com/bells17/surisieikuniokeruossnoqu-rizu-mi</guid>
+            <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[3-shake SRE Tech Talk #11 オンサイトの登壇資料です。https://3-shake.connpass.com/event/339212/]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2025-01-24-SRETT11-OpenTofuについてそろそろ調べてみるか]]></title>
+            <link>https://speakerdeck.com/masasuzu/2025-01-24-srett11-opentofunituitesorosorodiao-betemiruka</link>
+            <guid>https://speakerdeck.com/masasuzu/2025-01-24-srett11-opentofunituitesorosorodiao-betemiruka</guid>
+            <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[OpenTofuについて調べてみた内容SRETT #11 https://3-shake.connpass.com/event/339212/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[論文紹介 ”Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG”]]></title>
             <link>https://speakerdeck.com/shukob/lun-wen-shao-jie-long-context-llms-meet-rag-overcoming-challenges-for-long-inputs-in-rag</link>
@@ -223,20 +237,6 @@
             <guid>https://blog.atusy.net/2024/12/20/cloudflare-graphql-analytics-api/</guid>
             <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Cloudflareのダッシュボード上で確認できるWeb Analyticsの生データが欲しかったので、方法を調べてみた。ベースとなるクエリはブラウザの開発者ツールからコピペできるので便利。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[今までアウトプットしてこなかった私が、今年からアウトプットを始めてわかったこと]]></title>
-            <link>https://speakerdeck.com/melanmeg/jin-madeautopututositekonakatutasi-ga-jin-nian-karaautopututowoshi-metewakatutakoto</link>
-            <guid>https://speakerdeck.com/melanmeg/jin-madeautopututositekonakatutasi-ga-jin-nian-karaautopututowoshi-metewakatutakoto</guid>
-            <pubDate>Thu, 19 Dec 2024 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[イベント: https://findy.connpass.com/event/335692/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[KueueによるKubernetesネイティブなジョブ制御を試してみる]]></title>
-            <link>https://sreake.com/blog/kueue-kubernetes-native-job-control/</link>
-            <guid>https://sreake.com/blog/kueue-kubernetes-native-job-control/</guid>
-            <pubDate>Thu, 19 Dec 2024 03:05:13 GMT</pubDate>
-            <content:encoded><![CDATA[Kueue KueueはKubernetesのSIG-Schedulingのサブプロジェクトとして開発が進められている、クラスター内のバッチ・HPC・AI/MLといったジョブのキューイングを提供するAPIとコントローラの […]The post KueueによるKubernetesネイティブなジョブ制御を試してみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
