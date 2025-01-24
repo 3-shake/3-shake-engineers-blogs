@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 24 Jan 2025 11:34:03 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Jan 2025 22:32:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -20,6 +20,12 @@
             <guid>https://speakerdeck.com/bells17/surisieikuniokeruossnoqu-rizu-mi</guid>
             <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[3-shake SRE Tech Talk #11 オンサイトの登壇資料です。https://3-shake.connpass.com/event/339212/]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenClarityを覗いてみる]]></title>
+            <link>https://speakerdeck.com/kojake_300/openclaritywosi-itemiru</link>
+            <guid>https://speakerdeck.com/kojake_300/openclaritywosi-itemiru</guid>
+            <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[2025-01-24-SRETT11-OpenTofuについてそろそろ調べてみるか]]></title>
@@ -230,13 +236,6 @@
             <guid>https://speakerdeck.com/shukob/sheng-cheng-aidegithubsosukodoqu-de-siteshi-yang-shu-wozuo-cheng</guid>
             <pubDate>Fri, 20 Dec 2024 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://generative-ai-conf.connpass.com/event/335205/2024生成AI革命期を振り返る忘年会にて、「生成AIでGitHubソースコード取得して仕様書を作成する」というテーマでLTさせていただきました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloudflareで管理しているドメインのアクセス解析をGraphQLでやってみる]]></title>
-            <link>https://blog.atusy.net/2024/12/20/cloudflare-graphql-analytics-api/</link>
-            <guid>https://blog.atusy.net/2024/12/20/cloudflare-graphql-analytics-api/</guid>
-            <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Cloudflareのダッシュボード上で確認できるWeb Analyticsの生データが欲しかったので、方法を調べてみた。ベースとなるクエリはブラウザの開発者ツールからコピペできるので便利。]]></content:encoded>
         </item>
     </channel>
 </rss>
