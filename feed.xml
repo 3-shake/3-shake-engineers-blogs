@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 31 Jan 2025 11:34:19 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jan 2025 22:33:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025-01-31 吉祥寺.pm 37 初めての海外カンファレンス]]></title>
+            <link>https://speakerdeck.com/masasuzu/2025-01-31-ji-xiang-si-dot-pm-37-chu-metenohai-wai-kanhuarensu</link>
+            <guid>https://speakerdeck.com/masasuzu/2025-01-31-ji-xiang-si-dot-pm-37-chu-metenohai-wai-kanhuarensu</guid>
+            <pubDate>Fri, 31 Jan 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[KubeCon NA 2024に行ってきたのでその経験を話します。吉祥寺.pm 37で話しました。https://kichijojipm.connpass.com/event/339040/]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Lambda Web Adapter の Function URL を Cloudfront で公開する]]></title>
+            <link>https://blog.1q77.com/2025/01/aws-lambda-web-adapter-with-cloudfront/</link>
+            <guid>https://blog.1q77.com/2025/01/aws-lambda-web-adapter-with-cloudfront/</guid>
+            <pubDate>Thu, 30 Jan 2025 15:01:24 GMT</pubDate>
+            <content:encoded><![CDATA[これまでのおさらい前回、AWS Web Adapter を用いた AWS Lambda に Function URL を使って公開することはできた。今回はこれをカスタムドメインで公開するべく CloudFront と連携させます。OAC (Origin Access Control)2024年4月に CloudFront と Function URL の間を OAC (Origin Access Control) を使って Function URL への直アクセスを防ぐことができるようになっていたのでこれも試します。Amazon CloudFront が Lambda 関数 URL オリジンのオリジンアクセスコントロール (OAC) を新たにサポート]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS Lambda Web Adapter でお手軽 Web Service 公開]]></title>
             <link>https://blog.1q77.com/2025/01/aws-lambda-web-adapter/</link>
@@ -221,20 +235,6 @@
             <link>https://blog.atusy.net/2024/12/27/nvim-budoux-motion/</link>
             <guid>https://blog.atusy.net/2024/12/27/nvim-budoux-motion/</guid>
             <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Google製改行位置決定アルゴリズムBudouxをLuaに移植した。読みやすい位置で文を区切れるので、bionic readingの日本語版を実装できるかも。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Youkiを動かしてみる]]></title>
-            <link>https://qiita.com/ys1/items/7e92327c7728471cfc65</link>
-            <guid>https://qiita.com/ys1/items/7e92327c7728471cfc65</guid>
-            <pubDate>Wed, 25 Dec 2024 10:51:53 GMT</pubDate>
-            <content:encoded><![CDATA[概要Kubernetesではコンテナを作成するとき、コンテナランタイム(高レベルランタイム、低レベルランタイム)を利用しています。低レベルランタイムであるyoukiを通じてコンテナに関する理解を…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google製の改行位置決定アルゴリズムBudouxをLuaに移植した]]></title>
-            <link>https://blog.atusy.net/2024/12/25/budoux-lua/</link>
-            <guid>https://blog.atusy.net/2024/12/25/budoux-lua/</guid>
-            <pubDate>Wed, 25 Dec 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Google製改行位置決定アルゴリズムBudouxをLuaに移植した。読みやすい位置で文を区切れるので、bionic readingの日本語版を実装できるかも。]]></content:encoded>
         </item>
     </channel>
