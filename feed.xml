@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 17 Feb 2025 22:33:15 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Feb 2025 11:34:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[CNCFの公式ブログ「Japan’s CNCF DevStats 2024」にて、スリーシェイク所属のエンジニア2名がCNCFプロジェクトでの貢献者TOP10にランクイン]]></title>
+            <link>https://sreake.com/blog/rank-among-top-contributors-to-cncf-projects-in-japan/</link>
+            <guid>https://sreake.com/blog/rank-among-top-contributors-to-cncf-projects-in-japan/</guid>
+            <pubDate>Tue, 18 Feb 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 CNCF（Cloud Native Computing Foundation）の公式ブログ「Japan’s CNCF DevStats 2024」にて、スリーシェイク所属のエンジニア 早川大貴・長澤翼（以下早川・長澤）がCNCFプロジェクトでの貢献者TOP10にランクインしたことをお知らせします。The post CNCFの公式ブログ「Japan’s CNCF DevStats 2024」にて、スリーシェイク所属のエンジニア2名がCNCFプロジェクトでの貢献者TOP10にランクイン first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS SAM と GitHub Actions で爆速でサーバーレス API をデプロイする]]></title>
             <link>https://sreake.com/blog/aws-sam-quick-deploy-with-github-actions/</link>
@@ -229,13 +236,6 @@
             <guid>https://speakerdeck.com/masasuzu/2025-01-24-srett11-opentofunituitesorosorodiao-betemiruka</guid>
             <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[OpenTofuについて調べてみた内容SRETT #11 https://3-shake.connpass.com/event/339212/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[論文紹介 ”Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG”]]></title>
-            <link>https://speakerdeck.com/shukob/lun-wen-shao-jie-long-context-llms-meet-rag-overcoming-challenges-for-long-inputs-in-rag</link>
-            <guid>https://speakerdeck.com/shukob/lun-wen-shao-jie-long-context-llms-meet-rag-overcoming-challenges-for-long-inputs-in-rag</guid>
-            <pubDate>Tue, 21 Jan 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://genai-users.connpass.com/event/341391/大規模言語モデル（LLM）は、外部の知識源を利用することで、より強力な応答を生成できるようになります（これをRetrieval-Augmented Generation: RAGと呼びます）。LLMが処理できる入力テキストの長さが長くなるにつれて、より多くの関連情報をRAGで与えられるようになり、生成される回答の質が向上することが期待されます。一般的には、取得する情報が多いほど関連情報（高い再現率）も増え、結果として性能が向上すると考えられます。しかし、長文処理LLMにおけるRAGの性能が、取得する情報が増えすぎると逆に低下する現象を明らかにし、その原因が「ハードネガティブ」な情報にあることを示しました。そして、その問題を解決するために、効果的な学習不要および学習を伴うアプローチを提案しています。]]></content:encoded>
         </item>
     </channel>
 </rss>
