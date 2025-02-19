@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 18 Feb 2025 22:33:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Feb 2025 11:34:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コードを読んで理解するko build]]></title>
+            <link>https://speakerdeck.com/bells17/kotowodu-nteli-jie-suruko-build</link>
+            <guid>https://speakerdeck.com/bells17/kotowodu-nteli-jie-suruko-build</guid>
+            <pubDate>Wed, 19 Feb 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Jagu'e'r Cloud Native #17 ハイブリッド Meetup ~ 推しの CNCF プロジェクトを紹介するぜ LT ~ の登壇資料です。https://jaguer-cloud-native.connpass.com/event/342024/参考リンク・画像など引用元一覧https://ko.build/ https://github.com/ko-build/ko https://github.com/google/go-containerregistry https://github.com/sigstore/cosign https://github.com/opencontainers/image-spec https://github.com/cncf/sandbox/issues/17 https://github.com/ko-build/ko/issues/791 https://github.com/cncf/sandbox/issues/163 https://github.com/cncf/artwork/blob/main/projects/ko/stacked/color/ko-stacked-color.png https://github.com/cncf/artwork/blob/main/projects/ko/icon/color/ko-icon-color.png]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[CNCFの公式ブログ「Japan’s CNCF DevStats 2024」にて、スリーシェイク所属のエンジニア2名がCNCFプロジェクトでの貢献者TOP10にランクイン]]></title>
             <link>https://sreake.com/blog/rank-among-top-contributors-to-cncf-projects-in-japan/</link>
@@ -229,13 +236,6 @@
             <link>https://speakerdeck.com/kojake_300/openclaritywosi-itemiru</link>
             <guid>https://speakerdeck.com/kojake_300/openclaritywosi-itemiru</guid>
             <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[2025-01-24-SRETT11-OpenTofuについてそろそろ調べてみるか]]></title>
-            <link>https://speakerdeck.com/masasuzu/2025-01-24-srett11-opentofunituitesorosorodiao-betemiruka</link>
-            <guid>https://speakerdeck.com/masasuzu/2025-01-24-srett11-opentofunituitesorosorodiao-betemiruka</guid>
-            <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[OpenTofuについて調べてみた内容SRETT #11 https://3-shake.connpass.com/event/339212/]]></content:encoded>
         </item>
     </channel>
 </rss>
