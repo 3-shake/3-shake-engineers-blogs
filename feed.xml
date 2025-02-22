@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 21 Feb 2025 22:33:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Feb 2025 11:34:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AI時代におけるMLOpsのTips]]></title>
+            <link>https://speakerdeck.com/shukob/aishi-dai-niokerumlopsnotips</link>
+            <guid>https://speakerdeck.com/shukob/aishi-dai-niokerumlopsnotips</guid>
+            <pubDate>Sat, 22 Feb 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://event.ospn.jp/osc2025-spring/session/2017030AI時代におけるMLOpsのTips 〜 MLOpsを加速させるOSS 〜オープンソースカンファレンス2025 Tokyo/SpringライトニングトークにてKubeflowの紹介などMLOpsの話をさせていただきました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AIエージェント元年]]></title>
             <link>https://speakerdeck.com/shukob/aiezientoyuan-nian</link>
@@ -229,13 +236,6 @@
             <guid>https://blog.atusy.net/2025/01/27/r-logger-rename-metafield/</guid>
             <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[loggerパッケージはRのログ出力に使います。ログはプログラムの進捗確認や、問題発生時のデバグなどに便利なので、ぜひ活用したいところですね。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Site Reliability Engineering on Kubernetes]]></title>
-            <link>https://speakerdeck.com/nwiizo/site-reliability-engineering-on-kubernetes</link>
-            <guid>https://speakerdeck.com/nwiizo/site-reliability-engineering-on-kubernetes</guid>
-            <pubDate>Sun, 26 Jan 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年01月26日 10:35-11:05（ルーム A）にて「Site Reliability Engineering on Kubernetes」というタイトルで登壇します。イベント名: SRE Kaigi 2025公式URL: https://2025.srekaigi.net/セッションURL: https://fortee.jp/sre-kaigi-2025/proposal/a75769d1-7835-4762-a1f6-508e714c8c8e登壇ブログ: https://syu-m-5151.hatenablog.com/entry/2025/01/26/005033]]></content:encoded>
         </item>
     </channel>
 </rss>
