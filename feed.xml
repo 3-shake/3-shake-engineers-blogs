@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 27 Feb 2025 22:34:39 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Feb 2025 11:34:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[[2025/02/28] #kubenews 今週のKubernetes + Cloud Native + その他ニュース]]></title>
+            <link>https://zenn.dev/bells17/articles/k8s-cloud-native-and-other-20250228</link>
+            <guid>https://zenn.dev/bells17/articles/k8s-cloud-native-and-other-20250228</guid>
+            <pubDate>Fri, 28 Feb 2025 10:19:14 GMT</pubDate>
+            <content:encoded><![CDATA[#kubenewsの2025年02月28日の回で話す、@bells17が最近気になったニュース記事をまとめたものです。自分が気になった今週のKubernetes + Cloud Native + その他なニュースをまるっとまとめておいて、その中から時間内に話せるものを話そうと思ってます。この記事自体はざっと読んで書いてるものが多いので、詳細はリンクとかで貼ってる記事の中を読んでもらった方が正確です。配信URL:https://www.youtube.com/live/e4qQt7sQ46Y 告知とかニュースっぽいもの コードを読んで理解するko buildhttps...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AIエージェント元年@日本生成AIユーザ会]]></title>
+            <link>https://speakerdeck.com/shukob/aiezientoyuan-nian-at-ri-ben-sheng-cheng-aiyuzahui</link>
+            <guid>https://speakerdeck.com/shukob/aiezientoyuan-nian-at-ri-ben-sheng-cheng-aiyuzahui</guid>
+            <pubDate>Fri, 28 Feb 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://genai-users.connpass.com/event/344332/2024年は生成AIが世の中に浸透した1年でしたが、2025年はAIエージェント元年と言われています。生成AIはチャットベースで受け身なものでしたが、AIエージェントは自律的にタスクを分解しこなすことができます。そのインパクトは計り知れません。生成AIの概略を説明した後、AIエージェントの紹介をします。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Neovimで使うCopilotのモデルをClaudeに変更する苦労話 - 技術ブログ未満の個人的体験談]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/02/27/184558</link>
@@ -222,20 +236,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2025/01/29/120446</guid>
             <pubDate>Wed, 29 Jan 2025 03:04:46 GMT</pubDate>
             <content:encoded><![CDATA[はじめにイベントで定期的に登壇をしていて休日出勤したのに消化しきれなかった代休が余っていたので、3連休爆誕させて以前から興味のあったWebAssemblyの学習に時間を使ってみることにしました(いくつか本も読んだのでいつか紹介します。)。「とりあえず何か作ってみる」のが一番の近道だと考え、日々の私生活でも使えそうなポモドーロタイマーを実装することにしました。WebAssemblyのエコシステムを調べていく中で、RustのYewというフレームワークが目に留まりました。ReactライクなAPIでWebAssemblyアプリケーションが作れるとのことで、ちょっと開発することにしました。github.com使用技術の選定理由Rust：WebAssemblyのための優れたツールチェーンを持っており、学習コストは高めですが、型安全性と高いパフォーマンスが魅力でしたYew：ReactライクなAPIで、コンポーネントベースの開発が可能。フロントエンド開発者にとって親しみやすい設計になっていますTrunk：ビルドツールとして採用。trunk serveだけで開発サーバーが立ち上がる手軽さが気に入りました技術スタックRust (v1.75.0)Yew (v0.21)WebAssemblyTrunk (Bundler)プロジェクトの概要ポモドーロテクニックは25分の作業時間と5分の休憩を交互に行う時間管理手法です。今回実装したアプリケーションでは、以下の機能を提供します：基本的なタイマー機能25分のカウントダウン開始/停止/リセット制御視覚的なフィードバックタスク管理機能タスクの記録実際の作業時間の追跡完了したタスクの履歴管理データエクスポート機能マークダウン形式での出力クリップボードへのコピー機能実装の詳細プロジェクトのセットアップまず、必要なツールとターゲットをインストールします：rustup target add wasm32-unknown-unknowncargo install trunk主要なデータ構造タスクとタイマーの状態管理のための構造体：#[derive(Clone, Debug)]struct Task {    description: String,    completed_at: DateTime<Local>,    duration: i32,}pub struct PomodoroTimer {    time: i32,    running: bool,    interval: Option<Interval>,    current_task: String,    completed_tasks: Vec<Task>,    initial_time: i32,    markdown_visible: bool,    markdown_content: String,}タイマー機能の実装Yewのコンポーネントシステムを利用して、タイマーの制御を実装しました：fn update(&mut self, ctx: &Context<Self>, msg: Self::Message) -> bool {    match msg {        Msg::Start => {            if !self.running {                let link = ctx.link().clone();                self.interval = Some(Interval::new(1000, move || {                    link.send_message(Msg::Tick);                }));                self.running = true;            }            true        }        // 他のメッセージハンドラ...    }}クリップボード機能の実装WebAssemblyからブラウザのクリップボードAPIを利用する実装：Msg::CopyToClipboard => {    if let Some(window) = window() {        let navigator = window.navigator();        let clipboard = navigator.clipboard();        let _ = clipboard.write_text(&self.markdown_content);    }    true}開発で直面した課題と解決策WebAssemblyとブラウザAPIの連携課題：クリップボード機能の実装で型の不一致が発生解決：web-sysクレートの適切な機能を有効化し、型の変換を正しく処理状態管理とライフタイム課題：コンポーネントの状態管理でライフタイムエラーが発生解決：use_stateとuse_mut_refを適切に使い分けて実装セットアップと実行方法プロジェクトの作成：cargo new --lib yew-pomodorocd yew-pomodoro依存関係の追加（Cargo.toml）：[dependencies]yew = { version = "0.21", features = ["csr"] }gloo-timers = "0.3"web-sys = { version = "0.3.64", features = ["console", "HtmlInputElement", "Window", "Navigator", "Clipboard"] }wasm-bindgen = "0.2"chrono = "0.4"アプリケーションの実行：trunk serve開発を通じて学んだことWebAssemblyの基本概念JavaScriptとの連携方法パフォーマンスの最適化ポイントRustの特徴的な機能所有権システム型安全性の恩恵コンパイル時のエラーチェックの強力さフロントエンド開発での新しい視点パフォーマンスを意識したコンポーネント設計WebAssemblyならではの制約と利点所感代休を使って新しい技術に触れる時間が作れたのは、とても良い経験になりました。特に、JavaScriptで書いているような処理をRustで書き直してみることで、言語の特性や設計の違いについて深く考える機会になりました。WebAssemblyは確かにまだエコシステムが発展途上ですが、Yewのような成熟したフレームワークを使えば、実用的なアプリケーションを比較的スムーズに開発できることが分かりました。ソースコードプロジェクトのソースコードはGitHubで公開しています。コメントや改善案があれば、お気軽にIssueやPull Requestを送ってください。次のステップ今回の学習を通じて、WebAssemblyの可能性を実感できました。次は以下のような発展的な内容に挑戦してみたいと考えています：Rustの非同期処理を活用した機能拡張WebAssemblyのパフォーマンス測定と最適化より大規模なアプリケーションでの実践参考リンクRust公式ドキュメントYewドキュメントRustで始めるWebAssemblyMDN WebAssemblyガイド休暇を使って新しい技術に触れることで、普段の業務にも新しい視点を持ち込めそうです。皆さんも、空き時間を見つけて興味のある技術に触れてみてはいかがでしょうか。読んだ書籍Rustで学ぶWebAssembly――入門からコンポーネントモデルによる開発まで エンジニア選書作者:清水 智公技術評論社AmazonProgramming WebAssembly with Rust: Unified Development for Web, Mobile, and Embedded Applications (English Edition)作者:Hoffman, KevinPragmatic BookshelfAmazon]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Renovate を手元の repository に対して debug 実行する]]></title>
-            <link>https://blog.1q77.com/2025/01/renovate-local-debug/</link>
-            <guid>https://blog.1q77.com/2025/01/renovate-local-debug/</guid>
-            <pubDate>Tue, 28 Jan 2025 10:45:08 GMT</pubDate>
-            <content:encoded><![CDATA[renovate の設定を手元で試行錯誤したい時のメモです。Local Platform--platform=local を指定して実行すると local filesystem を対象として renovate を実行することができます。https://docs.renovatebot.com/modules/platform/local/手元の working copy の root directory で実行します。(npx は使わなくても良いが install からやってくれるので)]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[論文紹介 ”Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG” @GDG Tokyo]]></title>
-            <link>https://speakerdeck.com/shukob/lun-wen-shao-jie-long-context-llms-meet-rag-overcoming-challenges-for-long-inputs-in-rag-at-gdg-tokyo</link>
-            <guid>https://speakerdeck.com/shukob/lun-wen-shao-jie-long-context-llms-meet-rag-overcoming-challenges-for-long-inputs-in-rag-at-gdg-tokyo</guid>
-            <pubDate>Tue, 28 Jan 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://gdg-tokyo.connpass.com/event/340671/大規模言語モデル（LLM）は、外部の知識源を利用することで、より強力な応答を生成できるようになります（これをRetrieval-Augmented Generation: RAGと呼びます）。LLMが処理できる入力テキストの長さが長くなるにつれて、より多くの関連情報をRAGで与えられるようになり、生成される回答の質が向上することが期待されます。一般的には、取得する情報が多いほど関連情報（高い再現率）も増え、結果として性能が向上すると考えられます。しかし、長文処理LLMにおけるRAGの性能が、取得する情報が増えすぎると逆に低下する現象を明らかにし、その原因が「ハードネガティブ」な情報にあることを示しました。そして、その問題を解決するために、効果的な学習不要および学習を伴うアプローチを提案しています。]]></content:encoded>
         </item>
     </channel>
 </rss>
