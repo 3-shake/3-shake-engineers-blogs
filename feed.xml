@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 02 Mar 2025 22:33:24 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Mar 2025 11:34:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[技術的負債と立ち向かう前に知っておいてもいいこと]]></title>
+            <link>https://sreake.com/blog/think-about-technical-debt/</link>
+            <guid>https://sreake.com/blog/think-about-technical-debt/</guid>
+            <pubDate>Mon, 03 Mar 2025 10:46:12 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは、nwiizoです。開発チームの会話の中で「これは技術的負債だから後で対処しよう」という言葉をよく耳にします。納期に追われるプロジェクトでは、この「後で」が永遠の「いつか」になりがちです。結果として多 […]The post 技術的負債と立ち向かう前に知っておいてもいいこと first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ユーザーストーリーにこだわって、プロダクトバックログをスクラムチームが行う作業の唯一の情報源として成立させる]]></title>
+            <link>https://sreake.com/blog/step-up-product-backlog-and-user-story-development/</link>
+            <guid>https://sreake.com/blog/step-up-product-backlog-and-user-story-development/</guid>
+            <pubDate>Mon, 03 Mar 2025 01:17:49 GMT</pubDate>
+            <content:encoded><![CDATA[Sreake事業部アプリケーション開発チームの安本です。 現在、スクラムでアプリケーション開発の概念検証（Proof of Concept; PoC）を進めています。 本記事では、スクラム開発を行っているチーム向けに、私 […]The post ユーザーストーリーにこだわって、プロダクトバックログをスクラムチームが行う作業の唯一の情報源として成立させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[2025/02/28] #kubenews 今週のKubernetes + Cloud Native + その他ニュース]]></title>
             <link>https://zenn.dev/bells17/articles/k8s-cloud-native-and-other-20250228</link>
@@ -222,20 +236,6 @@
             <guid>https://blog.1q77.com/2025/01/aws-lambda-web-adapter-with-cloudfront/</guid>
             <pubDate>Thu, 30 Jan 2025 15:01:24 GMT</pubDate>
             <content:encoded><![CDATA[これまでのおさらい前回、AWS Web Adapter を用いた AWS Lambda に Function URL を使って公開することはできた。今回はこれをカスタムドメインで公開するべく CloudFront と連携させます。OAC (Origin Access Control)2024年4月に CloudFront と Function URL の間を OAC (Origin Access Control) を使って Function URL への直アクセスを防ぐことができるようになっていたのでこれも試します。Amazon CloudFront が Lambda 関数 URL オリジンのオリジンアクセスコントロール (OAC) を新たにサポート]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Lambda Web Adapter でお手軽 Web Service 公開]]></title>
-            <link>https://blog.1q77.com/2025/01/aws-lambda-web-adapter/</link>
-            <guid>https://blog.1q77.com/2025/01/aws-lambda-web-adapter/</guid>
-            <pubDate>Wed, 29 Jan 2025 15:40:00 GMT</pubDate>
-            <content:encoded><![CDATA[ずっと AWS にも Cloud Run が欲しいなあと思っていました。AppRunner はコレじゃない…そんなある日、あれ？ AWS Lambda でいけんじゃね？と思い検索すると]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[RustとYewでポモドーロタイマーを作ってみた]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2025/01/29/120446</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2025/01/29/120446</guid>
-            <pubDate>Wed, 29 Jan 2025 03:04:46 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにイベントで定期的に登壇をしていて休日出勤したのに消化しきれなかった代休が余っていたので、3連休爆誕させて以前から興味のあったWebAssemblyの学習に時間を使ってみることにしました(いくつか本も読んだのでいつか紹介します。)。「とりあえず何か作ってみる」のが一番の近道だと考え、日々の私生活でも使えそうなポモドーロタイマーを実装することにしました。WebAssemblyのエコシステムを調べていく中で、RustのYewというフレームワークが目に留まりました。ReactライクなAPIでWebAssemblyアプリケーションが作れるとのことで、ちょっと開発することにしました。github.com使用技術の選定理由Rust：WebAssemblyのための優れたツールチェーンを持っており、学習コストは高めですが、型安全性と高いパフォーマンスが魅力でしたYew：ReactライクなAPIで、コンポーネントベースの開発が可能。フロントエンド開発者にとって親しみやすい設計になっていますTrunk：ビルドツールとして採用。trunk serveだけで開発サーバーが立ち上がる手軽さが気に入りました技術スタックRust (v1.75.0)Yew (v0.21)WebAssemblyTrunk (Bundler)プロジェクトの概要ポモドーロテクニックは25分の作業時間と5分の休憩を交互に行う時間管理手法です。今回実装したアプリケーションでは、以下の機能を提供します：基本的なタイマー機能25分のカウントダウン開始/停止/リセット制御視覚的なフィードバックタスク管理機能タスクの記録実際の作業時間の追跡完了したタスクの履歴管理データエクスポート機能マークダウン形式での出力クリップボードへのコピー機能実装の詳細プロジェクトのセットアップまず、必要なツールとターゲットをインストールします：rustup target add wasm32-unknown-unknowncargo install trunk主要なデータ構造タスクとタイマーの状態管理のための構造体：#[derive(Clone, Debug)]struct Task {    description: String,    completed_at: DateTime<Local>,    duration: i32,}pub struct PomodoroTimer {    time: i32,    running: bool,    interval: Option<Interval>,    current_task: String,    completed_tasks: Vec<Task>,    initial_time: i32,    markdown_visible: bool,    markdown_content: String,}タイマー機能の実装Yewのコンポーネントシステムを利用して、タイマーの制御を実装しました：fn update(&mut self, ctx: &Context<Self>, msg: Self::Message) -> bool {    match msg {        Msg::Start => {            if !self.running {                let link = ctx.link().clone();                self.interval = Some(Interval::new(1000, move || {                    link.send_message(Msg::Tick);                }));                self.running = true;            }            true        }        // 他のメッセージハンドラ...    }}クリップボード機能の実装WebAssemblyからブラウザのクリップボードAPIを利用する実装：Msg::CopyToClipboard => {    if let Some(window) = window() {        let navigator = window.navigator();        let clipboard = navigator.clipboard();        let _ = clipboard.write_text(&self.markdown_content);    }    true}開発で直面した課題と解決策WebAssemblyとブラウザAPIの連携課題：クリップボード機能の実装で型の不一致が発生解決：web-sysクレートの適切な機能を有効化し、型の変換を正しく処理状態管理とライフタイム課題：コンポーネントの状態管理でライフタイムエラーが発生解決：use_stateとuse_mut_refを適切に使い分けて実装セットアップと実行方法プロジェクトの作成：cargo new --lib yew-pomodorocd yew-pomodoro依存関係の追加（Cargo.toml）：[dependencies]yew = { version = "0.21", features = ["csr"] }gloo-timers = "0.3"web-sys = { version = "0.3.64", features = ["console", "HtmlInputElement", "Window", "Navigator", "Clipboard"] }wasm-bindgen = "0.2"chrono = "0.4"アプリケーションの実行：trunk serve開発を通じて学んだことWebAssemblyの基本概念JavaScriptとの連携方法パフォーマンスの最適化ポイントRustの特徴的な機能所有権システム型安全性の恩恵コンパイル時のエラーチェックの強力さフロントエンド開発での新しい視点パフォーマンスを意識したコンポーネント設計WebAssemblyならではの制約と利点所感代休を使って新しい技術に触れる時間が作れたのは、とても良い経験になりました。特に、JavaScriptで書いているような処理をRustで書き直してみることで、言語の特性や設計の違いについて深く考える機会になりました。WebAssemblyは確かにまだエコシステムが発展途上ですが、Yewのような成熟したフレームワークを使えば、実用的なアプリケーションを比較的スムーズに開発できることが分かりました。ソースコードプロジェクトのソースコードはGitHubで公開しています。コメントや改善案があれば、お気軽にIssueやPull Requestを送ってください。次のステップ今回の学習を通じて、WebAssemblyの可能性を実感できました。次は以下のような発展的な内容に挑戦してみたいと考えています：Rustの非同期処理を活用した機能拡張WebAssemblyのパフォーマンス測定と最適化より大規模なアプリケーションでの実践参考リンクRust公式ドキュメントYewドキュメントRustで始めるWebAssemblyMDN WebAssemblyガイド休暇を使って新しい技術に触れることで、普段の業務にも新しい視点を持ち込めそうです。皆さんも、空き時間を見つけて興味のある技術に触れてみてはいかがでしょうか。読んだ書籍Rustで学ぶWebAssembly――入門からコンポーネントモデルによる開発まで エンジニア選書作者:清水 智公技術評論社AmazonProgramming WebAssembly with Rust: Unified Development for Web, Mobile, and Embedded Applications (English Edition)作者:Hoffman, KevinPragmatic BookshelfAmazon]]></content:encoded>
         </item>
     </channel>
 </rss>
