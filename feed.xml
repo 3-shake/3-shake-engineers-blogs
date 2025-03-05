@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 04 Mar 2025 22:33:37 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Mar 2025 08:06:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -76,6 +76,13 @@
             <guid>https://speakerdeck.com/shukob/aiezientoyuan-nian</guid>
             <pubDate>Fri, 21 Feb 2025 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://genai-users.connpass.com/event/344292/2024年は生成AIが世の中に浸透した1年でしたが、2025年はAIエージェント元年と言われています。生成AIはチャットベースで受け身なものでしたが、AIエージェントは自律的にタスクを分解しこなすことができます。そのインパクトは計り知れません。生成AIの概略を説明した後、AIエージェントの紹介をします。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[コンテナサプライチェーンセキュリティ]]></title>
+            <link>https://speakerdeck.com/kyohmizu/kontenasapuraitiensekiyuritei</link>
+            <guid>https://speakerdeck.com/kyohmizu/kontenasapuraitiensekiyuritei</guid>
+            <pubDate>Fri, 21 Feb 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[イベント登壇資料です。2025/02/21 #CNCJhttps://cncj-security.connpass.com/event/341812/]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[OpenClarityの裏側を知りたい]]></title>
@@ -229,13 +236,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2025/02/01/120804</guid>
             <pubDate>Sat, 01 Feb 2025 03:08:04 GMT</pubDate>
             <content:encoded><![CDATA[はじめにWebAssemblyの進化により、RustでWebアプリケーションを構築する機会が増えています。特にYewフレームワークは、React風の使い勝手とRustの堅牢性を組み合わせた開発が可能です。本記事では、Yewアプリケーション開発をスムーズにするビルドツールTrunkについて、セットアップから実践的なテクニックまで解説します。yew.rsTrunkとはTrunkは、WebAssemblyアプリケーションに特化したビルドツールです。そして、以下のような特徴を持ちます。ホットリロードによる高速な開発体験アセット管理の自動化（画像、CSS、その他静的ファイル）最小限の設定で開発環境の構築が可能プロダクションビルドの最適化機能trunkrs.dev環境構築まず、必要なツールをインストールします：# WebAssemblyターゲットの追加rustup target add wasm32-unknown-unknown# Trunkのインストールcargo install trunktrunkrs.devプロジェクトの作成以下のコマンドで新規プロジェクトを作成します：cargo new yew-appcd yew-appCargo.tomlに必要な依存関係を追加：[dependencies]yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }yew.rsシンプルなカウンターアプリの実装src/main.rsにカウンターアプリのコードを実装します：use yew::prelude::*;#[function_component(App)]fn app() -> Html {    let counter = use_state(|| 0);    let onclick = {        let counter = counter.clone();        move |_| {            let value = *counter + 1;            counter.set(value);        }    };    html! {        <div>            <button {onclick}>{"+1"}</button>            <p>{ *counter }</p>        </div>    }}fn main() {    yew::Renderer::<App>::new().render();}yew.rsHTMLテンプレートの準備index.htmlをプロジェクトルートに作成：<!DOCTYPE html><html>    <head>        <meta charset="utf-8" />        <title>Yew Counter App</title>    </head>    <body></body></html>開発サーバーの設定と起動Trunk.tomlで開発サーバーの設定をカスタマイズできます：[serve]# 開発サーバーのアドレスaddress = "127.0.0.1"# ポート番号port = 8080# アセットディレクトリassets = ["public"]# プロキシ設定（APIサーバーなど）[[proxy]]backend = "http://localhost:3000/api/"開発サーバーを起動：trunk serve --openこれでhttp://localhost:8080にアプリケーションが立ち上がります。アセット管理のベストプラクティス静的ファイルはpublicディレクトリで管理します：public/  ├── images/      # 画像ファイル  ├── styles/      # CSSファイル  ├── fonts/       # フォントファイル  └── favicon.ico  # ファビコンtrunkrs.devプロダクションビルドの最適化本番環境向けのビルドでは、以下の最適化が可能です：# リリースビルドtrunk build --release# WebAssemblyコードの最適化trunk build --release --filehashデバッグとトラブルシューティング開発中によくあるトラブルの対処法：ビルドエラー時はtrunk cleanでキャッシュをクリアアセットが反映されない場合はtrunk serve --watchで監視を強化WebAssemblyのデバッグには開発者ツールのConsoleを活用(フロントエンド開発初心者で学びが多かった⋯)おわりにTrunkを活用することで、Yewアプリケーションの開発体験が大幅に改善されます。特にホットリロードとアセット管理の自動化は、開発効率を向上させる重要な機能です。参考リンクTrunk GitHubYew GitHubWebAssembly]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2025-01-31 吉祥寺.pm 37 初めての海外カンファレンス]]></title>
-            <link>https://speakerdeck.com/masasuzu/2025-01-31-ji-xiang-si-dot-pm-37-chu-metenohai-wai-kanhuarensu</link>
-            <guid>https://speakerdeck.com/masasuzu/2025-01-31-ji-xiang-si-dot-pm-37-chu-metenohai-wai-kanhuarensu</guid>
-            <pubDate>Fri, 31 Jan 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[KubeCon NA 2024に行ってきたのでその経験を話します。吉祥寺.pm 37で話しました。https://kichijojipm.connpass.com/event/339040/]]></content:encoded>
         </item>
     </channel>
 </rss>
