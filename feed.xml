@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 05 Mar 2025 22:34:15 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Mar 2025 11:34:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[StageCrewとは？マルチモーダルAIツールを触ってみた]]></title>
+            <link>https://sreake.com/blog/research-multi-modal-tool-stagecrew/</link>
+            <guid>https://sreake.com/blog/research-multi-modal-tool-stagecrew/</guid>
+            <pubDate>Thu, 06 Mar 2025 11:13:20 GMT</pubDate>
+            <content:encoded><![CDATA[StageCrew™️とは StageCrew™（https://stagecrew.ai/）は、システム監視やログ収集、トランザクションのトレースといった各種管理ツールに対するアクセスを自動化、インシデント発生時の対応 […]The post StageCrewとは？マルチモーダルAIツールを触ってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[LookMLって定数を定義できるの?]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/6d6bacc1a294b9</link>
+            <guid>https://zenn.dev/nedoko_dok0dko/articles/6d6bacc1a294b9</guid>
+            <pubDate>Thu, 06 Mar 2025 10:53:04 GMT</pubDate>
+            <content:encoded><![CDATA[whatLookMLで定数を定義する事ができるのか調べてみた個人ログ Q.LookMLって定数を定義できるの?A. できるLookMLも他のプログラミング言語と同じように定数を設定できる。 定数の定義とマニフェストファイル マニフェストファイルLookMLにおいて、定数はマニフェストファイルというファイルを作成することによって定義する事ができる。https://cloud.google.com/looker/docs/lookml-project-files?hl=ja#project_manifest_filesマニフェストファイルは、定数の定義以外にも...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[標準入出力テストを可視化するTUIツールの開発をした。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/03/04/160714</link>
@@ -222,20 +236,6 @@
             <guid>https://sreake.com/blog/developers-summit-2025/</guid>
             <pubDate>Tue, 04 Feb 2025 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2025年2月13日（木）・14日（金）に開催される「Developers Summit 2025」にSRE総合支援サービス「Sreake（スリーク）」のブースを出展します。The post スリーシェイク、「Developers Summit 2025」にて出展・登壇、および書籍「Kubernetesで実践するPlatform Engineering」の先行販売・サイン会を実施 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[技術記事のレベル低下は誰のため？ - 楽して学べる幻想と戦うためにもしくはバズるという快楽に対する防衛術]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2025/02/04/094857</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2025/02/04/094857</guid>
-            <pubDate>Tue, 04 Feb 2025 00:48:57 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにバズっている技術ブログやSNSの投稿を見ていて「今さらこんな基本的なTipsが数千いいねされるのか」と感じることはありませんか。「とりあえずDockerを使ってみよう」「React超入門」といった手取り足取り系の投稿がバズり続け、タイムラインには毎日のように初心者向けコンテンツが流れています。同じような入門記事が異なる執筆者によって際限なく生み出されるこの状況は、技術情報の共有における興味深い現象と言えるでしょう。では、なぜこのような現象が続いているのでしょうか。「学習」に対する一般的な認識多くの普通の人にとって「学習」は快適な体験であるべきだという認識があります。自分が理解できる範囲の内容を読み、既存の知識と結びつけて徐々に理解を深めていく。分からないことがあれば基礎的な内容に立ち返る。実際、人間の脳は安全な環境で学習することを好む傾向にあり、多くの人は「コンフォートゾーン」の中で学習を進めていきたいという自然な欲求を持っています。これは特に新しい技術やプログラミングのような複雑な分野においても顕著に表れます。このような学習パターンは、人間の認知的な特性とも合致しています。新しい情報は、既存の知識体系の中に無理なく組み込めるときに最も効果的に定着するからです。そのため、急激な学習曲線や理解が追いつかない内容は、多くの人にとってストレス要因となり、学習意欲を低下させる原因となり得ます。自己啓発の教科書　禁欲主義からアドラー、引き寄せの法則まで作者:アナ・カタリーナ・シャフナー日経ナショナル ジオグラフィックAmazon現実の技術学習との乖離しかし実際の技術習得のプロセスはもっと異なるものです。理解できない内容を何度も読み返し、エラーと格闘しながら少しずつ理解を積み重ねていく必要があります。分からない用語を調べながら文脈を理解していくという地道な作業が求められます。時には数時間かけてもエラーが解決できず、徹底的にドキュメントを読み込んだり、ソースコードを追いかけたりする忍耐も必要です。このような現実の学習プロセスは、多くの人が求める「快適な学習体験」とは大きくかけ離れています。つまり、技術習得には「コンフォートゾーン」を意図的に離れ、混乱や不確実性と向き合う覚悟が必要なのです。このギャップこそが「お手軽入門記事」が無限に生産され続ける根本的な理由の一つと言えるでしょう。人々は常により優しい入り口、より分かりやすい説明を求め続けているのです。私たちはどう学んでいるのか　――創発から見る認知の変化 (ちくまプリマー新書)作者:鈴木宏昭筑摩書房Amazon需要と供給の関係バズっている技術ブログやSNSでは特徴的な循環が生まれています。チュートリアル的なコンテンツへの大きな需要があり、入門記事の方が読者数やフォロワーを獲得しやすい傾向にあります。複雑な技術解説や深い考察よりも、「とりあえず動くものを作る」といった実践的なコンテンツの方が、圧倒的に高いエンゲージメントを得られるのです。このような状況下では、執筆者もまた市場原理に従わざるを得ません。高度な技術記事を書いても読者が少なければ、自然と入門コンテンツにシフトしていくでしょう。結果として、さらに多くの基礎的なハウツー記事が生み出され、SNSのタイムラインを埋め尽くしていく循環が続いています。これは技術情報の生態系における一種の「自然淘汰」とも言えるかもしれません。上級者向けコンテンツの価値と課題上級者向けコンテンツには確かに大きな価値があります。業界全体の技術力向上に貢献し、特定の問題に対する深い洞察を共有することで、エンジニアとしてのキャリアアップにも役立ちます。しかしこれらのコンテンツは必然的に読者層が限定されます。前提知識が必要で理解に時間がかかり、即座に実践できない場合が多いためです。視点の多様性と技術記事の価値重要な点として、技術記事の「難易度」は極めて相対的です。ある人にとっての入門記事が、別の人にとっては上級者向けのコンテンツとなるという状況は珍しくありません。私たちは往々にして自分の知識レベルをベースラインとして記事の価値を判断しがちですが、技術学習においてはそれぞれが異なる文脈や背景を持っているのです。この認識は、技術記事を書く際の重要な視点となります。プラットフォームと個人の戦略技術記事プラットフォームにはトレンドとは別に普遍的な価値を持つ記事が確実に存在します。分散システムの設計原則やスケーラビリティの考察、セキュリティアーキテクチャの分析など、時代を超えて参照される価値のある記事です。しかしそれらの記事はトレンド入りしづらく、時として埋もれてしまいます。質の高い技術記事が、読者の多様な技術レベルや興味に応じて適切に届けられる仕組みづくりがプラットフォーム側には求められています。一方で個人の執筆戦略としては、より包括的なアプローチが有効です。時にはトレンドに乗った入門記事を書きつつ、自分の技術的な知見や経験を活かした深い考察も定期的に発信していく。理想的な技術ブログの運営には、読者の多様性を意識したバランスが重要です。入門的なコンテンツから実践的な応用記事、さらにはアーキテクチャ設計や性能改善といった本質的な議論まで、幅広い層に価値を提供することができます。このような多層的なアプローチは、技術コミュニティ全体の成長に貢献します。それぞれの記事が、異なる段階にいる読者にとって「次のステップ」となる可能性を持っているからです。執筆者は自身の経験を共有しながら、同時に読者それぞれの文脈での学びをサポートすることができるのです。Science Fictions　あなたが知らない科学の真実作者:スチュアート・リッチーダイヤモンド社Amazonまとめ表層的な入門記事が無限に存在する現状は決して悪いことではありません。むしろそれは多くのエンジニアが学習意欲を持っている証であり、業界の健全性を示すものとも言えます。執筆者としては読者の「コンフォートゾーン」を少しずつ広げていけるような段階的な難易度設定と丁寧な説明を心がけることが重要でしょう。そうすることで読者の成長を支援しながら、技術コミュニティ全体の発展に貢献できるはずです。アメリカは自己啓発本でできている作者:尾崎俊介平凡社Amazon]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[WebAssembly を開発する為にTrunkビルドツールを試してみました。]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2025/02/01/120804</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2025/02/01/120804</guid>
-            <pubDate>Sat, 01 Feb 2025 03:08:04 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにWebAssemblyの進化により、RustでWebアプリケーションを構築する機会が増えています。特にYewフレームワークは、React風の使い勝手とRustの堅牢性を組み合わせた開発が可能です。本記事では、Yewアプリケーション開発をスムーズにするビルドツールTrunkについて、セットアップから実践的なテクニックまで解説します。yew.rsTrunkとはTrunkは、WebAssemblyアプリケーションに特化したビルドツールです。そして、以下のような特徴を持ちます。ホットリロードによる高速な開発体験アセット管理の自動化（画像、CSS、その他静的ファイル）最小限の設定で開発環境の構築が可能プロダクションビルドの最適化機能trunkrs.dev環境構築まず、必要なツールをインストールします：# WebAssemblyターゲットの追加rustup target add wasm32-unknown-unknown# Trunkのインストールcargo install trunktrunkrs.devプロジェクトの作成以下のコマンドで新規プロジェクトを作成します：cargo new yew-appcd yew-appCargo.tomlに必要な依存関係を追加：[dependencies]yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }yew.rsシンプルなカウンターアプリの実装src/main.rsにカウンターアプリのコードを実装します：use yew::prelude::*;#[function_component(App)]fn app() -> Html {    let counter = use_state(|| 0);    let onclick = {        let counter = counter.clone();        move |_| {            let value = *counter + 1;            counter.set(value);        }    };    html! {        <div>            <button {onclick}>{"+1"}</button>            <p>{ *counter }</p>        </div>    }}fn main() {    yew::Renderer::<App>::new().render();}yew.rsHTMLテンプレートの準備index.htmlをプロジェクトルートに作成：<!DOCTYPE html><html>    <head>        <meta charset="utf-8" />        <title>Yew Counter App</title>    </head>    <body></body></html>開発サーバーの設定と起動Trunk.tomlで開発サーバーの設定をカスタマイズできます：[serve]# 開発サーバーのアドレスaddress = "127.0.0.1"# ポート番号port = 8080# アセットディレクトリassets = ["public"]# プロキシ設定（APIサーバーなど）[[proxy]]backend = "http://localhost:3000/api/"開発サーバーを起動：trunk serve --openこれでhttp://localhost:8080にアプリケーションが立ち上がります。アセット管理のベストプラクティス静的ファイルはpublicディレクトリで管理します：public/  ├── images/      # 画像ファイル  ├── styles/      # CSSファイル  ├── fonts/       # フォントファイル  └── favicon.ico  # ファビコンtrunkrs.devプロダクションビルドの最適化本番環境向けのビルドでは、以下の最適化が可能です：# リリースビルドtrunk build --release# WebAssemblyコードの最適化trunk build --release --filehashデバッグとトラブルシューティング開発中によくあるトラブルの対処法：ビルドエラー時はtrunk cleanでキャッシュをクリアアセットが反映されない場合はtrunk serve --watchで監視を強化WebAssemblyのデバッグには開発者ツールのConsoleを活用(フロントエンド開発初心者で学びが多かった⋯)おわりにTrunkを活用することで、Yewアプリケーションの開発体験が大幅に改善されます。特にホットリロードとアセット管理の自動化は、開発効率を向上させる重要な機能です。参考リンクTrunk GitHubYew GitHubWebAssembly]]></content:encoded>
         </item>
     </channel>
 </rss>
