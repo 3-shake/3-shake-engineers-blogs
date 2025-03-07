@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 07 Mar 2025 11:58:03 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Mar 2025 22:31:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Qiitaの自己紹介欄に何書く？　というポエム]]></title>
+            <link>https://qiita.com/masaru-komiyama/items/781912e64e09d5ac8e90</link>
+            <guid>https://qiita.com/masaru-komiyama/items/781912e64e09d5ac8e90</guid>
+            <pubDate>Fri, 07 Mar 2025 13:22:22 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに皆様、こんばんは。カラーコードの覚え方 や、適当なプログラムを書いた共有に超初級編などと銘打つ記事 など、 ふと頭によぎった技術ネタや、興味が湧いた技術ネタなど、一貫性の無いネタを自由に…]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[無限技術的負債 - Taming Your Dragon: Addressing Your Technical Debt の読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/03/07/133504</link>
@@ -229,13 +236,6 @@
             <guid>https://blog.atusy.net/2025/02/10/atodeyomanakata/</guid>
             <pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[アトデヨム、ウソジャナイ、ヨムノタノシー]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[kubeadmでk8sクラスタを構築する]]></title>
-            <link>https://zenn.dev/moz_sec/articles/k8s-by-kubeadm</link>
-            <guid>https://zenn.dev/moz_sec/articles/k8s-by-kubeadm</guid>
-            <pubDate>Fri, 07 Feb 2025 02:00:09 GMT</pubDate>
-            <content:encoded><![CDATA[KubernetesKubernetesとは、複数のコンピュータでコンテナをいい感じに動かしてくれるものです。Kubernetesの説明はいろんなサイトに書いてあるため、そちらを参照してください。公式サイトも参考になります。https://kubernetes.io/docs/concepts/overview/ kubeadmkubeadmは、Kubernetesクラスタを構築するためのツールの１つです。他にも、kopsやkubesprayなどがありますが、kubeadmは最小限の構成でクラスタを構築することができます。https://kubernetes.io/...]]></content:encoded>
         </item>
     </channel>
 </rss>
