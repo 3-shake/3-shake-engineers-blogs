@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 07 Mar 2025 11:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Mar 2025 11:58:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -43,6 +43,13 @@
             <content:encoded><![CDATA[yamori demo gifはじめに「あー、もう！競プロでテストの為にSolverを分けるの、マジで面倒くさい！」これが私がYamoriを作ったきっかけです。正直に言いましょう。私は怠け者です。AtCoderで問題を解くたびに、問題ごとにSolverを分けて、いちいちmain.rsを書き換えて...という作業が本当に億劫でした。標準入力でサクッとテストできないものかと常々思っていたのです。「標準入力でサクッとテストできないかな」と思いながら、コピペして実行して、出力を目視で確認する日々。ある日、特に複雑な問題で間違えたとき、「あれ？どのテストケースで落ちたっけ？」と混乱し、絶望的な気分になりました。そんな「プログラマーの怠惰」から生まれたのがYamoriです。「ヤモリ」という名前は、元々YAMLでテスト定義を書こうと思ったからです。（まあ、実際には「山守」という意味で、テストが私のコードを守ってくれるという願いも込めていますが、カッコいい理由なんて後付けです）github.com「これでスッキリする！」という淡い期待競技プログラミングで使うRustのプログラムをテストするためだけに、Rustでテストツールを開発するという本末転倒な状況に、私は何の違和感も覚えませんでした。これぞ「釘を打つために、まず金槌を作るプログラマー」の鑑です。「単純な標準入出力のテストツールなんて、週末でサクッと作れるでしょ！」この甘い考えが、のちに何週間もの苦闘を招くとは思いもよりませんでした。ターミナルUIという沼「コマンドラインでテキスト出力するだけじゃつまらない。せっかくだから可視化もしたい！」この「せっかくだから」という言葉は、エンジニアの時間を無限に吸い取る魔法の呪文です。ratutuiというライブラリを見つけた瞬間、私は沼にハマりました。「タブがあって、色付きで、差分も表示できて、履歴も見れて...」気づけば、単純なテストツールのはずが、フルスクリーンのターミナルUIアプリケーションに進化していました。vim風のキーバインドを実装しながら「これ、競プロのテストに使うんだよね？」と自問自答する日々。言い訳のような機能たち最終的に、Yamoriには「競プロのテスト」という本来の目的を超えた様々な機能が実装されました：TOML/YAML形式のテスト定義（JSONじゃダメだったの？）履歴追跡機能（過去のテスト結果を見返す時間があるなら問題を解けよ）リリースモード切替（競プロでリリースビルド？本気？）カラフルな差分表示（赤と緑でお祭り気分）キーボードショートカット（vimmerの執着心）これらの機能を実装しながら、脳内では常に「ただテストするだけなのに...」というツッコミが再生され続けていました。しかし、完成したときの満足感は格別でした。最初のテストケースが緑色で「PASS」と表示されたとき、「こんなの作る時間があったら、もう10問解けてたな」と思いつつも、心のどこかでは「でも、これからはテストが楽になる！」という正当化が始まっていました。大切なものは ほしいものより先にきた結局のところ、Yamoriの開発は「標準入力でテストしたい」という単純な欲求から始まり、いつの間にか「立派なターミナルUIアプリ」へと成長しました。本当に必要だったのは単純なシェルスクリプトだったかもしれませんが、この回り道があったからこそ、Rustの理解も深まり、新しいライブラリにも触れられました。「効率的に競プロを解きたい」という目的からは大きく外れましたが、「プログラミングを楽しむ」という本質的な目的は達成できたのではないでしょうか。そして何より、次回のコンテストでテストケースを流し込むとき、「よっしゃYamori様様やな！」と密かに自己満足に浸れるのです。Yamoriを使ってみたいという変わり者の方は：cargo install yamoriで、この過剰なテストツールをインストールできます。あなたのターミナルをカラフルに彩るヤモリをぜひ体験してください！...そして私のように「本末転倒なツール開発」の罠に陥らないよう、ご注意を。]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[KotlinでAndroidアプリを作ってみる（超初級編）]]></title>
+            <link>https://qiita.com/masaru-komiyama/items/8231c0e69d9fb54909aa</link>
+            <guid>https://qiita.com/masaru-komiyama/items/8231c0e69d9fb54909aa</guid>
+            <pubDate>Mon, 03 Mar 2025 13:22:04 GMT</pubDate>
+            <content:encoded><![CDATA[インフラ屋でもクソアプリを作りたくなる夜があるじゃない！と、言うことで本日は手元のMac端末でKotlinを触ってみようと思います。超初級編なので、あまり深い記事は期待しないでください。とりあ…]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[技術的負債と立ち向かう前に知っておいてもいいこと]]></title>
             <link>https://sreake.com/blog/think-about-technical-debt/</link>
             <guid>https://sreake.com/blog/think-about-technical-debt/</guid>
@@ -55,6 +62,13 @@
             <guid>https://sreake.com/blog/step-up-product-backlog-and-user-story-development/</guid>
             <pubDate>Mon, 03 Mar 2025 01:17:49 GMT</pubDate>
             <content:encoded><![CDATA[Sreake事業部アプリケーション開発チームの安本です。 現在、スクラムでアプリケーション開発の概念検証（Proof of Concept; PoC）を進めています。 本記事では、スクラム開発を行っているチーム向けに、私 […]The post ユーザーストーリーにこだわって、プロダクトバックログをスクラムチームが行う作業の唯一の情報源として成立させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[くちあだきみあむはしきぎ]]></title>
+            <link>https://qiita.com/masaru-komiyama/items/0160cf23fbe2576f869c</link>
+            <guid>https://qiita.com/masaru-komiyama/items/0160cf23fbe2576f869c</guid>
+            <pubDate>Sun, 02 Mar 2025 12:57:49 GMT</pubDate>
+            <content:encoded><![CDATA[おい！タイトルバグってんぞ！　と思われた皆様。安心してください。バグっておりません。電気回路を嗜んだ方なら、何かあったときについ口ずさんでしまう復活の呪文（まぁ色んな意味で記憶を呼び起こす呪文なの…]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[2025/02/28] #kubenews 今週のKubernetes + Cloud Native + その他ニュース]]></title>
@@ -189,6 +203,13 @@
             <content:encoded><![CDATA[2025年02月13日 Developers Summit 2025 13-E-4 にて「インフラをつくるとはどういうことなのか、 あるいはPlatform Engineeringについて - Platform Engineeringの効果的な基盤構築のアプローチ」というタイトルで登壇します。同日にPFEM特別回 でも登壇するのですが資料頑張って作ったのでそっちも読んでください。完全版は機会があればお話するので依頼してください。イベント名:  Developers Summit 2025公式URL: https://event.shoeisha.jp/devsumi/20250213セッションURL: https://event.shoeisha.jp/devsumi/20250213/session/5546登壇ブログ: https://syu-m-5151.hatenablog.com/entry/2025/02/14/071127]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[国内４大通信キャリアのビジネスまとめ表]]></title>
+            <link>https://qiita.com/masaru-komiyama/items/07b8eec241e41c1e0ebb</link>
+            <guid>https://qiita.com/masaru-komiyama/items/07b8eec241e41c1e0ebb</guid>
+            <pubDate>Thu, 13 Feb 2025 01:24:19 GMT</pubDate>
+            <content:encoded><![CDATA[ふと、「国内通信キャリア各社のビジネスってどうなってるんだろう。サクッと確認したいからまとまった表があるといいなぁ」　と検索した際、あまり良い情報がヒットしなかった ＆ AI使っても微妙な結果しか得…]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Platform Engineeringは自由のめまい ]]></title>
             <link>https://speakerdeck.com/nwiizo/platform-engineeringhazi-you-nomemai</link>
             <guid>https://speakerdeck.com/nwiizo/platform-engineeringhazi-you-nomemai</guid>
@@ -215,27 +236,6 @@
             <guid>https://zenn.dev/moz_sec/articles/k8s-by-kubeadm</guid>
             <pubDate>Fri, 07 Feb 2025 02:00:09 GMT</pubDate>
             <content:encoded><![CDATA[KubernetesKubernetesとは、複数のコンピュータでコンテナをいい感じに動かしてくれるものです。Kubernetesの説明はいろんなサイトに書いてあるため、そちらを参照してください。公式サイトも参考になります。https://kubernetes.io/docs/concepts/overview/ kubeadmkubeadmは、Kubernetesクラスタを構築するためのツールの１つです。他にも、kopsやkubesprayなどがありますが、kubeadmは最小限の構成でクラスタを構築することができます。https://kubernetes.io/...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GKEのComputeClassに関する調査]]></title>
-            <link>https://sreake.com/blog/gke-computeclass/</link>
-            <guid>https://sreake.com/blog/gke-computeclass/</guid>
-            <pubDate>Fri, 07 Feb 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部で長期インターンをしている竜です。 本記事では、GKEのカスタムコンピューティングクラスについて調査を行いました。 カスタムコンピューティングクラスの概要 GKEのカスタムコンピューティングク […]The post GKEのComputeClassに関する調査 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes History Inspector(KHI)を触ってみた]]></title>
-            <link>https://speakerdeck.com/bells17/kubernetes-history-inspector-khi-wohong-tutemita</link>
-            <guid>https://speakerdeck.com/bells17/kubernetes-history-inspector-khi-wohong-tutemita</guid>
-            <pubDate>Wed, 05 Feb 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[スライド内の参考リンク・画像など引用元一覧https://zenn.dev/bells17/scraps/67c852e99ad5a5 https://github.com/GoogleCloudPlatform/khi https://zenn.dev/google_cloud_jp/articles/9a7dc0df5e8906 https://blog.g-gen.co.jp/entry/kubernetes-history-inspector-introduction https://x.com/kyasbal_k/status/1884500133183905976 https://x.com/ryusa_eng/status/1886328704432996463 https://x.com/kkuchima/status/1884503826029228189 https://github.com/GoogleCloudPlatform/khi/blob/main/docs/en/images/gettingstarted-history.pnghttps://github.com/GoogleCloudPlatform/khi/blob/main/docs/en/images/gettingstarted-views.png https://k8s-novice-jp.connpass.com/event/343899/ https://jaguer-cloud-native.connpass.com/event/342024/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[mini.testでNeovimプラグインのテストに入門した]]></title>
-            <link>https://blog.atusy.net/2025/02/05/mini-test-nvim/</link>
-            <guid>https://blog.atusy.net/2025/02/05/mini-test-nvim/</guid>
-            <pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[以前書いた、Budouxを使ったWモーションをE/B/gEに対応させてプラグインにしようかなと思って、atusy/budouxify.nvimを作った。BudouxによりNeovimのWモーションを拡張し、日本語文章の区切りに移動させるhttps://blog.atusy.net/2024/12/27/nvim-budoux-motion/]]></content:encoded>
         </item>
     </channel>
 </rss>
