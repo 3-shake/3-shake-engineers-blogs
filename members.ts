@@ -551,5 +551,16 @@ export const members: Member[] = [
     githubUsername: "Ota1022",
     twitterUsername: "iorandd",
     websiteUrl: "https://ota1022.github.io/",
+  },
+  {
+    id: "kamono",
+    name: "Makoto Kamono",
+    avatarSrc: "/avatars/kamono.jpg",
+    role: "SRE",
+    bio: "kamo dayo~",
+    sources: ["https://zenn.dev/kamos/feed"],
+    githubUsername: "Mkamono",
+    twitterUsername: "duckend_pg",
+    websiteUrl: "",
   }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
