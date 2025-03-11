@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 10 Mar 2025 22:34:28 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Mar 2025 11:34:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google CloudのTerraform職人が失職する機能が出てしまった……]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/intro_to_application_design_center</link>
+            <guid>https://zenn.dev/nnaka2992/articles/intro_to_application_design_center</guid>
+            <pubDate>Tue, 11 Mar 2025 00:30:01 GMT</pubDate>
+            <content:encoded><![CDATA[Google CloudがApplication Design Centerという、構成図を書けばTerraformを書いて、デプロイまで行う機能をリリースしました。[1]https://cloud.google.com/application-design-center/docs/overviewどうやらGoogle CloudはTerraform職人を失職に追い込みたいようです。 Application Design Centerの概要アプリケーション デザイン センターは、Google Cloud アプリケーション インフラストラクチャの設計、共有、デプロイに役立ちます...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[tfmcp 🦀: A Rust-Implemented Tool to Operate Terraform from LLMs]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/03/10/091144</link>
@@ -229,13 +236,6 @@
             <guid>https://qiita.com/masaru-komiyama/items/07b8eec241e41c1e0ebb</guid>
             <pubDate>Thu, 13 Feb 2025 01:24:19 GMT</pubDate>
             <content:encoded><![CDATA[ふと、「国内通信キャリア各社のビジネスってどうなってるんだろう。サクッと確認したいからまとまった表があるといいなぁ」　と検索した際、あまり良い情報がヒットしなかった ＆ AI使っても微妙な結果しか得…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Platform Engineeringは自由のめまい ]]></title>
-            <link>https://speakerdeck.com/nwiizo/platform-engineeringhazi-you-nomemai</link>
-            <guid>https://speakerdeck.com/nwiizo/platform-engineeringhazi-you-nomemai</guid>
-            <pubDate>Wed, 12 Feb 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年02月13日 Kubernetesで実践するPlatform Engineering発売記念！ PFEM特別回にて「Platform Engineeringは自由のめまい - 技術の選択における不確実性と向き合う」というタイトルで登壇します。同日にDevelopers Summit 2025 でも登壇したのですが資料頑張って作ったのでそっちも読んでください。イベント名: Kubernetesで実践するPlatform Engineering発売記念！ PFEM特別回公式URL: https://platformengineering.connpass.com/event/342670/登壇ブログ: https://syu-m-5151.hatenablog.com/entry/2025/02/14/071127]]></content:encoded>
         </item>
     </channel>
 </rss>
