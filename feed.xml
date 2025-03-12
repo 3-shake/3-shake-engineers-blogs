@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 12 Mar 2025 11:34:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Mar 2025 22:34:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Neovim Nightlyでターミナル内でプロンプト間をジャンプできるようになった（OSC133）]]></title>
+            <link>https://blog.atusy.net/2025/03/12/nvim-osc133/</link>
+            <guid>https://blog.atusy.net/2025/03/12/nvim-osc133/</guid>
+            <pubDate>Wed, 12 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Vim駅伝2025-03-12の記事です。最近、NeovimがOSC 133に対応しました（< https://github.com/neovim/neovim/pull/32736>）。これにより、OSC 133に対応したシェルのユーザーであれば、[[ や ]] を使って、:terminal内のシェルプロンプト間をジャンプできるようになります。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのTerraform職人が失職する機能が出てしまった……]]></title>
             <link>https://zenn.dev/nnaka2992/articles/intro_to_application_design_center</link>
@@ -229,13 +236,6 @@
             <guid>https://speakerdeck.com/nwiizo/inhurawotukurutohadouiukotonanoka-aruihaplatform-engineeringnituite</guid>
             <pubDate>Thu, 13 Feb 2025 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2025年02月13日 Developers Summit 2025 13-E-4 にて「インフラをつくるとはどういうことなのか、 あるいはPlatform Engineeringについて - Platform Engineeringの効果的な基盤構築のアプローチ」というタイトルで登壇します。同日にPFEM特別回 でも登壇するのですが資料頑張って作ったのでそっちも読んでください。完全版は機会があればお話するので依頼してください。イベント名:  Developers Summit 2025公式URL: https://event.shoeisha.jp/devsumi/20250213セッションURL: https://event.shoeisha.jp/devsumi/20250213/session/5546登壇ブログ: https://syu-m-5151.hatenablog.com/entry/2025/02/14/071127]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[国内４大通信キャリアのビジネスまとめ表]]></title>
-            <link>https://qiita.com/masaru-komiyama/items/07b8eec241e41c1e0ebb</link>
-            <guid>https://qiita.com/masaru-komiyama/items/07b8eec241e41c1e0ebb</guid>
-            <pubDate>Thu, 13 Feb 2025 01:24:19 GMT</pubDate>
-            <content:encoded><![CDATA[ふと、「国内通信キャリア各社のビジネスってどうなってるんだろう。サクッと確認したいからまとまった表があるといいなぁ」　と検索した際、あまり良い情報がヒットしなかった ＆ AI使っても微妙な結果しか得…]]></content:encoded>
         </item>
     </channel>
 </rss>
