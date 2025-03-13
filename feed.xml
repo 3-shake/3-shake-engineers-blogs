@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 13 Mar 2025 11:34:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Mar 2025 22:33:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -19,7 +19,7 @@
             <link>https://blog.atusy.net/2025/03/12/nvim-osc133/</link>
             <guid>https://blog.atusy.net/2025/03/12/nvim-osc133/</guid>
             <pubDate>Wed, 12 Mar 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Vim駅伝2025-03-12の記事です。最近、NeovimがOSC 133に対応しました（< https://github.com/neovim/neovim/pull/32736>）。これにより、OSC 133に対応したシェルのユーザーであれば、[[ や ]] を使って、:terminal内のシェルプロンプト間をジャンプできるようになります。]]></content:encoded>
+            <content:encoded><![CDATA[Vim駅伝2025-03-12の記事です。最近、NeovimがOSC 133に対応しました（https://github.com/neovim/neovim/pull/32736）。これにより、OSC 133に対応したシェルのユーザーであれば、[[ や ]] を使って、:terminal内のシェルプロンプト間をジャンプできるようになります。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Google CloudのTerraform職人が失職する機能が出てしまった……]]></title>
