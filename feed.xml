@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 13 Mar 2025 22:33:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Mar 2025 11:34:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ObservabilityCON on the Road Tokyo 2025 Recap]]></title>
+            <link>https://sreake.com/blog/observabilitycon-on-the-road-tokyo-2025-recap/</link>
+            <guid>https://sreake.com/blog/observabilitycon-on-the-road-tokyo-2025-recap/</guid>
+            <pubDate>Fri, 14 Mar 2025 02:09:01 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部の岩﨑です。 2025年2月25日、ObservabilityCON on the Road Tokyo 2025 が東京ポートシティ竹芝で開催されました。初めての参加でしたが、Grafana […]The post ObservabilityCON on the Road Tokyo 2025 Recap first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Neovim Nightlyでターミナル内でプロンプト間をジャンプできるようになった（OSC133）]]></title>
             <link>https://blog.atusy.net/2025/03/12/nvim-osc133/</link>
@@ -229,13 +236,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2025/02/14/071127</guid>
             <pubDate>Thu, 13 Feb 2025 22:11:27 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこんにちは、nwiizoです。2025年2月13日に2つのイベントで登壇する機会をいただきました。これは私が翻訳に関わった「Kubernetesで実践するPlatform Engineering」の発売を記念した販促登壇でしたが、原著者さんが書籍の内容自体について話をされると知っていたので、私はPlatform Engineeringという分野に関する自分なりの考えや経験を共有させていただく内容にしました。Kubernetesで実践する Platform Engineering作者:Mauricio Salatino翔泳社Amazon2つの異なるイベントでの発表同日に性質の異なる2つのイベントで話をさせていただきました。Developers Summitでは「インフラをつくるとはどういうことなのか、あるいはPlatform Engineeringについて」というタイトルで、幅広い技術者の方々に向けてPlatform Engineeringの基本的な考え方から実践的なアプローチまでをお話ししました。 speakerdeck.com一方、PFEM特別回では「Platform Engineeringは自由のめまい - 技術の選択における不確実性と向き合う」というテーマで、より専門的な視点からPlatform Engineeringの課題や可能性について話をしました。ただ、この回は資料作りや登壇などの疲れもピークに達していて、本来伝えたかったことと違う説明をしてしまった部分もあったように思います。 speakerdeck.com翻訳作業から得た気づき今回の発表の背景には、「Kubernetesで実践するPlatform Engineering」の翻訳作業があります。2025年2月19日に翔泳社から発売されるこの本は、"Platform Engineering on Kubernetes"の日本語翻訳版で、3-shake の同僚と一緒に取り組んだプロジェクトです。翻訳作業を通じて、Platform Engineeringの課題や可能性について考える機会を多く得ることができました。原著者のsalaboyさんのハンズオンや過去の発表資料、記事を読む中で、Platform Engineeringに対する彼の考え方を学ばせていただきました。実際に一緒に登壇する機会もいただき、私の拙い英会話力にも関わらず温かく接していただいたことも貴重な経験でした。登壇から学んだこと今回の登壇準備と実践を通じて、技術共有における重要な気づきがありました。最も重要だと感じたのは、聴衆のバックグラウンドに合わせて内容を適切に調整することです。Developers SummitとPFEM特別回では、参加者層が大きく異なりました。Developers Summitでは、DevOpsやPlatform Engineeringに詳しくない参加者が多く、日常的な開発における具体的な問題点から入り、それをPlatform Engineeringの文脈で捉え直すことで基礎的な理解を促しました。一方、PFEM特別回では参加者との間に共通認識があったため、より実践的な課題や技術的解決策について深く掘り下げることができました。この違いは技術資料の作成にも影響しました。資料作成では、「知的な発見」と「理解するためのコスト」のバランスが重要です。知的な発見とは「なるほど、そういう考え方があったのか」という新しい視点を得られる瞬間ですが、その発見に至るまでの説明が複雑すぎると理解へのコストが大きくなりすぎてしまいます。多くの技術プレゼンテーションでは既知の問題とその解決策を列挙することに終始しがちですが、それだけでは予想外の学びには至りません。予想外の学びこそが、聴衆の心に残る知的な発見として認知されやすいのです。ここで重要なのは、単に「よくある課題とその解決策」を並べるだけでなく、「明確には意識していなかったけれど、言われてみれば確かにそうだった」という新たな気づきを提供することです。例えば、日々の開発で感じている不便さを Platform Engineering の文脈で捉え直すことで、それが個人の問題ではなく構造的な課題だったと気づく瞬間を作り出せます。かといって基礎的な前提ばかりでは、聴衆にとって新しい気づきが得られません。Developers Summitでは基礎と新知見のバランスを重視し、PFEM特別回では基礎的な説明を最小限に抑え、より深い技術的な議論に時間を割きました。それ以外の「イライラ」「焦り」「困惑」といった感情は、むしろ読者の集中力を削ぎ、本質的な学びを妨げてしまう。技術資料は、共感と発見のポジティブな体験に徹するべきなのだ。確かに、高度な実装や複雑な概念を詰め込んだ資料を作ることは可能だ。しかし、そのような難解な内容は、読者の理解を遠ざけ、結果として伝えたい本質が埋もれてしまう。読者の多くがこのような否定的な感情を抱く資料は、作成者の自己満足に過ぎないと言えるでしょう。2025年ならではの発見として、Xのアルゴリズム変更により画像が優先表示されるようになった現在、印象に残るスライドを含めることが効果的です。複雑な概念を一枚の図で表現することで、SNS上での共有や議論が促進され、発表後もコミュニティでの対話が継続する可能性が高まります。また、Platform Engineeringという新しい分野では、技術コミュニティにおける「共通言語」の重要性も実感しました。Developers Summitではキーとなる概念を具体例と共に丁寧に説明し、PFEM特別回では既存の共通言語を活用してより専門的な議論を展開しました。知識を一方的に伝えるのではなく、参加者との対話を通じて互いに学び合える場を作ることを心がけ、翻訳者兼登壇者としての過剰な発言は控えました。この経験を通じて、技術を伝えることは単なる知識の転送ではなく、聴衆のコンテキストに寄り添いながら対話を生み出すプロセスだと実感しました。イベントの性質や参加者層によって求められる内容や深さが異なることを学び、今後もこの気づきを活かしながら効果的な技術共有を目指していきます。おわりに2つのイベントでの発表資料は異なる切り口で作成しましたが、どちらも力を入れて準備させていただきました。より詳細な内容についてはぜひ資料をご覧いただければと思います。また、完全版については機会があればお話させていただきたいと考えていますので、ご興味がありましたらぜひご依頼ください。最後に、この経験を通じて得られた知見を今後の活動にも活かしていきたいと考えています。ご清聴いただいた皆様、そして貴重な機会を提供してくださった関係者の皆様に心より感謝申し上げます。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[インフラをつくるとはどういうことなのか、 あるいはPlatform Engineeringについて]]></title>
-            <link>https://speakerdeck.com/nwiizo/inhurawotukurutohadouiukotonanoka-aruihaplatform-engineeringnituite</link>
-            <guid>https://speakerdeck.com/nwiizo/inhurawotukurutohadouiukotonanoka-aruihaplatform-engineeringnituite</guid>
-            <pubDate>Thu, 13 Feb 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年02月13日 Developers Summit 2025 13-E-4 にて「インフラをつくるとはどういうことなのか、 あるいはPlatform Engineeringについて - Platform Engineeringの効果的な基盤構築のアプローチ」というタイトルで登壇します。同日にPFEM特別回 でも登壇するのですが資料頑張って作ったのでそっちも読んでください。完全版は機会があればお話するので依頼してください。イベント名:  Developers Summit 2025公式URL: https://event.shoeisha.jp/devsumi/20250213セッションURL: https://event.shoeisha.jp/devsumi/20250213/session/5546登壇ブログ: https://syu-m-5151.hatenablog.com/entry/2025/02/14/071127]]></content:encoded>
         </item>
     </channel>
 </rss>
