@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 15 Mar 2025 11:34:05 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 15 Mar 2025 22:34:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,6 +27,13 @@
             <guid>https://sreake.com/blog/observabilitycon-on-the-road-tokyo-2025-recap/</guid>
             <pubDate>Fri, 14 Mar 2025 02:09:01 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部の岩﨑です。 2025年2月25日、ObservabilityCON on the Road Tokyo 2025 が東京ポートシティ竹芝で開催されました。初めての参加でしたが、Grafana […]The post ObservabilityCON on the Road Tokyo 2025 Recap first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[1～100までの整数が奇数かどうかを判定するプログラム.R]]></title>
+            <link>https://blog.atusy.net/2025/03/14/is-odd-r/</link>
+            <guid>https://blog.atusy.net/2025/03/14/is-odd-r/</guid>
+            <pubDate>Fri, 14 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[【ゆる募】１～100までの整数が奇数かどうかを判定するプログラム大喜利を開催します☺　言語不問✨https://x.com/arith_rose/status/1899300131658510802とのことで、Rで書いてみましょう。模範解答……？ナニソレオイシイノ？]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[fish shellを実質的なデフォルトシェルにするbashrc]]></title>
@@ -229,13 +236,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/2025/02/16/140946</guid>
             <pubDate>Sun, 16 Feb 2025 05:09:46 GMT</pubDate>
             <content:encoded><![CDATA[仕事をしていて数年ほどたつと自分はこんなに頑張ってるのに評価が低いと思うタイミングが来る。これは後々そんなことはなかったと気がつくものの、そのタイミングにいる間は不適当な評価を受けていると思いがちで、自尊心が肥大しがちである。自分ばっかり頑張っていると感じたときは、自分の仕事が本当に価値を生んでいるのかという観点に立ち返ったほうがいい。やらなくてもいい仕事に忙殺されていないか？ 楽してると思ってる人は本質的な仕事に集中しているのではないか？これはイシューからはじめよでいうところの犬の道に陥っている状態である。自分だけ大変と思っているときは、実際には価値を生み出していないにも限らず、仕事量によ達成感を成果と勘違いしていることが多い。自分ばっかり大変だ、となっているときは価値の低いことに時間を投入していないか見つめ直そうという自戒。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【基礎】 GoでSpannerを使う]]></title>
-            <link>https://zenn.dev/kamos/articles/b06c3ef3de894a</link>
-            <guid>https://zenn.dev/kamos/articles/b06c3ef3de894a</guid>
-            <pubDate>Sun, 16 Feb 2025 03:29:52 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにGoogleのSpannerデータベースはまだまだ知名度が低く、日本語での文献も豊富ではないため、いざ使うとなるとかなり苦労する技術です。ここでは最低限の概念を説明することにつとめ、通常利用においてSpannerのハードルを下げようと思いこの記事を執筆しました。基本的には以下の資料に載っている情報かと思いますが、実際にソースコードを見るとドキュメントの更新が追いついていない部分が多い印象でした。そのためクライアントライブラリのソースコードに可能な限り追従し、できるだけ平易な文章でまとめようと思います。https://cloud.google.com/spanner/do...]]></content:encoded>
         </item>
     </channel>
 </rss>
