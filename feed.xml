@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 16 Mar 2025 11:34:17 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Mar 2025 22:33:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Fishで非同期処理を実装してみる]]></title>
+            <link>https://blog.atusy.net/2025/03/16/fish-async/</link>
+            <guid>https://blog.atusy.net/2025/03/16/fish-async/</guid>
+            <pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Fishのプロンプトを自作していて、実行に時間がかかる場合に、非同期にプロンプトを更新できるか気になりました。軽く調べてみたところ、ユニバーサル変数を利用するといいよとのこと。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[外向けに話すときは相手のメリットを話そう]]></title>
             <link>https://nnaka2992.hatenablog.com/entry/2025/03/14/204148</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/kamos/articles/c334faad2d3b33</guid>
             <pubDate>Sun, 16 Feb 2025 08:56:32 GMT</pubDate>
             <content:encoded><![CDATA[はじめにgoruotineはgo言語の軽量スレッドの仕組みであり、並行処理が比較的簡単に実装できます。しかしその自由度の高さから、慣れていない人にとってはどのように実装したらよいのか、という迷いが生まれてしまいます。その中でもよく使う並行処理のパターンは決まっており、今回はよく自分が使うパターンを2つ紹介します。 前提こういう遅くて、エラーも起こる関数をテーマにします。func slowFunction(arg string) (string, error) {	fmt.Printf("SLOW FUNCTION START: %s\n", arg)	start :=...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[自分ばっかり大変と思ってるときは気をつけたほうがいい]]></title>
-            <link>https://nnaka2992.hatenablog.com/entry/2025/02/16/140946</link>
-            <guid>https://nnaka2992.hatenablog.com/entry/2025/02/16/140946</guid>
-            <pubDate>Sun, 16 Feb 2025 05:09:46 GMT</pubDate>
-            <content:encoded><![CDATA[仕事をしていて数年ほどたつと自分はこんなに頑張ってるのに評価が低いと思うタイミングが来る。これは後々そんなことはなかったと気がつくものの、そのタイミングにいる間は不適当な評価を受けていると思いがちで、自尊心が肥大しがちである。自分ばっかり頑張っていると感じたときは、自分の仕事が本当に価値を生んでいるのかという観点に立ち返ったほうがいい。やらなくてもいい仕事に忙殺されていないか？ 楽してると思ってる人は本質的な仕事に集中しているのではないか？これはイシューからはじめよでいうところの犬の道に陥っている状態である。自分だけ大変と思っているときは、実際には価値を生み出していないにも限らず、仕事量によ達成感を成果と勘違いしていることが多い。自分ばっかり大変だ、となっているときは価値の低いことに時間を投入していないか見つめ直そうという自戒。]]></content:encoded>
         </item>
     </channel>
 </rss>
