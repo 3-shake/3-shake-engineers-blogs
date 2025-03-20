@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 20 Mar 2025 11:34:10 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Mar 2025 22:34:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Fishの関数で関数外の変数を利用する]]></title>
+            <link>https://blog.atusy.net/2025/03/20/use-outer-scope-vars-in-fish/</link>
+            <guid>https://blog.atusy.net/2025/03/20/use-outer-scope-vars-in-fish/</guid>
+            <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025-03-21時点で最新のFish 4.0.1のデフォルト挙動では、関数が外界のローカル変数を参照できません。ためしに、関数fの外で定義した変数のechoを試みてみると、何も表示されません。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[生成AIといっしょ: 動作するきれいなコードを生成AIとつくる]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/03/19/201025</link>
@@ -229,13 +236,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2025/02/20/120339</guid>
             <pubDate>Thu, 20 Feb 2025 03:03:39 GMT</pubDate>
             <content:encoded><![CDATA[はじめにRustプロジェクトを開発していると、新しいクレートを追加したり不要なクレートを削除したりする作業は頻繁に発生します。現在、Rustにはcargo addというコマンドが標準で用意されており、コマンドラインから依存関係を追加することができます。cargo add serde --features deriveしかし、cargo addは手動での実行が必要で、また使用していない依存関係の検出や削除は行いません。この依存関係の管理をさらに自動化できないか？という思いから開発したのが「cargo-autodd」です。Rustで開発する際の面倒な依存関係管理を自動化するツール「cargo-autodd」を開発しました。ソースコード内のuse文やextern crate宣言を解析し、必要なクレートを自動でCargo.tomlに追加します。先ほど作ったのでバグや不具合があると思うのでPRお願いします。テストもない。https://t.co/ZNfOu4AxEd pic.twitter.com/RbQNyp0K8H— nwiizo (@nwiizo) 2025年2月16日   cargo-autoddとはcargo-autoddは、Rustのソースコードを解析して必要な依存関係を自動的に検出し、Cargo.tomlを更新するツールです。github.com主な特徴は以下の通りです：ソースコード内のuse文とextern crate宣言を解析必要なクレートを自動検出Cargo.tomlに最新の安定バージョンを追加未使用のクレートを削除rust-analyzerを活用した高度な解析（オプション）技術的な詳細プロジェクト構造の解析プロジェクトの解析はDependencyManager構造体を中心に行われます。この構造体は以下のようなフィールドを持ちます：struct DependencyManager {    project_root: PathBuf,  // プロジェクトのルートディレクトリ    cargo_toml: PathBuf,    // Cargo.tomlのパス}依存関係の解析プロセスanalyze_dependenciesメソッドは、以下の3段階で依存関係を解析します：rust-analyzerによる解析（優先）let output = Command::new("rust-analyzer")    .arg("analysis")    .arg("--workspace")    .current_dir(&self.project_root)    .output()?;正規表現による解析（フォールバック）let use_regex = Regex::new(r"use\s+([a-zA-Z_][a-zA-Z0-9_]*)(::|\s|;)")?;let extern_regex = Regex::new(r"extern\s+crate\s+([a-zA-Z_][a-zA-Z0-9_]*)")?;結果の集約と検証検出された各クレートに対して、使用箇所とフィーチャーフラグを記録標準ライブラリのクレートを除外重複を排除Cargo.tomlの更新メカニズムupdate_cargo_tomlメソッドは、以下の手順で依存関係を更新します：現在の依存関係の読み取りlet content = fs::read_to_string(&self.cargo_toml)?;let mut doc = content.parse::<DocumentMut>()?;新規依存関係の追加for (name, crate_ref) in crate_refs {    if !current_deps.contains(name) && !is_std_crate(name) {        self.add_dependency(&mut doc, crate_ref)?;    }}未使用依存関係の削除ただし、is_essential_depで指定された重要な依存関係は保持fn is_essential_dep(name: &str) -> bool {    let essential_deps = [        "serde",        "tokio",        "anyhow",        "thiserror",        "async-trait",        "futures",    ];    essential_deps.contains(&name)}バージョン管理の詳細バージョン管理はget_latest_versionメソッドで行われ、以下の特徴があります：crates.ioのAPIを使用した最新バージョンの取得let url = format!("https://crates.io/api/v1/crates/{}/versions", crate_name);Yank済みバージョンの除外let latest_version = response    .versions    .iter()    .find(|v| !v.yanked)?;セマンティックバージョニングの適用メジャーバージョンとマイナーバージョンのみを指定パッチバージョンは自動更新可能にOk(format!("^{}.{}.0", version.major, version.minor))ベストプラクティスと使用上の注意点事前準備rust-analyzerのインストール（推奨）プロジェクトのビルドが通っていることを確認実行手順プロジェクトのルートディレクトリでcargo autoddを実行変更内容を必ず確認特にバージョン指定に注意を払うcargo checkで依存関係の整合性を検証トラブルシューティングrust-analyzerが使用できない場合は正規表現による解析にフォールバック誤検出された依存関係は手動で修正今後の展望cargo-autoddの将来的な機能拡張として、以下を計画しています：解析機能の強化マクロの展開とその依存関係の解析より正確なフィーチャーフラグの自動検出条件付きコンパイル（cfg属性）の考慮依存関係管理の拡張開発依存関係（dev-dependencies）の自動管理ワークスペース対応の強化バージョン競合の自動解決開発者体験の向上エディターへの組み込み（VSCode拡張など）より詳細な依存関係グラフの可視化CIでの自動実行オプションまとめcargo-autoddは、Rustプロジェクトにおける依存関係管理の自動化を実現する強力なツールです。その特徴は以下の点にあります：効率性の向上手動での依存関係管理の煩わしさを解消プロジェクトの依存関係を常に最新かつ必要最小限に保持バージョン管理の自動化による保守性の向上安全性の確保rust-analyzerを活用した正確な依存関係の解析セマンティックバージョニングの適切な処理重要な依存関係の保護機能開発者体験の改善シンプルな使用方法自動化による作業時間の削減プロジェクトの依存関係の可視化これらの機能により、開発者はより本質的なコーディング作業に集中できるようになります。また、オープンソースプロジェクトとして公開されているため、コミュニティからのフィードバックや貢献を受け入れながら、さらなる機能改善を進めていく予定です。cargo-autoddは、Rustエコシステムの成熟に伴い、より重要なツールとなることが期待されます。依存関係管理の自動化という課題に対する一つの解決策として、多くの開発者の方々に活用していただければ幸いです。English Edition:syu-m-5151.hatenablog.com]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コードを読んで理解するko build]]></title>
-            <link>https://speakerdeck.com/bells17/kotowodu-nteli-jie-suruko-build</link>
-            <guid>https://speakerdeck.com/bells17/kotowodu-nteli-jie-suruko-build</guid>
-            <pubDate>Wed, 19 Feb 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Jagu'e'r Cloud Native #17 ハイブリッド Meetup ~ 推しの CNCF プロジェクトを紹介するぜ LT ~ の登壇資料です。https://jaguer-cloud-native.connpass.com/event/342024/参考リンク・画像など引用元一覧https://ko.build/ https://github.com/ko-build/ko https://github.com/google/go-containerregistry https://github.com/sigstore/cosign https://github.com/opencontainers/image-spec https://github.com/cncf/sandbox/issues/17 https://github.com/ko-build/ko/issues/791 https://github.com/cncf/sandbox/issues/163 https://github.com/cncf/artwork/blob/main/projects/ko/stacked/color/ko-stacked-color.png https://github.com/cncf/artwork/blob/main/projects/ko/icon/color/ko-icon-color.png]]></content:encoded>
         </item>
     </channel>
 </rss>
