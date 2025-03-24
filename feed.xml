@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 23 Mar 2025 22:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Mar 2025 11:34:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[論文紹介 ”A Survey on Large Language Model based Autonomous Agents”]]></title>
+            <link>https://speakerdeck.com/shukob/lun-wen-shao-jie-a-survey-on-large-language-model-based-autonomous-agents</link>
+            <guid>https://speakerdeck.com/shukob/lun-wen-shao-jie-a-survey-on-large-language-model-based-autonomous-agents</guid>
+            <pubDate>Mon, 24 Mar 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://genai-users.connpass.com/event/349197/この論文は大規模言語モデル（LLM）を基盤とする自律型エージェントに関する包括的な調査論文です。この論文は、LLMベースの自律型エージェントの現状、構成要素、課題、そして将来の展望について詳細に解説しています。本論文を読むことで、AIエージェントの概要を体系的に知ることができます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[「SLI/SLO・ラプソディあるいは組織への適用の旅」というタイトルで登壇してきました。　#信頼性向上_findy]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/03/21/204737</link>
@@ -230,13 +237,6 @@
             <guid>https://speakerdeck.com/shukob/aiezientoyuan-nian</guid>
             <pubDate>Fri, 21 Feb 2025 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://genai-users.connpass.com/event/344292/2024年は生成AIが世の中に浸透した1年でしたが、2025年はAIエージェント元年と言われています。生成AIはチャットベースで受け身なものでしたが、AIエージェントは自律的にタスクを分解しこなすことができます。そのインパクトは計り知れません。生成AIの概略を説明した後、AIエージェントの紹介をします。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コンテナサプライチェーンセキュリティ]]></title>
-            <link>https://speakerdeck.com/kyohmizu/kontenasapuraitiensekiyuritei</link>
-            <guid>https://speakerdeck.com/kyohmizu/kontenasapuraitiensekiyuritei</guid>
-            <pubDate>Fri, 21 Feb 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[イベント登壇資料です。2025/02/21 #CNCJhttps://cncj-security.connpass.com/event/341812/]]></content:encoded>
         </item>
     </channel>
 </rss>
