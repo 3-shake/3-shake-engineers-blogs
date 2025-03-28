@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 28 Mar 2025 11:34:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Mar 2025 22:34:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Fish 4のabbrはサブコマンドも展開できるぞ]]></title>
+            <link>https://blog.atusy.net/2025/03/29/fish-4-abbr/</link>
+            <guid>https://blog.atusy.net/2025/03/29/fish-4-abbr/</guid>
+            <pubDate>Sat, 29 Mar 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Fishのabbr使ってますか？aliasの強化版といった感じで、短縮した入力をスペースやエンターと共に本来のコマンドに展開してくれる機能です。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Rust製MCPライブラリのサンプルコードから学ぶ活用法]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/03/28/132800</link>
@@ -230,13 +237,6 @@
             <guid>https://qiita.com/masaru-komiyama/items/0160cf23fbe2576f869c</guid>
             <pubDate>Sun, 02 Mar 2025 12:57:49 GMT</pubDate>
             <content:encoded><![CDATA[おい！タイトルバグってんぞ！　と思われた皆様。安心してください。バグっておりません。電気回路を嗜んだ方なら、何かあったときについ口ずさんでしまう復活の呪文（まぁ色んな意味で記憶を呼び起こす呪文なの…]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[2025/02/28] #kubenews 今週のKubernetes + Cloud Native + その他ニュース]]></title>
-            <link>https://zenn.dev/bells17/articles/k8s-cloud-native-and-other-20250228</link>
-            <guid>https://zenn.dev/bells17/articles/k8s-cloud-native-and-other-20250228</guid>
-            <pubDate>Fri, 28 Feb 2025 10:19:14 GMT</pubDate>
-            <content:encoded><![CDATA[#kubenewsの2025年02月28日の回で話す、@bells17が最近気になったニュース記事をまとめたものです。自分が気になった今週のKubernetes + Cloud Native + その他なニュースをまるっとまとめておいて、その中から時間内に話せるものを話そうと思ってます。この記事自体はざっと読んで書いてるものが多いので、詳細はリンクとかで貼ってる記事の中を読んでもらった方が正確です。配信URL:https://www.youtube.com/live/e4qQt7sQ46Y 告知とかニュースっぽいもの コードを読んで理解するko buildhttps...]]></content:encoded>
         </item>
     </channel>
 </rss>
