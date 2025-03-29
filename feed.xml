@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 29 Mar 2025 11:34:07 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Mar 2025 22:33:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[gopass を使ってパスワード共有を試す]]></title>
+            <link>https://blog.1q77.com/2025/03/share-password-using-gopass/</link>
+            <guid>https://blog.1q77.com/2025/03/share-password-using-gopass/</guid>
+            <pubDate>Sat, 29 Mar 2025 00:57:32 GMT</pubDate>
+            <content:encoded><![CDATA[gopass とはPostgres Weekly を眺めていて Creating Postgres Roles with Passwords Stored in Gopass という記事で gopass というものの存在を知りました。名前から分かるように Go 言語で書かれており、マルチプラットフォームのパスワード管理用コマンドラインツールです。GPG を使って暗号化し、Git で管理します。GPG の公開鍵暗号を使って複数人で複合することが可能になっており、任意の人とパスワードを共有することが可能です。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Fish 4のabbrはサブコマンドも展開できるぞ]]></title>
             <link>https://blog.atusy.net/2025/03/29/fish-4-abbr/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/step-up-product-backlog-and-user-story-development/</guid>
             <pubDate>Mon, 03 Mar 2025 01:17:49 GMT</pubDate>
             <content:encoded><![CDATA[Sreake事業部アプリケーション開発チームの安本です。 現在、スクラムでアプリケーション開発の概念検証（Proof of Concept; PoC）を進めています。 本記事では、スクラム開発を行っているチーム向けに、私 […]The post ユーザーストーリーにこだわって、プロダクトバックログをスクラムチームが行う作業の唯一の情報源として成立させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[くちあだきみあむはしきぎ]]></title>
-            <link>https://qiita.com/masaru-komiyama/items/0160cf23fbe2576f869c</link>
-            <guid>https://qiita.com/masaru-komiyama/items/0160cf23fbe2576f869c</guid>
-            <pubDate>Sun, 02 Mar 2025 12:57:49 GMT</pubDate>
-            <content:encoded><![CDATA[おい！タイトルバグってんぞ！　と思われた皆様。安心してください。バグっておりません。電気回路を嗜んだ方なら、何かあったときについ口ずさんでしまう復活の呪文（まぁ色んな意味で記憶を呼び起こす呪文なの…]]></content:encoded>
         </item>
     </channel>
 </rss>
