@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 08 Apr 2025 22:34:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Apr 2025 11:34:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、2025 Google Cloud Infrastructure Modernization Partner of the Year – Japan を受賞]]></title>
+            <link>https://sreake.com/blog/2025-google-cloud-partner-of-the-year/</link>
+            <guid>https://sreake.com/blog/2025-google-cloud-partner-of-the-year/</guid>
+            <pubDate>Wed, 09 Apr 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2025年4月9日に、「2025 Google Cloud Partner of the Year」において「Infrastructure Modernization Partner of the Year - Japan」を受賞したことをお知らせします。The post スリーシェイク、2025 Google Cloud Infrastructure Modernization Partner of the Year – Japan を受賞 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Geminiとリアルタイム音声会話できるWebアプリの作り方]]></title>
             <link>https://sreake.com/blog/gemini-realtime-voice-chat-app/</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/03/13/drop-into-fish-from-bash/</guid>
             <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[fish shell、便利ですよね。デフォルトでもシンタックスハイライトや補完がよく効いてチューニングしなくてもそこそこ高速に起動するので日常使いしています。これまで chsh -s /usr/bin/fish してデフォルトシェルにfish shellを指定していましたが、Nixやhome-manager経由でfish shellを入れると特殊な場所にインストールされるため、chshできない問題に遭遇しました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Infrastructure Designing Injection ~ draw.ioに対して ~]]></title>
-            <link>https://zenn.dev/akasan/articles/66d1fc03edde50</link>
-            <guid>https://zenn.dev/akasan/articles/66d1fc03edde50</guid>
-            <pubDate>Wed, 12 Mar 2025 14:38:56 GMT</pubDate>
-            <content:encoded><![CDATA[Infrastructure Designing Injectionとは私が勝手に適当に思いついたものになります。業務の中で「Terraformで書いた構成をdraw.ioで図にしてくれると嬉しいよね」みたいなコメントがあり、その逆もできるんだろうなと思っていました。その時、もしdraw.ioの中に目には見えない情報を仕組んだら予期せぬ構成を作成させることができるのでは？と思い、それってInjectionだよねということで命名しました。Infrastructure Designing Injectionと書くと長いのでIDIと呼ばせてくださいw※ IDIというよりステガノ...]]></content:encoded>
         </item>
     </channel>
 </rss>
