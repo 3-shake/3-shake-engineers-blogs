@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 11 Apr 2025 11:34:16 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Apr 2025 22:35:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ADK で作った agent を mcp server で公開する]]></title>
+            <link>https://zenn.dev/satohjohn/articles/48a82ff7de531b</link>
+            <guid>https://zenn.dev/satohjohn/articles/48a82ff7de531b</guid>
+            <pubDate>Fri, 11 Apr 2025 16:21:06 GMT</pubDate>
+            <content:encoded><![CDATA[ほぼ前回の続きhttps://zenn.dev/satohjohn/articles/b23bd65c289257A2A を調べてたんですがその前に mcp 何も知らんということで実装しながら手で覚えていきます。前回使っていた code_agent (sequential_agent) を公開できるようにします。ADK の agent を作ったら、それを mcp server として公開ができる AgentTool というものがあるので、それを使います。https://google.github.io/adk-docs/tools/function-tools/#3-agent...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ADK + Cloud Run を動かす]]></title>
             <link>https://zenn.dev/satohjohn/articles/b23bd65c289257</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/observabilitycon-on-the-road-tokyo-2025-recap/</guid>
             <pubDate>Fri, 14 Mar 2025 02:09:01 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部の岩﨑です。 2025年2月25日、ObservabilityCON on the Road Tokyo 2025 が東京ポートシティ竹芝で開催されました。初めての参加でしたが、Grafana […]The post ObservabilityCON on the Road Tokyo 2025 Recap first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[1～100までの整数が奇数かどうかを判定するプログラム.R]]></title>
-            <link>https://blog.atusy.net/2025/03/14/is-odd-r/</link>
-            <guid>https://blog.atusy.net/2025/03/14/is-odd-r/</guid>
-            <pubDate>Fri, 14 Mar 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[【ゆる募】１～100までの整数が奇数かどうかを判定するプログラム大喜利を開催します☺　言語不問✨https://x.com/arith_rose/status/1899300131658510802とのことで、Rで書いてみましょう。模範解答……？ナニソレオイシイノ？]]></content:encoded>
         </item>
     </channel>
 </rss>
