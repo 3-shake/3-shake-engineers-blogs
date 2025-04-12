@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 11 Apr 2025 22:35:09 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Apr 2025 11:34:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[既存の mcp を adk 経由で叩いてみる。 playwright を使う。]]></title>
+            <link>https://zenn.dev/satohjohn/articles/68bdde2842e8b4</link>
+            <guid>https://zenn.dev/satohjohn/articles/68bdde2842e8b4</guid>
+            <pubDate>Sat, 12 Apr 2025 10:12:09 GMT</pubDate>
+            <content:encoded><![CDATA[mcp の client に付いて詳しくなりたいと思いつつ adk についてもやりたいのでチョット調べてみます。今回は playwright の mcp に繋いでみようと思います。https://mcp.so/server/playwright-mcp/microsoft?tab=contentplaywright は別サーバで立てるような想定で考えておきます。そのためドキュメントにある通り以下のように記載します$ npx @playwright/mcp@latest --port 8931Listening on http://localhost:8931Put this...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ADK で作った agent を mcp server で公開する]]></title>
             <link>https://zenn.dev/satohjohn/articles/48a82ff7de531b</link>
@@ -230,13 +237,6 @@
             <guid>https://nnaka2992.hatenablog.com/entry/2025/03/14/204148</guid>
             <pubDate>Fri, 14 Mar 2025 11:41:48 GMT</pubDate>
             <content:encoded><![CDATA[お仕事をしているとチームや自分の周りで合意を取ったことを、相手にお願いしに行くことが多々あります。例えばピープルマネジメントのマネージャー層でxxというやり方を試していきたいと合意をとったものを、相手にお願いしに行くこと。例えば自分たちの担当範囲の決め事で、相手に協力をお願いしに行くこと。例えば自分たちのシステムと他システム間の決め事で、こちらの方針を相談しに行くこと。自分たちの決め事を相手に協力してもらうことはよくあります。方針を固めるまでにディスカッションを重ね、自分たちにどのようなメリットがあるかは詳細に話すでしょう。自分たちの考えやメリットも詳細に説明できるでしょう。では相手のメリットはどうでしょう？ 自分の考えやメリットの説明で終わってはいないでしょうか？相手のアクションが必要なとき、ポジションティブに動いてもらうには相手の動機が重要です。相手にメリット考えて貰うより、発案者から提案したほうが心象も良くなります。要は相手の立場を考えましょうの一側面です。相手と話すときは相手の立場を考えましょう。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ObservabilityCON on the Road Tokyo 2025 Recap]]></title>
-            <link>https://sreake.com/blog/observabilitycon-on-the-road-tokyo-2025-recap/</link>
-            <guid>https://sreake.com/blog/observabilitycon-on-the-road-tokyo-2025-recap/</guid>
-            <pubDate>Fri, 14 Mar 2025 02:09:01 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部の岩﨑です。 2025年2月25日、ObservabilityCON on the Road Tokyo 2025 が東京ポートシティ竹芝で開催されました。初めての参加でしたが、Grafana […]The post ObservabilityCON on the Road Tokyo 2025 Recap first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
