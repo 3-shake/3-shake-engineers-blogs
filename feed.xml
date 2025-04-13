@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 13 Apr 2025 11:34:17 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 13 Apr 2025 22:34:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -20,6 +20,13 @@
             <guid>https://zenn.dev/satohjohn/articles/dbf4afed585680</guid>
             <pubDate>Sun, 13 Apr 2025 01:54:27 GMT</pubDate>
             <content:encoded><![CDATA[mcp server を作ってみるということで、genai-toolbox という物があるのでそれを元にやっていきますhttps://github.com/googleapis/genai-toolboxこちらは、各 DB への接続情報と、どういう SQL を実行するかを yaml、または、http の baseurl と request parameter などで記載することで tool を作成することができます。接続先は図にもある形になると思います。https://github.com/googleapis/genai-toolbox/raw/main/docs/en/get...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[codecompanion.nvimでOpenAI互換APIを利用する]]></title>
+            <link>https://blog.atusy.net/2025/04/13/codecompanion-adapter/</link>
+            <guid>https://blog.atusy.net/2025/04/13/codecompanion-adapter/</guid>
+            <pubDate>Sun, 13 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[codecompanion.nvimは未対応なサービスとチャットする方法としてカスタムアダプタの定義・登録があります。特にOpenAI互換APIを利用する場合は、xAIのアダプタを参考にすることで、簡単に実装できます。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[既存の mcp を adk 経由で叩いてみる。 playwright を使う。]]></title>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/03/19/log-error-on-r/</guid>
             <pubDate>Wed, 19 Mar 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[エラーログはエラーでユーザーに影響が発生した時に、何が起きたか記録する重要な情報源です。特にどこで問題が起きたか特定を容易にするトレースバックはログに欠かせません。ログをとらなくてもエラーは表示されるよと思いの方も、ログを使うとエラーの発生時刻は関連情報を同時に記録できるので、覚えていて損はないです。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Fishで非同期処理を実装してみる]]></title>
-            <link>https://blog.atusy.net/2025/03/16/fish-async/</link>
-            <guid>https://blog.atusy.net/2025/03/16/fish-async/</guid>
-            <pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Fishのプロンプトを自作していて、実行に時間がかかる場合に、非同期にプロンプトを更新できるか気になりました。軽く調べてみたところ、ユニバーサル変数を利用するといいよとのこと。]]></content:encoded>
         </item>
     </channel>
 </rss>
