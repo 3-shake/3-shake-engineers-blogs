@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 21 Apr 2025 11:34:19 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Apr 2025 22:35:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[DagsHub使ってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/7efdcc1c2d4141</link>
+            <guid>https://zenn.dev/akasan/articles/7efdcc1c2d4141</guid>
+            <pubDate>Mon, 21 Apr 2025 12:01:16 GMT</pubDate>
+            <content:encoded><![CDATA[今回はAIのデータやモデルについて管理することに重きを置いたDagsHubというサービスについて、その紹介と使い方をご紹介していこうと思います。 DagsHubとは？一言で言うと、データサイエンスに関わるコードだけでなくデータについても合わせて管理するためのレポジトリを提供してくれるサービスです。コードの管理だけであればGitHubなどで問題ありませんが、いわゆるdvcを利用したデータ管理を行っているようなプロジェクトであったり、複数人でチームを組んで開発するデータサイエンスプロジェクト向けのレポジトリを探している場合は選択肢としてDagsHubも候補かと思います。特徴として、DA...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Neovimも進化するMCPHubとAvante.nvimの連携ガイド]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/04/21/101837</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.1q77.com/2025/03/share-password-using-gopass/</guid>
             <pubDate>Sat, 29 Mar 2025 00:57:32 GMT</pubDate>
             <content:encoded><![CDATA[gopass とはPostgres Weekly を眺めていて Creating Postgres Roles with Passwords Stored in Gopass という記事で gopass というものの存在を知りました。名前から分かるように Go 言語で書かれており、マルチプラットフォームのパスワード管理用コマンドラインツールです。GPG を使って暗号化し、Git で管理します。GPG の公開鍵暗号を使って複数人で複合することが可能になっており、任意の人とパスワードを共有することが可能です。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Fish 4のabbrはサブコマンドも展開できるぞ]]></title>
-            <link>https://blog.atusy.net/2025/03/29/fish-4-abbr/</link>
-            <guid>https://blog.atusy.net/2025/03/29/fish-4-abbr/</guid>
-            <pubDate>Sat, 29 Mar 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Fishのabbr使ってますか？aliasの強化版といった感じで、短縮した入力をスペースやエンターと共に本来のコマンドに展開してくれる機能です。]]></content:encoded>
         </item>
     </channel>
 </rss>
