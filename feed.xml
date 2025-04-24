@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 24 Apr 2025 11:34:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Apr 2025 22:35:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年4月版読んでいて良かった本紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/9b2e5528548353</link>
+            <guid>https://zenn.dev/akasan/articles/9b2e5528548353</guid>
+            <pubDate>Thu, 24 Apr 2025 13:32:57 GMT</pubDate>
+            <content:encoded><![CDATA[今回はいつもに比べてさらに短編になりますw特に技術書に絞りまして、最近または過去読んでいて良かったと思う本について紹介していこうと思います。 クラウド系 徹底攻略 Google Cloud認定資格 Associate Cloud Engineer教科書クラウドといえば、Google Cloudに入門するために買ったこの本がまず第一ですね。Associate Cloud Engineerを取るために大変お世話になりました。https://book.impress.co.jp/books/1122101107 Google Cloudではじめる実践データエンジニアリング入門...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025年4月、AIとクラウドネイティブの交差点で語った2日間の記録 #CNDS2025 #hack_at_delta]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/04/24/113500</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/satohjohn/articles/b23bd65c289257</guid>
             <pubDate>Fri, 11 Apr 2025 08:02:18 GMT</pubDate>
             <content:encoded><![CDATA[Google Cloud Next '25 に参加してます。そのうち会社のほうで参加レポートを出します。こちらは ADK(Agent Development Kit、Android ではない) のメモ書きのようなものです2025/04/11 時点だと python でしか ADK はリリースされていないようです。 Cloud Run で動かすCloud Run で動かす方法自体は https://google.github.io/adk-docs/deploy/cloud-run/ に記載されていますのでほぼこちらを参考にお願いします。ディレクトリやファイルは以下のとおりで...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、2025 Google Cloud Infrastructure Modernization Partner of the Year – Japan を受賞]]></title>
-            <link>https://sreake.com/blog/2025-google-cloud-partner-of-the-year/</link>
-            <guid>https://sreake.com/blog/2025-google-cloud-partner-of-the-year/</guid>
-            <pubDate>Wed, 09 Apr 2025 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2025年4月9日に、「2025 Google Cloud Partner of the Year」において「Infrastructure Modernization Partner of the Year - Japan」を受賞したことをお知らせします。The post スリーシェイク、2025 Google Cloud Infrastructure Modernization Partner of the Year – Japan を受賞 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
