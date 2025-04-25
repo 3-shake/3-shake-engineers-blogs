@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 25 Apr 2025 11:34:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Apr 2025 22:35:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,34 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[普段使っている技術スタック紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/766c1c3539e778</link>
+            <guid>https://zenn.dev/akasan/articles/766c1c3539e778</guid>
+            <pubDate>Fri, 25 Apr 2025 14:41:45 GMT</pubDate>
+            <content:encoded><![CDATA[今回もすごい簡潔になりますが、普段自分が使っている技術スタックとかを紹介しようと思います エディタ neovimneovimを一応使うことが多いです。ただしガチのvimmerではないので拡張機能をたくさん入れたりはできていません。また、比較的温和なタイプのvimmerなので、本格的に使ってる人からすると「なんでちゃんと使わないんだ」と怒られそうな気がしますw cursor小規模なコード修正とかは基本neovim使ってるんですが、大規模開発とかをする必要がある場合はcursorを使ってます。ただ拡張機能でvimのキーバインド入れているので使い勝手はvimですwcursor...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Testkubeとは？KubernetesクラスタにおけるE2Eテストの統合]]></title>
+            <link>https://sreake.com/blog/testkube-e2e-test-on-kubernetes-cluster/</link>
+            <guid>https://sreake.com/blog/testkube-e2e-test-on-kubernetes-cluster/</guid>
+            <pubDate>Fri, 25 Apr 2025 12:27:40 GMT</pubDate>
+            <content:encoded><![CDATA[Sreake事業部インターン生の荒木です。長期インターン生としてKubernetesやSRE、LLM領域の関連技術など幅広い領域にわたって調査・検証を行っています。 今回、kubernetesクラスタのE2Eテストを統合 […]The post Testkubeとは？KubernetesクラスタにおけるE2Eテストの統合 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を開催します]]></title>
+            <link>https://sreake.com/blog/sre-tech-talk-12/</link>
+            <guid>https://sreake.com/blog/sre-tech-talk-12/</guid>
+            <pubDate>Fri, 25 Apr 2025 11:45:29 GMT</pubDate>
+            <content:encoded><![CDATA[この度、スリーシェイクは、SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を、2025年5月16日（金）に開催します。The post SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を開催します first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AIにペアプロのナビをさせるaibou.nvimを作った]]></title>
+            <link>https://blog.atusy.net/2025/04/25/aibou-nvim/</link>
+            <guid>https://blog.atusy.net/2025/04/25/aibou-nvim/</guid>
+            <pubDate>Fri, 25 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[atusy/aibou.nvimはAIをペアプロのナビに変身させるNeovimプラグインです。テキストの変更を逐次把握し、リアクションしてくれるので、まるで人間がナビについてくれているような体験を得られます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025年4月版読んでいて良かった本紹介]]></title>
             <link>https://zenn.dev/akasan/articles/9b2e5528548353</link>
@@ -209,34 +237,6 @@
             <guid>https://zenn.dev/satohjohn/articles/dbf4afed585680</guid>
             <pubDate>Sun, 13 Apr 2025 01:54:27 GMT</pubDate>
             <content:encoded><![CDATA[mcp server を作ってみるということで、genai-toolbox という物があるのでそれを元にやっていきますhttps://github.com/googleapis/genai-toolboxこちらは、各 DB への接続情報と、どういう SQL を実行するかを yaml、または、http の baseurl と request parameter などで記載することで tool を作成することができます。接続先は図にもある形になると思います。https://github.com/googleapis/genai-toolbox/raw/main/docs/en/get...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[codecompanion.nvimでOpenAI互換APIを利用する]]></title>
-            <link>https://blog.atusy.net/2025/04/13/codecompanion-adapter/</link>
-            <guid>https://blog.atusy.net/2025/04/13/codecompanion-adapter/</guid>
-            <pubDate>Sun, 13 Apr 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[codecompanion.nvimは未対応なサービスとチャットする方法としてカスタムアダプタの定義・登録があります。特にOpenAI互換APIを利用する場合は、xAIのアダプタを参考にすることで、簡単に実装できます。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[既存の mcp を adk 経由で叩いてみる。 playwright を使う。]]></title>
-            <link>https://zenn.dev/satohjohn/articles/68bdde2842e8b4</link>
-            <guid>https://zenn.dev/satohjohn/articles/68bdde2842e8b4</guid>
-            <pubDate>Sat, 12 Apr 2025 10:12:09 GMT</pubDate>
-            <content:encoded><![CDATA[mcp の client に付いて詳しくなりたいと思いつつ adk についてもやりたいのでチョット調べてみます。今回は playwright の mcp に繋いでみようと思います。https://mcp.so/server/playwright-mcp/microsoft?tab=contentplaywright は別サーバで立てるような想定で考えておきます。そのためドキュメントにある通り以下のように記載します$ npx @playwright/mcp@latest --port 8931Listening on http://localhost:8931Put this...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ADK で作った agent を mcp server で公開する]]></title>
-            <link>https://zenn.dev/satohjohn/articles/48a82ff7de531b</link>
-            <guid>https://zenn.dev/satohjohn/articles/48a82ff7de531b</guid>
-            <pubDate>Fri, 11 Apr 2025 16:21:06 GMT</pubDate>
-            <content:encoded><![CDATA[ほぼ前回の続きhttps://zenn.dev/satohjohn/articles/b23bd65c289257A2A を調べてたんですがその前に mcp 何も知らんということで実装しながら手で覚えていきます。前回使っていた code_agent (sequential_agent) を公開できるようにします。ADK の agent を作ったら、それを mcp server として公開ができる AgentTool というものがあるので、それを使います。https://google.github.io/adk-docs/tools/function-tools/#3-agent...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ADK + Cloud Run を動かす]]></title>
-            <link>https://zenn.dev/satohjohn/articles/b23bd65c289257</link>
-            <guid>https://zenn.dev/satohjohn/articles/b23bd65c289257</guid>
-            <pubDate>Fri, 11 Apr 2025 08:02:18 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloud Next '25 に参加してます。そのうち会社のほうで参加レポートを出します。こちらは ADK(Agent Development Kit、Android ではない) のメモ書きのようなものです2025/04/11 時点だと python でしか ADK はリリースされていないようです。 Cloud Run で動かすCloud Run で動かす方法自体は https://google.github.io/adk-docs/deploy/cloud-run/ に記載されていますのでほぼこちらを参考にお願いします。ディレクトリやファイルは以下のとおりで...]]></content:encoded>
         </item>
     </channel>
 </rss>
