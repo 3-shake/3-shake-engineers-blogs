@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 25 Apr 2025 22:35:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Apr 2025 11:34:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apache Airflow使ってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/bb86a3442214da</link>
+            <guid>https://zenn.dev/akasan/articles/bb86a3442214da</guid>
+            <pubDate>Sat, 26 Apr 2025 10:05:07 GMT</pubDate>
+            <content:encoded><![CDATA[今回はApache Airflow（以下、Airflow）について調べてみました。調べようと思った理由としては以前から名前は知っていたが調べる機会がなかったGoogle Cloudの勉強をしている中でCloud ComposerがAirflowを使っているということでどんなものか気になっていたからです。今回は本格的な調査というよりは、まずはどんなものかについて調べてみようと思います。 Apache Airflowとは？一言で言ってしまえばワークフロー管理ツールということみたいです。Pythonを使ってワークフローを構成し、スケジューリングを行ったり動作のモニタリングができ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[普段使っている技術スタック紹介]]></title>
             <link>https://zenn.dev/akasan/articles/766c1c3539e778</link>
@@ -82,7 +89,7 @@
             <link>https://speakerdeck.com/nwiizo/kokohamcpnoye-ming-kemae</link>
             <guid>https://speakerdeck.com/nwiizo/kokohamcpnoye-ming-kemae</guid>
             <pubDate>Wed, 23 Apr 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[本日、「AI駆動開発実践の手引き -これが僕/私のAI（アイ）棒」というイベントで「ここはMCPの夜明けまえ」 🎵🧭 というタイトルで登壇しました！🔍 イベント詳細:- イベント名: 【ハイブリッド開催】AI駆動開発実践の手引き -これが僕/私のAI（アイ）棒-- 公式URL: https://hack-at-delta.connpass.com/event/350588/]]></content:encoded>
+            <content:encoded><![CDATA[本日、「AI駆動開発実践の手引き -これが僕/私のAI（アイ）棒」というイベントで「ここはMCPの夜明けまえ」 🎵🧭 というタイトルで登壇しました！🔍 イベント詳細:- イベント名: 【ハイブリッド開催】AI駆動開発実践の手引き -これが僕/私のAI（アイ）棒-- 公式URL: https://hack-at-delta.connpass.com/event/350588/📝 登壇ブログ- 2025年4月、AIとクラウドネイティブの交差点で語った2日間の記録 #CNDS2025 #hack_at_delta- https://syu-m-5151.hatenablog.com/entry/2025/04/24/113500]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Dockerを使用せずにイメージを作成し実行してみる - go-containerregistryによる実装]]></title>
@@ -124,7 +131,7 @@
             <link>https://speakerdeck.com/nwiizo/sheng-cheng-ainiyorucloud-native-ji-pan-gou-zhu-noke-neng-xing-toshi-jian-de-gadorerunofu-she-nituite</link>
             <guid>https://speakerdeck.com/nwiizo/sheng-cheng-ainiyorucloud-native-ji-pan-gou-zhu-noke-neng-xing-toshi-jian-de-gadorerunofu-she-nituite</guid>
             <pubDate>Tue, 22 Apr 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[こんにちは皆さん！本日はCloud Native Daysのプレイベントで登壇させていただきます。2019年以来の登壇となりますが、当時はまだ肩こりなんて無縁だったんですよね…。時の流れは容赦ないもので、最近の肩こりが辛くて昨日も整骨院に通ってきました。30分の持ち時間に対してスライドが80枚以上という暴挙にも出ています。---本日、「CloudNative Days Summer 2025 プレイベント」というイベントで「生成AIによるCloud Native 基盤構築の可能性と実践的ガードレールの敷設について」 🎵🧭 というタイトルで登壇しました！🔍 イベント詳細:- イベント名: CloudNative Days Summer 2025 プレイベント- 公式URL:https://cloudnativedays.connpass.com/event/351211/ - 本イベントのURL: https://event.cloudnativedays.jp/cnds2025]]></content:encoded>
+            <content:encoded><![CDATA[こんにちは皆さん！本日はCloud Native Daysのプレイベントで登壇させていただきます。2019年以来の登壇となりますが、当時はまだ肩こりなんて無縁だったんですよね…。時の流れは容赦ないもので、最近の肩こりが辛くて昨日も整骨院に通ってきました。30分の持ち時間に対してスライドが80枚以上という暴挙にも出ています。---本日、「CloudNative Days Summer 2025 プレイベント」というイベントで「生成AIによるCloud Native 基盤構築の可能性と実践的ガードレールの敷設について」 🎵🧭 というタイトルで登壇しました！🔍 イベント詳細:- イベント名: CloudNative Days Summer 2025 プレイベント- 公式URL:https://cloudnativedays.connpass.com/event/351211/ - イベントのURL: https://event.cloudnativedays.jp/cnds2025📝 登壇ブログ- 2025年4月、AIとクラウドネイティブの交差点で語った2日間の記録 #CNDS2025 #hack_at_delta- https://syu-m-5151.hatenablog.com/entry/2025/04/24/113500]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Lookerの独自言語「LookML」とは]]></title>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/directory-structure-good-practice/</guid>
             <pubDate>Mon, 14 Apr 2025 03:44:43 GMT</pubDate>
             <content:encoded><![CDATA[こんにちは。スリーシェイクの中原です。 プロジェクトが大きくなるにつれて「メンテナンスがしづらい」「開発スピードが遅い」と悩みを抱える要因の一つに「ディレクトリ構造がイケてない」があると考えています。 本日は、そういった […]The post ディレクトリ構成の基本原則 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[genai-toolbox を実装して mcp server として公開し adk から使ってみる]]></title>
-            <link>https://zenn.dev/satohjohn/articles/dbf4afed585680</link>
-            <guid>https://zenn.dev/satohjohn/articles/dbf4afed585680</guid>
-            <pubDate>Sun, 13 Apr 2025 01:54:27 GMT</pubDate>
-            <content:encoded><![CDATA[mcp server を作ってみるということで、genai-toolbox という物があるのでそれを元にやっていきますhttps://github.com/googleapis/genai-toolboxこちらは、各 DB への接続情報と、どういう SQL を実行するかを yaml、または、http の baseurl と request parameter などで記載することで tool を作成することができます。接続先は図にもある形になると思います。https://github.com/googleapis/genai-toolbox/raw/main/docs/en/get...]]></content:encoded>
         </item>
     </channel>
 </rss>
