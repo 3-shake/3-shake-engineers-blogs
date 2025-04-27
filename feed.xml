@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 27 Apr 2025 11:34:19 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Apr 2025 22:34:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[モンティ・ホール問題をPythonで確かめてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/90b205bc9bca23</link>
+            <guid>https://zenn.dev/akasan/articles/90b205bc9bca23</guid>
+            <pubDate>Sun, 27 Apr 2025 13:02:51 GMT</pubDate>
+            <content:encoded><![CDATA[みなさん、モンティ・ホール問題をご存知でしょうか？今回はPythonでモンティ・ホール問題が本当にその通りなのか計算してみました。 モンティ・ホール問題とは？これは確率の勉強をする時によく出てくる直感に反する結果となるものの例として扱われます。概要についてはWikipediaを参考にすると以下のようにまとめられます。モンティ・ホール問題（モンティ・ホールもんだい、英: Monty Hall problem）とは、確率論の問題で、ベイズの定理における事後確率、あるいは主観確率の例題の一つとなっている。モンティ・ホール（英語版）（Monty Hall, 本名：Monte Halpe...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Apache Airflow使ってみた]]></title>
             <link>https://zenn.dev/akasan/articles/bb86a3442214da</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/04/15/nvim-filetype-matching-with-shebang/</guid>
             <pubDate>Tue, 15 Apr 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[vim.filetype.addを使うと、指定したパターンごとのファイル名やフルパスに対して、ファイルタイプの判定ロジックを追加できるよ。#!/usr/bin/env -S deno ...のようなshebangを使った実行ファイルの判定を紹介するよ。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ディレクトリ構成の基本原則]]></title>
-            <link>https://sreake.com/blog/directory-structure-good-practice/</link>
-            <guid>https://sreake.com/blog/directory-structure-good-practice/</guid>
-            <pubDate>Mon, 14 Apr 2025 03:44:43 GMT</pubDate>
-            <content:encoded><![CDATA[こんにちは。スリーシェイクの中原です。 プロジェクトが大きくなるにつれて「メンテナンスがしづらい」「開発スピードが遅い」と悩みを抱える要因の一つに「ディレクトリ構造がイケてない」があると考えています。 本日は、そういった […]The post ディレクトリ構成の基本原則 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
