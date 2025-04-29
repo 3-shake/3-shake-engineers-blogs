@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 28 Apr 2025 22:35:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Apr 2025 11:34:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[pyenv+virtualenv/poetryからuvに乗り換えた話]]></title>
+            <link>https://zenn.dev/akasan/articles/39f81f8bd15790</link>
+            <guid>https://zenn.dev/akasan/articles/39f81f8bd15790</guid>
+            <pubDate>Tue, 29 Apr 2025 02:39:58 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Pythonの仮想環境管理とライブラリ管理をuvに乗り換えた経緯と使い方などについて解説していきたいと思います。 乗り換えるまでどうしていたかuvに乗り換えるまでは、仮想環境にpyenv + virtualenv、ライブラリ管理にはpoetryを利用していました。仮想環境にpyenv+virtualenvを利用していた理由ですが、何か大きな理由があったというわけではなく、環境構築がうまくいって使い慣れていたのでずっと使っていた感じです。poetryについてはuvなどが出てくるまではスタンダードなツールだったと思います。私もその流れに乗って使っておりました。poetryを...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[変わったと言っちゃえ]]></title>
+            <link>https://blog.atusy.net/2025/04/29/the-changing-same/</link>
+            <guid>https://blog.atusy.net/2025/04/29/the-changing-same/</guid>
+            <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[わずかな変化でも認めてあげることが大事だなと、ふいに思ったのだ。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[dura使ってみた]]></title>
             <link>https://zenn.dev/akasan/articles/e3b8473a703d61</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/google-cloud-next-2025-database-updates/</guid>
             <pubDate>Thu, 17 Apr 2025 03:04:19 GMT</pubDate>
             <content:encoded><![CDATA[AgentspaceやAgent Development Kit、A2A Protocolの発表など生成AI関連の発表が目立ったGoogle Cloud Next 2025ですが、データベース関連でも魅力的なリリースがた […]The post Google Cloud Next 2025 データベースRecap ~データベース関連の全41リリースを紹介~ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[MACのDocker 環境はcolima にしました]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2025/04/16/201211</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2025/04/16/201211</guid>
-            <pubDate>Wed, 16 Apr 2025 11:12:11 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにコンテナ技術は現代のソフトウェア開発において不可欠なツールとなっています。特にMacユーザーにとって、効率的なコンテナ環境の構築は開発ワークフローを大きく改善します。そんな中、ローカルの環境をColimaにしたのでブログにします。Colimaは、macOSとLinux上でコンテナランタイムを最小限の設定で実行できる軽量なツールです。Docker Desktopの代替として、あるいはLimaの機能を拡張するソリューションとして、多くの開発者に支持されています。github.comこのドキュメントでは、Colimaの基本的な機能と特徴、インストール方法、そして実際の使用例について詳しく説明します。Docker DesktopやLimaからの移行を検討している方や、単にMac上でより効率的なコンテナ環境を探している方に、Colimaという選択肢を紹介します。Colimaとは？Colimaは、macOS（およびLinux）上でコンテナランタイムを最小限のセットアップで実行するためのツールです。Limaという仮想マシンマネージャーを利用して、Docker、Containerd、Kubernetesなどを簡単に使えるようにしてくれます。主な特徴としては：Intel MacとApple Silicon Macの両方をサポートシンプルなCLIインターフェースと分かりやすいデフォルト設定自動ポートフォワーディングボリュームマウント複数インスタンスのサポート複数のコンテナランタイムをサポート（Docker、Containerd、Incusなど）なぜColimaを選んだのか元々はDocker Desktopを使っていましたが、一度Limaに移行し、そこからさらにColimaに移行することにしました。その理由はいくつかあります。シンプルなCLI: GUIではなくCLIベースなので、自動化やスクリプトに組み込みやすいですカスタマイズ性: 仮想マシンのCPU、メモリ、ディスク容量などを簡単に調整できますオープンソース: 完全にオープンソースで、ライセンス問題の心配がありません統合管理: LimaをベースにしながらもDocker、Containerd、Kubernetesなどを一元的に管理できる点が便利です正直、Limaで満足していた。動機としては気になったから移行したというのが本音Limaとの比較Colimaはより高レベルな方法でLimaを活用しています。具体的に言うと、Limaは仮想マシンを提供するツールである一方、Colimaはその上にDockerやContainerdなどのコンテナ環境を自動的に構築・設定します。これは、自分でLimaの設定ファイルを書いてDockerを動かす作業を自動化してくれるようなものです。つまり、Limaの複雑な設定や調整をせずに、すぐにコンテナ環境を使い始めることができます。Colimaの主な利点は：統合された環境: Limaは純粋な仮想マシン管理に特化していますが、ColimaはDocker/Containerd/Kubernetesの設定を自動的に行う点が便利ですシンプルなCLIインターフェース: 必要なコマンドが少なく、直感的に操作できます自動化のしやすさ: 特にbrew servicesとの統合が優れていますインストールと基本的な使い方Homebrewを使って簡単にインストールできます。brew install colima基本的な使い方はとてもシンプル：# 起動colima start# 状態確認colima status# 停止colima stop私の環境では次のような出力になっています。colima statusINFO[0000] colima is running using macOS Virtualization.Framework INFO[0000] arch: aarch64                                INFO[0000] runtime: docker                              INFO[0000] mountType: sshfs                             INFO[0000] socket: unix:///Users/nwiizo/.colima/default/docker.sock システム起動時に自動起動する設定開発環境として日常的に使うので、Macの起動時にColimaも自動的に起動するように設定しました。Homebrewのservicesを使うと簡単です。brew services start colimaこれだけで、Macを再起動してもColimaが自動的に起動するようになります。以前のLimaでは、~/Library/LaunchAgents/com.lima.docker.plistのようなLaunchAgentsのplistファイルを作成・編集して自動起動を設定する必要がありました。Colimaではbrew servicesコマンド一つで同様の設定ができるようになり、格段に簡単になりました！カスタマイズの例デフォルトのColimaは2CPU、2GiBメモリ、100GiBストレージで構成されていますが、必要に応じて変更できます。# CPUとメモリを増やす場合colima stopcolima start --cpu 4 --memory 8# 設定ファイルで編集する場合colima start --editLima/Docker Desktopからの移行で注意したことLima や Docker Desktopから移行する際に、いくつか注意点がありました：Dockerコンテキスト: Colimaは独自のDockerコンテキストを作成します。docker context lsとdocker context useコマンドで管理できます。Dockerソケットの場所: デフォルトでは~/.colima/default/docker.sockにあります。一部のツールで直接ソケットパスを指定する必要がある場合は、この場所を指定します。Limaとは異なるパスなので注意が必要です。ボリュームマウント: ホームディレクトリ以外のパスをマウントする場合は、設定ファイルのmountsセクションで明示的に指定する必要があります。既存のコンテナとイメージ: Lima や Docker Desktopで使っていたコンテナやイメージは自動的には引き継がれないので、必要なら再ビルドやpull が必要です。Colimaの動作確認実際にcolima statusコマンドを実行すると、以下のような情報が表示されます。colima statusINFO[0000] colima is running using macOS Virtualization.Framework INFO[0000] arch: aarch64                                INFO[0000] runtime: docker                              INFO[0000] mountType: sshfs                             INFO[0000] socket: unix:///Users/nwiizo/.colima/default/docker.sock また、colima listコマンドでは、実行中のColimaインスタンスの詳細な情報が確認できます。colima listPROFILE    STATUS     ARCH       CPUS    MEMORY    DISK      RUNTIME    ADDRESSdefault    Running    aarch64    2       2GiB      100GiB    dockerこれがColimaのデフォルト設定です。これらの値は必要に応じてcolima startコマンドのオプションや設定ファイルで変更できます。まとめLimaベースのColimaへの移行は思った以上に簡単で、日常の開発作業がより快適になりました。特にCLIベースのシンプルさと設定のわかりやすさが気に入っています。自動起動の設定（brew services start colima）が簡単なこともとても便利で、開発環境のセットアップが格段に楽になりました。Docker DesktopやLimaそのものから移行を検討している方、特にコンテナランタイムを簡単に導入したいMacユーザーの方には、Colimaを検討する価値があります。普通にローカルのCPUとメモリを喰う生成AIツール全盛時代に最適な環境がなにか俺にも分からん。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LangChainとVertexAIのgemini 2.0 flashで構造化出力に失敗するケースが直りそう]]></title>
-            <link>https://blog.atusy.net/2025/04/16/lang-chain-vertexai-structured-output/</link>
-            <guid>https://blog.atusy.net/2025/04/16/lang-chain-vertexai-structured-output/</guid>
-            <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[LangChainのStructured outputを使うと、文章中の構造を良い感じに読み取って、Pydanticで定義したデータ構造に落としてこんでくれます。]]></content:encoded>
         </item>
     </channel>
 </rss>
