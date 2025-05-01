@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 30 Apr 2025 22:35:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 May 2025 11:34:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -117,7 +117,7 @@
             <link>https://sreake.com/blog/testkube-e2e-test-on-kubernetes-cluster/</link>
             <guid>https://sreake.com/blog/testkube-e2e-test-on-kubernetes-cluster/</guid>
             <pubDate>Fri, 25 Apr 2025 12:27:40 GMT</pubDate>
-            <content:encoded><![CDATA[Sreake事業部インターン生の荒木です。長期インターン生としてKubernetesやSRE、LLM領域の関連技術など幅広い領域にわたって調査・検証を行っています。 今回、kubernetesクラスタのE2Eテストを統合 […]The post Testkubeとは？KubernetesクラスタにおけるE2Eテストの統合 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <content:encoded><![CDATA[Sreake事業部の荒木です。KubernetesやSRE、LLM領域の関連技術など幅広い領域にわたって調査・検証を行っています。 今回、kubernetesクラスタのE2Eテストを統合、管理することができるTestku […]The post Testkubeとは？KubernetesクラスタにおけるE2Eテストの統合 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を開催します]]></title>
