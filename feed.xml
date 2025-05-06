@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 05 May 2025 22:35:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 May 2025 11:34:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[自分が課金しているサービス挙げてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/f46eda0ba43958</link>
+            <guid>https://zenn.dev/akasan/articles/f46eda0ba43958</guid>
+            <pubDate>Tue, 06 May 2025 11:06:13 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、自分がエンジニアリングに関して課金しているツールを挙げてみました。この記事の作成意図としては、「私これだけ課金して普段やってるんだぜ」という自慢ではなく、「こういうサービスを使って生産性あげたり情報収集してるんだ」ということを共有したいだけです。なお、課金してるけど全然使えてないツールもあるので、ちゃんと整理しないといけないなというのもあり、この記事を書いている部分もあります。 SlackSlackでは私個人として使っているものがあり、過去のメッセージも全て残したいのでproプランを使っています。記事作成時点では月払いにしていて¥1,050/月の支払いとなっています。使い...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloud StorageへのファイルアップロードをPub/Subで受け取る]]></title>
             <link>https://zenn.dev/akasan/articles/e17a1867408c53</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/04/24/prefix-personal-commands/</guid>
             <pubDate>Thu, 24 Apr 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[~/.local/bin/T-hogeみたいにT-とかのprefixつけておくと、補完が効いて便利。大文字にしとくと、被りも少ないよ。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud 認定資格奮闘記 ~Professional Cloud Architect編~]]></title>
-            <link>https://zenn.dev/akasan/articles/4d7972b7c5f84c</link>
-            <guid>https://zenn.dev/akasan/articles/4d7972b7c5f84c</guid>
-            <pubDate>Wed, 23 Apr 2025 12:53:56 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の続編になります。https://zenn.dev/akasan/articles/6b5d5f9b1446d4 Professional Cloud ArchitectについてProfessional Cloud Architect（以下、PCA）は、公式では以下のように説明されています。Professional Cloud Architects は、組織が Google Cloud 技術を利用できるように支援します。クラウドアーキテクチャと Google Cloud に関する専門的な知識を活かして、ビジネス目標を実現するために、スケーラブルで高可用性を備え、堅牢か...]]></content:encoded>
         </item>
     </channel>
 </rss>
