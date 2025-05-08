@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 07 May 2025 22:35:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 May 2025 11:34:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,34 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[pyarmorを使ってPythonコードを難読化してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/bd61954c87d4ea</link>
+            <guid>https://zenn.dev/akasan/articles/bd61954c87d4ea</guid>
+            <pubDate>Thu, 08 May 2025 11:15:03 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、pyarmorを利用してPythonのコードを難読化してみようと思います。 pyarmorとは？pyarmorとはPythonコードの難読化をするためのツールとなります。コマンドラインツールであり、難読化を初めコードの利用期限の設定などもできるものとなっております。主な特徴としてはいかがあるようです。難読化されたコードもPythonファイルであり、オリジナルのコードと置換するだけでシームレスに置き換えできますセキュリティとパフォーマンスのバランスが取れるように複数の難読化手法を提供関数名やクラス、変数などがリネームされ、復元できない難読化が実行されるいくつかのPy...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Actionsから踏み台経由でプライベートCloud SQLに接続 (OS Login + WIF + SSHトンネル編)]]></title>
+            <link>https://zenn.dev/meziron/articles/369504c9d84eba</link>
+            <guid>https://zenn.dev/meziron/articles/369504c9d84eba</guid>
+            <pubDate>Thu, 08 May 2025 08:55:26 GMT</pubDate>
+            <content:encoded><![CDATA[GitHub Actionsから踏み台サーバー経由でプライベートCloud SQLに接続する実践ガイド (OS Login + WIF + SSHトンネル編)CI/CDパイプライン、特にGitHub Actionsから、VPCのプライベートネットワーク内に配置されたCloud SQLデータベースへ安全かつ自動的に接続したい、というニーズは多いのではないでしょうか？この記事では、Workload Identity Federation (WIF), OS Login そして gcloud compute ssh (beta) を組み合わせた、管理しやすい接続方法を解説します。 1...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クラウドネイティブ環境の脅威モデリング]]></title>
+            <link>https://speakerdeck.com/kyohmizu/kuraudoneiteibuhuan-jing-noxie-wei-moderingu</link>
+            <guid>https://speakerdeck.com/kyohmizu/kuraudoneiteibuhuan-jing-noxie-wei-moderingu</guid>
+            <pubDate>Thu, 08 May 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[イベント登壇資料です。2025/05/08 #TMCTokyohttps://lu.ma/tmc-tokyo-meetup-2025-05]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[FastAPIのエラーハンドリングの基本と、ハンドリング漏れ対策]]></title>
+            <link>https://sreake.com/blog/fastapi-error-handling-basics/</link>
+            <guid>https://sreake.com/blog/fastapi-error-handling-basics/</guid>
+            <pubDate>Thu, 08 May 2025 03:03:29 GMT</pubDate>
+            <content:encoded><![CDATA[こんにちは。Sreake事業部の安本篤史（atusy）です。 APIサーバーの実装では、プログラムエラーをハンドリングして、クライアントエラーやサーバーエラーを適切にレスポンスすることが求められます。 同時に、エラーに関 […]The post FastAPIのエラーハンドリングの基本と、ハンドリング漏れ対策 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[入社エントリ：スリーシェイクに入社して5ヶ月目に突入！！]]></title>
             <link>https://zenn.dev/akasan/articles/c9152e75975b51</link>
@@ -209,34 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/bb86a3442214da</guid>
             <pubDate>Sat, 26 Apr 2025 10:05:07 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Airflow（以下、Airflow）について調べてみました。調べようと思った理由としては以前から名前は知っていたが調べる機会がなかったGoogle Cloudの勉強をしている中でCloud ComposerがAirflowを使っているということでどんなものか気になっていたからです。今回は本格的な調査というよりは、まずはどんなものかについて調べてみようと思います。 Apache Airflowとは？一言で言ってしまえばワークフロー管理ツールということみたいです。Pythonを使ってワークフローを構成し、スケジューリングを行ったり動作のモニタリングができ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[普段使っている技術スタック紹介]]></title>
-            <link>https://zenn.dev/akasan/articles/766c1c3539e778</link>
-            <guid>https://zenn.dev/akasan/articles/766c1c3539e778</guid>
-            <pubDate>Fri, 25 Apr 2025 14:41:45 GMT</pubDate>
-            <content:encoded><![CDATA[今回もすごい簡潔になりますが、普段自分が使っている技術スタックとかを紹介しようと思います エディタ neovimneovimを一応使うことが多いです。ただしガチのvimmerではないので拡張機能をたくさん入れたりはできていません。また、比較的温和なタイプのvimmerなので、本格的に使ってる人からすると「なんでちゃんと使わないんだ」と怒られそうな気がしますw cursor小規模なコード修正とかは基本neovim使ってるんですが、大規模開発とかをする必要がある場合はcursorを使ってます。ただ拡張機能でvimのキーバインド入れているので使い勝手はvimですwcursor...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Testkubeとは？KubernetesクラスタにおけるE2Eテストの統合]]></title>
-            <link>https://sreake.com/blog/testkube-e2e-test-on-kubernetes-cluster/</link>
-            <guid>https://sreake.com/blog/testkube-e2e-test-on-kubernetes-cluster/</guid>
-            <pubDate>Fri, 25 Apr 2025 12:27:40 GMT</pubDate>
-            <content:encoded><![CDATA[Sreake事業部の荒木です。KubernetesやSRE、LLM領域の関連技術など幅広い領域にわたって調査・検証を行っています。 今回、kubernetesクラスタのE2Eテストを統合、管理することができるTestku […]The post Testkubeとは？KubernetesクラスタにおけるE2Eテストの統合 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を開催します]]></title>
-            <link>https://sreake.com/blog/sre-tech-talk-12/</link>
-            <guid>https://sreake.com/blog/sre-tech-talk-12/</guid>
-            <pubDate>Fri, 25 Apr 2025 11:45:29 GMT</pubDate>
-            <content:encoded><![CDATA[この度、スリーシェイクは、SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を、2025年5月16日（金）に開催します。The post SRE向けイベント【3-shake SRE Tech Talk #12】〜o11y Special〜 を開催します first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AIにペアプロのナビをさせるaibou.nvimを作った]]></title>
-            <link>https://blog.atusy.net/2025/04/25/aibou-nvim/</link>
-            <guid>https://blog.atusy.net/2025/04/25/aibou-nvim/</guid>
-            <pubDate>Fri, 25 Apr 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[atusy/aibou.nvimはAIをペアプロのナビに変身させるNeovimプラグインです。テキストの変更を逐次把握し、リアクションしてくれるので、まるで人間がナビについてくれているような体験を得られます。]]></content:encoded>
         </item>
     </channel>
 </rss>
