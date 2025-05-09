@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 09 May 2025 11:34:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 May 2025 22:35:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apache Projects様を引用してブログネタを決めるためのツールを作成しました]]></title>
+            <link>https://zenn.dev/akasan/articles/7e30ad266c02c4</link>
+            <guid>https://zenn.dev/akasan/articles/7e30ad266c02c4</guid>
+            <pubDate>Fri, 09 May 2025 13:35:49 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、私が今しているセルフエンドレスアドベントカレンダーのネタを決めるためのツールを作成しましたので紹介します。 対象とするものは？今回はApacheのプロジェクト一覧からランダムに抽出されたプロジェクトを対象とするようにしました。なお、これはネタが思い浮かばなかったり、思い浮かんでるけどなんか違うものがいいなと思った時に実行するようにします。https://projects.apache.org/projects.html 作成したツールについて今回はPythonを使ってツールを作成しました。まずは先ほどのApache Projectsの一覧からアイテムをテキストファ...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[よく使うディレクトリ+αへの移動を便利にするzoxideとghqの組み合わせ]]></title>
+            <link>https://blog.atusy.net/2025/05/09/zoxide-with-ghq/</link>
+            <guid>https://blog.atusy.net/2025/05/09/zoxide-with-ghq/</guid>
+            <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[zoxideはディレクトリの移動頻度を学習して、検索・移動を楽にするツールです。検索候補にまだ移動したことないけど、今後よく使いそうなディレクトリを追加するともっと便利にできます。この記事では[ghq]で管理しているGitリポジトリを移動先候補に追加する方法を紹介します。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[pyarmorを使ってPythonコードを難読化してみた]]></title>
             <link>https://zenn.dev/akasan/articles/bd61954c87d4ea</link>
@@ -223,20 +237,6 @@
             <guid>https://blog.atusy.net/2025/04/28/gemma3-structured-output/</guid>
             <pubDate>Mon, 28 Apr 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Structured OutputはLLMの出力をプログラムで扱いやすい形式（JSONとか）に落としこむ機能です。gemma3:1bで試してみたところ、temperatureを0にする、システムプロンプトに入力に忠実に構造化出力してと指示するなどの工夫が必要なものの、期待通りの結果を得ることができそうです。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[モンティ・ホール問題をPythonで確かめてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/90b205bc9bca23</link>
-            <guid>https://zenn.dev/akasan/articles/90b205bc9bca23</guid>
-            <pubDate>Sun, 27 Apr 2025 13:02:51 GMT</pubDate>
-            <content:encoded><![CDATA[みなさん、モンティ・ホール問題をご存知でしょうか？今回はPythonでモンティ・ホール問題が本当にその通りなのか計算してみました。 モンティ・ホール問題とは？これは確率の勉強をする時によく出てくる直感に反する結果となるものの例として扱われます。概要についてはWikipediaを参考にすると以下のようにまとめられます。モンティ・ホール問題（モンティ・ホールもんだい、英: Monty Hall problem）とは、確率論の問題で、ベイズの定理における事後確率、あるいは主観確率の例題の一つとなっている。モンティ・ホール（英語版）（Monty Hall, 本名：Monte Halpe...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Airflow使ってみた]]></title>
-            <link>https://zenn.dev/akasan/articles/bb86a3442214da</link>
-            <guid>https://zenn.dev/akasan/articles/bb86a3442214da</guid>
-            <pubDate>Sat, 26 Apr 2025 10:05:07 GMT</pubDate>
-            <content:encoded><![CDATA[今回はApache Airflow（以下、Airflow）について調べてみました。調べようと思った理由としては以前から名前は知っていたが調べる機会がなかったGoogle Cloudの勉強をしている中でCloud ComposerがAirflowを使っているということでどんなものか気になっていたからです。今回は本格的な調査というよりは、まずはどんなものかについて調べてみようと思います。 Apache Airflowとは？一言で言ってしまえばワークフロー管理ツールということみたいです。Pythonを使ってワークフローを構成し、スケジューリングを行ったり動作のモニタリングができ...]]></content:encoded>
         </item>
     </channel>
 </rss>
