@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 11 May 2025 11:34:12 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 May 2025 22:34:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Python 3.13の新機能について調べてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/423451d2bb8249</link>
+            <guid>https://zenn.dev/akasan/articles/423451d2bb8249</guid>
+            <pubDate>Sun, 11 May 2025 14:23:08 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Python3.13で導入される新機能についてまとめてみました。私自身、普段は3.11または3.12を使うことが多く、3.13についてはどのような機能が追加されるか認識していなかったので調べてみました。 追加される新機能まず、Python3.13で導入される新機能はこちらにまとまっていますので、詳しくは参照ください。https://docs.python.org/3/whatsnew/3.13.html#other-language-changes よりよいインタラクティブインタプリタPyPyプロジェクトのコードをベースとした新しいインタラクティブシェルをデフォルト...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Apache Compress Ant Libraryとはなんなのか？]]></title>
             <link>https://zenn.dev/akasan/articles/ba9cf85b99b68f</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/04/29/the-changing-same/</guid>
             <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[わずかな変化でも認めてあげることが大事だなと、ふいに思ったのだ。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[dura使ってみた]]></title>
-            <link>https://zenn.dev/akasan/articles/e3b8473a703d61</link>
-            <guid>https://zenn.dev/akasan/articles/e3b8473a703d61</guid>
-            <pubDate>Mon, 28 Apr 2025 11:45:35 GMT</pubDate>
-            <content:encoded><![CDATA[みなさん、gitレポジトリで作業中に、「コミットしないファイルを間違って削除してしまった」のようなやらかしをしたことがありませんか？一度経験するともう二度とこのような経験をしたくないと思うでしょう。今回はそのような状況になりにくくするためのツールであるduraというものをご紹介させてもらいます。 duraとは？duraの公式GitHubリポジトリから引用させてもらいますと、duraとはDura is a background process that watches your Git repositories and commits your uncommitted chan...]]></content:encoded>
         </item>
     </channel>
 </rss>
