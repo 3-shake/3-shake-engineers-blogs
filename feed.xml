@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 12 May 2025 11:34:39 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 May 2025 22:35:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ランレングス符号化をPythonで実装してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/9430f41e6cff7a</link>
+            <guid>https://zenn.dev/akasan/articles/9430f41e6cff7a</guid>
+            <pubDate>Mon, 12 May 2025 14:35:35 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、ランレングス符号化をPythonで実装してみたので、その解説をしてみようと思いまs。 ランレングス符号化とは？ランレングス符号化とはデータ圧縮方式の一つで、連続する同じデータをまとめて扱うことで圧縮をするというものです。たとえばAABBBCCCCというテキストがあった場合に、各文字とそれがいくつ連続しているかという情報に変換してみます。するとA2B3C4のように変換でき、元のテキストの長さ9文字と比較して6文字に収めることができます。ただし、ランレングス符号化では必ず圧縮後のデータ量が小さくなる保証はありません。たとえばABCDEF....XYZのようにアルファベットが...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[SSHの基本を理解したい(シーケンス図付き)]]></title>
             <link>https://zenn.dev/meziron/articles/a42cef62e06a68</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/04/30/vim-ekiden-lazy-load-statusline-plugins/</guid>
             <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[ステータスラインプラグインを遅延読み込みしたい場合、単一ウィンドウならステータスラインは不要と割り切るといいよ。CTRL-Gで表示すればOK。あとは表示中のウィンドウ数をカウントして、2つ以上なら遅延読み込みするようにしよう。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[pyenv+virtualenv/poetryからuvに乗り換えた話]]></title>
-            <link>https://zenn.dev/akasan/articles/39f81f8bd15790</link>
-            <guid>https://zenn.dev/akasan/articles/39f81f8bd15790</guid>
-            <pubDate>Tue, 29 Apr 2025 02:39:58 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Pythonの仮想環境管理とライブラリ管理をuvに乗り換えた経緯と使い方などについて解説していきたいと思います。 乗り換えるまでどうしていたかuvに乗り換えるまでは、仮想環境にpyenv + virtualenv、ライブラリ管理にはpoetryを利用していました。仮想環境にpyenv+virtualenvを利用していた理由ですが、何か大きな理由があったというわけではなく、環境構築がうまくいって使い慣れていたのでずっと使っていた感じです。poetryについてはuvなどが出てくるまではスタンダードなツールだったと思います。私もその流れに乗って使っておりました。poetryを...]]></content:encoded>
         </item>
     </channel>
 </rss>
