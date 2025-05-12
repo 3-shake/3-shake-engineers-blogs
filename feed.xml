@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 11 May 2025 22:34:43 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 May 2025 11:34:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SSHの基本を理解したい(シーケンス図付き)]]></title>
+            <link>https://zenn.dev/meziron/articles/a42cef62e06a68</link>
+            <guid>https://zenn.dev/meziron/articles/a42cef62e06a68</guid>
+            <pubDate>Mon, 12 May 2025 00:00:05 GMT</pubDate>
+            <content:encoded><![CDATA[1. 初回 SSH 接続時の流れ (秘密鍵のパスフレーズ入力あり)このシナリオでは、ユーザーが初めて特定のサーバーに SSH 接続を試みるか、あるいは SSH エージェントにまだ該当の秘密鍵がロードされていない状況を想定します。秘密鍵はパスフレーズで保護されているものとします。 登場人物User: 操作を行うユーザーSSH_Client: ユーザーが操作する SSH クライアント（例: sshコマンド）SSH_Agent: SSH エージェントプロセス（秘密鍵をメモリに保持）SSH_Server: 接続先の SSH サーバー 初回接続時の流れのポイント...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Python 3.13の新機能について調べてみた]]></title>
             <link>https://zenn.dev/akasan/articles/423451d2bb8249</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/39f81f8bd15790</guid>
             <pubDate>Tue, 29 Apr 2025 02:39:58 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Pythonの仮想環境管理とライブラリ管理をuvに乗り換えた経緯と使い方などについて解説していきたいと思います。 乗り換えるまでどうしていたかuvに乗り換えるまでは、仮想環境にpyenv + virtualenv、ライブラリ管理にはpoetryを利用していました。仮想環境にpyenv+virtualenvを利用していた理由ですが、何か大きな理由があったというわけではなく、環境構築がうまくいって使い慣れていたのでずっと使っていた感じです。poetryについてはuvなどが出てくるまではスタンダードなツールだったと思います。私もその流れに乗って使っておりました。poetryを...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[変わったと言っちゃえ]]></title>
-            <link>https://blog.atusy.net/2025/04/29/the-changing-same/</link>
-            <guid>https://blog.atusy.net/2025/04/29/the-changing-same/</guid>
-            <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[わずかな変化でも認めてあげることが大事だなと、ふいに思ったのだ。]]></content:encoded>
         </item>
     </channel>
 </rss>
