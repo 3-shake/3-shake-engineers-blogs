@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 12 May 2025 22:35:29 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 May 2025 11:34:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Neovim最先端のextuiでフローティングウィンドウ化したメッセージをいつでも非表示にする方法]]></title>
+            <link>https://blog.atusy.net/2025/05/13/nvim-extui-msgbox-closer/</link>
+            <guid>https://blog.atusy.net/2025/05/13/nvim-extui-msgbox-closer/</guid>
+            <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Neovimのextuiで表示されたメッセージボックスは、所定の時間が経過すると自動で閉じます。<C-L>で非表示にする方法を紹介します。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ランレングス符号化をPythonで実装してみた]]></title>
             <link>https://zenn.dev/akasan/articles/9430f41e6cff7a</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/trying-out-nvidia-nim/</guid>
             <pubDate>Wed, 30 Apr 2025 06:13:57 GMT</pubDate>
             <content:encoded><![CDATA[NIMとは NVIDIA Inference Microservicesの頭文字をとってNIMです。迅速なエンタープライズ対応デプロイメントのためのマイクロサービスを提供してくれます。NVIDIAのGPUで動かすことに最 […]The post NVIDIA NIMを使ってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vimでステータスラインプラグインを遅延読み込みする]]></title>
-            <link>https://blog.atusy.net/2025/04/30/vim-ekiden-lazy-load-statusline-plugins/</link>
-            <guid>https://blog.atusy.net/2025/04/30/vim-ekiden-lazy-load-statusline-plugins/</guid>
-            <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[ステータスラインプラグインを遅延読み込みしたい場合、単一ウィンドウならステータスラインは不要と割り切るといいよ。CTRL-Gで表示すればOK。あとは表示中のウィンドウ数をカウントして、2つ以上なら遅延読み込みするようにしよう。]]></content:encoded>
         </item>
     </channel>
 </rss>
