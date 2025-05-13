@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 13 May 2025 11:34:48 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 May 2025 22:35:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[curl使い方についてまとめてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/4248554eb4797b</link>
+            <guid>https://zenn.dev/akasan/articles/4248554eb4797b</guid>
+            <pubDate>Tue, 13 May 2025 11:37:37 GMT</pubDate>
+            <content:encoded><![CDATA[今回はcurlの使い方について調べてみました。今までAPIのアクセステストとかに使っていましたが、ちゃんと調べたことなかったので、この際調べてみようということで記事にしました。 curlとは？ドキュメントから拝借すると、curl is used in command lines or scripts to transfer data. curl is also libcurl, used in cars, television sets, routers, printers, audio equipment, mobile phones, tablets, medical de...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Fishに引っ越したい人のためのZsh履歴活用術]]></title>
+            <link>https://blog.atusy.net/2025/05/13/inherit-zsh-history-in-fish/</link>
+            <guid>https://blog.atusy.net/2025/05/13/inherit-zsh-history-in-fish/</guid>
+            <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[シェルを移行する歳、設定だけでなくコマンド履歴も引き継ぎたいものです。Fishは設定が小さくすみやすい上に情報も多いので、今回はFishからZshのコマンド履歴を活用する方法を紹介します。fzfを使っているので、検索効率もいいですよ。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Neovim最先端のextuiでフローティングウィンドウ化したメッセージをいつでも非表示にする方法]]></title>
             <link>https://blog.atusy.net/2025/05/13/nvim-extui-msgbox-closer/</link>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/e6de161b97b19d</guid>
             <pubDate>Wed, 30 Apr 2025 13:20:05 GMT</pubDate>
             <content:encoded><![CDATA[そういえば、モンテカルロ法で円周率の取得ができるというのはずっと前からわかっていたもののやった試しがないなということで、今回は試してみようと思います。 モンテカルロ法とはWikipediaによると、モンテカルロ法（モンテカルロほう、（英: Monte Carlo method、MC）とはシミュレーションや数値計算を乱数を用いて行う手法の総称。元々は、中性子が物質中を動き回る様子を探るためにスタニスワフ・ウラムが考案しジョン・フォン・ノイマンにより命名された手法。カジノで有名な国家モナコ公国の4つの地区（カルティ）の1つであるモンテカルロから名付けられた。ランダム法とも呼ばれる。...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PR概要作成・コード改善提案ツール PR-Guardianのご紹介]]></title>
-            <link>https://sreake.com/blog/pr-guardian-introduction/</link>
-            <guid>https://sreake.com/blog/pr-guardian-introduction/</guid>
-            <pubDate>Wed, 30 Apr 2025 08:07:36 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに はじめまして、Sreake事業部でインターンをしている村山です。 今回は、PR Guardianというツールの開発と検証をしました。PR GuardianはPull Requestの概要の作成、コードの改善提案 […]The post PR概要作成・コード改善提案ツール PR-Guardianのご紹介 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[NVIDIA NIMを使ってみた]]></title>
-            <link>https://sreake.com/blog/trying-out-nvidia-nim/</link>
-            <guid>https://sreake.com/blog/trying-out-nvidia-nim/</guid>
-            <pubDate>Wed, 30 Apr 2025 06:13:57 GMT</pubDate>
-            <content:encoded><![CDATA[NIMとは NVIDIA Inference Microservicesの頭文字をとってNIMです。迅速なエンタープライズ対応デプロイメントのためのマイクロサービスを提供してくれます。NVIDIAのGPUで動かすことに最 […]The post NVIDIA NIMを使ってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
