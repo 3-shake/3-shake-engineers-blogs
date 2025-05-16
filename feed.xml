@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 16 May 2025 11:34:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 May 2025 22:35:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[LangflowとNotion連携について　〜コンテンツ生成編〜]]></title>
+            <link>https://zenn.dev/akasan/articles/9acb1ed5fa3dc0</link>
+            <guid>https://zenn.dev/akasan/articles/9acb1ed5fa3dc0</guid>
+            <pubDate>Fri, 16 May 2025 13:30:15 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Langflowを利用して、Notionのページ内にコンテンツを生成させる方法についてまとめてみようと思います。Langflowの使い方については以前以下の記事で解説していますので併せてご覧ください。https://zenn.dev/akasan/articles/6357f1dd2b52ac 早速使ってみる 環境の立ち上げ今回も以前と同様に、公式が提供しているdockerを利用します。簡単な起動方法は以下になります。公式GitHubのレポジトリをcloneするdocker_exampleフォルダに移動するdocker compose upを実行する...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのAI Agent関連のサービス紹介]]></title>
             <link>https://speakerdeck.com/shukob/google-cloudnoai-agentguan-lian-nosabisushao-jie</link>
@@ -230,13 +237,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2025/05/04/024730</guid>
             <pubDate>Sat, 03 May 2025 17:47:30 GMT</pubDate>
             <content:encoded><![CDATA[MCP-Useとは何か？MCP-Use (Model Context Protocol - Use) は、LLM（大規模言語モデル）とMCPサーバーの間の橋渡しをするPythonライブラリです。このライブラリにより、OpenAI、Anthropic、Groqなど様々なLLMプロバイダーのモデルに、Webブラウジングやファイル操作といった外部ツールへのアクセス権を付与できます。github.com環境構築：uvの活用今回はRustベースの高速パッケージマネージャーuvを使って環境を構築します。docs.astral.sh# 仮想環境を作成uv venv# 仮想環境をアクティベートsource .venv/bin/activate.fish  # fishシェル使用時# 必要なパッケージをインストールuv pip install "mcp-use[dev,anthropic,openai,search]"uv pip install fastembeduv pip install python-dotenv langchain-openai従来のpipと比較してuvは大幅に高速で、特に複雑な依存関係を持つプロジェクトではその差が顕著です。MCP-Useはさまざまな依存関係を持つため、uvの使用が特に有効です。MCP-Useの基本構造MCP-Useの中核は以下のクラスから構成されています：MCPClient: 設定ファイルからMCPサーバーへの接続を管理MCPAgent: LLMとMCPサーバーを組み合わせてタスクを実行各種アダプター: LLMプロバイダーとMCPサーバー間の変換処理実装例：ウェブ情報取得エージェント今回はMCP-Useを使って、特定のWebサイトから情報を抽出するエージェントを構築します。import asyncioimport osfrom dotenv import load_dotenvfrom langchain_openai import ChatOpenAIfrom mcp_use import MCPAgent, MCPClientasync def main():    # 環境変数を読み込み    load_dotenv()    # 設定ファイルからMCPClientを作成    client = MCPClient.from_config_file(        os.path.join(os.path.dirname(__file__), "browser_mcp.json")    )    # LLMを初期化    llm = ChatOpenAI(model="gpt-4o")        # エージェントを作成    agent = MCPAgent(llm=llm, client=client, max_steps=30)    # クエリを実行    result = await agent.run(        "3-shake.com にアクセスして株式会社スリーシェイクのCEOのxアカウントを教えて下さい",        max_steps=30,    )    print(f"\nResult: {result}")if __name__ == "__main__":    asyncio.run(main())以下、各部分の詳細を解説します。1. MCPClient初期化とその内部構造client = MCPClient.from_config_file(    os.path.join(os.path.dirname(__file__), "browser_mcp.json"))MCPClientクラスはMCPサーバーへの接続を管理します。from_config_fileメソッドで設定ファイルから構成を読み込みます。設定ファイルbrowser_mcp.jsonの中身は以下のようになっています：{  "mcpServers": {    "playwright": {      "command": "npx",      "args": ["@playwright/mcp@latest"],      "env": {        "DISPLAY": ":1"      }    }  }}この設定は、PlaywrightをMCPサーバーとして使用することを指定しています。MCPClientはこの設定を読み込み、以下の処理を実行します：設定に基づいて適切なコネクタ（この場合はStdioConnector）を作成コネクタを使ってPlaywright MCPサーバーとの通信チャネルを確立初期化処理を実行し、利用可能なツールの一覧を取得内部的には、MCP-Useは非同期処理を多用しており、asyncioを活用した効率的な通信を実現しています。2. LLMの初期化と統合llm = ChatOpenAI(model="gpt-4o")MCP-UseはLangChainとシームレスに統合されており、様々なLLMプロバイダーのモデルを使用できます。今回はOpenAIのGPT-4oを使用していますが、以下のように簡単に切り替えることも可能です：# Anthropicのモデルを使用する場合from langchain_anthropic import ChatAnthropicllm = ChatAnthropic(model="claude-3-5-sonnet-20240620")# Groqのモデルを使用する場合from langchain_groq import ChatGroqllm = ChatGroq(model="llama3-8b-8192")MCP-Useの内部では、LangChainAdapterクラスがLLMとMCPサーバー間の変換処理を担当し、ツールの記述をLLMが理解できる形式に変換しています。3. MCPAgentの作成と実行agent = MCPAgent(llm=llm, client=client, max_steps=30)MCPAgentクラスは、LLMとMCPクライアントを組み合わせてタスクを実行するための中核コンポーネントです。主なパラメータは：llm: 使用するLLMモデルclient: MCPクライアントインスタンスmax_steps: エージェントが実行できる最大ステップ数max_stepsパラメータは特に重要で、タスクの複雑さに応じて適切な値を設定する必要があります：- 単純な情報検索: 5-10ステップ- 複数ページの探索: 15-20ステップ- 複雑な操作: 25-30ステップ4. タスク実行の内部処理result = await agent.run(    "3-shake.com にアクセスして株式会社スリーシェイクのCEOのxアカウントを教えて下さい",    max_steps=30,)agent.run()メソッドが呼び出されると、以下の処理が実行されます：指定されたクエリをLLMに送信し、実行プランを生成LLMが適切なツールを選択し、その実行をリクエストMCPクライアントがツールのリクエストをMCPサーバーに転送MCPサーバーがツールを実行し、結果を返す結果をLLMに返し、次のステップを決定最終的な回答が生成されるまで、ステップ2-5を繰り返す内部的には、この処理はMCPAgent.run()メソッド内の_agent_executor._atake_next_step()メソッドで実装されています。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Pythonを使ったチュートリアルを通してDataflow試してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/e3d25446d34776</link>
-            <guid>https://zenn.dev/akasan/articles/e3d25446d34776</guid>
-            <pubDate>Sat, 03 May 2025 14:03:21 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、昨日実施したDataflowチュートリアルの続編となります。前回はDataflowのテンプレートを利用したパイプラインの動作チェックでしたが、今回はPython SDKを利用したチュートリアルを実施してみます。前回の記事はこちらですので、ぜひご参照ください。https://zenn.dev/akasan/articles/a0ebe0ae2ed2ec 早速チュートリアルを試してみる チュートリアル概要今回は、DataflowをPythonから利用するチュートリアルを利用してみます。チュートリアルの概要は以下のようです。本記事は前回の記事の続編という立て付けでいこうと思...]]></content:encoded>
         </item>
     </channel>
 </rss>
