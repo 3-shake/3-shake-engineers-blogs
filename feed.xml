@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 18 May 2025 11:34:24 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 May 2025 22:34:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,6 +27,13 @@
             <guid>https://zenn.dev/akasan/articles/e2416e40a90499</guid>
             <pubDate>Sat, 17 May 2025 06:01:17 GMT</pubDate>
             <content:encoded><![CDATA[この記事の続編になります。https://zenn.dev/akasan/articles/4d7972b7c5f84c Professional Data EngineerについてProfessional Data Engineer（以下、PDE）は、公式では以下のように説明されています。Professional Data Engineer は、データを収集、変換、公開することで、データを有効で価値のあるものにします。ビジネス要件と規制要件を満たすために、プロダクトやサービスを評価し、選択します。Professional Data Engineer は、堅牢なデータ処理シス...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[React Tokyo LT大会「ストリームの実装」]]></title>
+            <link>https://speakerdeck.com/shukob/react-tokyo-ltda-hui-sutorimunoshi-zhuang</link>
+            <guid>https://speakerdeck.com/shukob/react-tokyo-ltda-hui-sutorimunoshi-zhuang</guid>
+            <pubDate>Sat, 17 May 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025年5月17日React Tokyo LT大会にて、生成AIアプリケーションなどでよく使う「ストリーム実装」について話しました。https://react-tokyo.connpass.com/event/350715/]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[LangflowとNotion連携について　〜コンテンツ生成編〜]]></title>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/kimitsu/articles/otel-and-mcp</guid>
             <pubDate>Mon, 05 May 2025 07:33:24 GMT</pubDate>
             <content:encoded><![CDATA[MCP におけるオブザーバビリティの必要性MCP の利用方法として現時点では以下がよくあると思います。MCP サーバをローカルで動かしているサードパーティーのリモートサーバを使っているクライアントがローカルアプリ上記の場合にはオブザーバビリティは比較的重要ではありません。一方で、以下のような場合にはMCP においてもオブザーバビリティが重要です。Web アプリケーションが MCP クライアント（例えば生成 AI アプリ）MCP サーバを自作しているこのような状況では MCP クライアントと MCP サーバは、マイクロサービスで構成されたアプリケーションとして...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[treesitterを使って閲覧中のヘルプのneovim.io版URLを発行する]]></title>
-            <link>https://blog.atusy.net/2025/05/05/neovim-io-help/</link>
-            <guid>https://blog.atusy.net/2025/05/05/neovim-io-help/</guid>
-            <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Neovimのヘルプを閲覧中に、カーソル位置のヘルプのneovim.io版URLを発行するマッピングを作ってみました。treesitterを使うと、ヘルプファイルのパース結果を元にヘルプタグの位置を検出できて便利ですね。]]></content:encoded>
         </item>
     </channel>
 </rss>
