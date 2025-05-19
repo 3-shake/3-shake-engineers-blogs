@@ -525,7 +525,10 @@ export const members: Member[] = [
     avatarSrc: "/avatars/yyamada.jpg",
     role: "Full Stack Engineer",
     bio: "筋トレ / LLM / Webアプリケーション",
-    sources: ["https://zenn.dev/kimitsu/feed"],
+    sources: [
+      "https://zenn.dev/kimitsu/feed",
+      "https://speakerdeck.com/yunosukey.rss",
+    ],
     githubUsername: "YunosukeY",
     twitterUsername: "east_k1mitsu",
     websiteUrl: "https://linktr.ee/kimitsu",
