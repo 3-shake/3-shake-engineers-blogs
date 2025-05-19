@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 19 May 2025 11:34:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 May 2025 22:35:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gonum Plotを使ってGoでプロットを作ってみる]]></title>
+            <link>https://zenn.dev/akasan/articles/7ef47bf9cd599b</link>
+            <guid>https://zenn.dev/akasan/articles/7ef47bf9cd599b</guid>
+            <pubDate>Mon, 19 May 2025 14:25:47 GMT</pubDate>
+            <content:encoded><![CDATA[今回はGoでプロットグラフを作れるGonum Plotを使ってみようと思います。 Gonum Plotとは？Gonum Plotはcode.google.com/p/plotinumの新しい公式フォークとのことです。Goを利用してプロットのビルド・描画ができるAPIを提供しており、現時点ではまだ変動しており仕様が変更される可能性があるとのことです。詳しくは以下の公式ドキュメントを参照ください。https://pkg.go.dev/gonum.org/v1/plot#section-readme 実際に使ってみる インストールまず検証環境を作成します。今回はmiseを使っ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ブログ記事評価プロンプト (0.0-5.0)を作成しました。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/05/19/100659</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/e17a1867408c53</guid>
             <pubDate>Mon, 05 May 2025 13:31:49 GMT</pubDate>
             <content:encoded><![CDATA[今回はCloud StorageにファイルがアップロードされたときにPub/Subdで受け取る方法についてまとめてみます。 システム構成今回の検証の環境はざっくり以下になります。Cloud Storageではファイルアップロードを受け付けますCloud Storageにファイルがアップロードされると、Pub/Subトピックに向けて通知が投げられますPub/Subが通知を受け取るとBigQueryに対して通知を配信しますBigQueryではテーブルにPub/Subから受け取った通知を蓄積します 実装 Cloud StorageまずはCloud Storageの...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[A2AサーバをOpenTelemetryで計装する]]></title>
-            <link>https://zenn.dev/kimitsu/articles/otel-and-a2a</link>
-            <guid>https://zenn.dev/kimitsu/articles/otel-and-a2a</guid>
-            <pubDate>Mon, 05 May 2025 10:46:15 GMT</pubDate>
-            <content:encoded><![CDATA[A2A におけるオブザーバビリティの必要性A2A[1]は Google が主導し開発を進めている、エージェント間の通信を可能にするオープンプロトコルです。A2A を利用することで生成 AI アプリケーションはマルチエージェントシステムとして実装されます。マルチエージェントシステムは分散システムであり、マイクロサービスと同様にオブザーバビリティが重要となります。小さなエージェントであればわざわざ A2A でクライアントとサーバに分ける必要はありませんが、エージェントが巨大化すれば従来の Web アプリケーションの潮流と同様に分割される方向で進化するでしょう。本記事ではA2Aサ...]]></content:encoded>
         </item>
     </channel>
 </rss>
