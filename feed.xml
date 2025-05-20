@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 19 May 2025 22:35:38 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 May 2025 11:34:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Pod Resource動的リサイズの検証]]></title>
+            <link>https://sreake.com/blog/kubernetes-pod-resource-dynamic-resize/</link>
+            <guid>https://sreake.com/blog/kubernetes-pod-resource-dynamic-resize/</guid>
+            <pubDate>Tue, 20 May 2025 08:38:25 GMT</pubDate>
+            <content:encoded><![CDATA[Kubernetesでは、アプリケーションの可用性や運用効率を高めるため、リソース変更時のダウンタイムを極力抑える取り組みが進んでいます。従来、CPU やメモリのリソースを変更する際には、Pod の再作成やコンテナ再起動 […]The post Pod Resource動的リサイズの検証 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Gonum Plotを使ってGoでプロットを作ってみる]]></title>
             <link>https://zenn.dev/akasan/articles/7ef47bf9cd599b</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/f46eda0ba43958</guid>
             <pubDate>Tue, 06 May 2025 11:06:13 GMT</pubDate>
             <content:encoded><![CDATA[今回は、自分がエンジニアリングに関して課金しているツールを挙げてみました。この記事の作成意図としては、「私これだけ課金して普段やってるんだぜ」という自慢ではなく、「こういうサービスを使って生産性あげたり情報収集してるんだ」ということを共有したいだけです。なお、課金してるけど全然使えてないツールもあるので、ちゃんと整理しないといけないなというのもあり、この記事を書いている部分もあります。 SlackSlackでは私個人として使っているものがあり、過去のメッセージも全て残したいのでproプランを使っています。記事作成時点では月払いにしていて¥1,050/月の支払いとなっています。使い...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud StorageへのファイルアップロードをPub/Subで受け取る]]></title>
-            <link>https://zenn.dev/akasan/articles/e17a1867408c53</link>
-            <guid>https://zenn.dev/akasan/articles/e17a1867408c53</guid>
-            <pubDate>Mon, 05 May 2025 13:31:49 GMT</pubDate>
-            <content:encoded><![CDATA[今回はCloud StorageにファイルがアップロードされたときにPub/Subdで受け取る方法についてまとめてみます。 システム構成今回の検証の環境はざっくり以下になります。Cloud Storageではファイルアップロードを受け付けますCloud Storageにファイルがアップロードされると、Pub/Subトピックに向けて通知が投げられますPub/Subが通知を受け取るとBigQueryに対して通知を配信しますBigQueryではテーブルにPub/Subから受け取った通知を蓄積します 実装 Cloud StorageまずはCloud Storageの...]]></content:encoded>
         </item>
     </channel>
 </rss>
