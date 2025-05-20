@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 20 May 2025 11:34:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 May 2025 22:35:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[モンティ・ホール問題をGoでも実装してみた。]]></title>
+            <link>https://zenn.dev/akasan/articles/25ce5919322134</link>
+            <guid>https://zenn.dev/akasan/articles/25ce5919322134</guid>
+            <pubDate>Tue, 20 May 2025 11:58:52 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、以前Pythonでモンティ・ホール問題を実装した記事を出したのですが、Goの勉強も兼ねて今回はGoでの実装を試してみました。モンティ・ホール問題って何？という方やPythonでの実装が気になる方はぜひこちらを参照ください。https://zenn.dev/akasan/articles/90b205bc9bca23 それでは早速実装していく プロジェクト初期化今回もこちらの記事のようにmiseを使ってプロジェクトを初期化していきます。https://zenn.dev/akasan/articles/7ef47bf9cd599bmise use go@1.24.3...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Pod Resource動的リサイズの検証]]></title>
             <link>https://sreake.com/blog/kubernetes-pod-resource-dynamic-resize/</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/05/07/workaround-nvim-async-ts-fliker/</guid>
             <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Neovim 0.11から導入された非同期処理の影響で、同一バッファを複数ウィンドウで開くとシンタックスハイライトがちらつくことがあります。0.11.2で修正予定とのことですが、不便なので状況に合わせて非同期・同期を切り替える方法を紹介します。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[自分が課金しているサービス挙げてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/f46eda0ba43958</link>
-            <guid>https://zenn.dev/akasan/articles/f46eda0ba43958</guid>
-            <pubDate>Tue, 06 May 2025 11:06:13 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、自分がエンジニアリングに関して課金しているツールを挙げてみました。この記事の作成意図としては、「私これだけ課金して普段やってるんだぜ」という自慢ではなく、「こういうサービスを使って生産性あげたり情報収集してるんだ」ということを共有したいだけです。なお、課金してるけど全然使えてないツールもあるので、ちゃんと整理しないといけないなというのもあり、この記事を書いている部分もあります。 SlackSlackでは私個人として使っているものがあり、過去のメッセージも全て残したいのでproプランを使っています。記事作成時点では月払いにしていて¥1,050/月の支払いとなっています。使い...]]></content:encoded>
         </item>
     </channel>
 </rss>
