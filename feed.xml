@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 23 May 2025 11:34:33 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 May 2025 22:35:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cursorの@Symbolsについて調べてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/6e1770944b3a1e</link>
+            <guid>https://zenn.dev/akasan/articles/6e1770944b3a1e</guid>
+            <pubDate>Fri, 23 May 2025 13:55:25 GMT</pubDate>
+            <content:encoded><![CDATA[今回はCursorの機能である@Symbolsについて、公式ドキュメントの内容をまとめてみます。 @Symbolsとは？Cursorにはチャットを利用したコーディングアシスト機能がありますが、その機能についてどのようにコードやファイル、ドキュメントなどのコンテキストを参照するかということを制御するために@Symbolsというものがあります。https://docs.cursor.com/context/@-symbols/overviewCmd + Kなどで表示できるチャットボックスでは、一般的には例えば〜の計算をするための関数を実装してのような指示を投げたりするかと思いますが...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Pythonを利用してPub/Subトピックを扱ってみた]]></title>
             <link>https://zenn.dev/akasan/articles/471883f3a9495f</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/meziron/articles/369504c9d84eba</guid>
             <pubDate>Thu, 08 May 2025 08:55:26 GMT</pubDate>
             <content:encoded><![CDATA[GitHub Actionsから踏み台サーバー経由でプライベートCloud SQLに接続する実践ガイド (OS Login + WIF + SSHトンネル編)CI/CDパイプライン、特にGitHub Actionsから、VPCのプライベートネットワーク内に配置されたCloud SQLデータベースへ安全かつ自動的に接続したい、というニーズは多いのではないでしょうか？この記事では、Workload Identity Federation (WIF), OS Login そして gcloud compute ssh (beta) を組み合わせた、管理しやすい接続方法を解説します。 1...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[クラウドネイティブ環境の脅威モデリング]]></title>
-            <link>https://speakerdeck.com/kyohmizu/kuraudoneiteibuhuan-jing-noxie-wei-moderingu</link>
-            <guid>https://speakerdeck.com/kyohmizu/kuraudoneiteibuhuan-jing-noxie-wei-moderingu</guid>
-            <pubDate>Thu, 08 May 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[イベント登壇資料です。2025/05/08 #TMCTokyohttps://lu.ma/tmc-tokyo-meetup-2025-05]]></content:encoded>
         </item>
     </channel>
 </rss>
