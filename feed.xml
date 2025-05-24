@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 24 May 2025 03:04:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 May 2025 11:34:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apache jcloudsとはなんなのか？]]></title>
+            <link>https://zenn.dev/akasan/articles/c4783b7b825847</link>
+            <guid>https://zenn.dev/akasan/articles/c4783b7b825847</guid>
+            <pubDate>Sat, 24 May 2025 10:30:19 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Apache jclouds。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache jcloudsとは？公式サイトによると、Java向けのマルチクラウドツールキットクラウド特有の機能を完全に利用しつつ、クラウドを横断した...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Google Cloud の生成 AI オブザーバビリティ機能まとめ]]></title>
+            <link>https://zenn.dev/kimitsu/articles/google-cloud-gen-ai-o11y</link>
+            <guid>https://zenn.dev/kimitsu/articles/google-cloud-gen-ai-o11y</guid>
+            <pubDate>Sat, 24 May 2025 09:01:25 GMT</pubDate>
+            <content:encoded><![CDATA[生成 AI アプリケーションにおけるオブザーバビリティの必要性ここ数年の生成 AI 技術の発展に伴い、RAG や AI エージェントなど生成 AI のアプリケーションへの応用が進んでいます。一方で生成 AI アプリケーションを本番利用していくにあたっては以下のような課題があります。確率的な挙動モデルの出力生成にかかる時間トークンに対する課金額外部サービス呼び出し（RAG であれば検索サービス、AI エージェントであればツール）実行経路（ワークフロー型エージェントの場合）モデルの更新、プロンプトの更新これらの課題に対し、生成 AI アプリケーションにおいて...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cursorの@Symbolsについて調べてみた]]></title>
             <link>https://zenn.dev/akasan/articles/6e1770944b3a1e</link>
@@ -221,20 +235,6 @@
             <guid>https://blog.atusy.net/2025/05/10/nvim-extui-cmdline-styiling/</guid>
             <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[コマンドラインやメッセージをフローティングウィンドウ化するextuiはcool & smartです。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Projects様を引用してブログネタを決めるためのツールを作成しました]]></title>
-            <link>https://zenn.dev/akasan/articles/7e30ad266c02c4</link>
-            <guid>https://zenn.dev/akasan/articles/7e30ad266c02c4</guid>
-            <pubDate>Fri, 09 May 2025 13:35:49 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、私が今しているセルフエンドレスアドベントカレンダーのネタを決めるためのツールを作成しましたので紹介します。 対象とするものは？今回はApacheのプロジェクト一覧からランダムに抽出されたプロジェクトを対象とするようにしました。なお、これはネタが思い浮かばなかったり、思い浮かんでるけどなんか違うものがいいなと思った時に実行するようにします。https://projects.apache.org/projects.html 作成したツールについて今回はPythonを使ってツールを作成しました。まずは先ほどのApache Projectsの一覧からアイテムをテキストファ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[よく使うディレクトリ+αへの移動を便利にするzoxideとghqの組み合わせ]]></title>
-            <link>https://blog.atusy.net/2025/05/09/zoxide-with-ghq/</link>
-            <guid>https://blog.atusy.net/2025/05/09/zoxide-with-ghq/</guid>
-            <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[zoxideはディレクトリの移動頻度を学習して、検索・移動を楽にするツールです。検索候補にまだ移動したことないけど、今後よく使いそうなディレクトリを追加するともっと便利にできます。この記事では[ghq]で管理しているGitリポジトリを移動先候補に追加する方法を紹介します。]]></content:encoded>
         </item>
     </channel>
 </rss>
