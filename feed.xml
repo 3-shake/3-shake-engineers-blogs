@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 23 May 2025 22:35:09 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 May 2025 03:04:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -134,6 +134,12 @@
             <content:encoded><![CDATA[本日、Forkwell さんに悪ふざけに付き合ってもらってイベントやりました。ありがとうございます。「転職したらMCPサーバーだった件」 🎵🧭 というタイトルで登壇しました！🔍 イベント詳細:- イベント名: 転職したらMCPサーバーだった件- 公式URL: https://forkwell.connpass.com/event/354289/- ハッシュタグ: https://x.com/search?q=%23Forkwell_MCP&f=live- 参考資料①: https://speakerdeck.com/nwiizo/kokohamcpnoye-ming-kemae- 参考資料②: https://syu-m-5151.hatenablog.com/entry/2025/03/09/020057- 参考資料③: https://speakerdeck.com/superbrothers/that-time-i-changed-jobs-as-a-kubernetes]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AIエージェントのオブザーバビリティについて]]></title>
+            <link>https://speakerdeck.com/yunosukey/aiezientonoobuzababiriteinituite</link>
+            <guid>https://speakerdeck.com/yunosukey/aiezientonoobuzababiriteinituite</guid>
+            <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[論文紹介『長文コンテキストLLMとRAGの連携：RAGにおける長文入力の課題克服』]]></title>
             <link>https://sreake.com/blog/introduction-long-context-llms-meet-rag/</link>
             <guid>https://sreake.com/blog/introduction-long-context-llms-meet-rag/</guid>
@@ -146,6 +152,12 @@
             <guid>https://zenn.dev/akasan/articles/6af98c0cd8fcff</guid>
             <pubDate>Wed, 14 May 2025 10:50:43 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Apache Guacamoleとは何かについて調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Guacamoleとは？公式サイトを見ると、Apache Guacamole is a clientle...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetry + LLM = OpenLLMetry!?]]></title>
+            <link>https://speakerdeck.com/yunosukey/opentelemetry-plus-llm-equals-openllmetry</link>
+            <guid>https://speakerdeck.com/yunosukey/opentelemetry-plus-llm-equals-openllmetry</guid>
+            <pubDate>Wed, 14 May 2025 04:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[curl使い方についてまとめてみた]]></title>
@@ -223,20 +235,6 @@
             <guid>https://blog.atusy.net/2025/05/09/zoxide-with-ghq/</guid>
             <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[zoxideはディレクトリの移動頻度を学習して、検索・移動を楽にするツールです。検索候補にまだ移動したことないけど、今後よく使いそうなディレクトリを追加するともっと便利にできます。この記事では[ghq]で管理しているGitリポジトリを移動先候補に追加する方法を紹介します。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[pyarmorを使ってPythonコードを難読化してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/bd61954c87d4ea</link>
-            <guid>https://zenn.dev/akasan/articles/bd61954c87d4ea</guid>
-            <pubDate>Thu, 08 May 2025 11:15:03 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、pyarmorを利用してPythonのコードを難読化してみようと思います。 pyarmorとは？pyarmorとはPythonコードの難読化をするためのツールとなります。コマンドラインツールであり、難読化を初めコードの利用期限の設定などもできるものとなっております。主な特徴としてはいかがあるようです。難読化されたコードもPythonファイルであり、オリジナルのコードと置換するだけでシームレスに置き換えできますセキュリティとパフォーマンスのバランスが取れるように複数の難読化手法を提供関数名やクラス、変数などがリネームされ、復元できない難読化が実行されるいくつかのPy...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actionsから踏み台経由でプライベートCloud SQLに接続 (OS Login + WIF + SSHトンネル編)]]></title>
-            <link>https://zenn.dev/meziron/articles/369504c9d84eba</link>
-            <guid>https://zenn.dev/meziron/articles/369504c9d84eba</guid>
-            <pubDate>Thu, 08 May 2025 08:55:26 GMT</pubDate>
-            <content:encoded><![CDATA[GitHub Actionsから踏み台サーバー経由でプライベートCloud SQLに接続する実践ガイド (OS Login + WIF + SSHトンネル編)CI/CDパイプライン、特にGitHub Actionsから、VPCのプライベートネットワーク内に配置されたCloud SQLデータベースへ安全かつ自動的に接続したい、というニーズは多いのではないでしょうか？この記事では、Workload Identity Federation (WIF), OS Login そして gcloud compute ssh (beta) を組み合わせた、管理しやすい接続方法を解説します。 1...]]></content:encoded>
         </item>
     </channel>
 </rss>
