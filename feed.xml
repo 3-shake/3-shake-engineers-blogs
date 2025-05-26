@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 26 May 2025 11:34:52 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 May 2025 22:35:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[alphaXivを使って論文要約してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/feaca6271b5f0c</link>
+            <guid>https://zenn.dev/akasan/articles/feaca6271b5f0c</guid>
+            <pubDate>Mon, 26 May 2025 13:01:26 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、先日Xにて見つけたalphaXivというものを使って、arXiv上の論文を要約する方法を調べてみました。 alphaXivとは？alphaXivとは、arXiv上にアップロードされている論文を要約できるサービスです。自分の指定した論文を要約できるだけでなく、コミュニティを作成・参加したりおすすめの論文を一覧に出してもらったりと、様々なことを実施できます。また、なんと言っても一番の特徴が、要約に利用されるLLMに関して料金がかからないところです。記事執筆時点ではaplhaXivで利用されるLLMについて無料で使えており、このサービスが無料で使えるのが不思議ですw。http...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[RAGアプリ開発ハンズオン（後編：フロントエンド編）]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2025/05/26/185645</link>
@@ -228,13 +235,6 @@
             <guid>https://blog.atusy.net/2025/05/13/nvim-extui-msgbox-closer/</guid>
             <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Neovimのextuiで表示されたメッセージボックスは、所定の時間が経過すると自動で閉じます。<C-L>で非表示にする方法を紹介します。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ランレングス符号化をPythonで実装してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/9430f41e6cff7a</link>
-            <guid>https://zenn.dev/akasan/articles/9430f41e6cff7a</guid>
-            <pubDate>Mon, 12 May 2025 14:35:35 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、ランレングス符号化をPythonで実装してみたので、その解説をしてみようと思いまs。 ランレングス符号化とは？ランレングス符号化とはデータ圧縮方式の一つで、連続する同じデータをまとめて扱うことで圧縮をするというものです。たとえばAABBBCCCCというテキストがあった場合に、各文字とそれがいくつ連続しているかという情報に変換してみます。するとA2B3C4のように変換でき、元のテキストの長さ9文字と比較して6文字に収めることができます。ただし、ランレングス符号化では必ず圧縮後のデータ量が小さくなる保証はありません。たとえばABCDEF....XYZのようにアルファベットが...]]></content:encoded>
         </item>
     </channel>
 </rss>
