@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 25 May 2025 22:35:11 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 May 2025 11:34:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[RAGアプリ開発ハンズオン（後編：フロントエンド編）]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2025/05/26/185645</link>
+            <guid>https://shu-kob.hateblo.jp/entry/2025/05/26/185645</guid>
+            <pubDate>Mon, 26 May 2025 09:56:45 GMT</pubDate>
+            <content:encoded><![CDATA[genai-users.connpass.com上記ハンズオン勉強会の資料になります。前回資料shu-kob.hateblo.jp前回の課題retriever_service を定義しましたが、検索結果をcontextとして、LLMへの問い合わせを行なってください。llm_serviceでretriever_serviceを使うようにします。@app.post('/api/llm')def llm_service(question: Question):    human_question = question.query    model = VertexAI(model_name="gemini-2.0-flash-001", location="us-west1")    template = """質問: {question}    ステップバイステップで考えてください。"""    prompt_template = PromptTemplate.from_template(template)    chain = prompt_template | model # prompt_templateをmodelに引き渡す処理を"|"を用いて簡単に実現    response = chain.invoke({"question": human_question}) # invokeは全ての処理が終わってから値を返す。他にはstreamなど    print(response)    resp = { 'answer': response }    return resp↓@app.post('/api/llm')def llm_service(question: Question):    human_question = question.query    model = VertexAI(model_name="gemini-2.0-flash-001", location="us-west1")    context_resp = retriever_service(question)    context = context_resp['search_result']    print(context)    template = """質問: {question}    以下の情報を参考にして、質問に答えてください。    {context}    """    prompt_template = PromptTemplate.from_template(template)    chain = prompt_template | model # prompt_templateをmodelに引き渡す処理を"|"を用いて簡単に実現    response = chain.invoke({"question": human_question, "context": context}) # invokeは全ての処理が終わってから値を返す。他にはstreamなど    print(response)    resp = { 'answer': response }    return resp以下も行っておくと便利です。.envを作成DISCOVERY_ENGINE_ID=XXXXXXXXXXXXX以下の行を main.pyに追記from dotenv import load_dotenvload_dotenv()engine_idの行を変更@app.post('/api/retriever')def retriever_service(question: Question):    search_query = question.query    project_id    location: str = "global"    engine_id: str = 'DISCOVERY_ENGINE_ID'↓@app.post('/api/retriever')def retriever_service(question: Question):    search_query = question.query    project_id    location: str = "global"    engine_id: str = os.environ['DISCOVERY_ENGINE_ID']動作確認QUESTION='{"query":"情報セキュリティにおいて気をつけるべきことを教えてください"}'curl -X POST -H "Content-Type: application/json" -d "$QUESTION" -s http://localhost:8000/api/llm | jq .参考）ソースコード差分retriever_serviceで得た検索結果をcontextに by shu-kob · Pull Request #4 · shu-kob/rag-app-handson · GitHubフロントエンドの実装フォルダ整理これまでバックエンドを追加してきたのと同じリポジトリでフロントエンドも管理いたします。そのためにこれまで追加してきたファイルをバックエンド用のフォルダに移動させます。mkdir backend# 下記以外にも必要なファイル、フォルダはbackendに移動してください。# - __pycache__とfastapi-envは削除してください。# - .gitがある場合は移動も削除もしないでください。mv *.md *.py *.txt .env backendアプリ作成アプリの雛形を作成し、起動を確認します。npx --yes create-react-router@latest --install --no-git-init frontendcd frontendnpm run devブラウザでhttp://localhost:5173/を開いてReact Routerの画面が表示されればOKです。画面を変更してみる見た目を定義しているコンポーネントはfrontend/app/welcome/welcome.tsxです。Welcomeコンポーネントを以下のように変更します。export function Welcome() {  return (    <main className="flex items-center justify-center pt-16 pb-4">      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">        <div>          <div>            <label htmlFor="message">メッセージ</label>          </div>          <div>            <textarea              id="message"              rows={4}              cols={50}              style={{                padding: "0.5rem",                border: "1px solid #ccc",                outline: "none",                boxShadow: "none",              }}            />          </div>          <div>            <button              type="button"              style={{                border: "1px solid #ccc",                padding: "0.5rem 1rem",              }}            >              送信            </button>          </div>        </div>      </div>    </main>  );}画面に入力欄とボタンが表示されればOKです。入力をコントロールする上記で入力欄に文字を入力することはできますが、その値はブラウザ側で管理されており、Reactアプリ側では取得できません。そこでstateを用いてアプリ側で入力を制御します。import { useState } from "react";export function Welcome() {  const [input, setInput] = useState("");  const onSend = () => {    console.log(input)  }  return (    <main className="flex items-center justify-center pt-16 pb-4">      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">        <div>          <div>            <label htmlFor="message">メッセージ</label>          </div>          <div>            <textarea              id="message"              rows={4}              cols={50}              style={{                padding: "0.5rem",                border: "1px solid #ccc",                outline: "none",                boxShadow: "none",              }}              value={input}              onChange={(e) => setInput(e.target.value)}            />          </div>          <div>            <button              type="button"              style={{                border: "1px solid #ccc",                padding: "0.5rem 1rem",              }}              onClick={onSend}            >              送信            </button>          </div>        </div>      </div>    </main>  );}テキストを入力して送信ボタンをクリックするとログにテキストの内容が表示されるようになります。ログの確認はブラウザの開発者ツールで行います。バックエンドとの接続フロントエンドはバックエンドと異なるオリジンで動かしているため、CORSエラーにならないようバックエンドを修正します。backend/main.pyに以下を追加してください。# CORSミドルウェアの設定from fastapi.middleware.cors import CORSMiddlewareapp.add_middleware(    CORSMiddleware,    allow_origins=["*"],  # すべてのオリジンを許可    allow_credentials=True,    allow_methods=["*"],  # すべてのメソッドを許可    allow_headers=["*"],  # すべてのヘッダーを許可    expose_headers=["*"]  # すべてのヘッダーを公開)変更後、バックエンドを起動します。python -m venv fastapi-envsource fastapi-env/bin/activateWindowsのコマンドプロンプトの場合fastapi-env/Scripts/activateuvicorn main:app --reload送信ボタンが押された際に入力されたテキストをバックエンドに送信し、生成AIの回答を取得できるようにします。レスポンスの確認はブラウザの開発者ツールで行います。  const onSend = () => {    fetch("http://localhost:8000/api/llm", {      method: "POST",      headers: {        "Content-Type": "application/json",      },      body: JSON.stringify({ query: input }),    })  }演習バックエンドのResponseを画面に表示させましょう例バックエンドからのresponseをフロントエンドに表示 by shu-kob · Pull Request #6 · shu-kob/rag-app-handson · GitHub]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vertex AI Agent Engine のカスタムテンプレートでセッション機能付きチャットボットを作る]]></title>
+            <link>https://zenn.dev/kimitsu/articles/agent-angine-custom-agent</link>
+            <guid>https://zenn.dev/kimitsu/articles/agent-angine-custom-agent</guid>
+            <pubDate>Mon, 26 May 2025 07:02:31 GMT</pubDate>
+            <content:encoded><![CDATA[Vertex AI Agent Engine は AI エージェントを構築・デプロイするための Google Cloud のマネージドサービスです。[1]以下のフレームワークに対してはテンプレートが用意されており、簡単にデプロイすることができます。Agent Development KitLangChainLangGraphAG2LlamaIndexまた上記に挙げられていないフレームワークについても、カスタムテンプレートを作成することでデプロイすることができます。今回はカスタムテンプレートを用いて、セッション機能付きの AI チャットボットを実装してみます。なお本記...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[TerragruntでTerraformをいい感じに管理する]]></title>
             <link>https://zenn.dev/kojake_300/articles/9b008349fa8310</link>
@@ -221,20 +235,6 @@
             <guid>https://zenn.dev/akasan/articles/9430f41e6cff7a</guid>
             <pubDate>Mon, 12 May 2025 14:35:35 GMT</pubDate>
             <content:encoded><![CDATA[今回は、ランレングス符号化をPythonで実装してみたので、その解説をしてみようと思いまs。 ランレングス符号化とは？ランレングス符号化とはデータ圧縮方式の一つで、連続する同じデータをまとめて扱うことで圧縮をするというものです。たとえばAABBBCCCCというテキストがあった場合に、各文字とそれがいくつ連続しているかという情報に変換してみます。するとA2B3C4のように変換でき、元のテキストの長さ9文字と比較して6文字に収めることができます。ただし、ランレングス符号化では必ず圧縮後のデータ量が小さくなる保証はありません。たとえばABCDEF....XYZのようにアルファベットが...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SSHの基本を理解したい(シーケンス図付き)]]></title>
-            <link>https://zenn.dev/meziron/articles/a42cef62e06a68</link>
-            <guid>https://zenn.dev/meziron/articles/a42cef62e06a68</guid>
-            <pubDate>Mon, 12 May 2025 00:00:05 GMT</pubDate>
-            <content:encoded><![CDATA[1. 初回 SSH 接続時の流れ (秘密鍵のパスフレーズ入力あり)このシナリオでは、ユーザーが初めて特定のサーバーに SSH 接続を試みるか、あるいは SSH エージェントにまだ該当の秘密鍵がロードされていない状況を想定します。秘密鍵はパスフレーズで保護されているものとします。 登場人物User: 操作を行うユーザーSSH_Client: ユーザーが操作する SSH クライアント（例: sshコマンド）SSH_Agent: SSH エージェントプロセス（秘密鍵をメモリに保持）SSH_Server: 接続先の SSH サーバー 初回接続時の流れのポイント...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Python 3.13の新機能について調べてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/423451d2bb8249</link>
-            <guid>https://zenn.dev/akasan/articles/423451d2bb8249</guid>
-            <pubDate>Sun, 11 May 2025 14:23:08 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Python3.13で導入される新機能についてまとめてみました。私自身、普段は3.11または3.12を使うことが多く、3.13についてはどのような機能が追加されるか認識していなかったので調べてみました。 追加される新機能まず、Python3.13で導入される新機能はこちらにまとまっていますので、詳しくは参照ください。https://docs.python.org/3/whatsnew/3.13.html#other-language-changes よりよいインタラクティブインタプリタPyPyプロジェクトのコードをベースとした新しいインタラクティブシェルをデフォルト...]]></content:encoded>
         </item>
     </channel>
 </rss>
