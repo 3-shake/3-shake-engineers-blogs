@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 26 May 2025 22:35:25 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 May 2025 11:34:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コマンド紹介シリーズ：thefuck]]></title>
+            <link>https://zenn.dev/akasan/articles/fff0cfa9beadbc</link>
+            <guid>https://zenn.dev/akasan/articles/fff0cfa9beadbc</guid>
+            <pubDate>Tue, 27 May 2025 11:22:06 GMT</pubDate>
+            <content:encoded><![CDATA[今回から、私が普段使ってるコマンドを紹介していくシリーズを始めたいと思います。記念すべき第一回は、thefuckというコマンドを紹介します。名前だけ見るとなかなかにパンチが効いたものですが、スター数も多いコマンドですので、ぜひ興味がある方はみてください。※ 本記事を書くにあたり、果たしてこの文字を入力して良いのか迷いましたが、①あくまでコマンド紹介であること、②他の記事で4文字が入っている記事も結構ありそうだったので採用しました thefuckとは？一言で言ってしまうと、コマンド入力をミスした時に、本来実行したかったコマンドを想定して出してくれるコマンドになります。例えば...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[スリーシェイク、「開発生産性Conference 2025」にGoldスポンサーとして協賛およびブース出展・登壇]]></title>
+            <link>https://sreake.com/blog/developer-productivity-conference-2025/</link>
+            <guid>https://sreake.com/blog/developer-productivity-conference-2025/</guid>
+            <pubDate>Tue, 27 May 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 2025年 7月3日（木）4日（金）に開催される「開発生産性Conference 2025」にGoldスポンサーとして協賛します。The post スリーシェイク、「開発生産性Conference 2025」にGoldスポンサーとして協賛およびブース出展・登壇 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[alphaXivを使って論文要約してみた]]></title>
             <link>https://zenn.dev/akasan/articles/feaca6271b5f0c</link>
@@ -183,6 +197,13 @@
             <content:encoded><![CDATA[今回は、Pythonできれいなコマンドラインインターフェースを実装できるclickについて紹介してみようと思います。 clickとは？clickとはPythonできれいなコマンドラインインターフェースを実装するためのライブラリです。その名前はCommand Line Interface Creation Kitの頭文字をとったようです。レポジトリは以下になります。https://github.com/pallets/clickclickはコマンドラインツールを素早く実装できることに注力しており、従来のsysやargparseを利用したものと比べて格段に実装難易度が下がっていると...]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[学ぶ・つながる・挑戦する ~ 大学から始めるセキュリティの学び~/security_learning]]></title>
+            <link>https://speakerdeck.com/moz_sec_/security-learning</link>
+            <guid>https://speakerdeck.com/moz_sec_/security-learning</guid>
+            <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025年5月15日に行われたランチタイムトークで登壇した資料です。]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[転職したらMCPサーバーだった件]]></title>
             <link>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaramcpsabadatutajian</link>
             <guid>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaramcpsabadatutajian</guid>
@@ -214,27 +235,6 @@
             <link>https://speakerdeck.com/yunosukey/opentelemetry-plus-llm-equals-openllmetry</link>
             <guid>https://speakerdeck.com/yunosukey/opentelemetry-plus-llm-equals-openllmetry</guid>
             <pubDate>Wed, 14 May 2025 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[curl使い方についてまとめてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/4248554eb4797b</link>
-            <guid>https://zenn.dev/akasan/articles/4248554eb4797b</guid>
-            <pubDate>Tue, 13 May 2025 11:37:37 GMT</pubDate>
-            <content:encoded><![CDATA[今回はcurlの使い方について調べてみました。今までAPIのアクセステストとかに使っていましたが、ちゃんと調べたことなかったので、この際調べてみようということで記事にしました。 curlとは？ドキュメントから拝借すると、curl is used in command lines or scripts to transfer data. curl is also libcurl, used in cars, television sets, routers, printers, audio equipment, mobile phones, tablets, medical de...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Fishに引っ越したい人のためのZsh履歴活用術]]></title>
-            <link>https://blog.atusy.net/2025/05/13/inherit-zsh-history-in-fish/</link>
-            <guid>https://blog.atusy.net/2025/05/13/inherit-zsh-history-in-fish/</guid>
-            <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[シェルを移行する歳、設定だけでなくコマンド履歴も引き継ぎたいものです。Fishは設定が小さくすみやすい上に情報も多いので、今回はFishからZshのコマンド履歴を活用する方法を紹介します。fzfを使っているので、検索効率もいいですよ。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Neovim最先端のextuiでフローティングウィンドウ化したメッセージをいつでも非表示にする方法]]></title>
-            <link>https://blog.atusy.net/2025/05/13/nvim-extui-msgbox-closer/</link>
-            <guid>https://blog.atusy.net/2025/05/13/nvim-extui-msgbox-closer/</guid>
-            <pubDate>Tue, 13 May 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Neovimのextuiで表示されたメッセージボックスは、所定の時間が経過すると自動で閉じます。<C-L>で非表示にする方法を紹介します。]]></content:encoded>
         </item>
     </channel>
 </rss>
