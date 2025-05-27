@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 27 May 2025 11:34:53 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 May 2025 22:35:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Nix Meetup #3 大阪に参加した]]></title>
+            <link>https://blog.atusy.net/2025/05/28/nix-meetup-3-in-osaka/</link>
+            <guid>https://blog.atusy.net/2025/05/28/nix-meetup-3-in-osaka/</guid>
+            <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Nix meetup #3 大阪が2025-05-24に開催されました。技術への愛溢れた濃いい話がいっぱいできてよかったです。いっぱい聞けて、じゃなくてできてってところがまた素敵。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：thefuck]]></title>
             <link>https://zenn.dev/akasan/articles/fff0cfa9beadbc</link>
@@ -229,12 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/6af98c0cd8fcff</guid>
             <pubDate>Wed, 14 May 2025 10:50:43 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Apache Guacamoleとは何かについて調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Guacamoleとは？公式サイトを見ると、Apache Guacamole is a clientle...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenTelemetry + LLM = OpenLLMetry!?]]></title>
-            <link>https://speakerdeck.com/yunosukey/opentelemetry-plus-llm-equals-openllmetry</link>
-            <guid>https://speakerdeck.com/yunosukey/opentelemetry-plus-llm-equals-openllmetry</guid>
-            <pubDate>Wed, 14 May 2025 04:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
