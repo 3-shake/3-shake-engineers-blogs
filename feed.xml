@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 27 May 2025 22:35:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 May 2025 05:23:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ディレクトリ構成 ~フィーチャーベース編~]]></title>
+            <link>https://sreake.com/blog/feature-based-directory-structure-good-practice/</link>
+            <guid>https://sreake.com/blog/feature-based-directory-structure-good-practice/</guid>
+            <pubDate>Wed, 28 May 2025 02:18:09 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに アプリケーション開発において、ディレクトリ構成は保守性・拡張性・開発効率に直結する設計要素です。 本記事では、以下のような課題に悩む現場に向けて、「機能ごとに整理しやすく、拡張にも強い」フィーチャーベース構成を […]The post ディレクトリ構成 ~フィーチャーベース編~ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[RedisのPub/Subを使用したリアルタイム通知の実現]]></title>
+            <link>https://sreake.com/blog/realtime-notification-with-redis-pubsub/</link>
+            <guid>https://sreake.com/blog/realtime-notification-with-redis-pubsub/</guid>
+            <pubDate>Wed, 28 May 2025 01:18:04 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部のアプリケーションエンジニアの角谷です。 リアルタイム通信を実現する手段は様々ありますが、その一つにPub/Subがあります。 Pub/Subを実装する方法は様々ありますが、今回はRedisを […]The post RedisのPub/Subを使用したリアルタイム通知の実現 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Nix Meetup #3 大阪に参加した]]></title>
             <link>https://blog.atusy.net/2025/05/28/nix-meetup-3-in-osaka/</link>
@@ -222,20 +236,6 @@
             <link>https://speakerdeck.com/yunosukey/aiezientonoobuzababiriteinituite</link>
             <guid>https://speakerdeck.com/yunosukey/aiezientonoobuzababiriteinituite</guid>
             <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[論文紹介『長文コンテキストLLMとRAGの連携：RAGにおける長文入力の課題克服』]]></title>
-            <link>https://sreake.com/blog/introduction-long-context-llms-meet-rag/</link>
-            <guid>https://sreake.com/blog/introduction-long-context-llms-meet-rag/</guid>
-            <pubDate>Thu, 15 May 2025 01:01:02 GMT</pubDate>
-            <content:encoded><![CDATA[RAG（Retrieval Augmented Generation）は、LLM（Large Language Model：大規模言語モデル）が知らない情報を外部から与えてあげることで、LLMの知識を拡張する手法です。R […]The post 論文紹介『長文コンテキストLLMとRAGの連携：RAGにおける長文入力の課題克服』 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Guacamoleとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/6af98c0cd8fcff</link>
-            <guid>https://zenn.dev/akasan/articles/6af98c0cd8fcff</guid>
-            <pubDate>Wed, 14 May 2025 10:50:43 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Apache Guacamoleとは何かについて調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Guacamoleとは？公式サイトを見ると、Apache Guacamole is a clientle...]]></content:encoded>
         </item>
     </channel>
 </rss>
