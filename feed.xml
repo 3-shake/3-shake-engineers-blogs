@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 28 May 2025 05:23:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 May 2025 11:34:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、Google Cloud Next Tokyo にDiamondスポンサーとして協賛]]></title>
+            <link>https://sreake.com/blog/google-cloud-next-tokyo-2025/</link>
+            <guid>https://sreake.com/blog/google-cloud-next-tokyo-2025/</guid>
+            <pubDate>Wed, 28 May 2025 06:27:59 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2025 年 8 ⽉ 5 日（火）~  6 ⽇（水）に東京ビッグサイトにて開催される Google Cloud Next Tokyo  (主催：グーグル・クラウド・ジャパン合同会社) にDiamondスポンサーとして協賛いたします。The post スリーシェイク、Google Cloud Next Tokyo にDiamondスポンサーとして協賛 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AIコードエディタは開発を変えるか？Cursorをチームに導入して1ヶ月経った本音]]></title>
+            <link>https://speakerdeck.com/ota1022/aikodoedeitahakai-fa-wobian-eruka-cursorwotimunidao-ru-site1keyue-jing-tutaben-yin</link>
+            <guid>https://speakerdeck.com/ota1022/aikodoedeitahakai-fa-wobian-eruka-cursorwotimunidao-ru-site1keyue-jing-tutaben-yin</guid>
+            <pubDate>Wed, 28 May 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025年5月28日 Qiita Bash 最近ハマっている生成AI活用法を語ろう！のLT登壇資料です。https://increments.connpass.com/event/351227/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ディレクトリ構成 ~フィーチャーベース編~]]></title>
             <link>https://sreake.com/blog/feature-based-directory-structure-good-practice/</link>
@@ -223,19 +237,6 @@
             <guid>https://speakerdeck.com/moz_sec_/security-learning</guid>
             <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2025年5月15日に行われたランチタイムトークで登壇した資料です。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[転職したらMCPサーバーだった件]]></title>
-            <link>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaramcpsabadatutajian</link>
-            <guid>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaramcpsabadatutajian</guid>
-            <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[本日、Forkwell さんに悪ふざけに付き合ってもらってイベントやりました。ありがとうございます。「転職したらMCPサーバーだった件」 🎵🧭 というタイトルで登壇しました！🔍 イベント詳細:- イベント名: 転職したらMCPサーバーだった件- 公式URL: https://forkwell.connpass.com/event/354289/- ハッシュタグ: https://x.com/search?q=%23Forkwell_MCP&f=live- 参考資料①: https://speakerdeck.com/nwiizo/kokohamcpnoye-ming-kemae- 参考資料②: https://syu-m-5151.hatenablog.com/entry/2025/03/09/020057- 参考資料③: https://speakerdeck.com/superbrothers/that-time-i-changed-jobs-as-a-kubernetes]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AIエージェントのオブザーバビリティについて]]></title>
-            <link>https://speakerdeck.com/yunosukey/aiezientonoobuzababiriteinituite</link>
-            <guid>https://speakerdeck.com/yunosukey/aiezientonoobuzababiriteinituite</guid>
-            <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
