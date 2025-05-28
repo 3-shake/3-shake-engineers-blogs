@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 28 May 2025 11:34:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 May 2025 22:35:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[セルフエンドレスアドベントカレンダーを通してエンジニアとして成長できました報告]]></title>
+            <link>https://zenn.dev/akasan/articles/4aba4d3a0616ce</link>
+            <guid>https://zenn.dev/akasan/articles/4aba4d3a0616ce</guid>
+            <pubDate>Wed, 28 May 2025 12:47:33 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、私が仕事とも関係なく勝手にやっているセルフエンドレスアドベントカレンダーを通して、どう成長していると感じているか共有しようと思います。今回は技術的な話はあまりないですが、仕事以外の時間をどう使うかについて共有できればと思います。 そもそもアドベントカレンダーとは？というか、そもそもアドベントカレンダーとは何かについて理解しておかないといけないですね、、、。Wikipediaによるとインターネット上などで、12月の1日から25日までに、特定のテーマに沿って毎日ブログなどに記事を投稿していくという企画がある[1][2]。元々のアドベントカレンダーになぞらえて、この企画も...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、Google Cloud Next Tokyo にDiamondスポンサーとして協賛]]></title>
             <link>https://sreake.com/blog/google-cloud-next-tokyo-2025/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/034598cbd096e2</guid>
             <pubDate>Thu, 15 May 2025 13:08:26 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Pythonできれいなコマンドラインインターフェースを実装できるclickについて紹介してみようと思います。 clickとは？clickとはPythonできれいなコマンドラインインターフェースを実装するためのライブラリです。その名前はCommand Line Interface Creation Kitの頭文字をとったようです。レポジトリは以下になります。https://github.com/pallets/clickclickはコマンドラインツールを素早く実装できることに注力しており、従来のsysやargparseを利用したものと比べて格段に実装難易度が下がっていると...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[学ぶ・つながる・挑戦する ~ 大学から始めるセキュリティの学び~/security_learning]]></title>
-            <link>https://speakerdeck.com/moz_sec_/security-learning</link>
-            <guid>https://speakerdeck.com/moz_sec_/security-learning</guid>
-            <pubDate>Thu, 15 May 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年5月15日に行われたランチタイムトークで登壇した資料です。]]></content:encoded>
         </item>
     </channel>
 </rss>
