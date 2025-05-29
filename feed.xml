@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 29 May 2025 11:34:52 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 May 2025 22:35:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud 認定資格奮闘記 ~Generative AI Leader編~]]></title>
+            <link>https://zenn.dev/akasan/articles/c0d347a37065bc</link>
+            <guid>https://zenn.dev/akasan/articles/c0d347a37065bc</guid>
+            <pubDate>Thu, 29 May 2025 13:24:41 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の続編になります。https://zenn.dev/akasan/articles/e2416e40a90499 Generative AI LeaderについてGenerative AI Leader（以下、GenAI Leader）は、今月公開された新しいGoogle Cloudの認定資格です。こちらの資格については公式で以下のように説明がされています。A Generative AI Leader is a visionary professional with comprehensive knowledge of how generative AI (gen A...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、「KubeCon + CloudNativeCon Japan 2025」にGoldスポンサーとして協賛およびブース出展]]></title>
             <link>https://sreake.com/blog/kubecon-cloudnativecon-japan-2025/</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/9acb1ed5fa3dc0</guid>
             <pubDate>Fri, 16 May 2025 13:30:15 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Langflowを利用して、Notionのページ内にコンテンツを生成させる方法についてまとめてみようと思います。Langflowの使い方については以前以下の記事で解説していますので併せてご覧ください。https://zenn.dev/akasan/articles/6357f1dd2b52ac 早速使ってみる 環境の立ち上げ今回も以前と同様に、公式が提供しているdockerを利用します。簡単な起動方法は以下になります。公式GitHubのレポジトリをcloneするdocker_exampleフォルダに移動するdocker compose upを実行する...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google CloudのAI Agent関連のサービス紹介]]></title>
-            <link>https://speakerdeck.com/shukob/google-cloudnoai-agentguan-lian-nosabisushao-jie</link>
-            <guid>https://speakerdeck.com/shukob/google-cloudnoai-agentguan-lian-nosabisushao-jie</guid>
-            <pubDate>Fri, 16 May 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://3-shake.connpass.com/event/351861/3-shake SRE Tech Talk #12 にて、Google CloudのAI Agent関連のサービス紹介を行いました・Vertex AI Agent Builder・Agent Garden・Agent Engine・Vertex AI Search・Agentspaceなど]]></content:encoded>
         </item>
     </channel>
 </rss>
