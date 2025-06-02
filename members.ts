@@ -460,18 +460,6 @@ export const members: Member[] = [
     websiteUrl: "https://www.wantedly.com/id/keigo_kurita_e",
   },
   {
-    id: "kaita-nakamura",
-    name: "Kaita Nakamura",
-    role: "SRE",
-    bio: "kaita",
-    avatarSrc: "/avatars/kaitanakamura.jpg",
-    sources: ["https://zenn.dev/z63d/feed"],
-    includeUrlRegex: "",
-    twitterUsername: "z63d_",
-    githubUsername: "z63d",
-    websiteUrl: "",
-  },
-  {
     id: "masaru-komiyama",
     name: "masaru-komiyama",
     role: "SRE",
