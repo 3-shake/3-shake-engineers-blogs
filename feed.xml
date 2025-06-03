@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 03 Jun 2025 11:34:57 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Jun 2025 22:35:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,25 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[コマンド紹介シリーズ：rg]]></title>
+            <link>https://zenn.dev/akasan/articles/25f1eca029854b</link>
+            <guid>https://zenn.dev/akasan/articles/25f1eca029854b</guid>
+            <pubDate>Tue, 03 Jun 2025 14:30:40 GMT</pubDate>
+            <content:encoded><![CDATA[コマンド紹介シリーズ第4回は、rgというコマンドを紹介します。rgを使うとリカーシブに正規表現を使って文字列検索を行ったりすることができます。なお、第3回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/5c92827ae75f3c※ 今回は正規表現を使った検索については省略します。基本的に他のツールと利用方法は変わりません！ rgとは？rgとは公式の説明によるとripgrep is a line-oriented search tool that recursively searches the cu...]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Conform.nvimの保存時フォーマットをスキップする方法]]></title>
             <link>https://blog.atusy.net/2025/06/03/skip-conform-nvim-format-on-save/</link>
             <guid>https://blog.atusy.net/2025/06/03/skip-conform-nvim-format-on-save/</guid>
             <pubDate>Tue, 03 Jun 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Conform.nvimのformat_on_saveは便利ですが、たまーにスキップしたくなります。:w!の実行やバッファの内容に応じて制御してみましょう。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vim/Neovimのマークを操作内容に合わせて設定する]]></title>
+            <link>https://blog.atusy.net/2025/06/03/vim-contextful-mark/</link>
+            <guid>https://blog.atusy.net/2025/06/03/vim-contextful-mark/</guid>
+            <pubDate>Tue, 03 Jun 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[たとえば`yしたら直前にヤンクした場所に戻れるとよさそうですね。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：bat]]></title>
@@ -223,20 +237,6 @@
             <guid>https://zenn.dev/kimitsu/articles/google-cloud-gen-ai-o11y</guid>
             <pubDate>Sat, 24 May 2025 09:01:25 GMT</pubDate>
             <content:encoded><![CDATA[生成 AI アプリケーションにおけるオブザーバビリティの必要性ここ数年の生成 AI 技術の発展に伴い、RAG や AI エージェントなど生成 AI のアプリケーションへの応用が進んでいます。一方で生成 AI アプリケーションを本番利用していくにあたっては以下のような課題があります。確率的な挙動モデルの出力生成にかかる時間トークンに対する課金額外部サービス呼び出し（RAG であれば検索サービス、AI エージェントであればツール）実行経路（ワークフロー型エージェントの場合）モデルの更新、プロンプトの更新これらの課題に対し、生成 AI アプリケーションにおいて...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cursorの@Symbolsについて調べてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/6e1770944b3a1e</link>
-            <guid>https://zenn.dev/akasan/articles/6e1770944b3a1e</guid>
-            <pubDate>Fri, 23 May 2025 13:55:25 GMT</pubDate>
-            <content:encoded><![CDATA[今回はCursorの機能である@Symbolsについて、公式ドキュメントの内容をまとめてみます。 @Symbolsとは？Cursorにはチャットを利用したコーディングアシスト機能がありますが、その機能についてどのようにコードやファイル、ドキュメントなどのコンテキストを参照するかということを制御するために@Symbolsというものがあります。https://docs.cursor.com/context/@-symbols/overviewCmd + Kなどで表示できるチャットボックスでは、一般的には例えば〜の計算をするための関数を実装してのような指示を投げたりするかと思いますが...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Snowflakeで始めるデータガバナンス]]></title>
-            <link>https://sreake.com/blog/getting-started-with-data-governance-in-snowflake/</link>
-            <guid>https://sreake.com/blog/getting-started-with-data-governance-in-snowflake/</guid>
-            <pubDate>Fri, 23 May 2025 01:15:59 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに データ分析において、データガバナンスは必要不可欠な取り組みの1つと言って過言ではないでしょう。 今回は「Snowflakeで始めるデータガバナンス」と題しまして、新規既存関係なく、どのタイミングからでも導入可能 […]The post Snowflakeで始めるデータガバナンス first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
