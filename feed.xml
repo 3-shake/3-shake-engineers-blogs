@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 04 Jun 2025 11:35:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Jun 2025 22:33:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コマンドラインでバブルソートを可視化してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/0331574e200f01</link>
+            <guid>https://zenn.dev/akasan/articles/0331574e200f01</guid>
+            <pubDate>Wed, 04 Jun 2025 13:30:16 GMT</pubDate>
+            <content:encoded><![CDATA[今回はPythonを使ってバブルソートをコマンドラインで可視化しながらソートするコードを作ってみました。 バブルソートとはバブルソートとはリスト内のアイテムをソートするためのアルゴリズムの一つで最もシンプルなものとなります。計算ロジックは以下になります。インデックスi=0、上限インデックスupper_iを`リストの要素数-1``で初期化するiとi+1の要素の大小を比較し、iの値の方が大きかった場合iとi+1の値を入れ替えるiの値を1つ増やし2を実行するiの値がupper_iと一致したらi=0に設定してupper_idを1減らすupper_idが0になるまで繰り返すと...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：rg]]></title>
             <link>https://zenn.dev/akasan/articles/25f1eca029854b</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/c4783b7b825847</guid>
             <pubDate>Sat, 24 May 2025 10:30:19 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Apache jclouds。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache jcloudsとは？公式サイトによると、Java向けのマルチクラウドツールキットクラウド特有の機能を完全に利用しつつ、クラウドを横断した...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud の生成 AI オブザーバビリティ機能まとめ]]></title>
-            <link>https://zenn.dev/kimitsu/articles/google-cloud-gen-ai-o11y</link>
-            <guid>https://zenn.dev/kimitsu/articles/google-cloud-gen-ai-o11y</guid>
-            <pubDate>Sat, 24 May 2025 09:01:25 GMT</pubDate>
-            <content:encoded><![CDATA[生成 AI アプリケーションにおけるオブザーバビリティの必要性ここ数年の生成 AI 技術の発展に伴い、RAG や AI エージェントなど生成 AI のアプリケーションへの応用が進んでいます。一方で生成 AI アプリケーションを本番利用していくにあたっては以下のような課題があります。確率的な挙動モデルの出力生成にかかる時間トークンに対する課金額外部サービス呼び出し（RAG であれば検索サービス、AI エージェントであればツール）実行経路（ワークフロー型エージェントの場合）モデルの更新、プロンプトの更新これらの課題に対し、生成 AI アプリケーションにおいて...]]></content:encoded>
         </item>
     </channel>
 </rss>
