@@ -586,5 +586,16 @@ export const members: Member[] = [
     githubUsername: "you-matsuura",
     twitterUsername: "yuu_matsu_yuu",
     websiteUrl: "https://qiita.com/m_pig",
+  },
+  {
+    id: "silasolla",
+    name: "Masaki Haga",
+    avatarSrc: "/avatars/silasolla.png",
+    role: "Full Stack Engineer",
+    bio: "ML stands for Meta Language (not Minor Language -- maybe Machine Learning too)",
+    sources: ["https://zenn.dev/silasolla/feed"],
+    githubUsername: "silasolla",
+    twitterUsername: "silasolla",
+    websiteUrl: "https://silasol.la",
   }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
