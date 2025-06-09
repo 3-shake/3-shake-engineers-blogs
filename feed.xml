@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 09 Jun 2025 11:35:18 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Jun 2025 22:36:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[rusqliteを使ってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/5e069b51c68db1</link>
+            <guid>https://zenn.dev/akasan/articles/5e069b51c68db1</guid>
+            <pubDate>Mon, 09 Jun 2025 11:39:01 GMT</pubDate>
+            <content:encoded><![CDATA[今回はRustからSQLiteを使うためのrusqliteに入門したので、その紹介をしようと思います。 rusqliteとは？公式のGitHubページによると、ruqsliteはSQLiteをRustから利用するためのラッパーということです。私自身、Pythonを使う時はsqlite3を用いて接続しており、DBの環境構築が不要なので簡単な実装などには利用しています。そこで、Rustでも使えたらいいなと思っていたら使えるとのことだったので今回使ってみました。https://github.com/rusqlite/rusqlite rusqliteを使ってみる 環境構築まず...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[「セキュリティ・キャンプ 2025 全国大会」にスリーシェイク所属のエンジニアが講師として登壇]]></title>
             <link>https://sreake.com/blog/security-camp-2025/</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/feature-based-directory-structure-good-practice/</guid>
             <pubDate>Wed, 28 May 2025 02:18:09 GMT</pubDate>
             <content:encoded><![CDATA[はじめに アプリケーション開発において、ディレクトリ構成は保守性・拡張性・開発効率に直結する設計要素です。 本記事では、以下のような課題に悩む現場に向けて、「機能ごとに整理しやすく、拡張にも強い」フィーチャーベース構成を […]The post ディレクトリ構成 ~フィーチャーベース編~ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[RedisのPub/Subを使用したリアルタイム通知の実現]]></title>
-            <link>https://sreake.com/blog/realtime-notification-with-redis-pubsub/</link>
-            <guid>https://sreake.com/blog/realtime-notification-with-redis-pubsub/</guid>
-            <pubDate>Wed, 28 May 2025 01:18:04 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部のアプリケーションエンジニアの角谷です。 リアルタイム通信を実現する手段は様々ありますが、その一つにPub/Subがあります。 Pub/Subを実装する方法は様々ありますが、今回はRedisを […]The post RedisのPub/Subを使用したリアルタイム通知の実現 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
