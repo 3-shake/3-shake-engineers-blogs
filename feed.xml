@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 08 Jun 2025 22:35:08 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Jun 2025 11:35:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[「セキュリティ・キャンプ 2025 全国大会」にスリーシェイク所属のエンジニアが講師として登壇]]></title>
+            <link>https://sreake.com/blog/security-camp-2025/</link>
+            <guid>https://sreake.com/blog/security-camp-2025/</guid>
+            <pubDate>Mon, 09 Jun 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）に所属のエンジニア水元 恭平が、「セキュリティ・キャンプ 2025 全国大会」に講師として登壇することをお知らせいたします。The post 「セキュリティ・キャンプ 2025 全国大会」にスリーシェイク所属のエンジニアが講師として登壇 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：peco]]></title>
             <link>https://zenn.dev/akasan/articles/3020ea9e5b54c2</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/realtime-notification-with-redis-pubsub/</guid>
             <pubDate>Wed, 28 May 2025 01:18:04 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部のアプリケーションエンジニアの角谷です。 リアルタイム通信を実現する手段は様々ありますが、その一つにPub/Subがあります。 Pub/Subを実装する方法は様々ありますが、今回はRedisを […]The post RedisのPub/Subを使用したリアルタイム通知の実現 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Nix Meetup #3 大阪に参加した]]></title>
-            <link>https://blog.atusy.net/2025/05/28/nix-meetup-3-in-osaka/</link>
-            <guid>https://blog.atusy.net/2025/05/28/nix-meetup-3-in-osaka/</guid>
-            <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Nix meetup #3 大阪が2025-05-24に開催されました。技術への愛溢れた濃いい話がいっぱいできてよかったです。いっぱい聞けて、じゃなくてできてってところがまた素敵。]]></content:encoded>
         </item>
     </channel>
 </rss>
