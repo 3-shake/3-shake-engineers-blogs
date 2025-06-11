@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Jun 2025 11:35:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Jun 2025 22:35:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[エンジニアのあるある考えてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/7a16f4096d76dd</link>
+            <guid>https://zenn.dev/akasan/articles/7a16f4096d76dd</guid>
+            <pubDate>Wed, 11 Jun 2025 13:40:38 GMT</pubDate>
+            <content:encoded><![CDATA[徒然なるままに、エンジニアとしてのキャリアの中で、幾度となくやらかしてきたことをひたすらまとめてみます（今回は箸休め & Apacheに行く前の最後の悪あがきで書きました）。 MLエンジニア編ノートブック上で開発をしていて、実行ごとにパラメータ部分を直接変更した結果、過去の検証結果を遡れない過去に変更したパラメータ履歴が全てコメントアウトで残されていて最悪なコードを見るデータの前処理が適切にされているか不安に駆られる時がある論文はたくさんあるのに、再現性のあるコードを提供してくれる割合がとても少ない 生成AICodingエージェントが優秀すぎて、財布のこと...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[vim-jpラジオ#45・#46聞いた - Firefox拡張Tree Style Tabの作者で技術漫画家でもあるPiroさん登場]]></title>
+            <link>https://blog.atusy.net/2025/06/11/vim-jp-radio-45-46/</link>
+            <guid>https://blog.atusy.net/2025/06/11/vim-jp-radio-45-46/</guid>
+            <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[技術漫画家でもあるPiroさんみたいにアウトプットに長ける方が、ブラウザという現代でも特に重要な技術の歴史の生き証人なの貴重すぎる……。すんごい濃い話が聞けました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：ghq]]></title>
             <link>https://zenn.dev/akasan/articles/0bcf36a4251a96</link>
@@ -223,20 +237,6 @@
             <guid>https://sreake.com/blog/image-creation-and-execution-with-go-containerregistry/</guid>
             <pubDate>Thu, 29 May 2025 00:40:36 GMT</pubDate>
             <content:encoded><![CDATA[この記事ではコンテナイメージがどのように作成されているのかを、go-containerregistryライブラリを使った実装例を通して解説します。Dockerfileを使わずに、プログラムからコンテナイメージを作成する過 […]The post Dockerを使用せずにイメージを作成し実行してみる – go-containerregistryによる実装 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[セルフエンドレスアドベントカレンダーを通してエンジニアとして成長できました報告]]></title>
-            <link>https://zenn.dev/akasan/articles/4aba4d3a0616ce</link>
-            <guid>https://zenn.dev/akasan/articles/4aba4d3a0616ce</guid>
-            <pubDate>Wed, 28 May 2025 12:47:33 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、私が仕事とも関係なく勝手にやっているセルフエンドレスアドベントカレンダーを通して、どう成長していると感じているか共有しようと思います。今回は技術的な話はあまりないですが、仕事以外の時間をどう使うかについて共有できればと思います。 そもそもアドベントカレンダーとは？というか、そもそもアドベントカレンダーとは何かについて理解しておかないといけないですね、、、。Wikipediaによるとインターネット上などで、12月の1日から25日までに、特定のテーマに沿って毎日ブログなどに記事を投稿していくという企画がある[1][2]。元々のアドベントカレンダーになぞらえて、この企画も...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、Google Cloud Next Tokyo にDiamondスポンサーとして協賛]]></title>
-            <link>https://sreake.com/blog/google-cloud-next-tokyo-2025/</link>
-            <guid>https://sreake.com/blog/google-cloud-next-tokyo-2025/</guid>
-            <pubDate>Wed, 28 May 2025 06:27:59 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、2025 年 8 ⽉ 5 日（火）~  6 ⽇（水）に東京ビッグサイトにて開催される Google Cloud Next Tokyo  (主催：グーグル・クラウド・ジャパン合同会社) にDiamondスポンサーとして協賛いたします。The post スリーシェイク、Google Cloud Next Tokyo にDiamondスポンサーとして協賛 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
