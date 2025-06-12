@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Jun 2025 22:35:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jun 2025 11:34:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Open Policy Containers(OPC)]]></title>
+            <link>https://zenn.dev/tayusa/articles/2ade4dd1928937</link>
+            <guid>https://zenn.dev/tayusa/articles/2ade4dd1928937</guid>
+            <pubDate>Thu, 12 Jun 2025 02:27:15 GMT</pubDate>
+            <content:encoded><![CDATA[Open Policy Containers(OPC)の前にOpen Policy Agent(OPA)https://www.openpolicyagent.org/クラウドネイティブ環境におけるポリシー適用のための汎用エンジンRegoという宣言型言語を用いてポリシーを記述するJSONやYAMLのような構造化されたデータを入力として受け取り、ポリシー評価の結果（許可/拒否など）を返す例: 全てのNamespaceに管理者を特定するためのownerラベルを必須にするpackage maindeny contains msg if {    # 対象リソース...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[エンジニアのあるある考えてみた]]></title>
             <link>https://zenn.dev/akasan/articles/7a16f4096d76dd</link>
@@ -230,13 +237,6 @@
             <guid>https://sreake.com/blog/kubecon-cloudnativecon-japan-2025/</guid>
             <pubDate>Thu, 29 May 2025 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 2025年6月16日（月）・17日（火）に開催される「KubeCon + CloudNativeCon Japan 2025」にGoldスポンサーとして協賛します。The post スリーシェイク、「KubeCon + CloudNativeCon Japan 2025」にGoldスポンサーとして協賛およびブース出展 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Dockerを使用せずにイメージを作成し実行してみる – go-containerregistryによる実装]]></title>
-            <link>https://sreake.com/blog/image-creation-and-execution-with-go-containerregistry/</link>
-            <guid>https://sreake.com/blog/image-creation-and-execution-with-go-containerregistry/</guid>
-            <pubDate>Thu, 29 May 2025 00:40:36 GMT</pubDate>
-            <content:encoded><![CDATA[この記事ではコンテナイメージがどのように作成されているのかを、go-containerregistryライブラリを使った実装例を通して解説します。Dockerfileを使わずに、プログラムからコンテナイメージを作成する過 […]The post Dockerを使用せずにイメージを作成し実行してみる – go-containerregistryによる実装 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
