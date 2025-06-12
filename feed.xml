@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 12 Jun 2025 11:34:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jun 2025 22:35:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,31 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[Apache Causewayとはなんなのか？]]></title>
+            <link>https://zenn.dev/akasan/articles/7cfad98e6acbdb</link>
+            <guid>https://zenn.dev/akasan/articles/7cfad98e6acbdb</guid>
+            <pubDate>Thu, 12 Jun 2025 12:48:04 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Apache Causeway。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Causewayとは？公式サイトによると、Apache Causeway™ enables domain-driven applicat...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SRE支援から見えてきたSREの核]]></title>
+            <link>https://speakerdeck.com/kojake_300/srezhi-yuan-karajian-etekitasrenohe</link>
+            <guid>https://speakerdeck.com/kojake_300/srezhi-yuan-karajian-etekitasrenohe</guid>
+            <pubDate>Thu, 12 Jun 2025 04:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Open Policy Containers(OPC)]]></title>
             <link>https://zenn.dev/tayusa/articles/2ade4dd1928937</link>
             <guid>https://zenn.dev/tayusa/articles/2ade4dd1928937</guid>
             <pubDate>Thu, 12 Jun 2025 02:27:15 GMT</pubDate>
             <content:encoded><![CDATA[Open Policy Containers(OPC)の前にOpen Policy Agent(OPA)https://www.openpolicyagent.org/クラウドネイティブ環境におけるポリシー適用のための汎用エンジンRegoという宣言型言語を用いてポリシーを記述するJSONやYAMLのような構造化されたデータを入力として受け取り、ポリシー評価の結果（許可/拒否など）を返す例: 全てのNamespaceに管理者を特定するためのownerラベルを必須にするpackage maindeny contains msg if {    # 対象リソース...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[gemma3のStructured Outputで複雑な例を試す]]></title>
+            <link>https://blog.atusy.net/2025/06/12/gemma3-complex-structured-output/</link>
+            <guid>https://blog.atusy.net/2025/06/12/gemma3-complex-structured-output/</guid>
+            <pubDate>Thu, 12 Jun 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Gemma 3のStructured Outputを試してみました。 文字列や辞書のリスト、nullableな値など、複雑なデータ構造でもソツなくこなす印象です。 ただ、「在米経験のある日本人」から出身地を推測するような複雑なタスクだと1bよりも大きめのモデルがよさそう。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[エンジニアのあるある考えてみた]]></title>
@@ -216,27 +236,6 @@
             <guid>https://speakerdeck.com/shukob/googlenoai-agent</guid>
             <pubDate>Fri, 30 May 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2025年5月30日(金) AI Agent 勉強会 Vol.3 にて、Google CloudのAI AgentサービスとGoogle I/O 2025 で発表された内容の概要を紹介させていただきました。https://almondo.connpass.com/event/355297/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[宝くじに当たる方法を思い出して、明日も頑張ることにした]]></title>
-            <link>https://blog.atusy.net/2025/05/30/how-to-win/</link>
-            <guid>https://blog.atusy.net/2025/05/30/how-to-win/</guid>
-            <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[宝くじに当たりたければ、まず買うことだ。成功も行動の先にある。宝くじと違って、うまくいかなかった時も戦略を練り直せるから、どんどん挑戦しよう。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud 認定資格奮闘記 ~Generative AI Leader編~]]></title>
-            <link>https://zenn.dev/akasan/articles/c0d347a37065bc</link>
-            <guid>https://zenn.dev/akasan/articles/c0d347a37065bc</guid>
-            <pubDate>Thu, 29 May 2025 13:24:41 GMT</pubDate>
-            <content:encoded><![CDATA[この記事の続編になります。https://zenn.dev/akasan/articles/e2416e40a90499 Generative AI LeaderについてGenerative AI Leader（以下、GenAI Leader）は、今月公開された新しいGoogle Cloudの認定資格です。こちらの資格については公式で以下のように説明がされています。A Generative AI Leader is a visionary professional with comprehensive knowledge of how generative AI (gen A...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、「KubeCon + CloudNativeCon Japan 2025」にGoldスポンサーとして協賛およびブース出展]]></title>
-            <link>https://sreake.com/blog/kubecon-cloudnativecon-japan-2025/</link>
-            <guid>https://sreake.com/blog/kubecon-cloudnativecon-japan-2025/</guid>
-            <pubDate>Thu, 29 May 2025 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、 2025年6月16日（月）・17日（火）に開催される「KubeCon + CloudNativeCon Japan 2025」にGoldスポンサーとして協賛します。The post スリーシェイク、「KubeCon + CloudNativeCon Japan 2025」にGoldスポンサーとして協賛およびブース出展 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
