@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 14 Jun 2025 22:35:01 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Jun 2025 11:34:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apache Avroとはなんなのか？]]></title>
+            <link>https://zenn.dev/akasan/articles/9d0a38752e9426</link>
+            <guid>https://zenn.dev/akasan/articles/9d0a38752e9426</guid>
+            <pubDate>Sun, 15 Jun 2025 05:27:13 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Apache Avro（以下、Avro）について調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Avroとは？公式サイトによると、Apache Avro™ is the leading serialization ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[uqlmによるハルシネーション検知をしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/b4e9597ac4f265</link>
@@ -229,13 +236,6 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2025/05/31/105405</guid>
             <pubDate>Sat, 31 May 2025 01:54:05 GMT</pubDate>
             <content:encoded><![CDATA[なぜmarp.nvimが必要だったのか前回の記事でClaude Codeに移行し、Neovimに完全回帰することを決めた。コーディング、ドキュメント作成、設定ファイルの編集――すべてが再びターミナルで完結するようになった。しかし、一つだけ問題があった。Marpでのプレゼンテーション作成だ。Marpは素晴らしいツールだが、公式のNeovimサポートは存在しない。プレゼンテーションを作るたびに、仕方なくVSCodeやCursorを起動していた。せっかくNeovimに完全回帰したのに、プレゼン作成のためだけに別のエディタを立ち上げる。この矛盾が許せなかった。marp.app既存のソリューションを探したが、満足できるものはなかった。ならば答えは一つ――自作するしかない。こうしてmarp.nvimは生まれた。Neovimですべてを完結させるという理想を、妥協なく追求した結果だ。github.commarp.nvimの技術的アプローチアーキテクチャ┌─────────────┐     ┌─────────────┐     ┌─────────────┐│   Neovim    │────▶│  marp.nvim  │────▶│  Marp CLI   ││   Buffer    │     │  Lua Plugin │     │  --watch    │└─────────────┘     └─────────────┘     └─────────────┘                            │                            ▼                    ┌─────────────┐                    │   Browser   │                    │  Auto-open  │                    └─────────────┘コア実装の詳細1. Marp CLIのプロセス管理これは完全にMarp の作者が優秀なのですがMarpには--watchオプションが存在しています。これを使わない手はないです-- プロセスをバッファごとに管理M.active_processes = {}-- jobstart で Marp CLI を起動local job_id = vim.fn.jobstart(shell_cmd, {    pty = true,  -- 擬似端末で適切な出力キャプチャ    stdout_buffered = false,    stderr_buffered = false,    on_stdout = function(_, data)        -- 出力処理    end,    on_exit = function()        M.active_processes[bufnr] = nil    end})重要なポイント：pty = trueを使用することで、Marp CLIのカラー出力を適切に処理stdout_buffered = falseでリアルタイム出力を実現バッファ番号をキーにしてプロセスを管理2. 自動クリーンアップの実装vim.api.nvim_create_autocmd({"BufDelete", "BufWipeout"}, {    buffer = bufnr,    once = true,    callback = function()        M.stop(bufnr)    end})VSCode拡張機能では当たり前の機能だが、Neovimでは自前実装が必要。バッファのライフサイクルに合わせてプロセスを管理。3. ウォッチモード vs サーバーモードif M.config.server_mode then    cmd = string.format("%s -s '%s'", marp_cmd, file)else    -- デフォルトは --watch モード    cmd = string.format("%s --watch '%s'", marp_cmd, file)end2つのモードをサポート：ウォッチモード（デフォルト）: HTMLファイルを生成し、変更を監視サーバーモード: HTTPサーバーを起動（ポート競合の可能性あり）4. ANSIエスケープシーケンスの処理local function clean_ansi(str)    return str:gsub("\27%[[%d;]*m", ""):gsub("\27%[[%d;]*[A-Za-z]", "")endMarp CLIの美しいカラー出力をNeovimの通知システムで扱うための処理。これがないと文字化けする。実装で工夫した点1. 初回HTML生成の最適化-- ウォッチモード開始前に初回HTMLを生成if not M.config.server_mode then    local init_cmd = string.format("%s '%s' -o '%s'", marp_cmd, file, html_file)    vim.fn.system(init_cmd)        if vim.fn.filereadable(html_file) == 1 then        -- 即座にブラウザを開く        M.open_browser("file://" .. html_file)    endend--watchモードは初回生成が遅いため、事前に生成してUXを改善。2. クロスプラットフォーム対応function M.open_browser(url)    local cmd    if vim.fn.has("mac") == 1 then        cmd = "open " .. url    elseif vim.fn.has("unix") == 1 then        cmd = "xdg-open " .. url    elseif vim.fn.has("win32") == 1 then        cmd = "start " .. url    end    vim.fn.jobstart(cmd, {detach = true})end3. デバッグモードM.config = {    debug = true,  -- 詳細ログを有効化}-- :MarpDebug コマンドで診断function M.debug()    local test_cmd = string.format("%s --version", marp_cmd)    -- Marp CLIの動作確認endトラブルシューティングを容易にするため、詳細なログ出力機能を実装。VSCode拡張機能との機能比較 機能  Marp for VS Code  marp.nvim  ライブプレビュー  ✅  ✅  自動リロード(書き込みイベント時)  ✅  ✅  テーマ切り替え  GUI  :MarpTheme  エクスポート  GUI  :MarpExport  スライドナビゲーション  ✅  ❌（開発中）  スニペット  ✅  ✅  複数ファイル同時編集  ✅  ✅ 使用方法インストール-- lazy.nvim{    "nwiizo/marp.nvim",    ft = "markdown",    config = function()        require("marp").setup({            marp_command = "npx @marp-team/marp-cli@latest",            debug = false,            server_mode = false,  -- ウォッチモードを使用        })    end,}基本的なワークフロー:e presentation.md:MarpWatch          " プレビュー開始(ファイル名をClipboardに書き込みもしている):MarpTheme uncover  " テーマ変更:MarpExport pdf     " PDF出力:q                  " バッファを閉じると自動でサーバー停止トラブルシューティング:MarpDebug          " Marp CLIの動作確認:MarpList           " アクティブなサーバー一覧:MarpStopAll        " 全サーバー停止パフォーマンスと制限事項メモリ使用量Marp CLIプロセス: 約50-100MB/インスタンス複数ファイル同時編集時は線形に増加既知の制限ホットリロードの遅延: ファイル保存からブラウザ更新まで約100-200ms大規模ファイル: 100スライド以上でパフォーマンス低下画像の相対パス: 作業ディレクトリに依存まとめmarp.nvimの開発により、Marpプレゼンテーション作成のためだけにCursorを起動する必要がなくなった。Neovimのjob APIを活用することで、VSCode拡張機能と似た体験を実現できることを証明できた。重要なのは、完璧を求めすぎないこと。VSCode拡張機能のすべての機能を再現する必要はない。ターミナルでの開発に必要十分な機能を、シンプルに実装することが大切だ。Claude Codeとの組み合わせで、プレゼンテーション作成もAIアシスト付きで行える。これで本当にすべての開発作業をNeovimで完結できるようになった。vimmer村への完全帰還、達成。実践Vim　思考のスピードで編集しよう！ (アスキー書籍)作者:Ｄｒｅｗ Ｎｅｉｌ,新丈 径角川アスキー総合研究所Amazon]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コマンド紹介シリーズ：tldr]]></title>
-            <link>https://zenn.dev/akasan/articles/dd94771d828ec7</link>
-            <guid>https://zenn.dev/akasan/articles/dd94771d828ec7</guid>
-            <pubDate>Fri, 30 May 2025 10:37:03 GMT</pubDate>
-            <content:encoded><![CDATA[コマンド紹介シリーズ第2回は、tldrというコマンドを紹介します。名前からして何かしらの情報をまとめて表示してくれる系のコマンドと予想できるかと思いますが、実際はどんなコマンドなのかみていきましょう。 tldrとは？一言で言ってしまうと、コマンドラインツールのヘルプページで、man pagesをよりシンプルにしたものと思ってもらえればと思います。公式GitHubは以下にありますのでぜひ参照ください。https://github.com/tldr-pages/tldrそもそもman pagesとは何かという話ですが、コマンドラインツールで使い方がわからない時に利用されるm...]]></content:encoded>
         </item>
     </channel>
 </rss>
