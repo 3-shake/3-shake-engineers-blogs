@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 18 Jun 2025 11:34:57 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Jun 2025 22:35:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年6月版読んでいて良かった本紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/924c37bd0841f2</link>
+            <guid>https://zenn.dev/akasan/articles/924c37bd0841f2</guid>
+            <pubDate>Wed, 18 Jun 2025 13:05:05 GMT</pubDate>
+            <content:encoded><![CDATA[6月もそろそろ終盤になってきましたね。そこで、先月に続いて、今月読んでいた本を紹介しようと思います。5月版はこちらになりますので、ご興味があればぜひ参照してください！https://zenn.dev/akasan/articles/b37d1767115ee0 Observability系 入門　監視こちらはシステムの監視について必要な情報を得るための入門書として読みました。インフラ構築からSREまで幅広く業務で対応する必要があり、私自身まだ知識が浅いなと思っているので読みました。ページ数もそこまで多くなく、一気に読めました。内容はObservabilityの入門書としてとて...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Code どこまでも/ Claude Code Everywhere]]></title>
             <link>https://speakerdeck.com/nwiizo/claude-everywhere</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/5c92827ae75f3c</guid>
             <pubDate>Mon, 02 Jun 2025 11:37:04 GMT</pubDate>
             <content:encoded><![CDATA[コマンド紹介シリーズ第3回は、batというコマンドを紹介します。batを使うとシンタックスハイライトを用いた画面表示やgitとの連携などを行うことができます。なお、第2回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/dd94771d828ec7 batとは？batは公式の説明によると、シンタックスハイライトとGitとの連携機能付きの cat(1) クローン。ということです。catはファイル内容を表示したり新しいファイルを作ったりできるコマンドですが、それを拡張したものであると言えます。catではシ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク所属のエンジニアが「AWS Community Builders」に選出]]></title>
-            <link>https://sreake.com/blog/aws-community-builders-2025/</link>
-            <guid>https://sreake.com/blog/aws-community-builders-2025/</guid>
-            <pubDate>Mon, 02 Jun 2025 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）に所属の鈴木 勝史が、「AWS Community Builders」に2年連続で選出されたことをお知らせします。The post スリーシェイク所属のエンジニアが「AWS Community Builders」に選出 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
