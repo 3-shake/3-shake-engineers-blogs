@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 17 Jun 2025 22:35:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Jun 2025 11:34:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Claude Code どこまでも/ Claude Code Everywhere]]></title>
+            <link>https://speakerdeck.com/nwiizo/claude-everywhere</link>
+            <guid>https://speakerdeck.com/nwiizo/claude-everywhere</guid>
+            <pubDate>Wed, 18 Jun 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[イベント名:【オフライン開催】KAGのLT会 #6 〜御社のエンジニア育成どうしてる!? スペシャル〜公式URL: https://kddi-agile.connpass.com/event/357862/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[普段利用している自作コマンドを詳解]]></title>
             <link>https://zenn.dev/akasan/articles/5339c2de1f99db</link>
@@ -229,13 +236,6 @@
             <guid>https://sreake.com/blog/aws-community-builders-2025/</guid>
             <pubDate>Mon, 02 Jun 2025 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）に所属の鈴木 勝史が、「AWS Community Builders」に2年連続で選出されたことをお知らせします。The post スリーシェイク所属のエンジニアが「AWS Community Builders」に選出 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Pythonのtypingについて改めて調べてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/b1643e49d81dfe</link>
-            <guid>https://zenn.dev/akasan/articles/b1643e49d81dfe</guid>
-            <pubDate>Sun, 01 Jun 2025 10:21:58 GMT</pubDate>
-            <content:encoded><![CDATA[今回はPythonのtypingについて今までちゃんと調べずに使っていたこともあったので調べてみることにしました。 typingとは？Pythonでデフォルトで利用可能なtypingは、Pythonにおけるタイプヒントをサポートする目的で実装されています。以下が公式ページになります。注釈にも書いてありますが、一般的はPythonランタイムは関数や変数のアノテーションについて強制することはありません。あくまで型アノテーションは明示的に型を示すことでセルフドキュメントとして機能します。※ mypyなどの静的型チェッカーを利用するさいはタイプヒントが必要です。基本的にはmypyを利用し...]]></content:encoded>
         </item>
     </channel>
 </rss>
