@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 23 Jun 2025 11:35:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Jun 2025 22:36:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Golangでテストコードに入門してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/7fa1c6d3d4693c</link>
+            <guid>https://zenn.dev/akasan/articles/7fa1c6d3d4693c</guid>
+            <pubDate>Mon, 23 Jun 2025 12:14:19 GMT</pubDate>
+            <content:encoded><![CDATA[今回はGolangでのテストコードに入門してみました。私自身普段あまりGolangは使ってこなかったのですが、今回使う気概があり、テストコードが必要だったので入門してみました。 早速やってみる シンプルな例で。。。まずはプロジェクトの初期化をします。goenvを使っているので、以下のようにして環境を立てました。mkdir go_test_prac && cd go_test_pracgoenv local 1.22.3まずはシンプルな四則演算を実装しているコードを作成しました。func.gopackage mainimport "fmt"fu...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[自己認識から自己拡張へについて.md]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/06/23/150028</link>
@@ -228,13 +235,6 @@
             <guid>https://zenn.dev/akasan/articles/6333702fc35afc</guid>
             <pubDate>Fri, 06 Jun 2025 13:41:14 GMT</pubDate>
             <content:encoded><![CDATA[今回は、私の使っているzshに蓄えられた過去のコマンド履歴について、何を一番使ってきたのかをただ確認したかったので確認するためのコードを書いたという内容を共有します。 実装開始！！！ .zsh_historyのフォーマット意外と~/.zsh_historyを直接みたことがある人は少ないのではないでしょうか？かくいう自分も今回はじめてみました。ファイルは以下のようになっています。以下は最初の20行をお見せしています。このようなフォーマットになっており、実行したコマンドは基本的には;の直ごに来ていそうなので、実装ではその部分を取り出すようにしました。: 1702554011:0;...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Oracle Database＠Google Cloudの紹介～ついに日本のリージョンも使えるようになったぞ！～]]></title>
-            <link>https://sreake.com/blog/oracle-database-google-cloud-japan-launch/</link>
-            <guid>https://sreake.com/blog/oracle-database-google-cloud-japan-launch/</guid>
-            <pubDate>Fri, 06 Jun 2025 10:48:27 GMT</pubDate>
-            <content:encoded><![CDATA[2025年4月のGoogle Cloud Nextでの発表から2か月、ついにOracle Database＠Google CloudがTokoy・Osakaリージョンで利用可能になりました。 Oracle Databas […]The post Oracle Database＠Google Cloudの紹介～ついに日本のリージョンも使えるようになったぞ！～ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
