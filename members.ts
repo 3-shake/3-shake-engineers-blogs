@@ -597,5 +597,16 @@ export const members: Member[] = [
     githubUsername: "silasolla",
     twitterUsername: "silasolla",
     websiteUrl: "https://silasol.la",
+  },
+  {
+    id: "amine",
+    name: "Amine Ilidrissi",
+    avatarSrc: "/avatars/amine.jpeg",
+    role: "Full Stack Application Engineer",
+    bio: "Writing about Laravel, Astro, and whatever happens on the job",
+    sources: ["https://qiita.com/aminevg/feed"],
+    githubUsername: "aminevg",
+    twitterUsername: "realaminevg",
+    websiteUrl: "",
   }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
