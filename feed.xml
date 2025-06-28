@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 27 Jun 2025 22:36:23 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Jun 2025 11:34:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コマンド紹介シリーズ：terminalizer]]></title>
+            <link>https://zenn.dev/akasan/articles/facccc0169d83b</link>
+            <guid>https://zenn.dev/akasan/articles/facccc0169d83b</guid>
+            <pubDate>Sat, 28 Jun 2025 06:45:37 GMT</pubDate>
+            <content:encoded><![CDATA[コマンド紹介シリーズ第9回目は、terminalizerというコマンドを紹介します。ターミナルでの作業を録画し、GIFアニメーションを作成するためのツールです。なお、第8回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/0bcf36a4251a96 terminalizerとは？terminalizerとは公式の説明によると、Record your terminal and generate animated gif images or share a web player link www.termi...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Ollamaを使ってみた]]></title>
             <link>https://zenn.dev/akasan/articles/389d6234af1c9c</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/2b240c4b343765</guid>
             <pubDate>Fri, 13 Jun 2025 13:58:13 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Apache ResilientDBについて調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache ResilientDBとは？公式サイトによると、Apache ResilientDB (Incubating...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Causewayとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/7cfad98e6acbdb</link>
-            <guid>https://zenn.dev/akasan/articles/7cfad98e6acbdb</guid>
-            <pubDate>Thu, 12 Jun 2025 12:48:04 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Apache Causeway。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Causewayとは？公式サイトによると、Apache Causeway™ enables domain-driven applicat...]]></content:encoded>
         </item>
     </channel>
 </rss>
