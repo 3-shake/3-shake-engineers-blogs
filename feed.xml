@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 28 Jun 2025 22:35:09 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Jun 2025 11:34:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コマンド紹介シリーズ：scc]]></title>
+            <link>https://zenn.dev/akasan/articles/841dcbd5c409d5</link>
+            <guid>https://zenn.dev/akasan/articles/841dcbd5c409d5</guid>
+            <pubDate>Sun, 29 Jun 2025 08:31:50 GMT</pubDate>
+            <content:encoded><![CDATA[コマンド紹介シリーズ記念すべき第10回目は、sccというコマンドを紹介します。どのような種類のファイルがどれくらいの行数で記述されているかなどを取得できるコマンドとなっています。なお、第9回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/facccc0169d83b sccとは？sccとは公式GitHubによると、A tool similar to cloc, sloccount and tokei. For counting the lines of code, blank lines, commen...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[生成AIで小説を書くためにプロンプトの制約や原則について学ぶ / prompt-engineering-for-ai-fiction ]]></title>
+            <link>https://speakerdeck.com/nwiizo/prompt-engineering-for-ai-fiction</link>
+            <guid>https://speakerdeck.com/nwiizo/prompt-engineering-for-ai-fiction</guid>
+            <pubDate>Sun, 29 Jun 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[諸君、聞かれよ。本日、私は「女オタ生成AIハッカソン2025夏東京」なる前代未聞の催しにて、生まれて初めて登壇することと相成った。かつての私は純朴なプログラマーであり、「変数名を30分悩んだ挙句、結局tmpにする」という、実に平凡な悩みを抱える程度の技術者であったのだ。歳月は容赦なく流れ、今や私はプロンプトエンジニアリングという名の魔境に足を踏み入れた哀れな求道者となり果てた。昨夜も丑三つ時まで、私は薄暗い書斎でディスプレイの冷たき光に照らされながら、「なぜ生成AIは『簡潔に』と百回唱えても、源氏物語の長文を生成するのか」という哲学的難題と格闘していたのである。30分という持ち時間に対し50枚のスライドを用意するという、まるで賽の河原で石を積む如き徒労に及んでいる。そのうち半分は「プロンプトという名の現代呪術における失敗例集」と題した、私の苦悩の結晶である。ああ、AIとの対話とは、かくも人間の正気を奪うものなのか。---]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：terminalizer]]></title>
             <link>https://zenn.dev/akasan/articles/facccc0169d83b</link>
@@ -222,20 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/9d0a38752e9426</guid>
             <pubDate>Sun, 15 Jun 2025 05:27:13 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Apache Avro（以下、Avro）について調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Avroとは？公式サイトによると、Apache Avro™ is the leading serialization ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[uqlmによるハルシネーション検知をしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/b4e9597ac4f265</link>
-            <guid>https://zenn.dev/akasan/articles/b4e9597ac4f265</guid>
-            <pubDate>Sat, 14 Jun 2025 11:00:10 GMT</pubDate>
-            <content:encoded><![CDATA[今回はハルシネーションを検知するためのライブラリであるuqlmを使ってみました。 uqlmとは？uqlmはハルシネーションを検知するためのライブラリであり、最新のuncertainty quantification techniquesを利用して検知するようです。RAGなどのグラウンディング技術を用いることで一定ハルシネーション発生の可能性を低くすることはできるものの、100%なくすことはできないと思います。そこで、ハルシネーションは発生する前提でそれをいかに検知するかが大事だと思っており、そのためのツールとしてとてもいいと思い、今回使ってみました。https://github....]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache ResilientDBとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/2b240c4b343765</link>
-            <guid>https://zenn.dev/akasan/articles/2b240c4b343765</guid>
-            <pubDate>Fri, 13 Jun 2025 13:58:13 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Apache ResilientDBについて調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache ResilientDBとは？公式サイトによると、Apache ResilientDB (Incubating...]]></content:encoded>
         </item>
     </channel>
 </rss>
