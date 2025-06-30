@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 30 Jun 2025 11:35:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Jun 2025 22:35:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コマンド紹介シリーズ：kdash]]></title>
+            <link>https://zenn.dev/akasan/articles/b520532e647f6d</link>
+            <guid>https://zenn.dev/akasan/articles/b520532e647f6d</guid>
+            <pubDate>Mon, 30 Jun 2025 12:31:31 GMT</pubDate>
+            <content:encoded><![CDATA[コマンド紹介シリーズ第11回目は、kdashというコマンドを紹介します。kdashを使うことでターミナル上でKubernetesのダッシュボードを作成できます。なお、第10回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/841dcbd5c409d5 kdashとは公式GitHubによると、A simple terminal dashboard for Kubernetes built with Rustということで、Rust製ののターミナルで動くKubernetesのダッシュボードということです。...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[「あつまれ Lookerの森 #3」 オンサイト行ってきました記録]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/5da95def70336b</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/924c37bd0841f2</guid>
             <pubDate>Wed, 18 Jun 2025 13:05:05 GMT</pubDate>
             <content:encoded><![CDATA[6月もそろそろ終盤になってきましたね。そこで、先月に続いて、今月読んでいた本を紹介しようと思います。5月版はこちらになりますので、ご興味があればぜひ参照してください！https://zenn.dev/akasan/articles/b37d1767115ee0 Observability系 入門　監視こちらはシステムの監視について必要な情報を得るための入門書として読みました。インフラ構築からSREまで幅広く業務で対応する必要があり、私自身まだ知識が浅いなと思っているので読みました。ページ数もそこまで多くなく、一気に読めました。内容はObservabilityの入門書としてとて...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude Code どこまでも/ Claude Code Everywhere]]></title>
-            <link>https://speakerdeck.com/nwiizo/claude-everywhere</link>
-            <guid>https://speakerdeck.com/nwiizo/claude-everywhere</guid>
-            <pubDate>Wed, 18 Jun 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[僕がClaude Codeに初めて触れたのは、2025年の春だった。生成AIにはすでに慣れ親しんでいた。流行に乗り遅れてはいけないと必死に勉強し、エディターの補完機能やコード生成ツールとして日常的に活用していた。ただ、当時の僕にとってそれはまだ「CLIで動く便利なコーディング支援ツール」程度の認識でしかなかった。「AIが90%のコードを自動生成」という謳い文句を見ても、半信半疑でターミナルを開いたのを覚えている。イベント名:【オフライン開催】KAGのLT会 #6 〜御社のエンジニア育成どうしてる!? スペシャル〜公式URL: https://kddi-agile.connpass.com/event/357862/「実装」から「設計」へのパラダイムシフト というより無限に体力が必要という話をした https://syu-m-5151.hatenablog.com/entry/2025/06/19/102529【参考文献】  - 公式ドキュメント    - Claude Code 公式サイト https://www.anthropic.com/claude-code    - Claude Code ドキュメント https://docs.anthropic.com/en/docs/claude-code/overview    - Claude Code Best Practices https://www.anthropic.com/engineering/claude-code-best-practices    - 抽象化をするということ - 具体と抽象の往復を身につける https://speakerdeck.com/soudai/abstraction-and-concretization    - How I Use Claude Code https://spiess.dev/blog/how-i-use-claude-code    - LLMの制約を味方にする開発術 https://zenn.dev/hidenorigoto/articles/38b22a2ccbeac6    - Claude Code版Orchestratorで複雑なタスクをステップ実行する https://zenn.dev/mizchi/articles/claude-code-orchestrator    - Agentic Coding Recommendations https://lucumr.pocoo.org/2025/6/12/agentic-coding/    - Claude Codeに保守しやすいコードを書いてもらうための事前準備 https://www.memory-lovers.blog/entry/2025/06/12/074355    - Claude Codeによる技術的特異点を見届けろ https://zenn.dev/mizchi/articles/claude-code-singularity-point]]></content:encoded>
         </item>
     </channel>
 </rss>
