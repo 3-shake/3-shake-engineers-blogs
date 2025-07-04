@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 04 Jul 2025 11:35:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Jul 2025 22:35:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[mypyでPythonの型チェックをしてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/ae29fc6022402b</link>
+            <guid>https://zenn.dev/akasan/articles/ae29fc6022402b</guid>
+            <pubDate>Fri, 04 Jul 2025 13:37:08 GMT</pubDate>
+            <content:encoded><![CDATA[今回はPythonの型チェックをできるmypyを使ってみたので紹介します。 mypyとは？mypyはPythonの静的型チェックツールになります。Pythonは動的型付言語であり、データ型の厳密なチェックが基本的にされません。実装の難易度を下げて柔軟なコーディングができる反面、データ型の間違いによるエラーが発生するかどうかが実行するまでわからないという弱点があります。mypyを使うことにより、静的型チェックを実施することができるので、データ型の扱い方のミスなどを事前に気づくことができます。https://github.com/python/mypy 使ってみる インストー...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[grypeを使ってdockerイメージの脆弱性診断してみた]]></title>
             <link>https://zenn.dev/akasan/articles/c34a95cf1b8c13</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/71389d9e4b0b33</guid>
             <pubDate>Thu, 19 Jun 2025 13:30:09 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Hivemindについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Hivemindとは？公式サイトによると、HiveMind is an services and configur...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[「やっちゃえ、バーサーカー」Container-Useで実現するAIエージェントの開発環境]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2025/06/19/174659</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2025/06/19/174659</guid>
-            <pubDate>Thu, 19 Jun 2025 08:46:59 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにAIコーディングエージェント（Claude Code、Cursor、Cline等）の普及により、開発効率は飛躍的に向上しました。しかし、複数のAIエージェントを同時に使用する際、以下のような課題に直面することがあります：ファイルの競合: 複数のエージェントが同じファイルを同時に編集環境の汚染: 一つのエージェントの変更が他の作業に影響作業追跡の困難: どのエージェントが何を変更したか把握しにくいこれらの課題を解決するのが、Daggerが開発したContainer-Useです。github.comDaggerとは何かDaggerはDockerの創設者Solomon Hykes氏が2018年に立ち上げた会社で、「DevOpsオペレーティングシステム」の構築を目指しています 。コンテナで開発者の問題を解決したHykesは、今度は「CI/CDの混乱状態」という開発者とインフラの間の複雑な問題に挑戦しています 。Container-UseとはContainer-Useは、AIエージェント向けのMCP（Model Context Protocol）サーバーで、各エージェントに独立したコンテナ環境を提供します。dagger.io主要な機能隔離されたコンテナ環境: 各AIエージェントが独立した環境で動作Gitブランチによる変更管理: すべての変更が自動的にGitブランチに記録リアルタイム監視: cu watchコマンドで全環境の動作を一元監視複数環境の並列実行: 複数のエージェントが干渉することなく同時作業可能インストールと初期設定前提条件Docker（macOSの場合はColima推奨）Gitインストール方法# Homebrewを使用brew install dagger/tap/container-use# または、curlを使用curl -fsSL https://raw.githubusercontent.com/dagger/container-use/main/install.sh | bashgithub.comClaude Codeとの連携設定.claude/settings.local.jsonに以下を追加：{  "mcpServers": {    "container-use": {      "command": "container-use"    }  },  "permissions": {    "allow": [      "mcp__container-use__environment_open",      "mcp__container-use__environment_file_write",      "mcp__container-use__environment_run_cmd",      "mcp__container-use__environment_update"    ]  }}実際の動作例1. MCP経由でのContainer-Use操作Claude Code内でContainer-Use MCPサーバーを使用して、実際に環境を作成・操作した例です：# test-cu-demo環境を作成environment_id: test-cu-demo/polite-herring# Pythonスクリプトを作成して実行#!/usr/bin/env python3import osimport socketprint("Hello from Container-Use!")print(f"Hostname: {socket.gethostname()}")print(f"Working Directory: {os.getcwd()}")# 実行結果：# Hello from Container-Use!# Hostname: dagger# Working Directory: /workdir2. リアルタイム監視（cu watch）cu watchコマンドを実行すると、すべての環境の動作をリアルタイムで監視できます。各環境での操作（ファイル作成、コマンド実行等）が時系列で表示されます。3. Webアプリケーションの実行Container-Use内でWebアプリケーションを実行し、ポートを公開することも可能です：# 簡単なHTTPサーバーを作成from http.server import HTTPServer, BaseHTTPRequestHandlerclass SimpleHandler(BaseHTTPRequestHandler):    def do_GET(self):        self.send_response(200)        self.send_header('Content-type', 'text/html')        self.end_headers()        self.wfile.write(f'''        <html>            <body>                <h1>Hello from Container-Use!</h1>                <p>Container Hostname: {socket.gethostname()}</p>            </body>        </html>        '''.encode())# ポート8080で実行 → localhost:61753にマッピング実際に公開されたサイトのスクリーンショットでは、コンテナ内で動作するアプリケーションがブラウザから正常にアクセスできることが確認できます。基本的な使い方Container-Use MCPサーバーの主な機能Container-UseはMCPサーバーとして動作し、AIエージェントから以下の操作が可能です：environment_open: 新しい環境を作成environment_file_write: ファイルの作成・編集environment_file_read: ファイルの読み取りenvironment_run_cmd: コマンドの実行environment_update: 環境の更新（パッケージインストール等）environment_file_delete: ファイルの削除監視コマンド# リアルタイム監視cu watch# 環境一覧cu list# ログ確認cu log <環境名>まとめContainer-Useは、AIコーディングエージェントに安全で隔離された実行環境を提供する革新的なツールです。主な利点：完全な隔離: 各エージェントが独立した環境で動作透明性: すべての操作がGitブランチに記録並列性: 複数のエージェントが干渉なく同時作業安全性: メイン環境を汚染しない実験が可能AIエージェントを活用した開発をより安全で効率的にしたい方は、ぜひContainer-Useを試してみてください。参考リンクContainer-Use GitHubMCP (Model Context Protocol)Dagger公式サイト]]></content:encoded>
         </item>
     </channel>
 </rss>
