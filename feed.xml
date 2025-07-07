@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 06 Jul 2025 22:35:45 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Jul 2025 11:35:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[スリーシェイク、NVIDIA Inception に参加]]></title>
+            <link>https://sreake.com/blog/nvidia-inception/</link>
+            <guid>https://sreake.com/blog/nvidia-inception/</guid>
+            <pubDate>Mon, 07 Jul 2025 10:29:15 GMT</pubDate>
+            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、テクノロジーの進歩によって業界に革命を起こすスタートアップ企業を育成するプログラムであるNVIDIA Inceptionに参加しました。The post スリーシェイク、NVIDIA Inception に参加 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenLLMetryへの入門]]></title>
             <link>https://zenn.dev/akasan/articles/aaf96c46284db0</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/724ce90df40b75</guid>
             <pubDate>Sun, 22 Jun 2025 07:09:35 GMT</pubDate>
             <content:encoded><![CDATA[今回はgRPCへ入門してみました。Pythonのチュートリアルを通して、どのように利用するのか学習しましたので、共有させてもらいます。 gRPCとは？まずはgRPCとは何かについて簡単に解説します。gRPCは以下の公式ページからご確認いただけます。https://grpc.io/docs/what-is-grpc/まず、RPCとはRemote Procedure Callの頭文字を撮ったものであり、ネットワーク越しに別サーバにある機能を呼び出すためのプロトコルとなります。その中でgRPCはGoogleによって開発されたフレームワークとなります。gRPCでは、クライアントアプリ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[nvimのカスタマイズを学びます ~keymap編~]]></title>
-            <link>https://zenn.dev/akasan/articles/913f3ae9c8cba3</link>
-            <guid>https://zenn.dev/akasan/articles/913f3ae9c8cba3</guid>
-            <pubDate>Sat, 21 Jun 2025 08:32:56 GMT</pubDate>
-            <content:encoded><![CDATA[今回からnvimのカスタマイズの方法について勉強していこうと思っています。まずはkeymapの設定方法について勉強してみました。 設定ファイルの構築まず、nvimの設定は$HOME/.config/nvimにて実装しています。キーマップはその中でlua/config/keymaps.luaで実装しています。 キーマップの設定方法まずはキーマップの設定方法について調べてみました。vimにはいくつかのモードがあり、どのモードの元でキーマップを設定するかを指定することができます。各モードごとにどのように設定するは以下のフォーマットでできるようです。基本フォーマット： vim.ke...]]></content:encoded>
         </item>
     </channel>
 </rss>
