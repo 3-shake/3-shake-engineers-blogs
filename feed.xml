@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 09 Jul 2025 11:36:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Jul 2025 22:35:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,12 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[mypy: type checker for python]]></title>
+            <link>https://daisuke1024akagawa.medium.com/mypy-type-checker-for-python-0cafa6124ad6?source=rss-c54ac439ad2b------2</link>
+            <guid>https://daisuke1024akagawa.medium.com/mypy-type-checker-for-python-0cafa6124ad6?source=rss-c54ac439ad2b------2</guid>
+            <pubDate>Wed, 09 Jul 2025 12:51:38 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Apache Gumpとはなんなのか？]]></title>
             <link>https://zenn.dev/akasan/articles/5691b542781fb1</link>
@@ -230,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/ae458c49fb7c76</guid>
             <pubDate>Tue, 24 Jun 2025 11:57:02 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Rollerについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Rollerとは？公式ページによると、Apache Roller is a Java-based, full-feat...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google CloudのPDEの更新がきたので受けてきましたよという話]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/74f196e3a1a84f</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/74f196e3a1a84f</guid>
-            <pubDate>Tue, 24 Jun 2025 10:43:47 GMT</pubDate>
-            <content:encoded><![CDATA[whatGoogle Cloud認定資格のProfessional Data Engineerの更新?が迫っていたので受験してきました記録2年ぶりの試験なので、当時との問題の違いとか個人的な所感とか…を簡単に受験結果は合格でした! Professional Data Engineerについてhttps://cloud.google.com/learn/certification/data-engineer?hl=jaGoogle Cloudの認定資格の一つGoogle Cloud製品におけるデータエンジニア領域の専門知識やスキルを問う試験【例】データ分析...]]></content:encoded>
         </item>
     </channel>
 </rss>
