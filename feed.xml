@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 11 Jul 2025 11:35:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Jul 2025 22:36:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：MLエンジニアが非MLエンジニアに伝えるときに気をつけていること]]></title>
+            <link>https://zenn.dev/akasan/articles/5b380d424af708</link>
+            <guid>https://zenn.dev/akasan/articles/5b380d424af708</guid>
+            <pubDate>Fri, 11 Jul 2025 12:44:21 GMT</pubDate>
+            <content:encoded><![CDATA[今回はMLエンジニアとして普段活動している私ですが、非MLエンジニアの方に自分のやっていることやプロジェクトの各フェーズにおいてどんなことを注意・意識して伝えるようにしているかまとめてみます。 大前提としていること大前提として、MLという領域は慣れてない人からするととても難しい領域に感じられがちです。理由としては例えば以下があるかなと思います。数学や統計学など高度な知識が必要そう難しい英語とかばっかり出てきそうそれぞれ正解だと思います。MLエンジニアである私ですら普段から感じていますし、他のMLエンジニアの方も多かれ少なかれ難しいと感じることでしょう。本職がそう感じて...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Apache Forrestとはなんなのか？]]></title>
             <link>https://zenn.dev/akasan/articles/ad35f63dbf46a7</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/satohjohn/articles/4d205e445714cf</guid>
             <pubDate>Wed, 25 Jun 2025 16:15:27 GMT</pubDate>
             <content:encoded><![CDATA[概要Gemini cli ってのが出ました。https://github.com/google-gemini/gemini-cli基本的には Gemini code assist をローカルでも使えるようなイメージを感じています。（間違ってたらすいません)https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/30分程度とりま調べた限りでまとめます。無料という言葉に人間は弱いのだよ。 表題の通りやってみる。とりま npm -g でインストールしたら ge...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PyEnchantを使ってスペルチェックをしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/09c84177fc5884</link>
-            <guid>https://zenn.dev/akasan/articles/09c84177fc5884</guid>
-            <pubDate>Wed, 25 Jun 2025 14:11:47 GMT</pubDate>
-            <content:encoded><![CDATA[今回はPyEnchantを使って英語のスペルチェックをしてみました。 PyEnchantとは？公式GitHubによると、Enchantは単語のスペルをチェックし、スペルミスがある場合は修正候補を提示するライブラリのようです。ispell、aspell、MySpellなど、多くの一般的なスペルチェックパッケージに対応しており、複数の辞書や言語に対応できる柔軟性も備えています。例えばHeloと入力した時にHelloじゃないですか？と提示してくれるイメージです。ユースケースとしては、例えば英語を対象とした言語モデルを作るときに、存在していない単語を学習に利用しないために、不正確な単語が...]]></content:encoded>
         </item>
     </channel>
 </rss>
