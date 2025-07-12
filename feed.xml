@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 11 Jul 2025 22:36:21 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Jul 2025 11:34:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年7月版読んでいて良かった本紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/05fc81a6ab77e5</link>
+            <guid>https://zenn.dev/akasan/articles/05fc81a6ab77e5</guid>
+            <pubDate>Sat, 12 Jul 2025 08:12:43 GMT</pubDate>
+            <content:encoded><![CDATA[7月もあっという間に中盤になってきましたね。先月に続いて、今月読んでいた本を紹介しようと思います。6月版はこちらになりますので、ご興味があればぜひ参照してください！https://zenn.dev/akasan/articles/924c37bd0841f2 マネジメント エンジニアリング統括責任者の手引き、エンジニアリングマネージャーのしごと最近PL業務を任せていただくことが多くなっており、改めてどのようにチームを牽引していくのが良いか学びたいと思いチョイスしました。チームメンバーがどんなことが得意か、どんな悩みがあるか、将来的にどんなことをやってみたいかなどを考えるきっか...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編：MLエンジニアが非MLエンジニアに伝えるときに気をつけていること]]></title>
             <link>https://zenn.dev/akasan/articles/5b380d424af708</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/6618da4fe05367</guid>
             <pubDate>Thu, 26 Jun 2025 12:51:30 GMT</pubDate>
             <content:encoded><![CDATA[今回はkubernetesの練習を兼ねて、FastAPIサーバをGKE上にデプロイしてみました。 GKEへのFastAPIサーバのデプロイ システム構成今回はレプリカ数を1としてFastAPIサーバをGKE上で構築します。ロードバランサーサービスを利用して外部公開しました。 Google Cloudの設定ここではプロジェクトは作成済みであるとします。まず、Dockerイメージを保管するためのArtifact Registryを作成します。gcloud artifacts repositories create fastapi-repo --repository-fo...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Gemini cli が出たっぽいので cloud run deploy までやってみるぞ]]></title>
-            <link>https://zenn.dev/satohjohn/articles/4d205e445714cf</link>
-            <guid>https://zenn.dev/satohjohn/articles/4d205e445714cf</guid>
-            <pubDate>Wed, 25 Jun 2025 16:15:27 GMT</pubDate>
-            <content:encoded><![CDATA[概要Gemini cli ってのが出ました。https://github.com/google-gemini/gemini-cli基本的には Gemini code assist をローカルでも使えるようなイメージを感じています。（間違ってたらすいません)https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/30分程度とりま調べた限りでまとめます。無料という言葉に人間は弱いのだよ。 表題の通りやってみる。とりま npm -g でインストールしたら ge...]]></content:encoded>
         </item>
     </channel>
 </rss>
