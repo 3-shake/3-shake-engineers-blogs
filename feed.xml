@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 14 Jul 2025 11:35:54 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Jul 2025 22:36:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[loguruを使ってPythonロガーを簡単に扱おう]]></title>
+            <link>https://zenn.dev/akasan/articles/5bc09d38ef3ca3</link>
+            <guid>https://zenn.dev/akasan/articles/5bc09d38ef3ca3</guid>
+            <pubDate>Mon, 14 Jul 2025 12:40:06 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Pythonのロガーを簡単に利用できるようにしたloguruを紹介しようと思います。※ 本記事ではサンプルコードの生成のために一部claude codeを利用しています。 Pythonでログを取る方法についてまずはPythonでログを取る方法についてそもそもどうやるのかをみていきましょう。Pythonには標準機能としてloggingモジュールを使うことが多いと思います。例えば最低限の用意でロガーを用意する場合以下のようにすると作成できます。default_logging.pyimport loggingfrom logging import getLogger...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude CodeのHooksは設定したほうがいい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/07/14/105812</link>
@@ -229,13 +236,6 @@
             <guid>https://qiita.com/aminevg/items/4912c95b795c6739d703</guid>
             <pubDate>Fri, 27 Jun 2025 07:26:55 GMT</pubDate>
             <content:encoded><![CDATA[背景Cloud Runはサーバーレスでコンテナを動かせる便利なサービスですが、複数のサービスを連携させようとすると、ネットワーク構成で悩むことがあります。例えば、フロントエンドは一般公開し、バックエンドは内部ネットワークからのみアクセス可能にしたい場合VPC内の...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AI にどんなコードを書かれても大丈夫！DevContainer+mise で築く「壊されても安心でユニバーサル」な開発環境]]></title>
-            <link>https://sreake.com/blog/safe-universal-dev-env-with-devcontainer-mise/</link>
-            <guid>https://sreake.com/blog/safe-universal-dev-env-with-devcontainer-mise/</guid>
-            <pubDate>Thu, 26 Jun 2025 13:16:14 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに：生成 AI 時代の新たな悩み 「ChatGPT、このバグを直して！」 「GitHub Copilot、この機能を実装して！」 そんなふうに生成 AI に頼んでコードを書いてもらったら、気づいたら開発環境がぐちゃ […]The post AI にどんなコードを書かれても大丈夫！DevContainer+mise で築く「壊されても安心でユニバーサル」な開発環境 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
