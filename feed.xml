@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 17 Jul 2025 11:36:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Jul 2025 22:36:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[claude codeを使って立方体を回転するコード作らせた]]></title>
+            <link>https://zenn.dev/akasan/articles/11fed840eedaa7</link>
+            <guid>https://zenn.dev/akasan/articles/11fed840eedaa7</guid>
+            <pubDate>Thu, 17 Jul 2025 13:54:52 GMT</pubDate>
+            <content:encoded><![CDATA[今回はタイトル通り、claude codeを使ったらコンソール画面で立方体を回転させることができるか試してみました。 早速使ってみる 環境構築まずはclaude codeを実行させるための環境を用意しました。uv init python_3d_console -p 3.12cd python_3d_console claude codeログ記録について私は普段claude codeのやり取りを保存するために以下のスラッシュコマンドを自作して使ってます。使い方はマークダウン通りで/log_chatコマンドを使います。指定したファイルにプロンプトやclaude codeの...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[mlflow 3でGenAIへの対応がされたので使ってみた]]></title>
             <link>https://zenn.dev/akasan/articles/b37450993c3dce</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/841dcbd5c409d5</guid>
             <pubDate>Sun, 29 Jun 2025 08:31:50 GMT</pubDate>
             <content:encoded><![CDATA[コマンド紹介シリーズ記念すべき第10回目は、sccというコマンドを紹介します。どのような種類のファイルがどれくらいの行数で記述されているかなどを取得できるコマンドとなっています。なお、第9回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/facccc0169d83b sccとは？sccとは公式GitHubによると、A tool similar to cloc, sloccount and tokei. For counting the lines of code, blank lines, commen...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[生成AIで小説を書くためにプロンプトの制約や原則について学ぶ / prompt-engineering-for-ai-fiction ]]></title>
-            <link>https://speakerdeck.com/nwiizo/prompt-engineering-for-ai-fiction</link>
-            <guid>https://speakerdeck.com/nwiizo/prompt-engineering-for-ai-fiction</guid>
-            <pubDate>Sun, 29 Jun 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[諸君、聞かれよ。本日、私は「女オタ生成AIハッカソン2025夏東京」なる前代未聞の催しにて、生まれて初めて登壇することと相成った。かつての私は純朴なプログラマーであり、「変数名を30分悩んだ挙句、結局tmpにする」という、実に平凡な悩みを抱える程度の技術者であったのだ。歳月は容赦なく流れ、今や私はプロンプトエンジニアリングという名の魔境に足を踏み入れた哀れな求道者となり果てた。昨夜も丑三つ時まで、私は薄暗い書斎でディスプレイの冷たき光に照らされながら、「なぜ生成AIは『簡潔に』と百回唱えても、源氏物語の長文を生成するのか」という哲学的難題と格闘していたのである。30分という持ち時間に対し50枚のスライドを用意するという、まるで賽の河原で石を積む如き徒労に及んでいる。そのうち半分は「プロンプトという名の現代呪術における失敗例集」と題した、私の苦悩の結晶である。ああ、AIとの対話とは、かくも人間の正気を奪うものなのか。---ブログも書いた。生成AIで物語を書くためにプロンプトの制約や原則について学ぶ、という話をしてきました #女オタ生成AI部https://syu-m-5151.hatenablog.com/entry/2025/06/30/171149]]></content:encoded>
         </item>
     </channel>
 </rss>
