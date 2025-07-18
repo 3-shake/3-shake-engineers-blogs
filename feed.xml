@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 17 Jul 2025 22:36:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Jul 2025 11:36:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Analytics Development Lifecycle（ADLC）について]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/19d54d6c57cd93</link>
+            <guid>https://zenn.dev/nedoko_dok0dko/articles/19d54d6c57cd93</guid>
+            <pubDate>Fri, 18 Jul 2025 10:59:32 GMT</pubDate>
+            <content:encoded><![CDATA[whatdbt Labsが提唱する「Analytics Development Lifecycle(ADLC)」について調べてみたことやわかったことの個人ログ!⚠️ 元記事が英語であり、それを翻訳&個人的意訳しているので少々文章が読みにくくなっているかもしれません Analytics Development Lifecycle（ADLC）とは？※ 日本語にすると「開発分析ライフサイクル」となる?https://www.getdbt.com/resources/the-analytics-development-lifecycle組織がデータ分析をより良く...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[git statusをfuzzy findする時にプロンプトタイトルにブランチ情報を出すと便利 with telescope.nvim]]></title>
+            <link>https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/</link>
+            <guid>https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/</guid>
+            <pubDate>Fri, 18 Jul 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[様々なエディタで活躍するfuzzy finder。これを使うと、ファイルやコマンドを曖昧検索して開いたり実行したりできます。私はNeovimのファジーファインダープラグインであるtelesope.nvimを愛用しています。実際どんなことができるんだろうと気になるかたは、ぜひ以下の記事もご覧ください。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[claude codeを使って立方体を回転するコード作らせた]]></title>
             <link>https://zenn.dev/akasan/articles/11fed840eedaa7</link>
@@ -222,20 +236,6 @@
             <guid>https://sreake.com/blog/gemini-code-assist-prisma-review/</guid>
             <pubDate>Mon, 30 Jun 2025 06:59:22 GMT</pubDate>
             <content:encoded><![CDATA[一般的にデータベースの変更はアプリケーションの変更に比べると影響が大きく、慎重な対応が求められます。またcreatedAtのデフォルト値など、実行タイミングにより値が変動する設定をし忘れた場合、元の値を復元することは困難 […]The post Gemini Code Assist for GitHubでPrisma ORMのデータモデリングをレビューする first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク所属のエンジニアが「2025 Japan All AWS Certifications Engineers」に選出]]></title>
-            <link>https://sreake.com/blog/2025-japan-all-aws-certifications-engineers/</link>
-            <guid>https://sreake.com/blog/2025-japan-all-aws-certifications-engineers/</guid>
-            <pubDate>Mon, 30 Jun 2025 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、スリーシェイク所属のエンジニア鈴木 勝史が、「2025 Japan All AWS Certifications Engineers」に選出されたことをお知らせします。The post スリーシェイク所属のエンジニアが「2025 Japan All AWS Certifications Engineers」に選出 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コマンド紹介シリーズ：scc]]></title>
-            <link>https://zenn.dev/akasan/articles/841dcbd5c409d5</link>
-            <guid>https://zenn.dev/akasan/articles/841dcbd5c409d5</guid>
-            <pubDate>Sun, 29 Jun 2025 08:31:50 GMT</pubDate>
-            <content:encoded><![CDATA[コマンド紹介シリーズ記念すべき第10回目は、sccというコマンドを紹介します。どのような種類のファイルがどれくらいの行数で記述されているかなどを取得できるコマンドとなっています。なお、第9回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/facccc0169d83b sccとは？sccとは公式GitHubによると、A tool similar to cloc, sloccount and tokei. For counting the lines of code, blank lines, commen...]]></content:encoded>
         </item>
     </channel>
 </rss>
