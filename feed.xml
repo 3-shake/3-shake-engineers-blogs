@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 19 Jul 2025 22:35:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Jul 2025 11:34:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[今年上期の総まとめと下期目標まとめてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/6af6521e9447e3</link>
+            <guid>https://zenn.dev/akasan/articles/6af6521e9447e3</guid>
+            <pubDate>Sun, 20 Jul 2025 04:26:58 GMT</pubDate>
+            <content:encoded><![CDATA[2025年7月も中旬にさしかかりあっという間にしも気になっていると言うことで、今年の上期の振り返りと下期の目標をまとめてみます。 上期総まとめ 技術的な視点で上期は現職に1月から入社して様々な技術スタックを新たに身につけることができています。少し上げてみるだけでも以下のようにいろいろありますね。Google Cloud/AWSKubernetes/IaC生成AIGolang特にGoogle Cloudはプロジェクトで使うことも多いですし、AWSを利用したMLOpsの構築なども対応してきて、どんどんクラウドサービスの実践知識が蓄積されてきました。Kubernetes...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：navi]]></title>
             <link>https://zenn.dev/akasan/articles/0fafdc64b8ae1c</link>
@@ -222,13 +229,6 @@
             <guid>https://zenn.dev/akasan/articles/1633f745945c56</guid>
             <pubDate>Tue, 01 Jul 2025 13:15:57 GMT</pubDate>
             <content:encoded><![CDATA[今回はDockerを利用してローカルでKubernetes環境を構築できるkindを用いて、FastAPIサーバを実装してみました。 kindとは？公式ページによると、kind is a tool for running local Kubernetes clusters using Docker container “nodes”.kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.ということで、Dockerコンテナを...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コマンド紹介シリーズ：kdash]]></title>
-            <link>https://zenn.dev/akasan/articles/b520532e647f6d</link>
-            <guid>https://zenn.dev/akasan/articles/b520532e647f6d</guid>
-            <pubDate>Mon, 30 Jun 2025 12:31:31 GMT</pubDate>
-            <content:encoded><![CDATA[コマンド紹介シリーズ第11回目は、kdashというコマンドを紹介します。kdashを使うことでターミナル上でKubernetesのダッシュボードを作成できます。なお、第10回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/841dcbd5c409d5 kdashとは公式GitHubによると、A simple terminal dashboard for Kubernetes built with Rustということで、Rust製ののターミナルで動くKubernetesのダッシュボードということです。...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[「あつまれ Lookerの森 #3」 オンサイト行ってきました記録]]></title>
