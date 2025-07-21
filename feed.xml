@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 21 Jul 2025 11:36:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Jul 2025 22:36:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Agent Development KitとAgent Engineを使ってVertex AI Agent Builderに入門してみる]]></title>
+            <link>https://sreake.com/blog/vertex-ai-agent-builder-with-agent-development-kit-and-agent-engine/</link>
+            <guid>https://sreake.com/blog/vertex-ai-agent-builder-with-agent-development-kit-and-agent-engine/</guid>
+            <pubDate>Mon, 21 Jul 2025 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[1. 概要 本記事では、Googleが提供するAgent Development Kit (ADK) とAgent Engineを利用して、AIエージェントの構築方法を紹介しつつ、Vertex AI Agent Buil […]The post Agent Development KitとAgent Engineを使ってVertex AI Agent Builderに入門してみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[argocdに入門してみた]]></title>
             <link>https://zenn.dev/akasan/articles/e43105fe5175d3</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/9c36321eefbb1a</guid>
             <pubDate>Wed, 02 Jul 2025 13:07:39 GMT</pubDate>
             <content:encoded><![CDATA[今回は、マルチエージェントワークフローを開発するためのライブラリであるopenai-agents-pythondを使ってみたので紹介します。 openai-agents-pythonとは？公式GitHubによると、The OpenAI Agents SDK is a lightweight yet powerful framework for building multi-agent workflows. It is provider-agnostic, supporting the OpenAI Responses and Chat Completions APIs, as ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[「あつまれ Lookerの森 #3」 オンサイト行ってきました記録]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/5da95def70336b</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/5da95def70336b</guid>
-            <pubDate>Mon, 30 Jun 2025 11:21:02 GMT</pubDate>
-            <content:encoded><![CDATA[what6/27に開催された「あつまれ Lookerの森 #3」のオンサイト参加ログです当日の雰囲気や登壇者の方々の発表内容等を簡単にまとめたものになります あつまれ Lookerの森とはJagu'e'rのデータ利活用分科会が主催するLookerにフォーカスを当てた勉強会です※ Jagu'e'r: Google Cloudのユーザー会。Lookerだけでなく様々なGoogle Cloud製品に関したコミュニティやイベントを企画・開催しています今回は3回目ということでしたが、私は初めての参加でした。コミュニティイベントというのも初参加だったため、「どんな雰囲気なのだ...]]></content:encoded>
         </item>
     </channel>
 </rss>
