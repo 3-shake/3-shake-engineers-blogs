@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 20 Jul 2025 22:36:05 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Jul 2025 11:36:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[argocdに入門してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/e43105fe5175d3</link>
+            <guid>https://zenn.dev/akasan/articles/e43105fe5175d3</guid>
+            <pubDate>Mon, 21 Jul 2025 06:26:04 GMT</pubDate>
+            <content:encoded><![CDATA[今回はGetting Startedを通してArgoCDに入門してみました。 ArgoCDとは？ArgoCDとは公式ページによるとArgo CD is a declarative, GitOps continuous delivery tool for Kubernetes.ということで、Kubernetes用の宣言型のGitOps継続的デリバリーツールということです。GitOpsとは、Gitレポジトリを信頼できるソースとして取り扱い、Gitレポジトリ上での変更に対して環境を構築するというOpsになります。ArgoCDはGitOpsのうち特にKubernetes環境に特化し...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[今年上期の総まとめと下期目標まとめてみた]]></title>
             <link>https://zenn.dev/akasan/articles/6af6521e9447e3</link>
@@ -222,13 +229,6 @@
             <guid>https://zenn.dev/akasan/articles/9c36321eefbb1a</guid>
             <pubDate>Wed, 02 Jul 2025 13:07:39 GMT</pubDate>
             <content:encoded><![CDATA[今回は、マルチエージェントワークフローを開発するためのライブラリであるopenai-agents-pythondを使ってみたので紹介します。 openai-agents-pythonとは？公式GitHubによると、The OpenAI Agents SDK is a lightweight yet powerful framework for building multi-agent workflows. It is provider-agnostic, supporting the OpenAI Responses and Chat Completions APIs, as ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[kindでローカルでKubernetesを用いてFastAPIサーバを立ち上げる]]></title>
-            <link>https://zenn.dev/akasan/articles/1633f745945c56</link>
-            <guid>https://zenn.dev/akasan/articles/1633f745945c56</guid>
-            <pubDate>Tue, 01 Jul 2025 13:15:57 GMT</pubDate>
-            <content:encoded><![CDATA[今回はDockerを利用してローカルでKubernetes環境を構築できるkindを用いて、FastAPIサーバを実装してみました。 kindとは？公式ページによると、kind is a tool for running local Kubernetes clusters using Docker container “nodes”.kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.ということで、Dockerコンテナを...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[「あつまれ Lookerの森 #3」 オンサイト行ってきました記録]]></title>
