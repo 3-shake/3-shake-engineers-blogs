@@ -608,5 +608,17 @@ export const members: Member[] = [
     githubUsername: "aminevg",
     twitterUsername: "realaminevg",
     websiteUrl: "",
+  },
+  {
+    id: "reito",
+    name: "Reito Koike",
+    role: "SRE",
+    bio: "curiosity-driven SRE",
+    avatarSrc: "/avatars/reito.png",
+    sources: ["https://zenn.dev/r4ynode/feed", "https://qiita.com/r4ynode/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "r4ynode",
+    githubUsername: "r4ynode",
+    websiteUrl: "",
   }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
