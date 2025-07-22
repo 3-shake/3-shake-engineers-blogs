@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 22 Jul 2025 11:35:44 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Jul 2025 22:36:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Zennでブログを書くのに使っているツールの紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/9e0a6f1e0d0f1a</link>
+            <guid>https://zenn.dev/akasan/articles/9e0a6f1e0d0f1a</guid>
+            <pubDate>Tue, 22 Jul 2025 12:23:42 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Zennでブログを書くときにどのようなツールを使っているか紹介しようと思います。 GitHub私はZennの記事をGitHub連携で管理しています。GitHub連携を用いると、Gitレポジトリにて記事を管理し、特定のブランチにPushされたら差分を反映させるということができるようになります。この機能を有効化するとZenn上では記事の編集ができなくなってしまいますが、GitHubで管理すると過去の記事の修正なども変更が終えるのでとてもいいかなと思います。連携方法は以下を参照ください。https://zenn.dev/zenn/articles/connect-to-gith...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[【開催報告】2025年夏ワークショップ「クラウドネイティブ技術を体験しよう！」を開催しました]]></title>
             <link>https://sreake.com/blog/2025-summer-workshop-report/</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/c34a95cf1b8c13</guid>
             <pubDate>Thu, 03 Jul 2025 14:29:55 GMT</pubDate>
             <content:encoded><![CDATA[今回はgrypeを使って、dockerイメージの脆弱性を検知してみました。 grypeとは？公式GitHubによると、A vulnerability scanner for container images and filesystems. Easily install the binary to try it out. Works with Syft, the powerful SBOM (software bill of materials) tool for container images and filesystems.ということで、コンテナイメージとファイルシス...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ローカルエディタからワンクリックでGoogle Cloud Workstationに接続する方法]]></title>
-            <link>https://qiita.com/aminevg/items/27f55b1809b6629567f6</link>
-            <guid>https://qiita.com/aminevg/items/27f55b1809b6629567f6</guid>
-            <pubDate>Wed, 02 Jul 2025 13:43:33 GMT</pubDate>
-            <content:encoded><![CDATA[背景皆さんは、Google Cloud Workstationsという製品はご存知ですか？「フルマネージド開発環境」を提供していて、セキュリティの強化や開発者のオンボーディングの加速を期待できる製品です。クラウド上の開発環境ということもあって、ブラウザ内での開...]]></content:encoded>
         </item>
     </channel>
 </rss>
