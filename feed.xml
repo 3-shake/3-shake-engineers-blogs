@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 21 Jul 2025 22:36:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Jul 2025 11:35:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【開催報告】2025年夏ワークショップ「クラウドネイティブ技術を体験しよう！」を開催しました]]></title>
+            <link>https://sreake.com/blog/2025-summer-workshop-report/</link>
+            <guid>https://sreake.com/blog/2025-summer-workshop-report/</guid>
+            <pubDate>Mon, 21 Jul 2025 23:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 2025年7月3日（木）・4日（金）の2日間、株式会社スリーシェイクの夏ワークショップを開催しました。今回は13名の学生の皆さんにご参加いただき、クラウドネイティブ技術の世界を体験していただきました。 📸 ワー […]The post 【開催報告】2025年夏ワークショップ「クラウドネイティブ技術を体験しよう！」を開催しました first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Agent Development KitとAgent Engineを使ってVertex AI Agent Builderに入門してみる]]></title>
             <link>https://sreake.com/blog/vertex-ai-agent-builder-with-agent-development-kit-and-agent-engine/</link>
@@ -229,13 +236,6 @@
             <guid>https://qiita.com/aminevg/items/27f55b1809b6629567f6</guid>
             <pubDate>Wed, 02 Jul 2025 13:43:33 GMT</pubDate>
             <content:encoded><![CDATA[背景皆さんは、Google Cloud Workstationsという製品はご存知ですか？「フルマネージド開発環境」を提供していて、セキュリティの強化や開発者のオンボーディングの加速を期待できる製品です。クラウド上の開発環境ということもあって、ブラウザ内での開...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[openai-agents-pythonを使ってマルチエージェントシステムを作ってみた]]></title>
-            <link>https://zenn.dev/akasan/articles/9c36321eefbb1a</link>
-            <guid>https://zenn.dev/akasan/articles/9c36321eefbb1a</guid>
-            <pubDate>Wed, 02 Jul 2025 13:07:39 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、マルチエージェントワークフローを開発するためのライブラリであるopenai-agents-pythondを使ってみたので紹介します。 openai-agents-pythonとは？公式GitHubによると、The OpenAI Agents SDK is a lightweight yet powerful framework for building multi-agent workflows. It is provider-agnostic, supporting the OpenAI Responses and Chat Completions APIs, as ...]]></content:encoded>
         </item>
     </channel>
 </rss>
