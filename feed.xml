@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 23 Jul 2025 00:57:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Jul 2025 11:36:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[転職したらAWS MCPサーバーだった件]]></title>
+            <link>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaraaws-mcpsabadatutajian</link>
+            <guid>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaraaws-mcpsabadatutajian</guid>
+            <pubDate>Wed, 23 Jul 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[「 転職したらMCPサーバーだった件」というタイトルで登壇したことがある。本日は「JAWS-UG SRE支部 #13 つよつよSREの秘伝のタレ」というなんとなく強そうなイベントで登壇しました。🔍 イベント詳細:- イベント名: JAWS-UG SRE支部 #13 つよつよSREの秘伝のタレ- 公式URL: https://jawsug-sre.connpass.com/event/358781/- ハッシュタグ: https://x.com/search?q=%23jawsug_sre&f=live- 参考資料①: https://speakerdeck.com/nwiizo/zhuan-zhi-sitaramcpsabadatutajian]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Zennでブログを書くのに使っているツールの紹介]]></title>
             <link>https://zenn.dev/akasan/articles/9e0a6f1e0d0f1a</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/r4ynode/articles/obsidian-how-to-use-geminicli</guid>
             <pubDate>Sun, 06 Jul 2025 09:00:02 GMT</pubDate>
             <content:encoded><![CDATA[はじめにObsidianとGemini CLIを組み合わせた知的生産の効率化手法が注目されています。プロジェクト専用のGEMINI.mdを作成してVault直下に配置し、Gemini CLIを起動することで、ノート作成や情報整理のワークフローを大幅に改善できるというものです。しかし、Obsidianでノートを書きながら別途ターミナルを開いてアプリを行き来するやり方は、思考の流れを分断しがちです。現状のObsidianのAI機能は発展途上であり、多くのユーザーがCursorやGemini CLIなどの外部ツールを併用しているのが実情でしょう。理想的なのは、ノート作成や情報整理の...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenLLMetryへの入門]]></title>
-            <link>https://zenn.dev/akasan/articles/aaf96c46284db0</link>
-            <guid>https://zenn.dev/akasan/articles/aaf96c46284db0</guid>
-            <pubDate>Sun, 06 Jul 2025 04:14:09 GMT</pubDate>
-            <content:encoded><![CDATA[今回はLLMアプリケーションのオブザーバビリティを実現するためのOpenLLMetryについて紹介しようと思います。 OpenLLMetryとは？OpenLLMetryとは、OpenTelemetryをベースに構築されており、LLMアプリケーションに関してオブザーバビリティを提供してくれるツールになります。OpenTelemetryの拡張であることから、既存のアプリケーション監視基盤の形式を踏襲しつつLLMに適したオブザーバビリティを導入することができます。 早速使ってみましょうOpenLLMetryはtraceloopによって展開されており、公式サイトおよびGitHubレポ...]]></content:encoded>
         </item>
     </channel>
 </rss>
