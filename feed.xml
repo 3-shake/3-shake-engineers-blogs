@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 23 Jul 2025 11:36:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Jul 2025 22:37:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apache Commons Numbersとはなんなのか？]]></title>
+            <link>https://zenn.dev/akasan/articles/686bcca556decf</link>
+            <guid>https://zenn.dev/akasan/articles/686bcca556decf</guid>
+            <pubDate>Wed, 23 Jul 2025 12:12:11 GMT</pubDate>
+            <content:encoded><![CDATA[今回はApache Commons Numbersについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Commons Numbersとは？公式サイトによると、Apache Commons Numbers...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[転職したらAWS MCPサーバーだった件]]></title>
             <link>https://speakerdeck.com/nwiizo/zhuan-zhi-sitaraaws-mcpsabadatutajian</link>
@@ -229,13 +236,6 @@
             <guid>https://sreake.com/blog/nvidia-inception/</guid>
             <pubDate>Mon, 07 Jul 2025 10:29:15 GMT</pubDate>
             <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、テクノロジーの進歩によって業界に革命を起こすスタートアップ企業を育成するプログラムであるNVIDIA Inceptionに参加しました。The post スリーシェイク、NVIDIA Inception に参加 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Obsidian上でGeminiを使う理想環境の探求]]></title>
-            <link>https://zenn.dev/r4ynode/articles/obsidian-how-to-use-geminicli</link>
-            <guid>https://zenn.dev/r4ynode/articles/obsidian-how-to-use-geminicli</guid>
-            <pubDate>Sun, 06 Jul 2025 09:00:02 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにObsidianとGemini CLIを組み合わせた知的生産の効率化手法が注目されています。プロジェクト専用のGEMINI.mdを作成してVault直下に配置し、Gemini CLIを起動することで、ノート作成や情報整理のワークフローを大幅に改善できるというものです。しかし、Obsidianでノートを書きながら別途ターミナルを開いてアプリを行き来するやり方は、思考の流れを分断しがちです。現状のObsidianのAI機能は発展途上であり、多くのユーザーがCursorやGemini CLIなどの外部ツールを併用しているのが実情でしょう。理想的なのは、ノート作成や情報整理の...]]></content:encoded>
         </item>
     </channel>
 </rss>
