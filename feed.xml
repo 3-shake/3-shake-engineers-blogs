@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 24 Jul 2025 11:35:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Jul 2025 22:36:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[OpenLIT解説：Get started編]]></title>
+            <link>https://zenn.dev/akasan/articles/20e3fd8a87c44a</link>
+            <guid>https://zenn.dev/akasan/articles/20e3fd8a87c44a</guid>
+            <pubDate>Thu, 24 Jul 2025 13:43:58 GMT</pubDate>
+            <content:encoded><![CDATA[今回はOpenLITについて、Get startedを試してみたので共有しようと思います。 OpenLITとは？OpenLITは、Generative AIとLLMにおけるAI開発ワークフローを簡素化するための仕組みを提供するものとなります。LLMの実験やプロンプトの整理とバージョン管理、APIキーのセキュアな取り扱いといった様々な重要なタスクを効率化して運用することができます。また、OpenTelemetryネイティブの可観測性を実現し、LLM、ベクターデータベース、GPUを含むフルスタックのモニタリングを実現でき、開発者はAI機能やアプリケーションを構築し、テストから本番環境へ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Apache Commons Numbersとはなんなのか？]]></title>
             <link>https://zenn.dev/akasan/articles/686bcca556decf</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/a4ad368de2cd4a</guid>
             <pubDate>Mon, 07 Jul 2025 12:53:39 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Sqoopについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Sqoopとは？Apache Sqoopとは公式ページによると、Apache Sqoop(TM) is a tool d...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、NVIDIA Inception に参加]]></title>
-            <link>https://sreake.com/blog/nvidia-inception/</link>
-            <guid>https://sreake.com/blog/nvidia-inception/</guid>
-            <pubDate>Mon, 07 Jul 2025 10:29:15 GMT</pubDate>
-            <content:encoded><![CDATA[株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、テクノロジーの進歩によって業界に革命を起こすスタートアップ企業を育成するプログラムであるNVIDIA Inceptionに参加しました。The post スリーシェイク、NVIDIA Inception に参加 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
