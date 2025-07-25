@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 25 Jul 2025 11:36:20 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Jul 2025 22:36:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ついに記事数が100到達したので振り返り]]></title>
+            <link>https://zenn.dev/akasan/articles/8fb26bfd1fe732</link>
+            <guid>https://zenn.dev/akasan/articles/8fb26bfd1fe732</guid>
+            <pubDate>Fri, 25 Jul 2025 14:05:54 GMT</pubDate>
+            <content:encoded><![CDATA[今回はこの記事で100記事目になりましたので、ただただ振り返ります。 そもそもなんで記事書いているの？私はセルフエンドレスアドベントカレンダーという呼び名で実施しており、それのためにひたすら記事を毎日書いております。記事の概略についてはこちらを参考にしてください。https://zenn.dev/akasan/articles/4aba4d3a0616ce 記事を書き続けてどう変わった？自分がこのアドベントカレンダーを初めて生活がどう変わったかまとめてみます。毎日記事を書くのに時間がかかるので、時間の管理がちょっとだけうまくなった気がする毎日何を書くか考える必要がある...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenLIT解説：Get started編]]></title>
             <link>https://zenn.dev/akasan/articles/20e3fd8a87c44a</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/a65b74f47a204d</guid>
             <pubDate>Tue, 08 Jul 2025 13:37:14 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Kubernetes上で異なるFastAPIサーバを立てて、片方のFastAPIサーバにアクセスすると別のFastAPIサーバにアクセスされる環境を作ってみました。まだマイクロサービスを構築した経験が少ないので、まずはシンプルな構成から始めてみます。 今回のシステム構成今回は以下のような構成でシステムを構築します。Google CloudのGKE上でシステムを構成DockerイメージはArtifact Registryに保存FastAPIサーバは二種類建てるパブリックアクセスをするためのサーバパブリックサーバからアクセスされるが、クラスタ内に閉じているプライベ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Sqoopとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/a4ad368de2cd4a</link>
-            <guid>https://zenn.dev/akasan/articles/a4ad368de2cd4a</guid>
-            <pubDate>Mon, 07 Jul 2025 12:53:39 GMT</pubDate>
-            <content:encoded><![CDATA[今回はApache Sqoopについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Sqoopとは？Apache Sqoopとは公式ページによると、Apache Sqoop(TM) is a tool d...]]></content:encoded>
         </item>
     </channel>
 </rss>
