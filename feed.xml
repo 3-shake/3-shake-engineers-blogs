@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 25 Jul 2025 22:36:28 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Jul 2025 11:35:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Auth0を用いたセキュアなFastAPIサーバの実装について]]></title>
+            <link>https://zenn.dev/akasan/articles/2f574b0c8e2550</link>
+            <guid>https://zenn.dev/akasan/articles/2f574b0c8e2550</guid>
+            <pubDate>Sat, 26 Jul 2025 10:33:27 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Auth0を用いてFastAPIサーバをセキュアに構築する方法について共有します。 Auth0とは？Auth0は認証認可を簡単に実装するために利用できるプラットフォームであり、ECサイトからアプリケーション開発者まで幅広く利用されています。様々なアプリケーションに簡単に組み込むことができる上に、実現できるセキュアな状態のレベルが高いことから、多くの場面で利用されていることを目にします。https://auth0.com/ 今回やりたいこと今回はFastAPIサーバを立てる時に、Auth0を用いてアクセス制限等の認証認可を実現したいと思い調べていたところ、以下のチュー...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ついに記事数が100到達したので振り返り]]></title>
             <link>https://zenn.dev/akasan/articles/8fb26bfd1fe732</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/5691b542781fb1</guid>
             <pubDate>Wed, 09 Jul 2025 10:38:01 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Gumpについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Gumpとは？公式サイトによるとThe Apache Gump continuous integration tool w...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes上の異なるPodにFastAPIサーバを立てて通信させてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/a65b74f47a204d</link>
-            <guid>https://zenn.dev/akasan/articles/a65b74f47a204d</guid>
-            <pubDate>Tue, 08 Jul 2025 13:37:14 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Kubernetes上で異なるFastAPIサーバを立てて、片方のFastAPIサーバにアクセスすると別のFastAPIサーバにアクセスされる環境を作ってみました。まだマイクロサービスを構築した経験が少ないので、まずはシンプルな構成から始めてみます。 今回のシステム構成今回は以下のような構成でシステムを構築します。Google CloudのGKE上でシステムを構成DockerイメージはArtifact Registryに保存FastAPIサーバは二種類建てるパブリックアクセスをするためのサーバパブリックサーバからアクセスされるが、クラスタ内に閉じているプライベ...]]></content:encoded>
         </item>
     </channel>
 </rss>
