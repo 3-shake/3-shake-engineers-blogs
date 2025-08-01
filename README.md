@@ -4,6 +4,9 @@ Fork of https://github.com/catnose99/team-blog-hub
 published at: https://blog.3-shake.com/
 ## Development
 ```bash
+# install Volta
+$ curl https://get.volta.sh | bash
+
 $ yarn install
 $ yarn build
 $ yarn dev
