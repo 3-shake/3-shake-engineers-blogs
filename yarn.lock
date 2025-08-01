@@ -11,10 +11,11 @@ __metadata:
   dependencies:
     "@types/fs-extra": "npm:^9.0.2"
     "@types/node": "npm:^18.14.2"
+    "@types/react": "npm:19.1.9"
     "@types/react-dom": "npm:^18.0.11"
     "@typescript-eslint/eslint-plugin": "npm:^4.4.1"
     "@typescript-eslint/parser": "npm:^4.4.1"
-    dayjs: "npm:^1.11.13"
+    dayjs: "npm:1.11.13"
     eslint-config-prettier: "npm:^6.13.0"
     eslint-plugin-prettier: "npm:^3.1.4"
     eslint-plugin-react: "npm:^7.21.4"
@@ -326,6 +327,15 @@ __metadata:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/4eed866942388f76252e2d90356ff050f84d47044537528e35a87b9d98cac6938cc7b889a04653bf6f86dca488fa2adbb7bd748f5494bb18204ef654c0bee284
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:19.1.9":
+  version: 19.1.9
+  resolution: "@types/react@npm:19.1.9"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/b418da4aaf18fbc6df4f1b7096dda7ee152d697cac00d729ffd855b2b44a3a9cfb2ecb017ed20979ea3a7d98a5ce5fcf01ac1a3614d4a3e4d7069a0c45e49b0f
   languageName: node
   linkType: hard
 
@@ -741,7 +751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.13":
+"dayjs@npm:1.11.13":
   version: 1.11.13
   resolution: "dayjs@npm:1.11.13"
   checksum: 10c0/a3caf6ac8363c7dade9d1ee797848ddcf25c1ace68d9fe8678ecf8ba0675825430de5d793672ec87b24a69bf04a1544b176547b2539982275d5542a7955f35b7
