@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 01 Aug 2025 11:36:12 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Aug 2025 22:37:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：普段使ってる自作コマンド達を紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/309acfb329c51d</link>
+            <guid>https://zenn.dev/akasan/articles/309acfb329c51d</guid>
+            <pubDate>Fri, 01 Aug 2025 13:39:32 GMT</pubDate>
+            <content:encoded><![CDATA[今回は普段ターミナルで作業するときに活用している自作コマンド達を紹介しようと思います。なお、ここで定義しているコマンド達は一部claude codeなどの生成AIによって生成したものも含まれます。 自作コマンドの定義自作コマンドは~/.config/zsh/hogehoge.zshの形で設定し、~/.zshrcでまとめて読み込むように書いています。 コマンド達 ffmpeg編動画像を仕事で扱う時は時折ffmpegを利用していて、その中でよく利用するコマンドを別途定義しています。使い方は中盤-h/--helpの説明を参照してください。動画を一定間隔で分割するfunc...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[データサイエンティスト検定を受験してみた]]></title>
             <link>https://zenn.dev/akasan/articles/75c9d5cd4fdb2e</link>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/07/15/prefer-luadoc-to-luals-semantictokens/</guid>
             <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[イマドキのエディタだとシンタックスハイライトを組込みのエンジンとLanguage Serverの両方で実現している場合があります。組み合わせることで、表現力を獲得できますが、Luaの場合は型アノテーションのシンタックスハイライトの精度の都合で、Language Serverの機能を無効化した方が幸せかもしれません。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[loguruを使ってPythonロガーを簡単に扱おう]]></title>
-            <link>https://zenn.dev/akasan/articles/5bc09d38ef3ca3</link>
-            <guid>https://zenn.dev/akasan/articles/5bc09d38ef3ca3</guid>
-            <pubDate>Mon, 14 Jul 2025 12:40:06 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Pythonのロガーを簡単に利用できるようにしたloguruを紹介しようと思います。※ 本記事ではサンプルコードの生成のために一部claude codeを利用しています。 Pythonでログを取る方法についてまずはPythonでログを取る方法についてそもそもどうやるのかをみていきましょう。Pythonには標準機能としてloggingモジュールを使うことが多いと思います。例えば最低限の用意でロガーを用意する場合以下のようにすると作成できます。default_logging.pyimport loggingfrom logging import getLogger...]]></content:encoded>
         </item>
     </channel>
 </rss>
