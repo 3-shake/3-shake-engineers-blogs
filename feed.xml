@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 01 Aug 2025 22:37:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Aug 2025 11:35:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Terraformを利用してFastAPIサーバをCloud Runへデプロイ]]></title>
+            <link>https://zenn.dev/akasan/articles/25766ce1ab7473</link>
+            <guid>https://zenn.dev/akasan/articles/25766ce1ab7473</guid>
+            <pubDate>Sat, 02 Aug 2025 08:15:52 GMT</pubDate>
+            <content:encoded><![CDATA[今回はTerraformを利用してFastAPIサーバをCloud Runへデプロイしてみます。Terraformについて現在勉強中なので、まずは最低限の構成で試してみます。 今回作るシステム今回は以下の条件で検証します。IaCにはTerraformを採用FastAPIを利用してアプリケーションサーバを実装Google CloudArtifact RegistryにFastAPIのDockerイメージを格納Cloud Runにサーバをデプロイ それでは実装してみる FastAPIサーバの実装まずはFastAPIサーバを実装します。最初にuvを使って環...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編：普段使ってる自作コマンド達を紹介]]></title>
             <link>https://zenn.dev/akasan/articles/309acfb329c51d</link>
@@ -230,13 +237,6 @@
             <guid>https://zenn.dev/akasan/articles/27fa208d900629</guid>
             <pubDate>Tue, 15 Jul 2025 13:22:47 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Xindiceについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Xindiceとは？公式ページによると、Apache Xindice is a database designed ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LuaのシンタックスハイライトはLanguage ServerのSemantic TokensよりTreesitterに任せたほうがよさげ]]></title>
-            <link>https://blog.atusy.net/2025/07/15/prefer-luadoc-to-luals-semantictokens/</link>
-            <guid>https://blog.atusy.net/2025/07/15/prefer-luadoc-to-luals-semantictokens/</guid>
-            <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[イマドキのエディタだとシンタックスハイライトを組込みのエンジンとLanguage Serverの両方で実現している場合があります。組み合わせることで、表現力を獲得できますが、Luaの場合は型アノテーションのシンタックスハイライトの精度の都合で、Language Serverの機能を無効化した方が幸せかもしれません。]]></content:encoded>
         </item>
     </channel>
 </rss>
