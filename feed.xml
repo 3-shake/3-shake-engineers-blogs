@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 02 Aug 2025 11:35:01 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Aug 2025 22:36:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -20,6 +20,13 @@
             <guid>https://zenn.dev/akasan/articles/25766ce1ab7473</guid>
             <pubDate>Sat, 02 Aug 2025 08:15:52 GMT</pubDate>
             <content:encoded><![CDATA[今回はTerraformを利用してFastAPIサーバをCloud Runへデプロイしてみます。Terraformについて現在勉強中なので、まずは最低限の構成で試してみます。 今回作るシステム今回は以下の条件で検証します。IaCにはTerraformを採用FastAPIを利用してアプリケーションサーバを実装Google CloudArtifact RegistryにFastAPIのDockerイメージを格納Cloud Runにサーバをデプロイ それでは実装してみる FastAPIサーバの実装まずはFastAPIサーバを実装します。最初にuvを使って環...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[一家に一台Anneliちゃん！LM Studio × AivisSpeechで簡単AIコンパニオンを作ろう]]></title>
+            <link>https://zenn.dev/r4ynode/articles/local-llm-and-aivis-speech</link>
+            <guid>https://zenn.dev/r4ynode/articles/local-llm-and-aivis-speech</guid>
+            <pubDate>Fri, 01 Aug 2025 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに先日、LM Studioをダウンロードし、ローカルLLM環境を手に入れました。私はMacBookのバックグラウンドで常時稼働させています。詳しくはこちら↓https://zenn.dev/r4ynode/articles/local-llm-intro-with-obsidianまた、最近AivisSpeechという日本語音声合成エンジンを知りました。これがなかなか良くて、Anneliが可愛いだけでなく、合成音声の処理速度が速いです。https://aivis-project.com/ここでふと思いつきました。「完全ローカル環境で、自律的に動くAnneliちゃん作...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[短編：普段使ってる自作コマンド達を紹介]]></title>
@@ -230,13 +237,6 @@
             <guid>https://blog.atusy.net/2025/07/16/prefer-luadoc-to-luals-semantictokens/</guid>
             <pubDate>Wed, 16 Jul 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[幅が80文字程度で縦長な傾向のあるヘルプは、ftpluginを使って開くと同時に右端に移動すると邪魔にならず読みやすいです。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Xindiceとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/27fa208d900629</link>
-            <guid>https://zenn.dev/akasan/articles/27fa208d900629</guid>
-            <pubDate>Tue, 15 Jul 2025 13:22:47 GMT</pubDate>
-            <content:encoded><![CDATA[今回はApache Xindiceについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Xindiceとは？公式ページによると、Apache Xindice is a database designed ...]]></content:encoded>
         </item>
     </channel>
 </rss>
