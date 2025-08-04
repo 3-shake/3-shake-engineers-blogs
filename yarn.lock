@@ -11,7 +11,7 @@ __metadata:
   dependencies:
     "@types/fs-extra": "npm:^9.0.2"
     "@types/node": "npm:^18.14.2"
-    "@types/react": "npm:19.1.9"
+    "@types/react": "npm:18.2.0"
     "@types/react-dom": "npm:^18.0.11"
     "@typescript-eslint/eslint-plugin": "npm:^4.4.1"
     "@typescript-eslint/parser": "npm:^4.4.1"
@@ -25,7 +25,7 @@ __metadata:
     next: "npm:^13.2.2"
     npm-run-all: "npm:^4.1.5"
     prettier: "npm:^2.1.2"
-    react: "npm:^18.2.0"
+    react: "npm:18.2.0"
     react-dom: "npm:^18.2.0"
     rss-parser: "npm:^3.9.0"
     sass: "npm:^1.27.0"
@@ -330,12 +330,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.1.9":
-  version: 19.1.9
-  resolution: "@types/react@npm:19.1.9"
+"@types/react@npm:18.2.0":
+  version: 18.2.0
+  resolution: "@types/react@npm:18.2.0"
   dependencies:
+    "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/b418da4aaf18fbc6df4f1b7096dda7ee152d697cac00d729ffd855b2b44a3a9cfb2ecb017ed20979ea3a7d98a5ce5fcf01ac1a3614d4a3e4d7069a0c45e49b0f
+  checksum: 10c0/e38f98b7524817459bb1214d39f4cfcb1dd7ffb31992a427b4494f3988aa6195dc349dfb66b299270b399b34568d045bf1cb6230349a6d343e183052ee486eaa
+  languageName: node
+  linkType: hard
+
+"@types/scheduler@npm:*":
+  version: 0.26.0
+  resolution: "@types/scheduler@npm:0.26.0"
+  checksum: 10c0/84626b06551ab7e1247412a2588430da5cd75263a353f1fd70593ca7331d43797937b89fe587089c6b3613d0658986087c5f0b2debef5bae831cdc1104a432ef
   languageName: node
   linkType: hard
 
@@ -2117,7 +2126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
