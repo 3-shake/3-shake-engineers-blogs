@@ -19,13 +19,16 @@ jobs:
           node-version-file: package.json
           cache: yarn
 
-      - run: yarn
+      - name: Enable Corepack
+        run: corepack enable
 
-      - run: yarn build
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Build application
+        run: yarn build
         # env:
         #   URL_PREFIX: team-blog-hub
-
-      - run: yarn export
 
       - name: Copy CNAME
         run: cp CNAME out/CNAME

@@ -12,7 +12,6 @@
     "build:feed": "NODE_ENV=production ts-node --project tsconfig.builder.json ./src/builder/feed.ts",
     "build:next": "next build",
     "start": "next start",
-    "export": "next export",
     "typecheck": "tsc --noEmit",
     "format:fix": "prettier --write ."
   },
