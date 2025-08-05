@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 05 Aug 2025 11:36:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Aug 2025 22:37:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,19 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：Lensを使ってKubernetes環境をモニタリングしてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/9cc74002290a99</link>
+            <guid>https://zenn.dev/akasan/articles/9cc74002290a99</guid>
+            <pubDate>Tue, 05 Aug 2025 14:15:24 GMT</pubDate>
+            <content:encoded><![CDATA[今回はKubernetesのモニタリングなどに利用できるIDEであるLensを使ってみたので、その共有をしようと思います。※ 本日健康診断を受けた結果体力が著しくなくなっちゃったため、ほんとにちょっと使ってみた感想になってしまいました。そのため、次回もっと本格的にLensを使ってみて記事出しますので今日のところはこれで勘弁してくださいw Lensとは？Lensとは公式の説明によるとLens is a Kubernetes platform that provides tools for seamless interaction with Kubernetes clusters...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Agent Development Kitで作るマルチエージェントアプリケーション（GCNT2025）]]></title>
+            <link>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-gcnt2025</link>
+            <guid>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-gcnt2025</guid>
+            <pubDate>Tue, 05 Aug 2025 04:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[PyCaretを利用して簡単にモデル比較を行おう]]></title>
             <link>https://zenn.dev/akasan/articles/9844ec4f012639</link>
@@ -223,20 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/3812171607466e</guid>
             <pubDate>Fri, 18 Jul 2025 13:47:08 GMT</pubDate>
             <content:encoded><![CDATA[今回はOpenAI Cookbookで公開されている以下の記事について解説および実験してみました。https://cookbook.openai.com/examples/generate_images_with_high_input_fidelity Cookbookの概要今回取り扱うGenerate images with high input fideltyでは、Image APIおよび画像生成ツールで利用可能なinput_fideltyパラメータを利用して、入力特徴を保持する方法を学ぶことができます。input_fideltyパラメータをhighに設定すると、顔やロゴとい...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Analytics Development Lifecycle（ADLC）について]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/19d54d6c57cd93</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/19d54d6c57cd93</guid>
-            <pubDate>Fri, 18 Jul 2025 10:59:32 GMT</pubDate>
-            <content:encoded><![CDATA[whatdbt Labsが提唱する「Analytics Development Lifecycle(ADLC)」について調べてみたことやわかったことの個人ログ!⚠️ 元記事が英語であり、それを翻訳&個人的意訳しているので少々文章が読みにくくなっているかもしれません Analytics Development Lifecycle（ADLC）とは？※ 日本語にすると「開発分析ライフサイクル」となる?https://www.getdbt.com/resources/the-analytics-development-lifecycle組織がデータ分析をより良く...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[git statusをfuzzy findする時にプロンプトタイトルにブランチ情報を出すと便利 with telescope.nvim]]></title>
-            <link>https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/</link>
-            <guid>https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/</guid>
-            <pubDate>Fri, 18 Jul 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[様々なエディタで活躍するfuzzy finder。これを使うと、ファイルやコマンドを曖昧検索して開いたり実行したりできます。私はNeovimのファジーファインダープラグインであるtelesope.nvimを愛用しています。実際どんなことができるんだろうと気になるかたは、ぜひ以下の記事もご覧ください。]]></content:encoded>
         </item>
     </channel>
 </rss>
