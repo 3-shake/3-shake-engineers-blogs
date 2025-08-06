@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 06 Aug 2025 11:36:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Aug 2025 22:37:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Apache Linkisとはなんなのか？]]></title>
+            <link>https://zenn.dev/akasan/articles/0cad512332b58c</link>
+            <guid>https://zenn.dev/akasan/articles/0cad512332b58c</guid>
+            <pubDate>Wed, 06 Aug 2025 14:12:33 GMT</pubDate>
+            <content:encoded><![CDATA[今回はApache Linkisについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Linkisとは？公式サイトによると、Linkis builds a computation middleware l...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編：Lensを使ってKubernetes環境をモニタリングしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/9cc74002290a99</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/0fafdc64b8ae1c</guid>
             <pubDate>Sat, 19 Jul 2025 06:29:48 GMT</pubDate>
             <content:encoded><![CDATA[コマンド紹介シリーズ第12回目は、naviというコマンドを紹介します。naviを使うことでインタラクティブなチートシートを参照できるようになります。なお、第11回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/b520532e647f6d naviとは？公式GitHubによると、An interactive cheatsheet tool for the command-line.ということで、コマンドラインで動作するインタラクティブに利用できるチートシートということです。コマンドラインを利用すると...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenAI Cookbook 画像生成について試してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/3812171607466e</link>
-            <guid>https://zenn.dev/akasan/articles/3812171607466e</guid>
-            <pubDate>Fri, 18 Jul 2025 13:47:08 GMT</pubDate>
-            <content:encoded><![CDATA[今回はOpenAI Cookbookで公開されている以下の記事について解説および実験してみました。https://cookbook.openai.com/examples/generate_images_with_high_input_fidelity Cookbookの概要今回取り扱うGenerate images with high input fideltyでは、Image APIおよび画像生成ツールで利用可能なinput_fideltyパラメータを利用して、入力特徴を保持する方法を学ぶことができます。input_fideltyパラメータをhighに設定すると、顔やロゴとい...]]></content:encoded>
         </item>
     </channel>
 </rss>
