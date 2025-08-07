@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 07 Aug 2025 11:36:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Aug 2025 22:37:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Vimでヤンクした内容の上書き回避にはマイナス（-）をブラックホールレジスタにマッピングするといいよ]]></title>
+            <link>https://blog.atusy.net/2025/08/08/vim%E3%81%A7%E3%83%A4%E3%83%B3%E3%82%AF%E3%81%97%E3%81%9F%E5%86%85%E5%AE%B9%E3%81%AE%E4%B8%8A%E6%9B%B8%E3%81%8D%E5%9B%9E%E9%81%BF%E3%81%AB%E3%81%AF%E3%83%9E%E3%82%A4%E3%83%8A%E3%82%B9-%E3%82%92%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%81%AB%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%81%99%E3%82%8B%E3%81%A8%E3%81%84%E3%81%84%E3%82%88/</link>
+            <guid>https://blog.atusy.net/2025/08/08/vim%E3%81%A7%E3%83%A4%E3%83%B3%E3%82%AF%E3%81%97%E3%81%9F%E5%86%85%E5%AE%B9%E3%81%AE%E4%B8%8A%E6%9B%B8%E3%81%8D%E5%9B%9E%E9%81%BF%E3%81%AB%E3%81%AF%E3%83%9E%E3%82%A4%E3%83%8A%E3%82%B9-%E3%82%92%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%AC%E3%82%B8%E3%82%B9%E3%82%BF%E3%81%AB%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%81%99%E3%82%8B%E3%81%A8%E3%81%84%E3%81%84%E3%82%88/</guid>
+            <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[nnoremap - "_しておくと、ヤンクした内容を残しながら編集できて便利ですよ。"_ciwは入力しにくいですけど-ciwなら入力しやすいですよね。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloud RunにデプロイしたmlflowからArtifactsをダウンロードすることを禁止するには？]]></title>
             <link>https://zenn.dev/akasan/articles/5f823793737bf6</link>
@@ -229,13 +236,6 @@
             <guid>https://zenn.dev/akasan/articles/e43105fe5175d3</guid>
             <pubDate>Mon, 21 Jul 2025 06:26:04 GMT</pubDate>
             <content:encoded><![CDATA[今回はGetting Startedを通してArgoCDに入門してみました。 ArgoCDとは？ArgoCDとは公式ページによるとArgo CD is a declarative, GitOps continuous delivery tool for Kubernetes.ということで、Kubernetes用の宣言型のGitOps継続的デリバリーツールということです。GitOpsとは、Gitレポジトリを信頼できるソースとして取り扱い、Gitレポジトリ上での変更に対して環境を構築するというOpsになります。ArgoCDはGitOpsのうち特にKubernetes環境に特化し...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[技術イベントのメモはOpenAI WhisperとGemini CLIに任せる]]></title>
-            <link>https://zenn.dev/r4ynode/articles/audio-transcription-using-openai-whisper</link>
-            <guid>https://zenn.dev/r4ynode/articles/audio-transcription-using-openai-whisper</guid>
-            <pubDate>Mon, 21 Jul 2025 00:00:01 GMT</pubDate>
-            <content:encoded><![CDATA[イベントの内容覚えてますか？イベントに参加しても内容を覚えていることって少なくないですか？イベントに参加しただけで満足して、特に生産的な活動に活かすことなく終わってしまうことがあると思います。また、登壇者の話を必死にメモしようとして、肝心な内容を聞き逃してしまうこともよくあります。イベント参加は、個人的には学習のモチベーションアップに繋がるので良いのですが、せっかくなら学んだ内容をしっかり定着させたいと思いました。そこで、YouTubeや現地の音声を文字起こしして振り返りたいと考えたものの、理想的なツールが見つからなかったので自分で作ってみることにしました。この記事では、Op...]]></content:encoded>
         </item>
     </channel>
 </rss>
