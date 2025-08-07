@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 07 Aug 2025 05:04:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Aug 2025 11:36:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cloud RunにデプロイしたmlflowからArtifactsをダウンロードすることを禁止するには？]]></title>
+            <link>https://zenn.dev/akasan/articles/5f823793737bf6</link>
+            <guid>https://zenn.dev/akasan/articles/5f823793737bf6</guid>
+            <pubDate>Thu, 07 Aug 2025 11:03:16 GMT</pubDate>
+            <content:encoded><![CDATA[今回はCloud RunにデプロイしたmlflowサーバかのUIからアーティファクトのダウンロードを阻止することができるか調べてみました。mlflowに関するアドバイスをしようということでmlflowについてちょうど調べていました。mlflow uiではモデルに関連づけられたアーティファクトのダウンロード機能があるのですが、mlflow uiとしてはそのダウンロードを拒否する仕組みが備わっていないです。セキュリティリスクになることからこれを防ぐ方法はないか調べてみた結果、うまくIAM設定をすると対応できるということがわかったので、その方法をブログにしてみます。※ 今回のコードはclau...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Google Cloudサービスの生成AI関連サービス]]></title>
+            <link>https://speakerdeck.com/shukob/google-cloudsabisunosheng-cheng-aiguan-lian-sabisu</link>
+            <guid>https://speakerdeck.com/shukob/google-cloudsabisunosheng-cheng-aiguan-lian-sabisu</guid>
+            <pubDate>Thu, 07 Aug 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025年8月7日(木)、日本生成AIユーザ会 で「Google Cloudサービスの生成AI関連サービス」について発表しました。https://genai-users.connpass.com/event/361798/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Apache Linkisとはなんなのか？]]></title>
             <link>https://zenn.dev/akasan/articles/0cad512332b58c</link>
@@ -222,20 +236,6 @@
             <guid>https://zenn.dev/r4ynode/articles/audio-transcription-using-openai-whisper</guid>
             <pubDate>Mon, 21 Jul 2025 00:00:01 GMT</pubDate>
             <content:encoded><![CDATA[イベントの内容覚えてますか？イベントに参加しても内容を覚えていることって少なくないですか？イベントに参加しただけで満足して、特に生産的な活動に活かすことなく終わってしまうことがあると思います。また、登壇者の話を必死にメモしようとして、肝心な内容を聞き逃してしまうこともよくあります。イベント参加は、個人的には学習のモチベーションアップに繋がるので良いのですが、せっかくなら学んだ内容をしっかり定着させたいと思いました。そこで、YouTubeや現地の音声を文字起こしして振り返りたいと考えたものの、理想的なツールが見つからなかったので自分で作ってみることにしました。この記事では、Op...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[今年上期の総まとめと下期目標まとめてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/6af6521e9447e3</link>
-            <guid>https://zenn.dev/akasan/articles/6af6521e9447e3</guid>
-            <pubDate>Sun, 20 Jul 2025 04:26:58 GMT</pubDate>
-            <content:encoded><![CDATA[2025年7月も中旬にさしかかりあっという間にしも気になっていると言うことで、今年の上期の振り返りと下期の目標をまとめてみます。 上期総まとめ 技術的な視点で上期は現職に1月から入社して様々な技術スタックを新たに身につけることができています。少し上げてみるだけでも以下のようにいろいろありますね。Google Cloud/AWSKubernetes/IaC生成AIGolang特にGoogle Cloudはプロジェクトで使うことも多いですし、AWSを利用したMLOpsの構築なども対応してきて、どんどんクラウドサービスの実践知識が蓄積されてきました。Kubernetes...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コマンド紹介シリーズ：navi]]></title>
-            <link>https://zenn.dev/akasan/articles/0fafdc64b8ae1c</link>
-            <guid>https://zenn.dev/akasan/articles/0fafdc64b8ae1c</guid>
-            <pubDate>Sat, 19 Jul 2025 06:29:48 GMT</pubDate>
-            <content:encoded><![CDATA[コマンド紹介シリーズ第12回目は、naviというコマンドを紹介します。naviを使うことでインタラクティブなチートシートを参照できるようになります。なお、第11回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/b520532e647f6d naviとは？公式GitHubによると、An interactive cheatsheet tool for the command-line.ということで、コマンドラインで動作するインタラクティブに利用できるチートシートということです。コマンドラインを利用すると...]]></content:encoded>
         </item>
     </channel>
 </rss>
