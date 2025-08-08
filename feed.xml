@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 08 Aug 2025 11:43:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Aug 2025 22:43:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Pytorch Lightningに入門してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/2b625606090524</link>
+            <guid>https://zenn.dev/akasan/articles/2b625606090524</guid>
+            <pubDate>Fri, 08 Aug 2025 14:23:27 GMT</pubDate>
+            <content:encoded><![CDATA[今回はpytorchのエコシステムの一つであるLightningに入門してみました。 Lightningとは？PyTorch Lightningとは、PyTorchのエコシステムの一つであり、モデルの開発から本番運用まで広く対応したフレームワークです。最小限の労力で最大限の柔軟性を与えることができ、パフォーマンスを落とすことなくモデル開発を行うことができます。PyTorchのモデル学習では必ずしもLightningのようなフレームワークは必要なく、PyTorchのみでも十分モデル学習はできます。一方、実験管理などをしようとお思うと独自に実装する必要があったりで結構面倒な作業が多いの...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Agent Development Kitで作るマルチエージェントアプリケーション（AIAgent勉強会）]]></title>
             <link>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-aiagentmian-qiang-hui</link>
@@ -228,13 +235,6 @@
             <guid>https://sreake.com/blog/2025-summer-workshop-report/</guid>
             <pubDate>Mon, 21 Jul 2025 23:00:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 2025年7月3日（木）・4日（金）の2日間、株式会社スリーシェイクの夏ワークショップを開催しました。今回は13名の学生の皆さんにご参加いただき、クラウドネイティブ技術の世界を体験していただきました。 📸 ワー […]The post 【開催報告】2025年夏ワークショップ「クラウドネイティブ技術を体験しよう！」を開催しました first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Agent Development KitとAgent Engineを使ってVertex AI Agent Builderに入門してみる]]></title>
-            <link>https://sreake.com/blog/vertex-ai-agent-builder-with-agent-development-kit-and-agent-engine/</link>
-            <guid>https://sreake.com/blog/vertex-ai-agent-builder-with-agent-development-kit-and-agent-engine/</guid>
-            <pubDate>Mon, 21 Jul 2025 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[1. 概要 本記事では、Googleが提供するAgent Development Kit (ADK) とAgent Engineを利用して、AIエージェントの構築方法を紹介しつつ、Vertex AI Agent Buil […]The post Agent Development KitとAgent Engineを使ってVertex AI Agent Builderに入門してみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
