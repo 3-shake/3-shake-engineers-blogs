@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 08 Aug 2025 11:06:48 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Aug 2025 11:43:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,12 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Agent Development Kitで作るマルチエージェントアプリケーション（AIAgent勉強会）]]></title>
+            <link>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-aiagentmian-qiang-hui</link>
+            <guid>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-aiagentmian-qiang-hui</guid>
+            <pubDate>Fri, 08 Aug 2025 04:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Vimでヤンクした内容の上書き回避にはマイナス（-）をブラックホールレジスタにマッピングするといいよ]]></title>
             <link>https://blog.atusy.net/2025/08/08/map-minus-to-blackhole-register/</link>
@@ -229,13 +235,6 @@
             <guid>https://sreake.com/blog/vertex-ai-agent-builder-with-agent-development-kit-and-agent-engine/</guid>
             <pubDate>Mon, 21 Jul 2025 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[1. 概要 本記事では、Googleが提供するAgent Development Kit (ADK) とAgent Engineを利用して、AIエージェントの構築方法を紹介しつつ、Vertex AI Agent Buil […]The post Agent Development KitとAgent Engineを使ってVertex AI Agent Builderに入門してみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[argocdに入門してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/e43105fe5175d3</link>
-            <guid>https://zenn.dev/akasan/articles/e43105fe5175d3</guid>
-            <pubDate>Mon, 21 Jul 2025 06:26:04 GMT</pubDate>
-            <content:encoded><![CDATA[今回はGetting Startedを通してArgoCDに入門してみました。 ArgoCDとは？ArgoCDとは公式ページによるとArgo CD is a declarative, GitOps continuous delivery tool for Kubernetes.ということで、Kubernetes用の宣言型のGitOps継続的デリバリーツールということです。GitOpsとは、Gitレポジトリを信頼できるソースとして取り扱い、Gitレポジトリ上での変更に対して環境を構築するというOpsになります。ArgoCDはGitOpsのうち特にKubernetes環境に特化し...]]></content:encoded>
         </item>
     </channel>
 </rss>
