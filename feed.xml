@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 10 Aug 2025 22:42:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Aug 2025 11:42:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[yttに入門してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/b773d7c2be0327</link>
+            <guid>https://zenn.dev/akasan/articles/b773d7c2be0327</guid>
+            <pubDate>Mon, 11 Aug 2025 05:41:30 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、yttをを用いてYAMLファイルを生成する方法について学習してみました。 yttとは？公式サイトによると、Template and patch as needed to easily make your configuration reusable and extensible. Works with your own and third-party YAML configuration.ということで、YAMLファイルについてテンプレートとパッチを適用することで、設定を簡単に再利用・拡張できるツールということです。YAMLファイルは基本的には静的に指定した値を利用す...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Datadog LLM Observabilityへの入門]]></title>
             <link>https://zenn.dev/akasan/articles/c6e1a1a001f863</link>
@@ -228,13 +235,6 @@
             <guid>https://zenn.dev/akasan/articles/20e3fd8a87c44a</guid>
             <pubDate>Thu, 24 Jul 2025 13:43:58 GMT</pubDate>
             <content:encoded><![CDATA[今回はOpenLITについて、Get startedを試してみたので共有しようと思います。 OpenLITとは？OpenLITは、Generative AIとLLMにおけるAI開発ワークフローを簡素化するための仕組みを提供するものとなります。LLMの実験やプロンプトの整理とバージョン管理、APIキーのセキュアな取り扱いといった様々な重要なタスクを効率化して運用することができます。また、OpenTelemetryネイティブの可観測性を実現し、LLM、ベクターデータベース、GPUを含むフルスタックのモニタリングを実現でき、開発者はAI機能やアプリケーションを構築し、テストから本番環境へ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Commons Numbersとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/686bcca556decf</link>
-            <guid>https://zenn.dev/akasan/articles/686bcca556decf</guid>
-            <pubDate>Wed, 23 Jul 2025 12:12:11 GMT</pubDate>
-            <content:encoded><![CDATA[今回はApache Commons Numbersについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Commons Numbersとは？公式サイトによると、Apache Commons Numbers...]]></content:encoded>
         </item>
     </channel>
 </rss>
