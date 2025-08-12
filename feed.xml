@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 12 Aug 2025 00:58:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 12 Aug 2025 11:41:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rayシリーズ：Tasks]]></title>
+            <link>https://zenn.dev/akasan/articles/f5be2708dc34df</link>
+            <guid>https://zenn.dev/akasan/articles/f5be2708dc34df</guid>
+            <pubDate>Tue, 12 Aug 2025 05:24:48 GMT</pubDate>
+            <content:encoded><![CDATA[今回からRay解説シリーズを始めてみようと思います。分散コンピューティングライブラリとして絶対的な地位を気づいているであろうRayを使えるようになるために解説してみます。 Ray Tasksとは？Ray TasksはRay Coreの一つとして置かれている機能の一つになります。任意の関数を別のPythonワーカー上で非同期的に実行することを可能にするための機能になります。Ray Tasksで扱われる関数はRayリモート関数と呼ばれ、その非同期呼び出しはRayタスクと呼ばれます、https://docs.ray.io/en/latest/ray-core/tasks.html#ra...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[yttに入門してみた]]></title>
             <link>https://zenn.dev/akasan/articles/b773d7c2be0327</link>
@@ -228,13 +235,6 @@
             <guid>https://zenn.dev/akasan/articles/8fb26bfd1fe732</guid>
             <pubDate>Fri, 25 Jul 2025 14:05:54 GMT</pubDate>
             <content:encoded><![CDATA[今回はこの記事で100記事目になりましたので、ただただ振り返ります。 そもそもなんで記事書いているの？私はセルフエンドレスアドベントカレンダーという呼び名で実施しており、それのためにひたすら記事を毎日書いております。記事の概略についてはこちらを参考にしてください。https://zenn.dev/akasan/articles/4aba4d3a0616ce 記事を書き続けてどう変わった？自分がこのアドベントカレンダーを初めて生活がどう変わったかまとめてみます。毎日記事を書くのに時間がかかるので、時間の管理がちょっとだけうまくなった気がする毎日何を書くか考える必要がある...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenLIT解説：Get started編]]></title>
-            <link>https://zenn.dev/akasan/articles/20e3fd8a87c44a</link>
-            <guid>https://zenn.dev/akasan/articles/20e3fd8a87c44a</guid>
-            <pubDate>Thu, 24 Jul 2025 13:43:58 GMT</pubDate>
-            <content:encoded><![CDATA[今回はOpenLITについて、Get startedを試してみたので共有しようと思います。 OpenLITとは？OpenLITは、Generative AIとLLMにおけるAI開発ワークフローを簡素化するための仕組みを提供するものとなります。LLMの実験やプロンプトの整理とバージョン管理、APIキーのセキュアな取り扱いといった様々な重要なタスクを効率化して運用することができます。また、OpenTelemetryネイティブの可観測性を実現し、LLM、ベクターデータベース、GPUを含むフルスタックのモニタリングを実現でき、開発者はAI機能やアプリケーションを構築し、テストから本番環境へ...]]></content:encoded>
         </item>
     </channel>
 </rss>
