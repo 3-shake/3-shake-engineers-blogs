@@ -23,7 +23,7 @@ __metadata:
     feed: "npm:^4.2.2"
     fs-extra: "npm:11.3.0"
     next: "npm:15.4.3"
-    npm-run-all: "npm:^4.1.5"
+    npm-run-all: "npm:4.1.5"
     prettier: "npm:^2.1.2"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -2875,7 +2875,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all@npm:^4.1.5":
+"npm-run-all@npm:4.1.5":
   version: 4.1.5
   resolution: "npm-run-all@npm:4.1.5"
   dependencies:
