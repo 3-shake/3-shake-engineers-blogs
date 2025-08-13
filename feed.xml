@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 13 Aug 2025 11:42:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Aug 2025 22:41:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rayシリーズ：Actors]]></title>
+            <link>https://zenn.dev/akasan/articles/4e84d3dbb03abe</link>
+            <guid>https://zenn.dev/akasan/articles/4e84d3dbb03abe</guid>
+            <pubDate>Wed, 13 Aug 2025 13:58:19 GMT</pubDate>
+            <content:encoded><![CDATA[今回は前回に続いてRayのコア機能であるActorsについて調べてみました。前回のTasksについてはぜひ以下をご覧ください。https://zenn.dev/akasan/articles/f5be2708dc34def Ray Actorsとは？Ray Actorsは、Ray APIを関数からクラスへと拡張する仕組みになります。前回紹介したRay Tasksは関数に対するデコレータとして実装していましたが、それのクラス版と解釈できます。Actorは基本的にステートフルなワーカー（またはサービス）で、新しいActorをインスタンス化すると、新しいワーカーを作成しそのワーカーにA...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes Admission Controlについての技術調査]]></title>
             <link>https://sreake.com/blog/dive-deep-into-kubernetes-admission-control/</link>
@@ -228,13 +235,6 @@
             <guid>https://zenn.dev/r4ynode/articles/local-llm-intro-with-obsidian</guid>
             <pubDate>Sun, 27 Jul 2025 09:00:01 GMT</pubDate>
             <content:encoded><![CDATA[はじめに生成AI盛り上がってますね。私は置いていかれています。そんな私、奇遇なことに30コアGPUを積んだMacBookを持っているではないですか。本当は最近キラキラなAI（Devin, Claude Codeなど）を使いたいのですが、時代に逆行してローカルLLMに入門してみます。この記事では以下のことをします。LM Studioに入門Obsidianと連携LM Studio CLIを使ってバックグラウンドで実行一応、ObsidianというのはMarkdownのノートアプリです。本記事では詳しく解説しません。 デモ本記事の手順を最後まで実施すると、LM St...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[コマンド紹介シリーズ：act]]></title>
-            <link>https://zenn.dev/akasan/articles/6392d28e0e02f0</link>
-            <guid>https://zenn.dev/akasan/articles/6392d28e0e02f0</guid>
-            <pubDate>Sun, 27 Jul 2025 05:14:37 GMT</pubDate>
-            <content:encoded><![CDATA[今回はactを紹介します。actを利用することで、ローカル環境でGitHub Actionsのワークフローを動かすことができます。なお、第12回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/0fafdc64b8ae1c actとは？actはGitHub Actionsをローカルで動かすことを目的としたものとなります。GitHub Actionsを使ったことならわかると思いますが、動作テストをするためにはレポジトリにpushした後に実際にワークフローを動かす必要があります。検証用の内容などならまだいいですが...]]></content:encoded>
         </item>
     </channel>
 </rss>
