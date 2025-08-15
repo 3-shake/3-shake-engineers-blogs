@@ -604,7 +604,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/amine.jpeg",
     role: "Full Stack Application Engineer",
     bio: "Writing about Laravel, Astro, and whatever happens on the job",
-    sources: ["https://qiita.com/aminevg/feed"],
+    sources: ["https://qiita.com/aminevg/feed", "https://speakerdeck.com/aminevg.rss"],
     githubUsername: "aminevg",
     twitterUsername: "realaminevg",
     websiteUrl: "",
