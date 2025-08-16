@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 16 Aug 2025 11:41:03 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Aug 2025 22:41:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年8月版読んでいて良かった本紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/e8c40a51231ade</link>
+            <guid>https://zenn.dev/akasan/articles/e8c40a51231ade</guid>
+            <pubDate>Sat, 16 Aug 2025 13:06:36 GMT</pubDate>
+            <content:encoded><![CDATA[8月も気づけば中盤になってきましたね。先月に続いて、今月読んでいた本を紹介しようと思います。7月版はこちらになりますので、ご興味があればぜひ参照してください！https://zenn.dev/akasan/articles/05fc81a6ab77e5 データ分析 Python実践データ分析100本ノック最近改めてデータ分析をやり直そうと思ってこちらの書籍をやってます。データ分析入門書としては結構有名な気がします！Pythonでpandasとかを用いてデータ分析を始めたい人はぜひ参考にしてください。https://www.amazon.co.jp/Python実践データ分析...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OptunaとPyTorch Lightningを組み合わせてモデルの最適化をしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/a75361d039906f</link>
@@ -228,13 +235,6 @@
             <guid>https://sreake.com/blog/kubecon-2025-eu-jp-kubernetes-and-universe/</guid>
             <pubDate>Wed, 30 Jul 2025 02:04:28 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 宇宙は、人類にとって長年の探求対象であり、近年は特にKubernetesをはじめとするクラウドネイティブ技術によって、そのデータ処理とコンピューティングの方法が変革され、新たなフロンティアが拓かれつつあります。 […]The post [KubeCon 2025 EU/JP] Kubernetes と 宇宙 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[mlflow3のプロンプト最適化機能を利用してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/a1fec87efaa4a6</link>
-            <guid>https://zenn.dev/akasan/articles/a1fec87efaa4a6</guid>
-            <pubDate>Tue, 29 Jul 2025 12:26:15 GMT</pubDate>
-            <content:encoded><![CDATA[今回は前回に引き続き、mlflow3で提供されているプロンプトの最適化機能を利用してみましたので紹介します。前回の記事は以下になりますので、合わせてみてもらえると嬉しいです。https://zenn.dev/akasan/articles/b37450993c3dce mlflow3のプロンプト最適化とは？本機能については以下のページにまとめられています。記事執筆時点ではまだExperimental機能として提供されています。説明によると、以下のような機能とのことです。mlflow.genai.optimize_prompt()を使用して、MLflowの統合インターフェース...]]></content:encoded>
         </item>
     </channel>
 </rss>
