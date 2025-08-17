@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 16 Aug 2025 22:41:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Aug 2025 11:41:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud RunのDocker Compose対応]]></title>
+            <link>https://speakerdeck.com/aminevg/google-cloud-runnodocker-composedui-ying</link>
+            <guid>https://speakerdeck.com/aminevg/google-cloud-runnodocker-composedui-ying</guid>
+            <pubDate>Sun, 17 Aug 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Google Cloud RunがDocker Composeに対応しました！。これで、既存のDockerfileを活用してCloud Runにデプロイできるようになりました。複数のコンテナをまとめて単一サービスとしてデプロイのも便利です。一方で、モノレポへの不向きだったり、複数のサービスをデプロイできなかったり、デメリットもあります。今後はTerraform対応やCompose機能の拡充を期待しています。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025年8月版読んでいて良かった本紹介]]></title>
             <link>https://zenn.dev/akasan/articles/e8c40a51231ade</link>
@@ -228,13 +235,6 @@
             <guid>https://sreake.com/blog/kubecon-japan-2025-composable-disaggregated-infrastructure/</guid>
             <pubDate>Wed, 30 Jul 2025 05:12:48 GMT</pubDate>
             <content:encoded><![CDATA[2025年度の新卒エンジニアとして株式会社3-shakeに入社いたしました、荒木と申します。私はまだまだKubernetesの初学者であり、日々の学習を通じてスキルを向上させていきたいと考えています。 そんな折、先日、K […]The post [KubeCon Japan 2025] Composable Disaggregated Infrastructure(CDI)とは? Kubernetes基盤レイヤーでのHWリソース動的管理 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[KubeCon 2025 EU/JP] Kubernetes と 宇宙]]></title>
-            <link>https://sreake.com/blog/kubecon-2025-eu-jp-kubernetes-and-universe/</link>
-            <guid>https://sreake.com/blog/kubecon-2025-eu-jp-kubernetes-and-universe/</guid>
-            <pubDate>Wed, 30 Jul 2025 02:04:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 宇宙は、人類にとって長年の探求対象であり、近年は特にKubernetesをはじめとするクラウドネイティブ技術によって、そのデータ処理とコンピューティングの方法が変革され、新たなフロンティアが拓かれつつあります。 […]The post [KubeCon 2025 EU/JP] Kubernetes と 宇宙 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
