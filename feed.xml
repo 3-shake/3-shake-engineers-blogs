@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 17 Aug 2025 11:41:04 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Aug 2025 22:42:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gemma3 270M がでたらしいのでスペックを見てみる]]></title>
+            <link>https://zenn.dev/satohjohn/articles/0866bbd4b2cefa</link>
+            <guid>https://zenn.dev/satohjohn/articles/0866bbd4b2cefa</guid>
+            <pubDate>Sun, 17 Aug 2025 15:17:18 GMT</pubDate>
+            <content:encoded><![CDATA[概要説明を見ている限り LLM にしてはめちゃくちゃ軽いなという印象があります（桁が違う）がそれがどういうことなのかを見てみます。 3行まとめローカル(M3 MacBook Pro のメモリ 16GB)で動かす分に関しては全く問題なく動かせる。普通のアプリケーション動かすのと大差なく周りに影響もないシンプルなユースケースに限られる。（後に検証Cloud Run GPU NVIDIA L4 1台で十分スピード感出せる (簡単な文章 200ms程度で返却できるイメージ) docker で動かすモデルが https://hub.docker.com/r/ai/gemm...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Eventarcを用いてCloud Storageへのファイルアップロードイベントを検知してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/ca5a602c2482f5</link>
+            <guid>https://zenn.dev/akasan/articles/ca5a602c2482f5</guid>
+            <pubDate>Sun, 17 Aug 2025 12:30:42 GMT</pubDate>
+            <content:encoded><![CDATA[今回はEventarcを利用して、Cloud Storageにファイルがアップロードされたことを検知してCloud Runのエンドポイントを呼び出してみました。以前Pub/Subを使ってBigQueryと連携することはしてみましたが、今回はEventarcを使ってみました。https://zenn.dev/akasan/articles/e17a1867408c53 早速試してみる今回は以下の公式ドキュメントを参考に進めました。https://cloud.google.com/run/docs/tutorials/eventarc?hl=ja#before-you-begin...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Cloud RunのDocker Compose対応]]></title>
             <link>https://speakerdeck.com/aminevg/google-cloud-runnodocker-composedui-ying</link>
@@ -221,20 +235,6 @@
             <guid>https://zenn.dev/nedoko_dok0dko/articles/b6d8df76854c0a</guid>
             <pubDate>Thu, 31 Jul 2025 11:40:53 GMT</pubDate>
             <content:encoded><![CDATA[whatBigQueryでパーティション分割テーブルを作成する際、パーティショニングを設定することができるが、TIMESTAMPを利用しようとするとエラーが出る場合がある「公式ドキュメントでは設定できると記載があるが、エラーが出るのはなぜなのか?」 これについて調べてみたログ BigQueryのパーティショニングについてhttps://cloud.google.com/bigquery/docs/partitioned-tables?hl=jaBQでパーティションテーブルを作る際に、パーティショニングを設定する。これは、公式ドキュメントでは次の型から設定することがで...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[DSPyを用いたAIエージェントの構築への入門]]></title>
-            <link>https://zenn.dev/akasan/articles/a040961f463bee</link>
-            <guid>https://zenn.dev/akasan/articles/a040961f463bee</guid>
-            <pubDate>Wed, 30 Jul 2025 11:22:58 GMT</pubDate>
-            <content:encoded><![CDATA[今回はDSPyを用いてAIエージェントを開発するチュートリアルを試してみたので共有します。DSPyは昨日公開したmlflow3のプロンプト最適化に関する機能のバックボーンとして利用されていたため、気になって調べた次第です。https://zenn.dev/akasan/articles/a1fec87efaa4a6 DSPyとは？前回の記事にも書きましたが、DSPyは以下のような特徴を持つライブラリとなります。モジュール型AIソフトウェアを構築するための宣言型フレームワークであり、脆弱な文字列ではなく構造化されたコードを高速に反復処理でき、AIプログラムを言語モデルに適した効...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[KubeCon Japan 2025] Composable Disaggregated Infrastructure(CDI)とは? Kubernetes基盤レイヤーでのHWリソース動的管理]]></title>
-            <link>https://sreake.com/blog/kubecon-japan-2025-composable-disaggregated-infrastructure/</link>
-            <guid>https://sreake.com/blog/kubecon-japan-2025-composable-disaggregated-infrastructure/</guid>
-            <pubDate>Wed, 30 Jul 2025 05:12:48 GMT</pubDate>
-            <content:encoded><![CDATA[2025年度の新卒エンジニアとして株式会社3-shakeに入社いたしました、荒木と申します。私はまだまだKubernetesの初学者であり、日々の学習を通じてスキルを向上させていきたいと考えています。 そんな折、先日、K […]The post [KubeCon Japan 2025] Composable Disaggregated Infrastructure(CDI)とは? Kubernetes基盤レイヤーでのHWリソース動的管理 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
