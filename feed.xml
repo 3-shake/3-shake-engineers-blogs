@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 18 Aug 2025 10:41:55 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Aug 2025 11:42:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Vertex AIのModel Garden調査　〜基盤モデル〜]]></title>
+            <link>https://zenn.dev/akasan/articles/adca86f2802773</link>
+            <guid>https://zenn.dev/akasan/articles/adca86f2802773</guid>
+            <pubDate>Mon, 18 Aug 2025 10:42:05 GMT</pubDate>
+            <content:encoded><![CDATA[今回はVertex AIのModel Gardenで提供されているText Generation用の基盤モデルについて何が提供されているかまとめてみます。全ては網羅せず、ざっくり眺めてみます。※ Model Gardenで説明に利用されているサムネイルのテキストから要約しています。モデルの詳細などは省略します。 Gemini系 Gemini 2.5 Proコーディングおよび複雑なプロンプトに特に強く対応 Gemini 2.5 Flashリーズニングとレスポンススピードの両方がバランスよく使える Imagen系列 Imagen Ultra 4 for im...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Gemma3 270M がでたらしいのでスペックを見てみる]]></title>
             <link>https://zenn.dev/satohjohn/articles/0866bbd4b2cefa</link>
@@ -228,13 +235,6 @@
             <guid>https://zenn.dev/akasan/articles/75c9d5cd4fdb2e</guid>
             <pubDate>Thu, 31 Jul 2025 12:35:44 GMT</pubDate>
             <content:encoded><![CDATA[今回は6月に受験していたデータサイエンティスト検定について共有しようと思います。 データサイエンティスト検定について 試験概要データサイエンティスト検定、略してDS検定は数理・データサイエンス・AI（リテラシーレベル）におけるモデルカリキュラムを総合し、実務能力と知識を有することを証明する試験です。試験範囲からもわかるようにいわゆる数学的な分野から法規的な部分まで幅広くデータサイエンスに求められる知識が問われるものとなっております。DS検定は年に数回受験することができ、私は2025年6月度の試験を受けました。https://www.datascientist.or.jp/d...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[BigQueryのパーティション分割テーブルでTIMESTAMPでエラーが出るときの理由]]></title>
-            <link>https://zenn.dev/nedoko_dok0dko/articles/b6d8df76854c0a</link>
-            <guid>https://zenn.dev/nedoko_dok0dko/articles/b6d8df76854c0a</guid>
-            <pubDate>Thu, 31 Jul 2025 11:40:53 GMT</pubDate>
-            <content:encoded><![CDATA[whatBigQueryでパーティション分割テーブルを作成する際、パーティショニングを設定することができるが、TIMESTAMPを利用しようとするとエラーが出る場合がある「公式ドキュメントでは設定できると記載があるが、エラーが出るのはなぜなのか?」 これについて調べてみたログ BigQueryのパーティショニングについてhttps://cloud.google.com/bigquery/docs/partitioned-tables?hl=jaBQでパーティションテーブルを作る際に、パーティショニングを設定する。これは、公式ドキュメントでは次の型から設定することがで...]]></content:encoded>
         </item>
     </channel>
 </rss>
