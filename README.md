@@ -1,8 +1,11 @@
 # 3-shake Engineers' Blogs
+
 Fork of https://github.com/catnose99/team-blog-hub
 
 published at: https://blog.3-shake.com/
+
 ## Development
+
 ```bash
 # install Volta
 $ curl https://get.volta.sh | bash
@@ -18,7 +21,9 @@ $ yarn dev
 - ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
 
 ## 動作確認環境
+
 Node.js v18
 
 ## Licence
+
 MIT
