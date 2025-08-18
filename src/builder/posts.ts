@@ -1,7 +1,7 @@
-import fs from 'fs-extra';
-import Parser from 'rss-parser';
-import { members } from '../../members';
-import { PostItem, Member } from '../types';
+import fs from "fs-extra";
+import Parser from "rss-parser";
+import { members } from "../../members";
+import { PostItem, Member } from "../types";
 export default {};
 
 type FeedItem = {
@@ -19,7 +19,7 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
   try {
     console.log(`Fetching feed from: ${url}`);
     const feed = await parser.parseURL(url);
-    
+
     if (!feed?.items?.length) {
       console.warn(`No items found in feed: ${url}`);
       return [];
@@ -28,14 +28,16 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
     return feed.items
       .map(({ title, contentSnippet, link, isoDate }) => {
         if (!title || !link) {
-          console.warn(`Skipping item with missing title or link in feed: ${url}`);
+          console.warn(
+            `Skipping item with missing title or link in feed: ${url}`,
+          );
           return null;
         }
-        
+
         const item: FeedItem = {
           title,
           link,
-          contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ''),
+          contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ""),
           isoDate,
           dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
         };
@@ -43,17 +45,22 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
       })
       .filter((item): item is FeedItem => item !== null);
   } catch (error) {
-    console.error(`Error fetching feed from ${url}:`, error instanceof Error ? error.message : 'Unknown error');
+    console.error(
+      `Error fetching feed from ${url}:`,
+      error instanceof Error ? error.message : "Unknown error",
+    );
     return [];
   }
 }
 
-async function getFeedItemsFromSources(sources: undefined | string[]): Promise<FeedItem[]> {
+async function getFeedItemsFromSources(
+  sources: undefined | string[],
+): Promise<FeedItem[]> {
   if (!sources?.length) {
-    console.warn('No sources provided');
+    console.warn("No sources provided");
     return [];
   }
-  
+
   const feedItems: FeedItem[] = [];
   for (const url of sources) {
     const items = await fetchFeedItems(url);
@@ -64,7 +71,7 @@ async function getFeedItemsFromSources(sources: undefined | string[]): Promise<F
 
 async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
   const { id, sources, name, includeUrlRegex, excludeUrlRegex } = member;
-  
+
   console.log(`Processing feeds for member: ${name}`);
   const feedItems = await getFeedItemsFromSources(sources);
 
@@ -79,7 +86,9 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     postItems = postItems.filter((item) => {
       const matches = item.link.match(regex);
       if (!matches) {
-        console.debug(`Filtered out item not matching includeUrlRegex: ${item.link}`);
+        console.debug(
+          `Filtered out item not matching includeUrlRegex: ${item.link}`,
+        );
       }
       return matches;
     });
@@ -90,7 +99,9 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     postItems = postItems.filter((item) => {
       const matches = item.link.match(regex);
       if (matches) {
-        console.debug(`Filtered out item matching excludeUrlRegex: ${item.link}`);
+        console.debug(
+          `Filtered out item matching excludeUrlRegex: ${item.link}`,
+        );
       }
       return !matches;
     });
@@ -101,22 +112,27 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
 
 (async function () {
   try {
-    console.log('Starting feed processing...');
-    
+    console.log("Starting feed processing...");
+
     for (const member of members) {
       const items = await getMemberFeedItems(member);
       allPostItems.push(...items);
     }
 
     allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
-    
+
     fs.ensureDirSync(".contents");
     const json = JSON.stringify(allPostItems).replaceAll(/[\u2028\u2029]/g, "");
     fs.writeFileSync(".contents/posts.json", json);
-    
-    console.log(`Successfully processed ${allPostItems.length} posts from ${members.length} members`);
+
+    console.log(
+      `Successfully processed ${allPostItems.length} posts from ${members.length} members`,
+    );
   } catch (error) {
-    console.error('Fatal error during feed processing:', error instanceof Error ? error.message : 'Unknown error');
+    console.error(
+      "Fatal error during feed processing:",
+      error instanceof Error ? error.message : "Unknown error",
+    );
     process.exit(1);
   }
 })();
