@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import Head from "next/head";
 
 import { config } from "@site.config";
 import { members } from "@members";
