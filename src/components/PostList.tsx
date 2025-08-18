@@ -5,7 +5,6 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import { PostItem } from "@src/types";
 import {
-  getMemberByName,
   getHostFromURL,
   getFaviconSrcFromHostname,
   getMemberPath,
