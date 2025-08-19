@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 19 Aug 2025 09:36:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Aug 2025 11:41:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[BigQueryMLを用いてtitanic生存者予測タスクをやってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/4ac96d153149c7</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/4ac96d153149c7</guid>
+            <pubDate>Tue, 19 Aug 2025 11:28:44 GMT</pubDate>
+            <content:encoded><![CDATA[今回はタイトルにあるように、BigQueryMLを用いてtitanicの生存者予測タスクに取り組めるモデルを開発してみました。なお、今回BigQueryMLを利用するにあたり、クエリの生成にはGPT-5を存分に利用しました。 実際にやってみる！ BigQueryにデータセットをアップロードするまずはtitanicのデータセットをBigQueryにアップロードします。以下の手順でデータを準備します。titanicデータセットをダウンロードするBigQueryにてtitanicデータセットを作成するtitanicデータセットに対してtrainとtestというテーブルを登録...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Vertex AIのModel Garden調査　〜基盤モデル〜]]></title>
             <link>https://zenn.dev/akasan/articles/adca86f2802773</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/309acfb329c51d</guid>
             <pubDate>Fri, 01 Aug 2025 13:39:32 GMT</pubDate>
             <content:encoded><![CDATA[今回は普段ターミナルで作業するときに活用している自作コマンド達を紹介しようと思います。なお、ここで定義しているコマンド達は一部claude codeなどの生成AIによって生成したものも含まれます。 自作コマンドの定義自作コマンドは~/.config/zsh/hogehoge.zshの形で設定し、~/.zshrcでまとめて読み込むように書いています。 コマンド達 ffmpeg編動画像を仕事で扱う時は時折ffmpegを利用していて、その中でよく利用するコマンドを別途定義しています。使い方は中盤-h/--helpの説明を参照してください。動画を一定間隔で分割するfunc...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[データサイエンティスト検定を受験してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/75c9d5cd4fdb2e</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/75c9d5cd4fdb2e</guid>
-            <pubDate>Thu, 31 Jul 2025 12:35:44 GMT</pubDate>
-            <content:encoded><![CDATA[今回は6月に受験していたデータサイエンティスト検定について共有しようと思います。 データサイエンティスト検定について 試験概要データサイエンティスト検定、略してDS検定は数理・データサイエンス・AI（リテラシーレベル）におけるモデルカリキュラムを総合し、実務能力と知識を有することを証明する試験です。試験範囲からもわかるようにいわゆる数学的な分野から法規的な部分まで幅広くデータサイエンスに求められる知識が問われるものとなっております。DS検定は年に数回受験することができ、私は2025年6月度の試験を受けました。https://www.datascientist.or.jp/d...]]></content:encoded>
         </item>
     </channel>
 </rss>
