@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 20 Aug 2025 11:41:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Aug 2025 22:39:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Dataprepを使ってデータ編集レシピを作ってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/ebd4be0540c5f2</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/ebd4be0540c5f2</guid>
+            <pubDate>Wed, 20 Aug 2025 11:51:38 GMT</pubDate>
+            <content:encoded><![CDATA[今回はDataprepを利用してTitanicデータセットを加工してみようと思います。 Dataprepとは？Dataprepとは、Alteryxと共同で構築されたGoogleのセルフサービスデータ準備ツールです。BigQueryなどのデータソースからデータを取得してレシピを通して加工し、再度BigQueryやCloud Storageなどに格納するといったデータの処理を実行することができます。Dataprepを利用することでデータのクリーニングや変換などを一つのプラットフォームで可視化しながら実行できるため、データエンジニアリングに大きく貢献します。なお、今回の検証ではトライア...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[BigQueryMLを用いてtitanic生存者予測タスクをやってみた]]></title>
             <link>https://zenn.dev/akasan/articles/4ac96d153149c7</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/25766ce1ab7473</guid>
             <pubDate>Sat, 02 Aug 2025 08:15:52 GMT</pubDate>
             <content:encoded><![CDATA[今回はTerraformを利用してFastAPIサーバをCloud Runへデプロイしてみます。Terraformについて現在勉強中なので、まずは最低限の構成で試してみます。 今回作るシステム今回は以下の条件で検証します。IaCにはTerraformを採用FastAPIを利用してアプリケーションサーバを実装Google CloudArtifact RegistryにFastAPIのDockerイメージを格納Cloud Runにサーバをデプロイ それでは実装してみる FastAPIサーバの実装まずはFastAPIサーバを実装します。最初にuvを使って環...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[短編：普段使ってる自作コマンド達を紹介]]></title>
-            <link>https://zenn.dev/akasan/articles/309acfb329c51d</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/309acfb329c51d</guid>
-            <pubDate>Fri, 01 Aug 2025 13:39:32 GMT</pubDate>
-            <content:encoded><![CDATA[今回は普段ターミナルで作業するときに活用している自作コマンド達を紹介しようと思います。なお、ここで定義しているコマンド達は一部claude codeなどの生成AIによって生成したものも含まれます。 自作コマンドの定義自作コマンドは~/.config/zsh/hogehoge.zshの形で設定し、~/.zshrcでまとめて読み込むように書いています。 コマンド達 ffmpeg編動画像を仕事で扱う時は時折ffmpegを利用していて、その中でよく利用するコマンドを別途定義しています。使い方は中盤-h/--helpの説明を参照してください。動画を一定間隔で分割するfunc...]]></content:encoded>
         </item>
     </channel>
 </rss>
