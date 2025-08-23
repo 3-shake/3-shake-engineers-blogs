@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 23 Aug 2025 11:40:58 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Aug 2025 22:40:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AimとOptunaとPytorch Lightningを組み合わせたMNIST実験管理]]></title>
+            <link>https://zenn.dev/akasan/articles/b965a302b7ea45</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/b965a302b7ea45</guid>
+            <pubDate>Sat, 23 Aug 2025 14:39:10 GMT</pubDate>
+            <content:encoded><![CDATA[今回はAimで実験管理を行いつつ、OptunaとPytorch Lightningを使ってMNISTの分類をしてみました。ぜひ過去の以下の記事を参考にしてください。https://zenn.dev/akasan/articles/6221f74bea622dhttps://zenn.dev/akasan/articles/a75361d039906f 早速実装 環境構築uvを使って以下で環境を構築します。uv init aim_optuna_lightning_mnist -p 3.12cd aim_optuna_lightning_mnistuv add aim l...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[claude commandのスラッシュコマンドでコーディングの癖を検知させてみた]]></title>
             <link>https://zenn.dev/akasan/articles/846cd9a610d5a4</link>
@@ -228,13 +235,6 @@
             <link>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-gcnt2025</link>
             <guid isPermaLink="false">https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-gcnt2025</guid>
             <pubDate>Tue, 05 Aug 2025 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[PyCaretを利用して簡単にモデル比較を行おう]]></title>
-            <link>https://zenn.dev/akasan/articles/9844ec4f012639</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/9844ec4f012639</guid>
-            <pubDate>Mon, 04 Aug 2025 10:51:03 GMT</pubDate>
-            <content:encoded><![CDATA[今回はローコードでモデルを開発できるPyCaretを利用して、titanicデータセットの分類をさせてみようと思います。 PyCaretとは？PyCaretとは、オープンソースのローコードで機械学習モデルを開発できるPythonライブラリです。通常機械学習モデルを開発する時はscikit-learnやXGBoost、LightGBMなど様々なライブラリを駆使し、ベースモデルや比較対象モデルを開発して行きます。しかし、モデルの開発を行う場合は多くの実装を必要とすることが多々あり、最低限の設定でモデルを作って性能比較をしたいと言った場合に負担が大きかったと思います。そこでPyCaret...]]></content:encoded>
         </item>
     </channel>
 </rss>
