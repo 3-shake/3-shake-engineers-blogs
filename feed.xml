@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 23 Aug 2025 22:40:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Aug 2025 11:41:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,7 +15,14 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[AimとOptunaとPytorch Lightningを組み合わせたMNIST実験管理]]></title>
+            <title><![CDATA[CNCF様を引用してブログネタを決めるためのツールを作成しました]]></title>
+            <link>https://zenn.dev/akasan/articles/42f5a1d2786ca5</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/42f5a1d2786ca5</guid>
+            <pubDate>Sun, 24 Aug 2025 11:19:41 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、ついにApacheルーレットのCNCF版であるCNCFルーレットを作成しました。Apacheルーレットが全て完了するまで作る予定はなかったのですが、頑固にならずにやろうと思い作りました。なお、コードは基本的にApacheルーレットの時と一緒です。https://zenn.dev/akasan/articles/7e30ad266c02c4 データの用意CNCFのLandscapeページから全てのCNCFプロジェクトw取得するために、CNCFページをスクレイピングしてページを取得し、そこからCNCFプロジェクト名を取得するPythonコードを作成しました。なお、コードはcl...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Aimシリーズ：OptunaとPytorch Lightningを組み合わせたMNIST実験管理]]></title>
             <link>https://zenn.dev/akasan/articles/b965a302b7ea45</link>
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/b965a302b7ea45</guid>
             <pubDate>Sat, 23 Aug 2025 14:39:10 GMT</pubDate>
@@ -229,12 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/9cc74002290a99</guid>
             <pubDate>Tue, 05 Aug 2025 14:15:24 GMT</pubDate>
             <content:encoded><![CDATA[今回はKubernetesのモニタリングなどに利用できるIDEであるLensを使ってみたので、その共有をしようと思います。※ 本日健康診断を受けた結果体力が著しくなくなっちゃったため、ほんとにちょっと使ってみた感想になってしまいました。そのため、次回もっと本格的にLensを使ってみて記事出しますので今日のところはこれで勘弁してくださいw Lensとは？Lensとは公式の説明によるとLens is a Kubernetes platform that provides tools for seamless interaction with Kubernetes clusters...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Agent Development Kitで作るマルチエージェントアプリケーション（GCNT2025）]]></title>
-            <link>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-gcnt2025</link>
-            <guid isPermaLink="false">https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-gcnt2025</guid>
-            <pubDate>Tue, 05 Aug 2025 04:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
