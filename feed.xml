@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 24 Aug 2025 22:41:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Aug 2025 11:41:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ApacheおよびCNCFルーレットの実行をGitHub Actionsで実行できるようにした]]></title>
+            <link>https://zenn.dev/akasan/articles/ef9e2919c312c1</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/ef9e2919c312c1</guid>
+            <pubDate>Mon, 25 Aug 2025 10:51:07 GMT</pubDate>
+            <content:encoded><![CDATA[私のテックブログでは、ApacheとCNCFについてブログネタを決めるためのルーレットというものを実装しています。今回はそのルーレットの実行環境をGitHub Actionsに移植したので共有します。 ApacheおよびCNCFルーレットとは？私は現在120日以上毎日何かしらをテックブログにしていますが、ネタ切れになったりすることもなくはないです。そのような状況に対応するため、一番初めに対応策としたのがApacheプロジェクトの中からランダムに一つプロジェクトw選択させるというものです。Apacheプロジェクトは300以上のプロジェクトがあるため、おかげさまでネタ切れにはまだ遭遇し...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[CNCF様を引用してブログネタを決めるためのツールを作成しました]]></title>
             <link>https://zenn.dev/akasan/articles/42f5a1d2786ca5</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/0cad512332b58c</guid>
             <pubDate>Wed, 06 Aug 2025 14:12:33 GMT</pubDate>
             <content:encoded><![CDATA[今回はApache Linkisについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Linkisとは？公式サイトによると、Linkis builds a computation middleware l...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[短編：Lensを使ってKubernetes環境をモニタリングしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/9cc74002290a99</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/9cc74002290a99</guid>
-            <pubDate>Tue, 05 Aug 2025 14:15:24 GMT</pubDate>
-            <content:encoded><![CDATA[今回はKubernetesのモニタリングなどに利用できるIDEであるLensを使ってみたので、その共有をしようと思います。※ 本日健康診断を受けた結果体力が著しくなくなっちゃったため、ほんとにちょっと使ってみた感想になってしまいました。そのため、次回もっと本格的にLensを使ってみて記事出しますので今日のところはこれで勘弁してくださいw Lensとは？Lensとは公式の説明によるとLens is a Kubernetes platform that provides tools for seamless interaction with Kubernetes clusters...]]></content:encoded>
         </item>
     </channel>
 </rss>
