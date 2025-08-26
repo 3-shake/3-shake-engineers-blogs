@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 26 Aug 2025 11:41:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Aug 2025 22:41:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Vertex AIのColab Enterpriseのランタイムテンプレートを利用してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/454f57beb383e9</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/454f57beb383e9</guid>
+            <pubDate>Tue, 26 Aug 2025 11:59:54 GMT</pubDate>
+            <content:encoded><![CDATA[今回はVertex AI上で提供されているColab Enterpriseについて、ランタイムテンプレートの設定方法を調べてみました。 Colab Enterpriseとは？Colab EnterpriseはVertex AI上で提供されているマネージドなノートブック環境となります。ノートブックファイルを共有することで共同編集することができるほか、それぞれのユーザごとにランタイムを作成できます。また、Geminiによるコード補完機能があったり、BigQueryなどのGoogle Cloudのサービスと統合されているところも特徴です。詳細は以下のページに記載されているのでぜひ参照して...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[BigQueryのMERGEステートメントについて]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/52a6a8e2412dcb</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://blog.atusy.net/2025/08/08/map-minus-to-blackhole-register/</guid>
             <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[nnoremap - "_しておくと、ヤンクした内容を残しながら編集できて便利ですよ。"_ciwは入力しにくいですけど-ciwなら入力しやすいですよね。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud RunにデプロイしたmlflowからArtifactsをダウンロードすることを禁止するには？]]></title>
-            <link>https://zenn.dev/akasan/articles/5f823793737bf6</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/5f823793737bf6</guid>
-            <pubDate>Thu, 07 Aug 2025 11:03:16 GMT</pubDate>
-            <content:encoded><![CDATA[今回はCloud RunにデプロイしたmlflowサーバかのUIからアーティファクトのダウンロードを阻止することができるか調べてみました。mlflowに関するアドバイスをしようということでmlflowについてちょうど調べていました。mlflow uiではモデルに関連づけられたアーティファクトのダウンロード機能があるのですが、mlflow uiとしてはそのダウンロードを拒否する仕組みが備わっていないです。セキュリティリスクになることからこれを防ぐ方法はないか調べてみた結果、うまくIAM設定をすると対応できるということがわかったので、その方法をブログにしてみます。※ 今回のコードはclau...]]></content:encoded>
         </item>
     </channel>
 </rss>
