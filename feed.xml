@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 25 Aug 2025 22:41:59 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Aug 2025 11:41:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[BigQueryのMERGEステートメントについて]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/52a6a8e2412dcb</link>
+            <guid isPermaLink="false">https://zenn.dev/nedoko_dok0dko/articles/52a6a8e2412dcb</guid>
+            <pubDate>Tue, 26 Aug 2025 10:29:31 GMT</pubDate>
+            <content:encoded><![CDATA[whatBigQueryのマージステートメントについて調べたことや知ったことを個人的にまとめたもの MERGEステートメントとはhttps://cloud.google.com/bigquery/docs/reference/standard-sql/dml-syntax#merge_statementhttps://cloud.google.com/blog/ja/products/data-analytics/bigquery-explained-data-manipulation-dml別のテーブルと一致する値に基づいて以下のステートメントをまとめて実行できる機...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ミニマムかつ未来を見据えたGoogle Cloudアーキテクチャ]]></title>
+            <link>https://zenn.dev/kamos/articles/poc_google_cloud</link>
+            <guid isPermaLink="false">https://zenn.dev/kamos/articles/poc_google_cloud</guid>
+            <pubDate>Tue, 26 Aug 2025 02:59:44 GMT</pubDate>
+            <content:encoded><![CDATA[!この記事は人間が書き、AIにレビューしてもらいました はじめにAIによって開発が加速した現在、プロダクト開発においてアイデアを素早くプロダクトに落とし込み、実際に市場に展開することが重要になっています。しかしMVP(最小限の実用的製品)を立ち上げる際のクラウドインフラやアーキテクチャの選択は、その後のプロダクトの成長や運用に大きな影響を与えます。本格的な構成を最初期から採用することは立派ですが、MVPが成功するかわからないものに高コストなインフラを選択することはリスクが高いです。逆に、安易に無料枠や低コストなサービスを選択すると、将来的なスケーリングや機能追加が困難になりま...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ApacheおよびCNCFルーレットの実行をGitHub Actionsで実行できるようにした]]></title>
             <link>https://zenn.dev/akasan/articles/ef9e2919c312c1</link>
@@ -222,20 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/5f823793737bf6</guid>
             <pubDate>Thu, 07 Aug 2025 11:03:16 GMT</pubDate>
             <content:encoded><![CDATA[今回はCloud RunにデプロイしたmlflowサーバかのUIからアーティファクトのダウンロードを阻止することができるか調べてみました。mlflowに関するアドバイスをしようということでmlflowについてちょうど調べていました。mlflow uiではモデルに関連づけられたアーティファクトのダウンロード機能があるのですが、mlflow uiとしてはそのダウンロードを拒否する仕組みが備わっていないです。セキュリティリスクになることからこれを防ぐ方法はないか調べてみた結果、うまくIAM設定をすると対応できるということがわかったので、その方法をブログにしてみます。※ 今回のコードはclau...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloudサービスの生成AI関連サービス]]></title>
-            <link>https://speakerdeck.com/shukob/google-cloudsabisunosheng-cheng-aiguan-lian-sabisu</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/google-cloudsabisunosheng-cheng-aiguan-lian-sabisu</guid>
-            <pubDate>Thu, 07 Aug 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年8月7日(木)、日本生成AIユーザ会 で「Google Cloudサービスの生成AI関連サービス」について発表しました。https://genai-users.connpass.com/event/361798/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Linkisとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/0cad512332b58c</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/0cad512332b58c</guid>
-            <pubDate>Wed, 06 Aug 2025 14:12:33 GMT</pubDate>
-            <content:encoded><![CDATA[今回はApache Linkisについて調べてみました。 今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Linkisとは？公式サイトによると、Linkis builds a computation middleware l...]]></content:encoded>
         </item>
     </channel>
 </rss>
