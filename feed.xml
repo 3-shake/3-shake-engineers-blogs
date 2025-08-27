@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 27 Aug 2025 11:41:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Aug 2025 22:40:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：claude codeに私のテックブログを評価させてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/af8b26620c9c98</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/af8b26620c9c98</guid>
+            <pubDate>Wed, 27 Aug 2025 13:33:40 GMT</pubDate>
+            <content:encoded><![CDATA[今回は私が今まで書いてきたZennの記事をclaude codeに読ませて、どんな記事を書いてきたかとかを分析させてみました。 claude codeへの指示今回claude codeへ指示を出すにあたり、まずはブログ一覧を取得させる必要があります。私はZennの記事をGitHubで管理していて、記事一覧はarticlesフォルダにおいています。なので指示の中でそのフォルダをみるように指定しています。今回claude codeに与えた指示は以下になっています。instructions.md## 分析articlesフォルダ以下に私のテックブログのマークダウンファイルがあり...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[paruzコマンドでArch Linux系のパッケージをあいまい検索]]></title>
+            <link>https://blog.atusy.net/2025/08/27/fuzzy-find-pkgs-for-archlinux/</link>
+            <guid isPermaLink="false">https://blog.atusy.net/2025/08/27/fuzzy-find-pkgs-for-archlinux/</guid>
+            <pubDate>Wed, 27 Aug 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[paruzコマンドを使うとAURも含めてArch Linux系のパッケージをあいまい検索できて便利。PARU=pacman paruzでいけるよ。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Vertex AIのColab Enterpriseのランタイムテンプレートを利用してみた]]></title>
             <link>https://zenn.dev/akasan/articles/454f57beb383e9</link>
@@ -223,19 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/2b625606090524</guid>
             <pubDate>Fri, 08 Aug 2025 14:23:27 GMT</pubDate>
             <content:encoded><![CDATA[今回はpytorchのエコシステムの一つであるLightningに入門してみました。 Lightningとは？PyTorch Lightningとは、PyTorchのエコシステムの一つであり、モデルの開発から本番運用まで広く対応したフレームワークです。最小限の労力で最大限の柔軟性を与えることができ、パフォーマンスを落とすことなくモデル開発を行うことができます。PyTorchのモデル学習では必ずしもLightningのようなフレームワークは必要なく、PyTorchのみでも十分モデル学習はできます。一方、実験管理などをしようとお思うと独自に実装する必要があったりで結構面倒な作業が多いの...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Agent Development Kitで作るマルチエージェントアプリケーション（AIAgent勉強会）]]></title>
-            <link>https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-aiagentmian-qiang-hui</link>
-            <guid isPermaLink="false">https://speakerdeck.com/yunosukey/agent-development-kitdezuo-rumarutiezientoapurikesiyon-aiagentmian-qiang-hui</guid>
-            <pubDate>Fri, 08 Aug 2025 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Vimでヤンクした内容の上書き回避にはマイナス（-）をブラックホールレジスタにマッピングするといいよ]]></title>
-            <link>https://blog.atusy.net/2025/08/08/map-minus-to-blackhole-register/</link>
-            <guid isPermaLink="false">https://blog.atusy.net/2025/08/08/map-minus-to-blackhole-register/</guid>
-            <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[nnoremap - "_しておくと、ヤンクした内容を残しながら編集できて便利ですよ。"_ciwは入力しにくいですけど-ciwなら入力しやすいですよね。]]></content:encoded>
         </item>
     </channel>
 </rss>
