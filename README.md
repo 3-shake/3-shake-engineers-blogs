@@ -22,7 +22,7 @@ $ yarn dev
 
 ## 動作確認環境
 
-Node.js v18
+Node.js v22
 
 ## Licence
 
