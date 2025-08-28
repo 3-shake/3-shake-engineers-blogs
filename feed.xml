@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 28 Aug 2025 11:41:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Aug 2025 22:40:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Neovim 0.12（開発版）ではLSPクライアント経由でGitHub Copilotを使えるぞ（脱copilot.vim）]]></title>
+            <link>https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/</link>
+            <guid isPermaLink="false">https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/</guid>
+            <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Neovim 0.12（開発版）にvim.lsp.inline_completionが実装されました。これと[copilot-language-server]を組み合わせると、GitHub Copilotによる補完を、LSPクライアント経由で利用できます。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[私が情報収集するために利用している情報源公開]]></title>
+            <link>https://zenn.dev/akasan/articles/c019ee769aadf1</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c019ee769aadf1</guid>
+            <pubDate>Thu, 28 Aug 2025 12:57:38 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、私が普段情報収集をする上で利用している情報源について共有しようと思います。特にMLエンジニアとしての色が濃いかなと思いますが、ぜひ参考にしてもらえればと思います。※ 紹介するいかなる媒体の回し者ではございません。単純に普段使ってて助かっているものの共有です ブログ媒体 MediumMediumは特に海外のエンジニアの情報発信を積極的にキャッチアップしたいということで利用しています。無料番だと全ての記事は読めないので、私はAnnual Medium membershipになっているので全ての記事を見れる状態です。特にプログラミング系の記事を多く読んでいますが、とても情報...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編：claude codeに私のテックブログを評価させてみた]]></title>
             <link>https://zenn.dev/akasan/articles/af8b26620c9c98</link>
@@ -223,20 +237,6 @@
             <guid isPermaLink="false">https://blog.atusy.net/2025/08/10/nvim-treesitter-main-branch/</guid>
             <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Neovim 0.11以降のnvim-treesitterプラグインのmainブランチへの移行方法を紹介します。masterブランチは2025年5月で更新が止まっているので、切り替えの時期だと思います。ただし、変更範囲が大きく、単純に切り替えるとNeovim起動時にエラーが出るので注意が必要です。本体の設定方法に加え、自動ハイライトの有効化方法や依存プラグインの更新方法など、切り替えに必要な情報をまとめました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[開発に使っているアプリケーションリストアップしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/469eda61a31bfc</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/469eda61a31bfc</guid>
-            <pubDate>Sat, 09 Aug 2025 13:25:02 GMT</pubDate>
-            <content:encoded><![CDATA[今回は普段の開発作業などで利用しているアプリケーションについて一覧にしてみました。 メモ系 NotionNotionは個人環境でドキュメント管理やメモとかで多用しています。ブログネタ考えたりナレッジ蓄積に大いに役立っています。https://www.notion.com/ja IDE系 CursorCursorはもう説明はいらないでしょう。みなさんお馴染みのAIコードエディタです。小規模な開発はvimを使っているのですが、大規模なものになるとCursorを使っています。https://cursor.com/ja 描画系 draw.ioアーキテクチャ図とか...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Pytorch Lightningに入門してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/2b625606090524</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2b625606090524</guid>
-            <pubDate>Fri, 08 Aug 2025 14:23:27 GMT</pubDate>
-            <content:encoded><![CDATA[今回はpytorchのエコシステムの一つであるLightningに入門してみました。 Lightningとは？PyTorch Lightningとは、PyTorchのエコシステムの一つであり、モデルの開発から本番運用まで広く対応したフレームワークです。最小限の労力で最大限の柔軟性を与えることができ、パフォーマンスを落とすことなくモデル開発を行うことができます。PyTorchのモデル学習では必ずしもLightningのようなフレームワークは必要なく、PyTorchのみでも十分モデル学習はできます。一方、実験管理などをしようとお思うと独自に実装する必要があったりで結構面倒な作業が多いの...]]></content:encoded>
         </item>
     </channel>
 </rss>
