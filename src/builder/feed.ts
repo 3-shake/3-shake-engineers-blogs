@@ -1,7 +1,10 @@
 import { Feed } from "feed";
 import fs from "fs";
 import { config } from "../../site.config";
-import posts from "../../.contents/posts.json";
+import postsData from "../../.contents/posts.json";
+import { PostItem } from "../types";
+
+const posts = postsData as PostItem[];
 
 const feed = new Feed({
   title: config.siteMeta.title,
@@ -19,7 +22,7 @@ for (const post of posts.slice(0, 32)) {
     id: post.link,
     link: post.link,
     author: [{ name: post.authorName }],
-    date: new Date(post.isoDate),
+    date: new Date(post.isoDate || post.dateMiliSeconds),
     content: post.contentSnippet,
   });
 }
