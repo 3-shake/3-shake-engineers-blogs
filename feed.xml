@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 29 Aug 2025 11:41:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Aug 2025 22:40:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[pyinstrumentを使ってPythonコードのプロファイリングをしてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/359a9d19a2c921</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/359a9d19a2c921</guid>
+            <pubDate>Fri, 29 Aug 2025 13:38:31 GMT</pubDate>
+            <content:encoded><![CDATA[今回はpyinstrumentを使ってPythonコードのプロファイリングをしてみました。自分が実装したコードのどこにボトルネックがあるかなどを分析するためのツールとしてどんな感じか調べてみました！ pyinstrumentとは？pyinstrumentはPython用のプロファイラで、コードの最適化を支援するツールです。プログラムの実行をするインフラ基盤の性能は向上しているものの、実装されているコードのパフォーマンスが悪ければ宝の持ち腐れになってしまいます。そこで、今回紹介するようなプロファイラが必要になってきます。プロファイラを利用することで、プログラムのどこに処理時間が多くか...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Neovim 0.12（開発版）ではLSPクライアント経由でGitHub Copilotを使えるぞ（脱copilot.vim）]]></title>
             <link>https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/c6e1a1a001f863</guid>
             <pubDate>Sun, 10 Aug 2025 06:07:02 GMT</pubDate>
             <content:encoded><![CDATA[今回は、DatadogのLLM Observabilityの機能を利用して、LLMアプリケーションの結果をDatadogにて取り扱ってみます。 Datadog LLM Observabilityとは？DatadogはObservabilityのSaaSとして絶対的な地位をとっているツールかと思います。LLMの発展に伴い、DatadogでもLLMのObservabilityを対応できるようになっており、その機能が今回紹介する機能になります。この機能を利用することでLLMアプリケーションの問題点の特定やパフォーマンス測定などを行うことができ、より堅牢なLLMアプリケーションの実装を実現...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Neovim ≧ 0.11ユーザーのためのnvim-treesitter最新版利用ガイド（mainブランチ切り替え）]]></title>
-            <link>https://blog.atusy.net/2025/08/10/nvim-treesitter-main-branch/</link>
-            <guid isPermaLink="false">https://blog.atusy.net/2025/08/10/nvim-treesitter-main-branch/</guid>
-            <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Neovim 0.11以降のnvim-treesitterプラグインのmainブランチへの移行方法を紹介します。masterブランチは2025年5月で更新が止まっているので、切り替えの時期だと思います。ただし、変更範囲が大きく、単純に切り替えるとNeovim起動時にエラーが出るので注意が必要です。本体の設定方法に加え、自動ハイライトの有効化方法や依存プラグインの更新方法など、切り替えに必要な情報をまとめました。]]></content:encoded>
         </item>
     </channel>
 </rss>
