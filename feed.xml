@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 29 Aug 2025 22:40:17 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Aug 2025 11:40:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[PyPIで最もダウンロードされているライブラリ一覧みてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/b31578401de5e3</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/b31578401de5e3</guid>
+            <pubDate>Sat, 30 Aug 2025 05:20:41 GMT</pubDate>
+            <content:encoded><![CDATA[今回はPyPIで最もインストールされているライブラリが何か急に気になったので調べてみました。小方言としては以下のサイトを参照してみました。※ 今回参照したページの情報が必ずしも最新の情報とは限らないと思いますので、参考程度に見てもらえればと思いますhttps://pypistats.org/top 月間ダウンロード 1位 boto3boto3はAWSのSDKであり、AWSユーザかつPythonユーザであれば基本的に利用するのではないでしょうか？ダウンロード数が1,183,978,863ということで他のライブラリと一線を画すようなインストール数になっています。https:/...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[pyinstrumentを使ってPythonコードのプロファイリングをしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/359a9d19a2c921</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/b773d7c2be0327</guid>
             <pubDate>Mon, 11 Aug 2025 05:41:30 GMT</pubDate>
             <content:encoded><![CDATA[今回は、yttをを用いてYAMLファイルを生成する方法について学習してみました。 yttとは？公式サイトによると、Template and patch as needed to easily make your configuration reusable and extensible. Works with your own and third-party YAML configuration.ということで、YAMLファイルについてテンプレートとパッチを適用することで、設定を簡単に再利用・拡張できるツールということです。YAMLファイルは基本的には静的に指定した値を利用す...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Datadog LLM Observabilityへの入門]]></title>
-            <link>https://zenn.dev/akasan/articles/c6e1a1a001f863</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c6e1a1a001f863</guid>
-            <pubDate>Sun, 10 Aug 2025 06:07:02 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、DatadogのLLM Observabilityの機能を利用して、LLMアプリケーションの結果をDatadogにて取り扱ってみます。 Datadog LLM Observabilityとは？DatadogはObservabilityのSaaSとして絶対的な地位をとっているツールかと思います。LLMの発展に伴い、DatadogでもLLMのObservabilityを対応できるようになっており、その機能が今回紹介する機能になります。この機能を利用することでLLMアプリケーションの問題点の特定やパフォーマンス測定などを行うことができ、より堅牢なLLMアプリケーションの実装を実現...]]></content:encoded>
         </item>
     </channel>
 </rss>
