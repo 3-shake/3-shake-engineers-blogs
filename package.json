@@ -41,7 +41,7 @@
     "rss-parser": "3.13.0",
     "sass": "1.91.0",
     "ts-node": "10.9.2",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "volta": {
     "node": "22.18.0",
