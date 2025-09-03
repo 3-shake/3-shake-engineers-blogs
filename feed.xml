@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 03 Sep 2025 11:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Sep 2025 22:40:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年9月版読んでいて良かった本紹介]]></title>
+            <link>https://zenn.dev/akasan/articles/786bc699866b6e</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/786bc699866b6e</guid>
+            <pubDate>Wed, 03 Sep 2025 14:24:01 GMT</pubDate>
+            <content:encoded><![CDATA[今月9月は始まったばっかりですが、執筆時間が確保できなさそうだったので、早い段階でまとめます。なお、今月読む本は決まっているので、読む予定の本を共有します。ぜひ先月分もご確認いただければと思います！https://zenn.dev/akasan/articles/e8c40a51231ade 技術系 ネットワークはなぜつながるのか　第２版ネットワーク関連の本はDNSの本だったりを読んではいますが、まだまだ弱いところだなと思って読み始めています。OSI参照モデルから始まり、改めて復習していますが、わかりやすいかなと思います。https://bookplus.nikkei.co...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[続: 自分が書いたコードより目立つな - エンジニアがバズったので自戒]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/09/03/174830</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/0866bbd4b2cefa</guid>
             <pubDate>Sun, 17 Aug 2025 15:17:18 GMT</pubDate>
             <content:encoded><![CDATA[概要説明を見ている限り LLM にしてはめちゃくちゃ軽いなという印象があります（桁が違う）がそれがどういうことなのかを見てみます。 3行まとめローカル(M3 MacBook Pro のメモリ 16GB)で動かす分に関しては全く問題なく動かせる。普通のアプリケーション動かすのと大差なく周りに影響もないシンプルなユースケースに限られる。（後に検証Cloud Run GPU NVIDIA L4 1台で十分スピード感出せる (簡単な文章 200ms程度で返却できるイメージ) docker で動かすモデルが https://hub.docker.com/r/ai/gemm...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Eventarcを用いてCloud Storageへのファイルアップロードイベントを検知してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/ca5a602c2482f5</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/ca5a602c2482f5</guid>
-            <pubDate>Sun, 17 Aug 2025 12:30:42 GMT</pubDate>
-            <content:encoded><![CDATA[今回はEventarcを利用して、Cloud Storageにファイルがアップロードされたことを検知してCloud Runのエンドポイントを呼び出してみました。以前Pub/Subを使ってBigQueryと連携することはしてみましたが、今回はEventarcを使ってみました。https://zenn.dev/akasan/articles/e17a1867408c53 早速試してみる今回は以下の公式ドキュメントを参考に進めました。https://cloud.google.com/run/docs/tutorials/eventarc?hl=ja#before-you-begin...]]></content:encoded>
         </item>
     </channel>
 </rss>
