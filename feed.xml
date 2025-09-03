@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 03 Sep 2025 02:46:21 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Sep 2025 05:18:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[BigQueryのINFORMATION_SCHEMA.JOBS ビューに現れた「query_dialect」とは?￼]]></title>
+            <link>https://sreake.com/blog/bigquery-information-schema-jobs-query-dialect/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/bigquery-information-schema-jobs-query-dialect/</guid>
+            <pubDate>Wed, 03 Sep 2025 03:10:23 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは。 夏が始まったと思ったらもう暦上では9月。夏の終わりです。時間の流れは早いですね。 こんな感じでいつの間にか秋が来て冬が来て年末になっていたり…不思議です。 今回ですが、BigQueryに「いつの間 […]The post BigQueryのINFORMATION_SCHEMA.JOBS ビューに現れた「query_dialect」とは?￼ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[モノリポだっていけちゃうdenols/ts_ls共存術（Neovim >= 0.11）]]></title>
             <link>https://blog.atusy.net/2025/09/03/node-deno-decision-with-monorepo-support/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/e8c40a51231ade</guid>
             <pubDate>Sat, 16 Aug 2025 13:06:36 GMT</pubDate>
             <content:encoded><![CDATA[8月も気づけば中盤になってきましたね。先月に続いて、今月読んでいた本を紹介しようと思います。7月版はこちらになりますので、ご興味があればぜひ参照してください！https://zenn.dev/akasan/articles/05fc81a6ab77e5 データ分析 Python実践データ分析100本ノック最近改めてデータ分析をやり直そうと思ってこちらの書籍をやってます。データ分析入門書としては結構有名な気がします！Pythonでpandasとかを用いてデータ分析を始めたい人はぜひ参考にしてください。https://www.amazon.co.jp/Python実践データ分析...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OptunaとPyTorch Lightningを組み合わせてモデルの最適化をしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/a75361d039906f</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/a75361d039906f</guid>
-            <pubDate>Fri, 15 Aug 2025 11:10:23 GMT</pubDate>
-            <content:encoded><![CDATA[今回はOptunaとPyTorch Lightningを組み合わせてモデルの最適化をしてみようと思います。なお、Optunaは昨日紹介した記事を、Pytorch Lightningについてはこちらの記事をベースに進めようと思います。https://zenn.dev/akasan/articles/ca4ab7c5f5da15https://zenn.dev/akasan/articles/2b625606090524 それでは早速やってみる！ 環境構築uvを使って環境構築していきます。uv init optuna_pytorch_lightning -p 3.12cd ...]]></content:encoded>
         </item>
     </channel>
 </rss>
