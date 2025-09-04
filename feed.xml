@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 04 Sep 2025 11:40:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Sep 2025 22:40:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：自己管理が苦手な私が自己管理をなんとかしている方法]]></title>
+            <link>https://zenn.dev/akasan/articles/79b4de3b23fbb6</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/79b4de3b23fbb6</guid>
+            <pubDate>Thu, 04 Sep 2025 13:18:33 GMT</pubDate>
+            <content:encoded><![CDATA[今回は自己管理が苦手な私が以下にして最近自己管理しようともがいているか、その方法をまとめてみました。なお、書いていて思いましたが、ここに書いているものは全て気合いの上で成り立っているので、私は気合いで人生乗り切っていると改めて感じましたw。 出張で時間がないので超短編です（記事のストックがないため毎日書いていますw） 習慣づける習慣づけが苦手なのでそれを特に頑張っています。このテックブログはこの記事で140日連続続いているのですが、これが一番の効果があると思います。元々は三日坊主癖が強かったのですが、決めたことをとにかく貫き通すということで、現在頑張っています。 カレンダー...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[雰囲気で理解していたAPIとは]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/b8c8863bf74be7</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/ca5a602c2482f5</guid>
             <pubDate>Sun, 17 Aug 2025 12:30:42 GMT</pubDate>
             <content:encoded><![CDATA[今回はEventarcを利用して、Cloud Storageにファイルがアップロードされたことを検知してCloud Runのエンドポイントを呼び出してみました。以前Pub/Subを使ってBigQueryと連携することはしてみましたが、今回はEventarcを使ってみました。https://zenn.dev/akasan/articles/e17a1867408c53 早速試してみる今回は以下の公式ドキュメントを参考に進めました。https://cloud.google.com/run/docs/tutorials/eventarc?hl=ja#before-you-begin...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud RunのDocker Compose対応]]></title>
-            <link>https://speakerdeck.com/aminevg/google-cloud-runnodocker-composedui-ying</link>
-            <guid isPermaLink="false">https://speakerdeck.com/aminevg/google-cloud-runnodocker-composedui-ying</guid>
-            <pubDate>Sun, 17 Aug 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloud RunがDocker Composeに対応しました！。これで、既存のDockerfileを活用してCloud Runにデプロイできるようになりました。複数のコンテナをまとめて単一サービスとしてデプロイのも便利です。一方で、モノレポへの不向きだったり、複数のサービスをデプロイできなかったり、デメリットもあります。今後はTerraform対応やCompose機能の拡充を期待しています。]]></content:encoded>
         </item>
     </channel>
 </rss>
