@@ -561,18 +561,6 @@ export const members: Member[] = [
     websiteUrl: "https://lit.link/melanmeg",
   },
   {
-    id: "atusy",
-    name: "Atsushi Yasumoto",
-    role: "Software Developer",
-    bio: "loves programming",
-    avatarSrc: "/avatars/atusy.jpg",
-    sources: ["https://blog.atusy.net/index.xml"],
-    includeUrlRegex: "",
-    twitterUsername: "Atsushi776",
-    githubUsername: "atusy",
-    websiteUrl: "https://blog.atusy.net/",
-  },
-  {
     id: "yyamada",
     name: "Yunosuke Yamada",
     avatarSrc: "/avatars/yyamada.jpg",
