@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 05 Sep 2025 11:41:14 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Sep 2025 22:40:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ZenMLシリーズ：Hello Worldを試してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/3f62b9d24622e6</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3f62b9d24622e6</guid>
+            <pubDate>Fri, 05 Sep 2025 13:48:15 GMT</pubDate>
+            <content:encoded><![CDATA[今回はZenMLを使って一番シンプルなワークフローを作成してみました。 ZenMLとは？ZenMLはMLOpsとLLMOpsのプラクティスを活用して、大規模なAIアプリケーションを評価、監視、展開するためのツールになります。昨今生成AIが多用される中で、LLM O11yのじゅ硫黄は高まってきており、かつ入出力の管理だけでなくワークフローの管理も重要な課題となっています。ZenMLを利用すると、特にMLOpsやLLMOpsに特化したワークフロー管理をすることができ、決定木から複雑なマルチエージェントシステムまで、AIポートフォリオ全体を開発、評価、展開するための単一のプラットフォー...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Gemini CLI AI駆動開発体験ハンズオン]]></title>
             <link>https://shu-kob.hateblo.jp/entry/2025/09/05/185202</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/4ac96d153149c7</guid>
             <pubDate>Tue, 19 Aug 2025 11:28:44 GMT</pubDate>
             <content:encoded><![CDATA[今回はタイトルにあるように、BigQueryMLを用いてtitanicの生存者予測タスクに取り組めるモデルを開発してみました。なお、今回BigQueryMLを利用するにあたり、クエリの生成にはGPT-5を存分に利用しました。 実際にやってみる！ BigQueryにデータセットをアップロードするまずはtitanicのデータセットをBigQueryにアップロードします。以下の手順でデータを準備します。titanicデータセットをダウンロードするBigQueryにてtitanicデータセットを作成するtitanicデータセットに対してtrainとtestというテーブルを登録...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vertex AIのModel Garden調査　〜基盤モデル〜]]></title>
-            <link>https://zenn.dev/akasan/articles/adca86f2802773</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/adca86f2802773</guid>
-            <pubDate>Mon, 18 Aug 2025 10:42:05 GMT</pubDate>
-            <content:encoded><![CDATA[今回はVertex AIのModel Gardenで提供されているText Generation用の基盤モデルについて何が提供されているかまとめてみます。全ては網羅せず、ざっくり眺めてみます。※ Model Gardenで説明に利用されているサムネイルのテキストから要約しています。モデルの詳細などは省略します。 Gemini系 Gemini 2.5 Proコーディングおよび複雑なプロンプトに特に強く対応 Gemini 2.5 Flashリーズニングとレスポンススピードの両方がバランスよく使える Imagen系列 Imagen Ultra 4 for im...]]></content:encoded>
         </item>
     </channel>
 </rss>
