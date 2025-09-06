@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 05 Sep 2025 22:40:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Sep 2025 11:41:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google CloudのModel Armorを利用してプロンプトのサニタイズをしてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/7ce40551040ccc</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/7ce40551040ccc</guid>
+            <pubDate>Sat, 06 Sep 2025 09:26:26 GMT</pubDate>
+            <content:encoded><![CDATA[今回はGoogle CloudのSecurity Command Centerで提供されているModel Armorを利用してみます。プロンプトやLLMのレスポンスなどをサニタイズするために利用することができ、安全にLLMを利用するための要素の一つとして重要な機能になります。※ プロンプトの検知を実験するためにプロンプトを指定していますが、本来は指定されるべきではない内容を含みますので、検証はご注意下さい Model Armorとは？先ほどもあげたように、Model ArmorはGoogle CloudのSecurity Command Centerで提供されている機能であり、L...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[あなたのアプリにマルチリージョンは必要ないかもしれない]]></title>
+            <link>https://zenn.dev/kamos/articles/dont_need_multi_region</link>
+            <guid isPermaLink="false">https://zenn.dev/kamos/articles/dont_need_multi_region</guid>
+            <pubDate>Sat, 06 Sep 2025 03:32:28 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにアプリケーションを運用する上で、可用性は避けて通れない重要なテーマです。可用性を確保するためにインフラの単一障害点を可能な限りなくし、冗長化構成を組むことは今や常識となっています。その中でも特に強力な障害対策として挙げられるのが「マルチリージョン構成」です。しかし、その実装と運用には相応のコストと複雑さが伴います。この記事では、クラウドインフラにおける障害対策としてのマルチリージョン化が、本当にあなたのアプリケーションに必要なのかを、コストとリスクの観点から考察します。 あなたのアプリに「高い可用性」は必要か？あらゆるサービスが高い可用性を目指すべきかというと、必...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ZenMLシリーズ：Hello Worldを試してみた]]></title>
             <link>https://zenn.dev/akasan/articles/3f62b9d24622e6</link>
@@ -223,20 +237,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/ota1022/dockerkaraecshe-awsnohai-nichu-ruqian-nizhi-tuteokitaikoto</guid>
             <pubDate>Thu, 21 Aug 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[JAWS-UGコンテナ支部 入門編 #8 初心者大歓迎LT大会のLT登壇資料です。https://jawsug-container.connpass.com/event/361918/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Dataprepを使ってデータ編集レシピを作ってみた]]></title>
-            <link>https://zenn.dev/akasan/articles/ebd4be0540c5f2</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/ebd4be0540c5f2</guid>
-            <pubDate>Wed, 20 Aug 2025 11:51:38 GMT</pubDate>
-            <content:encoded><![CDATA[今回はDataprepを利用してTitanicデータセットを加工してみようと思います。 Dataprepとは？Dataprepとは、Alteryxと共同で構築されたGoogleのセルフサービスデータ準備ツールです。BigQueryなどのデータソースからデータを取得してレシピを通して加工し、再度BigQueryやCloud Storageなどに格納するといったデータの処理を実行することができます。Dataprepを利用することでデータのクリーニングや変換などを一つのプラットフォームで可視化しながら実行できるため、データエンジニアリングに大きく貢献します。なお、今回の検証ではトライア...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[BigQueryMLを用いてtitanic生存者予測タスクをやってみた]]></title>
-            <link>https://zenn.dev/akasan/articles/4ac96d153149c7</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/4ac96d153149c7</guid>
-            <pubDate>Tue, 19 Aug 2025 11:28:44 GMT</pubDate>
-            <content:encoded><![CDATA[今回はタイトルにあるように、BigQueryMLを用いてtitanicの生存者予測タスクに取り組めるモデルを開発してみました。なお、今回BigQueryMLを利用するにあたり、クエリの生成にはGPT-5を存分に利用しました。 実際にやってみる！ BigQueryにデータセットをアップロードするまずはtitanicのデータセットをBigQueryにアップロードします。以下の手順でデータを準備します。titanicデータセットをダウンロードするBigQueryにてtitanicデータセットを作成するtitanicデータセットに対してtrainとtestというテーブルを登録...]]></content:encoded>
         </item>
     </channel>
 </rss>
