@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 12 Sep 2025 11:41:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Sep 2025 22:39:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[claude codeに3次元のフラクタル図形書かせてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/f90c2940cf1ef3</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/f90c2940cf1ef3</guid>
+            <pubDate>Fri, 12 Sep 2025 14:07:09 GMT</pubDate>
+            <content:encoded><![CDATA[昨日は2次元のフラクタル図形をClaude Codeに作成させましたが、今回は3Dのフラクタル図形を作成させてみました。ぜひ昨日の記事もご覧ください。https://zenn.dev/akasan/articles/91d41376641ffc 早速やってみるまずは環境構築をします。uv init fractal_3d -p 3.12cd fractal_3duv add matplotlib numpy pillow今回claude codeに与えた指示は以下になります。pythonを使って、3次元のフラクタル図形を段階的に生成してアニメーションとして保存するコード...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「Application Development」のスペシャライゼーション認定を取得]]></title>
             <link>https://sreake.com/blog/appdev_specialization/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/af8b26620c9c98</guid>
             <pubDate>Wed, 27 Aug 2025 13:33:40 GMT</pubDate>
             <content:encoded><![CDATA[今回は私が今まで書いてきたZennの記事をclaude codeに読ませて、どんな記事を書いてきたかとかを分析させてみました。 claude codeへの指示今回claude codeへ指示を出すにあたり、まずはブログ一覧を取得させる必要があります。私はZennの記事をGitHubで管理していて、記事一覧はarticlesフォルダにおいています。なので指示の中でそのフォルダをみるように指定しています。今回claude codeに与えた指示は以下になっています。instructions.md## 分析articlesフォルダ以下に私のテックブログのマークダウンファイルがあり...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vertex AIのColab Enterpriseのランタイムテンプレートを利用してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/454f57beb383e9</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/454f57beb383e9</guid>
-            <pubDate>Tue, 26 Aug 2025 11:59:54 GMT</pubDate>
-            <content:encoded><![CDATA[今回はVertex AI上で提供されているColab Enterpriseについて、ランタイムテンプレートの設定方法を調べてみました。 Colab Enterpriseとは？Colab EnterpriseはVertex AI上で提供されているマネージドなノートブック環境となります。ノートブックファイルを共有することで共同編集することができるほか、それぞれのユーザごとにランタイムを作成できます。また、Geminiによるコード補完機能があったり、BigQueryなどのGoogle Cloudのサービスと統合されているところも特徴です。詳細は以下のページに記載されているのでぜひ参照して...]]></content:encoded>
         </item>
     </channel>
 </rss>
