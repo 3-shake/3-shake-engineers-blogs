@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 12 Sep 2025 22:39:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Sep 2025 11:41:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud 認定資格奮闘記 ~Professional Machine Learning Engineer編~]]></title>
+            <link>https://zenn.dev/akasan/articles/062b9d9e44922a</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/062b9d9e44922a</guid>
+            <pubDate>Sat, 13 Sep 2025 05:17:04 GMT</pubDate>
+            <content:encoded><![CDATA[今回はGoogle Cloud認定資格の一つであるProfessional Machine Learning Engineer(以下、PMLE)を受験したのでその体験記になります。前回取得した資格についても記事にしているのでぜひご覧ください。https://zenn.dev/akasan/articles/c0d347a37065bc Professional Machine Learning EngineerについてPMLEはGoogle Cloudの認定資格の一つであり、特に機械学習に関するサービスおよびその取り扱い、実務への応用などについて問われる資格となります。PMLEで...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[claude codeに3次元のフラクタル図形書かせてみた]]></title>
             <link>https://zenn.dev/akasan/articles/f90c2940cf1ef3</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/c019ee769aadf1</guid>
             <pubDate>Thu, 28 Aug 2025 12:57:38 GMT</pubDate>
             <content:encoded><![CDATA[今回は、私が普段情報収集をする上で利用している情報源について共有しようと思います。特にMLエンジニアとしての色が濃いかなと思いますが、ぜひ参考にしてもらえればと思います。※ 紹介するいかなる媒体の回し者ではございません。単純に普段使ってて助かっているものの共有です ブログ媒体 MediumMediumは特に海外のエンジニアの情報発信を積極的にキャッチアップしたいということで利用しています。無料番だと全ての記事は読めないので、私はAnnual Medium membershipになっているので全ての記事を見れる状態です。特にプログラミング系の記事を多く読んでいますが、とても情報...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[短編：claude codeに私のテックブログを評価させてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/af8b26620c9c98</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/af8b26620c9c98</guid>
-            <pubDate>Wed, 27 Aug 2025 13:33:40 GMT</pubDate>
-            <content:encoded><![CDATA[今回は私が今まで書いてきたZennの記事をclaude codeに読ませて、どんな記事を書いてきたかとかを分析させてみました。 claude codeへの指示今回claude codeへ指示を出すにあたり、まずはブログ一覧を取得させる必要があります。私はZennの記事をGitHubで管理していて、記事一覧はarticlesフォルダにおいています。なので指示の中でそのフォルダをみるように指定しています。今回claude codeに与えた指示は以下になっています。instructions.md## 分析articlesフォルダ以下に私のテックブログのマークダウンファイルがあり...]]></content:encoded>
         </item>
     </channel>
 </rss>
