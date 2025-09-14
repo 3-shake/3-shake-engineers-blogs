@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 13 Sep 2025 22:38:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Sep 2025 11:40:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GoogleのセキュアAIフレームワークについて]]></title>
+            <link>https://zenn.dev/akasan/articles/2b9291950d99ef</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2b9291950d99ef</guid>
+            <pubDate>Sun, 14 Sep 2025 04:16:27 GMT</pubDate>
+            <content:encoded><![CDATA[今回はGoogleが提唱するセキュアAIフレームワークについて調べてみました。さまざまなAIが導入されている昨今、よりセキュアにAIシステムを運用できることが求められています。AIを案件で取り扱っている立場でもあるので、このフレームワークについて調べてみました。 セキュアAIフレームワークとは？Googleが提唱するセキュアAIフレームワーク（以下、SAIF）は、責任を持ってAIを開発し導入するための高いセキュリティ基準が求めらている状況に対して、システムをより安全に保護するための概念的なフレームワークとして提唱されました。https://safety.google/intl/j...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Cloud 認定資格奮闘記 ~Professional Machine Learning Engineer編~]]></title>
             <link>https://zenn.dev/akasan/articles/062b9d9e44922a</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/359a9d19a2c921</guid>
             <pubDate>Fri, 29 Aug 2025 13:38:31 GMT</pubDate>
             <content:encoded><![CDATA[今回はpyinstrumentを使ってPythonコードのプロファイリングをしてみました。自分が実装したコードのどこにボトルネックがあるかなどを分析するためのツールとしてどんな感じか調べてみました！ pyinstrumentとは？pyinstrumentはPython用のプロファイラで、コードの最適化を支援するツールです。プログラムの実行をするインフラ基盤の性能は向上しているものの、実装されているコードのパフォーマンスが悪ければ宝の持ち腐れになってしまいます。そこで、今回紹介するようなプロファイラが必要になってきます。プロファイラを利用することで、プログラムのどこに処理時間が多くか...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[私が情報収集するために利用している情報源公開]]></title>
-            <link>https://zenn.dev/akasan/articles/c019ee769aadf1</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c019ee769aadf1</guid>
-            <pubDate>Thu, 28 Aug 2025 12:57:38 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、私が普段情報収集をする上で利用している情報源について共有しようと思います。特にMLエンジニアとしての色が濃いかなと思いますが、ぜひ参考にしてもらえればと思います。※ 紹介するいかなる媒体の回し者ではございません。単純に普段使ってて助かっているものの共有です ブログ媒体 MediumMediumは特に海外のエンジニアの情報発信を積極的にキャッチアップしたいということで利用しています。無料番だと全ての記事は読めないので、私はAnnual Medium membershipになっているので全ての記事を見れる状態です。特にプログラミング系の記事を多く読んでいますが、とても情報...]]></content:encoded>
         </item>
     </channel>
 </rss>
