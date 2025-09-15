@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 14 Sep 2025 22:39:20 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Sep 2025 11:41:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rayシリーズ：Ray Coreを利用したバッチ予測例の検証]]></title>
+            <link>https://zenn.dev/akasan/articles/e1501d2852e602</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/e1501d2852e602</guid>
+            <pubDate>Mon, 15 Sep 2025 04:46:41 GMT</pubDate>
+            <content:encoded><![CDATA[今回はRay Coreの例として提供されているバッチ予測のサンプルを通して、バッチ予測の実装方法をみていきたいと思います。Rayに関するシリーズは以下でまとめていますのでぜひご覧ください。https://zenn.dev/akasan/scraps/73a90764c065d1 早速例を試してみる今回は以下の例を試してみます。この例では、バッチで取得したデータを対象として、どのように推論を行うかを試す例となっております。https://docs.ray.io/en/latest/ray-core/examples/batch_prediction.html 環境構築uvを...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GoogleのセキュアAIフレームワークについて]]></title>
             <link>https://zenn.dev/akasan/articles/2b9291950d99ef</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/b31578401de5e3</guid>
             <pubDate>Sat, 30 Aug 2025 05:20:41 GMT</pubDate>
             <content:encoded><![CDATA[今回はPyPIで最もインストールされているライブラリが何か急に気になったので調べてみました。小方言としては以下のサイトを参照してみました。※ 今回参照したページの情報が必ずしも最新の情報とは限らないと思いますので、参考程度に見てもらえればと思いますhttps://pypistats.org/top 月間ダウンロード 1位 boto3boto3はAWSのSDKであり、AWSユーザかつPythonユーザであれば基本的に利用するのではないでしょうか？ダウンロード数が1,183,978,863ということで他のライブラリと一線を画すようなインストール数になっています。https:/...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[pyinstrumentを使ってPythonコードのプロファイリングをしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/359a9d19a2c921</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/359a9d19a2c921</guid>
-            <pubDate>Fri, 29 Aug 2025 13:38:31 GMT</pubDate>
-            <content:encoded><![CDATA[今回はpyinstrumentを使ってPythonコードのプロファイリングをしてみました。自分が実装したコードのどこにボトルネックがあるかなどを分析するためのツールとしてどんな感じか調べてみました！ pyinstrumentとは？pyinstrumentはPython用のプロファイラで、コードの最適化を支援するツールです。プログラムの実行をするインフラ基盤の性能は向上しているものの、実装されているコードのパフォーマンスが悪ければ宝の持ち腐れになってしまいます。そこで、今回紹介するようなプロファイラが必要になってきます。プロファイラを利用することで、プログラムのどこに処理時間が多くか...]]></content:encoded>
         </item>
     </channel>
 </rss>
