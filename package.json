@@ -24,7 +24,7 @@
   "devDependencies": {
     "@eslint/js": "9.35.0",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "22.10.2",
+    "@types/node": "22.18.4",
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
     "@typescript-eslint/eslint-plugin": "8.39.1",
@@ -44,7 +44,7 @@
     "typescript": "5.9.2"
   },
   "volta": {
-    "node": "22.18.0",
+    "node": "22.19.0",
     "yarn": "4.9.4"
   }
 }
