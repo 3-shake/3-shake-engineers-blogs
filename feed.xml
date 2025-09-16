@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 15 Sep 2025 22:40:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Sep 2025 03:09:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Sreakeの英語ブログをはじめました！]]></title>
+            <link>https://sreake.com/blog/enabling-en-blog/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/enabling-en-blog/</guid>
+            <pubDate>Tue, 16 Sep 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[こんにちは！ Sreake事業部のイリドリシ愛民 (@realaminevg) です。 2020年から継続してきたSreakeブログの運用経験を活かし、今月からSreakeの英語ブログ（Sreake English Bl […]The post Sreakeの英語ブログをはじめました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Rayシリーズ：Ray Coreを利用したバッチ予測例の検証]]></title>
             <link>https://zenn.dev/akasan/articles/e1501d2852e602</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/5697384428538b</guid>
             <pubDate>Sun, 31 Aug 2025 07:18:14 GMT</pubDate>
             <content:encoded><![CDATA[今回はVertex AI Pipelinesに入門するための最もシンプルなところを紹介しようと思います。 Vertex AI Pipelinesとは？Vertex AI Pipelinesは、MLのパイプラインを記述することができるサービスになります。MLワークフローをおーけストレートすることにより、データ準備からモデルの学習、モニタリングまで全て自動で行うことができるようになります。MLOpsを実現するためにはMLのライフサイクルを可能な限り自動化するための取り組みが必要であり、そのための手段としてとても有益なツールとなります。パイプラインを記述するためにはKubeflow P...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[PyPIで最もダウンロードされているライブラリ一覧みてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/b31578401de5e3</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/b31578401de5e3</guid>
-            <pubDate>Sat, 30 Aug 2025 05:20:41 GMT</pubDate>
-            <content:encoded><![CDATA[今回はPyPIで最もインストールされているライブラリが何か急に気になったので調べてみました。小方言としては以下のサイトを参照してみました。※ 今回参照したページの情報が必ずしも最新の情報とは限らないと思いますので、参考程度に見てもらえればと思いますhttps://pypistats.org/top 月間ダウンロード 1位 boto3boto3はAWSのSDKであり、AWSユーザかつPythonユーザであれば基本的に利用するのではないでしょうか？ダウンロード数が1,183,978,863ということで他のライブラリと一線を画すようなインストール数になっています。https:/...]]></content:encoded>
         </item>
     </channel>
 </rss>
