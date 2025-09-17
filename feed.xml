@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 17 Sep 2025 11:41:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Sep 2025 22:38:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google CloudのサービスアカウントをTerraformで作る方法について]]></title>
+            <link>https://zenn.dev/akasan/articles/b07c3ffab7f2ec</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/b07c3ffab7f2ec</guid>
+            <pubDate>Wed, 17 Sep 2025 13:32:45 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、Google CloudのサービスアカウントをTerraformから作成する方法について調べてみました。最近K8sに加えてTerraformの学習もどんどん進めており、その勉強として今回はサービスアカウントを取り扱ってみます。Google CloudでTerraformを試してみた系は以下のスクラップにまとめていますので合わせてご覧ください！https://zenn.dev/akasan/scraps/c6182a7d763bc8 早速やってみる！ 変数の作成まずはGoogle CloudのプロジェクトIDやリージョンを設定するためにvariables.tfを以下の...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025-08-05 Google Cloud Next Tokyo 2025 Cloud RunとCloud SQLの接続方式と事例]]></title>
             <link>https://speakerdeck.com/masasuzu/2025-08-05-google-cloud-next-tokyo-2025-cloud-runtocloud-sqlnojie-sok-fang-shi-toshi-li</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/bells17/amazon-vpc-cninixue-hucni-ltban</guid>
             <pubDate>Tue, 02 Sep 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://k8sjp.connpass.com/event/365262/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[lakeFSシリーズ: Qucikstart入門編]]></title>
-            <link>https://zenn.dev/akasan/articles/f51ba2da49ec1a</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/f51ba2da49ec1a</guid>
-            <pubDate>Mon, 01 Sep 2025 13:09:07 GMT</pubDate>
-            <content:encoded><![CDATA[今回からlakeFS紹介シリーズも始めようと思います（一体いくつシリーズ始めるんだw）。lakeFSを利用することでデータのバージョンをGitで管理することができるようになります。今回は公式で提供されているQiuckstartを通して入門してみます。 lakeFSとは？lakeFSは、オブジェクトストレージをGitライクなリポジトリに変換するオープンソースのツールであり、コードを管理するようにデータレイクを管理できるもののようです。lakeFSを利用することで、複雑なETLジョブからデータサイエンスやアナリティクスまで、反復可能でアトミックかつバージョン管理されたデータレイクオペレ...]]></content:encoded>
         </item>
     </channel>
 </rss>
