@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 17 Sep 2025 22:38:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Sep 2025 05:47:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Vertex AI Feature Storeの機能グループをTerraformで作る方法について]]></title>
+            <link>https://zenn.dev/akasan/articles/3954f50f913bae</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3954f50f913bae</guid>
+            <pubDate>Thu, 18 Sep 2025 04:55:06 GMT</pubDate>
+            <content:encoded><![CDATA[今回はVertex AIのFeature Storeの機能グループをTerraformから作成する方法について調べてみました。機能グループを利用するにはバックエンドとなるBigQueryデータセットの作成が必要であり、これら二つのリソースの作成をしてみます。Google CloudでTerraformを試してみた系は以下のスクラップにまとめていますので合わせてご覧ください！https://zenn.dev/akasan/scraps/c6182a7d763bc8 早速作ってみる！今回作成する機能グループについて、リソース定義は以下をベースに実施します。https://regi...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのサービスアカウントをTerraformで作る方法について]]></title>
             <link>https://zenn.dev/akasan/articles/b07c3ffab7f2ec</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/c542c7ec7a5cf2</guid>
             <pubDate>Tue, 02 Sep 2025 11:48:40 GMT</pubDate>
             <content:encoded><![CDATA[今回はVertex AI上で提供されているFeature Storeについて、オフラインサービング機能を試してみたので共有します。 Vertex AI Feature Storeとは？まずはFeature Storeとは何かというところですが、簡単にいうとMLモデルを学習するための特徴量を中央集権的に管理してくれるレジストリです。MLモデルを開発する時はそれぞれの開発者がモデルに必要な特徴量を作るために前処理を実装しますが、生成された特徴量を他のエンジニアに共有するためにわざわざファイルに落として共有する必要があります。Feature Storeを導入すると、作成された特徴量はFe...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon VPC CNIに学ぶCNI-LT版]]></title>
-            <link>https://speakerdeck.com/bells17/amazon-vpc-cninixue-hucni-ltban</link>
-            <guid isPermaLink="false">https://speakerdeck.com/bells17/amazon-vpc-cninixue-hucni-ltban</guid>
-            <pubDate>Tue, 02 Sep 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://k8sjp.connpass.com/event/365262/]]></content:encoded>
         </item>
     </channel>
 </rss>
