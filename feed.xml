@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 19 Sep 2025 11:40:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Sep 2025 22:39:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[クラウド環境におけるシークレットの扱い]]></title>
+            <link>https://blog.masasuzu.net/entry/2025/09/19/203626</link>
+            <guid isPermaLink="false">https://blog.masasuzu.net/entry/2025/09/19/203626</guid>
+            <pubDate>Fri, 19 Sep 2025 11:36:26 GMT</pubDate>
+            <content:encoded><![CDATA[この内容は、社内のエンジニア勉強会で話した内容です。スライドはあとで手直ししてアップロードしますみなさん。プロダクション環境のシークレット情報をどう扱っていますか?クラウドネイティブなアプリケーション開発において、DBのパスワードや外部APIキーといったシークレットの管理は、セキュリティを確保する上で避けては通れない課題です。この記事では、アプリケーションとインフラそれぞれの視点から、クラウド環境におけるシークレット管理のアンチパターンとベストプラクティスを探っていきます。ここで言うシークレットとはDBのパスワードやAPIキーなどの秘匿すべき情報のことを指します。アプリケーション側の視点まずは、アプリケーションがどのようにシークレットを扱うべきかを見ていきましょう。管理のアンチパターン最初に管理方法のアンチパターンとしては以下のものがありますソースコードに直接記述設定ファイルに平文で記述環境変数に平文で記述(Dockerfileや.envファイルでgit管理するなど)base64エンコードして保存ソースコードに記述すれば、すべての環境で同じ値しか使えず柔軟性がありません。設定ファイルや環境変数に平文で記述し、それをGitで管理してしまうと、何かのミスでリポジトリが流出した際にシークレットも漏れてしまいます。また、隠しているつもりでBase64エンコードするのも同様に危険です。Base64は暗号化ではなく、誰でも簡単に元の文字列に戻せるため、平文で保存しているのと大差ありません。KMSによる暗号化の検討次に考えられるのが、暗号鍵を使った暗号化です。AWSのKMSやGoogle CloudのCloud KMSといった鍵管理サービスを利用する方法が考えられます。フローとしては以下のようになりますでしょうかアプリケーション起動時にKMSのから鍵を取得取得した鍵を利用して暗号化されたシークレットを復号平文のシークレット情報をアプリで利用する一見これで良さそうですが、復号処理をアプリケーションの責務にすると、コードが複雑になるだけでなく、KMSの復号権限をアプリケーション自体に付与する必要があり、管理の懸念点が増えてしまいます。クラウド側のシークレットストアの利用そこで推奨されるのが、クラウドが提供するシークレット管理の仕組みを利用することです。AWSAWS Secrets ManagerAWS Systems Manager Parameter Store(SecureString)Google CloudSecret Managerこれらのサービスは、ECS FargateやCloud Runなどのコンテナ実行環境と統合されています。コンテナの起動時に、これらのストアに保存されたシークレットを、自動的に環境変数やファイルとしてマウントしてくれるのです。これによりアプリケーション側では、シークレットがどこで管理されているかを意識することなく、従来通り環境変数やファイルから値を読み込むだけで済むようになり、責務をシンプルに保つことができます。インフラ側の視点さて、アプリケーションの課題は解決しました。次に、インフラ側で、そのシークレットストアをどう管理するかという課題に移りましょう。取れる手段としては主に以下ものが考えられます。手動でコンソールから設定シークレットの値を平文でIaC管理(tfvarsファイルをgit管理から外す)シークレットの値を暗号化してIaCで管理シークレットストアをIaCで管理、値は手動設定まず手動で管理ですが、これはこれでありだと思ってます。ただし、扱うシークレットの数が増えてきたときに作業が煩雑であったり、手作業がゆえに起こるリソースタグなどの付け間違いなどのミスが発生しうるので、規模が大きくなると現実的ではありません。2つ目ですが、シークレットの値だけあつかるtfvarsファイルをgitignoreしてあげることでレポジトリが漏れてもシークレットの値が漏れないことになります。が、うっかりシークレットの値を人為的なミスでコミットしうるので完全に安全とはいいにくいです。3つ目ですが、これはsops providerを利用するパターンです。これを使うことでKMSキーを利用して暗号/復号がterraformとシームレスに統合できます。一見これで良さそうですが、2点課題があります。KMSリソースを余計に管理なくてはならないStateには平文で保存される前者は必要経費としていいとして、後者は課題となります。Terraformにおいてはstateを見る権限がある人にはシークレットも見れてしまうという懸念があります。シークレットのリソースと値を分離するこの方法の利点は、IaCでシークレット リソースが存在することは管理しつつ、その実際の値はGitの管理下から完全に分離できる点です。初回適用後にコンソールから実際のシークレット値を設定すれば、それ以降 terraform apply を実行しても値がダミー値で上書きされることはありません。これにより、コードレビューなどで誤ってシークレットが漏洩するリスクを原理的に防ぐことができ、非常にバランスの取れた管理方法と言えます。以下サンプルコードです。resource "aws_ssm_parameter" "db_password" {  type     = "SecureString"  name     = "/test/db_password"  value    =  "Dummy"  lifecycle {    ignore_changes = [value]  }}まとめ現時点でのクラウドにおけるシークレット管理のベストプラクティスは、以下のようにまとめることができるでしょう。アプリケーションクラウドのシークレットストア(Secrets Managerなど)と実行環境(ECS, Cloud Runなど)の統合機能を使い、環境変数またはファイルとしてシークレットを読み込む。インフラ(IaC)クラウドのシークレットストアのリソース自体はTerraformで管理する。実際のシークレットの値は ignore_changes を活用して手動で設定し、Gitの管理から分離する。もちろん要件によって取りうる手段は変わるとは思います。他になにか良い方法をご存知でしたら教えて下さい。それでは良いシークレットライフを!関連ページblog.masasuzu.net]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Colab EnterpriseのランタイムテンプレートをTerraformで作る方法について]]></title>
             <link>https://zenn.dev/akasan/articles/2966eb1a9f9a38</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/aminevg/honotoastrohazhong-liang-si-cloudflare-workersdenoshi-ifang-shao-jie</guid>
             <pubDate>Wed, 03 Sep 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[バックエンド向けウェブフレームワーク「Hono」、フロントエンド向けのウェブフレームワーク「Astro」。実は仲良いですよ！今回はCloudflare Workers上での、HonoとAstroの使い方を紹介します。単独で使う、Hono-in-Astro、Astro-in-Honoなど組み合わせ方が多いです！最後にAstro-in-Hono関連のライブラリも紹介します。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[BigQueryのINFORMATION_SCHEMA.JOBS ビューに現れた「query_dialect」とは?￼]]></title>
-            <link>https://sreake.com/blog/bigquery-information-schema-jobs-query-dialect/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/bigquery-information-schema-jobs-query-dialect/</guid>
-            <pubDate>Wed, 03 Sep 2025 03:10:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに こんにちは。 夏が始まったと思ったらもう暦上では9月。夏の終わりです。時間の流れは早いですね。 こんな感じでいつの間にか秋が来て冬が来て年末になっていたり…不思議です。 今回ですが、BigQueryに「いつの間 […]The post BigQueryのINFORMATION_SCHEMA.JOBS ビューに現れた「query_dialect」とは?￼ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
