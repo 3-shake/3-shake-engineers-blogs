@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 18 Sep 2025 22:39:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Sep 2025 11:40:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Colab EnterpriseのランタイムテンプレートをTerraformで作る方法について]]></title>
+            <link>https://zenn.dev/akasan/articles/2966eb1a9f9a38</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2966eb1a9f9a38</guid>
+            <pubDate>Fri, 19 Sep 2025 04:12:08 GMT</pubDate>
+            <content:encoded><![CDATA[今回はVertex AIのColab EnterpriseのランタイムテンプレートをTerraformで記述してみました。以前コンソールからランタイムテンプレートを作ったことはありましたが、今回はその設定をTerraformで再現してみようと思います。以前の該当記事は以下になるので、ぜひ合わせてご覧ください。https://zenn.dev/akasan/articles/454f57beb383e9Google CloudでTerraformを試してみた系は以下のスクラップにまとめていますので合わせてご覧ください！https://zenn.dev/akasan/scraps/c6...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Vertex AI Feature Storeの機能グループをTerraformで作る方法について]]></title>
             <link>https://zenn.dev/akasan/articles/3954f50f913bae</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/bigquery-information-schema-jobs-query-dialect/</guid>
             <pubDate>Wed, 03 Sep 2025 03:10:23 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは。 夏が始まったと思ったらもう暦上では9月。夏の終わりです。時間の流れは早いですね。 こんな感じでいつの間にか秋が来て冬が来て年末になっていたり…不思議です。 今回ですが、BigQueryに「いつの間 […]The post BigQueryのINFORMATION_SCHEMA.JOBS ビューに現れた「query_dialect」とは?￼ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vertex AI Feature Store: オフラインストアを試してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/c542c7ec7a5cf2</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c542c7ec7a5cf2</guid>
-            <pubDate>Tue, 02 Sep 2025 11:48:40 GMT</pubDate>
-            <content:encoded><![CDATA[今回はVertex AI上で提供されているFeature Storeについて、オフラインサービング機能を試してみたので共有します。 Vertex AI Feature Storeとは？まずはFeature Storeとは何かというところですが、簡単にいうとMLモデルを学習するための特徴量を中央集権的に管理してくれるレジストリです。MLモデルを開発する時はそれぞれの開発者がモデルに必要な特徴量を作るために前処理を実装しますが、生成された特徴量を他のエンジニアに共有するためにわざわざファイルに落として共有する必要があります。Feature Storeを導入すると、作成された特徴量はFe...]]></content:encoded>
         </item>
     </channel>
 </rss>
