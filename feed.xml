@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 20 Sep 2025 11:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Sep 2025 22:38:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -19,7 +19,7 @@
             <link>https://zenn.dev/akasan/articles/9c48ed7e2457a6</link>
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/9c48ed7e2457a6</guid>
             <pubDate>Sat, 20 Sep 2025 09:15:40 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、昨日公開したColab Enterpriseのテンプレート作成のTerraformをモジュールを意識した構成で実装してみます。今までの記事ではルートディレクトリだけでmain.tfやvariables.tfを管理していましたが、実際に利用するときはモジュールを意識した構成が必要になるので、今回からその構成を意識して実装します。https://zenn.dev/akasan/articles/2966eb1a9f9a38 ディレクトリ構成今回は以下の構成でディレクトリを編成しました。modules/  main.tf  variables.tf  colab-te...]]></content:encoded>
+            <content:encoded><![CDATA[今回は、昨日公開したColab Enterpriseのテンプレート作成のTerraformをモジュールを意識した構成で実装してみます。今までの記事ではルートディレクトリだけでmain.tfやvariables.tfを管理していましたが、実際に利用するときはモジュールを意識した構成が必要になるので、今回からその構成を意識して実装します。https://zenn.dev/akasan/articles/2966eb1a9f9a38 ディレクトリ構成今回は以下の構成でディレクトリを編成しました。main.tfvariables.tfmodules/  colab-templat...]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[クラウド環境におけるシークレットの扱い]]></title>
