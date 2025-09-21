@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 20 Sep 2025 22:38:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Sep 2025 11:40:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[claude codeにtesseract書かせてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/8ac71d6cc3057a</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/8ac71d6cc3057a</guid>
+            <pubDate>Sun, 21 Sep 2025 11:09:13 GMT</pubDate>
+            <content:encoded><![CDATA[今回はclaude codeに作らせたシリーズの続編です。前回は3次元のフラクタル図形を書かせてみましたが、今回はtesseractを書かせてみました。https://zenn.dev/akasan/articles/f90c2940cf1ef3 tesseractとは？Wikipediaによると、正八胞体（せいはちほうたい、または四次元超立方体、英語: 8-cell、オクタコロン〈英: octachoron〉、テッセラクト〈英: tesseract、テセラクトとも〉）とは、四次元正多胞体の一種で8個の立方体からなる、四次元の超立方体である。とのことです。自分の認識では4...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[モジュールを意識したTerraform構成でColabのテンプレートを作成してみた]]></title>
             <link>https://zenn.dev/akasan/articles/9c48ed7e2457a6</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/nedoko_dok0dko/articles/b8c8863bf74be7</guid>
             <pubDate>Thu, 04 Sep 2025 10:53:53 GMT</pubDate>
             <content:encoded><![CDATA[whatAPIについて調べたことをまとめる自分は雰囲気でAPIを触っている API(Application Programming Interfice)とは「あるソフトウェアの機能やデータを、別のソフトウェアから利用するための窓口や仕組み」のこと。身近な例で言えば、電力会社とコンセントに例えられる。実世界の例として、あなたの家、アパートや他の住処にある電気のコンセントについて考えて下さい。あなたの家で機器を使いたい時には、電源コードのプラグをコンセントに差し込めば事足ります。電源に直接結線したりしないでしょう — そんなのは非効率ですし、あなたが電気工事士でなけれ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2025年9月版読んでいて良かった本紹介]]></title>
-            <link>https://zenn.dev/akasan/articles/786bc699866b6e</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/786bc699866b6e</guid>
-            <pubDate>Wed, 03 Sep 2025 14:24:01 GMT</pubDate>
-            <content:encoded><![CDATA[今月9月は始まったばっかりですが、執筆時間が確保できなさそうだったので、早い段階でまとめます。なお、今月読む本は決まっているので、読む予定の本を共有します。ぜひ先月分もご確認いただければと思います！https://zenn.dev/akasan/articles/e8c40a51231ade 技術系 ネットワークはなぜつながるのか　第２版ネットワーク関連の本はDNSの本だったりを読んではいますが、まだまだ弱いところだなと思って読み始めています。OSI参照モデルから始まり、改めて復習していますが、わかりやすいかなと思います。https://bookplus.nikkei.co...]]></content:encoded>
         </item>
     </channel>
 </rss>
