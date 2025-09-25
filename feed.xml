@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 25 Sep 2025 05:54:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Sep 2025 11:40:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub Actions × AWS OIDC連携の仕組みと経緯を理解する]]></title>
+            <link>https://speakerdeck.com/ota1022/github-actions-x-aws-oidclian-xi-noshi-zu-mitojing-wei-woli-jie-suru</link>
+            <guid isPermaLink="false">https://speakerdeck.com/ota1022/github-actions-x-aws-oidclian-xi-noshi-zu-mitojing-wei-woli-jie-suru</guid>
+            <pubDate>Thu, 25 Sep 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[3-shake SRE Tech Talk #13 オンサイトのLT登壇資料です。https://3-shake.connpass.com/event/362683/]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2025-09-25 SRETT #13 ConftestによるTerraformのPolicy as Codeを試してみる]]></title>
+            <link>https://speakerdeck.com/masasuzu/2025-09-25-srett-number-13-conftestniyoruterraformnopolicy-as-codewoshi-sitemiru</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2025-09-25-srett-number-13-conftestniyoruterraformnopolicy-as-codewoshi-sitemiru</guid>
+            <pubDate>Thu, 25 Sep 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[[3-shake SRE Tech Talk #13 オンサイト - connpass](https://3-shake.connpass.com/event/362683/)でLTした内容。Conftestを軽く試してみた内容。もう少し深堀りして、再度発表したいところ。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cloud Service Mesh 入門編-Google のマネージドサービスメッシュを理解する]]></title>
             <link>https://sreake.com/blog/cloud-service-mesh-getting-started/</link>
@@ -221,20 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/161ab7bdf08c6b</guid>
             <pubDate>Mon, 08 Sep 2025 11:39:34 GMT</pubDate>
             <content:encoded><![CDATA[今回はRayのコア機能であるObjectsについて調べてみました。シリーズについては以下のスクラップにまとめていますのでぜひご参考にしてください。https://zenn.dev/akasan/scraps/73a90764c065d1 Ray Objectsとは？過去の記事で見てきたように、RayにおいてはTaskとActorはオブジェクトを作成して計算されます。Rayではクラスタ内のどこにでもこれらの情報を格納でき、これらのことをリモートオブジェクトと呼び、それらを参照するためにオブジェクト参照を使用します。リモートオブジェクトはRayの分散共有メモリ上のオブジェクトストアに...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[SRE向けイベント【3-shake SRE Tech Talk #13 】～クラウドセキュリティスペシャル〜を開催します]]></title>
-            <link>https://sreake.com/blog/srett13/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/srett13/</guid>
-            <pubDate>Mon, 08 Sep 2025 02:45:08 GMT</pubDate>
-            <content:encoded><![CDATA[この度、スリーシェイクは、SRE向けイベント【3-shake SRE Tech Talk #13 】～クラウドセキュリティスペシャル～を開催します。今回もオフライン・オンラインのハイブリット開催です。 ■概要本イベントは […]The post SRE向けイベント【3-shake SRE Tech Talk #13 】～クラウドセキュリティスペシャル〜を開催します first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Rayシリーズ：Actorsの種類について]]></title>
-            <link>https://zenn.dev/akasan/articles/33a8a373fdd1a8</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/33a8a373fdd1a8</guid>
-            <pubDate>Sun, 07 Sep 2025 03:41:31 GMT</pubDate>
-            <content:encoded><![CDATA[今回は前回紹介したActorsについて、どのような種類があるかを解説しようと思います。https://zenn.dev/akasan/articles/4e84d3dbb03abe Named ActorsこちらはActorsの種類というより、Namespaceの概念を用いてActorsを取得するための機能になります。Actorsのインスタンスを作成した後にNamespaceに登録することで、その名前を参照して別の場所からActorsを利用することができます。公式サンプルを添付すると、以下のようなコードになります。import ray@ray.remoteclass Co...]]></content:encoded>
         </item>
     </channel>
 </rss>
