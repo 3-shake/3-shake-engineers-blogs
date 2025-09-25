@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 24 Sep 2025 22:39:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Sep 2025 05:29:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Cloud Service Mesh 入門編-Google のマネージドサービスメッシュを理解する]]></title>
+            <link>https://sreake.com/blog/cloud-service-mesh-getting-started/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/cloud-service-mesh-getting-started/</guid>
+            <pubDate>Thu, 25 Sep 2025 02:12:40 GMT</pubDate>
+            <content:encoded><![CDATA[自己紹介 千葉工業大学大学院 情報科学研究科 情報科学専攻 修士１年の井上 裕介と申します．大学では主にメタヒューリスティクスに関する最適化アルゴリズムの研究に従事しております．2023 年のサマーインターンから引き続き […]The post Cloud Service Mesh 入門編-Google のマネージドサービスメッシュを理解する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubeflow Pipelinesでループを取り扱う方法]]></title>
             <link>https://zenn.dev/akasan/articles/025bbc3a66aa15</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/33a8a373fdd1a8</guid>
             <pubDate>Sun, 07 Sep 2025 03:41:31 GMT</pubDate>
             <content:encoded><![CDATA[今回は前回紹介したActorsについて、どのような種類があるかを解説しようと思います。https://zenn.dev/akasan/articles/4e84d3dbb03abe Named ActorsこちらはActorsの種類というより、Namespaceの概念を用いてActorsを取得するための機能になります。Actorsのインスタンスを作成した後にNamespaceに登録することで、その名前を参照して別の場所からActorsを利用することができます。公式サンプルを添付すると、以下のようなコードになります。import ray@ray.remoteclass Co...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google CloudのModel Armorを利用してプロンプトのサニタイズをしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/7ce40551040ccc</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/7ce40551040ccc</guid>
-            <pubDate>Sat, 06 Sep 2025 09:26:26 GMT</pubDate>
-            <content:encoded><![CDATA[今回はGoogle CloudのSecurity Command Centerで提供されているModel Armorを利用してみます。プロンプトやLLMのレスポンスなどをサニタイズするために利用することができ、安全にLLMを利用するための要素の一つとして重要な機能になります。※ プロンプトの検知を実験するためにプロンプトを指定していますが、本来は指定されるべきではない内容を含みますので、検証はご注意下さい Model Armorとは？先ほどもあげたように、Model ArmorはGoogle CloudのSecurity Command Centerで提供されている機能であり、L...]]></content:encoded>
         </item>
     </channel>
 </rss>
