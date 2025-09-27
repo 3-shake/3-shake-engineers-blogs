@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 26 Sep 2025 22:39:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Sep 2025 11:40:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[みんなの考えた最強のデータ基盤アーキテクチャ第５回 参加ログ]]></title>
+            <link>https://zenn.dev/nedoko_dok0dko/articles/589fc799f824c6</link>
+            <guid isPermaLink="false">https://zenn.dev/nedoko_dok0dko/articles/589fc799f824c6</guid>
+            <pubDate>Sat, 27 Sep 2025 07:29:56 GMT</pubDate>
+            <content:encoded><![CDATA[what9/24(水)に開催された「みんなの考えた最強のデータ基盤アーキテクチャ第５回〜オールスター大集合スペシャル！！」の参加ログです。https://datatech-jp.connpass.com/event/360596/今回が初参加&初現地という完全初見でドキドキの中いってきました。 イベント概要datatech-jpというデータエンジニアのコミュニティで集ったデータエンジニアが、それぞれ考える最強のデータ基盤アーキテクチャを紹介し合うというイベントです。過去に４回開催されており、５回目となる今回は過去登壇した方々が「今のデータ基盤」を語るというもので...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[TFLintに入門してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/c5c1729e8941a6</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c5c1729e8941a6</guid>
+            <pubDate>Sat, 27 Sep 2025 05:13:44 GMT</pubDate>
+            <content:encoded><![CDATA[今回はTFLintに入門してみました。今まではTerraformを利用する際にLinterを導入していなかったので、TFLintを用いてLinter入門してみました。 TFLintとは？TFLintはTerraformのプラグインであり、以下のような特徴を持つようです。主要なクラウドプロバイダー（AWS/Azure/Google Cloud）の可能性のあるエラー（無効なインスタンスタイプなど）を検索非推奨の構文や未使用の宣言について警告ベストプラクティス、命名規則を実施私は主にGoogle Cloudに対して利用していましたが、主要なクラウドプロバイダーを対象としたチェ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[claude codeにjailbreakの防ぎ方理解しているか聞いてみた]]></title>
             <link>https://zenn.dev/akasan/articles/610e22ba6ff864</link>
@@ -221,20 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/573fa3dfa4911e</guid>
             <pubDate>Wed, 10 Sep 2025 11:00:24 GMT</pubDate>
             <content:encoded><![CDATA[今回からついに始まりました、CNCFルーレットのお時間です。記念すべき第一弾はMist.ioとなりました。CNCFルーレットについては以下の記事で紹介していますのでぜひご覧ください。https://zenn.dev/akasan/articles/42f5a1d2786ca5https://zenn.dev/akasan/articles/ef9e2919c312c1 Mist.ioとは？Mistはオープンソースのマルチクラウド管理プラットフォームとのことです。Mistでは以下を実現することで、マルチクラウドの取り扱いをしているようです。Self-service: アクセス...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Webアプリケーションにオブザーバビリティを実装するRust入門ガイド]]></title>
-            <link>https://speakerdeck.com/nwiizo/webapurikesiyonniobuzababiriteiwoshi-zhuang-sururustru-men-gaido</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/webapurikesiyonniobuzababiriteiwoshi-zhuang-sururustru-men-gaido</guid>
-            <pubDate>Wed, 10 Sep 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年9月10日（水）、「Rustの現場に学ぶ〜Webアプリの裏側からOS、人工衛星まで〜」というイベントで登壇させていただきます。https://findy.connpass.com/event/359456/他の登壇者の話が聞きたすぎるけど調整能力の圧倒的な不足で登壇したらすぐに帰らなければなりません。今回の発表内容のベースとなったのはこちらのブログです。- 「RustのWebアプリケーションにオブザーバビリティを実装するインフラエンジニアのための入門ガイド」]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud で目指す クラウド二刀流エンジニア講座 第1回 でパネルディスカッションに出てきました。]]></title>
-            <link>https://blog.masasuzu.net/entry/2025/09/10/005523</link>
-            <guid isPermaLink="false">https://blog.masasuzu.net/entry/2025/09/10/005523</guid>
-            <pubDate>Tue, 09 Sep 2025 15:55:23 GMT</pubDate>
-            <content:encoded><![CDATA[先日、2025年6月4日に開催された 「Google Cloud で目指すクラウド二刀流エンジニア講座」 の第1回にて、「スペシャリストが語る！Google Cloud のメリットを活かすネットワーク、セキュリティのあり方とは？」 と題したパネルディスカッションに登壇いたしました。イベントから少し時間が経ちましたが、当日の内容を振り返り、話したことや、時間の都合上話しきれなかった点などをまとめていきたいと思います。cloudonair.withgoogle.comページとセッションでの資料は以下のとおりです。Session 3 : スペシャリストが語る！Google Cloud のメリットを活かすネットワーク、セキュリティのあり方とは？Session 3 : スペシャリストが語る！Google Cloud のメリットを活かすネットワーク、セキュリティのあり方とは？(スライド)以下パネルディスカッションでお話しした内容と補足を記載します。Question 1 :現在のハイブリッドクラウド構成時のトレンドとお客様が気にされるポイント大規模なシステムではオンプレミスとクラウドを組み合わせたハイブリッド構成を、中規模以下のシステムではオンプレミスからクラウドへ完全に移行する、あるいは最初からクラウドで構築する「クラウドネイティブ」な構成が多い傾向にあります。可用性向上のために、同じサービスをマルチクラウドで構築するケースは少なく、まずは単一クラウド内でのマルチリージョン構成が検討されることが多い印象です。しかし、私が担当するサービスではマルチリージョンが必要なほどクリティカルなものはそれほど多くなく、多くは単一リージョン内のマルチAZ(ゾーン)構成を採用しています。冗長性が目的ではなく、特定の機能を使いたいので一部のサービス（例: 特にBigQuery、Vertex AI）のみをGoogle Cloudで利用するケースがあります。メインクラウドがどちらかに偏っており、Google Cloudを補完的に利用するケースが多いようです。また、可用性向上という目的とは別に、特定の機能（特にBigQueryやVertex AIなど）を利用するために、一部のサービスのみGoogle Cloudを補完的に利用する、というケースでマルチクラウドを使用してる例が多いです。お客様が特に重視されるポイントとしては、コスト、セキュリティ、そして可用性の担保が挙げられます。Question 2 :クラウドのネットワーク設計、セキュリティ実装において押さえておくべきポイント最適な設計や実装は、お客様の組織体制やチーム体制、そして運用するサービスの性質によって大きく変わります。そのため、まずはどのような運用体制を目指すのかを分析・定義し、それに合った構成を提案することが重要です。考慮すべき観点としては、以下のような点が挙げられます。フォルダやプロジェクトの構成可用性の取り方過剰な可用性を求めていないか、サービスの要件と合っているかセキュリティの要求ネットワーク構成そして何よりも、設計した構成が、実際のチームで「運用可能」であることが最も重要だと考えています。Question 3 :ネットワーク、セキュリティの課題とアプローチここでは、ネットワークの課題を解決した事例を一つご紹介します。Cloud Run、MemoryStore (Redis)、Cloud SQLで構成されたアプリケーションで、Cloud RunとCloud SQL間のネットワーク性能が上がらないという問題が発生しました。Cloud RunはVPCの外部にあるリソースのため、VPC内にあるCloud SQLと接続するにはServerless VPC Connectorを経由していました。調査の結果、性能が出ない原因は、このServerless VPC Connectorのインスタンス数を固定で設定していたことでした。一時的な対処として、Serverless VPC Connectorの最大インスタンス数とインスタンスタイプを引き上げました。このサービスはサーバーレスという名前ですが、実際にはインスタンス数やタイプを指定する必要があります。(ここで言うサーバレスは、サーバレスなリソースへのコネクタという意です)しかし、この対処法では課題が残ります。Serverless VPC Connectorは一度スケールアウトすると自動でスケールインしないため、ピーク時に合わせたインスタンス数のコストを常に払い続けることになってしまいます。そこで根本的な解決策として、Direct VPC Egressへの移行を実施しました。Direct VPC Egressは、パフォーマンスが高く、コストもネットワーク転送料金のみに抑えられるというメリットがあります。ただし、VPCに直接接続するため、使用するIPアドレス数が多くなる点には注意が必要です。この事例では、Cloud Runのデプロイ設定でコネクタを切り替えるだけだったため、移行は比較的スムーズでした。また、インフラがコード化(IaC)されていたため、何か問題があってもすぐに切り戻しができる状態だったことも成功の要因です。この経験から言えるのは、本番稼働しているネットワークの変更は容易ではないということです。そのため、初期設計は慎重に行う必要があります。とはいえ、サービスの成長に伴う構成変更は避けられません。将来の変更を見越して、変更しやすい設計を心がけ、変更を安全に試せる環境を準備しておくことが重要です。具体的には、インフラを可能な限りIaC化して変更や切り戻しを容易にすること、検証環境をすぐに構築できるよう準備しておくこと、そして何よりも 現在のチームメンバーで運用できる方法を選択すること が大切です。チームのスキルレベルや人数、体制を考慮した現実的なアプローチを常に考えていく必要があります。(この事例の話、若干ずれてて長くなってしまった感があります。反省)Question 4 :Google Cloud のネットワーク・セキュリティ領域でのおすすめのサービス・機能ここでは3つのサービスをあげさせてもらいました。IAP限定公開の Google アクセス共有VPCIAPアプリケーションにGoogle認証を簡単に追加できる非常に便利なサービスです。最近、ALBなしでCloud Runに直接設定できるようになりました(プレビュー機能)。ただし、ALBを利用する場合と異なり、Cloud ArmorによるWAF保護が適用できないため、ユースケースに応じた注意が必要です。限定公開の Google アクセス通常、Compute EngineなどのリソースからGoogle系のAPI（Cloud Storageなど）にアクセスするには、外部IPアドレスを持つか、Cloud NATなどを経由する必要がありました。しかし、サブネットでこの「限定公開のGoogleアクセス」を有効にすると、追加費用なしで、外部IPを持たないリソースから直接Google APIにアクセスできるようになります。AWSではVPC EndpointをAPIごとに作成する必要があり、管理が煩雑でコストもかかりますが、Google Cloudではこの機能によって非常にシンプルかつ低コストにプライベートなアクセスが実現できます。共有 VPC(Shared VPC)誰にでもおすすめできるわけではありませんが、特定の要件には非常に有効な機能です。共有VPCを利用すると、ネットワークとセキュリティの管理をインフラチームに集約し、各サービス開発チームは払い出されたサブネット上で開発に専念する、といった職掌の分離が可能になります。これにより、開発チームはインフラを意識することなくアプリケーション開発に集中できます。一つの大規模なシステムを複数のチームで開発する場合や、複数のプロジェクトでVPC上のリソースを共有したい場合に特に便利です。一方で、ネットワークの独立性が失われるため、ファイアウォールの設定をより厳密に行う必要があります。また、開発チームがネットワーク設定を直接変更できないため、変更の都度インフラチームへの依頼が必要になるというデメリットもあります。Question 5 :おすすめのクラウドのネットワーク、セキュリティのベストプラクティスのキャッチアップ方法セキュリティ分野に限りませんが、日々の情報収集が重要です。私のチームでは、Google CloudのリリースノートやAWSのアップデート情報を定期的に確認する会を社内で実施し、効率的に新しい情報をキャッチアップしています。また、資格試験の勉強や更新も、知識を体系的にアップデートする良い機会になります。コミュニティや勉強会イベントへの参加も非常に有効です。Google Cloud関連では、主に以下の2つのコミュニティが活発です。Jagu’e’r (Japan Google Cloud Usergroup for Enterprise)GCPUG(Google Cloud Platform User Group)Jagu'e'rは、ユーザー企業とパートナー企業の従業員で構成されるコミュニティで、各分科会での活動が活発です。私自身もクラウドネイティブ分科会の運営に携わっています。GCPUGは、特にShonan支部が活発に活動されている印象です。他の支部は活動が緩やかになっている面もありますが、Slackワークスペースは現在も動いており、各サービスのチャンネルでは最新アップデートに関する議論が行われています。まとめ今回、初めてパネルディスカッションという形式で登壇させていただきました。至らない点も多々ありましたが、大変貴重な経験となりました。技術に関する議論はやはり楽しいと感じました。今後もこのような機会があれば、ぜひ参加していきたいです。]]></content:encoded>
         </item>
     </channel>
 </rss>
