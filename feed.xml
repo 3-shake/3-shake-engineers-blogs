@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 27 Sep 2025 22:39:25 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Sep 2025 11:40:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[私のブログの記事をWord Cloudにしてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/2532aa47d42451</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2532aa47d42451</guid>
+            <pubDate>Sun, 28 Sep 2025 05:43:03 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、私のテックブログの記事をWord Cloudにして、どんな言葉がよく使われているか調べてみました。この記事で164記事目であり、結構な数の記事を出してきたのでどんな言葉をよく使っているか調べたくなりやってみた次第です。 WordCloudとは？WordCloudとはどのような単語がよく利用されているかをわかりやすく可視化するためのツールになります。画像内に文字が表示されるのですが、その文字が大きければ大きいほど利用頻度が多い単語になります。結果はこの後実際にお見せします。 WordCloud実装する 対象ドキュメント私はZennの記事をGitHubにて管理していま...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[みんなの考えた最強のデータ基盤アーキテクチャ第５回 参加ログ]]></title>
             <link>https://zenn.dev/nedoko_dok0dko/articles/589fc799f824c6</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/91d41376641ffc</guid>
             <pubDate>Thu, 11 Sep 2025 13:37:44 GMT</pubDate>
             <content:encoded><![CDATA[今回はclaude codeを使ってフラクタル図形を作らせてみました。claude codeをはじめ生成AIはどこまでできる能力があるのかを測るためのシリーズになります。前回は立方体をターミナルでぐるぐる回すものをやりましたが、それの第二弾ですね。https://zenn.dev/akasan/articles/11fed840eedaa7※ バタバタしていて、コードの解説まではできません。次回以降行けるタイミングでさせてもらいます フラクタル図形とは？Wikipediaによると図形の部分と全体が自己相似（再帰）になっているものなどをいうということです。あるAから一部B...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Mist.ioとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/573fa3dfa4911e</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/573fa3dfa4911e</guid>
-            <pubDate>Wed, 10 Sep 2025 11:00:24 GMT</pubDate>
-            <content:encoded><![CDATA[今回からついに始まりました、CNCFルーレットのお時間です。記念すべき第一弾はMist.ioとなりました。CNCFルーレットについては以下の記事で紹介していますのでぜひご覧ください。https://zenn.dev/akasan/articles/42f5a1d2786ca5https://zenn.dev/akasan/articles/ef9e2919c312c1 Mist.ioとは？Mistはオープンソースのマルチクラウド管理プラットフォームとのことです。Mistでは以下を実現することで、マルチクラウドの取り扱いをしているようです。Self-service: アクセス...]]></content:encoded>
         </item>
     </channel>
 </rss>
