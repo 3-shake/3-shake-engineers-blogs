@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 29 Sep 2025 11:41:18 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Sep 2025 22:38:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[InstructorライブラリとClean Architectureで実現する型安全なAI統合パターン]]></title>
+            <link>https://sreake.com/blog/typesafe-ai-integration-pattern-with-instructor-library-and-clean-architecture/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/typesafe-ai-integration-pattern-with-instructor-library-and-clean-architecture/</guid>
+            <pubDate>Mon, 29 Sep 2025 13:27:21 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 近年、業務アプリケーションにAI機能を組み込む事例が急速に増えています。しかし、AIの出力は本質的に不確実性を含むため、従来のWebアプリケーション開発で重視されてきた型安全性や保守性を維持することが課題となっ […]The post InstructorライブラリとClean Architectureで実現する型安全なAI統合パターン first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[構造化出力を安定してLLMにさせたいなら「instructor」はいかが？]]></title>
+            <link>https://sreake.com/blog/make-llm-output-stable-by-instructor/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/make-llm-output-stable-by-instructor/</guid>
+            <pubDate>Mon, 29 Sep 2025 13:27:12 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに：LLMの出力制御の課題 「このAIアプリ、ユーザーにいくつか選択肢を提示して、選んでもらう機能が必要だな…」 生成AIを使ったアプリケーション開発では、LLMから構造化されたデータを安定して取得することが重要な […]The post 構造化出力を安定してLLMにさせたいなら「instructor」はいかが？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[APIキーを管理してくれるシェルスクリプトを書いてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/439250ff299f5b</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/439250ff299f5b</guid>
+            <pubDate>Mon, 29 Sep 2025 12:40:57 GMT</pubDate>
+            <content:encoded><![CDATA[今回は私が普段利用しているシェルスクリプトを紹介しようと思います。 紹介するもの！今回紹介するのはAPIキーを管理してくれる機能になります。私は普段ブログを書くにあたり様々なサービスを利用しており、各サービスごとにAPIキーの利用があります。例えばAPIキーを利用しているサービスは以下になります。DatadogGeminiOpenAITraceloopこれらのAPIキーを利用するときに、毎回ウェブサイトに行ってチェックするのも嫌ですし、平文でローカルに保存するのもよろしくないです。かといってAPIキーを暗記するなんて普通に考えてできないので実質不可能です。これらの課...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Platform Engineering Maturity Modelってなに？]]></title>
             <link>https://zenn.dev/r4ynode/articles/platform-engineering-maturity-model</link>
@@ -214,27 +235,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/2b9291950d99ef</guid>
             <pubDate>Sun, 14 Sep 2025 04:16:27 GMT</pubDate>
             <content:encoded><![CDATA[今回はGoogleが提唱するセキュアAIフレームワークについて調べてみました。さまざまなAIが導入されている昨今、よりセキュアにAIシステムを運用できることが求められています。AIを案件で取り扱っている立場でもあるので、このフレームワークについて調べてみました。 セキュアAIフレームワークとは？Googleが提唱するセキュアAIフレームワーク（以下、SAIF）は、責任を持ってAIを開発し導入するための高いセキュリティ基準が求めらている状況に対して、システムをより安全に保護するための概念的なフレームワークとして提唱されました。https://safety.google/intl/j...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud 認定資格奮闘記 ~Professional Machine Learning Engineer編~]]></title>
-            <link>https://zenn.dev/akasan/articles/062b9d9e44922a</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/062b9d9e44922a</guid>
-            <pubDate>Sat, 13 Sep 2025 05:17:04 GMT</pubDate>
-            <content:encoded><![CDATA[今回はGoogle Cloud認定資格の一つであるProfessional Machine Learning Engineer(以下、PMLE)を受験したのでその体験記になります。前回取得した資格についても記事にしているのでぜひご覧ください。https://zenn.dev/akasan/articles/c0d347a37065bc Professional Machine Learning EngineerについてPMLEはGoogle Cloudの認定資格の一つであり、特に機械学習に関するサービスおよびその取り扱い、実務への応用などについて問われる資格となります。PMLEで...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[claude codeに3次元のフラクタル図形書かせてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/f90c2940cf1ef3</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/f90c2940cf1ef3</guid>
-            <pubDate>Fri, 12 Sep 2025 14:07:09 GMT</pubDate>
-            <content:encoded><![CDATA[昨日は2次元のフラクタル図形をClaude Codeに作成させましたが、今回は3Dのフラクタル図形を作成させてみました。ぜひ昨日の記事もご覧ください。https://zenn.dev/akasan/articles/91d41376641ffc 早速やってみるまずは環境構築をします。uv init fractal_3d -p 3.12cd fractal_3duv add matplotlib numpy pillow今回claude codeに与えた指示は以下になります。pythonを使って、3次元のフラクタル図形を段階的に生成してアニメーションとして保存するコード...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「Application Development」のスペシャライゼーション認定を取得]]></title>
-            <link>https://sreake.com/blog/appdev_specialization/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/appdev_specialization/</guid>
-            <pubDate>Fri, 12 Sep 2025 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloud Sell および Service エンゲージメントモデルのプレミアパートナーである株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、Google Cloud Partner Advantage プログラムにおいて、「Application Development - サービス」のスペシャライゼーション認定を取得したことをお知らせします。The post スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「Application Development」のスペシャライゼーション認定を取得 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
