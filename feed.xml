@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 28 Sep 2025 22:39:34 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Sep 2025 02:24:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Platform Engineering Maturity Modelってなに？]]></title>
+            <link>https://zenn.dev/r4ynode/articles/platform-engineering-maturity-model</link>
+            <guid isPermaLink="false">https://zenn.dev/r4ynode/articles/platform-engineering-maturity-model</guid>
+            <pubDate>Sun, 28 Sep 2025 23:00:01 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに先日、以下のイベントに参加しました。そこで「Platform Engineering Maturity Model」を知ったので、その概要をまとめ、実際にどのように活用するのかを考えてみます。https://www.cnia.io/pek2025/ そもそもPlatform Engineeringってなに？!賛否両論ありそうな議題なので鵜呑みにしないでください。本題に入る前に一度初心にかえります。私は「Platform Engineering」を曖昧に理解しています。DevOpsやSREなど、類似する概念の定義と重なる部分があり、境界が曖昧に感じるところがあ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[私のブログの記事をWord Cloudにしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/2532aa47d42451</link>
@@ -228,13 +235,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/appdev_specialization/</guid>
             <pubDate>Fri, 12 Sep 2025 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Google Cloud Sell および Service エンゲージメントモデルのプレミアパートナーである株式会社スリーシェイク（本社：東京都新宿区、代表取締役社長：吉田 拓真、以下スリーシェイク）は、Google Cloud Partner Advantage プログラムにおいて、「Application Development - サービス」のスペシャライゼーション認定を取得したことをお知らせします。The post スリーシェイク、 Google Cloud Partner Advantage プログラムにおいて「Application Development」のスペシャライゼーション認定を取得 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[claude codeにフラクタル図形書かせてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/91d41376641ffc</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/91d41376641ffc</guid>
-            <pubDate>Thu, 11 Sep 2025 13:37:44 GMT</pubDate>
-            <content:encoded><![CDATA[今回はclaude codeを使ってフラクタル図形を作らせてみました。claude codeをはじめ生成AIはどこまでできる能力があるのかを測るためのシリーズになります。前回は立方体をターミナルでぐるぐる回すものをやりましたが、それの第二弾ですね。https://zenn.dev/akasan/articles/11fed840eedaa7※ バタバタしていて、コードの解説まではできません。次回以降行けるタイミングでさせてもらいます フラクタル図形とは？Wikipediaによると図形の部分と全体が自己相似（再帰）になっているものなどをいうということです。あるAから一部B...]]></content:encoded>
         </item>
     </channel>
 </rss>
