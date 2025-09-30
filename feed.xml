@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 29 Sep 2025 22:38:19 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Sep 2025 11:41:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[claude codeに数独の問題作るコード考えさせてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/c4b6817e4de906</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c4b6817e4de906</guid>
+            <pubDate>Tue, 30 Sep 2025 11:27:00 GMT</pubDate>
+            <content:encoded><![CDATA[今回はclaude codeに数独の問題を作るコードを作成させてみました。単純に自分が数独が好きで、なんとなく問題作らせてみたいなと思ってやってみました。 数独とは？数独とは、一般的には9x9の盤面に数字が配置されており、以下のルールに基づいて数字が配置されています。縦横どちらでみても同じ数字は1度しか出てこない盤面を縦横それぞれ均等に3分割したそれぞれの枠内（3x3）で数字の重複はないそのような盤面から数字を隠した時に、隠された場所に元々あった数字を当てるというゲームです。みなさん一度は目にしたことがあると思いますが、今回はそれの問題と回答を作らせてみます。https...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[バイブコーディングと継続的デプロイメント]]></title>
+            <link>https://speakerdeck.com/nwiizo/baibukodeingutoji-sok-de-depuroimento</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/baibukodeingutoji-sok-de-depuroimento</guid>
+            <pubDate>Tue, 30 Sep 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025年9月30日（火）、「バイブコーディングもくもく会 #03」というイベントで登壇することになった。https://aimokumoku.connpass.com/event/368935/正直に言うと、このイベントがどんな空気感なのか、まだ全然掴めていない。ゆるい感じなのか、ガチな感じなのか。笑いを取りに行くべきなのか、真面目にやるべきなのか。そういう「場の空気」みたいなものが事前に分からないのは、けっこう怖い。だから、とりあえず色々なパターンを想定して準備している。要するに、どんな状況になっても対応できるように、という保険をかけまくっているのだ。我ながら、慎重すぎるかもしれない。ブログとGithubはこちら。https://syu-m-5151.hatenablog.com/https://github.com/nwiizo一応、置いておく。見られるのは恥ずかしいけど、見られないのも寂しい。そういう矛盾した感情を抱えながら、当日を迎えることになりそうだ。Marp の資料はこちらです。https://github.com/nwiizo/3shake-marp-templates/blob/main/slides/2025/vibe-coding-continuous-deployment.md]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[InstructorライブラリとClean Architectureで実現する型安全なAI統合パターン]]></title>
             <link>https://sreake.com/blog/typesafe-ai-integration-pattern-with-instructor-library-and-clean-architecture/</link>
@@ -221,20 +235,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/enabling-en-blog/</guid>
             <pubDate>Tue, 16 Sep 2025 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[こんにちは！ Sreake事業部のイリドリシ愛民 (@realaminevg) です。 2020年から継続してきたSreakeブログの運用経験を活かし、今月からSreakeの英語ブログ（Sreake English Bl […]The post Sreakeの英語ブログをはじめました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Rayシリーズ：Ray Coreを利用したバッチ予測例の検証]]></title>
-            <link>https://zenn.dev/akasan/articles/e1501d2852e602</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/e1501d2852e602</guid>
-            <pubDate>Mon, 15 Sep 2025 04:46:41 GMT</pubDate>
-            <content:encoded><![CDATA[今回はRay Coreの例として提供されているバッチ予測のサンプルを通して、バッチ予測の実装方法をみていきたいと思います。Rayに関するシリーズは以下でまとめていますのでぜひご覧ください。https://zenn.dev/akasan/scraps/73a90764c065d1 早速例を試してみる今回は以下の例を試してみます。この例では、バッチで取得したデータを対象として、どのように推論を行うかを試す例となっております。https://docs.ray.io/en/latest/ray-core/examples/batch_prediction.html 環境構築uvを...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GoogleのセキュアAIフレームワークについて]]></title>
-            <link>https://zenn.dev/akasan/articles/2b9291950d99ef</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2b9291950d99ef</guid>
-            <pubDate>Sun, 14 Sep 2025 04:16:27 GMT</pubDate>
-            <content:encoded><![CDATA[今回はGoogleが提唱するセキュアAIフレームワークについて調べてみました。さまざまなAIが導入されている昨今、よりセキュアにAIシステムを運用できることが求められています。AIを案件で取り扱っている立場でもあるので、このフレームワークについて調べてみました。 セキュアAIフレームワークとは？Googleが提唱するセキュアAIフレームワーク（以下、SAIF）は、責任を持ってAIを開発し導入するための高いセキュリティ基準が求めらている状況に対して、システムをより安全に保護するための概念的なフレームワークとして提唱されました。https://safety.google/intl/j...]]></content:encoded>
         </item>
     </channel>
 </rss>
