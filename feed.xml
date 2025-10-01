@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 30 Sep 2025 22:40:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Oct 2025 11:41:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[KubernetesのSigstore活用]]></title>
+            <link>https://sreake.com/blog/utilize-kubernetes-sigstore/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/utilize-kubernetes-sigstore/</guid>
+            <pubDate>Wed, 01 Oct 2025 00:50:40 GMT</pubDate>
+            <content:encoded><![CDATA[本記事では、KubernetesにおけるSigstoreプロジェクトの活用方法を解説します。 Sigstoreの概要や導入事例、キーレス署名については、前回の記事[Cosignによる署名検証とSigstoreの全体像]を […]The post KubernetesのSigstore活用 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cosignによる署名検証とSigstoreの全体像]]></title>
+            <link>https://sreake.com/blog/signature-verification-by-cosign-and-sigstore/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/signature-verification-by-cosign-and-sigstore/</guid>
+            <pubDate>Wed, 01 Oct 2025 00:50:01 GMT</pubDate>
+            <content:encoded><![CDATA[Sigstore Sigstore は、コンテナイメージ、バイナリ、SBOMなどのソフトウェアアーティファクトに対して、安全な署名と検証を実現するOSSプロジェクトです。これを使うことで、ソフトウェアサプライチェーンのセ […]The post Cosignによる署名検証とSigstoreの全体像 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[claude codeに数独の問題作るコード考えさせてみた]]></title>
             <link>https://zenn.dev/akasan/articles/c4b6817e4de906</link>
@@ -222,19 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/314b22ced3c9c1</guid>
             <pubDate>Tue, 16 Sep 2025 13:11:02 GMT</pubDate>
             <content:encoded><![CDATA[今回はGoogle CloudのSecurity Command Centerで提供されているModel Armorについて、Terraformを利用してテンプレートを作成してみました。なお、内容については前回コンソール画面上で作成した設定を再現する形で実装してみます。https://zenn.dev/akasan/articles/7ce40551040ccc 早速実装してみる Model Armorのリソースについて今回は以下のgoogle_model_armor_templateを利用してModel Armorのテンプレートを実装します。https://registr...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[actでGithub ActionsのVibe Codingを加速させる]]></title>
-            <link>https://speakerdeck.com/kojake_300/actdegithub-actionsnovibe-codingwojia-su-saseru</link>
-            <guid isPermaLink="false">https://speakerdeck.com/kojake_300/actdegithub-actionsnovibe-codingwojia-su-saseru</guid>
-            <pubDate>Tue, 16 Sep 2025 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Sreakeの英語ブログをはじめました！]]></title>
-            <link>https://sreake.com/blog/enabling-en-blog/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/enabling-en-blog/</guid>
-            <pubDate>Tue, 16 Sep 2025 01:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[こんにちは！ Sreake事業部のイリドリシ愛民 (@realaminevg) です。 2020年から継続してきたSreakeブログの運用経験を活かし、今月からSreakeの英語ブログ（Sreake English Bl […]The post Sreakeの英語ブログをはじめました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
