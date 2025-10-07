@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 07 Oct 2025 11:40:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Oct 2025 22:40:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[pydantic-settingsで環境変数を読み込む方法]]></title>
+            <link>https://zenn.dev/akasan/articles/0a4136eb60030d</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/0a4136eb60030d</guid>
+            <pubDate>Tue, 07 Oct 2025 14:10:35 GMT</pubDate>
+            <content:encoded><![CDATA[今回はpydantic-settingsを用いて環境変数を読み込むと同時に、環境変数の値のバリデーションをしてみようと思います。 pydantic-settingsとは？pydantic-settingsは環境変数やシークレットファイルを読み込んで利用するための機能をpydanticから拡張したものになっています。通常Pythonで環境変数を読み込むときはosモジュールを利用することが多いかと思いますが、pydantic-settingsを利用するとpydanticに備わっているバリデーション機能などを利用することができるため、より安全に環境変数などを扱うことができます。http...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[USDで作成したUSDファイルをMacbookのプレビューソフトで表示してみた]]></title>
             <link>https://zenn.dev/akasan/articles/6ba6e22863ab69</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/kyohmizu/ctfnotamenokubernetesru-men</guid>
             <pubDate>Tue, 23 Sep 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[イベント登壇資料です。2025/09/23 魔女のお茶会 #8https://witchskeyparty.connpass.com/event/363928/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vertex AI Pipelinesを利用してエンドポイントをデプロイした]]></title>
-            <link>https://zenn.dev/akasan/articles/093e1d1d3ec445</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/093e1d1d3ec445</guid>
-            <pubDate>Mon, 22 Sep 2025 11:20:35 GMT</pubDate>
-            <content:encoded><![CDATA[今回はVertex AI Pipelinesを利用してモデルを開発してエンドポイントにデプロイするためのチュートリアルを実施しました。Google Cloudがオフィシャルで提供しているノートブックがあり、それを利用してデプロイするための方法を解説しようと思います。なお、Pipeline構成コードはサンプルに則って進めますが、インフラ構成についてはTerraformで作成します。https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/pipelines/google_cl...]]></content:encoded>
         </item>
     </channel>
 </rss>
