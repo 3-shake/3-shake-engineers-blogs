@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 08 Oct 2025 11:40:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Oct 2025 22:40:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[pydantic-settingsで実行環境から環境変数を読み込む方法]]></title>
+            <link>https://zenn.dev/akasan/articles/3e60499f9b189a</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3e60499f9b189a</guid>
+            <pubDate>Wed, 08 Oct 2025 13:09:46 GMT</pubDate>
+            <content:encoded><![CDATA[今回は昨日に続いて、pydantic-settingsを利用して環境変数を取り扱おうと思います。昨日は.envファイルを読み込むように設定しましたが、今回はPython実行環境にすでに設定されている環境変数を読み込む方法を共有します。https://zenn.dev/akasan/articles/0a4136eb60030d 早速やってみる！先ほど書いたように、今回は.envから読み込むのではなく、実行環境にすでに登録されている環境変数を読み込もうと思います。 環境構築今回はuvで環境構築するとともに、シェルに環境変数を登録します。uv init pydantic_se...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[生成AI時代に必要なコンサルタントの秘密]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/10/08/091749</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/025bbc3a66aa15</guid>
             <pubDate>Wed, 24 Sep 2025 13:01:06 GMT</pubDate>
             <content:encoded><![CDATA[今回はKubeflow Pipelinesでループを利用する方法について調べてみたので共有したいと思います。このほかにKubeflowでは条件分岐も提供されており、昨日の記事にて共有していますので興味がある方はぜひこちらもご覧ください。https://zenn.dev/akasan/articles/3d8bad30009c85 早速やってみる今回もKubeflowが提供している公式ドキュメントを元にしています。構成としては、ローカルでKubeflow Piprlines（以下、kfp）を用いてパイプラインを実装し、パイプラインファイルをCloud Storageにアップロードし...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubeflow Pipelinesで条件分岐をする方法]]></title>
-            <link>https://zenn.dev/akasan/articles/3d8bad30009c85</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3d8bad30009c85</guid>
-            <pubDate>Tue, 23 Sep 2025 09:38:03 GMT</pubDate>
-            <content:encoded><![CDATA[今回はKubeflow Pipelinesで条件分岐を利用する方法について調べてみたので共有したいと思います。 早速やってみる今回はKubeflowが提供している公式ドキュメントを元にしています。構成としては、まずはローカルでKubeflow Piprlines（以下、kfp）を用いてパイプラインを実装し、パイプラインファイルをCloud Storageにアップロードした上でVertex AI Pipelinesから起動します。https://www.kubeflow.org/docs/components/pipelines/user-guides/core-functions...]]></content:encoded>
         </item>
     </channel>
 </rss>
