@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 09 Oct 2025 11:41:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Oct 2025 22:40:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編: Vibe Codingについて個人的な考えを述べてみる]]></title>
+            <link>https://zenn.dev/akasan/articles/0e4126fdb3660c</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/0e4126fdb3660c</guid>
+            <pubDate>Thu, 09 Oct 2025 13:54:37 GMT</pubDate>
+            <content:encoded><![CDATA[今回はVibe Codingについて個人的な考えをまとめてみようと思います。 まずは私の根本の考え方について!結論から話すと、私個人としては「便利なので基本的にはどんどん使いたい。（ただし条件付き）」と思っている派です。条件付きという含みを持たせているのはずるい気がしますが考えをまとめてみます。 Vibe Codingが必要だと思う時はどんな時？まずはVibe Codingを採用すべき時がどんな時かを考えてみます。 スピード感を重視する時みなさんご存知の通り、Vibe Codingは爆速でコーディングをすることができます。生成AIのコーディング速度は正直人間によるコーデ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Gemini CLI から Cloud Run にデプロイした MCP サーバに接続するベストプラクティス]]></title>
             <link>https://zenn.dev/kimitsu/articles/gemini-cli-cloud-run-mcp</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2025-09-25-srett-number-13-conftestniyoruterraformnopolicy-as-codewoshi-sitemiru</guid>
             <pubDate>Thu, 25 Sep 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[[3-shake SRE Tech Talk #13 オンサイト - connpass](https://3-shake.connpass.com/event/362683/)でLTした内容。Conftestを軽く試してみた内容。もう少し深堀りして、再度発表したいところ。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Service Mesh 入門編-Google のマネージドサービスメッシュを理解する]]></title>
-            <link>https://sreake.com/blog/cloud-service-mesh-getting-started/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/cloud-service-mesh-getting-started/</guid>
-            <pubDate>Thu, 25 Sep 2025 02:12:40 GMT</pubDate>
-            <content:encoded><![CDATA[自己紹介 千葉工業大学大学院 情報科学研究科 情報科学専攻 修士１年の井上 裕介と申します．大学では主にメタヒューリスティクスに関する最適化アルゴリズムの研究に従事しております．2023 年のサマーインターンから引き続き […]The post Cloud Service Mesh 入門編-Google のマネージドサービスメッシュを理解する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
