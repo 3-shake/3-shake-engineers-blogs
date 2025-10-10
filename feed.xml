@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 10 Oct 2025 11:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Oct 2025 22:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[agnoを使ってOpenAIのエージェントを作成してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/80953b8e206dd0</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/80953b8e206dd0</guid>
+            <pubDate>Fri, 10 Oct 2025 13:42:45 GMT</pubDate>
+            <content:encoded><![CDATA[今回はagnoのOpenAI連携機能を利用してエージェントを作ってみました。 agnoとは？agnoとはメモリや知識、ツールやリーズニングを実現するエージェントを実装するための軽量なフレームワークとなります。agnoを利用することで、推論エージェントやマルチモーダルエージェント、エージェントワークフローを構築できます。agnoはエージェントとチャットするための美しいUIやエージェントにサービスを提供する構築済みのFastAPIルート、そしてエージェントのパフォーマンスを監視・評価するためのツールも提供するとのことです。https://github.com/Akasan/agno...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編: Vibe Codingについて個人的な考えを述べてみる]]></title>
             <link>https://zenn.dev/akasan/articles/0e4126fdb3660c</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/ota1022/github-actions-x-aws-oidclian-xi-noshi-zu-mitojing-wei-woli-jie-suru</guid>
             <pubDate>Thu, 25 Sep 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[3-shake SRE Tech Talk #13 オンサイトのLT登壇資料です。https://3-shake.connpass.com/event/362683/]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2025-09-25 SRETT #13 ConftestによるTerraformのPolicy as Codeを試してみる]]></title>
-            <link>https://speakerdeck.com/masasuzu/2025-09-25-srett-number-13-conftestniyoruterraformnopolicy-as-codewoshi-sitemiru</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2025-09-25-srett-number-13-conftestniyoruterraformnopolicy-as-codewoshi-sitemiru</guid>
-            <pubDate>Thu, 25 Sep 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[[3-shake SRE Tech Talk #13 オンサイト - connpass](https://3-shake.connpass.com/event/362683/)でLTした内容。Conftestを軽く試してみた内容。もう少し深堀りして、再度発表したいところ。]]></content:encoded>
         </item>
     </channel>
 </rss>
