@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 10 Oct 2025 22:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Oct 2025 11:40:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,27 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Modern Monolithを作りましょう！ Inertia.jsの紹介とその先]]></title>
+            <link>https://speakerdeck.com/aminevg/modern-monolithwozuo-rimasiyou-inertia-dot-jsnoshao-jie-tosonoxian</link>
+            <guid isPermaLink="false">https://speakerdeck.com/aminevg/modern-monolithwozuo-rimasiyou-inertia-dot-jsnoshao-jie-tosonoxian</guid>
+            <pubDate>Sat, 11 Oct 2025 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[マイクロサービス流行の時代で、あえてモノリスを作りませんか？バックエンドとフロントエンドの連携を行う際は、辛い思いをした方が多いのではないでしょうか。APIの作成、認証の実装、フォーム送信など、様々なハードルがあります。そういった問題を解決して、フルスタック開発を楽にするライブラリさえあれば...実際にありますよ！このLTでは、SPAのフロントエンドをバックエンド内で作れるInertia.jsをご紹介します。基本的な使い方から、直近の新機能やInertia.jsの将来を解説します。このLTを通じて、「フルスタック開発が楽になった！」「フロントエンドのためのAPI設計はもうさらばだ！」と思ってもらえればと思います。]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[agnoのGuardrail機能を試してみた]]></title>
+            <link>https://zenn.dev/akasan/articles/48cea67449be64</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/48cea67449be64</guid>
+            <pubDate>Sat, 11 Oct 2025 03:09:11 GMT</pubDate>
+            <content:encoded><![CDATA[今回は昨日に引き続きagnoを利用してみました。agnoではGuardrailの機能について提供しており、そのサンプルを通して挙動を確認してみようと思います。昨日のagnoの導入記事もぜひ合わせてご覧ください。https://zenn.dev/akasan/articles/80953b8e206dd0 早速使ってみる今回は以下のページを参考にサンプルを試してみます。https://docs.agno.com/concepts/agents/guardrails/overviewhttps://docs.agno.com/examples/concepts/agent/gua...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[楽にあなたのクラウドを守ろう！ - CNAPP概要]]></title>
+            <link>https://zenn.dev/r4ynode/articles/cloud-security-using-cnapp</link>
+            <guid isPermaLink="false">https://zenn.dev/r4ynode/articles/cloud-security-using-cnapp</guid>
+            <pubDate>Fri, 10 Oct 2025 23:00:05 GMT</pubDate>
+            <content:encoded><![CDATA[要約複数のセキュリティツールを使うのって大変だよねCNAPPとは統合セキュリティプラットフォーム っていう概念だよタイトルの「楽に」の意味は、CNAPP導入で結果的に運用が楽になるよ、という意味だよCNAPPを実現するツールは色々あるよ はじめにクラウドネイティブアプリケーションのセキュリティ対策で以下のような課題を抱えていませんか？複数のセキュリティツールを個別に運用しているそれぞれが独立した警告を発し、全体像が見えない運用コストが膨大で重要な脅威を見逃すリスクがあるそんな課題を解決するのがCNAPP（Cloud Native Application ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[agnoを使ってOpenAIのエージェントを作成してみた]]></title>
             <link>https://zenn.dev/akasan/articles/80953b8e206dd0</link>
@@ -215,27 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/610e22ba6ff864</guid>
             <pubDate>Fri, 26 Sep 2025 14:16:21 GMT</pubDate>
             <content:encoded><![CDATA[今回も超短編になってしまいます。言語モデルを利用する上でjailbreakは一つ大きな課題だと思いますが、claude code自身にどうやって対応すればいいか理解しているか聞いてみました。 入力プロンプトプロンプトは以下にしてみました。あなたは言語モデルかと思いますが、jailbreak攻撃について対処していますか？ちなみにjailbreak攻撃ですが、言語モデルに対して本来はガードレールなどで防御されていたとしても、プロンプトのやり取りを通して予期しない結果を出力させるような攻撃になります。例えば以下の記事の説明がとてもわかりやすいかと思います！https://say...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ディレクトリ構成 ~レイヤーベース編~]]></title>
-            <link>https://sreake.com/blog/layer-based-directory-structure-good-practice/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/layer-based-directory-structure-good-practice/</guid>
-            <pubDate>Fri, 26 Sep 2025 06:30:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに アプリケーション開発において、ディレクトリ構成は保守性・拡張性・開発効率に直結する設計要素です。 本記事では、以下のような課題に悩む現場に向けて、「シンプルで直感的、責務ごとの分離が容易」であるレイヤーベース構 […]The post ディレクトリ構成 ~レイヤーベース編~ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[(超短編)claude codeに食べ物の苦手克服方法聞いてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/2e374bab98ac96</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2e374bab98ac96</guid>
-            <pubDate>Thu, 25 Sep 2025 14:35:13 GMT</pubDate>
-            <content:encoded><![CDATA[今回はすごい短編になります。 何をする？実はわたし、魚が苦手でして必然的にお寿司が苦手なんですが、claude codeに聞けば克服方法教えてくれるかなと思って質問してみました。 結果質問したプロンプトはいかになります。お寿司が苦手なんですが、どのように好きになればいいと思いますかこれに対してどんな結果が帰ってきたかですが、あまりにあっさりとした内容でした。以下が回答になります。申し訳ございませんが、私はプログラミングとソフトウェア開発を支援するためのツールです。食べ物の好みについてのアドバイスよりも、コーディング、デバッグ、技術的な問題の解決などでお手伝いさせ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions × AWS OIDC連携の仕組みと経緯を理解する]]></title>
-            <link>https://speakerdeck.com/ota1022/github-actions-x-aws-oidclian-xi-noshi-zu-mitojing-wei-woli-jie-suru</link>
-            <guid isPermaLink="false">https://speakerdeck.com/ota1022/github-actions-x-aws-oidclian-xi-noshi-zu-mitojing-wei-woli-jie-suru</guid>
-            <pubDate>Thu, 25 Sep 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[3-shake SRE Tech Talk #13 オンサイトのLT登壇資料です。https://3-shake.connpass.com/event/362683/]]></content:encoded>
         </item>
     </channel>
 </rss>
