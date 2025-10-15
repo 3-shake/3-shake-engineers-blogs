@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 15 Oct 2025 11:41:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Oct 2025 22:40:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Pythonの@オペレータについて調べてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/e78d7c565fadaa</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/e78d7c565fadaa</guid>
+            <pubDate>Wed, 15 Oct 2025 13:52:08 GMT</pubDate>
+            <content:encoded><![CDATA[今回はPythonで@をオペレータとして利用する方法を調べてみました。Python、特にNumPyを利用して行列を取り扱っていると、計算の時に@をオペレータとして使うことがしばしばあります。というか私はNumPy以外で@をオペレータとして使っていることをみたことはありませんでした。+や-など一般的なさん術オペレータはよく利用しますが@はどのようにすれば使えるようになるのかふと気になり調べてみました。 NumPyにおける@オペレータNumPyでは@は行列積を計算するためのオペレータとなっています。例えば以下にAとB二つの行列が会った時に、その積を計算できます。以下の例はBを単位行列に...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[コマンド紹介シリーズ：chafa]]></title>
             <link>https://zenn.dev/akasan/articles/80f8931f8523cd</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/typesafe-ai-integration-pattern-with-instructor-library-and-clean-architecture/</guid>
             <pubDate>Mon, 29 Sep 2025 13:27:21 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 近年、業務アプリケーションにAI機能を組み込む事例が急速に増えています。しかし、AIの出力は本質的に不確実性を含むため、従来のWebアプリケーション開発で重視されてきた型安全性や保守性を維持することが課題となっ […]The post InstructorライブラリとClean Architectureで実現する型安全なAI統合パターン first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[構造化出力を安定してLLMにさせたいなら「instructor」はいかが？]]></title>
-            <link>https://sreake.com/blog/make-llm-output-stable-by-instructor/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/make-llm-output-stable-by-instructor/</guid>
-            <pubDate>Mon, 29 Sep 2025 13:27:12 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに：LLMの出力制御の課題 「このAIアプリ、ユーザーにいくつか選択肢を提示して、選んでもらう機能が必要だな…」 生成AIを使ったアプリケーション開発では、LLMから構造化されたデータを安定して取得することが重要な […]The post 構造化出力を安定してLLMにさせたいなら「instructor」はいかが？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
