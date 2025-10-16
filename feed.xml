@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 15 Oct 2025 22:40:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Oct 2025 11:41:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[baconを知らずにRust書いてた]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2025/10/16/170800</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2025/10/16/170800</guid>
+            <pubDate>Thu, 16 Oct 2025 08:08:00 GMT</pubDate>
+            <content:encoded><![CDATA[cargo-watch、やめるってよRustを書いていると、ファイルを保存するたびに手動でcargo checkやcargo testを実行するのが面倒になりますよね。そこで多くの人が使っていたのがcargo-watchでした。github.comでも実は、cargo-watchはもうメンテナンスされていません。ここで、10年以上にわたって無償でcargo-watchとwatchexecというOSSプロジェクトを維持し続けてきたFélix Saparelliさんに、最大の敬意と感謝を表します。あなたの貢献によって、たくさんのRust開発者の生産性が向上しました。本当にありがとうございました。公式のREADMEには作者自らこう書いてあります。"It's time to let it go. Use Bacon. Remember Cargo Watch."10年以上続いたプロジェクトが、ついに後継者に道を譲ったんです。その後継者こそがbacon。そして汎用的に使えるwatchexec。この記事では、2025年のRust開発で使うべきファイル監視ツールについて、実践的に解説します。baconって何？baconは、Rust専用に作られたバックグラウンドコードチェッカーです。エディタの隣で動かしておくと、ファイルを保存するたびに自動でコンパイルチェックを走らせて、エラーや警告をリアルタイムで表示してくれます。github.comcargo-watchとの違いcargo-watchの作者が「baconこそが自分の理想だった」と語っているほど、baconは進化しています。TUIで見やすい - エラーが警告より先に表示され、スクロール不要キーボード操作 - tでテスト、cでClippy、dでドキュメントと一瞬で切り替え小さい画面でも快適 - ターミナルのサイズに合わせて表示を最適化Rust Analyzerと競合しない - 開発体験がスムーズインストール# 基本インストールcargo install --locked bacon# オプション機能も入れる（クリップボード、サウンド）cargo install --locked bacon --features "clipboard sound"基本的な使い方プロジェクトのルートでbaconを起動するだけ。cd your-rust-projectbaconデフォルトではcargo checkが走ります。ファイルを保存すると自動で再チェック。主要なキーボードショートカットbaconの真価はキーボードショートカットにあります。t - テスト実行に切り替えc - Clippyに切り替えd - ドキュメントをブラウザで開くf - テスト失敗時、そのテストだけに絞り込みEsc - 前のジョブに戻るCtrl+j - すべてのジョブ一覧を表示h - ヘルプ表示q - 終了特定のジョブで起動# テストを監視bacon test# Clippyを監視bacon clippy# 厳格なClippyルール（pedantic）bacon pedantic# 高速テストランナー（nextest）bacon nextest# すべてのターゲットをチェックbacon check-all# 特定のジョブを指定bacon --job my-custom-jobbacon.toml で設定をカスタマイズプロジェクトに合わせてジョブを定義できます。# 設定ファイルを生成bacon --init設定例# bacon.toml# Windows向けのチェック[jobs.check-win]command = ["cargo", "check", "--target", "x86_64-pc-windows-gnu"]# 厳しめのClippy[jobs.clippy-strict]command = [    "cargo", "clippy", "--",    "-D", "warnings",    "-A", "clippy::collapsible_if",]need_stdout = false# サンプルをチェック[jobs.check-examples]command = ["cargo", "check", "--examples", "--color", "always"]watch = ["examples"]  # srcは自動で監視される# 実行ジョブ[jobs.run]command = ["cargo", "run"]allow_warnings = trueneed_stdout = true# キーバインディングのカスタマイズ[keybindings]shift-c = "job:clippy-strict"r = "job:run"設定しておいてよいことドキュメントを素早く確認[jobs.doc-open]command = ["cargo", "doc", "--no-deps", "--open"]need_stdout = falseon_success = "back"  # ドキュメントが開いたら前のジョブに戻る長時間実行するアプリケーション[jobs.server]command = ["cargo", "run"]allow_warnings = trueneed_stdout = truebackground = falseon_change_strategy = "kill_then_restart"watchexecとの使い分けbaconはRust専用ですが、watchexecは汎用的なファイル監視ツールです。github.comwatchexecを使うべき場合# インストールcargo install watchexec-cli# 基本的な使い方watchexec --restart cargo run# 特定の拡張子だけ監視watchexec -e rs,toml cargo test# デバウンス設定watchexec -d 2000 cargo checkwatchexecが向いているケース：- Rust以外の言語やツール- シェルスクリプトの実行- rsyncなどの同期処理- より細かい制御が必要な場合# 例：TypeScriptのビルドwatchexec -e ts,tsx npm run build# 例：ファイル同期watchexec -w src -- rsync -avhP ./src/ ./backup/実践的なワークフロー開発時のセットアップターミナルを分割左：Vim/Neovim右上：bacon右下：通常のシェル私はWarpを使ってペイン分割している。baconの起動bacon  # デフォルトでcheckが走るコードを書く保存すると自動でチェックエラーがあれば即座に表示エラーが消えたらClippyの警告が見えるテストを書くtキーでテストモードに切り替え失敗したらfで絞り込み修正したらEscで全テストに戻る最終チェックcキーでClippyの提案を確認コード品質を向上ちょっとしたTipsシェルエイリアスで効率化頻繁に使うコマンドをエイリアス化すると便利です。# ~/.zshrc または ~/.bashrc に追加alias bac='bacon'alias bacc='bacon clippy'alias bact='bacon test'alias bacp='bacon pedantic'watchexecで複数パスを監視# srcとtestsディレクトリの.rsと.tomlファイルを監視watchexec -e rs,toml -w src -w tests -- cargo testVim/Neovimとの連携nvim-bacon プラグインbaconの診断結果をNeovimに統合するプラグインがあります。github.com" lazy.nvim の場合{  'Canop/nvim-bacon',  config = function()    require('bacon').setup()  end}主な機能は以下の通り。エラー箇所へのジャンプQuickfixへの統合:Bacon コマンドでbaconを起動:BaconLoad で診断結果を読み込み補足：VS Code向けVS Codeユーザーの場合は、bacon-lsというLanguage Serverが利用可能です。まとめcargo-watchの時代は終わりました。でも、より良いツールが生まれています。こう使い分けよう：Rust開発 → bacon一択TUIが快適キーボードだけで完結設定ファイルで柔軟にカスタマイズそれ以外 → watchexec汎用的に使えるシンプルで強力シェルスクリプトとの相性抜群baconを知らずにRustを書いていた人は、今すぐ試してください。開発体験が一段階レベルアップします。cargo install --locked baconcd your-projectbaconたったこれだけ。あとはコードを書くだけです。参考リンク：- bacon公式サイト- watchexec GitHub- cargo-watch（アーカイブ済み）]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ディレクトリ構成 ~ハイブリッド型編~]]></title>
+            <link>https://sreake.com/blog/hybrid-directory-structure-good-practice/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/hybrid-directory-structure-good-practice/</guid>
+            <pubDate>Thu, 16 Oct 2025 04:41:28 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに アプリケーション開発において、ディレクトリ構成は保守性・拡張性・開発効率に直結する設計要素です。 本記事では、ディレクトリ構成に悩む現場に向けて、ハイブリッド型構成をご紹介します。 ⚠️ この構成が「唯一の正解 […]The post ディレクトリ構成 ~ハイブリッド型編~ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Pythonの@オペレータについて調べてみた]]></title>
             <link>https://zenn.dev/akasan/articles/e78d7c565fadaa</link>
@@ -222,20 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/c4b6817e4de906</guid>
             <pubDate>Tue, 30 Sep 2025 11:27:00 GMT</pubDate>
             <content:encoded><![CDATA[今回はclaude codeに数独の問題を作るコードを作成させてみました。単純に自分が数独が好きで、なんとなく問題作らせてみたいなと思ってやってみました。 数独とは？数独とは、一般的には9x9の盤面に数字が配置されており、以下のルールに基づいて数字が配置されています。縦横どちらでみても同じ数字は1度しか出てこない盤面を縦横それぞれ均等に3分割したそれぞれの枠内（3x3）で数字の重複はないそのような盤面から数字を隠した時に、隠された場所に元々あった数字を当てるというゲームです。みなさん一度は目にしたことがあると思いますが、今回はそれの問題と回答を作らせてみます。https...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[バイブコーディングと継続的デプロイメント]]></title>
-            <link>https://speakerdeck.com/nwiizo/baibukodeingutoji-sok-de-depuroimento</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/baibukodeingutoji-sok-de-depuroimento</guid>
-            <pubDate>Tue, 30 Sep 2025 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年9月30日（火）、「バイブコーディングもくもく会 #03」というイベントで登壇することになった。https://aimokumoku.connpass.com/event/368935/正直に言うと、このイベントがどんな空気感なのか、まだ全然掴めていない。ゆるい感じなのか、ガチな感じなのか。笑いを取りに行くべきなのか、真面目にやるべきなのか。そういう「場の空気」みたいなものが事前に分からないのは、けっこう怖い。だから、とりあえず色々なパターンを想定して準備している。要するに、どんな状況になっても対応できるように、という保険をかけまくっているのだ。我ながら、慎重すぎるかもしれない。ブログとGithubはこちら。https://syu-m-5151.hatenablog.com/https://github.com/nwiizo一応、置いておく。見られるのは恥ずかしいけど、見られないのも寂しい。そういう矛盾した感情を抱えながら、当日を迎えることになりそうだ。Marp の資料はこちらです。https://github.com/nwiizo/3shake-marp-templates/blob/main/slides/2025/vibe-coding-continuous-deployment.md]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[InstructorライブラリとClean Architectureで実現する型安全なAI統合パターン]]></title>
-            <link>https://sreake.com/blog/typesafe-ai-integration-pattern-with-instructor-library-and-clean-architecture/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/typesafe-ai-integration-pattern-with-instructor-library-and-clean-architecture/</guid>
-            <pubDate>Mon, 29 Sep 2025 13:27:21 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 近年、業務アプリケーションにAI機能を組み込む事例が急速に増えています。しかし、AIの出力は本質的に不確実性を含むため、従来のWebアプリケーション開発で重視されてきた型安全性や保守性を維持することが課題となっ […]The post InstructorライブラリとClean Architectureで実現する型安全なAI統合パターン first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
