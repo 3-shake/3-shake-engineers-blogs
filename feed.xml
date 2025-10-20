@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 20 Oct 2025 07:21:18 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Oct 2025 11:41:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,12 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gemini CLIでもセキュアで堅牢な開発をしたい！]]></title>
+            <link>https://speakerdeck.com/yunosukey/gemini-clidemosekiyuadejian-lao-nakai-fa-wositai</link>
+            <guid isPermaLink="false">https://speakerdeck.com/yunosukey/gemini-clidemosekiyuadejian-lao-nakai-fa-wositai</guid>
+            <pubDate>Sun, 19 Oct 2025 04:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[imbalanced-learnを利用してアンダー/オーバーサンプリングを実施してみた]]></title>
             <link>https://zenn.dev/akasan/articles/7a148787cb3be8</link>
@@ -230,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/01583bfccc8b73</guid>
             <pubDate>Sat, 04 Oct 2025 09:35:15 GMT</pubDate>
             <content:encoded><![CDATA[今回はLlamaIndexのStarter Tutorialを通して入門してみました。LlamaIndexとはどういうものか、そしてどのように使うかをまとめてみます。 LlamaIndexとは？LlamaIndexはLLMを利用したエージェントやワークフローを作るためのフレームワークになります。LlamaIndexはオートコンプリートやチャットぼっと、エージェントの実装など幅広いアプリケーション拘置機に利用できます。LlamaIndexは様々なツールを提供してくれます。データコネクター: ネイティブのソースとフォーマットから既存のデータを取り込めるデータ・インデックス: LL...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Spec DrivenでAI駆動開発を加速させる - Spec Kit入門]]></title>
-            <link>https://zenn.dev/r4ynode/articles/spec-driven-development-using-spec-kit</link>
-            <guid isPermaLink="false">https://zenn.dev/r4ynode/articles/spec-driven-development-using-spec-kit</guid>
-            <pubDate>Fri, 03 Oct 2025 23:00:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにAIに対して工夫なしの指示だと開発に限界を感じることもあるでしょう。AIにしっかりとコンテキストを渡してあげないと、意図通りに動いてくれません。考えられる解決策としては、自前でコンテキストや指示を書いたインストラクションMarkdownファイルを与える方法があります。個人的にはインストラクションの方が手軽なのでよくやりますが、先日以下の記事でSpec Drivenという言葉を見かけました。https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with...]]></content:encoded>
         </item>
     </channel>
 </rss>
