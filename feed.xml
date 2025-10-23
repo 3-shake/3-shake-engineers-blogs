@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 22 Oct 2025 22:38:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Oct 2025 08:27:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gemini CLI でセキュアで堅牢な開発をするためのプラクティス集]]></title>
+            <link>https://zenn.dev/kimitsu/articles/secure-and-robust-development-with-gemini-cli</link>
+            <guid isPermaLink="false">https://zenn.dev/kimitsu/articles/secure-and-robust-development-with-gemini-cli</guid>
+            <pubDate>Thu, 23 Oct 2025 01:52:31 GMT</pubDate>
+            <content:encoded><![CDATA[先日、クラウドネイティブ × Gemini CLIというイベントで『Gemini CLI でもセキュアで堅牢な開発をしたい！』というタイトルで登壇させていただきました。時間都合で端折ってしまった部分が多かったため、本記事で行間を埋めつつ最新の状況をお伝えします。登壇の内容は全て記載するため、イベントに参加されなかった方も読んでいただければと思います。 はじめに本記事は Gemini CLI を個人レベルではなく企業やチームとして使いたい方を対象とします。そのため、Gemini CLI の基本的な部分（例えばどのようにインストールするか、settings.jsonとは何か、基本...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[DecisionTree分類器の構造を可視化してみる]]></title>
             <link>https://zenn.dev/akasan/articles/dc29b37ec0d998</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/0a4136eb60030d</guid>
             <pubDate>Tue, 07 Oct 2025 14:10:35 GMT</pubDate>
             <content:encoded><![CDATA[今回はpydantic-settingsを用いて環境変数を読み込むと同時に、環境変数の値のバリデーションをしてみようと思います。 pydantic-settingsとは？pydantic-settingsは環境変数やシークレットファイルを読み込んで利用するための機能をpydanticから拡張したものになっています。通常Pythonで環境変数を読み込むときはosモジュールを利用することが多いかと思いますが、pydantic-settingsを利用するとpydanticに備わっているバリデーション機能などを利用することができるため、より安全に環境変数などを扱うことができます。http...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[USDで作成したUSDファイルをMacbookのプレビューソフトで表示してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/6ba6e22863ab69</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/6ba6e22863ab69</guid>
-            <pubDate>Mon, 06 Oct 2025 13:39:24 GMT</pubDate>
-            <content:encoded><![CDATA[今回はUSD形式で作成したファイルをMacbookのプレビューソフトで開くことができることを紹介しようと思います。 USDとは？USDは3Dシーンを共同で構築するための高性能かつ拡張可能なソフトウェアプラットフォームであり、大規模な開発ニーズを満たせるように構築されています。USDではジオメトリを初めシェーディングやライティング、物理など様々な必須領域をカバーするように構築されています。USDはピクサーによって最初に開発されたものとなり、特にオープンソースを意識したものとしてOpenUSDが位置付けられているようです。https://openusd.org/release/ind...]]></content:encoded>
         </item>
     </channel>
 </rss>
