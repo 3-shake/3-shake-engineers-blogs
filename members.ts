@@ -546,21 +546,6 @@ export const members: Member[] = [
     websiteUrl: "https://moz-sec.com/",
   },
   {
-    id: "melanmeg",
-    name: "Naoya Yamamoto",
-    role: "SRE",
-    bio: "konpeko~",
-    avatarSrc: "/avatars/melanmeg.png",
-    sources: [
-      "https://zenn.dev/melanmeg/feed",
-      "https://speakerdeck.com/melanmeg.rss",
-    ],
-    includeUrlRegex: "",
-    twitterUsername: "melanmeg",
-    githubUsername: "melanmeg",
-    websiteUrl: "https://lit.link/melanmeg",
-  },
-  {
     id: "yyamada",
     name: "Yunosuke Yamada",
     avatarSrc: "/avatars/yyamada.jpg",
