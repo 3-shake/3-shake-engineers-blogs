@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 25 Oct 2025 11:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Oct 2025 22:39:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rayシリーズ：Ray Dataへの入門 ~quickstart~]]></title>
+            <link>https://zenn.dev/akasan/articles/3cdf0bd79a898a</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3cdf0bd79a898a</guid>
+            <pubDate>Sat, 25 Oct 2025 12:05:51 GMT</pubDate>
+            <content:encoded><![CDATA[今回はRayでデータを取り扱うためのRay Dataについて、Quickstartを通して入門してみました。 Ray Dataとは？Ray Dataは、Ray上に構築されたMLとAIワークロードのためのスケーラブルなデータ処理ライブラリです。 バッチ推論やデータ前処理、MLトレーニングのためのインジェストなど、AIワークロードを表現するための柔軟で高性能なAPIを提供してくれます。他の分散データシステムとは異なり、Ray Dataはストリーミング実行を特徴としており、大規模なデータセットを効率的に処理し、CPUとGPUの両方のワークロードで高い利用率を維持します。Ray Data...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[30歳を迎えたMLエンジニアが今後の計画を考えてみた]]></title>
             <link>https://zenn.dev/akasan/articles/35d7eeebb7a84c</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/0e4126fdb3660c</guid>
             <pubDate>Thu, 09 Oct 2025 13:54:37 GMT</pubDate>
             <content:encoded><![CDATA[今回はVibe Codingについて個人的な考えをまとめてみようと思います。 まずは私の根本の考え方について!結論から話すと、私個人としては「便利なので基本的にはどんどん使いたい。（ただし条件付き）」と思っている派です。条件付きという含みを持たせているのはずるい気がしますが考えをまとめてみます。 Vibe Codingが必要だと思う時はどんな時？まずはVibe Codingを採用すべき時がどんな時かを考えてみます。 スピード感を重視する時みなさんご存知の通り、Vibe Codingは爆速でコーディングをすることができます。生成AIのコーディング速度は正直人間によるコーデ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Gemini CLI から Cloud Run にデプロイした MCP サーバに接続するベストプラクティス]]></title>
-            <link>https://zenn.dev/kimitsu/articles/gemini-cli-cloud-run-mcp</link>
-            <guid isPermaLink="false">https://zenn.dev/kimitsu/articles/gemini-cli-cloud-run-mcp</guid>
-            <pubDate>Thu, 09 Oct 2025 08:31:51 GMT</pubDate>
-            <content:encoded><![CDATA[10 月 8 日に Gemini CLI v0.8.0 がリリースされ、その中で IAP で保護された Cloud Run にデプロイされた MCP サーバへの接続がサポートされました。[1]この新しい方法は、従来の Cloud Run プロキシを使う方法や OIDC ID トークンを使う方法のデメリットを解消しており、Gemini CLI から Cloud Run 上の MCP サーバに接続するベストプラクティスが確立されたと考えています。今回はこの IAP for Cloud Run とサービスアカウントなりすましを使った方法を紹介します。 従来の方法とそのデメリット従来の...]]></content:encoded>
         </item>
     </channel>
 </rss>
