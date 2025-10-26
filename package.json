@@ -33,7 +33,7 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-hooks": "7.0.1",
     "feed": "5.1.0",
     "fs-extra": "11.3.2",
     "npm-run-all2": "5.0.2",
