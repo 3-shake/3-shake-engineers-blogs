@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 25 Oct 2025 22:39:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Oct 2025 11:41:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コマンド紹介シリーズ：sshm]]></title>
+            <link>https://zenn.dev/akasan/articles/6d97f52cccfeef</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/6d97f52cccfeef</guid>
+            <pubDate>Sun, 26 Oct 2025 10:19:23 GMT</pubDate>
+            <content:encoded><![CDATA[コマンド紹介シリーズ第15回目の本日はsshmを紹介しようと思います。sshmを利用するとsshの設定に関してTUIインターフェースで操作できます。なお、第14回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/80f8931f8523cd sshmとは？公式GitHubによると、sshmは、SSHホストの管理と接続方法を変革する美しいコマンドラインツールです。Go言語で構築され、直感的なTUIインターフェースを備えているため、SSH接続管理が簡単かつ快適になります。とのことで、SSHホストをTUIで...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Rayシリーズ：Ray Dataへの入門 ~quickstart~]]></title>
             <link>https://zenn.dev/akasan/articles/3cdf0bd79a898a</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/80953b8e206dd0</guid>
             <pubDate>Fri, 10 Oct 2025 13:42:45 GMT</pubDate>
             <content:encoded><![CDATA[今回はagnoのOpenAI連携機能を利用してエージェントを作ってみました。 agnoとは？agnoとはメモリや知識、ツールやリーズニングを実現するエージェントを実装するための軽量なフレームワークとなります。agnoを利用することで、推論エージェントやマルチモーダルエージェント、エージェントワークフローを構築できます。agnoはエージェントとチャットするための美しいUIやエージェントにサービスを提供する構築済みのFastAPIルート、そしてエージェントのパフォーマンスを監視・評価するためのツールも提供するとのことです。https://github.com/Akasan/agno...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[短編: Vibe Codingについて個人的な考えを述べてみる]]></title>
-            <link>https://zenn.dev/akasan/articles/0e4126fdb3660c</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/0e4126fdb3660c</guid>
-            <pubDate>Thu, 09 Oct 2025 13:54:37 GMT</pubDate>
-            <content:encoded><![CDATA[今回はVibe Codingについて個人的な考えをまとめてみようと思います。 まずは私の根本の考え方について!結論から話すと、私個人としては「便利なので基本的にはどんどん使いたい。（ただし条件付き）」と思っている派です。条件付きという含みを持たせているのはずるい気がしますが考えをまとめてみます。 Vibe Codingが必要だと思う時はどんな時？まずはVibe Codingを採用すべき時がどんな時かを考えてみます。 スピード感を重視する時みなさんご存知の通り、Vibe Codingは爆速でコーディングをすることができます。生成AIのコーディング速度は正直人間によるコーデ...]]></content:encoded>
         </item>
     </channel>
 </rss>
