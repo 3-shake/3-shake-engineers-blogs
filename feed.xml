@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 27 Oct 2025 05:11:42 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Oct 2025 05:30:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,6 +27,13 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/6d97f52cccfeef</guid>
             <pubDate>Sun, 26 Oct 2025 10:19:23 GMT</pubDate>
             <content:encoded><![CDATA[コマンド紹介シリーズ第15回目の本日はsshmを紹介しようと思います。sshmを利用するとsshの設定に関してTUIインターフェースで操作できます。なお、第14回は以下になりますので、ぜひご興味があればご覧ください。https://zenn.dev/akasan/articles/80f8931f8523cd sshmとは？公式GitHubによると、sshmは、SSHホストの管理と接続方法を変革する美しいコマンドラインツールです。Go言語で構築され、直感的なTUIインターフェースを備えているため、SSH接続管理が簡単かつ快適になります。とのことで、SSHホストをTUIで...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Astro で Standard ML のシンタクスハイライト]]></title>
+            <link>https://silasol.la/posts/2025-10-26-02_astro-sml/</link>
+            <guid isPermaLink="false">https://silasol.la/posts/2025-10-26-02_astro-sml/</guid>
+            <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[デフォルトでハイライトされない言語を TextMate を用いた拡張で認識させます．]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Rayシリーズ：Ray Dataへの入門 ~quickstart~]]></title>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/48cea67449be64</guid>
             <pubDate>Sat, 11 Oct 2025 03:09:11 GMT</pubDate>
             <content:encoded><![CDATA[今回は昨日に引き続きagnoを利用してみました。agnoではGuardrailの機能について提供しており、そのサンプルを通して挙動を確認してみようと思います。昨日のagnoの導入記事もぜひ合わせてご覧ください。https://zenn.dev/akasan/articles/80953b8e206dd0 早速使ってみる今回は以下のページを参考にサンプルを試してみます。https://docs.agno.com/concepts/agents/guardrails/overviewhttps://docs.agno.com/examples/concepts/agent/gua...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[楽にあなたのクラウドを守ろう！ - CNAPP概要]]></title>
-            <link>https://zenn.dev/r4ynode/articles/cloud-security-using-cnapp</link>
-            <guid isPermaLink="false">https://zenn.dev/r4ynode/articles/cloud-security-using-cnapp</guid>
-            <pubDate>Fri, 10 Oct 2025 23:00:05 GMT</pubDate>
-            <content:encoded><![CDATA[要約複数のセキュリティツールを使うのって大変だよねCNAPPとは統合セキュリティプラットフォーム っていう概念だよタイトルの「楽に」の意味は、CNAPP導入で結果的に運用が楽になるよ、という意味だよCNAPPを実現するツールは色々あるよ はじめにクラウドネイティブアプリケーションのセキュリティ対策で以下のような課題を抱えていませんか？複数のセキュリティツールを個別に運用しているそれぞれが独立した警告を発し、全体像が見えない運用コストが膨大で重要な脅威を見逃すリスクがあるそんな課題を解決するのがCNAPP（Cloud Native Application ...]]></content:encoded>
         </item>
     </channel>
 </rss>
