@@ -636,8 +636,11 @@ export const members: Member[] = [
     name: "Masaki Haga",
     avatarSrc: "/avatars/silasolla.png",
     role: "Full Stack Engineer",
-    bio: "ML stands for Meta Language (not Minor Language -- maybe Machine Learning too)",
-    sources: ["https://zenn.dev/silasolla/feed"],
+    bio: "Trust, but verify.",
+    sources: [
+      "https://zenn.dev/silasolla/feed",
+      "https://silasol.la/rss/tech.xml",
+    ],
     githubUsername: "silasolla",
     twitterUsername: "silasolla",
     websiteUrl: "https://silasol.la",
