@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 27 Oct 2025 11:41:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Oct 2025 22:40:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[今更ながらadkを使ってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/637c35253400e7</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/637c35253400e7</guid>
+            <pubDate>Mon, 27 Oct 2025 12:50:38 GMT</pubDate>
+            <content:encoded><![CDATA[今回はadkを使ってみました。すでに提供が開始されてからかなり日数が立っていますが使っていなかったことに気づきまして、今回Qucikstartを試してみました（エージェントを実装できる方法が他に色々ありすぎて漏れていましたw）。 adkとは？adkとはAgent Development Kitの省略であり、エージェントを開発・デプロイするためのフレームワークになります。GeminiやGoogleのエコシステムに最適化されてはいますが利用するモデルについてはそれ以外のものも利用でき、他のフレームワークと互換性があるものとなっています。利用用途としてはadkをつかってエージェントをくみ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[技術力に優劣はある(「技術力に優劣はない」を読んで)]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/10/27/134629</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/aminevg/modern-monolithwozuo-rimasiyou-inertia-dot-jsnoshao-jie-tosonoxian</guid>
             <pubDate>Sat, 11 Oct 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[マイクロサービス流行の時代で、あえてモノリスを作りませんか？バックエンドとフロントエンドの連携を行う際は、辛い思いをした方が多いのではないでしょうか。APIの作成、認証の実装、フォーム送信など、様々なハードルがあります。そういった問題を解決して、フルスタック開発を楽にするライブラリさえあれば...実際にありますよ！このLTでは、SPAのフロントエンドをバックエンド内で作れるInertia.jsをご紹介します。基本的な使い方から、直近の新機能やInertia.jsの将来を解説します。このLTを通じて、「フルスタック開発が楽になった！」「フロントエンドのためのAPI設計はもうさらばだ！」と思ってもらえればと思います。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[agnoのGuardrail機能を試してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/48cea67449be64</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/48cea67449be64</guid>
-            <pubDate>Sat, 11 Oct 2025 03:09:11 GMT</pubDate>
-            <content:encoded><![CDATA[今回は昨日に引き続きagnoを利用してみました。agnoではGuardrailの機能について提供しており、そのサンプルを通して挙動を確認してみようと思います。昨日のagnoの導入記事もぜひ合わせてご覧ください。https://zenn.dev/akasan/articles/80953b8e206dd0 早速使ってみる今回は以下のページを参考にサンプルを試してみます。https://docs.agno.com/concepts/agents/guardrails/overviewhttps://docs.agno.com/examples/concepts/agent/gua...]]></content:encoded>
         </item>
     </channel>
 </rss>
