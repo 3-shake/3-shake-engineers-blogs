@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 29 Oct 2025 11:41:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Oct 2025 22:41:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Pythonのlistとsetでの値の含み判定の所要時間について]]></title>
+            <link>https://zenn.dev/akasan/articles/b9e7806e438f8f</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/b9e7806e438f8f</guid>
+            <pubDate>Wed, 29 Oct 2025 11:40:49 GMT</pubDate>
+            <content:encoded><![CDATA[今回はPythonのlistとsetでデータが含まれているかどうかを判定するためのロジックの所要時間の差について調べてみました。Pythonの仕様として、単純にデータを列挙しておきたいだけの場合にlistを利用せずsetを利用する方が良い場合もあり個人的に気をつけていましたが、以下の記事をみて実際にlistとsetでどれくらい差が出るかを調べてみようと思いました。今回は値の一覧に特定の値が含まれているかを判定するのにかかる時間を調べてみました。https://medium.com/the-pythonworld/stop-using-if-x-in-list-heres-the-fas...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Rayシリーズ：NumPyやpandasデータをRay Dataで取り込む]]></title>
             <link>https://zenn.dev/akasan/articles/db0b5b634d453d</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/1cc5493f3e077a</guid>
             <pubDate>Mon, 13 Oct 2025 04:17:00 GMT</pubDate>
             <content:encoded><![CDATA[今回はタイトル通り、GitHubでZennの記事を管理している場合に、どのようなtopicsがよく利用されているか集計するための機能をclaude codeに作らせてみました。私自身連続170記事以上出している関係で、どのような技術をよく利用しているか調べたくなり、作らせてみました。 ZennをGitHubで管理するためのフォルダ構成違いはあるかもしれませんが、基本的には以下のフォルダ構成で管理されていると思います。articles/  hogehoge.md  fugafuga.mdbooks/  ...images/  ...scrapes  ...今回はa...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[OpenAI Agent Builderを使ってGuardrail実装してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/c1698aa0289828</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/c1698aa0289828</guid>
-            <pubDate>Sun, 12 Oct 2025 04:19:21 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、現地時間10月6日にOpenAIが発表したAgent Builderという機能を早速使ってみました。Agent Builderを利用することで、GUIを利用してエージェントを作成することができるようになります。 Agent Builderとは？Agent BuilderはOpenAI DevDay 2025にて発表された新しいプロダクトとなっています。Agent Builderを利用すると、ドラッグアンドドロップでロジックを構成し、ツールを接続やカスタムガードレールを構成するためのキャンバスを利用できます。また、プレビューの実行、インラインのeval設定、完全なバージョニン...]]></content:encoded>
         </item>
     </channel>
 </rss>
