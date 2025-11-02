@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 01 Nov 2025 22:39:58 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Nov 2025 11:40:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[NVIDIA Brev上でGPUインスタンスを立ち上げる方法]]></title>
+            <link>https://zenn.dev/akasan/articles/686e4b3ef0b8ff</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/686e4b3ef0b8ff</guid>
+            <pubDate>Sun, 02 Nov 2025 07:52:43 GMT</pubDate>
+            <content:encoded><![CDATA[今回はNVIDIA Brev（以下、Brev）を利用してGPUインスタンスを立ち上げる方法をご紹介します。ディープラーニングモデルの開発をはじめ、様々な用途でGPUインスタンスを利用したい場合があるかと思います。そのような場合に取りうる選択肢の一つとして、Brevを利用することができ、その利用方法を紹介できればと思います。 NVIDIA Brevとは？NVIDIA Brevは、一般的なクラウドプラットフォーム上のNVIDIA GPUインスタンスへの効率的なアクセスをはじめとして自動環境セットアップ、柔軟な展開オプションを提供し、開発者がすぐに実験を開始できるようにしてくれるサービス...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[garakでLLMの脆弱性スキャンをしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/34756e48c4f870</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/shukob/aiezientoru-men-ji-chu-karamcpa2amade</guid>
             <pubDate>Sat, 18 Oct 2025 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://genai-users.connpass.com/event/373059/2025年10月18日、オープンソースカンファレンス2025 Online/Fallで発表した資料です。今話題となっている「AIエージェント」について、要素技術となる生成AIを用いてどのように自律的に動作するのか基礎を説明した後、AIが外部のツールやデータにアクセスするためのオープンプロトコルであるMCP（Model Context Protocol）や、複数のエージェントによる分業と連携を可能にするオープンプロトコルA2A（Agent-to-Agent）について解説しました。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[英語4文字のセキュリティ用語あれこれ説明できる？ - SBOM/SAST/DAST...]]></title>
-            <link>https://zenn.dev/r4ynode/articles/security-english-words</link>
-            <guid isPermaLink="false">https://zenn.dev/r4ynode/articles/security-english-words</guid>
-            <pubDate>Sat, 18 Oct 2025 03:00:01 GMT</pubDate>
-            <content:encoded><![CDATA[セキュリティの話になると、謎の4文字くらいの英語が羅列しているのを見たことありません？それらのセキュリティ用語を説明できますか？私はできません多すぎて分からなくなるので少し整理します。!内容は概要程度です。機能面についても利用するソフトウェアやベンダーに依存するため参考程度に。 早見表用語一言解説SBOMソフトウェア部品表。構成要素を一覧化する。SCAOSSやライブラリの脆弱性・ライセンス管理。ASTアプリの脆弱性を検出するセキュリティテスト。SASTソースコードを静的解析して脆弱性検出。DAST実行中アプリに攻撃して...]]></content:encoded>
         </item>
     </channel>
 </rss>
