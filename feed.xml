@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 05 Nov 2025 11:41:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Nov 2025 22:41:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：テックブログを200日以上毎日書き続けて感じたこと]]></title>
+            <link>https://zenn.dev/akasan/articles/5c7b6b70efd302</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/5c7b6b70efd302</guid>
+            <pubDate>Wed, 05 Nov 2025 14:21:04 GMT</pubDate>
+            <content:encoded><![CDATA[私ごとですが、毎日テックブログを書き始めてから200日を過ぎまして、感じたこととこれからの目標を書いてみようと思います。※ 季節変わり目の風邪を拗らせて短編になります。 これまでの振り返り大きな目標もなくなんとなく始まってからちゃんと200日以上続いて、まずは発信し続けるという習慣がつきました。今までは例えば書籍で何かを勉強しても使う時が来るまで頭の片隅で眠っていることが多かったですが、ブログを書き始めてからは調べたことや自分の経験を文章として発信することで、頭の整理だけでなく理解度を認識して弱点や強みの理解につながりました。2点目としては単純に知識が増えたことです。毎日書くと...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[おい、一つずつやれ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/11/05/120747</link>
@@ -229,13 +236,6 @@
             <link>https://speakerdeck.com/yunosukey/gemini-clidemosekiyuadejian-lao-nakai-fa-wositai</link>
             <guid isPermaLink="false">https://speakerdeck.com/yunosukey/gemini-clidemosekiyuadejian-lao-nakai-fa-wositai</guid>
             <pubDate>Sun, 19 Oct 2025 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[imbalanced-learnを利用してアンダー/オーバーサンプリングを実施してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/7a148787cb3be8</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/7a148787cb3be8</guid>
-            <pubDate>Sun, 19 Oct 2025 03:34:17 GMT</pubDate>
-            <content:encoded><![CDATA[今回はimbalanced-learnを利用してデータセットの偏りを調整する方法を試してみました。機械学習ではデータの分布がとても重要であり、偏ったデータ分布は好ましくない場合が多いです。そのような場合にデータの偏りを補正するためのライブラリとしてimbalanced-learnがあり、今回はそれを利用してみました。 データの偏りとは？文字通りですが、データに偏りがある状態をいいます。例えばある病気について、診察対象の人が病気に罹患しているかしていないかをまとめたデータセットがあったとします。仮にその病気に罹患している人が極めて少数の場合、このデータセットは大半が罹患していない人...]]></content:encoded>
         </item>
     </channel>
 </rss>
