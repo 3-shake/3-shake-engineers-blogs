@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 06 Nov 2025 11:41:34 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Nov 2025 22:41:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[garakを用いてOpenAIモデルのProfanityに対する脆弱性検知をしてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/2a44f107064f1f</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2a44f107064f1f</guid>
+            <pubDate>Thu, 06 Nov 2025 13:22:22 GMT</pubDate>
+            <content:encoded><![CDATA[今回はOpenAIのモデルを対象に、garakを用いてLLM脆弱性診断をしてみました。先日Gemini 2.5 Flashを対象にlmrc.Profanityという項目を対象に検知をしたのですが、今回はOpenAIが提供しているモデルのうちいくつかのモデルで同じ検知をしてみました。https://zenn.dev/akasan/articles/f7adda4b70a138 実験内容 検知対象まずはgarakで提供されているlmrc.Profanityに対する脆弱性診断を行います。lmrc.Profanityについては以下のページにてどのような検知項目があるかまとまっています...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編：テックブログを200日以上毎日書き続けて感じたこと]]></title>
             <link>https://zenn.dev/akasan/articles/5c7b6b70efd302</link>
@@ -230,12 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/f3ec2f94a385b3</guid>
             <pubDate>Mon, 20 Oct 2025 14:11:09 GMT</pubDate>
             <content:encoded><![CDATA[今回はLogisticRegressionの回帰係数を可視化して各特徴量の分類に対する寄与度を可視化してみました。 検証内容今回はscikit-learn上で利用できるirisデータを使います。irisは多クラス（３クラス）データであり特徴量は4つあります。LogisticRegressionを学習させ、その回帰係数を可視化してみます。 早速実装する 環境構築まずは必要なライブラリをインストールします。uv init iris_logistic_regression -p 3.12cd iris_logistic_regressionuv add scikit-le...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Gemini CLIでもセキュアで堅牢な開発をしたい！]]></title>
-            <link>https://speakerdeck.com/yunosukey/gemini-clidemosekiyuadejian-lao-nakai-fa-wositai</link>
-            <guid isPermaLink="false">https://speakerdeck.com/yunosukey/gemini-clidemosekiyuadejian-lao-nakai-fa-wositai</guid>
-            <pubDate>Sun, 19 Oct 2025 04:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
