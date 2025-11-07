@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 07 Nov 2025 11:41:08 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Nov 2025 22:41:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,25 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[短編：claude codeに改めて私のテックブログを評価させてみた]]></title>
+            <link>https://zenn.dev/akasan/articles/8409bc0ebb0818</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/8409bc0ebb0818</guid>
+            <pubDate>Fri, 07 Nov 2025 12:43:51 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、以前claude codeに私のtech blogを評価させてみたのですが、それから数ヶ月経ったので改めて評価させてみました。前回の記事は以下になるので合わせてご覧ください。https://zenn.dev/akasan/articles/af8b26620c9c98 claude codeへの指示今回は前回の記事と同じ以下の指示を利用して評価してもらいました。instruction.md## 分析articlesフォルダ以下に私のテックブログのマークダウンファイルがあります。以下の情報について傾向分析をしてください- どのようなジャンルの記事を出しているか...]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Vertex AI Agent Engine を運用していくうえでのノウハウ]]></title>
             <link>https://sreake.com/blog/know-how-to-operate-vertex-ai-agent-engine/</link>
             <guid isPermaLink="false">https://sreake.com/blog/know-how-to-operate-vertex-ai-agent-engine/</guid>
             <pubDate>Fri, 07 Nov 2025 09:42:52 GMT</pubDate>
             <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。本記事は、Google Cloud […]The post Vertex AI Agent Engine を運用していくうえでのノウハウ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2025-11-08 Security JAWS TerraformによるIAM Policy記述ガイド]]></title>
+            <link>https://speakerdeck.com/masasuzu/2025-11-08-security-jaws-terraformniyoruiam-policyji-shu-gaido</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2025-11-08-security-jaws-terraformniyoruiam-policyji-shu-gaido</guid>
+            <pubDate>Fri, 07 Nov 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[[[IAMスペシャル！]Security-JAWS【第39回】 勉強会 2025年11月08日(土) - connpass](https://s-jaws.connpass.com/event/366395/) の発表資料]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[おい、スマホを置け]]></title>
@@ -223,20 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/35d7eeebb7a84c</guid>
             <pubDate>Fri, 24 Oct 2025 13:09:25 GMT</pubDate>
             <content:encoded><![CDATA[本日筆者は30歳を迎えまして、人生のある意味節目なので今後のプランを考えてみました。 まずは20代を振り返る 何をやってきたか22際から新卒エンジニアとして働き始めて8年程度でしょうか、色々な業務をこなしてきました。ざっと上げただけでもこんな感じですかね。ソフトウェア開発OCRを利用した業務効率化ソフトウェアの改修データ分析ソフトウェアの設計・開発プログラミング効率化のためのソフトウェア開発異常検知モデルの結果や設定をするためのWebアプリケーションの実装ロボット制御開発経路計画立案システムの構築ロボットの制御ソフトウェア開発ロボット制御のための回路...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[anyenvやasdfに代わる？miseで始める開発環境管理]]></title>
-            <link>https://sreake.com/blog/mise-development-env-management/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/mise-development-env-management/</guid>
-            <pubDate>Fri, 24 Oct 2025 12:34:35 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 開発環境の構築において「このプロジェクトは Node.js 16 系だけど、別の案件は 18 系じゃないと動かない」といった状況に遭遇することは少なくありません。 プロジェクトごとに異なる言語やツールのバージョ […]The post anyenvやasdfに代わる？miseで始める開発環境管理 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[NeMo Guardrailsを試してみた]]></title>
-            <link>https://zenn.dev/akasan/articles/0b825a53e78e06</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/0b825a53e78e06</guid>
-            <pubDate>Thu, 23 Oct 2025 14:18:27 GMT</pubDate>
-            <content:encoded><![CDATA[今回はNVIDIAが提供するNeMo Guardrailsを利用してみました。NeMo Guardrailsを利用することでプログラムを用いてガードレール機能を導入することができます。 NeMo Guardrailsとは？こちらの解説によると、NeMo Guardrails はプログラム可能なガードレールを LLM ベースの対話システムに簡単に追加するための OSS です。NeMo Guardrails を使用する事で、簡単なコンフィグレーションの作成と Python によるコーディングのみで、信頼性のある、安全でセキュアな LLM 対話システムの構築を簡単に行う事ができます。...]]></content:encoded>
         </item>
     </channel>
 </rss>
