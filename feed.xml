@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 08 Nov 2025 11:40:58 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Nov 2025 22:40:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[LT参加記録：言語モデルに対する攻撃とその予防策について]]></title>
+            <link>https://zenn.dev/akasan/articles/95e0b612534bb5</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/95e0b612534bb5</guid>
+            <pubDate>Sat, 08 Nov 2025 13:19:50 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、先日タイトルの通り「言語モデルに対する攻撃とその予防策について」という題目でLT登壇してきたので、その紹介になります。資料は以下にアップロードしてあります。https://speakerdeck.com/akasan/yan-yu-moderunidui-surugong-ji-tosonoyu-fang-ce-nituite以下、本発表の概略になります。 LTを実施したモチベーション言語モデルは様々なコンポーネントから構成されており、例えば以下が挙げられます。LLMそのものMCPサーバ/クライアントエージェントVector DBなどのDBクラウドインフラ/...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スタンドオフに学ぶ非同期プログラミング - 待ち時間を無駄にしない技術]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/11/08/150836</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://silasol.la/posts/2025-10-26-02_astro-sml/</guid>
             <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[デフォルトでハイライトされない言語を TextMate を用いた拡張で認識させます．]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Rayシリーズ：Ray Dataへの入門 ~quickstart~]]></title>
-            <link>https://zenn.dev/akasan/articles/3cdf0bd79a898a</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3cdf0bd79a898a</guid>
-            <pubDate>Sat, 25 Oct 2025 12:05:51 GMT</pubDate>
-            <content:encoded><![CDATA[今回はRayでデータを取り扱うためのRay Dataについて、Quickstartを通して入門してみました。 Ray Dataとは？Ray Dataは、Ray上に構築されたMLとAIワークロードのためのスケーラブルなデータ処理ライブラリです。 バッチ推論やデータ前処理、MLトレーニングのためのインジェストなど、AIワークロードを表現するための柔軟で高性能なAPIを提供してくれます。他の分散データシステムとは異なり、Ray Dataはストリーミング実行を特徴としており、大規模なデータセットを効率的に処理し、CPUとGPUの両方のワークロードで高い利用率を維持します。Ray Data...]]></content:encoded>
         </item>
     </channel>
 </rss>
