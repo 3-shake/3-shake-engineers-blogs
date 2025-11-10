@@ -4,16 +4,17 @@ import { members } from "@members";
 import { getMemberPath } from "@src/utils/helper";
 
 export const ScrollableMembers: React.FC = () => {
-  const [randomMembers, setRandomMembers] = useState(members);
+  const [shuffledMembers, setShuffledMembers] = useState(members);
 
   useEffect(() => {
-    const shuffledMembers = [...members].sort(() => 0.5 - Math.random());
-    setRandomMembers(shuffledMembers.slice(0, 8)); // 8人のランダムなメンバーを表示
+    // クライアント側でマウント後にシャッフル
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setShuffledMembers([...members].sort(() => 0.5 - Math.random()));
   }, []);
 
   return (
     <div className="scrollable-members">
-      {randomMembers.map((member, i) => (
+      {shuffledMembers.map((member, i) => (
         <Link
           key={`scrollable-member-${i}`}
           href={getMemberPath(member.id)}
