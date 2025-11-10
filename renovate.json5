@@ -1,39 +1,39 @@
 {
   // Renovate設定スキーマ
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+
   // 基本設定プリセット
-  "extends": [
-    "config:recommended",           // 推奨設定
-    ":dependencyDashboard",         // 依存関係ダッシュボード
-    ":semanticCommits",             // セマンティックコミット
-    ":separateMajorReleases",       // メジャーリリースを分離
-    ":combinePatchMinorReleases",   // パッチ・マイナーリリースを結合
-    ":ignoreUnstable",              // 不安定版を無視
-    ":prImmediately",               // PR即座作成
-    ":updateNotScheduled",          // スケジュール外更新なし
-    ":automergeDisabled",           // 自動マージ無効（後で個別設定）
-    ":ignoreModulesAndTests",       // node_modulesとテストファイルを無視
-    ":autodetectPinVersions",       // バージョン固定を自動検出
-    ":prConcurrentLimit10",         // 同時PR数制限: 10
-    ":prHourlyLimit2"               // 時間あたりPR数制限: 2
+  extends: [
+    "config:recommended", // 推奨設定
+    ":dependencyDashboard", // 依存関係ダッシュボード
+    ":semanticCommits", // セマンティックコミット
+    ":separateMajorReleases", // メジャーリリースを分離
+    ":combinePatchMinorReleases", // パッチ・マイナーリリースを結合
+    ":ignoreUnstable", // 不安定版を無視
+    ":prImmediately", // PR即座作成
+    ":updateNotScheduled", // スケジュール外更新なし
+    ":automergeDisabled", // 自動マージ無効（後で個別設定）
+    ":ignoreModulesAndTests", // node_modulesとテストファイルを無視
+    ":autodetectPinVersions", // バージョン固定を自動検出
+    ":prConcurrentLimit10", // 同時PR数制限: 10
+    ":prHourlyLimit2", // 時間あたりPR数制限: 2
   ],
-  
+
   // 基本設定
-  "timezone": "Asia/Tokyo",
-  "schedule": ["before 10am on monday"], // 毎週月曜日の午前10時前
-  "labels": ["dependencies"],
-  "reviewers": ["O-natsu"],
-  
+  timezone: "Asia/Tokyo",
+  schedule: ["before 10am on monday"], // 毎週月曜日の午前10時前
+  labels: ["dependencies"],
+  reviewers: ["O-natsu"],
+
   // セキュリティアラート設定
-  "vulnerabilityAlerts": {
-    "enabled": true,
-    "labels": ["security", "dependencies"]
+  vulnerabilityAlerts: {
+    enabled: true,
+    labels: ["security", "dependencies"],
   },
-  
+
   // ロックファイルメンテナンス
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
+  lockFileMaintenance: {
+    enabled: true,
+    schedule: ["before 10am on monday"],
   },
 }
