@@ -13,12 +13,13 @@ import {
 
 dayjs.extend(relativeTime);
 
-const PostLink: React.FC<{ item: PostItem }> = (props) => {
+const PostLink: React.FC<{ item: PostItem; currentTime: number }> = (props) => {
   const { authorId, title, isoDate, link, dateMiliSeconds } = props.item;
   const member = getMemberById(authorId);
   if (!member) return null;
 
   const hostname = getHostFromURL(link);
+  const threeDaysAgo = props.currentTime - 86400000 * 3;
 
   return (
     <article className="post-link">
@@ -50,7 +51,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
           </div>
         )}
       </a>
-      {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
+      {dateMiliSeconds && dateMiliSeconds > threeDaysAgo && (
         <div className="post-link__new-label">NEW</div>
       )}
     </article>
@@ -59,6 +60,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 
 export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
   const [displayItemsCount, setDisplayItemsCount] = useState<number>(32);
+  const [currentTime] = useState(() => Date.now());
   const totalItemsCount = props.items?.length || 0;
   const canLoadMore = totalItemsCount - displayItemsCount > 0;
 
@@ -70,7 +72,11 @@ export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
     <>
       <div className="post-list">
         {props.items.slice(0, displayItemsCount).map((item, i) => (
-          <PostLink key={`post-item-${i}`} item={item} />
+          <PostLink
+            key={`post-item-${i}`}
+            item={item}
+            currentTime={currentTime}
+          />
         ))}
       </div>
       {canLoadMore && (
