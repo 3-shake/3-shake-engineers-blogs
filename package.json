@@ -36,7 +36,7 @@
     "eslint-plugin-react-hooks": "7.0.1",
     "feed": "5.1.0",
     "fs-extra": "11.3.2",
-    "npm-run-all2": "5.0.2",
+    "npm-run-all2": "8.0.4",
     "prettier": "3.6.2",
     "rss-parser": "3.13.0",
     "sass": "1.93.3",
