@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 11 Nov 2025 11:41:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Nov 2025 22:39:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[NVIDIA 認定資格奮闘記 ~Associate AI Infrastructure and Operations編~]]></title>
+            <link>https://zenn.dev/akasan/articles/5daeb206144423</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/5daeb206144423</guid>
+            <pubDate>Tue, 11 Nov 2025 12:06:02 GMT</pubDate>
+            <content:encoded><![CDATA[今回は、かなり前ですが3月にNVIDIA認定資格の一つであるAssociate AI Infrastructure and Operationsを受験したので、その体験記をまとめます。 Associate AI Infrastructure and Operationsとは？まず初めに、NVIDIAが出している認定資格について説明します。Google CloudやAWSなどが認定資格で有名だと思いますが、NVIDIAも認定資格を出しています。NVIDIAはGPUをはじめとしたハードウェアに関する領域と、ディープラーニングをはじめとしたGPUを利用するためのソフトウェアの領域と両方あ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[スリーシェイク、「第58回 情報科学若手の会」にスポンサーとして協賛および登壇]]></title>
             <link>https://sreake.com/blog/wakatenokai/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/b9e7806e438f8f</guid>
             <pubDate>Wed, 29 Oct 2025 11:40:49 GMT</pubDate>
             <content:encoded><![CDATA[今回はPythonのlistとsetでデータが含まれているかどうかを判定するためのロジックの所要時間の差について調べてみました。Pythonの仕様として、単純にデータを列挙しておきたいだけの場合にlistを利用せずsetを利用する方が良い場合もあり個人的に気をつけていましたが、以下の記事をみて実際にlistとsetでどれくらい差が出るかを調べてみようと思いました。今回は値の一覧に特定の値が含まれているかを判定するのにかかる時間を調べてみました。https://medium.com/the-pythonworld/stop-using-if-x-in-list-heres-the-fas...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Rayシリーズ：NumPyやpandasデータをRay Dataで取り込む]]></title>
-            <link>https://zenn.dev/akasan/articles/db0b5b634d453d</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/db0b5b634d453d</guid>
-            <pubDate>Tue, 28 Oct 2025 14:21:11 GMT</pubDate>
-            <content:encoded><![CDATA[今回はRay Dataを利用して、NumPyとpandasのデータを読み込む方法をまとめます。 早速試してみる内容はこちらを参考にしています。https://docs.ray.io/en/latest/data/loading-data.html#loading-data-from-other-libraries 環境構築uvを利用して以下のように構築します。uv init ray_data_numpy_pandas -p 3.12cd ray_data_numpy_pandasuv add "ray[data]" numpy pandas NumPyからデータを...]]></content:encoded>
         </item>
     </channel>
 </rss>
