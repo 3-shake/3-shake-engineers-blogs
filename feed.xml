@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 13 Nov 2025 11:41:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Nov 2025 14:47:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[gpt-ossのリリースチェックして使ってみた]]></title>
+            <link>https://zenn.dev/akasan/articles/3e33b309b5c70c</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3e33b309b5c70c</guid>
+            <pubDate>Thu, 13 Nov 2025 14:04:37 GMT</pubDate>
+            <content:encoded><![CDATA[今回は2025年8月5日に発表されたgpt-ossについて、そのリリースノートのチェックおよび実際に使ってみた内容について共有します！※ Ollamaなどを使ってローカルで検証した結果を共有したかったですが、今回は概要に留めておりますので次回以降然るべきタイミングで共有します gpt-ossとは？まず、gpt-ossのリリースノートは以下になります。https://openai.com/ja-JP/index/introducing-gpt-oss/また、公式GitHubは以下になります。https://github.com/openai/gpt-ossgpt-ossは名...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Code で体験するAIコーディング。GitHub CopilotやCursorとの違いは？]]></title>
             <link>https://sreake.com/blog/ai-coding-with-claude-code/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/get-started-with-gemini-enterprise/</guid>
             <pubDate>Fri, 31 Oct 2025 01:22:38 GMT</pubDate>
             <content:encoded><![CDATA[Gemini Enterprise（旧Google Agentspace）の概要 2025/10/10まではGoogle Agentspaceと呼ばれていたGoogle AIアシスタントサービスのサービス名称変更が行われ […]The post Gemini Enterprise（旧Google Agentspace）を活用する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【初心者向け】Snowflakeロールベースアクセス制御（RBAC）解説]]></title>
-            <link>https://sreake.com/blog/learn-about-snowflake-role-based-access-control/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/learn-about-snowflake-role-based-access-control/</guid>
-            <pubDate>Fri, 31 Oct 2025 01:21:49 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Snowflakeでデータ分析基盤を構築するうえで、最も重要な要素の一つがロール管理です。これはデータガバナンスの活動の第一歩の位置付けでもあり、さらにはある程度成熟された基盤の状態からロールを再設計するコスト […]The post 【初心者向け】Snowflakeロールベースアクセス制御（RBAC）解説 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
