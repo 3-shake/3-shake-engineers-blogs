@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 16 Nov 2025 11:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Nov 2025 22:41:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google Cloud で目指す クラウド二刀流エンジニア講座第3回に登壇してきました。]]></title>
+            <link>https://blog.masasuzu.net/entry/2025/11/16/203546</link>
+            <guid isPermaLink="false">https://blog.masasuzu.net/entry/2025/11/16/203546</guid>
+            <pubDate>Sun, 16 Nov 2025 11:35:46 GMT</pubDate>
+            <content:encoded><![CDATA[11/18に Google Cloudで目指すクラウド二刀流エンジニア講座第3回 に登壇してきました。cloudonair.withgoogle.com第1回でパネルディスカッションに出てきたのに引き続き、今回は Fargate との差分で理解する、Cloud Run のシンプルな魅力 と題して登壇させていただきました。AWSをもうすでに使ってる方向けにECS Fargateと比較しつつCloud Runのシンプルな魅力を紹介するセッションとなっていました。視聴登録すればこちらから動画が見れるかと思います。資料も後ほどこちらに上がると思います。内容としては以下のような話をしました。Cloud Runの概要紹介ECS FargateとCloud Runのアプリケーションアーキテクチャ比較ネットワーク機能の紹介セキュリティ機能の紹介運用監視機能の紹介今回はCloud Runを使ってない人向けに概要紹介するセッションだったので、深入りできていない部分や説明不足、端折ったところがたくさんあります。これについてはどこかでエントリ書きたいと思ってます。とにかくCloud Runはいいぞ!ということが伝わっていれば何よりです。Cloud Runの良さを伝えたつもりですが、あくまでなんでも適材適所でFargateが向いているコンテキストに無理やり変える必要はなく、比較検討できる選択肢の一つとしてCloud Runを入れていただけたらと思います。スライドにもう少し図表を入れた方が伝わったかなとか反省点はありつつも、40分トークは初めてだったのですごくいい経験になりました。今後ももっと大きなところで登壇できるように精進していきます。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Brev上でgpt-oss-20bをデプロイしてみた]]></title>
             <link>https://zenn.dev/akasan/articles/d9cc3e9f167d47</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/686e4b3ef0b8ff</guid>
             <pubDate>Sun, 02 Nov 2025 07:52:43 GMT</pubDate>
             <content:encoded><![CDATA[今回はNVIDIA Brev（以下、Brev）を利用してGPUインスタンスを立ち上げる方法をご紹介します。ディープラーニングモデルの開発をはじめ、様々な用途でGPUインスタンスを利用したい場合があるかと思います。そのような場合に取りうる選択肢の一つとして、Brevを利用することができ、その利用方法を紹介できればと思います。 NVIDIA Brevとは？NVIDIA Brevは、一般的なクラウドプラットフォーム上のNVIDIA GPUインスタンスへの効率的なアクセスをはじめとして自動環境セットアップ、柔軟な展開オプションを提供し、開発者がすぐに実験を開始できるようにしてくれるサービス...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[garakでLLMの脆弱性スキャンをしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/34756e48c4f870</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/34756e48c4f870</guid>
-            <pubDate>Sat, 01 Nov 2025 07:54:57 GMT</pubDate>
-            <content:encoded><![CDATA[今回はNVIDIAがOSSとして提供しているgarakを用いて、LLMの脆弱性スキャンを試してみたので共有します。 garakとは？garakは生成AIに対するレッドチーミングおよびアセスメントのためのツールです。garakを利用すると、LLMが望ましくない方法で失敗させられるかどうかを検証し、ハルシネーションを初めジェイルブレイクなど多くの脆弱性を探知することができます。garakのドキュメントを確認すると、以下の特徴があるとのことです。LLMセキュリティへのフォーカス：主にLLMセキュリティに焦点を当ててており、他のツールが一般的な機械学習セキュリティやアプリセキュリティ...]]></content:encoded>
         </item>
     </channel>
 </rss>
