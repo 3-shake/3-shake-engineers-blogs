@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 21 Nov 2025 11:41:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Nov 2025 22:41:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[最近読んでいて興味深かった記事紹介 Vol.2]]></title>
+            <link>https://zenn.dev/akasan/articles/dd5970e52b540c</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/dd5970e52b540c</guid>
+            <pubDate>Fri, 21 Nov 2025 13:17:05 GMT</pubDate>
+            <content:encoded><![CDATA[今回は読んでいて良かった記事を紹介するシリーズの第二弾になります。第一弾は以下になりますので、気になる方はぜひご覧ください！https://zenn.dev/akasan/articles/2703e4744e7c5c What Is Agentic AI?こちらのNVIDIAのテックブログでは、Agentic AIとはどのようなものなのか、また業界ごとにどのように利用されるのかを簡潔にまとめられていてとてもいい記事になります。エージェントを導入したらどんな構成になるの？という疑問を解決するための第一報にもなりますので是非ご覧ください。https://blogs.nvidia....]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025-11-21 社内エンジニア勉強会 改めて理解するVPC Endpoint]]></title>
             <link>https://speakerdeck.com/masasuzu/2025-11-21-she-nei-enziniamian-qiang-hui-gai-meteli-jie-suruvpc-endpoint</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/8409bc0ebb0818</guid>
             <pubDate>Fri, 07 Nov 2025 12:43:51 GMT</pubDate>
             <content:encoded><![CDATA[今回は、以前claude codeに私のtech blogを評価させてみたのですが、それから数ヶ月経ったので改めて評価させてみました。前回の記事は以下になるので合わせてご覧ください。https://zenn.dev/akasan/articles/af8b26620c9c98 claude codeへの指示今回は前回の記事と同じ以下の指示を利用して評価してもらいました。instruction.md## 分析articlesフォルダ以下に私のテックブログのマークダウンファイルがあります。以下の情報について傾向分析をしてください- どのようなジャンルの記事を出しているか...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Vertex AI Agent Engine を運用していくうえでのノウハウ]]></title>
-            <link>https://sreake.com/blog/know-how-to-operate-vertex-ai-agent-engine/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/know-how-to-operate-vertex-ai-agent-engine/</guid>
-            <pubDate>Fri, 07 Nov 2025 09:42:52 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。本記事は、Google Cloud […]The post Vertex AI Agent Engine を運用していくうえでのノウハウ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
