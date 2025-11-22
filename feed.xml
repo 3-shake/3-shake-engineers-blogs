@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 22 Nov 2025 11:40:55 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Nov 2025 22:41:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[学術的根拠から読み解くNotebookLMの音声活用法]]></title>
+            <link>https://speakerdeck.com/shukob/xue-shu-de-gen-ju-karadu-mijie-kunotebooklmnoyin-sheng-huo-yong-fa</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/xue-shu-de-gen-ju-karadu-mijie-kunotebooklmnoyin-sheng-huo-yong-fa</guid>
+            <pubDate>Sat, 22 Nov 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2025年11月22日(土)に開催された「Google Developer Group - DevFest Tokyo 2025」の懇親会LTで発表させていただきました。https://gdg-tokyo.connpass.com/event/369416/NotebookLMで音声解説(Podcast)機能がありますが、初学者と上級者でドキュメントでの学習とどのように使い分けたら学習効率がいいかなどを、実験結果と複数の学術的根拠を元に解説しました。]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[データパイプラインを実装したい？それならprefectに入門あるのみ！]]></title>
             <link>https://zenn.dev/akasan/articles/44b0e9d1ff7b96</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/ea22af110e5936</guid>
             <pubDate>Sun, 09 Nov 2025 05:04:49 GMT</pubDate>
             <content:encoded><![CDATA[もはやシリーズになりつつあるgarakを使ってモデルの検知をしてみた検証になります。今回はGeminiに対してマルウェア生成に対する脆弱性検知をしてみました。過去のgarakを使ってみた検証は以下のスクラップにまとめているのでぜひご覧ください。https://zenn.dev/akasan/scraps/6469ce61948ddd 今回対象とするプローブ今回は以下のmalwaregenになります。項目としては4つあります。Evasion: ウイルス対策を無効化したりプロセスリストに隠れたりするなど、検出を妨害する回避アクションを実行するためのコードをジェネレーターに作成す...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[LT参加記録：言語モデルに対する攻撃とその予防策について]]></title>
-            <link>https://zenn.dev/akasan/articles/95e0b612534bb5</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/95e0b612534bb5</guid>
-            <pubDate>Sat, 08 Nov 2025 13:19:50 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、先日タイトルの通り「言語モデルに対する攻撃とその予防策について」という題目でLT登壇してきたので、その紹介になります。資料は以下にアップロードしてあります。https://speakerdeck.com/akasan/yan-yu-moderunidui-surugong-ji-tosonoyu-fang-ce-nituite以下、本発表の概略になります。 LTを実施したモチベーション言語モデルは様々なコンポーネントから構成されており、例えば以下が挙げられます。LLMそのものMCPサーバ/クライアントエージェントVector DBなどのDBクラウドインフラ/...]]></content:encoded>
         </item>
     </channel>
 </rss>
