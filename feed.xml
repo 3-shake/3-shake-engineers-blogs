@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 22 Nov 2025 22:41:12 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Nov 2025 11:40:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -117,7 +117,7 @@
             <link>https://blog.masasuzu.net/entry/2025/11/16/203546</link>
             <guid isPermaLink="false">https://blog.masasuzu.net/entry/2025/11/16/203546</guid>
             <pubDate>Sun, 16 Nov 2025 11:35:46 GMT</pubDate>
-            <content:encoded><![CDATA[11/18に Google Cloudで目指すクラウド二刀流エンジニア講座第3回 に登壇してきました。cloudonair.withgoogle.com第1回でパネルディスカッションに出てきたのに引き続き、今回は Fargate との差分で理解する、Cloud Run のシンプルな魅力 と題して登壇させていただきました。AWSをもうすでに使ってる方向けにECS Fargateと比較しつつCloud Runのシンプルな魅力を紹介するセッションとなっていました。視聴登録すればこちらから動画が見れるかと思います。資料も後ほどこちらに上がると思います。内容としては以下のような話をしました。Cloud Runの概要紹介ECS FargateとCloud Runのアプリケーションアーキテクチャ比較ネットワーク機能の紹介セキュリティ機能の紹介運用監視機能の紹介今回はCloud Runを使ってない人向けに概要紹介するセッションだったので、深入りできていない部分や説明不足、端折ったところがたくさんあります。これについてはどこかでエントリ書きたいと思ってます。とにかくCloud Runはいいぞ!ということが伝わっていれば何よりです。Cloud Runの良さを伝えたつもりですが、あくまでなんでも適材適所でFargateが向いているコンテキストに無理やり変える必要はなく、比較検討できる選択肢の一つとしてCloud Runを入れていただけたらと思います。スライドにもう少し図表を入れた方が伝わったかなとか反省点はありつつも、40分トークは初めてだったのですごくいい経験になりました。今後ももっと大きなところで登壇できるように精進していきます。]]></content:encoded>
+            <content:encoded><![CDATA[11/14に Google Cloudで目指すクラウド二刀流エンジニア講座第3回 に登壇してきました。cloudonair.withgoogle.com第1回でパネルディスカッションに出てきたのに引き続き、今回は Fargate との差分で理解する、Cloud Run のシンプルな魅力 と題して登壇させていただきました。AWSをもうすでに使ってる方向けにECS Fargateと比較しつつCloud Runのシンプルな魅力を紹介するセッションとなっていました。視聴登録すればこちらから動画が見れるかと思います。資料も後ほどこちらに上がると思います。内容としては以下のような話をしました。Cloud Runの概要紹介ECS FargateとCloud Runのアプリケーションアーキテクチャ比較ネットワーク機能の紹介セキュリティ機能の紹介運用監視機能の紹介今回はCloud Runを使ってない人向けに概要紹介するセッションだったので、深入りできていない部分や説明不足、端折ったところがたくさんあります。これについてはどこかでエントリ書きたいと思ってます。とにかくCloud Runはいいぞ!ということが伝わっていれば何よりです。Cloud Runの良さを伝えたつもりですが、あくまでなんでも適材適所でFargateが向いているコンテキストに無理やり変える必要はなく、比較検討できる選択肢の一つとしてCloud Runを入れていただけたらと思います。スライドにもう少し図表を入れた方が伝わったかなとか反省点はありつつも、40分トークは初めてだったのですごくいい経験になりました。今後ももっと大きなところで登壇できるように精進していきます。]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Brev上でgpt-oss-20bをデプロイしてみた]]></title>
