@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 26 Nov 2025 22:41:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Nov 2025 11:41:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[MCP・A2A概要 〜Google Cloudで構築するなら〜]]></title>
+            <link>https://speakerdeck.com/shukob/mcpa2agai-yao-google-clouddegou-zhu-surunara</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/mcpa2agai-yao-google-clouddegou-zhu-surunara</guid>
+            <pubDate>Thu, 27 Nov 2025 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[「Jagu'e'r 月末 Tech Lunch Online#7 - Google Cloud を語る！-」にて、AIエージェントのMCPとA2Aの概要と、それらをGoogle Cloudで構築する上でのTipsを紹介させていただきました。https://jaguer-tech-lunch.connpass.com/event/362363/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[n8nでブログネタを考えるためのアシスタントを作ってみた]]></title>
             <link>https://zenn.dev/akasan/articles/blog_helper_n8n</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/ai-coding-with-claude-code/</guid>
             <pubDate>Thu, 13 Nov 2025 08:35:30 GMT</pubDate>
             <content:encoded><![CDATA[はじめに ここ数年で、ソフトウェア開発におけるAI活用は急速に進んでいます。特に「AIコーディング支援ツール」は、プログラマーの生産性を高める実用的な手段として注目を集めています。 GitHub CopilotやCurs […]The post Claude Code で体験するAIコーディング。GitHub CopilotやCursorとの違いは？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[自動選択と成長]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2025/11/13/113935</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2025/11/13/113935</guid>
-            <pubDate>Thu, 13 Nov 2025 02:39:35 GMT</pubDate>
-            <content:encoded><![CDATA[配属から八年。僕はチームリーダーになっていた。ある日、後輩の山田が興味深いことを言った。「先輩って、いつもパッと2つか3つ答えますよね。なんでちょうどそのくらいなんですか？」確かに。APIが遅ければ「キャッシュかインデックス」。バグが出れば「ログかデバッガーかスタックトレース」。言語を選ぶなら「ShellかPythonかRust」。「経験則だよ。過去に何度もやってきたパターンが、自動的に浮かんでくるんだ」「でも、なんで1つじゃなくて、4つでもなくて、2つか3つなんですか？」言われてみれば、不思議だった。その夜、僕は過去のケースを思い返してみた。パフォーマンス問題：「キャッシュかインデックス」（2つ）セキュリティ脆弱性：「バリデーション、SQLインジェクション対策、認証強化」（3つ）コードの可読性：「変数名の改善か関数分割」（2つ）ある時は2つ、ある時は3つ。でも4つ以上になることはほとんどない。なぜだ？翌週、僕は田中さん（今は部長）にこの疑問をぶつけた。「田中さん、なんで僕ら、いつも2つか3つしか思い浮かばないんでしょう？」田中さんは笑った。「それはな、脳の処理能力の限界なんだよ」「限界？」「人間の作業記憶は、だいたい3〜4個のチャンクまでしか同時に保持できない。だから無意識に、その範囲内で候補を絞り込んでる。2つか3つがちょうどいいんだ」なるほど。経験則というより、認知的な制約だったのか。でも田中さんは続けた。「ただし、そこには罠がある」「罠？」「2つか3つで思考が止まってしまう。本当は4つ目、5つ目にもっといい答えがあるかもしれないのに」その言葉が頭に残った。数日後、小さなシステム障害が発生した。僕の頭に浮かんだのは「データベースの負荷」「ネットワークの問題」の2つ。いつものパターンだ。両方チェックしたが、どちらも正常。行き詰まった。そこに新人の佐藤さんが言った。「先輩、もしかしてタイムゾーンの設定、変わってませんか？」「タイムゾーン？」確認すると、前日のデプロイでサーバーのタイムゾーン設定が変更されていた。それが原因で、スケジュールされたバッチ処理が予期しない時間に実行され、システムに負荷をかけていた。僕の頭には、その選択肢が浮かばなかった。「いつもの2つ」で思考が停止していた。山田が僕に尋ねたあの質問の答えが、ようやくわかった。2つか3つというのは、経験則であると同時に、認知的な制約でもある。便利だが、危険でもある。その夜、僕はメモを更新した。かつてこう書いていた：「無意識の候補絞り込みに注意。定期的に立ち止まって再考する」今はこう書き直した：「脳は自動的に2〜3個に絞る。便利だが、それが答えの全てではない。4つ目を探せ」翌朝、山田が報告に来た。「先輩、このエラー、認証の問題かセッションの問題だと思うんですけど...」「それで終わり？」「え？」「3つ目は？4つ目は？」山田は戸惑った顔をした。「いや、もっとあるかもしれないけど、パッと浮かぶのはこの2つで...」「そう。パッと浮かぶのは2〜3個なんだ。でも本当の答えは、浮かばなかった4つ目にあるかもしれない」山田の表情が変わった。「じゃあ、どうすれば？」「まず、なぜその2つが浮かんだのか考える。次に、意識的に視点を変えて、他に何があるか探す。そして人に聞く」それから五年。今、僕が後輩を指導するとき、必ずこう言う。「パッと浮かんだ答えは、おそらく正しい。でも必ず4つ目を探せ。それが君を成長させる」脳は2〜3個に絞る。それは人間の性質だ。でも、その枠を超えようとすることが、エンジニアとしての本当の成長なのだと、僕は学んだ。]]></content:encoded>
         </item>
     </channel>
 </rss>
