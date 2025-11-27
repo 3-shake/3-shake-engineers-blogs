@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 27 Nov 2025 11:41:57 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Nov 2025 22:41:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[短編：「AI」という言葉の認識とは？]]></title>
+            <link>https://zenn.dev/akasan/articles/poem_what_is_ai</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/poem_what_is_ai</guid>
+            <pubDate>Thu, 27 Nov 2025 14:21:10 GMT</pubDate>
+            <content:encoded><![CDATA[短編集、今回は昨今AIという言葉のニュアンスが変わってきているように感じており、ちょっと書いてみました。※ 中身が合ってないような文章です。出張帰りのわずかな時間での記載になりますのでご容赦ください そもそもAIとは？AI、つまり人工知能の定義をまず確認します。まず確認します。NEC様のページに乗っている画像を引用させていただくと、人工知能は「学習」「認識・理解」「予測・推論」「計画・最適化」など、人間の知的活動をコンピュータによって実現するもの、と定義されています。のように定義されるとのことで、人が考えるロジックをプログラム的に構築する分野と言えるでしょう。この定義から...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[MCP・A2A概要 〜Google Cloudで構築するなら〜]]></title>
             <link>https://speakerdeck.com/shukob/mcpa2agai-yao-google-clouddegou-zhu-surunara</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/3e33b309b5c70c</guid>
             <pubDate>Thu, 13 Nov 2025 14:04:37 GMT</pubDate>
             <content:encoded><![CDATA[今回は2025年8月5日に発表されたgpt-ossについて、そのリリースノートのチェックおよび実際に使ってみた内容について共有します！※ Ollamaなどを使ってローカルで検証した結果を共有したかったですが、今回は概要に留めておりますので次回以降然るべきタイミングで共有します gpt-ossとは？まず、gpt-ossのリリースノートは以下になります。https://openai.com/ja-JP/index/introducing-gpt-oss/また、公式GitHubは以下になります。https://github.com/openai/gpt-ossgpt-ossは名...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude Code で体験するAIコーディング。GitHub CopilotやCursorとの違いは？]]></title>
-            <link>https://sreake.com/blog/ai-coding-with-claude-code/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/ai-coding-with-claude-code/</guid>
-            <pubDate>Thu, 13 Nov 2025 08:35:30 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに ここ数年で、ソフトウェア開発におけるAI活用は急速に進んでいます。特に「AIコーディング支援ツール」は、プログラマーの生産性を高める実用的な手段として注目を集めています。 GitHub CopilotやCurs […]The post Claude Code で体験するAIコーディング。GitHub CopilotやCursorとの違いは？ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
