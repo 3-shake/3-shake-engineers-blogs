@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 27 Nov 2025 22:41:19 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Nov 2025 11:41:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[名前が似てる LookerとLooker Studioの違いとは?]]></title>
+            <link>https://sreake.com/blog/differences-between-looker-and-looker-studio/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/differences-between-looker-and-looker-studio/</guid>
+            <pubDate>Fri, 28 Nov 2025 02:32:06 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは。 以前、Looker、LookMLについての記事を投稿してからしばらく経ちました。 今は生成AIの登場により、Lookerも様々な機能追加や活用の場が増えてきています。 それと同時に、このような言葉 […]The post 名前が似てる LookerとLooker Studioの違いとは? first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[短編：「AI」という言葉の認識とは？]]></title>
             <link>https://zenn.dev/akasan/articles/poem_what_is_ai</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/how-to-delete-previous-gemini-enterprise-agent/</guid>
             <pubDate>Fri, 14 Nov 2025 01:00:21 GMT</pubDate>
             <content:encoded><![CDATA[前置き こんばんは Sreake 事業部の佐藤慧太@SatohJohnです。 Gemini Enterprise のお話です。Gemini Enterprise の管理画面では以下のような画面で「エージェント」して追加、 […]The post Gemini Enterprise でエージェントの登録方法が変わったので、前のエージェントを削除する方法 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[gpt-ossのリリースチェックして使ってみた]]></title>
-            <link>https://zenn.dev/akasan/articles/3e33b309b5c70c</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/3e33b309b5c70c</guid>
-            <pubDate>Thu, 13 Nov 2025 14:04:37 GMT</pubDate>
-            <content:encoded><![CDATA[今回は2025年8月5日に発表されたgpt-ossについて、そのリリースノートのチェックおよび実際に使ってみた内容について共有します！※ Ollamaなどを使ってローカルで検証した結果を共有したかったですが、今回は概要に留めておりますので次回以降然るべきタイミングで共有します gpt-ossとは？まず、gpt-ossのリリースノートは以下になります。https://openai.com/ja-JP/index/introducing-gpt-oss/また、公式GitHubは以下になります。https://github.com/openai/gpt-ossgpt-ossは名...]]></content:encoded>
         </item>
     </channel>
 </rss>
