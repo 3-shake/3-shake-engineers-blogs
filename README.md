@@ -6,6 +6,7 @@ published at: https://blog.3-shake.com/
 
 ## Introduction
 3-shake Engineers’Blogs では3-shakeに所属するエンジニアのブログ記事をまとめています。
+- 基本的に有志で更新対応を行っています
 - 機能や見た目の変更のPR、要望はいつでもお待ちしております
 - 初めて参加する方は[Onboarding](https://github.com/3-shake/3-shake-engineers-blogs#onboarding)を参照してください
 - Engineers' Blogsへの掲載を止めたい、退職することが決まった等の際は [以下を参照](https://github.com/3-shake/3-shake-engineers-blogs#offboarding)してください
@@ -32,7 +33,6 @@ $ yarn dev
 ### 動作確認環境
 
 Node.js v22
-
 
 
 ## Offboarding
