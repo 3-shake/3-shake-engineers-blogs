@@ -28,7 +28,7 @@ $ yarn dev
 - 配色を変更するには`src/styles/variables.scss`を書き換えます。
 - ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
 
-※ PRを出す際、デフォルトではリポジトリの向き先がfork元となっているため、`3-shake-engineers-blogs`のリポジトリ向けになっているか確認してください
+※ PRを出す際、デフォルトではリポジトリの向き先がfork元となっているため、`3-shake/3-shake-engineers-blogs`のリポジトリ向けになっているか確認してください
 
 ### 動作確認環境
 
