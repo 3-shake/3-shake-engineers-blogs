@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 06 Dec 2025 11:40:55 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Dec 2025 22:41:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[初心で挑むredis入門 ~サーバ起動とPythonからのアクセス~]]></title>
+            <link>https://zenn.dev/akasan/articles/redis_quickstart</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/redis_quickstart</guid>
+            <pubDate>Sat, 06 Dec 2025 13:56:14 GMT</pubDate>
+            <content:encoded><![CDATA[今回は改めてredisに入門してみました。今まで使って経験はありつつ、ちゃんと調べて勉強しようということで使ってみました。まずはサーバの建て方とPythonからのアクセス方法をまとめてみます。 検証内容今回は以下の内容を実施しますredisサーバの起動Docker上でサーバを立てますポートは6379でポートフォワーディングによりローカル環境からアクセスできるようにしますpythonコードからのアクセスシンプルなデータの格納と取得を実施 早速検証！！ redisサーバの起動redisサーバをDocker上で立てます。以下のレポジトリを参考にたてます...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[おい、類推するな]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/12/06/060208</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/blog_helper_n8n</guid>
             <pubDate>Wed, 26 Nov 2025 02:27:25 GMT</pubDate>
             <content:encoded><![CDATA[今回は、n8nで私のブログネタを過去のものから発展させる形で提案させるワークフローを作ってみました。 要件定義今回は以下の機能を実現するエージェントを作りました。ユーザから受け取ったブログに関する相談を行うツールとして、私のテックブログのRSS Feedを読み取る機能を与えるAIモデルはgpt-4.1-miniを利用ブログに関する相談以外はリジェクトさせる!OpenAIのモデルを使うにあたりAPIキーを取得してください n8nでの環境構築今回はローカル環境でdockerを利用して環境構築しました。詳しくは公式GitHubを参考に起動してください。https...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[短編：技術資料を翻訳せずに英語のまま読んでいて思ったこと]]></title>
-            <link>https://zenn.dev/akasan/articles/read_in_english</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/read_in_english</guid>
-            <pubDate>Tue, 25 Nov 2025 11:40:55 GMT</pubDate>
-            <content:encoded><![CDATA[最近技術資料を読むときに、英語の文章の場合基本的に翻訳せずに読むようにしています。あっという間に翻訳した文章を生成できる今だからこそあえて原文を読んでいてい思ったことをちょっとまとめてみました。 大前提：英語を流暢に扱いたい私自身、英語を流暢に話せるようになりたいと思っています。そんな中で日本語に翻訳ばっかりしていては英語能力は伸びません。もちろん知らない単語だったりは調べますが、可能な限り原文を読むことを大事にしています。また、翻訳させることによって原文と微妙にニュアンスが変わる場合もあるため、できるだけ原文で読むようにしています。なお、英語で読むようにしているのは今に始まった...]]></content:encoded>
         </item>
     </channel>
 </rss>
