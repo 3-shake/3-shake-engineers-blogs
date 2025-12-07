@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 07 Dec 2025 11:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Dec 2025 22:40:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AI時代のスキーマファースト開発 FastAPI × GitHub Packages で型安全なSDKを自動配布する]]></title>
+            <link>https://zenn.dev/meziron/articles/32ac2241bbec38</link>
+            <guid isPermaLink="false">https://zenn.dev/meziron/articles/32ac2241bbec38</guid>
+            <pubDate>Sun, 07 Dec 2025 15:00:49 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこの記事は 3-shake Advent Calendar 2025 の記事です。フロントエンド開発者とバックエンド開発者の間で「APIの仕様が違う」「ドキュメントが古い」といった問題に悩まされたことはありませんか？さらにAI時代になり、Claude CodeやCursorなどのAIコーディングツールを使う機会が増えてきました。しかし、AIにAPI呼び出しを実装させると、存在しないエンドポイントを「想像」で実装してしまったり、パラメータの型を間違えたりすることがあります。本記事では、FastAPIのOpenAPI自動生成機能を活用し、GitHub ActionsでTy...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[どこでも動くC言語プログラム「Cosmopolitan Libc」を触ってみた]]></title>
             <link>https://dev.mix64.com/2025/12/07/cosmopolitan-libc/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/differences-between-looker-and-looker-studio/</guid>
             <pubDate>Fri, 28 Nov 2025 02:32:06 GMT</pubDate>
             <content:encoded><![CDATA[はじめに こんにちは。 以前、Looker、LookMLについての記事を投稿してからしばらく経ちました。 今は生成AIの登場により、Lookerも様々な機能追加や活用の場が増えてきています。 それと同時に、このような言葉 […]The post 名前が似てる LookerとLooker Studioの違いとは? first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[短編：「AI」という言葉の認識とは？]]></title>
-            <link>https://zenn.dev/akasan/articles/poem_what_is_ai</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/poem_what_is_ai</guid>
-            <pubDate>Thu, 27 Nov 2025 14:21:10 GMT</pubDate>
-            <content:encoded><![CDATA[短編集、今回は昨今AIという言葉のニュアンスが変わってきているように感じており、ちょっと書いてみました。※ 中身が合ってないような文章です。出張帰りのわずかな時間での記載になりますのでご容赦ください そもそもAIとは？AI、つまり人工知能の定義をまず確認します。まず確認します。NEC様のページに乗っている画像を引用させていただくと、人工知能は「学習」「認識・理解」「予測・推論」「計画・最適化」など、人間の知的活動をコンピュータによって実現するもの、と定義されています。のように定義されるとのことで、人が考えるロジックをプログラム的に構築する分野と言えるでしょう。この定義から...]]></content:encoded>
         </item>
     </channel>
 </rss>
