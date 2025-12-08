@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 07 Dec 2025 22:40:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Dec 2025 01:26:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2025年AWS Community Builderの活動報告]]></title>
+            <link>https://blog.masasuzu.net/entry/2025/12/08/100000</link>
+            <guid isPermaLink="false">https://blog.masasuzu.net/entry/2025/12/08/100000</guid>
+            <pubDate>Mon, 08 Dec 2025 01:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[今年はブログ4本(純粋なAWSの記事はなし)、登壇5本(内社内2本)という結果でした。勉強会参加自体はそこそこしてたんですが、アウトプットという点では少し物足りない結果になったなという感想です。要因としてはGoogle Cloud関連の活動が比較的多くて、AWS関連にリソースを割けなかったというのもあります。第二の理由としては今年後半が特に業務が多忙で身動きが取れない月があったのも事実です。とはいえ忙しいは言い訳に過ぎないので、なんとアウトプットする仕組み作りをしていきたいとことです。来年はもっとアウトプットを増やしていきたいです。そこで以下の数値を目標にやっていきたいと考えています。社外登壇: 月0.5本AWSテーマのブログ: 月1本以上やってくぞ。以下今年のアウトプットを置いておきます。ブログAWS関連なしクラウドニュートラルblog.masasuzu.netdiary.masasuzu.netdiary.masasuzu.netblog.masasuzu.net登壇AWS関連 speakerdeck.com speakerdeck.com speakerdeck.comクラウドニュートラル speakerdeck.com speakerdeck.com]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AI時代のスキーマファースト開発 FastAPI × GitHub Packages で型安全なSDKを自動配布する]]></title>
             <link>https://zenn.dev/meziron/articles/32ac2241bbec38</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/nvidia_ncp_genl</guid>
             <pubDate>Fri, 28 Nov 2025 13:09:29 GMT</pubDate>
             <content:encoded><![CDATA[今回はNVIDIAの認定資格であるProfessional Generative AI LLMsを取得したので、その内容を共有しようと思います。 Professional Generative AI LLMsとは？Professional Generative AI LLMs（以下、NCP-GENL）は、NVIDIAが提供している認定資格の一つであり、AIドリブンなアプリケーションを開発したり運用するための中間レベルの資格となっています。主にLLMについて取り扱われる部分が多いですが、従来の機械学習に関する知識についても問われるようになっています。先日受験したAssociate G...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[名前が似てる LookerとLooker Studioの違いとは?]]></title>
-            <link>https://sreake.com/blog/differences-between-looker-and-looker-studio/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/differences-between-looker-and-looker-studio/</guid>
-            <pubDate>Fri, 28 Nov 2025 02:32:06 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに こんにちは。 以前、Looker、LookMLについての記事を投稿してからしばらく経ちました。 今は生成AIの登場により、Lookerも様々な機能追加や活用の場が増えてきています。 それと同時に、このような言葉 […]The post 名前が似てる LookerとLooker Studioの違いとは? first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
