@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 08 Dec 2025 08:02:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Dec 2025 11:42:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【初参加】CODE BLUE 2025レポート：体感したトレンドとAIの脅威]]></title>
+            <link>https://qiita.com/yutaf11/items/239101da0bf5265b61df</link>
+            <guid isPermaLink="false">https://qiita.com/yutaf11/items/239101da0bf5265b61df</guid>
+            <pubDate>Mon, 08 Dec 2025 08:35:39 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに先月、CODE BLUE 2025に参加してきました。私は普段、SRE兼セキュリティエンジニアとして働いています。過去、SREとして技術系のイベントにはいくつか参加してきましたが、セキュリティ特化のオフラインイベントは今回のCODE BLUEが初めてでした。こ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[技術広報はちゃんとなめてやれ（技術広報をなめるなを読んで）　]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/12/08/152614</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://dev.mix64.com/2025/11/29/optimize-code-generation-during-context-switching/</guid>
             <pubDate>Sat, 29 Nov 2025 14:45:43 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 今回は2025年11月にXie Yuanbin氏によって提案された一連のパッチシリーズ「Optimize code generat...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[NVIDIA 認定資格奮闘記 ~Professional Accelerated Data Science編~]]></title>
-            <link>https://zenn.dev/akasan/articles/nvidia_ncp_ads</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/nvidia_ncp_ads</guid>
-            <pubDate>Sat, 29 Nov 2025 09:22:18 GMT</pubDate>
-            <content:encoded><![CDATA[今回はNVIDIAの認定資格であるProfessional Accelerated Data Scienceを取得したので、その内容を共有しようと思います。 Professional Accelerated Data Scienceとは？NCP Accelerated Data Science（以下、NCP-ADS）は、データサイエンスワークフローにおけるGPUアクセラレーションツールとライブラリの活用能力を認定する中級レベルの資格です。現時点では本試験の入門レベルであるAssociateレベルは提供されておらず、Professionalのみとなっています。https://www...]]></content:encoded>
         </item>
     </channel>
 </rss>
