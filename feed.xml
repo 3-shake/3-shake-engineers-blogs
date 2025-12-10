@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 10 Dec 2025 11:42:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Dec 2025 22:42:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[とあるMLエンジニアの年末年始の予定の呟き]]></title>
+            <link>https://zenn.dev/akasan/articles/2025_new_years_eve</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/2025_new_years_eve</guid>
+            <pubDate>Wed, 10 Dec 2025 13:25:20 GMT</pubDate>
+            <content:encoded><![CDATA[今回はMLエンジニアとしてひたすら精進を頑張っている私が今年の年末年始どのように過ごす予定か、誰得ではありますしこんなことをzennに書いている人がいるかわからないですが、まとめてみます。 まずはこのアドベントカレンダーについて2025/04/18に爆誕してすでに230日を超えていますが、まずは2025/12/25までは毎日投稿を続ける予定です！その後についてですが、年末年始は流石にちょっとお休みしようかなと思っており、2025/12/26から2026/1/4はお休みしようと思っています。もちろん、途中で急に書きたいことがあれば発信しますが、謎の義務感・使命感によって続けられている...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2025年版 私がAIエージェントと協働しながら集中する方法]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/12/10/092706</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://qiita.com/yteraoka/items/a056f7c055cc73b06d19</guid>
             <pubDate>Mon, 01 Dec 2025 15:07:22 GMT</pubDate>
             <content:encoded><![CDATA[パスワード系は 1Password に登録しているのですが SSH の鍵はなんとなく面倒でファイルでローカルに置いたままでした。しかし、バックアップを取るのも面倒だし 1Password で管理しようかなという気になりました。せっかくお金も払っているのだし使えるものは使おう...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2025年12月版読む予定本紹介]]></title>
-            <link>https://zenn.dev/akasan/articles/books_dec_plan</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/books_dec_plan</guid>
-            <pubDate>Mon, 01 Dec 2025 12:59:58 GMT</pubDate>
-            <content:encoded><![CDATA[今年も早いものであっという間に12月ですね。ということで、年末最後の一ヶ月で読もうと思っている本を紹介します。先月分は以下になりますので、併せてご覧ください！https://zenn.dev/akasan/articles/870a86bf7189f1 機械学習 実践GAN（Compass Booksシリーズ） 敵対的生成ネットワークによる深層学習マルチモーダル系の資格試験を受験予定で、その勉強中に改めげGANの基礎を叩き込もうと思って読んでいる最中です。GANも様々な種類がありますし、どのようにモデルを学習するかなどを改めて学習するために読んでいます。私は普段PyTorch...]]></content:encoded>
         </item>
     </channel>
 </rss>
