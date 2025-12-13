@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 13 Dec 2025 11:40:57 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Dec 2025 22:41:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Raycast Extension 開発のすすめ]]></title>
+            <link>https://zenn.dev/iorandd/articles/20251215_start-raycast-extension-dev</link>
+            <guid isPermaLink="false">https://zenn.dev/iorandd/articles/20251215_start-raycast-extension-dev</guid>
+            <pubDate>Sat, 13 Dec 2025 15:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[本記事は 3-shake Advent Calendar 2025 14日目の記事です。Raycast Advent Calendar 2025 でも2025年10月下旬に行われたRaycast Community Japan 主催イベントに3連続で参加した話を書きます。Raycast Extension開発やコミュニティに興味を持ったきっかけとなったイベントなので、よければ読んでください。この記事ではRaycast Extension をローカルで作ってStoreに出すまでの手順を解説します。 1. Extensionを作るべき理由 RaycastとはRaycast は...]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[デタッチドマウントとコンテナランタイム]]></title>
+            <link>https://qiita.com/ys1/items/eac9727ec1d4e71a3cd7</link>
+            <guid isPermaLink="false">https://qiita.com/ys1/items/eac9727ec1d4e71a3cd7</guid>
+            <pubDate>Sat, 13 Dec 2025 11:58:19 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこの記事はQiita 3-shake Advent Calendar 2025 シリーズ13日目の記事です。最近、低レベルコンテナランタイムである youki にコントリビュートしており、特にデタッチドマウントについて調べる機会があったので、その内容を共有しま...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[『おい、テックブログを書け』というタイトルで登壇しました]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/12/13/145159</link>
@@ -223,20 +237,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/pulumi_quickstart_python</guid>
             <pubDate>Thu, 04 Dec 2025 11:45:46 GMT</pubDate>
             <content:encoded><![CDATA[今回はPulumiに入門して、PythonでIaCを実現する方法に触れてみました。今までTerraformしか使ったことがなかったですが、使い慣れたPythonでIaCが書けるということで使ってみました。 Pulumiとは？Pulumiは、Pythonなどのプログラミング言語を使ってクラウドインフラストラクチャを構築、デプロイ、管理するためのオープンソースプラットフォームです。あらゆるクラウドをまたいで、統一されたワークフローでインフラストラクチャ、シークレット、構成を管理できます。IaCといえばTerraformなどが有名かつよく利用されていると思いますが、普段使い慣れている言語...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[おい、テックブログを書け]]></title>
-            <link>https://speakerdeck.com/nwiizo/oi-tetukuburoguwoshu-ke</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/oi-tetukuburoguwoshu-ke</guid>
-            <pubDate>Thu, 04 Dec 2025 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2025年12月5日に「おい、テックブログを書け」という登壇をした。「おい」である。命令形である。30分間、人前に立って「書け」と言い続けるという、冷静に考えるとなかなか傲慢な振る舞いをしてきたわけだが、登壇資料を作っている最中、ふと気づいてしまった。書けと言っている自分は、なぜ書いているのだろうか、と。技術ブログを書くことについて語ろうとすると、それは私が「書いてきた」ことを晒すことに他ならず、AIとの付き合い方を語ろうとすると、それは私が「どう仕事をしているか」を開陳することと紙一重になる。そうなると聞いている側からすれば、こいつは結局、自分の話がしたいだけなのではないか、登壇という大義名分を得て気持ちよく自分語りをしているだけなのではないか、と思われても仕方がない。いや、実際そうなのかもしれない。そう見られることへの嫌悪感と、そう見られまいと振る舞う自分への嫌悪感が同時に存在していて、どちらに転んでも結局イヤなやつなのである。しかし登壇というのは厄介なもので、「書け」と命令するからには、自分がなぜ書いてきたのかを明かさなければ説得力がない。説得力のない登壇ほど空虚なものはない。空虚な登壇をする自分を想像して、それはそれで耐えられない。結局、自己開示から逃げられない構造になっている。なんという罠だろうか。身体性という言葉を使った。AIに記事を書かせることについて話した。私の答えは明確で、記事はほとんどAIに書かせている、しかし価値の源泉は私にある、と。私が素材を提供し、AIが構造化し、私がレビューして調整する。編集者としてのAI。この協働こそが現代の執筆だと、そう話した。話しながら、これは本当にそうだろうかと自分を疑う自分がいて、でもそういう迷いごと引き受けて喋るしかないのだった。まず自分のために書け、結果として、それが誰かを救う。そう締めくくった。https://forkwell.connpass.com/event/377267/https://syu-m-5151.hatenablog.com/archive/category/%E3%81%8A%E3%81%84%E3%80%81自宅からの昼登壇だったので、終わってから昼飯を食べに外に出た。参考書籍として紹介した本をもう一度読み返そうと思って、鞄に入れてきていた。店に向かう道すがら、本を開く。]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Electronアプリで型安全なIPC通信を実現する electron-trpcという選択肢]]></title>
-            <link>https://zenn.dev/meziron/articles/82dfa259c30bf8</link>
-            <guid isPermaLink="false">https://zenn.dev/meziron/articles/82dfa259c30bf8</guid>
-            <pubDate>Wed, 03 Dec 2025 15:00:03 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにこの記事は 3-shake Advent Calendar 2025 の記事です。Electronアプリケーションの開発において、Main ProcessとRenderer Process間の通信（IPC）を型安全に実装することは、開発体験と保守性を高める上で重要な課題です。本記事では、electron-trpcを用いて、IPC通信の型安全性を効率的に確保する方法について解説します。 従来の課題：型定義の分散とボイラープレートElectron標準のIPC通信（ipcMain / ipcRenderer）を使用する場合、型安全性を確保しようとすると、記述量が増大しが...]]></content:encoded>
         </item>
     </channel>
 </rss>
