@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 16 Dec 2025 11:43:15 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Dec 2025 22:42:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[最近読んでいて興味深かった記事紹介 Vol.4]]></title>
+            <link>https://zenn.dev/akasan/articles/interesting_tech_blog_4</link>
+            <guid isPermaLink="false">https://zenn.dev/akasan/articles/interesting_tech_blog_4</guid>
+            <pubDate>Tue, 16 Dec 2025 13:14:53 GMT</pubDate>
+            <content:encoded><![CDATA[今回で4回目の、最近読んで気になっている記事紹介になります！年末に向けて色々読んでいきたいので、最近見たものを紹介できればと思います！過去の記事は以下に載っていますので、ご興味ある方は是非ご覧ください。https://zenn.dev/akasan/scraps/97b063540d2372 Docker MCP Gateway:エージェントAIのためのオープンソースの安全なインフラストラクチャ私自身あまりMCPを利用できていないのが現状なのですが、dockerを利用してMCPをうまく運用するための方法をキャッチアップするために見ています！https://www.docker...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[地球規模の「時間のずれ」を Cloud Spanner はどう解決したか]]></title>
             <link>https://sreake.com/blog/how-cloud-spanner-deal-with-large-scale-time-diff/</link>
@@ -230,13 +237,6 @@
             <guid isPermaLink="false">https://blog.masasuzu.net/entry/2025/12/08/100000</guid>
             <pubDate>Mon, 08 Dec 2025 01:00:00 GMT</pubDate>
             <content:encoded><![CDATA[今年はブログ4本(純粋なAWSの記事はなし)、登壇5本(内社内2本)という結果でした。勉強会参加自体はそこそこしてたんですが、アウトプットという点では少し物足りない結果になったなという感想です。要因としてはGoogle Cloud関連の活動が比較的多くて、AWS関連にリソースを割けなかったというのもあります。第二の理由としては今年後半が特に業務が多忙で身動きが取れない月があったのも事実です。とはいえ忙しいは言い訳に過ぎないので、なんとアウトプットする仕組み作りをしていきたいとことです。来年はもっとアウトプットを増やしていきたいです。そこで以下の数値を目標にやっていきたいと考えています。社外登壇: 月0.5本AWSテーマのブログ: 月1本以上やってくぞ。以下今年のアウトプットを置いておきます。ブログAWS関連なしクラウドニュートラルblog.masasuzu.netdiary.masasuzu.netdiary.masasuzu.netblog.masasuzu.net登壇AWS関連 speakerdeck.com speakerdeck.com speakerdeck.comクラウドニュートラル speakerdeck.com speakerdeck.com]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AI時代のスキーマファースト開発 FastAPI × GitHub Packages で型安全なSDKを自動配布する]]></title>
-            <link>https://zenn.dev/meziron/articles/32ac2241bbec38</link>
-            <guid isPermaLink="false">https://zenn.dev/meziron/articles/32ac2241bbec38</guid>
-            <pubDate>Sun, 07 Dec 2025 15:00:49 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにこの記事は 3-shake Advent Calendar 2025 の記事です。フロントエンド開発者とバックエンド開発者の間で「APIの仕様が違う」「ドキュメントが古い」といった問題に悩まされたことはありませんか？さらにAI時代になり、Claude CodeやCursorなどのAIコーディングツールを使う機会が増えてきました。しかし、AIにAPI呼び出しを実装させると、存在しないエンドポイントを「想像」で実装してしまったり、パラメータの型を間違えたりすることがあります。本記事では、FastAPIのOpenAPI自動生成機能を活用し、GitHub ActionsでTy...]]></content:encoded>
         </item>
     </channel>
 </rss>
