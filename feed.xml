@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 30 Dec 2025 22:42:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 Dec 2025 11:41:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SREとPlatform Engineeringの交差点としてのデータベースエンジニア]]></title>
+            <link>https://zenn.dev/nnaka2992/articles/dbe_as_a_crossing_of_sre_and_platform_engineering</link>
+            <guid isPermaLink="false">https://zenn.dev/nnaka2992/articles/dbe_as_a_crossing_of_sre_and_platform_engineering</guid>
+            <pubDate>Wed, 31 Dec 2025 08:14:34 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は3-shake Advent Calendar 2025 最終日の記事です。データベースは従来から安全な変更を適用するには難易度が高い場合もあり、最悪の場合データロストを引き起こす変更しづらさが課題としてあります。現代のシステム開発では開発者によるデータベースの頻繁な変更は当たり前であり、変更しづらさが、そのままDevExの低下につながります。データベースの信頼性を支えるにも、DevExを向上させるにも、一定のデータベースの知見が必要になります。一方でデータベースに一定の知見をもつエンジニアや専門とするエンジニアは、インフラエンジニアやアプリケーションエンジニアに比べ...]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2025/12/30/083324</link>
@@ -224,13 +231,6 @@
             <guid isPermaLink="false">https://zenn.dev/akasan/articles/apache_commons_chain</guid>
             <pubDate>Thu, 18 Dec 2025 11:18:56 GMT</pubDate>
             <content:encoded><![CDATA[今回は、Apache Commons Chainについて調べてみました。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Commons Chainとは？公式サイトによると、Gang of Fourの責任連鎖パターン(chain ...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Apache Causewayとはなんなのか？]]></title>
-            <link>https://zenn.dev/akasan/articles/apache_causeway_intro</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/apache_causeway_intro</guid>
-            <pubDate>Thu, 18 Dec 2025 11:18:56 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Apache Causeway。今回も以下のツールを使って対象プロジェクトを決めました！https://zenn.dev/akasan/articles/7e30ad266c02c4※ 本企画に関する記事の目的は、それぞれのプロジェクトを本格的に深ぼるのではなく、プロジェクト名⇆どんな内容かをパッと思い出せるようにすることを目指します！※ とはいえ深ぼってみたいプロジェクトがあればどんどん複数連載になると思います。 Apache Causewayとは？公式サイトによると、Apache Causeway™ enables domain-driven applicat...]]></content:encoded>
         </item>
     </channel>
 </rss>
