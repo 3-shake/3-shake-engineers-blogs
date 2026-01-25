@@ -37,7 +37,7 @@
     "feed": "5.1.0",
     "fs-extra": "11.3.3",
     "npm-run-all2": "8.0.4",
-    "prettier": "3.8.0",
+    "prettier": "3.8.1",
     "rss-parser": "3.13.0",
     "sass": "1.97.2",
     "ts-node": "10.9.2",
