@@ -11,6 +11,13 @@ import {
   ContentWrapper,
   UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
+import { limitPostsPerMember } from "@src/utils/helper";
+
+const MAX_POSTS_PER_MEMBER = 5;
+const { posts: limitedPosts } = limitPostsPerMember(
+  posts as PostItem[],
+  MAX_POSTS_PER_MEMBER
+);
 
 const Page: NextPage = () => {
   return (
@@ -57,7 +64,7 @@ const Page: NextPage = () => {
           </div>
 
           <div className="home-posts-container">
-            <PostList items={posts as PostItem[]} />
+            <PostList items={limitedPosts} />
           </div>
         </ContentWrapper>
       </section>
