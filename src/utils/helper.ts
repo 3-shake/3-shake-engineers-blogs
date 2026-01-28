@@ -31,7 +31,7 @@ export type LimitedPostsResult = {
 
 export function limitPostsPerMember(
   allPosts: PostItem[],
-  maxPerMember: number
+  maxPerMember: number,
 ): LimitedPostsResult {
   const countByAuthor: Record<string, number> = {};
   const totalByAuthor: Record<string, number> = {};
