@@ -61,12 +61,8 @@ async function getFeedItemsFromSources(
     return [];
   }
 
-  const feedItems: FeedItem[] = [];
-  for (const url of sources) {
-    const items = await fetchFeedItems(url);
-    feedItems.push(...items);
-  }
-  return feedItems;
+  const results = await Promise.all(sources.map((url) => fetchFeedItems(url)));
+  return results.flat();
 }
 
 async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
@@ -110,14 +106,35 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
   return postItems;
 }
 
+const CONCURRENCY_LIMIT = 10;
+
+async function processInBatches<T, R>(
+  items: T[],
+  batchSize: number,
+  processor: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const batchResults = await Promise.all(batch.map(processor));
+    results.push(...batchResults);
+  }
+  return results;
+}
+
 (async function () {
   try {
     console.log("Starting feed processing...");
+    console.log(
+      `Processing ${members.length} members with concurrency limit of ${CONCURRENCY_LIMIT}`,
+    );
 
-    for (const member of members) {
-      const items = await getMemberFeedItems(member);
-      allPostItems.push(...items);
-    }
+    const results = await processInBatches(
+      members,
+      CONCURRENCY_LIMIT,
+      getMemberFeedItems,
+    );
+    allPostItems = results.flat();
 
     allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
 
