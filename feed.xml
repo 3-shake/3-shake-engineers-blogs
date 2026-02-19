@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 18 Feb 2026 22:49:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Feb 2026 11:52:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,20 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[30分でわかるアーキテクチャモダナイゼーション]]></title>
+            <link>https://speakerdeck.com/nwiizo/30fen-dewakaruakitekutiyamodanaizesiyon</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/30fen-dewakaruakitekutiyamodanaizesiyon</guid>
+            <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[3-shake SRE Tech Talk 特別回 アーキテクチャモダナイゼーションにて「30分でわかるアーキテクチャモダナイゼーション」というタイトルで登壇します。https://3-shake.connpass.com/event/382086/]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[意志を実装するアーキテクチャモダナイゼーション]]></title>
+            <link>https://speakerdeck.com/nwiizo/yi-zhi-woshi-zhuang-suruakitekutiyamodanaizesiyon</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/yi-zhi-woshi-zhuang-suruakitekutiyamodanaizesiyon</guid>
+            <pubDate>Wed, 18 Feb 2026 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Developers Summit 2026にて「意志を実装するアーキテクチャモダナイゼーション」というタイトルで登壇します。https://event.shoeisha.jp/devsumi/20260218/session/6454]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ソフトウェア工学をコンピュータサイエンスとよぶのはおかしい]]></title>
             <link>https://silasol.la/posts/2026-02-18-01_software-engineering-is-not-cs/</link>
@@ -222,20 +236,6 @@
             <guid isPermaLink="false">https://www.rowicy.com/blog/vulmemo-aws-codebuild-misconfig/</guid>
             <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[AWS CodeBuildにおける設定ミスにより、AWS提供のGitHubリポジトリがサプライチェーン攻撃のリスクにあった件]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[不動点コンビネータと無名再帰]]></title>
-            <link>https://silasol.la/posts/2026-01-16-01_least_fixed_point/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-01-16-01_least_fixed_point/</guid>
-            <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[不動点コンビネータと実践的な示唆について紹介します．]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Agent Development Kit (ADK)における評価駆動型開発（EDD）]]></title>
-            <link>https://sreake.com/blog/evaluation-driven-development-with-adk/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/evaluation-driven-development-with-adk/</guid>
-            <pubDate>Thu, 15 Jan 2026 04:42:40 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentを行っています。 Agent Developmen […]The post Agent Development Kit (ADK)における評価駆動型開発（EDD） first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
