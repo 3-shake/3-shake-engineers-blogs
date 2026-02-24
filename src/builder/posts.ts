@@ -159,6 +159,7 @@ async function processInBatches<T, R>(
     console.log(
       `Successfully processed ${allPostItems.length} posts from ${members.length} members`,
     );
+    process.exit(0);
   } catch (error) {
     console.error(
       "Fatal error during feed processing:",
