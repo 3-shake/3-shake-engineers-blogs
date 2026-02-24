@@ -681,7 +681,7 @@ export const members: Member[] = [
     bio: "Engineer",
     avatarSrc: "/avatars/riiim.png",
     sources: [
-      "http://rowicy.com/RiiiM/rss.xml",
+      "https://rowicy.com/RiiiM/rss.xml",
     ],
     includeUrlRegex: "",
     twitterUsername: "riiimparm",
