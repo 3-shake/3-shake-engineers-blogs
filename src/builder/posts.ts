@@ -13,12 +13,26 @@ type FeedItem = {
 };
 
 const parser = new Parser();
+const FETCH_TIMEOUT_MS = 30_000;
 let allPostItems: PostItem[] = [];
+
+function withTimeout<T>(promise: Promise<T>, ms: number, url: string): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(
+      () => reject(new Error(`Timeout after ${ms}ms fetching ${url}`)),
+      ms,
+    );
+    promise.then(
+      (val) => { clearTimeout(timer); resolve(val); },
+      (err) => { clearTimeout(timer); reject(err); },
+    );
+  });
+}
 
 async function fetchFeedItems(url: string): Promise<FeedItem[]> {
   try {
     console.log(`Fetching feed from: ${url}`);
-    const feed = await parser.parseURL(url);
+    const feed = await withTimeout(parser.parseURL(url), FETCH_TIMEOUT_MS, url);
 
     if (!feed?.items?.length) {
       console.warn(`No items found in feed: ${url}`);
@@ -145,6 +159,7 @@ async function processInBatches<T, R>(
     console.log(
       `Successfully processed ${allPostItems.length} posts from ${members.length} members`,
     );
+    process.exit(0);
   } catch (error) {
     console.error(
       "Fatal error during feed processing:",
