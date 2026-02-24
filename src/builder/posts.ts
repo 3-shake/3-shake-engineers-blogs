@@ -53,7 +53,7 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
           link,
           contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ""),
           isoDate,
-          dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
+          dateMiliSeconds: isoDate ? (new Date(isoDate).getTime() || 0) : 0,
         };
         return item;
       })
@@ -92,29 +92,41 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
   }));
 
   if (includeUrlRegex) {
-    const regex = new RegExp(includeUrlRegex);
-    postItems = postItems.filter((item) => {
-      const matches = item.link.match(regex);
-      if (!matches) {
-        console.debug(
-          `Filtered out item not matching includeUrlRegex: ${item.link}`,
-        );
-      }
-      return matches;
-    });
+    try {
+      const regex = new RegExp(includeUrlRegex);
+      postItems = postItems.filter((item) => {
+        const matches = item.link.match(regex);
+        if (!matches) {
+          console.debug(
+            `Filtered out item not matching includeUrlRegex: ${item.link}`,
+          );
+        }
+        return matches;
+      });
+    } catch (error) {
+      console.error(
+        `Invalid includeUrlRegex "${includeUrlRegex}" for ${name}: ${error instanceof Error ? error.message : error}`,
+      );
+    }
   }
 
   if (excludeUrlRegex) {
-    const regex = new RegExp(excludeUrlRegex);
-    postItems = postItems.filter((item) => {
-      const matches = item.link.match(regex);
-      if (matches) {
-        console.debug(
-          `Filtered out item matching excludeUrlRegex: ${item.link}`,
-        );
-      }
-      return !matches;
-    });
+    try {
+      const regex = new RegExp(excludeUrlRegex);
+      postItems = postItems.filter((item) => {
+        const matches = item.link.match(regex);
+        if (matches) {
+          console.debug(
+            `Filtered out item matching excludeUrlRegex: ${item.link}`,
+          );
+        }
+        return !matches;
+      });
+    } catch (error) {
+      console.error(
+        `Invalid excludeUrlRegex "${excludeUrlRegex}" for ${name}: ${error instanceof Error ? error.message : error}`,
+      );
+    }
   }
 
   return postItems;
