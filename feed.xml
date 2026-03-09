@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 09 Mar 2026 03:28:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Mar 2026 11:44:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Google CloudのO11yを良い感じにしてくれるAI Agentを用意してGemini Enterpriseから使ってみる]]></title>
+            <link>https://sreake.com/blog/ai-agent-enhances-google-cloud-o11y/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/ai-agent-enhances-google-cloud-o11y/</guid>
+            <pubDate>Mon, 09 Mar 2026 05:32:39 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部の井上 秀一です。私はSreake事業部にて、SREや生成AIに関するResearch & Developmentに従事しています。 Google Cloudをはじ […]The post Google CloudのO11yを良い感じにしてくれるAI Agentを用意してGemini Enterpriseから使ってみる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[move || を200回書いて考えた、Rust とフロントエンドの距離]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/03/08/175144</link>
@@ -229,12 +236,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/introduction-to-kubernetes-network-driver-knd/</guid>
             <pubDate>Thu, 05 Feb 2026 06:00:03 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 今回、3-shakeで期限つきインターンをさせていただきました坂内理人（@rihib）と申します。インターン期間中はKubernetes Network Driverと呼ばれるKubernetesのネットワーク […]The post Kubernetes Network Driver (KND)について調べてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AI時代に成長するエンジニアに必要なスキルとは.pdf]]></title>
-            <link>https://speakerdeck.com/yunosukey/aishi-dai-nicheng-chang-suruensinianibi-yao-nasukirutoha</link>
-            <guid isPermaLink="false">https://speakerdeck.com/yunosukey/aishi-dai-nicheng-chang-suruensinianibi-yao-nasukirutoha</guid>
-            <pubDate>Wed, 04 Feb 2026 05:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
