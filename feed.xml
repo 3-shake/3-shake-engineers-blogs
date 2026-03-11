@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 10 Mar 2026 22:40:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Mar 2026 11:44:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,13 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-03-11 JAWS-UG 茨城 #12 改めてALBを便利に使う]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-03-11-jaws-ug-ci-cheng-number-12-gai-metealbwobian-li-nishi-u</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-03-11-jaws-ug-ci-cheng-number-12-gai-metealbwobian-li-nishi-u</guid>
+            <pubDate>Wed, 11 Mar 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[JAWS-UG 茨城 #12 春の推しAWSサービスLTまつり！の資料https://jawsug-ibaraki.connpass.com/event/381293/]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google CloudのO11yを良い感じにしてくれるAI Agentを用意してGemini Enterpriseから使ってみる]]></title>
             <link>https://sreake.com/blog/ai-agent-enhances-google-cloud-o11y/</link>
@@ -229,13 +236,6 @@
             <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/fe7aa69acc8f37</guid>
             <pubDate>Sun, 08 Feb 2026 08:37:05 GMT</pubDate>
             <content:encoded><![CDATA[概要Enterprise における検索システムを簡単に構築できるという点で、Vertex AI Search は有用なサービスです。他にも検索だけではなく Gemini における Grounding となるソースとして利用する事もできます。しかし、単純に Vertex AI Search を構築してもあまり良い検索結果を得られることは少ないかと思います。良い検索結果を得るためには、データの整備、運用が必要になります。Gemini Enterprise は Vertex AI Search と同じ技術を利用しているため同じような検索結果をより良くするために同じような観点が必要...]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes Network Driver (KND)について調べてみた]]></title>
-            <link>https://sreake.com/blog/introduction-to-kubernetes-network-driver-knd/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/introduction-to-kubernetes-network-driver-knd/</guid>
-            <pubDate>Thu, 05 Feb 2026 06:00:03 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 今回、3-shakeで期限つきインターンをさせていただきました坂内理人（@rihib）と申します。インターン期間中はKubernetes Network Driverと呼ばれるKubernetesのネットワーク […]The post Kubernetes Network Driver (KND)について調べてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
         </item>
     </channel>
 </rss>
