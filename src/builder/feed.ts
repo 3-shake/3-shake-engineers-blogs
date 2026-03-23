@@ -1,5 +1,5 @@
 import { Feed } from "feed";
-import fs from "fs";
+import fs from "fs-extra";
 import { config } from "../../site.config.js";
 import postsData from "../../.contents/posts.json" with { type: "json" };
 import { PostItem } from "../types.js";
@@ -27,4 +27,5 @@ for (const post of posts.slice(0, 32)) {
   });
 }
 
+fs.ensureDirSync("./public");
 fs.writeFileSync("./public/feed.xml", feed.rss2());
