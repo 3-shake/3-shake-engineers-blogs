@@ -2,7 +2,6 @@ import fs from "fs-extra";
 import Parser from "rss-parser";
 import { members } from "../../members.js";
 import { PostItem, Member } from "../types.js";
-export default {};
 
 type FeedItem = {
   title: string;
@@ -14,7 +13,6 @@ type FeedItem = {
 
 const parser = new Parser();
 const FETCH_TIMEOUT_MS = 30_000;
-let allPostItems: PostItem[] = [];
 
 function withTimeout<T>(promise: Promise<T>, ms: number, url: string): Promise<T> {
   return new Promise((resolve, reject) => {
@@ -160,7 +158,7 @@ async function processInBatches<T, R>(
       CONCURRENCY_LIMIT,
       getMemberFeedItems,
     );
-    allPostItems = results.flat();
+    const allPostItems = results.flat();
 
     allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
 
