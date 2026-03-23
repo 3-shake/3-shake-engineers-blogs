@@ -1,7 +1,7 @@
 import fs from "fs-extra";
 import Parser from "rss-parser";
-import { members } from "../../members";
-import { PostItem, Member } from "../types";
+import { members } from "../../members.js";
+import { PostItem, Member } from "../types.js";
 export default {};
 
 type FeedItem = {

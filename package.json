@@ -2,14 +2,15 @@
   "name": "3-shake-engineers-blogs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "24"
   },
   "scripts": {
     "dev": "next dev",
     "build": "run-s build:posts build:feed build:next",
-    "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
-    "build:feed": "NODE_ENV=production ts-node --project tsconfig.builder.json ./src/builder/feed.ts",
+    "build:posts": "tsx ./src/builder/posts.ts",
+    "build:feed": "NODE_ENV=production tsx ./src/builder/feed.ts",
     "build:next": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
