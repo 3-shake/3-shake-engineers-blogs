@@ -41,7 +41,6 @@
     "prettier": "3.8.1",
     "rss-parser": "3.13.0",
     "sass": "1.98.0",
-    "ts-node": "10.9.2",
     "tsx": "4.19.4",
     "typescript": "5.9.3"
   },
