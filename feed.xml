@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 23 Mar 2026 10:04:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Mar 2026 11:47:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-03-23 Ops-JAWS Meetup39 Session Managerを使った セキュアなサーバーアクセス]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-03-23-ops-jaws-meetup39-session-managerwoshi-tuta-sekiyuanasabaakusesu</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-03-23-ops-jaws-meetup39-session-managerwoshi-tuta-sekiyuanasabaakusesu</guid>
+            <pubDate>Mon, 23 Mar 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Ops-JAWS Meetup39 あなたの推しのSSMは？SSM運用特集https://opsjaws.connpass.com/event/383000/Session Managerを使った セキュアなサーバーアクセスに関してのスライド。]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
         <item>
             <title><![CDATA[【社内勉強会】新年度からコーディングエージェントを使いこなす - 構造と制約で引き出すClaude Codeの実践知]]></title>
             <link>https://speakerdeck.com/nwiizo/she-nei-mian-qiang-hui-xin-nian-du-karakodeinguezientowoshi-ikonasu-gou-zao-tozhi-yue-deyin-kichu-suclaude-codenoshi-jian-zhi</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/kyverno-ci-implementation/</guid>
             <pubDate>Thu, 12 Feb 2026 04:28:55 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 今回は、Kubernetesのポリシー管理ツールであるKyvernoについて、公式が提供しているCLIツールを用いたCI（継続的インテグレーション）の実装を行いましたので、その知見を共有します。 ポリシーを本番 […]The post KyvernoのCI実装（Kyverno CLI） first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[Kyvernoで構築するKubernetesポリシー基盤]]></title>
-            <link>https://sreake.com/blog/kyverno-kubernetes-policy-foundation/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/kyverno-kubernetes-policy-foundation/</guid>
-            <pubDate>Thu, 12 Feb 2026 04:28:13 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに ここ数年、Kubernetesを活用したプラットフォーム運用が進むにつれて、各企業で必ず直面するのが「ガバナンス」の課題です。開発者には自由にリソースを作ってもらいたい一方で、セキュリティ基準を満たさない設定や […]The post Kyvernoで構築するKubernetesポリシー基盤 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
