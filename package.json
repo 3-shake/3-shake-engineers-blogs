@@ -2,14 +2,15 @@
   "name": "3-shake-engineers-blogs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "24"
   },
   "scripts": {
     "dev": "next dev",
     "build": "run-s build:posts build:feed build:next",
-    "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
-    "build:feed": "NODE_ENV=production ts-node --project tsconfig.builder.json ./src/builder/feed.ts",
+    "build:posts": "tsx ./src/builder/posts.ts",
+    "build:feed": "NODE_ENV=production tsx ./src/builder/feed.ts",
     "build:next": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
@@ -34,13 +35,13 @@
     "eslint-plugin-prettier": "5.5.5",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.0.1",
-    "feed": "5.1.0",
+    "feed": "5.2.0",
     "fs-extra": "11.3.4",
     "npm-run-all2": "8.0.4",
     "prettier": "3.8.1",
     "rss-parser": "3.13.0",
     "sass": "1.98.0",
-    "ts-node": "10.9.2",
+    "tsx": "4.19.4",
     "typescript": "5.9.3"
   },
   "volta": {

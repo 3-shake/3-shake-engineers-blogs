@@ -1,9 +1,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "outDir": "dist",
-    "noEmit": false
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   },
   "exclude": ["node_modules"],
   "include": ["src/builder/*.ts"]
