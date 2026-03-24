@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 23 Mar 2026 22:42:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Mar 2026 11:47:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[DX内製化が失敗する理由と、成功企業が選ぶ「伴走支援」とは―「外部委譲」も「自社だけ」も限界な時代の、第3の選択肢―]]></title>
+            <link>https://sreake.com/blog/successful-dx-with-co-creation-partnership/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/successful-dx-with-co-creation-partnership/</guid>
+            <pubDate>Tue, 24 Mar 2026 09:12:17 GMT</pubDate>
+            <content:encoded><![CDATA[1. なぜ今、多くの企業で「IT戦略の見直し」を迫られているのか？ この章で分かること： IT戦略の見直しが求められている背景と、従来型の外部委託が抱えるリスク 「システムを変えたいのに、ベンダーへの確認だけで3ヶ月かか […]The post DX内製化が失敗する理由と、成功企業が選ぶ「伴走支援」とは―「外部委譲」も「自社だけ」も限界な時代の、第3の選択肢― first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[2026-03-23 Ops-JAWS Meetup39 Session Managerを使った セキュアなサーバーアクセス]]></title>
             <link>https://speakerdeck.com/masasuzu/2026-03-23-ops-jaws-meetup39-session-managerwoshi-tuta-sekiyuanasabaakusesu</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/accuracy-verification-cloud-speech-to-text-chirp3/</guid>
             <pubDate>Thu, 12 Feb 2026 04:30:28 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 音声認識技術は、私たちの生活やビジネスにおいて欠かせないものとなりつつあります。議事録の自動作成、コールセンターの応対分析、多言語翻訳など、その活用範囲は広がる一方です。 本記事では、Google Cloudが […]The post Cloud Speech-to-Text 精度検証：最新モデル「Chirp3」の実力に迫る first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[KyvernoのCI実装（Kyverno CLI）]]></title>
-            <link>https://sreake.com/blog/kyverno-ci-implementation/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/kyverno-ci-implementation/</guid>
-            <pubDate>Thu, 12 Feb 2026 04:28:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 今回は、Kubernetesのポリシー管理ツールであるKyvernoについて、公式が提供しているCLIツールを用いたCI（継続的インテグレーション）の実装を行いましたので、その知見を共有します。 ポリシーを本番 […]The post KyvernoのCI実装（Kyverno CLI） first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
