@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 26 Mar 2026 22:41:48 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Mar 2026 11:46:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-03-27 #terminalnight 変数展開とコマンド展開でターミナル作業をスマートにする方法]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-03-27-number-terminalnight-bian-shu-zhan-kai-tokomandozhan-kai-detaminaruzuo-ye-wosumatonisurufang-fa</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-03-27-number-terminalnight-bian-shu-zhan-kai-tokomandozhan-kai-detaminaruzuo-ye-wosumatonisurufang-fa</guid>
+            <pubDate>Fri, 27 Mar 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[怠惰な人がコマンドライン操作を楽をするためのテクニック[Terminal Night #2 - connpass](https://kichijojipm.connpass.com/event/382650/)]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[Google Cloudを用いて、Dependabot alertsをSlackに即時通知させる]]></title>
+            <link>https://sreake.com/blog/dependabot-alerts-to-slack-with-google-cloud/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/dependabot-alerts-to-slack-with-google-cloud/</guid>
+            <pubDate>Fri, 27 Mar 2026 01:11:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに プロジェクトの依存関係に脆弱性が見つかった際、GitHubはDependabot alertsで知らせてくれます。しかし、GitHubの通知をメールやブラウザだけで追うのは限界があります。 「誰かが気づくだろう […]The post Google Cloudを用いて、Dependabot alertsをSlackに即時通知させる first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[DX内製化が失敗する理由と、成功企業が選ぶ「伴走支援」とは―「外部委譲」も「自社だけ」も限界な時代の、第3の選択肢―]]></title>
             <link>https://sreake.com/blog/successful-dx-with-co-creation-partnership/</link>
@@ -251,22 +267,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/kubesploit-threat-simulation-and-defense-measures/</guid>
             <pubDate>Thu, 12 Feb 2026 23:00:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 期限付きインターンをしております、菅家と申します。この度はKubesploitというペネトレーションツールについて調べましたので、その結果をまとめました。実際に攻撃するツールですので許可された環境以外では実施し […]The post KubeSploit でシミュレートできる攻撃とその防御策 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[コンテナセキュリティの最新事情 ~ 2026年版 ~]]></title>
-            <link>https://speakerdeck.com/kyohmizu/kontenasekiyuriteinozui-xin-shi-qing-2026nian-ban</link>
-            <guid isPermaLink="false">https://speakerdeck.com/kyohmizu/kontenasekiyuriteinozui-xin-shi-qing-2026nian-ban</guid>
-            <pubDate>Thu, 12 Feb 2026 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[イベント登壇資料です。 2026/2/12  SCSK Sysdig Bootcamp]]></content:encoded>
-            <author>kyohmizu</author>
-        </item>
-        <item>
-            <title><![CDATA[Cloud Speech-to-Text 精度検証：最新モデル「Chirp3」の実力に迫る]]></title>
-            <link>https://sreake.com/blog/accuracy-verification-cloud-speech-to-text-chirp3/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/accuracy-verification-cloud-speech-to-text-chirp3/</guid>
-            <pubDate>Thu, 12 Feb 2026 04:30:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 音声認識技術は、私たちの生活やビジネスにおいて欠かせないものとなりつつあります。議事録の自動作成、コールセンターの応対分析、多言語翻訳など、その活用範囲は広がる一方です。 本記事では、Google Cloudが […]The post Cloud Speech-to-Text 精度検証：最新モデル「Chirp3」の実力に迫る first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
