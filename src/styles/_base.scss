@@ -22,7 +22,10 @@ body {
   background: var(--color-base-background);
   word-break: break-word;
   word-wrap: break-word;
-  font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.app-wrapper {
+  font-family: var(--font-roboto), var(--font-open-sans), sans-serif;
 }
 
 img {
