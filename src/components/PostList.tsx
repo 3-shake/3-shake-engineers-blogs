@@ -51,6 +51,10 @@ const PostLink: React.FC<PostLinkProps> = (props) => {
               width={14}
               height={14}
               className="post-link__site-favicon"
+              alt=""
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = "none";
+              }}
             />
             {hostname}
           </div>
