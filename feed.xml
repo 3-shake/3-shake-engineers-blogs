@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 01 Apr 2026 05:29:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Apr 2026 11:48:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Snowflake Cortex AI関数を試してみた — SQLだけでここまでできるAI処理]]></title>
+            <link>https://sreake.com/blog/snowflake-cortex-ai-functions/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/snowflake-cortex-ai-functions/</guid>
+            <pubDate>Wed, 01 Apr 2026 06:23:31 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに これはSnowflakeで実際に動くSQLです。見ての通り、SELECT文の中でLLM（大規模言語モデル）を呼び出して、テーブルに格納されたテキストデータを要約しています。 SnowflakeにはCort […]The post Snowflake Cortex AI関数を試してみた — SQLだけでここまでできるAI処理 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[GKEにおけるマルチクラスタ管理についての考察]]></title>
             <link>https://sreake.com/blog/simplifying-gke-multi-cluster-management-with-fleet/</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/nwiizo/30fen-dewakaruakitekutiyamodanaizesiyon</guid>
             <pubDate>Thu, 19 Feb 2026 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[3-shake SRE Tech Talk 特別回「アーキテクチャモダナイゼーション」にて、「30分でわかるアーキテクチャモダナイゼーション」というタイトルで登壇しました。https://3-shake.connpass.com/event/382086/書籍『アーキテクチャモダナイゼーション ―組織とビジネスの未来を設計する』は好評発売中です。https://amzn.to/3ZR5Bgv同日に発表した「意志を実装するアーキテクチャモダナイゼーション」の資料も公開しています。https://speakerdeck.com/nwiizo/yi-zhi-woshi-zhuang-suruakitekutiyamodanaizesiyon]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[意志を実装するアーキテクチャモダナイゼーション]]></title>
-            <link>https://speakerdeck.com/nwiizo/yi-zhi-woshi-zhuang-suruakitekutiyamodanaizesiyon</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/yi-zhi-woshi-zhuang-suruakitekutiyamodanaizesiyon</guid>
-            <pubDate>Wed, 18 Feb 2026 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Developers Summit 2026（デブサミ2026）にて、「意志を実装するアーキテクチャモダナイゼーション」というタイトルで登壇しました。https://event.shoeisha.jp/devsumi/20260218/session/6454書籍『アーキテクチャモダナイゼーション ―組織とビジネスの未来を設計する』は好評発売中です。https://amzn.to/3ZR5Bgv同日に発表した「30分でわかるアーキテクチャモダナイゼーション」の資料も公開しています。https://speakerdeck.com/nwiizo/30fen-dewakaruakitekutiyamodanaizesiyon]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
