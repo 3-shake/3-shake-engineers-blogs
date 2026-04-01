@@ -10,6 +10,7 @@ import {
   getMemberPath,
   getMemberById,
 } from "@src/utils/helper";
+import fetchedFavicons from "@.contents/favicons.json";
 
 dayjs.extend(relativeTime);
 
@@ -46,12 +47,15 @@ const PostLink: React.FC<PostLinkProps> = (props) => {
         <h2 className="post-link__title">{title}</h2>
         {hostname && (
           <div className="post-link__site">
-            <img
-              src={getFaviconSrcFromHostname(hostname)}
-              width={14}
-              height={14}
-              className="post-link__site-favicon"
-            />
+            {(fetchedFavicons as string[]).includes(hostname) && (
+              <img
+                src={getFaviconSrcFromHostname(hostname)}
+                width={14}
+                height={14}
+                className="post-link__site-favicon"
+                alt=""
+              />
+            )}
             {hostname}
           </div>
         )}
