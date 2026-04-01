@@ -43,20 +43,30 @@ async function fetchFavicon(hostname: string): Promise<Buffer | null> {
   fs.ensureDirSync(FAVICON_DIR);
   console.log(`Fetching favicons for ${hostnames.length} domains...`);
 
+  const fetchedHostnames: string[] = [];
+
   for (const hostname of hostnames) {
     const dest = path.join(FAVICON_DIR, `${hostname}.png`);
     if (fs.existsSync(dest)) {
       console.log(`Skip ${hostname} (cached)`);
+      fetchedHostnames.push(hostname);
       continue;
     }
     const buffer = await fetchFavicon(hostname);
     if (buffer) {
       fs.writeFileSync(dest, buffer);
       console.log(`Fetched ${hostname}`);
+      fetchedHostnames.push(hostname);
     } else {
       console.warn(`Failed to fetch favicon for ${hostname}`);
     }
   }
+
+  fs.ensureDirSync(".contents");
+  fs.writeFileSync(
+    ".contents/favicons.json",
+    JSON.stringify(fetchedHostnames),
+  );
 
   console.log(`Done. Favicons saved to ${FAVICON_DIR}`);
   process.exit(0);
