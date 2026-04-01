@@ -27,6 +27,8 @@ $ yarn dev
 - メンバーのプロフィールやRSSの登録は`members.ts`で行います。
 - 配色を変更するには`src/styles/variables.scss`を書き換えます。
 - ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
+- フォントの追加・変更方法は[docs/fonts.md](docs/fonts.md)を参照してください。
+- ファビコンの仕組みと対処方法は[docs/favicons.md](docs/favicons.md)を参照してください。
 
 ※ PRを出す際、デフォルトではリポジトリの向き先がfork元となっているため、`3-shake/3-shake-engineers-blogs`のリポジトリ向けになっているか確認してください
 
