@@ -15,8 +15,7 @@ published at: https://blog.3-shake.com/
 ### Development
 
 ```bash
-# install Volta
-$ curl https://get.volta.sh | bash
+# install mise: https://mise.jdx.dev/getting-started.html
 
 $ yarn install
 $ yarn build
