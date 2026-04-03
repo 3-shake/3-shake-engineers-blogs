@@ -748,7 +748,7 @@ export const members: Member[] = [
     ],
     includeUrlRegex: "",
     twitterUsername: "",
-    githubUsername: "fumiyan5863",
+    githubUsername: "fumiya5863",
     websiteUrl: "",
   },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
