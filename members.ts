@@ -736,4 +736,19 @@ export const members: Member[] = [
     githubUsername: "pogepoge9",
     websiteUrl: "",
   },
+  {
+    id: "fumiyan",
+    name: "fumiyan",
+    role: "Software Engineer",
+    bio: "Software Engineer",
+    avatarSrc: "/avatars/fumiyan.png",
+    sources: [
+      "https://zenn.dev/fumiyan/feed",
+      "https://qiita.com/fumiyan/feed",
+    ],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "fumiyan5863",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
