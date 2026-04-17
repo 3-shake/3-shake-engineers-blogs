@@ -14,9 +14,9 @@ export const ScrollableMembers: React.FC = () => {
 
   return (
     <div className="scrollable-members">
-      {shuffledMembers.map((member, i) => (
+      {shuffledMembers.map((member) => (
         <Link
-          key={`scrollable-member-${i}`}
+          key={member.id}
           href={getMemberPath(member.id)}
           className="scrollable-member__link"
         >
