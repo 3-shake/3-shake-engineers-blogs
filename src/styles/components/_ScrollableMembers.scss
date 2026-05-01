@@ -40,7 +40,10 @@
 .scrollable-member__img {
   border-radius: 18px;
   margin: 0 auto;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
+  object-position: center;
 }
 
 .scrollable-member__name {

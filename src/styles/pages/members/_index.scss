@@ -57,6 +57,8 @@
 .member-card__avatar-img {
   border-radius: 18px;
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
