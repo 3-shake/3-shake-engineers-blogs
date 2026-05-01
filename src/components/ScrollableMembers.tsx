@@ -25,8 +25,6 @@ export const ScrollableMembers: React.FC = () => {
               src={member.avatarSrc}
               alt={member.name}
               className="scrollable-member__img"
-              width={80}
-              height={80}
             />
           </span>
           <span className="scrollable-member__name">{member.name}</span>

@@ -33,8 +33,6 @@ const PostLink: React.FC<PostLinkProps> = (props) => {
         <img
           src={member.avatarSrc}
           className="post-link__author-img"
-          width={35}
-          height={35}
         />
         <div className="post-link__author-name">
           <div className="post-link__author-name">{member.name}</div>
