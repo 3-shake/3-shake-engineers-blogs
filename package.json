@@ -11,6 +11,7 @@
     "build": "run-s build:posts build:favicons build:feed build:next",
     "build:posts": "tsx ./src/builder/posts.ts",
     "build:favicons": "tsx ./src/builder/favicons.ts",
+    "build:avatars": "tsx ./src/builder/avatars.ts",
     "build:feed": "NODE_ENV=production tsx ./src/builder/feed.ts",
     "build:next": "next build",
     "start": "next start",

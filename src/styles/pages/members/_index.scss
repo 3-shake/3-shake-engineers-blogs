@@ -54,9 +54,15 @@
   line-height: 1.6;
   opacity: 0.7;
 }
+.member-card__avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
 .member-card__avatar-img {
   border-radius: 18px;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }

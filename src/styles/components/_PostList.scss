@@ -42,6 +42,11 @@ $side-padding-sm: 1rem;
 .post-link__author-img {
   border-radius: 25%;
   margin-right: 0.7rem;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
 }
 .post-link__title {
   font-size: 1.1rem;

@@ -24,6 +24,7 @@ $ yarn dev
 
 - サイトの基本設定は`site.config.ts`で行います。
 - メンバーのプロフィールやRSSの登録は`members.ts`で行います。
+- **メンバー追加時のアバター画像**: `public/avatars`に JPG/JPEG/PNG ファイルを追加した後、`cwebp`をインストールし（`brew install webp`）`yarn build:avatars`を実行して WebP 形式に変換し、`public/avatars-webp/`に生成されたファイルもコミットしてください（AVIF などその他の形式は非対応）
 - 配色を変更するには`src/styles/variables.scss`を書き換えます。
 - ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
 - フォントの追加・変更方法は[docs/fonts.md](docs/fonts.md)を参照してください。
@@ -39,7 +40,7 @@ Node.js v22
 ## Offboarding
 現状、気付いた人がオフボーディングをしているためなるべくご協力いただけますと幸いです 🙏
 
-- Engineers' Blogsへの掲載を止めたい日や最終出勤日までに`members.ts`, `public/avatar配下に追加した自分の画像`の削除が含まれたPRを作成してください
+- Engineers' Blogsへの掲載を止めたい日や最終出勤日までに`members.ts`, `public/avatars/配下に追加した自分の画像`, `public/avatars-webp/配下に追加した自分の画像`の削除が含まれたPRを作成してください
 - 本人の対応が難しい場合、チームメンバーなどが対応or報告していただけますと大変助かります
 
 ## License
