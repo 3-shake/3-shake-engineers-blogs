@@ -17,14 +17,14 @@ published at: https://blog.3-shake.com/
 ```bash
 # install mise: https://mise.jdx.dev/getting-started.html
 
-$ yarn install
-$ yarn build
-$ yarn dev
+$ pnpm install
+$ pnpm build
+$ pnpm dev
 ```
 
 - サイトの基本設定は`site.config.ts`で行います。
 - メンバーのプロフィールやRSSの登録は`members.ts`で行います。
-- **メンバー追加時のアバター画像**: `public/avatars`に JPG/JPEG/PNG ファイルを追加した後、`cwebp`をインストールし（`brew install webp`）`yarn build:avatars`を実行して WebP 形式に変換し、`public/avatars-webp/`に生成されたファイルもコミットしてください（AVIF などその他の形式は非対応）
+- **メンバー追加時のアバター画像**: `public/avatars`に JPG/JPEG/PNG ファイルを追加した後、`cwebp`をインストールし（`brew install webp`）`pnpm build:avatars`を実行して WebP 形式に変換し、`public/avatars-webp/`に生成されたファイルもコミットしてください（AVIF などその他の形式は非対応）
 - 配色を変更するには`src/styles/variables.scss`を書き換えます。
 - ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
 - フォントの追加・変更方法は[docs/fonts.md](docs/fonts.md)を参照してください。
@@ -34,7 +34,7 @@ $ yarn dev
 
 ### 動作確認環境
 
-Node.js v22
+Node.js v24
 
 
 ## Offboarding
