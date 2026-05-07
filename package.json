@@ -26,14 +26,14 @@
     "react-dom": "19.2.5"
   },
   "devDependencies": {
-    "@eslint/js": "10.0.1",
+    "@eslint/js": "8.57.0",
     "@types/fs-extra": "11.0.4",
     "@types/node": "24.12.2",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@typescript-eslint/eslint-plugin": "8.59.2",
     "@typescript-eslint/parser": "8.59.2",
-    "eslint": "10.3.0",
+    "eslint": "8.57.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
     "eslint-plugin-react": "7.37.5",
