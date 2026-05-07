@@ -38,5 +38,5 @@ yarn-error.log*
 /public/feed.xml
 /public/favicons
 
-# yarn
-/.yarn
+# typescript
+tsconfig.tsbuildinfo
