@@ -1,0 +1,7 @@
+trustPolicy: no-downgrade
+minimumReleaseAge: "3 days"
+
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  sharp: true
