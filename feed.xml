@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 08 May 2026 22:45:45 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 May 2026 11:48:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ADKでGemini Live APIを使う時のハマりどころ3選]]></title>
+            <link>https://zenn.dev/kimitsu/articles/adk-gemini-live-api-tips</link>
+            <guid isPermaLink="false">https://zenn.dev/kimitsu/articles/adk-gemini-live-api-tips</guid>
+            <pubDate>Fri, 08 May 2026 22:54:16 GMT</pubDate>
+            <content:encoded><![CDATA[最近Agent Development Kit（ADK）でLive APIを使う機会があり、ハマりどころがいくつかあったので共有です。なお内容は記事執筆時点の情報になります。執筆日：2026/05/09Python：3.14ADK：1.32.0 1. 3.1 Flash Liveを使う場合はGemini API経由にするADKに限った話ではないのですが、3.1 Flash Liveは現時点ではAgent Platform（旧Vertex AI）では提供されていません[1]。Gemini APIでは提供されているのでこちらを使います[2]。基準は分かりませんが他にもこ...]]></content:encoded>
+            <author>Yunosuke Yamada</author>
+        </item>
         <item>
             <title><![CDATA[`lazy_static!` はもういらない — `LazyLock` と `OnceLock` の使い分け]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/05/08/085402</link>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 14 Apr 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Terraform Stateにおけるシークレットの平文保存という課題とその解決[0ベースから学ぶ、クラウドネイティブの春！ - connpass](https://jaguer-cloud-native.connpass.com/event/387350/) で発表した内容]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[システムは「動く」だけでは 足りない - 非機能要件・分散システム・トレードオフの基礎]]></title>
-            <link>https://speakerdeck.com/nwiizo/sisutemuha-dong-ku-dakedeha-zu-rinai-fei-ji-neng-yao-jian-fen-san-sisutemutoredoohunoji-chu</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/sisutemuha-dong-ku-dakedeha-zu-rinai-fei-ji-neng-yao-jian-fen-san-sisutemutoredoohunoji-chu</guid>
-            <pubDate>Tue, 14 Apr 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[ソフトウェアエンジニアの仕事を、「コードを書く人」ではなく「何を守るかを決める人」の部分を紹介した発表です。非機能要件、分散システム、トレードオフを題材に、速さ、正しさ、止まりにくさが引っ張り合うなかで、日々どう判断しているのかをできるだけ身近な例で話しました。技術の基礎を知るための資料でありながら、この仕事そのものの面白さに触れてもらうための発表でもあります。唯一の問題は20分で終わらせるのがとても難しい。続編https://speakerdeck.com/nwiizo/sisutemuha-dong-ku-dakedehazu-rinai-shi-zhuang-bian-fei-ji-neng-yao-jian-fen-san-sisutemutoredoohuwokododejian-ru]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
