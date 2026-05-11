@@ -1,5 +1,8 @@
 [tools]
 node = "24.15.0"
 
-[tasks.setup]
-run = "corepack enable"
+[hooks]
+postinstall = "corepack enable"
+
+[settings]
+experimental = true
