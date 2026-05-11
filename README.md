@@ -17,6 +17,8 @@ published at: https://blog.3-shake.com/
 ```bash
 # install mise: https://mise.jdx.dev/getting-started.html
 
+$ mise install
+$ mise run setup  # corepack を有効化（初回のみ）
 $ pnpm install
 $ pnpm build
 $ pnpm dev
