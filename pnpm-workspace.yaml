@@ -1,7 +1,5 @@
 trustPolicy: no-downgrade
 minimumReleaseAge: "3 days"
-minimumReleaseAgeExclude:
-  - npm-run-all2
 
 allowBuilds:
   '@parcel/watcher': true
