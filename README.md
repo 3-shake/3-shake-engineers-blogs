@@ -17,6 +17,7 @@ published at: https://blog.3-shake.com/
 ```bash
 # install mise: https://mise.jdx.dev/getting-started.html
 
+$ mise install  # Node.js のインストールと corepack の有効化
 $ pnpm install
 $ pnpm build
 $ pnpm dev
