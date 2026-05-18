@@ -1,4 +1,5 @@
 trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: "2024-01-01"
 
 allowBuilds:
   '@parcel/watcher': true
