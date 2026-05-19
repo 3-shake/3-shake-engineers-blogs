@@ -34,6 +34,9 @@
   // 最小リリース期間（新バージョンから一定期間待機）
   minimumReleaseAge: "5 days",
 
+  // pnpm の trustPolicy による誤検知を回避（Renovate 実行時のみ）
+  npmrc: "trust-policy=none",
+
   // eslint-plugin-react が ESLint v10 未対応のため v8 に固定
   packageRules: [
     {
