@@ -28,7 +28,7 @@
   "devDependencies": {
     "@eslint/js": "8.57.1",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "24.12.2",
+    "@types/node": "24.12.4",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@typescript-eslint/eslint-plugin": "8.59.3",
