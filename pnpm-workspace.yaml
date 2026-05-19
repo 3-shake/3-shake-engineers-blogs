@@ -1,6 +1,3 @@
-trustPolicy: no-downgrade
-trustPolicyIgnoreAfter: "2025-01-01"
-
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
