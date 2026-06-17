@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 16 Jun 2026 23:00:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jun 2026 04:18:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[創造は、未来への債務の発行である - Architecture for Flow の読書感想文]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/06/17/125753</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/17/125753</guid>
+            <pubDate>Wed, 17 Jun 2026 03:57:53 GMT</pubDate>
+            <content:encoded><![CDATA[作れる。速く作れる。だが、作るとは、未来へ債務を発行することだ。 読み終えてから、1つの言い換えが頭から離れませんでした。作ることは、完了する動詞ではない。作った瞬間に「維持する・確認し続ける・説明し続ける・責任を取り続ける」という義務を、未来に対して発行している。リリースは一瞬で、支払いはそのあとずっと続く。私はキャリアのほとんどを「作れるか」「速く作れるか」に注ぎ、その発行し続けた債務を、同じ熱量で見積もってはきませんでした。胃のあたりは、いまも少し重い。 Susanne Kaiser 著『Architecture for Flow: Adaptive Systems with Domai…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Kubernetes祭り #1 OP/ED]]></title>
             <link>https://speakerdeck.com/bells17/ed</link>
@@ -261,13 +269,6 @@
             <pubDate>Thu, 14 May 2026 14:00:47 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 「Rust はコンパイルが遅いから」。技術選定の議論で、私はこの一言で打ち切られたことが何度かある。性能でも安全性でもなく、開発時のフィードバックループの遅さだ。コードを書いて保存したら画面に反映される、というサイクルが Rust にはない、と。 数年前ならその通りだと頷いていた。2026年5月現在、それはもう正確ではない。少なくとも、そう反論できる材料が3つは揃っている。 hot-lib-reloader (v0.8.2) — 動的ライブラリ（dylib）を実行中のプロセスに差し替える汎用的なアプローチ Dioxus (v0.7.4) — RSX テンプレートのパッチ＋ Subse…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AIに対する不満を無くす方法 ー いいスキルの活用方法と見つけ方]]></title>
-            <link>https://speakerdeck.com/aminevg/ainidui-surubu-man-wowu-kusufang-fa-iisukirunohuo-yong-fang-fa-tojian-tukefang</link>
-            <guid isPermaLink="false">https://speakerdeck.com/aminevg/ainidui-surubu-man-wowu-kusufang-fa-iisukirunohuo-yong-fang-fa-tojian-tukefang</guid>
-            <pubDate>Thu, 14 May 2026 04:00:00 GMT</pubDate>
-            <author>Amine Ilidrissi</author>
         </item>
     </channel>
 </rss>
