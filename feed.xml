@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 17 Jun 2026 22:58:24 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Jun 2026 12:34:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Snowflake Cortex AIのコスト管理・監視 実践ガイド — 本番運用前に押さえておきたいこと]]></title>
+            <link>https://sreake.com/blog/snowflake-cortex-ai-cost-management-and-monitoring-guide/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/snowflake-cortex-ai-cost-management-and-monitoring-guide/</guid>
+            <pubDate>Thu, 18 Jun 2026 05:51:15 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Snowflake Cortex AI関数を全部試してみた — SQLだけでここまでできるAI処理（以降、1本目のブログと呼称）でCortex AI関数を検証した際、同じJSON分析クエリを2つのモデルで実行し […]The post Snowflake Cortex AIのコスト管理・監視 実践ガイド — 本番運用前に押さえておきたいこと first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[創造は、未来への債務の発行である - Architecture for Flow の読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/06/17/125753</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/15/151146</guid>
             <pubDate>Fri, 15 May 2026 06:11:46 GMT</pubDate>
             <content:encoded><![CDATA[はじめに RocksDBのソースを読んでいて、SSTableごとにBloom filterが挟まっている箇所に出くわした。概念は知っていたが、パラメータの導出を自分で追ったことはなかった。数式を眺めるだけでは全然理解できない悲しい子なので、Rustでゼロから書いて理論値と実測値を突き合わせることにした。結果として、ハッシュ関数の設計で半日つまずくことになる。 「ないもの」を探すコスト データベースに対する読み取りの大半は、存在しないキーへのアクセスだったりする。LSM-treeベースのストレージエンジンでは、この問題が顕著になる。Memtableにない、最新のSSTableにない、その前のSS…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ Rust のホットリロード、2026年の現在地 — hot-lib-reloader / Dioxus / Leptos を実際に動かして比較した]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/14/230047</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/14/230047</guid>
-            <pubDate>Thu, 14 May 2026 14:00:47 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「Rust はコンパイルが遅いから」。技術選定の議論で、私はこの一言で打ち切られたことが何度かある。性能でも安全性でもなく、開発時のフィードバックループの遅さだ。コードを書いて保存したら画面に反映される、というサイクルが Rust にはない、と。 数年前ならその通りだと頷いていた。2026年5月現在、それはもう正確ではない。少なくとも、そう反論できる材料が3つは揃っている。 hot-lib-reloader (v0.8.2) — 動的ライブラリ（dylib）を実行中のプロセスに差し替える汎用的なアプローチ Dioxus (v0.7.4) — RSX テンプレートのパッチ＋ Subse…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
