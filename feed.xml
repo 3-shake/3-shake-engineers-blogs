@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 18 Jun 2026 23:05:51 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jun 2026 12:47:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-06-18 ecspressoのtfstate参照が便利すぎた話]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-06-18-ecspressonotfstatecan-zhao-kabian-li-sukitahua</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-06-18-ecspressonotfstatecan-zhao-kabian-li-sukitahua</guid>
+            <pubDate>Fri, 19 Jun 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[社内勉強会の内容ecspressoが便利すぎて勢い余って、自分もインスパイアされてコードを書いた話https://github.com/masasuzu/clrnd]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
         <item>
             <title><![CDATA[Snowflake Cortex AIのコスト管理・監視 実践ガイド — 本番運用前に押さえておきたいこと]]></title>
             <link>https://sreake.com/blog/snowflake-cortex-ai-cost-management-and-monitoring-guide/</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/18/100915</guid>
             <pubDate>Mon, 18 May 2026 01:09:15 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 書き終えた要件は、書き終えた瞬間から古び始める。 古びた要件と新しい要件を、AIは同列に扱う。「置き換え済み」と書いた印は、AIにとってはただの文字列でしかない。 要件を言葉にする話を第1部で、要件を動くものに散らす話を第2部で書いてきました。発見し、言葉にし、コードと型とテストに焼き込む。ここまでで、要件はようやく実装の現場で動き始めます。 第1部で扱ったのは「書かれずに死ぬ要件」、第2部で扱ったのは「書かれたまま読まれずに死ぬ要件」でした。第3部で扱うのは、最後の死、書かれて動いていたのに時間に殺される要件です。 syu-m-5151.hatenablog.com syu-m-5…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Bloom Filter -- 確率的データ構造の理論と実践]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/15/151146</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/15/151146</guid>
-            <pubDate>Fri, 15 May 2026 06:11:46 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに RocksDBのソースを読んでいて、SSTableごとにBloom filterが挟まっている箇所に出くわした。概念は知っていたが、パラメータの導出を自分で追ったことはなかった。数式を眺めるだけでは全然理解できない悲しい子なので、Rustでゼロから書いて理論値と実測値を突き合わせることにした。結果として、ハッシュ関数の設計で半日つまずくことになる。 「ないもの」を探すコスト データベースに対する読み取りの大半は、存在しないキーへのアクセスだったりする。LSM-treeベースのストレージエンジンでは、この問題が顕著になる。Memtableにない、最新のSSTableにない、その前のSS…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
