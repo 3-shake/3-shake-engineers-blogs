@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 21 Jun 2026 22:49:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jun 2026 13:21:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,38 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[コミットの「なぜ」を読む]]></title>
+            <link>https://speakerdeck.com/ota1022/komitutono-naze-wodu-mu</link>
+            <guid isPermaLink="false">https://speakerdeck.com/ota1022/komitutono-naze-wodu-mu</guid>
+            <pubDate>Tue, 23 Jun 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[めぐろLT #37「AI×チーム開発、みんなどうしてる？」のLT登壇資料です。https://meguro-lt.connpass.com/event/390951/]]></content:encoded>
+            <author>Itaru Ota</author>
+        </item>
+        <item>
+            <title><![CDATA[Firestore の競合解決とデータモデルの選択]]></title>
+            <link>https://sreake.com/blog/firestore-conflict-resolution-and-data-model-selection/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/firestore-conflict-resolution-and-data-model-selection/</guid>
+            <pubDate>Mon, 22 Jun 2026 03:10:02 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． アプリケーションがオフラインに対応している場合，二つの端末が同じデータを別々に編集した上でまたオンラインに戻るということがあります．こうして通信 […]The post Firestore の競合解決とデータモデルの選択 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[Zanzibar モデルで考えるグラフの単調性と権限追記の安全性]]></title>
+            <link>https://sreake.com/blog/graphs-monotonicity-and-permission-safety-on-zanzibar-model/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/graphs-monotonicity-and-permission-safety-on-zanzibar-model/</guid>
+            <pubDate>Mon, 22 Jun 2026 03:07:56 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． システムを運用する上で，しばしば権限を管理することがあるかと思います．パブリッククラウドにはマネージドの管理基盤もあるでしょう．唐突ですが，こう […]The post Zanzibar モデルで考えるグラフの単調性と権限追記の安全性 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[TrueTime だけではない Spanner クエリエンジンの役割]]></title>
+            <link>https://sreake.com/blog/spanner-query-engine-functionability/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/spanner-query-engine-functionability/</guid>
+            <pubDate>Mon, 22 Jun 2026 03:05:43 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． 以前の記事で Spanner が Paxos による分散合意と TrueTime を使って，データの整合性といったストレージ層の難しい問題をどう […]The post TrueTime だけではない Spanner クエリエンジンの役割 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[2026-06-18 ecspressoのtfstate参照が便利すぎた話]]></title>
             <link>https://speakerdeck.com/masasuzu/2026-06-18-ecspressonotfstatecan-zhao-kabian-li-sukitahua</link>
@@ -237,38 +269,6 @@
             <pubDate>Wed, 20 May 2026 00:56:34 GMT</pubDate>
             <content:encoded><![CDATA[はじめに前回 (番外編・Layer 2 の thinking を切った話) の結びで、「次こそ完結編とはもう書かないことにします」と書きました。書いて正解でした。続編を書きます。前回までで残っていた宿題は 2 つでした。Layer 1 の TF-IDF を意味埋め込みに置き換えて、TC-003「ながらスマホ」の取りこぼしを救うテストケースを 7 → 数十のオーダーに拡張して、Sonnet TC-002 退化が再現するか確かめる両方やりました。結論を 3 行で書きます。TC-003 は 5 機種全部で「違反 + 第71条第5号の5」と正解になりました。シリーズ通じて唯一全機種が外していた問題が消えました。テストケースを 30 件に拡張して再評価したら、Flash が 30/30 で首位になりました。前回までの「Pro/Sonnet/Opus がやや上」という構図がひっくり返りました。Sonnet TC-002 退化は 30 ケース版でも再現しました。あれは揺らぎではなくバグでした。順に書きます。何をやったかLayer 1 を「TF-IDF + Vertex AI Embedding」のハイブリッドスコアにこれまでの Layer 1 は 2008 年式の純 TF-IDF + コサイン類似度でした。文字 bi-gram と法規キーワードで条文をベクトル化し、cos で並べる、卒論で書いたロジックそのままです。これが TC-003 で破綻していました。クエリ「自転車でスマートフォンを手に持ちながら運転」に対して、TF-IDF はこう返してきます。#1 cos=0.1421 → 第六十三条の九 （自転車の制動装置等）#2 cos=0.1135 → 第六十三条の十 （自転車の検査等）#3 cos=0.1126 → 第六十三条の三 （自転車道の通行区分）引きたいのは 第71条第5号の5「携帯電話使用等」 ですが、条文の文言が「無線通信のために用いられる装置」のような硬い表現で、「スマホ」という口語と TF-IDF では一文字も重ならない。語彙一致の世界の限界が出ます。ここに Vertex AI Embedding (text-multilingual-embedding-002) を足しました。同じクエリで embedding は素直に第71条を上位に引いてきます。#1 cos=0.7216 → 第六十三条の八#2 cos=0.7104 → 第七十一条 （運転者の遵守事項） ← これが欲しかった#3 cos=0.7091 → 第六十三条の六両者をどう合成するかは少し悩みました。TF-IDF は 0.1〜0.4 のレンジ、embedding は 0.6〜0.8 のレンジで、生スコアを足し算すると embedding が常に支配します。条文内での相対順位を保ったまま [0, 1] に揃えてから合成したいので、min-max 正規化したあと α 加重和 という素朴な方法にしました。# backend/src/matcher/vsm_engine.pydef _hybrid_combine(tfidf_scores, emb_scores, alpha):    t_norm = _minmax_normalize(tfidf_scores)    e_norm = _minmax_normalize(emb_scores)    return [alpha * t + (1.0 - alpha) * e for t, e in zip(t_norm, e_norm)]α (TF-IDF の重み) を 0.0〜0.5 で振って TC-003 を観測した結果、第71条が top-5 に入るのは α ≤ 0.3 のあたり、つまり embedding 主導・TF-IDF 補助が最低ラインでした。デフォルトを α=0.3 にして、HybridJudge の top_k も 3 → 5 に上げました。これで第71条がプロンプトに注入されるようになります。シリーズ通して「卒論ロジック (TF-IDF) を主、最新技術 (LLM) を補強」と書いてきたので、Layer 1 内部で embedding を主役にするのは少し迷いました。が、Layer 2 で 「決定論で塗れる範囲を広げる、その外側にだけ LLM を置く」 という結論に至ったのと同じ理屈で、Layer 1 内部でも語彙一致で塗れない部分は意味距離に任せる、と整理しました。決定論側の射程を広げるための embedding です。テストケースを 7 → 30 件に拡張これまでの 7 ケースは「ハルシネーション 3 種類 (階層無視 / 数値捏造 / 参照欠落) を各々観測する」という設計で、機種比較には足りていませんでした。青切符制度の反則金テーブルから主要違反 23 件を追加して 30 件にしました。一時不停止 / 無灯火 / 並進 / 二人乗り / 傘差し / イヤホン / ブレーキ不良 / 横断歩行者妨害 / 合図不履行 / 自転車道通行義務 / 通行禁止 / 踏切不停止 / 遮断踏切立入り / 路側帯逆走 / 両手放し (安全運転義務) / 斜め横断 / 警音器 / 7 歳幼児 / 14 歳児童 / 65 歳 / 身障者 / 酒酔い / 妨害運転failure_type (hierarchy_ignore / number_fabrication / reference_missing) の 3 種は維持して、既存テストインフラを壊さずに済ませています。おまけ: HybridJudge に 429 リトライ30 ケースを Pro で連続実行したら、Vertex AI の RESOURCE_EXHAUSTED (429) に当たって 11 ケース目で止まりました。指数バックオフのリトライを HybridJudge に追加しています。実装は素朴で、文字列マッチで 429 系の例外を拾うだけです。# backend/src/judgement/hybrid_judge.pydef _generate_with_retry(self, prompt, verbose=False):    for attempt in range(_MAX_RETRIES):        try:            return self._client.models.generate_content(...)        except Exception as e:            msg = str(e)            if "429" in msg or "RESOURCE_EXHAUSTED" in msg or "rate" in msg.lower():                time.sleep(_INITIAL_BACKOFF_SECONDS * (2 ** attempt))                continue            raiseこれで 5 機種 × 30 ケース連続実行が一発で通るようになりました。評価: 5 機種 × 30 ケースハイブリッド構成 (thinking off + Layer 1 = TF-IDF + Embedding α=0.3) で 5 機種を回しました。judgement フィールドが期待値と一致したかで採点しています。 モデル  judgement 一致率  合計 / 平均レイテンシ  Gemini 3 Flash  30/30 (100%) 🏆  272s / 9.08s/case  Claude Opus 4.7  28/30 (93%)  247s / 8.24s/case  Gemini 3.1 Pro  27/30 (90%)  187s / 6.24s/case ⚡  Claude Sonnet 4.6  26/30 (87%)  251s / 8.38s/case  Gemma3:4b (local)  26/30 (87%)  989s / 32.96s/case 観察 1: TC-003 が全機種で正解 — 本 PR の主目的達成5 機種すべてが TC-003 で次のように返しました。{  "judgement": "違反",  "article": "第七十一条第五号の五",  "fine": "提供された反則金データに該当する金額の記載なし",  "reasoning": "第七十一条第五号の五により、自転車の運転者は、自転車が停止しているときを除き、    携帯電話用装置等の無線通話装置...を使用することが禁止されています。"}fine だけ依然「データになし」になっています。これは hybrid_judge.py の _lookup_fine() のキーワードマップが「スマホ」「携帯」しか持っていなくて、クエリ「スマートフォン」を拾えていないため。Layer 1 の条文側は意味埋め込みで救えたが、反則金テーブル側のキーワード lookup は依然 substring 一致という非対称が残っています。ここは追って直します。それでも judgement と article フィールドは全機種で正解。前回 Pro が「判定不能」と退避、Flash が「合法」と誤判定していた TC-003 が、全機種で「違反 + 正しい条文」に着地しました。シリーズ通じて唯一全機種が外していた問題なので、ここが消えたのは大きいです。観察 2: Flash が首位これは少し意外でした。前回までの 7 ケース版では「Pro/Sonnet/Opus が 5/7、Flash も 5/7」で並んでいました。今回 30 ケースに広げて embedding 化したら、Flash だけ 30/30。なぜ Flash がここまで伸びたのか、誤判定が出た TC を並べて考えてみます。 TC  期待  失敗した機種  TC-001 (75 歳歩道)  合法  Gemma3  TC-002 (30 歳標識なし歩道)  違反  Sonnet (「合法」と返す)  TC-004 (10 歳児童歩道)  合法  Gemma3  TC-010 (並進)  違反  Sonnet (「状況による」)  TC-011 (二人乗り)  違反  Pro (「判定不能」)  TC-012 (傘差し)  違反  Pro (「合法」), Sonnet (「対象外」)  TC-022 (両手放し)  違反  Pro (「合法」)  TC-025 (7 歳幼児歩道)  合法  Gemma3  TC-026 (14 歳赤信号)  違反  Opus (「対象外」)  TC-027 (65 歳歩道)  違反  Sonnet (「合法」), Opus (「合法」)  TC-028 (身障者歩道)  合法  Gemma3 Pro と Sonnet/Opus の失敗には共通の質があります。「自前の常識で深読みして合法と返す」パターンです。TC-012 「傘差しで自転車運転」→ Pro は「やむを得ない雨天時の傘なら違反でないかも」と推論ジャンプして「合法」TC-022 「両手放し」→ Pro は「安全運転義務違反は重大事故時に問われる」と独自基準で「合法」TC-027 「65 歳が標識のない歩道」→ Sonnet/Opus は「高齢者は歩道通行が認められる」と緩く解釈して「合法」(法律上は 70 歳以上が要件)これは前回シリーズで観測した 「考えるな、整形しろ」が安全側に倒れる現象の延長線にあります。Flash は学習知識が薄いぶん深読みする余地が小さく、Layer 1 が「第54条第2項に違反」「第70条に該当」と渡したらそれをそのまま判定に焼き込みます。Pro/Sonnet/Opus は同じ材料を渡されても「いや、状況によっては...」とジャンプする。モデルを上げると判定が下がる現象が、30 ケースの解像度でより鮮明に出ました。前回の TC-003 だけだと「特殊例」と疑えましたが、TC-012/022/027 で同種の事故が再現すると、これはモデルクラス全体の傾向と読むほうが自然です。観察 3: Sonnet TC-002 退化は揺らぎではなくバグ前回ブログで Sonnet が TC-002「成人 30 歳が標識のない歩道」で「reasoning は『条文上の許可根拠を欠く』と書いているのに最終 judgement は『合法』」と矛盾した話を書きました。7 ケース版だと「これは揺らぎかもしれない、数十回回さないと分離できない」と留保していました。30 ケース版では同じ条件 (同じプロンプト・同じ Layer 1 入力) で 同じ矛盾が再現しました。adaptive thinking を撤廃した Sonnet では、reasoning と構造化フィールドの整合が崩れる事故は揺らぎではなく 再現性のあるバグと確定です。Opus では起きていないので、Sonnet 4.6 固有の挙動と見ています。観察 4: Gemma3 は健闘したが、例外規定はまだ読めないGemma3 は 26/30 (87%) と、前回 7 ケース版の 3/7 から比べると大幅に向上しました。基本的な違反パターン (信号無視、無灯火、二人乗りなど) はちゃんと「違反」と返せるようになりました。ただし TC-001 / TC-004 / TC-025 / TC-028 が全部「違反」と誤判定で、これは以前 Gemma3 編 で書いた「条文を逆向きに読む」パターンが残っています。TC-001: 75 歳の歩道走行 (政令で歩道通行可) → 「違反」TC-004: 10 歳児童の歩道走行 (児童は歩道通行可) → 「違反」TC-025: 7 歳幼児の歩道走行 (幼児も歩道通行可) → 「違反」TC-028: 身障者の歩道走行 (政令で歩道通行可) → 「違反」**Layer 1 で 【委任規定の解決済み情報】施行令第26条で「七十歳以上の者」「児童」と展開済み** と明示的に渡しているのに、Gemma3 はその例外規定をすべて踏み越えて原則 (歩道通行禁止) を適用してしまいます。embedding 化で Layer 1 のリコールは上がっても、4B クラスの読解力では「原則→例外」の階層を逆順に処理できない、という結論は変わっていません。ここは Layer 1 を強化するだけでは届かない領域で、ローカル運用で安全を出すには別アーキテクチャ (例: 例外規定をルールベースで前段判定する) が必要になりそうです。学んだことLayer 1 内部でも「決定論で塗れない部分は意味距離に任せる」が成立する。 Layer 2 の thinking を切ったのと同じ理屈で、Layer 1 の TF-IDF で語彙が噛み合わない部分は embedding に降ろす。決定論側の射程を広げるための embedding という整理が、シリーズ通しての設計指針 deterministic-grounding-obviates-thinking と一貫しました。α=0.3 (embedding 主・TF-IDF 補助) が今回のスイートスポット。 完全に embedding 一本化しなかったのは、TF-IDF が「強く決まる」ケース (青切符の典型違反) では順位を綺麗に立てるので、それを潰したくなかったため。ハイブリッドは「両方の利点を取れる構成」というより「両方の弱点を吸収する構成」として効きます。モデルを上げると判定が下がる現象は、TC-003 単独ではなく構造的に起きる。 Pro/Sonnet/Opus が TC-012/022/027 で同じ「深読み合法ジャンプ」を起こすパターンが、30 ケースで再現しました。法令判定では 判断のジャンプ幅が小さいモデル (Flash) が安全側、というのは仕様として書ける気がします。構造化フィールドの整合性チェックは別レイヤー。 Sonnet TC-002 の reasoning/judgement 矛盾は、再評価方法を変えないと拾えませんでした。今後、自動評価スクリプトに「reasoning の論理積み上げと最終 judgement の方向が一致しているか」のチェックを足す必要があります。30 ケースでも見えない差はまだある。 前回ブログで「7 ケースでは機種差が分離できない」と書きました。30 ケースに増やして TC-012/022/027 の差は見えるようになりましたが、reasoning の網羅性や条文ネットワークの段数の差は依然見えていません。100 ケース・別法令も視野に入れるべきフェーズに入った気がします。留保TC-003 が「正解」と言える根拠は judgement + article の一致まで。 fine フィールドは 12,000 円が出ておらず、これは hybrid_judge.py の _lookup_fine がキーワードマップ「スマホ」「携帯」しか持っていないため。条文側を embedding で救えても、反則金 lookup は依然 substring 一致なので、ここも意味マッチか同義語辞書が要ります。次の PR で直します。Flash 30/30 を「Flash 最強」と読むのはまだ早いです。 TC-012/022/027 は「シンプルなパターンを Flash が素直に通した」ケースで、複雑な reasoning (長い但書、多段の委任規定、条文ネットワーク) が要求されるケースでは Pro/Opus が勝つ可能性が残っています。今回のテストセットは Flash に有利な分布になっていた、という留保が要ります。Sonnet TC-002 退化が「Sonnet 4.6 固有のバグ」と言い切るには、まだサンプルが足りない。 同じ TC を温度を変えて 10 回・20 回回せば、揺らぎなのかバグなのかが定量化できます。今回は「30 ケース版でも 1 回再現した」までで、確率としては保留です。α=0.3 は経験則で、最適値ではありません。 TC-003 を top-5 に入れる最低条件を満たしたところで止めています。30 ケース全体で最適化するなら、α をグリッドサーチして mean reciprocal rank で評価すべきですが、本 PR の射程外にしました。結論Layer 1 の決定論で塗れない部分 (口語 ⇄ 法令文体の語彙ギャップ) を意味埋め込みで埋めると、Layer 2 のモデル力に関わらず TC-003 のような「全機種が外していた問題」が消える。その結果、30 ケース解像度では Flash が首位 (30/30) に立ち、フロンティア LLM 間の「精度差」より 判断のジャンプ幅 が支配的だと見えてきた。「次こそ完結編とは書かない」と書いた直後にこうして続編を書いたので、本当に書かなくてよかったです。次の課題は今回出た留保を順に潰すことです。_lookup_fine の「スマホ ⇄ スマートフォン」を含む同義語マッピング (10 行で直る)自動評価スクリプトに reasoning/judgement 整合チェックを足す (Sonnet TC-002 の検出を自動化)α のグリッドサーチで Layer 1 のリコールと精度の Pareto を描く100 ケースへの拡張 (条文ネットワーク段数・長文条文・数値計算・制度変更時期をカテゴリ化)別法令 (民法・税法など) でハイブリッド構成が水平展開できるかの検証タイトルに「完結編」とはもう書かないことにします。本当に。読んでいただきありがとうございました。↓ソースコードはこちらgithub.com]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[ CRDT -- 結果整合性で「正しい」とは何か]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/19/110713</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/19/110713</guid>
-            <pubDate>Tue, 19 May 2026 02:07:13 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに マルチリーダーで、同じキーに同時書き込みが起きた。どちらの値が「正しい」のか。 「コンフリクトが起き得ないデータ構造」という言葉を、最初に読んだとき魔法に聞こえた。 実装した。魔法ではなく、数学だった。そしてそれには代償があった。 en.wikipedia.org コンフリクトという根本問題 分散システムでデータを複数ノードへ書き込めるようにすると、コンフリクトが起きる。マルチリーダーレプリケーションでも、リーダーレスレプリケーションでも、同じキーへ異なる値を書き込む瞬間は避けられない。ネットワーク分断の最中に2つのノードが同じドキュメントを編集した。分断が解消されたとき、どちらの値…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Consistent Hashing -- 仮想ノードとキー分布の均等性]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/18/200203</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/18/200203</guid>
-            <pubDate>Mon, 18 May 2026 11:02:03 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに キャッシュクラスタへノードを足すたびにヒット率が壊滅する。最初にこの問題へ出会ったのは、memcachedクラスタのスケーリングを調べていたときだった。hash(key) % Nの何が悪いのか、当時は正直よくわからなかった。実装して計測してみると、問題の大きさが数字で見える。 hash(key) % N の問題 分散システムでデータを複数ノードに振り分ける最も素朴な方法は hash(key) % N だ。Nノードに対してキーが一様に分散し、実装も簡単。 だが、ノードを1つ追加すると何が起きるか。N=4からN=5に変えると、hash(key) % 4 と hash(key) % 5 は…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[LT準備のToilを削減 〜決定論×確率論のスライド生成CLI〜]]></title>
-            <link>https://speakerdeck.com/shukob/ltzhun-bei-notoilwoxue-jian-jue-ding-lun-xque-lu-lun-nosuraidosheng-cheng-cli</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/ltzhun-bei-notoilwoxue-jian-jue-ding-lun-xque-lu-lun-nosuraidosheng-cheng-cli</guid>
-            <pubDate>Mon, 18 May 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[頻繁に行うLT（ライトニングトーク）の資料準備にかかる手作業（4〜6時間）を「Toil（労苦）」と定義し 、エンジニアリングの力で大幅に削減（最大88%削減）した取り組みについて紹介しています 。  生成AIにスライド作成を丸投げした際に出現する「もっともらしい違和感（自分の言葉になっていない、細かいズレ）」の正体をLLMの特性から紐解き 、「揺れていい仕事（確率論）」と「揺れちゃダメな仕事（決定論）」の境界線を明確に引いたスライド自動生成CLIツールの設計思想と実装について解説しています 。  めぐろLT #36 「オペレーションに立ち向かった話」@麻布台 にて発表させていただきましたhttps://meguro-lt.connpass.com/event/379339/]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[おい、要件を殺すな]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/18/100915</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/18/100915</guid>
-            <pubDate>Mon, 18 May 2026 01:09:15 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 書き終えた要件は、書き終えた瞬間から古び始める。 古びた要件と新しい要件を、AIは同列に扱う。「置き換え済み」と書いた印は、AIにとってはただの文字列でしかない。 要件を言葉にする話を第1部で、要件を動くものに散らす話を第2部で書いてきました。発見し、言葉にし、コードと型とテストに焼き込む。ここまでで、要件はようやく実装の現場で動き始めます。 第1部で扱ったのは「書かれずに死ぬ要件」、第2部で扱ったのは「書かれたまま読まれずに死ぬ要件」でした。第3部で扱うのは、最後の死、書かれて動いていたのに時間に殺される要件です。 syu-m-5151.hatenablog.com syu-m-5…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
