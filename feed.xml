@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 25 Jun 2026 12:17:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Jun 2026 22:57:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[git を捨てずに、git の手前に立つ - Jujutsu (jj) の概念と、乗り換えの損益分岐点]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/06/26/004107</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/26/004107</guid>
+            <pubDate>Thu, 25 Jun 2026 15:41:07 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 金曜の夜だった。10個のコミットを git rebase -i で並べ替えていた。4個目で衝突した。慌てて解決したが、解決を間違えた。git rebase --abort で巻き戻し、最初からやり直す。2回目はもっと雑になり、3回目で reflog を漁ってコミットを拾い直した。本番でもチームのリポジトリでもない。自分のローカルブランチを、自分一人で壊していた。 この冷や汗には覚えがある。git を10年触っていても消えない。いつ上達するんだ。毎回調べている気がするし雰囲気で触っている。怖いのは衝突そのものではない。衝突が起きた瞬間、リポジトリが「途中の状態」で固まり、間違えるとやり…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ループエンジニアリングは、サイバネティクスの再発見だ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/06/23/215158</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/21/103638</guid>
             <pubDate>Thu, 21 May 2026 01:36:38 GMT</pubDate>
             <content:encoded><![CDATA[はじめに シェルスクリプト2行で、データベースが書ける。書き込みはO(1)、これ以上速くならない。 10億行になった瞬間、読み取りが破綻する。grepが全行を舐めて死ぬ。 RocksDBのソースには、Memtable、SSTable、Compactionが並ぶ。読むより、書いて確かめる方が早かった。 github.com Append-onlyログの限界 最も素朴なデータベースはシェルスクリプト2行で書ける。 db_set() { echo "$1,$2" >> database; } db_get() { grep "^$1," database | tail -1 | sed 's/^[^…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[トランザクション分離レベル: Write Skewを手で再現する]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/20/120710</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/20/120710</guid>
-            <pubDate>Wed, 20 May 2026 03:07:10 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに PostgreSQLのREPEATABLE READは、Snapshot Isolationだ。 MySQLのREPEATABLE READは、それと違う何かだ。同じ言葉が、異なる挙動を指す。 ドキュメントを読むのをやめた。自分でMVCCストアを書き、各異常を手で再現することにした。 www.cockroachlabs.com ACIDのCは「マーケティング用語」 ACIDは、データベースのトランザクションを説明するときによく出てくる4文字の略語だ。Atomicity、Consistency、Isolation、Durabilityの頭文字を取っている。 ACID特性の中で、Cons…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
