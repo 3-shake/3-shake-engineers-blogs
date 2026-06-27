@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 27 Jun 2026 11:59:05 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Jun 2026 22:47:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[HTTP 200 OKの死角を暴け！非決定論的なUXフリクションを決定論的にねじ伏せる「UX駆動型オブザーバビリティ」を実証した話]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/2026/06/28/003709</link>
+            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/2026/06/28/003709</guid>
+            <pubDate>Sat, 27 Jun 2026 15:37:09 GMT</pubDate>
+            <content:encoded><![CDATA[200 OKの向こう側へ！非決定論的なカオス（UXストレス）を決定論の規律でねじ伏せる「Friction Determinism」皆さんのプロダクトの監視ダッシュボードは「オールグリーン」ですか？「エラー率0%、今月も平和！」と安心しているなら、少し危険かもしれません。そこには最悪のサイレントキラーが潜んでいます。近年、生成AI（LLM）の組み込みが主流になりました。しかし、AIの出力フォーマット（JSON）が崩れてフロントエンドでパースエラーが起き、画面が真っ白にフリーズしたとしても、バックエンドサーバーは正常に 「HTTP 200 OK」 を返します。インフラ監視のチャートは、美しい「Green」を示し続けたままです。ユーザーは画面の前でフリーズし、不快感を感じているのに、インフラは「正常」と判断してしまう。これが私が提唱する「200 OKのホワイトアウト（死角）」です。🌀 不確実なカオス（確率論）を、決定論の規律でねじ伏せるユーザーのストレス行動やAIの出力の揺らぎは、予測不可能な確率論のカオス（非決定論）です。会議室で何時間議論しても答えは出ません。それなら、「非決定論的なカオスを、フロントエンドの境界線（React/Zod）でデジタルシグナル『0 or 1』に強制変換し、100%制御可能な因果律（決定論的世界）の規律に引きずり戻せばいい」そう考え、Google Cloud上にリアルタイムな非同期データパイプラインをフルスクラッチしました。friction-determinism。今回はその検証結果と、このアプローチがビジネスをどう加速させるのか、簡潔にレポートします。🛠️ 1. 検証結果サマリー：自作コックピットUIが証明した真実構築したデータパイプライン（React ➔ Cloud Run (API) ➔ Cloud Pub/Sub ➔ BigQuery）に対し、仕様書（spec.md）に準拠した2つのシナリオで計120件の疑似UXテレメトリデータを流し込みました。結果、私が自作した管理者ダッシュボード（/admin）は、「200 OKの死角」を暴き出しました。🧪 2つのデプロイ・シナリオとBigQueryの実データエビデンス🟢 安定版リリース (v1): 84件送信 ➔ つまづき率 7.14%（SLOである「10%未満」を達成）🔴 実験版リリース (v2-experimental): 40件送信 ➔ つまづき率 52.50%（SLO大幅違反 / 高バーンレート）-- BigQueryにリアルタイム蓄積された実データSELECT   revision_id,   COUNT(*) as cnt,   SUM(is_rage_click) as rage,   SUM(is_maigo) as maigo,   SUM(schema_validation_error) as err FROM `[YOUR_GCP_PROJECT].friction_ops.ux_events_raw` GROUP BY revision_id;実データ集計結果 リビジョン (revision_id)  送信件数  レイジクリック  探索迷子  パース/クラッシュエラー  つまづき率  🟢 v1 (安定版)  84  1  1  4  7.14% (SLO内)  🔴 v2-experimental (不安定版)  40  10  7  4  52.50% (SLO違反) ダッシュボードの左上をご覧ください。「INFRASTRUCTURE SLI/SLO」は 99.98% で Green（正常） に輝いています。「USER SATISFACTION SLI/SLO」は 78.2% で Red（異常） を示しています。これが、データによって可視化された「200 OKの向こう側」の景色です。🏛️ 2. この仕組みがビジネスと技術にもたらす「3つの絶対的価値」価値 ①：「HTTP 200 OK」の死角（サイレント障害）を完全に殺す従来のインフラ監視では、レスポンスが極端に遅く、ユーザーが苛立ちから画面を連打していても検知できません。本システムでは、フロントエンドに仕込んだセンサーがユーザーの生のフリクションを直接検知します。レイジクリック検知: 1秒間に5回以上の怒りの連打。探索迷子検知: 30秒以内に画面（ルート）を4回以上ピンポン往復する迷走状態。スマート・フォールバック: Zodのパースエラーを ErrorBoundary でキャッチ。ユーザーには「AIが少し考え込んでいます」と上品な画面を見せて救済しつつ、裏では例外メッセージをデジタルシグナル「1」として裏流しする。[!NOTE]💡 用語補足：サイレント障害価値 ②：エラーバジェットとバーンレートによる迅速な「意思決定」これまでプロダクトの「使いづらさ」は、感覚的・定性的なフィードバックに頼るしかありませんでした。そのため、UI/UX of 仕様決定に何時間も会議を重ねて時間を溶かしていたわけです。本システムでは、客観的な数値をもとに高速な判断を下します。新リリースの v2-experimental のようにつまづき率が 52.5% に急上昇した際、わずか5分の観測でバーンレートアラートを発報できます。[!IMPORTANT]💡 用語補足：エラーバジェット ＆ バーンレートエラーバジェット: SLO（サービスレベル目標、例：快適性90%以上）に基づき、ユーザーに許容される「不快（エラー）の総予算（例: 10%）」。* バーンレート: その予算を消費する「燃焼速度」。一瞬で大量の予算が消費された場合（高バーンレート）、重大な障害とみなして即座にアラートを飛ばす。価値 ③：「監視の自己矛盾」を防ぐ、極小オーバーヘッド設計UXを監視するための仕組みが、アプリのパフォーマンスを低下させては本末転倒（監視の自己矛盾）です。本システムはGoogle Cloudのマネージドの力を借りて極小の負荷で動作します。非ブロッキング送信（フロント）: navigator.sendBeacon や fetch(..., {keepalive: true}) を活用し、メインスレッドを阻害せずバックグラウンドでテレメトリを送信。バックプレッシャーの完全排除（バックエンド）: Cloud Run APIは同期的な書き込み処理を行わず、データを Cloud Pub/Sub に投げ込んだ瞬間、10ミリ秒未満で 202 Accepted を返却。高負荷時はPub/Subが強力なクッション（バッファ）になります。ニアリアルタイム分析（データ基盤）: BigQuery へのストリーミングインジェストにより、データが到着した瞬間にリアルタイムSQLクエリで集約可能です。[!TIP]💡 用語補足：バックプレッシャー🏎️ 3. 総括：守りのSREから、ビジネスを加速させる攻めのSREへSRE（サイト信頼性エンジニアリング）でまず真っ先に「可用性」を思い浮かべますが、私は「信頼性」の中に「満足性」も加えたい。「ユーザーがどれだけ快適にシステムを使えているか」を、インフラエンジニア、プロダクトマネージャー、精度重視のビジネスサイドの全員が決定論的な同一指標（SLI/SLO・バーンレート）で語れるようにする。これが達成できたら、会議室での不毛な空中戦は終わりです。「インフラ側で『絶対に画面がクラッシュしない、かつヤバければ秒で検知できる』無敵のセーフティネット（ガードレール）を作ったから、仕様決定に時間を溶かす前にさっさと本番に投げてデータで語ろう」と、ビジネスのアクセルを床まで踏み込めるようになります。完璧な守り（規律）を固めるからこそ、究極の攻め（スピード）が可能になる。魂のエンジニアリングを、世界へ。さあ、準備はできた。行こうぜ、200 OKの向こうへ！夜露死苦！！🚀🔥氣志團「One Night Carnival」の歌詞から着想を得ました!↓ソースコードはこちらgithub.com]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[git を捨てずに、git の手前に立つ - Jujutsu (jj) の概念と、乗り換えの損益分岐点]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/06/26/004107</link>
@@ -261,14 +269,6 @@
             <pubDate>Thu, 21 May 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[生成AIの出力は確率的に変化するのを、決定論で抑える工夫についてLTしました第3木曜LT会 #29 で発表しましたhttps://re-shine.connpass.com/event/390806/]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[LSM-Tree: MemtableからCompactionまで自作する]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/21/103638</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/21/103638</guid>
-            <pubDate>Thu, 21 May 2026 01:36:38 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに シェルスクリプト2行で、データベースが書ける。書き込みはO(1)、これ以上速くならない。 10億行になった瞬間、読み取りが破綻する。grepが全行を舐めて死ぬ。 RocksDBのソースには、Memtable、SSTable、Compactionが並ぶ。読むより、書いて確かめる方が早かった。 github.com Append-onlyログの限界 最も素朴なデータベースはシェルスクリプト2行で書ける。 db_set() { echo "$1,$2" >> database; } db_get() { grep "^$1," database | tail -1 | sed 's/^[^…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
