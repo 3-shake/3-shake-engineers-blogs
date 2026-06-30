@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 29 Jun 2026 22:45:50 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Jun 2026 12:16:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[policy-botについて調べてみた]]></title>
+            <link>https://zenn.dev/bells17/articles/policy-bot-overview</link>
+            <guid isPermaLink="false">https://zenn.dev/bells17/articles/policy-bot-overview</guid>
+            <pubDate>Tue, 30 Jun 2026 10:37:40 GMT</pubDate>
+            <content:encoded><![CDATA[palantir/policy-botについて調べてみたのでメモまとめとしてはざっくりと下記のような感じ:GitHubのCODEOWNERのようなPRの承認ルールをより柔軟に設定できるOSSpolicy-botはGitHub Appとして設定して利用するそのため、policy-bot自体をホストする必要があるマージ可否を設定するためにリポジトリのstatus checkと組み合わせることで機能するCODEOWNERSとpolicy-botとの比較はこちらの記事が詳しいが、ざっくりとしては下記のようになる:機能的にはCODEOWNERSにしかできないことはほぼ無いpo...]]></content:encoded>
+            <author>bells17</author>
+        </item>
         <item>
             <title><![CDATA[HTTP 200 OKの「その奥」へ！AIアプリでユーザとの話が噛み合わないことを観測し満足度を上げるオブザーバビリティ手法]]></title>
             <link>https://shu-kob.hateblo.jp/entry/llm-semantic-friction-observability</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/26/130658</guid>
             <pubDate>Tue, 26 May 2026 04:06:58 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 個々のバックエンドのp99は10msで安定していた。 APIゲートウェイのp99だけが、それを大きく超えていた。 計測はできていた。fan-outの確率的増幅が原因だと気づくまでに、数週間かかった。 「p99が10msだから大丈夫」という誤解 レイテンシの議論で「p99は10msです」と言われると、ほとんどの人が安心する。99%のリクエストが10ms以内に返ってくるなら十分に高速だ、と。p50は中央値、p99は遅い側から1%の位置、p99.9はさらに尾の0.1%の位置、というパーセンタイル表記だ。 この認識は、1台のサーバーに1つのリクエストを投げて1つのレスポンスを待つモデルでは正…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[論理時計: Lamport Clock, Vector Clock, HLC の比較実装]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/23/231757</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/23/231757</guid>
-            <pubDate>Sat, 23 May 2026 14:17:57 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに ノードAとBのログを、タイムスタンプでソートした。 因果関係が、平然と逆転していた。 50msのNTPずれで、秒間数千リクエストのシステムでは数百のイベントが入れ替わる。物理時計は嘘をつく。 物理時計は嘘をつく ここでいう「時計」は、腕時計やサーバーの現在時刻だけを指していない。分散システムでは、イベントの前後関係を記録するための番号も「時計」として扱う。人間に見せる時刻ではなく、システムが「どちらが先に起きたか」を判断するための道具だ。 分散システムの時刻同期にNTPを使うのは当たり前だが、NTPが保証するのは「だいたい合っている」程度の精度だ。LAN内でも数ミリ秒、WAN越しなら…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
