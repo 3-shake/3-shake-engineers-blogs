@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 30 Jun 2026 22:54:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Jul 2026 12:24:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Agents Window 時代の Cursor 活用 3選]]></title>
+            <link>https://sreake.com/blog/how-to-use-cursor-in-the-agents-window-era-3-tips/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/how-to-use-cursor-in-the-agents-window-era-3-tips/</guid>
+            <pubDate>Wed, 01 Jul 2026 09:27:26 GMT</pubDate>
+            <content:encoded><![CDATA[Sreake事業部では、AI駆動開発の推進、および顧客案件で安全にAIツールを活用できる体制を整えるため、2025年7月より「AI駆動開発検証チーム」を発足・始動しています。 当チームでは、主に以下のような取り組みを行っ […]The post Agents Window 時代の Cursor 活用 3選 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[policy-botについて調べてみた]]></title>
             <link>https://zenn.dev/bells17/articles/policy-bot-overview</link>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 27 May 2026 01:30:03 GMT</pubDate>
             <content:encoded><![CDATA[2026/5/14 – 2026/5/15にクラウドネイティブ会議が開催され、スリーシェイクもSreake事業でブーススポンサーとして参加してきましたので現地の状況をお伝えします！ クラウドネイティブ会議とは […]The post クラウドネイティブ会議に参加してきました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[Tail Latency: fan-outが尾部遅延を増幅する数理]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/26/130658</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/26/130658</guid>
-            <pubDate>Tue, 26 May 2026 04:06:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 個々のバックエンドのp99は10msで安定していた。 APIゲートウェイのp99だけが、それを大きく超えていた。 計測はできていた。fan-outの確率的増幅が原因だと気づくまでに、数週間かかった。 「p99が10msだから大丈夫」という誤解 レイテンシの議論で「p99は10msです」と言われると、ほとんどの人が安心する。99%のリクエストが10ms以内に返ってくるなら十分に高速だ、と。p50は中央値、p99は遅い側から1%の位置、p99.9はさらに尾の0.1%の位置、というパーセンタイル表記だ。 この認識は、1台のサーバーに1つのリクエストを投げて1つのレスポンスを待つモデルでは正…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
