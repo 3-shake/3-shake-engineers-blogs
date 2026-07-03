@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 02 Jul 2026 22:48:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Jul 2026 12:15:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AI SREの現在地とその可能性]]></title>
+            <link>https://sreake.com/blog/ai-sre-current-position-and-potential/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/ai-sre-current-position-and-potential/</guid>
+            <pubDate>Fri, 03 Jul 2026 05:51:23 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 近日、AIの急速な進歩によってAIエージェントを使ってトイルを解消できる道が開けてきています。以前のAIではインフラを熟知した人の所謂エスパー力といわれる知見を覚えさせることが困難なため、Google検索と同じ […]The post AI SREの現在地とその可能性 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[AIエージェントの危険な振る舞いを水際で防ぐOSS(Aigis)]]></title>
+            <link>https://sreake.com/blog/aigis-ai-agent-behavioral-detection/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/aigis-ai-agent-behavioral-detection/</guid>
+            <pubDate>Fri, 03 Jul 2026 05:50:55 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部の加藤 泰隆です。私はPMとしてプロジェクト推進支援を実施しております。当部ではSRE支援に止まらず、様々なご支援をさせて頂いているのですが、セキュリティもその一つとなります。私たちだけでなく […]The post AIエージェントの危険な振る舞いを水際で防ぐOSS(Aigis) first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[Agents Window 時代の Cursor 活用 3選]]></title>
             <link>https://sreake.com/blog/how-to-use-cursor-in-the-agents-window-era-3-tips/</link>
@@ -253,22 +269,6 @@
             <pubDate>Thu, 28 May 2026 03:49:43 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 決済APIにリクエストを投げた。3秒待っても応答がない。タイムアウト。 クライアントがリトライした。結果、数十件の二重課金が起きた。 発覚したのは、翌朝のカスタマーサポートへの問い合わせラッシュだった。 ネットワークタイムアウトの曖昧さ ログを突き合わせ、同一注文IDに対する重複トランザクションを洗い出す作業に半日かかった。決済APIでこの状況に遭遇すると、胃が痛くなる。 サーバー側で処理が完了しているなら、リトライは二重課金を引き起こす。完了していないなら、リトライしなければ注文が宙に浮く。タイムアウトは成功とも失敗とも言えない。この曖昧さこそ、分散システムにおける厄介な問題だ。 …]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Watermark: ストリーム処理における時間の扱い方]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/05/27/191724</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/05/27/191724</guid>
-            <pubDate>Wed, 27 May 2026 10:17:24 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに コンシューマを再起動した翌朝、ダッシュボードの数値が跳ね上がっていた。 バグを疑った。半日追ってから、processing time集計がバックログの再処理で壊れただけだとわかった。 event timeとprocessing time。同じ時刻ではない。 2つの時刻 ストリーム処理で最初にぶつかる壁は、「時間」が1つではないという事実だ。 イベントが実際に発生した時刻（event time）と、システムがそれを受信した時刻（processing time）。この2つは一致しない。ネットワークに遅延がある限り、processing timeはevent timeより後になる。問題は、…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[クラウドネイティブ会議に参加してきました！]]></title>
-            <link>https://sreake.com/blog/cloud-native-kaigi-2026-report/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/cloud-native-kaigi-2026-report/</guid>
-            <pubDate>Wed, 27 May 2026 01:30:03 GMT</pubDate>
-            <content:encoded><![CDATA[2026/5/14 – 2026/5/15にクラウドネイティブ会議が開催され、スリーシェイクもSreake事業でブーススポンサーとして参加してきましたので現地の状況をお伝えします！ クラウドネイティブ会議とは […]The post クラウドネイティブ会議に参加してきました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
