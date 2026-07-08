@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 07 Jul 2026 22:47:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jul 2026 12:03:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,19 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[相手の立場に立って考えるための、いくつかの観点]]></title>
+            <link>https://zenn.dev/kamos/articles/soneones_shoes</link>
+            <guid isPermaLink="false">https://zenn.dev/kamos/articles/soneones_shoes</guid>
+            <pubDate>Wed, 08 Jul 2026 01:20:45 GMT</pubDate>
+            <content:encoded><![CDATA[「相手の立場に立って考える」というのは難しい。そう言われたからといって、急にできるものでもない。それでも、何か手がかりみたいなものはあるんじゃないかと思って、自分なりにやっていることを書いてみる。「相手の立場に立って考える」というのは、新卒研修や社会人の研修、遡れば道徳の授業なんかでもよく扱われる。これだけ多くの場で言及されるというのは、それ自体が難しくて、社会人になったあとでも実践しにくいからなんだと思う。実際、英語には "walk a mile in someone's shoes" という言葉があるけれど、これは「考えたって仕方がないから、実際に相手と同じ体験をしてみるしかな...]]></content:encoded>
+            <author>Makoto Kamono</author>
+        </item>
+        <item>
             <title><![CDATA[ブログを書いていたらサイボウズ式の連載が決まって、そして終わった]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/07/130730</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/07/130730</guid>
             <pubDate>Tue, 07 Jul 2026 04:07:30 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに タイトル案を5つ送った。返ってきたのは、そのどれでもなかった。 「1on1、雑談タイム──これらが失敗に終わるのはなぜか」。連載第4回の公開タイトルだ。編集部がつけたタイトルは、記事の鍵語だった「善意」や「心理的安全性」という抽象を、1on1と雑談タイムという、誰もが座らされたことのある具体へ引き下ろしていた。私の5案は、どれもその引き下ろしができていなかった。フィードバックを見て、最初に来たのは「確かに良くなっている」という実感だった。このタイトルは私の案のどれよりも、記事の中身に忠実だった。実感の数秒あとに、悔しさが来た。5案も出して、届かなかった。悔しかったのは編集に替えられた…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに タイトル案を5つ送った。返ってきたのは、そのどれでもなかった。 「1on1、雑談タイム──これらが失敗に終わるのはなぜか」。連載第4回の公開タイトルだ。編集部がつけたタイトルは、記事のキーワードだった「善意」や「心理的安全性」という抽象を、1on1と雑談タイムという、誰もが座らされたことのある具体へ引き下ろしていた。私の5案は、どれもその引き下ろしができていなかった。フィードバックを見て、最初に来たのは「確かに良くなっている」という実感だった。このタイトルは私の案のどれよりも、記事の中身に忠実だった。実感の数秒あとに、悔しさが来た。5案も出して、届かなかった。悔しかったのは編集に替え…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://silasol.la/posts/2026-06-01-01_ai-driven-development-reconsider/</guid>
             <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[これ LLM の性能や品質の問題じゃないわ．]]></content:encoded>
-            <author>Masaki Haga</author>
-        </item>
-        <item>
-            <title><![CDATA[AI 時代はコードを読まずに品質保証するだって？？]]></title>
-            <link>https://silasol.la/posts/2026-05-30-01_ai-driven-development/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-05-30-01_ai-driven-development/</guid>
-            <pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[生成 AI による開発について思うこと．]]></content:encoded>
             <author>Masaki Haga</author>
         </item>
     </channel>
