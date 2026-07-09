@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 08 Jul 2026 22:47:52 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Jul 2026 12:23:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Kubernetes Agent Sandboxについての調査]]></title>
+            <link>https://sreake.com/blog/kubernetes-agent-sandbox-explained/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/kubernetes-agent-sandbox-explained/</guid>
+            <pubDate>Thu, 09 Jul 2026 09:30:52 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 工学院大学大学院修士 1 年の柴山優太です。 今回、Sreake 事業部で期限付きインターンをさせていただいている中で、Kubernetes の Agent Sandbox について技術調査を行いました。 近年 […]The post Kubernetes Agent Sandboxについての調査 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[GitOpsを実践してEKS上に自作WebSocketアプリケーションをデプロイしてみた]]></title>
+            <link>https://sreake.com/blog/deploying-websocket-app-to-eks-using-gitops/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/deploying-websocket-app-to-eks-using-gitops/</guid>
+            <pubDate>Thu, 09 Jul 2026 01:05:46 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに こんにちは。Sreake事業部のインターン生の大島です。2026年の5月から6月にかけて、技術検証のインターンに参加しました。普段はWebアプリ開発を中心に取り組んでおり、インフラ系のインターンは今回が初 […]The post GitOpsを実践してEKS上に自作WebSocketアプリケーションをデプロイしてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[相手の立場に立って考えるための、いくつかの観点]]></title>
             <link>https://zenn.dev/kamos/articles/soneones_shoes</link>
@@ -253,22 +269,6 @@
             <pubDate>Mon, 01 Jun 2026 08:38:20 GMT</pubDate>
             <content:encoded><![CDATA[隙間記事です。 背景AWS CloudFormation には自動インポート機能があり，対応リソース[1]について，テンプレートと同名のリソースが存在すれば，スタックに自動でインポートすることができます。AWS CLI では，aws cloudformation create-change-set コマンド[2]に --import-existing-resources オプションを指定することで，テンプレートに含まれるリソースのうち，自動インポートに対応していて同名のリソースが存在するものが，変更セットに Import アクションとして追加されます。 問題スタックをネスト...]]></content:encoded>
             <author>toshikish</author>
-        </item>
-        <item>
-            <title><![CDATA[私がAI時代に「プログラミングを愛する」ということ]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/06/01/105558</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/01/105558</guid>
-            <pubDate>Mon, 01 Jun 2026 01:55:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに AIに雛形を頼んだら、数秒で、過不足のないコードが返ってきた。 助かったはずなのに、手が止まった。 何かを、取り上げられた気がした。 このコードは、僕が書くはずだった。書かなくてよくなった。それの何が不満なんだ、と自分でも思う。雛形も、調査も、よくあるバグ取りも、頼めば一瞬で返ってくる。口では「助かる」と言う。なのに、好きだったはずの何かが、静かに手元からこぼれていく。たぶん、僕だけではない。 「プログラミングを愛する」とは、これからどういう意味になるのか。 意外かもしれないが、この問いには國分功一郎氏『暇と退屈の倫理学』がよく効く。退屈と暇をめぐるこの本は、突き詰めれば「人は何を愛…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AI 時代は (誰かに責任を押し付ければ) コードを読まずに品質保証できるのかもしれない]]></title>
-            <link>https://silasol.la/posts/2026-06-01-01_ai-driven-development-reconsider/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-06-01-01_ai-driven-development-reconsider/</guid>
-            <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[これ LLM の性能や品質の問題じゃないわ．]]></content:encoded>
-            <author>Masaki Haga</author>
         </item>
     </channel>
 </rss>
