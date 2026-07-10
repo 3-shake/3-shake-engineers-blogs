@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 10 Jul 2026 12:19:20 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Jul 2026 22:46:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -88,8 +88,8 @@
         </item>
         <item>
             <title><![CDATA[policy-botについて調べてみた]]></title>
-            <link>https://zenn.dev/bells17/articles/policy-bot-overview</link>
-            <guid isPermaLink="false">https://zenn.dev/bells17/articles/policy-bot-overview</guid>
+            <link>https://zenn.dev/3shake/articles/policy-bot-overview</link>
+            <guid isPermaLink="false">https://zenn.dev/3shake/articles/policy-bot-overview</guid>
             <pubDate>Tue, 30 Jun 2026 10:37:40 GMT</pubDate>
             <content:encoded><![CDATA[palantir/policy-botについて調べてみたのでメモまとめとしてはざっくりと下記のような感じ:GitHubのCODEOWNERのようなPRの承認ルールをより柔軟に設定できるOSSpolicy-botはGitHub Appとして設定して利用するそのため、policy-bot自体をホストする必要があるマージ可否を設定するためにリポジトリのstatus checkと組み合わせることで機能するCODEOWNERSとpolicy-botとの比較はこちらの記事が詳しいが、ざっくりとしては下記のようになる:機能的にはCODEOWNERSにしかできないことはほぼ無いpo...]]></content:encoded>
             <author>bells17</author>
