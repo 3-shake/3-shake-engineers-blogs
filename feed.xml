@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 11 Jul 2026 11:49:08 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Jul 2026 22:44:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[WSL の仮想ディスクサイズを Export & Import で縮小する]]></title>
+            <link>https://blog.1q77.com/2026/07/wsl-export-import/</link>
+            <guid isPermaLink="false">https://blog.1q77.com/2026/07/wsl-export-import/</guid>
+            <pubDate>Sat, 11 Jul 2026 13:28:32 GMT</pubDate>
+            <content:encoded><![CDATA[WSL の仮想ディスクの肥大化問題Windows の WSL は便利ですが、利用しているうちに仮想ディスク(VHDX)のサイズが思わぬ大きさになって Windows のディスクの空き容量が少なくなって困ることがあります。Windows が Enterprise Edition であれば optimize-vhd コマンドが使えるよとか、そうでない場合は diskpart コマンドが使えるよといった情報がありますが、一番確実なのは export & import だよなということになったのでその手順のメモです。]]></content:encoded>
+            <author>yteraoka</author>
+        </item>
         <item>
             <title><![CDATA[型は壁、Rustでもバグを直すな、表現できなくせよ]]></title>
             <link>https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/05/190828</guid>
             <pubDate>Fri, 05 Jun 2026 10:08:28 GMT</pubDate>
             <content:encoded><![CDATA[はじめに この記事では、avante.nvim の ACP 実装を読んでいきます。 github.com 結論から言うと、avante.nvim の ACP 実装は「stdio JSON-RPC client」です。Agent 固有の provider 実装ではありません。 provider 名で acp_providers を引き、adapter process を起動します。その後に ACP の initialize、session/new、session/load、session/prompt を送ります。返ってきた session/update は avante の history と…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ACP は provider ではなく、エディタと Agent の境界である]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/06/04/140823</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/04/140823</guid>
-            <pubDate>Thu, 04 Jun 2026 05:08:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに avante.nvim を Copilot 経由で使っていた。 github.com avante.nvim は、Neovim の中に AI チャットとコード編集の UI を足す plugin だ。どの AI につなぐかは provider という設定で選ぶ。 それはそれで動きます。GitHub Copilot の認証に乗れるし、Neovim の中から質問や編集を投げられる。けれど、Claude Code や Codex CLI を日常的に使っていると、少しずつ違和感が出てきました。 syu-m-5151.hatenablog.com ターミナルでは Claude Code や Co…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
