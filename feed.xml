@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 10 Jul 2026 22:46:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Jul 2026 11:49:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[型は壁、Rustでもバグを直すな、表現できなくせよ]]></title>
+            <link>https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</guid>
+            <pubDate>Sat, 11 Jul 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[関数型まつりで登壇したりします。https://2026.fp-matsuri.org]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Kubernetes Agent Sandboxについての調査]]></title>
             <link>https://sreake.com/blog/kubernetes-agent-sandbox-explained/</link>
@@ -261,14 +269,6 @@
             <pubDate>Thu, 04 Jun 2026 05:08:23 GMT</pubDate>
             <content:encoded><![CDATA[はじめに avante.nvim を Copilot 経由で使っていた。 github.com avante.nvim は、Neovim の中に AI チャットとコード編集の UI を足す plugin だ。どの AI につなぐかは provider という設定で選ぶ。 それはそれで動きます。GitHub Copilot の認証に乗れるし、Neovim の中から質問や編集を投げられる。けれど、Claude Code や Codex CLI を日常的に使っていると、少しずつ違和感が出てきました。 syu-m-5151.hatenablog.com ターミナルでは Claude Code や Co…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AWS CloudFormation スタックの子スタックにリソースを自動インポートする]]></title>
-            <link>https://zenn.dev/toshikish/articles/2bc8967824af0f</link>
-            <guid isPermaLink="false">https://zenn.dev/toshikish/articles/2bc8967824af0f</guid>
-            <pubDate>Mon, 01 Jun 2026 08:38:20 GMT</pubDate>
-            <content:encoded><![CDATA[隙間記事です。 背景AWS CloudFormation には自動インポート機能があり，対応リソース[1]について，テンプレートと同名のリソースが存在すれば，スタックに自動でインポートすることができます。AWS CLI では，aws cloudformation create-change-set コマンド[2]に --import-existing-resources オプションを指定することで，テンプレートに含まれるリソースのうち，自動インポートに対応していて同名のリソースが存在するものが，変更セットに Import アクションとして追加されます。 問題スタックをネスト...]]></content:encoded>
-            <author>toshikish</author>
         </item>
     </channel>
 </rss>
