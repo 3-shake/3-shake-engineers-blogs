@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 13 Jul 2026 12:23:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Jul 2026 22:45:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -43,7 +43,7 @@
             <link>https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</link>
             <guid isPermaLink="false">https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</guid>
             <pubDate>Sat, 11 Jul 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[関数型まつりで登壇したりします。https://2026.fp-matsuri.org]]></content:encoded>
+            <content:encoded><![CDATA[**「バグを直す」のはもうやめませんか。**あなたのシステムにもいませんか。`is_paid = true` なのに `payment_id` が null という、支払ったのか払ってないのかシュレディンガーの注文。`status = "verified"` なのに `verified_at` が存在しない、検証された記憶のない検証済みユーザー。彼らはバグではありません。**型が「そういう存在」を許可してしまった、正規の住人**です。本セッションの主張はシンプルです。型は壁である。コンパイラのご機嫌取りでも、IDEの補完を効かせるための飾りでもなく、「なり得ない状態」を物理的にこの世に存在させないための壁。バグはテストで捕まえるものではなく、**そもそも書けなくする**ものです。実装言語はRustです。「関数型まつりでRust？」と思ったあなた、安心してください。代数的データ型、イミュータビリティ、パターンマッチ——中身はほぼ関数型の道具箱です。Rust未経験でも大丈�夫なように、登場する言語仕様はその場で解説します。扱うのは以下の4パターン:- 状態ごとに型を分ける: 検証前の注文で価格計算しようとした瞬間、コンパイラに止められる世界- newtypeパターン: `CustomerId` と `OrderId` の取り違えを、レビュアーの目ではなくコンパイラが検出する- Smart Constructor: 「※必ずvalidateしてから使ってください」というお祈りコメントの卒業- Make Illegal States Unrepresentable: フラグ×Optionの組み合わせ爆発を、代数的データ型で根絶するおまけに、AIコーディングエージェント時代の話も。AIはコメントを平気で読み飛ばしますが、コンパイルエラーだけは無視できません。**型は「お願い」ではなく「壁」。** 人間にもAIにも等しく効く、最強の防壁の築き方を持ち帰ってください。DDDの知識は不要です。必要なのは「もうバグ調査で週末を潰したくない」という気持ちだけ。https://2026.fp-matsuri.org]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
