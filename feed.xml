@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 14 Jul 2026 22:46:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jul 2026 12:01:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[何が分からないか分からないとき、私は「学習」をやめる]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/15/105845</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/15/105845</guid>
+            <pubDate>Wed, 15 Jul 2026 01:58:45 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 前の記事に、「何が分からないか分からないとき、どう乗り越えているのか」というコメントをもらいました。 syu-m-5151.hatenablog.com 同じ問いは、学生からも、SNSでも、以前から聞かれていました。 その場では断片的に答えてきましたが、1つの形にしたことはありませんでした。 ただ、この問いに1つの記事で答えようとすると、手が止まりました。私も、新しい領域では何が分からないのか分かりません。用語を調べると、その説明に知らない用語が出てきます。公式ドキュメントを開いても、どのページから読めばよいのか判断できません。AIに聞けば整った説明は返ってきますが、どこを信じ、何を…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Cluster API × ArgoCD による GitOps 駆動のクラスタライフサイクル管理]]></title>
             <link>https://sreake.com/blog/manage-cluster-lifecycle-with-gitops-cluster-api-argocd/</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/why-tetragon-containerselector-detects-runc/</guid>
             <pubDate>Thu, 11 Jun 2026 22:22:29 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake 事業部の@hymaaa_kです。私は Sreake 事業部にて、 SRE や k8sやクラウドを用いた基盤開発をしています。 Tetragon の機能を検証している際に、 containerSel […]The post Tetragon の containerSelector はなぜ runc を検知するのか？ cgroup から見るコンテナの境界線 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[EKS Auto Mode 導入前に知っておきたい7つのこと]]></title>
-            <link>https://sreake.com/blog/7-things-to-know-before-using-eks-auto-mode/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/7-things-to-know-before-using-eks-auto-mode/</guid>
-            <pubDate>Wed, 10 Jun 2026 05:14:23 GMT</pubDate>
-            <content:encoded><![CDATA[自己紹介 Sreake事業部で長期インターンをさせていただいている大久保です。 本記事では2024年末に発表された Amazon EKS Auto Modeについての行った調査結果を紹介したいと思います。 ” クラスター […]The post EKS Auto Mode 導入前に知っておきたい7つのこと first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
