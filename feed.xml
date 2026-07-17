@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 16 Jul 2026 22:45:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Jul 2026 11:56:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[SRE NEXT 2026に参加してきました！]]></title>
+            <link>https://sreake.com/blog/sre-next-2026/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/sre-next-2026/</guid>
+            <pubDate>Fri, 17 Jul 2026 00:36:54 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 3-shakeでマーケティング・ブランディングを行なっている羽山です。 2026/7/10〜11の2日間、TOC有明にて SRE NEXT 2026 が開催されまして、スリーシェイクもスポンサーとしてブース出展 […]The post SRE NEXT 2026に参加してきました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[何が分からないか分からないとき、私は「学習」をやめる]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/15/105845</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/nix-benefits-for-web-development/</guid>
             <pubDate>Fri, 12 Jun 2026 02:04:17 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 最近、周囲でNixが脚光を浴び始めているように感じます。そこでWebエンジニアの一人として、導入する最中で感じたNixの魅力を紹介します。 想定読者 また、この記事ではNixの仕組みや構文の詳細は解説しません。 […]The post Webエンジニアが感じたNixの魅力 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[Tetragon の containerSelector はなぜ runc を検知するのか？ cgroup から見るコンテナの境界線]]></title>
-            <link>https://sreake.com/blog/why-tetragon-containerselector-detects-runc/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/why-tetragon-containerselector-detects-runc/</guid>
-            <pubDate>Thu, 11 Jun 2026 22:22:29 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake 事業部の@hymaaa_kです。私は Sreake 事業部にて、 SRE や k8sやクラウドを用いた基盤開発をしています。 Tetragon の機能を検証している際に、 containerSel […]The post Tetragon の containerSelector はなぜ runc を検知するのか？ cgroup から見るコンテナの境界線 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
