@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 19 Jul 2026 11:49:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jul 2026 22:44:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[HTTPS のはずなのに警告が出てめちゃ調べたけどよくわからなかった]]></title>
+            <link>https://silasol.la/posts/2026-07-20-01_quic-not-secure/</link>
+            <guid isPermaLink="false">https://silasol.la/posts/2026-07-20-01_quic-not-secure/</guid>
+            <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[このサイトを Workers に移してから警告が出るようになったので調査しました．対症療法は試しましたが根本的な理由は分かっていません．]]></content:encoded>
+            <author>Masaki Haga</author>
+        </item>
         <item>
             <title><![CDATA[SRE NEXT 2026に参加してきました！]]></title>
             <link>https://sreake.com/blog/sre-next-2026/</link>
@@ -261,14 +269,6 @@
             <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[HKT よりもっと具体的な話をします．]]></content:encoded>
             <author>Masaki Haga</author>
-        </item>
-        <item>
-            <title><![CDATA[Webエンジニアが感じたNixの魅力]]></title>
-            <link>https://sreake.com/blog/nix-benefits-for-web-development/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/nix-benefits-for-web-development/</guid>
-            <pubDate>Fri, 12 Jun 2026 02:04:17 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 最近、周囲でNixが脚光を浴び始めているように感じます。そこでWebエンジニアの一人として、導入する最中で感じたNixの魅力を紹介します。 想定読者 また、この記事ではNixの仕組みや構文の詳細は解説しません。 […]The post Webエンジニアが感じたNixの魅力 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
