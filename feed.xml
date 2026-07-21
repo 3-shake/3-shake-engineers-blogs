@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 20 Jul 2026 22:45:37 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Jul 2026 01:35:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[言葉を契約として扱わない]]></title>
+            <link>https://zenn.dev/kamos/articles/words_not_contract</link>
+            <guid isPermaLink="false">https://zenn.dev/kamos/articles/words_not_contract</guid>
+            <pubDate>Tue, 21 Jul 2026 00:18:17 GMT</pubDate>
+            <content:encoded><![CDATA[自分のような理屈っぽい人間は、言葉というものに正確性を求めると思う。しかし往々にしてコミュニケーションの場では言葉通りに受け取らないほうがいいことがある。 契約を作る理由契約では、言葉通りに物事を受け取っていい。それを前提に書かれている。解釈が一意に定まるように言葉を尽くす。このような書き方をするのは、万が一のときに揉めないように、だったり責任の所在を明らかにするためだったりする。 コミュニケーションは、伝えるために言葉を使う言葉を契約と捉えたとき、相手が事実と異なる表現をしてしまうと「嘘をつくな」という反応になる。正しく言語化しろ、という圧をかけることになる。そして最後に...]]></content:encoded>
+            <author>Makoto Kamono</author>
+        </item>
         <item>
             <title><![CDATA[HTTPS のはずなのに警告が出てめちゃ調べたけどよくわからなかった]]></title>
             <link>https://silasol.la/posts/2026-07-20-01_quic-not-secure/</link>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Kubernetes祭り #1 のOP/EDで使用したスライドですhttps://3-shake.connpass.com/event/389755/]]></content:encoded>
             <author>bells17</author>
-        </item>
-        <item>
-            <title><![CDATA[Standard ML で一階の型クラスを作って遊ぶ (λ Kansai in Summer 2026 補足)]]></title>
-            <link>https://silasol.la/posts/2026-06-14-01_sml-type-class/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-06-14-01_sml-type-class/</guid>
-            <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[HKT よりもっと具体的な話をします．]]></content:encoded>
-            <author>Masaki Haga</author>
         </item>
     </channel>
 </rss>
