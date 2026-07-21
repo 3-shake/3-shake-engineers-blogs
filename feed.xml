@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 21 Jul 2026 01:55:02 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Jul 2026 12:04:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Prompting Claude Fable 5ってちゃんと読みました]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/21/111713</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/21/111713</guid>
+            <pubDate>Tue, 21 Jul 2026 02:17:13 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 私はFable 5の性能を語りたい。そして、その前に自分のSkillを疑いたい。 以前のモデル向けに書いた指示は、新しいモデルでも動きます。 しかし、動くことは、能力を引き出すことを意味しません。 Prompting Claude Fable 5という題名から想像するのは、Fable 5に効く指示文の一覧です。ところが本文には、タイムアウト、ストリーミング、メモリ、サブエージェント、フォールバック、send_to_userまで並びます。プロンプトの話を読みに来たはずが、途中からクライアント、実行基盤、UI、権限管理の話を読んでいる。題名はプロンプトですが、読み終わるころには実装チケッ…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[言葉を契約として扱わない]]></title>
             <link>https://zenn.dev/kamos/articles/words_not_contract</link>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 17 Jun 2026 03:57:53 GMT</pubDate>
             <content:encoded><![CDATA[作れる。速く作れる。だが、作るとは、未来へ債務を発行することだ。 読み終えてから、1つの言い換えが頭から離れませんでした。作ることは、完了する動詞ではない。作った瞬間に「維持する・確認し続ける・説明し続ける・責任を取り続ける」という義務を、未来に対して発行している。リリースは一瞬で、支払いはそのあとずっと続く。私はキャリアのほとんどを「作れるか」「速く作れるか」に注ぎ、その発行し続けた債務を、同じ熱量で見積もってはきませんでした。胃のあたりは、いまも少し重い。 Susanne Kaiser 著『Architecture for Flow: Adaptive Systems with Domai…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes祭り #1 OP/ED]]></title>
-            <link>https://speakerdeck.com/bells17/ed</link>
-            <guid isPermaLink="false">https://speakerdeck.com/bells17/ed</guid>
-            <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Kubernetes祭り #1 のOP/EDで使用したスライドですhttps://3-shake.connpass.com/event/389755/]]></content:encoded>
-            <author>bells17</author>
         </item>
     </channel>
 </rss>
