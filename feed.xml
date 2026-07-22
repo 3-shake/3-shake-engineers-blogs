@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 21 Jul 2026 22:45:28 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jul 2026 12:07:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[EKS Auto Mode と標準クラスタの違いを4つの軸で比較する]]></title>
+            <link>https://sreake.com/blog/difference-between-eks-auto-mode-and-standard-cluster/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/difference-between-eks-auto-mode-and-standard-cluster/</guid>
+            <pubDate>Wed, 22 Jul 2026 09:20:57 GMT</pubDate>
+            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部インターン生の大石です。SRE の技術の調査と研究を目的とした長期インターンに参加しています。 本記事では、Amazon EKS の Auto Mode と 標準クラスタ  […]The post EKS Auto Mode と標準クラスタの違いを4つの軸で比較する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[ソフトウェアエンジニアリングと向き合い続ける AWS Jr. Champions選出前後で考えたこと]]></title>
+            <link>https://speakerdeck.com/ota1022/sohutoueaenziniaringutoxiang-kihe-isok-keru-aws-jr-championsxuan-chu-qian-hou-dekao-etakoto</link>
+            <guid isPermaLink="false">https://speakerdeck.com/ota1022/sohutoueaenziniaringutoxiang-kihe-isok-keru-aws-jr-championsxuan-chu-qian-hou-dekao-etakoto</guid>
+            <pubDate>Wed, 22 Jul 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[JAWS-UG 茨城 #15 Japan AWS Jr.Champion & TopE LT大会 のLT登壇資料です。https://jawsug-ibaraki.connpass.com/event/397307/]]></content:encoded>
+            <author>Itaru Ota</author>
+        </item>
         <item>
             <title><![CDATA[Prompting Claude Fable 5ってちゃんと読みました]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/21/111713</link>
@@ -253,22 +269,6 @@
             <pubDate>Fri, 19 Jun 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[社内勉強会の内容ecspressoが便利すぎて勢い余って、自分もインスパイアされてコードを書いた話https://github.com/masasuzu/clrnd]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[Snowflake Cortex AIのコスト管理・監視 実践ガイド — 本番運用前に押さえておきたいこと]]></title>
-            <link>https://sreake.com/blog/snowflake-cortex-ai-cost-management-and-monitoring-guide/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/snowflake-cortex-ai-cost-management-and-monitoring-guide/</guid>
-            <pubDate>Thu, 18 Jun 2026 05:51:15 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Snowflake Cortex AI関数を全部試してみた — SQLだけでここまでできるAI処理（以降、1本目のブログと呼称）でCortex AI関数を検証した際、同じJSON分析クエリを2つのモデルで実行し […]The post Snowflake Cortex AIのコスト管理・監視 実践ガイド — 本番運用前に押さえておきたいこと first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[創造は、未来への債務の発行である - Architecture for Flow の読書感想文]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/06/17/125753</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/17/125753</guid>
-            <pubDate>Wed, 17 Jun 2026 03:57:53 GMT</pubDate>
-            <content:encoded><![CDATA[作れる。速く作れる。だが、作るとは、未来へ債務を発行することだ。 読み終えてから、1つの言い換えが頭から離れませんでした。作ることは、完了する動詞ではない。作った瞬間に「維持する・確認し続ける・説明し続ける・責任を取り続ける」という義務を、未来に対して発行している。リリースは一瞬で、支払いはそのあとずっと続く。私はキャリアのほとんどを「作れるか」「速く作れるか」に注ぎ、その発行し続けた債務を、同じ熱量で見積もってはきませんでした。胃のあたりは、いまも少し重い。 Susanne Kaiser 著『Architecture for Flow: Adaptive Systems with Domai…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
