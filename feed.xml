@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 22 Jul 2026 22:46:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Jul 2026 12:06:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[vCluster と Grafana Alloy によるマルチテナント Kubernetes 環境のオブザーバビリティ基盤]]></title>
+            <link>https://sreake.com/blog/vcluster-grafana-alloy-observability/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/vcluster-grafana-alloy-observability/</guid>
+            <pubDate>Thu, 23 Jul 2026 09:06:15 GMT</pubDate>
+            <content:encoded><![CDATA[自己紹介 千葉工業大学大学院 情報科学研究科 情報科学専攻 修士２年の井上 裕介と申します. 大学では主にメタヒューリスティクスに関する最適化アルゴリズムの研究に従事しております. はじめに 複数のチームやプロジェクトが […]The post vCluster と Grafana Alloy によるマルチテナント Kubernetes 環境のオブザーバビリティ基盤 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[どこまでAIに任せるか 〜確率論と決定論の境界決定〜]]></title>
+            <link>https://speakerdeck.com/shukob/dokomadeainiren-seruka-que-lu-lun-tojue-ding-lun-nojing-jie-jue-ding</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/dokomadeainiren-seruka-que-lu-lun-tojue-ding-lun-nojing-jie-jue-ding</guid>
+            <pubDate>Thu, 23 Jul 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[3-SHAKE「AIを紡ぐ者たち #2 ～本当にラクになった？生成AIで削った業務・増えた業務～」にて登壇しました。https://3-shake.connpass.com/event/399003/生成AIで業務は「削れた」のではなく、別の場所に「移った」だけ、という実感から出発する話です。生成AIは確率論、業務システムが要求するのは決定論。この境界をどう設計するかを、道交法判定・設計図面の構造化・フィジカルAI×MPCの使い分けといった実案件（Gemini / Vertex AI）を通して共有します。「AIを信じすぎないことが、AIを最も活かす」]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[EKS Auto Mode と標準クラスタの違いを4つの軸で比較する]]></title>
             <link>https://sreake.com/blog/difference-between-eks-auto-mode-and-standard-cluster/</link>
@@ -253,22 +269,6 @@
             <pubDate>Mon, 22 Jun 2026 03:07:56 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． システムを運用する上で，しばしば権限を管理することがあるかと思います．パブリッククラウドにはマネージドの管理基盤もあるでしょう．唐突ですが，こう […]The post Zanzibar モデルで考えるグラフの単調性と権限追記の安全性 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[TrueTime だけではない Spanner クエリエンジンの役割]]></title>
-            <link>https://sreake.com/blog/spanner-query-engine-functionability/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/spanner-query-engine-functionability/</guid>
-            <pubDate>Mon, 22 Jun 2026 03:05:43 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． 以前の記事で Spanner が Paxos による分散合意と TrueTime を使って，データの整合性といったストレージ層の難しい問題をどう […]The post TrueTime だけではない Spanner クエリエンジンの役割 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-06-18 ecspressoのtfstate参照が便利すぎた話]]></title>
-            <link>https://speakerdeck.com/masasuzu/2026-06-18-ecspressonotfstatecan-zhao-kabian-li-sukitahua</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-06-18-ecspressonotfstatecan-zhao-kabian-li-sukitahua</guid>
-            <pubDate>Fri, 19 Jun 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[社内勉強会の内容ecspressoが便利すぎて勢い余って、自分もインスパイアされてコードを書いた話https://github.com/masasuzu/clrnd]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
         </item>
     </channel>
 </rss>
