@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 23 Jul 2026 22:45:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Jul 2026 12:01:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-07-24 tfpolicyを試してみたのですが、、、、]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-07-24-tfpolicywoshi-sitemitanodesuga</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-07-24-tfpolicywoshi-sitemitanodesuga</guid>
+            <pubDate>Fri, 24 Jul 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[社内勉強会でtfplanをざっくり調べた結果の共有https://www.hashicorp.com/ja/blog/introducing-tfpolicy-a-declarative-policy-workflow-built-for-terraformhttps://developer.hashicorp.com/terraform/policy]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[説明を足す前に、どこで止まったかを分ける]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/24/110856</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/24/110856</guid>
+            <pubDate>Fri, 24 Jul 2026 02:08:56 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに AIにコードを渡せば、多くの場合、流暢な説明は返ってくる。けれど、人が止まる理由は同じではない。 見慣れない演算子が一つだけ置かれたコードを前にすると、私は意味を知らないために止まる。使われている関数の定義が別の場所にあるコードでは、何を探すべきかは分かっていても、必要な情報が手元にないために止まる。すべての構文を知っていても、変数の値が何度も入れ替わる処理では、途中の状態を頭の中だけで動かせずに止まる。 外から見れば、どれも「コードが分からない」という同じ沈黙である。しかし、最初の停止に必要なのは知識であり、二つ目に必要なのは情報へ戻る経路であり、三つ目に必要なのは関係を外へ出す表…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[vCluster と Grafana Alloy によるマルチテナント Kubernetes 環境のオブザーバビリティ基盤]]></title>
             <link>https://sreake.com/blog/vcluster-grafana-alloy-observability/</link>
@@ -253,22 +269,6 @@
             <pubDate>Tue, 23 Jun 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[めぐろLT #37「AI×チーム開発、みんなどうしてる？」のLT登壇資料です。https://meguro-lt.connpass.com/event/390951/]]></content:encoded>
             <author>Itaru Ota</author>
-        </item>
-        <item>
-            <title><![CDATA[Firestore の競合解決とデータモデルの選択]]></title>
-            <link>https://sreake.com/blog/firestore-conflict-resolution-and-data-model-selection/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/firestore-conflict-resolution-and-data-model-selection/</guid>
-            <pubDate>Mon, 22 Jun 2026 03:10:02 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． アプリケーションがオフラインに対応している場合，二つの端末が同じデータを別々に編集した上でまたオンラインに戻るということがあります．こうして通信 […]The post Firestore の競合解決とデータモデルの選択 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[Zanzibar モデルで考えるグラフの単調性と権限追記の安全性]]></title>
-            <link>https://sreake.com/blog/graphs-monotonicity-and-permission-safety-on-zanzibar-model/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/graphs-monotonicity-and-permission-safety-on-zanzibar-model/</guid>
-            <pubDate>Mon, 22 Jun 2026 03:07:56 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake 事業部の芳賀雅樹 (@silasolla) です． システムを運用する上で，しばしば権限を管理することがあるかと思います．パブリッククラウドにはマネージドの管理基盤もあるでしょう．唐突ですが，こう […]The post Zanzibar モデルで考えるグラフの単調性と権限追記の安全性 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
