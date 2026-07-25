@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 25 Jul 2026 11:52:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Jul 2026 22:45:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[全部読まなくても、読まなかった場所には責任を持つ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</guid>
+            <pubDate>Sat, 25 Jul 2026 13:27:24 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに かつて、コードを読むとき、私はつい先頭から順番に理解しようとしていた。知らない名前があれば止まり、呼び出し先を開き、さらに別の定義へ移る。気がつくと、最初に何を知りたかったのかを忘れていた。 読むのが遅いのは、目の動きが遅いからではなかった。すべてを同じ重要度で読み、短い時間だけ保持できる記憶へ、目的、現在地、通過した経路、細部を同時に載せていたからだ。 いまはAIに調査と実装を任せれば、入口、主要な処理、依存の候補だけでなく、動く初稿まで早く得られる。私の作業でも、以前より多くの案を少ない人数で試せるようになった。それでも、どこを一つのまとまりとして見て、どの目印を信じ、何を読まな…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[2026-07-24 tfpolicyを試してみたのですが、、、、]]></title>
             <link>https://speakerdeck.com/masasuzu/2026-07-24-tfpolicywoshi-sitemitanodesuga</link>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 23 Jun 2026 12:51:58 GMT</pubDate>
             <content:encoded><![CDATA[はじめに またバズワードが来たな。 2026年6月、「ループエンジニアリング」という言葉でタイムラインが埋まった。 プロンプト、コンテキスト、ハーネス。半年ごとに、新しい看板が立つ。 号令はこうだ。Peter Steinbergerが「コーディングエージェントにプロンプトを書くのはもうやめろ。エージェントにプロンプトを書くループを設計しろ」と書いた。Claude Codeを率いるBoris Chernyも、「私はもうClaudeにプロンプトを書かない。ループが走っていて、それがClaudeにプロンプトを書く」と続けた。 ところが、その号令が流れてきた朝、私はちょうどKubernetesのコント…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[コミットの「なぜ」を読む]]></title>
-            <link>https://speakerdeck.com/ota1022/komitutono-naze-wodu-mu</link>
-            <guid isPermaLink="false">https://speakerdeck.com/ota1022/komitutono-naze-wodu-mu</guid>
-            <pubDate>Tue, 23 Jun 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[めぐろLT #37「AI×チーム開発、みんなどうしてる？」のLT登壇資料です。https://meguro-lt.connpass.com/event/390951/]]></content:encoded>
-            <author>Itaru Ota</author>
         </item>
     </channel>
 </rss>
