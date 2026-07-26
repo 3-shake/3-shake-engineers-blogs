@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 25 Jul 2026 22:45:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Jul 2026 11:50:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,19 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[SESAME 5 のモーターを DIY で交換しました]]></title>
+            <link>https://blog.1q77.com/2026/07/replace-sesame5-moter/</link>
+            <guid isPermaLink="false">https://blog.1q77.com/2026/07/replace-sesame5-moter/</guid>
+            <pubDate>Sat, 25 Jul 2026 13:47:10 GMT</pubDate>
+            <content:encoded><![CDATA[2年7カ月ほど利用してきたスマートロックの SESAME 5 が突然機能しなくなりました。スマホでの操作や SESAME FACE との連携で反応はしてカチカチと小さな音を立てるけれどもサムターンは回らない状況でした。]]></content:encoded>
+            <author>yteraoka</author>
+        </item>
+        <item>
             <title><![CDATA[全部読まなくても、読まなかった場所には責任を持つ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</guid>
             <pubDate>Sat, 25 Jul 2026 13:27:24 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに かつて、コードを読むとき、私はつい先頭から順番に理解しようとしていた。知らない名前があれば止まり、呼び出し先を開き、さらに別の定義へ移る。気がつくと、最初に何を知りたかったのかを忘れていた。 読むのが遅いのは、目の動きが遅いからではなかった。すべてを同じ重要度で読み、短い時間だけ保持できる記憶へ、目的、現在地、通過した経路、細部を同時に載せていたからだ。 いまはAIに調査と実装を任せれば、入口、主要な処理、依存の候補だけでなく、動く初稿まで早く得られる。私の作業でも、以前より多くの案を少ない人数で試せるようになった。それでも、どこを一つのまとまりとして見て、どの目印を信じ、何を読まな…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 知らない名前があれば止まり、呼び出し先を開く。そこにもまた、知らない名前がある。 かつての私は、そうやって定義から定義へ移っていた。 たどり着いたころには、最初に何を知りたかったのかを忘れている。 戻る道は残っていた。開いたタブは全部そこにある。それでも、なぜ最初のファイルを開いたのかだけが出てこない。仕方がないので、また先頭から読み始める。 あのころ読むのが遅かったのは、目の動きが遅いからではない。すべてを同じ重要度で読み、一度に扱える量が限られた注意へ、目的、現在地、通過した経路、細部を同時に載せていたからだ。最初に載せた目的が、いちばん先に落ちる。 いまはAIにコードを調べさせ…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/26/004107</guid>
             <pubDate>Thu, 25 Jun 2026 15:41:07 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 金曜の夜だった。10個のコミットを git rebase -i で並べ替えていた。4個目で衝突した。慌てて解決したが、解決を間違えた。git rebase --abort で巻き戻し、最初からやり直す。2回目はもっと雑になり、3回目で reflog を漁ってコミットを拾い直した。本番でもチームのリポジトリでもない。自分のローカルブランチを、自分一人で壊していた。 この冷や汗には覚えがある。git を10年触っていても消えない。いつ上達するんだ。毎回調べている気がするし雰囲気で触っている。怖いのは衝突そのものではない。衝突が起きた瞬間、リポジトリが「途中の状態」で固まり、間違えるとやり…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ループエンジニアリングは、サイバネティクスの再発見だ]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/06/23/215158</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/06/23/215158</guid>
-            <pubDate>Tue, 23 Jun 2026 12:51:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに またバズワードが来たな。 2026年6月、「ループエンジニアリング」という言葉でタイムラインが埋まった。 プロンプト、コンテキスト、ハーネス。半年ごとに、新しい看板が立つ。 号令はこうだ。Peter Steinbergerが「コーディングエージェントにプロンプトを書くのはもうやめろ。エージェントにプロンプトを書くループを設計しろ」と書いた。Claude Codeを率いるBoris Chernyも、「私はもうClaudeにプロンプトを書かない。ループが走っていて、それがClaudeにプロンプトを書く」と続けた。 ところが、その号令が流れてきた朝、私はちょうどKubernetesのコント…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
