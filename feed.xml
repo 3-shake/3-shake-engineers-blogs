@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 27 Jul 2026 06:15:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jul 2026 12:38:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[[プラットフォームは、何を支えるのか] 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか]]></title>
+            <link>https://zenn.dev/hakushou41/articles/89d8ff677dec5a</link>
+            <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/89d8ff677dec5a</guid>
+            <pubDate>Mon, 27 Jul 2026 12:03:44 GMT</pubDate>
+            <content:encoded><![CDATA[第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか本記事について本記事に登場する企業、組織、人物、プロダクト、出来事はすべて架空です。公開されているPlatform EngineeringおよびSREの知見をもとに構成した思考実験であり、筆者が関わった特定の企業、案件、組織を説明・再現するものではありません。前の文章 : 第1部:便利な社内ツールが、プラットフォームとして扱われるまで プロダクトを作るハードルが下がったNorthstar Worksが標準的な開発経路を提供するようになってから、数年が経った。その間に、ソフトウェア開発の環境は大きく変...]]></content:encoded>
+            <author>Shohei Takamura</author>
+        </item>
+        <item>
+            <title><![CDATA[[プラットフォームは、何を支えるのか] 第1部:便利な社内ツールが、プラットフォームとして扱われるまで]]></title>
+            <link>https://zenn.dev/hakushou41/articles/603d1d1b207878</link>
+            <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/603d1d1b207878</guid>
+            <pubDate>Mon, 27 Jul 2026 12:03:36 GMT</pubDate>
+            <content:encoded><![CDATA[第1部:便利な社内ツールが、プラットフォームとして扱われるまで本記事について本記事に登場する企業、組織、人物、プロダクト、障害、会話はすべて架空です。公開されているPlatform EngineeringおよびSREの知見をもとに構成した思考実験であり、筆者が関わった特定の企業、案件、組織を説明・再現するものではありません。続き : 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか 開発を助ける道具は、いつからサービスになるのか架空のソフトウェア企業「Northstar Works」には、十数個の開発チームがあった。各チームはそれぞれ異なるプロダ...]]></content:encoded>
+            <author>Shohei Takamura</author>
+        </item>
         <item>
             <title><![CDATA[【運用編】SLI/SLOをチームに定着させ、運用で育てる]]></title>
             <link>https://zenn.dev/hakushou41/articles/165afb6f3ca005</link>
@@ -253,22 +269,6 @@
             <pubDate>Fri, 03 Jul 2026 05:50:55 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部の加藤 泰隆です。私はPMとしてプロジェクト推進支援を実施しております。当部ではSRE支援に止まらず、様々なご支援をさせて頂いているのですが、セキュリティもその一つとなります。私たちだけでなく […]The post AIエージェントの危険な振る舞いを水際で防ぐOSS(Aigis) first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[Agents Window 時代の Cursor 活用 3選]]></title>
-            <link>https://sreake.com/blog/how-to-use-cursor-in-the-agents-window-era-3-tips/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/how-to-use-cursor-in-the-agents-window-era-3-tips/</guid>
-            <pubDate>Wed, 01 Jul 2026 09:27:26 GMT</pubDate>
-            <content:encoded><![CDATA[Sreake事業部では、AI駆動開発の推進、および顧客案件で安全にAIツールを活用できる体制を整えるため、2025年7月より「AI駆動開発検証チーム」を発足・始動しています。 当チームでは、主に以下のような取り組みを行っ […]The post Agents Window 時代の Cursor 活用 3選 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[policy-botについて調べてみた]]></title>
-            <link>https://zenn.dev/3shake/articles/policy-bot-overview</link>
-            <guid isPermaLink="false">https://zenn.dev/3shake/articles/policy-bot-overview</guid>
-            <pubDate>Tue, 30 Jun 2026 10:37:40 GMT</pubDate>
-            <content:encoded><![CDATA[palantir/policy-botについて調べてみたのでメモまとめとしてはざっくりと下記のような感じ:GitHubのCODEOWNERのようなPRの承認ルールをより柔軟に設定できるOSSpolicy-botはGitHub Appとして設定して利用するそのため、policy-bot自体をホストする必要があるマージ可否を設定するためにリポジトリのstatus checkと組み合わせることで機能するCODEOWNERSとpolicy-botとの比較はこちらの記事が詳しいが、ざっくりとしては下記のようになる:機能的にはCODEOWNERSにしかできないことはほぼ無いpo...]]></content:encoded>
-            <author>bells17</author>
         </item>
     </channel>
 </rss>
