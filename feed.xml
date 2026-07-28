@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 27 Jul 2026 22:46:31 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jul 2026 12:11:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題]]></title>
+            <link>https://sreake.com/blog/difference-between-container-and-webassembly/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/difference-between-container-and-webassembly/</guid>
+            <pubDate>Mon, 27 Jul 2026 22:52:20 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに WebAssembly（以下、Wasm）は、ブラウザ上で高い実行性能を得るために生まれた技術です。近年は、軽量性や可搬性、サンドボックスによる分離といった特徴から、ブラウザの外でも活用が広がっています。なかでも […]The post ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[[プラットフォームは、何を支えるのか] 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか]]></title>
             <link>https://zenn.dev/hakushou41/articles/89d8ff677dec5a</link>
@@ -29,6 +37,14 @@
             <pubDate>Mon, 27 Jul 2026 12:03:36 GMT</pubDate>
             <content:encoded><![CDATA[第1部:便利な社内ツールが、プラットフォームとして扱われるまで本記事について本記事に登場する企業、組織、人物、プロダクト、障害、会話はすべて架空です。公開されているPlatform EngineeringおよびSREの知見をもとに構成した思考実験であり、筆者が関わった特定の企業、案件、組織を説明・再現するものではありません。続き : 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか 開発を助ける道具は、いつからサービスになるのか架空のソフトウェア企業「Northstar Works」には、十数個の開発チームがあった。各チームはそれぞれ異なるプロダ...]]></content:encoded>
             <author>Shohei Takamura</author>
+        </item>
+        <item>
+            <title><![CDATA[2026-07-28 3-shakeテックランチ Cloud Run のデプロイパラメータを考える / Cloud Run Deploy Parameter]]></title>
+            <link>https://speakerdeck.com/masasuzu/cloud-run-deploy-parameter</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/cloud-run-deploy-parameter</guid>
+            <pubDate>Mon, 27 Jul 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://3-shake.connpass.com/event/399469/ で発表した内容]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
         </item>
         <item>
             <title><![CDATA[【運用編】SLI/SLOをチームに定着させ、運用で育てる]]></title>
@@ -253,22 +269,6 @@
             <pubDate>Fri, 03 Jul 2026 23:59:36 GMT</pubDate>
             <content:encoded><![CDATA[フォロワーシップは時としてリーダーシップに見えるし、根底に流れる考え方は似ているこにふぁーさんの「"提案"のレベルを上げる」という記事がとても好きで、何度も人に共有したことがある。https://konifar-zatsu.hatenadiary.jp/entry/2023/11/01/193210ざっくり中身としては、以下の4つのレベルをうまくコントロールできるようになろう、という内容。• レベル0: 「どうすればいいですか」• レベル1: 「どれにしましょうか」• レベル2: 「自分はこれがいいと思います」• レベル3: 「これでいいですか」じゃあどうやってこのレベ...]]></content:encoded>
             <author>Makoto Kamono</author>
-        </item>
-        <item>
-            <title><![CDATA[AI SREの現在地とその可能性]]></title>
-            <link>https://sreake.com/blog/ai-sre-current-position-and-potential/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/ai-sre-current-position-and-potential/</guid>
-            <pubDate>Fri, 03 Jul 2026 05:51:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 近日、AIの急速な進歩によってAIエージェントを使ってトイルを解消できる道が開けてきています。以前のAIではインフラを熟知した人の所謂エスパー力といわれる知見を覚えさせることが困難なため、Google検索と同じ […]The post AI SREの現在地とその可能性 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[AIエージェントの危険な振る舞いを水際で防ぐOSS(Aigis)]]></title>
-            <link>https://sreake.com/blog/aigis-ai-agent-behavioral-detection/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/aigis-ai-agent-behavioral-detection/</guid>
-            <pubDate>Fri, 03 Jul 2026 05:50:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部の加藤 泰隆です。私はPMとしてプロジェクト推進支援を実施しております。当部ではSRE支援に止まらず、様々なご支援をさせて頂いているのですが、セキュリティもその一つとなります。私たちだけでなく […]The post AIエージェントの危険な振る舞いを水際で防ぐOSS(Aigis) first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
