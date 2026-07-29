@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 29 Jul 2026 12:13:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jul 2026 22:46:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -21,6 +21,14 @@
             <pubDate>Wed, 29 Jul 2026 02:47:48 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 個々の関数は読める。使われている概念も知っている。 それなのに、値の変化と呼び出し順と失敗時の戻り方を一緒に動かそうとすると、前に見た関係が抜け落ちていく。 足りないのは、たぶん理解力ではない。 同じ関数をもう一度開く。さっき確かめたはずの分岐を、もう一度目で追う。追っているあいだに、その前に確かめた状態のほうが消える。長いコードを前にして私が感じるのは難しさというより、この往復である。 この状態で説明を増やしても、必ずしも楽にはならない。情報が足りないのではなく、考えるために一時的に保持できる量を超えているからだ。 生成AIは私より長いコードを一度に受け取り、関係を要約できる。扱え…]]></content:encoded>
             <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[Standard ML のシンタクスハイライトが読みにくくて直した]]></title>
+            <link>https://silasol.la/posts/2026-07-29-01_sml-highlight-readable/</link>
+            <guid isPermaLink="false">https://silasol.la/posts/2026-07-29-01_sml-highlight-readable/</guid>
+            <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[最低限のハイライトは動いていたけれど，平坦で認知負荷が高かったので生成 AI に相談した．]]></content:encoded>
+            <author>Masaki Haga</author>
         </item>
         <item>
             <title><![CDATA[ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題]]></title>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 07 Jul 2026 04:07:30 GMT</pubDate>
             <content:encoded><![CDATA[はじめに タイトル案を5つ送った。返ってきたのは、そのどれでもなかった。 「1on1、雑談タイム──これらが失敗に終わるのはなぜか」。連載第4回の公開タイトルだ。編集部がつけたタイトルは、記事のキーワードだった「善意」や「心理的安全性」という抽象を、1on1と雑談タイムという、誰もが座らされたことのある具体へ引き下ろしていた。私の5案は、どれもその引き下ろしができていなかった。フィードバックを見て、最初に来たのは「確かに良くなっている」という実感だった。このタイトルは私の案のどれよりも、記事の中身に忠実だった。実感の数秒あとに、悔しさが来た。5案も出して、届かなかった。悔しかったのは編集に替え…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Compute EngineにCloud Storageのバケットをマウントしてみた]]></title>
-            <link>https://zenn.dev/akasan/articles/cloud_storage_on_compute_engine</link>
-            <guid isPermaLink="false">https://zenn.dev/akasan/articles/cloud_storage_on_compute_engine</guid>
-            <pubDate>Mon, 06 Jul 2026 15:20:19 GMT</pubDate>
-            <content:encoded><![CDATA[今回は、Google CloudのCompute Engineに対して、Cloud Storageをマウントする方法を調べたので共有します。 この記事で学べること！！今回の記事でやりたいこととしては、とてもシンプルですがCompute Engine上にCloud Storageのバケットをマウントして、外部ストレージのように取り扱う方法を提供します。具体的には以下の内容を学ぶことができます。Cloud Storage FUSE（gcsfuse）を使ってCloud StorageバケットをCompute EngineにマウントするIAMと権限の適切な設定方法を理解する起動時の...]]></content:encoded>
-            <author>Daisuke Akagawa</author>
         </item>
     </channel>
 </rss>
