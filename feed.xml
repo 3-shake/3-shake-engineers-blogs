@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 29 Jul 2026 22:46:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jul 2026 12:07:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[テストが通ったあと、理解はどこに残るのか]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</guid>
+            <pubDate>Thu, 30 Jul 2026 03:01:14 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 生成されたコードを、十分に読まずにマージした。 障害は起きなかった。原因を半日追うような挙動も、出なかった。 払っていることに気づいたのは、ずっとあとだった。 壊れてくれるなら、まだ分かりやすかったのだと思う。実際に起きたのは、どの変更も動いていて、どの変更も少しだけ説明できない、という状態がゆっくり広がることだった。一つずつなら思い出せる。並べると、なぜこの形なのかを言える範囲だけが減っていく。ある日リポジトリを開いて、自分が説明できない側のほうが多いことに気づく。コードベースは、いつのまにか広大になっている。 要約は読んでいた。「入力を検証し、データを保存し、結果を返す」。その説…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[頭に入らないなら、関係を外へ出す]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/29/114748</link>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 08 Jul 2026 01:20:45 GMT</pubDate>
             <content:encoded><![CDATA[「相手の立場に立って考える」というのは難しい。そう言われたからといって、急にできるものでもない。それでも、何か手がかりみたいなものはあるんじゃないかと思って、自分なりにやっていることを書いてみる。「相手の立場に立って考える」というのは、新卒研修や社会人の研修、遡れば道徳の授業なんかでもよく扱われる。これだけ多くの場で言及されるというのは、それ自体が難しくて、社会人になったあとでも実践しにくいからなんだと思う。実際、英語には "walk a mile in someone's shoes" という言葉があるけれど、これは「考えたって仕方がないから、実際に相手と同じ体験をしてみるしかな...]]></content:encoded>
             <author>Makoto Kamono</author>
-        </item>
-        <item>
-            <title><![CDATA[ブログを書いていたらサイボウズ式の連載が決まって、そして終わった]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/07/130730</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/07/130730</guid>
-            <pubDate>Tue, 07 Jul 2026 04:07:30 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに タイトル案を5つ送った。返ってきたのは、そのどれでもなかった。 「1on1、雑談タイム──これらが失敗に終わるのはなぜか」。連載第4回の公開タイトルだ。編集部がつけたタイトルは、記事のキーワードだった「善意」や「心理的安全性」という抽象を、1on1と雑談タイムという、誰もが座らされたことのある具体へ引き下ろしていた。私の5案は、どれもその引き下ろしができていなかった。フィードバックを見て、最初に来たのは「確かに良くなっている」という実感だった。このタイトルは私の案のどれよりも、記事の中身に忠実だった。実感の数秒あとに、悔しさが来た。5案も出して、届かなかった。悔しかったのは編集に替え…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
