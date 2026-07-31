@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 30 Jul 2026 22:48:40 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jul 2026 09:30:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編]]></title>
+            <link>https://sreake.com/blog/lighthouse-best-practices-31-improvements-on-3-shake-engineers-blogs-1/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/lighthouse-best-practices-31-improvements-on-3-shake-engineers-blogs-1/</guid>
+            <pubDate>Fri, 31 Jul 2026 09:11:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに この記事では、スリーシェイクが運営する技術ブログ「3-shake Engineers’ Blogs」において、Lighthouseスコアの改善のために対応したパフォーマンスと開発者体験の向上を目指し […]The post 3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[テストが通ったあと、理解はどこに残るのか]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</link>
@@ -69,6 +77,14 @@
             <pubDate>Mon, 27 Jul 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://3-shake.connpass.com/event/399469/ で発表した内容]]></content:encoded>
             <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[スライド作成にMarpを選んだ話]]></title>
+            <link>https://rin2yh.com/post/why-i-chose-marp-c96659vtvjaprs/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/why-i-chose-marp-c96659vtvjaprs/</guid>
+            <pubDate>Mon, 27 Jul 2026 03:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに今回、色々と遊ぶ過程でスライド作成ツールを見直しました。Markdown記法を使用できると嬉しいので、候補はSlidevとMarpの2つで検討しました。試行錯誤したので、個人のADR的に残しておきます。]]></content:encoded>
+            <author>Rinrin</author>
         </item>
         <item>
             <title><![CDATA[【運用編】SLI/SLOをチームに定着させ、運用で育てる]]></title>
@@ -223,6 +239,22 @@
             <author>Makoto Kamono</author>
         </item>
         <item>
+            <title><![CDATA[SRE Next Day2に参加しました！]]></title>
+            <link>https://rin2yh.com/post/srenext-day2-dmxm5n5aq9iygn/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/srenext-day2-dmxm5n5aq9iygn/</guid>
+            <pubDate>Sun, 12 Jul 2026 12:20:36 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに私は普段Webアプリケーション領域に従事していますが、SREにも少し興味があって参加してみました。ちゃんと開会に間に合いました。     Rinrin / りんりん (@rin2yh) on X#srenext day2 始まりました！   X (formerly Twitter)]]></content:encoded>
+            <author>Rinrin</author>
+        </item>
+        <item>
+            <title><![CDATA[関数型まつりDay2に参加しました！]]></title>
+            <link>https://rin2yh.com/post/fp_matsuri-day2/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/fp_matsuri-day2/</guid>
+            <pubDate>Sun, 12 Jul 2026 12:00:56 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに関数型ちょっと興味ある入門すらできていない者です。FPに少し興味が出始めている中でたまたま同僚がスタッフをしていてイベントに興味を持った事が参加のきっかけです。昨日はSRE Next day2に行っていたので朝は起きれませんでしたが、無事少し遅れて着きました。]]></content:encoded>
+            <author>Rinrin</author>
+        </item>
+        <item>
             <title><![CDATA[成長とか上達って、何だろう。]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/07/12/171032</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/12/171032</guid>
@@ -237,38 +269,6 @@
             <pubDate>Sat, 11 Jul 2026 13:28:32 GMT</pubDate>
             <content:encoded><![CDATA[WSL の仮想ディスクの肥大化問題Windows の WSL は便利ですが、利用しているうちに仮想ディスク(VHDX)のサイズが思わぬ大きさになって Windows のディスクの空き容量が少なくなって困ることがあります。Windows が Enterprise Edition であれば optimize-vhd コマンドが使えるよとか、そうでない場合は diskpart コマンドが使えるよといった情報がありますが、一番確実なのは export & import だよなということになったのでその手順のメモです。]]></content:encoded>
             <author>yteraoka</author>
-        </item>
-        <item>
-            <title><![CDATA[型は壁、Rustでもバグを直すな、表現できなくせよ]]></title>
-            <link>https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/xing-habi-rustdemobaguwozhi-suna-biao-xian-dekinakuseyo</guid>
-            <pubDate>Sat, 11 Jul 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[**「バグを直す」のはもうやめませんか。**あなたのシステムにもいませんか。`is_paid = true` なのに `payment_id` が null という、支払ったのか払ってないのかシュレディンガーの注文。`status = "verified"` なのに `verified_at` が存在しない、検証された記憶のない検証済みユーザー。彼らはバグではありません。**型が「そういう存在」を許可してしまった、正規の住人**です。本セッションの主張はシンプルです。型は壁である。コンパイラのご機嫌取りでも、IDEの補完を効かせるための飾りでもなく、「なり得ない状態」を物理的にこの世に存在させないための壁。バグはテストで捕まえるものではなく、**そもそも書けなくする**ものです。実装言語はRustです。「関数型まつりでRust？」と思ったあなた、安心してください。代数的データ型、イミュータビリティ、パターンマッチ——中身はほぼ関数型の道具箱です。Rust未経験でも大丈�夫なように、登場する言語仕様はその場で解説します。扱うのは以下の4パターン:- 状態ごとに型を分ける: 検証前の注文で価格計算しようとした瞬間、コンパイラに止められる世界- newtypeパターン: `CustomerId` と `OrderId` の取り違えを、レビュアーの目ではなくコンパイラが検出する- Smart Constructor: 「※必ずvalidateしてから使ってください」というお祈りコメントの卒業- Make Illegal States Unrepresentable: フラグ×Optionの組み合わせ爆発を、代数的データ型で根絶するおまけに、AIコーディングエージェント時代の話も。AIはコメントを平気で読み飛ばしますが、コンパイルエラーだけは無視できません。**型は「お願い」ではなく「壁」。** 人間にもAIにも等しく効く、最強の防壁の築き方を持ち帰ってください。DDDの知識は不要です。必要なのは「もうバグ調査で週末を潰したくない」という気持ちだけ。https://2026.fp-matsuri.org]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes Agent Sandboxについての調査]]></title>
-            <link>https://sreake.com/blog/kubernetes-agent-sandbox-explained/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/kubernetes-agent-sandbox-explained/</guid>
-            <pubDate>Thu, 09 Jul 2026 09:30:52 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 工学院大学大学院修士 1 年の柴山優太です。 今回、Sreake 事業部で期限付きインターンをさせていただいている中で、Kubernetes の Agent Sandbox について技術調査を行いました。 近年 […]The post Kubernetes Agent Sandboxについての調査 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[GitOpsを実践してEKS上に自作WebSocketアプリケーションをデプロイしてみた]]></title>
-            <link>https://sreake.com/blog/deploying-websocket-app-to-eks-using-gitops/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/deploying-websocket-app-to-eks-using-gitops/</guid>
-            <pubDate>Thu, 09 Jul 2026 01:05:46 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに こんにちは。Sreake事業部のインターン生の大島です。2026年の5月から6月にかけて、技術検証のインターンに参加しました。普段はWebアプリ開発を中心に取り組んでおり、インフラ系のインターンは今回が初 […]The post GitOpsを実践してEKS上に自作WebSocketアプリケーションをデプロイしてみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[相手の立場に立って考えるための、いくつかの観点]]></title>
-            <link>https://zenn.dev/kamos/articles/soneones_shoes</link>
-            <guid isPermaLink="false">https://zenn.dev/kamos/articles/soneones_shoes</guid>
-            <pubDate>Wed, 08 Jul 2026 01:20:45 GMT</pubDate>
-            <content:encoded><![CDATA[「相手の立場に立って考える」というのは難しい。そう言われたからといって、急にできるものでもない。それでも、何か手がかりみたいなものはあるんじゃないかと思って、自分なりにやっていることを書いてみる。「相手の立場に立って考える」というのは、新卒研修や社会人の研修、遡れば道徳の授業なんかでもよく扱われる。これだけ多くの場で言及されるというのは、それ自体が難しくて、社会人になったあとでも実践しにくいからなんだと思う。実際、英語には "walk a mile in someone's shoes" という言葉があるけれど、これは「考えたって仕方がないから、実際に相手と同じ体験をしてみるしかな...]]></content:encoded>
-            <author>Makoto Kamono</author>
         </item>
     </channel>
 </rss>
