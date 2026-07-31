@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 31 Jul 2026 09:30:22 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jul 2026 12:12:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -21,6 +21,14 @@
             <pubDate>Fri, 31 Jul 2026 09:11:47 GMT</pubDate>
             <content:encoded><![CDATA[はじめに この記事では、スリーシェイクが運営する技術ブログ「3-shake Engineers’ Blogs」において、Lighthouseスコアの改善のために対応したパフォーマンスと開発者体験の向上を目指し […]The post 3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[SBOMの最小構成要素が増えた]]></title>
+            <link>https://www.rowicy.com/blog/sbom-elem-update-2026/</link>
+            <guid isPermaLink="false">https://www.rowicy.com/blog/sbom-elem-update-2026/</guid>
+            <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[CISAの公開した2026 Minimum Elements for a Software Bill of Materialsの新要素を軽く解説]]></content:encoded>
+            <author>riiimparm</author>
         </item>
         <item>
             <title><![CDATA[テストが通ったあと、理解はどこに残るのか]]></title>
@@ -261,14 +269,6 @@
             <pubDate>Sun, 12 Jul 2026 08:10:32 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 学生は、私より先にAIへ質問していました。 AIはすでに答えていました。 それでも、問いを持ち帰ったのは私でした。 コンテナやKubernetesの基礎を扱う学生向けのワークショップで、学生たちはAIエージェントに実行を任せていました。分からないことがあれば、まずAIに聞きます。その回答を読んでから私に質問し、私は答えます。ときどき、「どこまで確かめたのか」と問いを返しました。 これは、学生やジュニアエンジニアのAI利用を評価する話ではありません。私も日々AIエージェントを使っています。ただ、その往復が滑らかに進むほど、「できた」という言葉の輪郭がぼやけていきました。 速く実行できる…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[WSL の仮想ディスクサイズを Export & Import で縮小する]]></title>
-            <link>https://blog.1q77.com/2026/07/wsl-export-import/</link>
-            <guid isPermaLink="false">https://blog.1q77.com/2026/07/wsl-export-import/</guid>
-            <pubDate>Sat, 11 Jul 2026 13:28:32 GMT</pubDate>
-            <content:encoded><![CDATA[WSL の仮想ディスクの肥大化問題Windows の WSL は便利ですが、利用しているうちに仮想ディスク(VHDX)のサイズが思わぬ大きさになって Windows のディスクの空き容量が少なくなって困ることがあります。Windows が Enterprise Edition であれば optimize-vhd コマンドが使えるよとか、そうでない場合は diskpart コマンドが使えるよといった情報がありますが、一番確実なのは export & import だよなということになったのでその手順のメモです。]]></content:encoded>
-            <author>yteraoka</author>
         </item>
     </channel>
 </rss>
