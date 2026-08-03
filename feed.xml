@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 03 Aug 2026 06:17:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Aug 2026 12:37:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ターミナルを占領するのは許さないよ、Neovimですべて管理する]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</guid>
+            <pubDate>Mon, 03 Aug 2026 07:52:15 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに CodexやClaude Codeに作業を任せ、その間にNeovimで別のコードを編集します。これは便利です。しかし、エージェントの状態を確かめるたびに端末を順に開き、止まっていればそこで返事をします。これを繰り返すうちに、Neovimよりターミナルを見ている時間が長くなります。 正直に言えば、効率だけの問題ではありません。私は、自分の手に馴染む開発環境を自分で育てることを、PDE（Personal Development Environment）として続けてきました。エージェントが増えても、コードを読み書きする場所をNeovimから端末へ移す理由はありません。作業を任せたエージェン…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ Codex CLIをNeovimで使うcodex.nvimを作ったので、使ってみてほしい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/01/205220</link>
@@ -261,14 +269,6 @@
             <pubDate>Mon, 13 Jul 2026 00:34:07 GMT</pubDate>
             <content:encoded><![CDATA[「なんとなく」とか「無意識」とかでやっている行動を、振り返らないままにしておくのはもったいない 人間は深く考えず行動するものそもそも人間はその日行っている行動のほとんどを反射とか直感とか、5秒も考えずに実行していると思う。会議での発言や資料の文面一つ一つや誰かへの返信とか。これ自体が悪いということは全くない。そうでもしないと仕事が進まないし、いちいち判断を挟めるほど人間の脳には余裕がない。 行動には必ず理由があるしかし振り返りを行う際にはこういった無意識や習慣に気づいて改善していく能力が大事。だから向き合ってみることで自分自身への解像度が上がったり、新しい解決策が出てくる...]]></content:encoded>
             <author>Makoto Kamono</author>
-        </item>
-        <item>
-            <title><![CDATA[SRE Next Day2に参加しました！]]></title>
-            <link>https://rin2yh.com/post/srenext-day2-dmxm5n5aq9iygn/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/srenext-day2-dmxm5n5aq9iygn/</guid>
-            <pubDate>Sun, 12 Jul 2026 12:20:36 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに私は普段Webアプリケーション領域に従事していますが、SREにも少し興味があって参加してみました。ちゃんと開会に間に合いました。     Rinrin / りんりん (@rin2yh) on X#srenext day2 始まりました！   X (formerly Twitter)]]></content:encoded>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
