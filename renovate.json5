@@ -46,8 +46,11 @@
   ],
 
   // ロックファイルメンテナンス
+  // minimumReleaseAge を 0 にして、毎週の force-push で待機日数が
+  // リセットされ続けマージ不能になるのを防ぐ
   lockFileMaintenance: {
     enabled: true,
     schedule: ["before 10am on monday"],
+    minimumReleaseAge: "0 days",
   },
 }
