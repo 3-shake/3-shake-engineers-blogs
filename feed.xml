@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 03 Aug 2026 22:46:30 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Aug 2026 12:13:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Service Connect 上のサービスに ECS Service の外側から到達できなかった話]]></title>
+            <link>https://speakerdeck.com/ota1022/service-connect-shang-nosabisuni-ecs-service-nowai-ce-karadao-da-dekinakatutahua</link>
+            <guid isPermaLink="false">https://speakerdeck.com/ota1022/service-connect-shang-nosabisuni-ecs-service-nowai-ce-karadao-da-dekinakatutahua</guid>
+            <pubDate>Tue, 04 Aug 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[NW-JAWS #22 ～タイトル持ちの長い夜(LV300-)～ のLT登壇資料です。https://jawsug-nw.connpass.com/event/399100/]]></content:encoded>
+            <author>Itaru Ota</author>
+        </item>
+        <item>
+            <title><![CDATA[形にならなかった「おい、」を29回書いたら本]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</guid>
+            <pubDate>Mon, 03 Aug 2026 23:19:51 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 最初から完璧な成果物は存在しない。 ただ出して、直して、また出した人がいるだけだ。私の場合、それが29本の「おい、」だった。 「おい、」シリーズは、形にならなかった本の原稿から始まりました。本を出せなかったときは、やはり少し絶望しました。それでも、書きかけの原稿まで消えたわけではありません。1冊へまとめず、原稿を1本ずつブログとして終わらせました。 最初から上手に書けるわけではありません。書き始めた頃の文章は、普通に不格好です。不格好なものを外へ出せば、ある程度はバカにもされます。ここは、たぶん避けられません。 ところが、1年も続けていると、だいたいの人は飽きます。批判が減る。ありが…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ターミナルを占領するのは許さないよ、Neovimですべて管理する]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</link>
@@ -77,6 +93,13 @@
             <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[最低限のハイライトは動いていたけれど，平坦で認知負荷が高かったので生成 AI に相談した．]]></content:encoded>
             <author>Masaki Haga</author>
+        </item>
+        <item>
+            <title><![CDATA[Javaなしで安全に使えるPlantUMLビューア「pumlv」]]></title>
+            <link>https://rin2yh.com/post/pumlv-go-ouw3hxjl9upmqm/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/pumlv-go-ouw3hxjl9upmqm/</guid>
+            <pubDate>Tue, 28 Jul 2026 15:00:00 GMT</pubDate>
+            <author>Rinrin</author>
         </item>
         <item>
             <title><![CDATA[ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題]]></title>
@@ -245,30 +268,6 @@
             <pubDate>Fri, 17 Jul 2026 00:36:54 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 3-shakeでマーケティング・ブランディングを行なっている羽山です。 2026/7/10〜11の2日間、TOC有明にて SRE NEXT 2026 が開催されまして、スリーシェイクもスポンサーとしてブース出展 […]The post SRE NEXT 2026に参加してきました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[何が分からないか分からないとき、私は「学習」をやめる]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/15/105845</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/15/105845</guid>
-            <pubDate>Wed, 15 Jul 2026 01:58:45 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 前の記事に、「何が分からないか分からないとき、どう乗り越えているのか」というコメントをもらいました。 syu-m-5151.hatenablog.com 同じ問いは、学生からも、SNSでも、以前から聞かれていました。 その場では断片的に答えてきましたが、1つの形にしたことはありませんでした。 ただ、この問いに1つの記事で答えようとすると、手が止まりました。私も、新しい領域では何が分からないのか分かりません。用語を調べると、その説明に知らない用語が出てきます。公式ドキュメントを開いても、どのページから読めばよいのか判断できません。AIに聞けば整った説明は返ってきますが、どこを信じ、何を…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Cluster API × ArgoCD による GitOps 駆動のクラスタライフサイクル管理]]></title>
-            <link>https://sreake.com/blog/manage-cluster-lifecycle-with-gitops-cluster-api-argocd/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/manage-cluster-lifecycle-with-gitops-cluster-api-argocd/</guid>
-            <pubDate>Tue, 14 Jul 2026 01:16:02 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに こんにちは。Sreake事業部にて長期インターンをしている髙橋です。普段は、ネットワークの運用などを講義で学びながら、同時にSREを目指して独学で勉強をしています。 本記事では、Kubernetes（以下K8s […]The post Cluster API × ArgoCD による GitOps 駆動のクラスタライフサイクル管理 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[後付けでいいから、自分の行動に理由をつける]]></title>
-            <link>https://zenn.dev/kamos/articles/reason_after_action</link>
-            <guid isPermaLink="false">https://zenn.dev/kamos/articles/reason_after_action</guid>
-            <pubDate>Mon, 13 Jul 2026 00:34:07 GMT</pubDate>
-            <content:encoded><![CDATA[「なんとなく」とか「無意識」とかでやっている行動を、振り返らないままにしておくのはもったいない 人間は深く考えず行動するものそもそも人間はその日行っている行動のほとんどを反射とか直感とか、5秒も考えずに実行していると思う。会議での発言や資料の文面一つ一つや誰かへの返信とか。これ自体が悪いということは全くない。そうでもしないと仕事が進まないし、いちいち判断を挟めるほど人間の脳には余裕がない。 行動には必ず理由があるしかし振り返りを行う際にはこういった無意識や習慣に気づいて改善していく能力が大事。だから向き合ってみることで自分自身への解像度が上がったり、新しい解決策が出てくる...]]></content:encoded>
-            <author>Makoto Kamono</author>
         </item>
     </channel>
 </rss>
