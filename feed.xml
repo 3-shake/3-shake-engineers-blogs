@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 04 Aug 2026 22:48:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Aug 2026 12:12:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,38 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[KubeCon + CloudNativeCon Japan 2026 ブース出展レポート]]></title>
+            <link>https://sreake.com/blog/kubecon-cloudnativecon-japan-booth-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/kubecon-cloudnativecon-japan-booth-report/</guid>
+            <pubDate>Wed, 05 Aug 2026 04:03:08 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに スリーシェイク Sreake事業部でTech Brandingチームに所属している澤田です。 2026/7/28〜30の3日間、パシフィコ横浜にて『KubeCon + CloudNativeCon Japan  […]The post KubeCon + CloudNativeCon Japan 2026 ブース出展レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[KubeCon + CloudNativeCon Japan 2026 参加レポート]]></title>
+            <link>https://sreake.com/blog/kubecon-cloudnativecon-japan-2026-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/kubecon-cloudnativecon-japan-2026-report/</guid>
+            <pubDate>Wed, 05 Aug 2026 03:40:05 GMT</pubDate>
+            <content:encoded><![CDATA[Sreake事業部アプリケーション開発支援チームの太田暢（@iorandd）です。 2026年7月29・30日に横浜で開催された KubeCon + CloudNativeCon Japan 2026 に参加してきました […]The post KubeCon + CloudNativeCon Japan 2026 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[KubeCon Japan 2026 をボランティアスタッフとして手伝った]]></title>
+            <link>https://sreake.com/blog/kubecon-japan-2026-volunteer-staff-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/kubecon-japan-2026-volunteer-staff-report/</guid>
+            <pubDate>Wed, 05 Aug 2026 03:39:42 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake 事業部の荒木 (@GawinGowin) です。 2026年7月29日・30日にパシフィコ横浜で開催された KubeCon + CloudNativeCon Japan 2026 に、ボランティア […]The post KubeCon Japan 2026 をボランティアスタッフとして手伝った first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[Gemini Enterprise App + A2UI を使ってみる]]></title>
+            <link>https://zenn.dev/satohjohn/articles/901736bb8fe177</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/901736bb8fe177</guid>
+            <pubDate>Wed, 05 Aug 2026 02:04:56 GMT</pubDate>
+            <content:encoded><![CDATA[概要Gemini Enterprise App で A2UI を使ったアプリケーションの構築をしました。それについて以下のLT発表でまとめたのですがコードがほとんどなかったり、説明が足りない部分があると思ったのでこの blog でまとめます。https://speakerdeck.com/satohjohn/a2ui-toiuguang-wosi-itemiru色々調べていくうえでわかってきたこともあり、まとめておきます。 そもそも従来の Gemini Enterprise App での課題Gemini Enterprise App は Agent が返してきたものを M...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
         <item>
             <title><![CDATA[Service Connect 上のサービスに ECS Service の外側から到達できなかった話]]></title>
             <link>https://speakerdeck.com/ota1022/service-connect-shang-nosabisuni-ecs-service-nowai-ce-karadao-da-dekinakatutahua</link>
@@ -236,38 +268,6 @@
             <pubDate>Wed, 22 Jul 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[JAWS-UG 茨城 #15 Japan AWS Jr.Champion & TopE LT大会 のLT登壇資料です。https://jawsug-ibaraki.connpass.com/event/397307/]]></content:encoded>
             <author>Itaru Ota</author>
-        </item>
-        <item>
-            <title><![CDATA[Prompting Claude Fable 5ってちゃんと読みました]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/21/111713</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/21/111713</guid>
-            <pubDate>Tue, 21 Jul 2026 02:17:13 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 私はFable 5の性能を語りたい。そして、その前に自分のSkillを疑いたい。 以前のモデル向けに書いた指示は、新しいモデルでも動きます。 しかし、動くことは、能力を引き出すことを意味しません。 Prompting Claude Fable 5という題名から想像するのは、Fable 5に効く指示文の一覧です。ところが本文には、タイムアウト、ストリーミング、メモリ、サブエージェント、フォールバック、send_to_userまで並びます。プロンプトの話を読みに来たはずが、途中からクライアント、実行基盤、UI、権限管理の話を読んでいる。題名はプロンプトですが、読み終わるころには実装チケッ…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[言葉を契約として扱わない]]></title>
-            <link>https://zenn.dev/kamos/articles/words_not_contract</link>
-            <guid isPermaLink="false">https://zenn.dev/kamos/articles/words_not_contract</guid>
-            <pubDate>Tue, 21 Jul 2026 00:18:17 GMT</pubDate>
-            <content:encoded><![CDATA[自分のような理屈っぽい人間は、言葉というものに正確性を求めると思う。しかし往々にしてコミュニケーションの場では言葉通りに受け取らないほうがいいことがある。 契約を作る理由契約では、言葉通りに物事を受け取っていい。それを前提に書かれている。解釈が一意に定まるように言葉を尽くす。このような書き方をするのは、万が一のときに揉めないように、だったり責任の所在を明らかにするためだったりする。 コミュニケーションは、伝えるために言葉を使う言葉を契約と捉えたとき、相手が事実と異なる表現をしてしまうと「嘘をつくな」という反応になる。正しく言語化しろ、という圧をかけることになる。そして最後に...]]></content:encoded>
-            <author>Makoto Kamono</author>
-        </item>
-        <item>
-            <title><![CDATA[HTTPS のはずなのに警告が出てめちゃ調べたけどよくわからなかった]]></title>
-            <link>https://silasol.la/posts/2026-07-20-01_quic-not-secure/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-07-20-01_quic-not-secure/</guid>
-            <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[このサイトを Workers に移してから警告が出るようになったので調査しました．対症療法は試しましたが根本的な理由は分かっていません．]]></content:encoded>
-            <author>Masaki Haga</author>
-        </item>
-        <item>
-            <title><![CDATA[SRE NEXT 2026に参加してきました！]]></title>
-            <link>https://sreake.com/blog/sre-next-2026/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/sre-next-2026/</guid>
-            <pubDate>Fri, 17 Jul 2026 00:36:54 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 3-shakeでマーケティング・ブランディングを行なっている羽山です。 2026/7/10〜11の2日間、TOC有明にて SRE NEXT 2026 が開催されまして、スリーシェイクもスポンサーとしてブース出展 […]The post SRE NEXT 2026に参加してきました！ first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
