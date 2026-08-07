@@ -610,17 +610,6 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
-    id: "kugimiya",
-    name: "Daichi Kugimiya",
-    avatarSrc: "/avatars-webp/kugimiya.webp",
-    role: "Full Stack Engineer",
-    bio: "Kugimiya",
-    sources: ["https://zenn.dev/meziron/feed"],
-    githubUsername: "daikugimiya0715",
-    twitterUsername: "abimaruXD",
-    websiteUrl: "",
-  },
-  {
     id: "matsuura",
     name: "Yushin Matsuura",
     avatarSrc: "/avatars-webp/matsuura.webp",
