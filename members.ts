@@ -701,18 +701,6 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
-    id: "takehiro1111",
-    name: "takehiro1111",
-    role: "Engineer",
-    bio: "takehiro1111",
-    avatarSrc: "/avatars-webp/takehiro1111.webp",
-    sources: ["https://zenn.dev/takehiro1111/feed"],
-    includeUrlRegex: "",
-    twitterUsername: "",
-    githubUsername: "takehiro1111",
-    websiteUrl: "",
-  },
-  {
     id: "ayibote",
     name: "ayibote",
     role: "Infrastructure Engineer",
