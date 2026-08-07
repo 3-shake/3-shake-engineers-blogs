@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 07 Aug 2026 00:26:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Aug 2026 11:46:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[20分でわかるセキュアAPI]]></title>
+            <link>https://speakerdeck.com/nwiizo/20fen-dewakarusekiyuaapi</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/20fen-dewakarusekiyuaapi</guid>
+            <pubDate>Fri, 07 Aug 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2026年8月7日に『セキュアAPI』翻訳者と考える、設計段階から組み込むセキュリティ というイベントで登壇します。https://levtechlab.connpass.com/event/399260/]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[分かりやすい説明ほど、反例で確かめる]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/07/124527</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/07/124527</guid>
+            <pubDate>Fri, 07 Aug 2026 03:45:27 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 以前、私はデータベースのトランザクションを「銀行振込」と捉えていました。送金元の残高を減らし、通知用の外部APIを呼び、送金先の残高を増やす。最後の更新に失敗しても、トランザクションをロールバックすれば元に戻るので、これで安全だと思っていました。 しかし、ロールバックできるのはデータベースの変更です。すでに外部APIが送った通知は取り消せません。私はトランザクションの仕組みをまったく理解していなかったわけではありません。データベースが保証する範囲と、利用者から見た「送金」という操作の範囲を、同じものとして扱っていました。 所有権を「本の貸し借り」、非同期処理を「料理」、キャッシュを「…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[キーバインドはつらいよ]]></title>
             <link>https://silasol.la/posts/2026-08-06-01_ctrl-l-pty/</link>
@@ -251,22 +267,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/vcluster-grafana-alloy-observability/</guid>
             <pubDate>Thu, 23 Jul 2026 09:06:15 GMT</pubDate>
             <content:encoded><![CDATA[自己紹介 千葉工業大学大学院 情報科学研究科 情報科学専攻 修士２年の井上 裕介と申します. 大学では主にメタヒューリスティクスに関する最適化アルゴリズムの研究に従事しております. はじめに 複数のチームやプロジェクトが […]The post vCluster と Grafana Alloy によるマルチテナント Kubernetes 環境のオブザーバビリティ基盤 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[どこまでAIに任せるか 〜確率論と決定論の境界決定〜]]></title>
-            <link>https://speakerdeck.com/shukob/dokomadeainiren-seruka-que-lu-lun-tojue-ding-lun-nojing-jie-jue-ding</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/dokomadeainiren-seruka-que-lu-lun-tojue-ding-lun-nojing-jie-jue-ding</guid>
-            <pubDate>Thu, 23 Jul 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[3-SHAKE「AIを紡ぐ者たち #2 ～本当にラクになった？生成AIで削った業務・増えた業務～」にて登壇しました。https://3-shake.connpass.com/event/399003/生成AIで業務は「削れた」のではなく、別の場所に「移った」だけ、という実感から出発する話です。生成AIは確率論、業務システムが要求するのは決定論。この境界をどう設計するかを、道交法判定・設計図面の構造化・フィジカルAI×MPCの使い分けといった実案件（Gemini / Vertex AI）を通して共有します。「AIを信じすぎないことが、AIを最も活かす」]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[EKS Auto Mode と標準クラスタの違いを4つの軸で比較する]]></title>
-            <link>https://sreake.com/blog/difference-between-eks-auto-mode-and-standard-cluster/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/difference-between-eks-auto-mode-and-standard-cluster/</guid>
-            <pubDate>Wed, 22 Jul 2026 09:20:57 GMT</pubDate>
-            <content:encoded><![CDATA[1. はじめに はじめまして、Sreake事業部インターン生の大石です。SRE の技術の調査と研究を目的とした長期インターンに参加しています。 本記事では、Amazon EKS の Auto Mode と 標準クラスタ  […]The post EKS Auto Mode と標準クラスタの違いを4つの軸で比較する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
