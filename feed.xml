@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 08 Aug 2026 11:41:08 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Aug 2026 22:40:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[部下としてのAI　世界一流エンジニアの進化術 第1章を読んで 〜理解こそが最も重要〜]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/buka-toshite-no-ai-chapter1</link>
+            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/buka-toshite-no-ai-chapter1</guid>
+            <pubDate>Sat, 08 Aug 2026 14:52:18 GMT</pubDate>
+            <content:encoded><![CDATA[↑こちらの画像はGoogle Nano Banana 2で生成牛尾剛さん著『部下としてのAI　世界一流エンジニアの進化術』Kindle版を購入。Amazon.co.jp: 部下としてのAI 世界一流エンジニアの進化術 (文春e-book) eBook : 牛尾 剛: Kindleストア6月11日に出て、2ヶ月遅れだが、気になり読んでみました。Amazon.co.jp: 世界一流エンジニアの思考法 (文春e-book) eBook : 牛尾 剛: Kindleストア前作、『世界一流エンジニアの思考法』もKindle版買うて読んでいましたが、実践に至ってない箇所も多いな、と思いつつ、今作を読み進め、第1章『生成AIをマネジメントする』を読み終えました。第1章は生成AIによる目まぐるしい変化の解説とともに、前作でも力説されていた「深い理解の重要性」が今作でもやはり大事なんだと書かれています。第1章まで読んで、理解力の向上は基礎練かな、と前作読んだ記憶を頼りに仮説を立ててみました。例えば、個人的に思い浮かんだのは、受験勉強では基礎問題の反復で応用問題も解けるようになる。応用問題は分解すると、基礎の組み合わせでできている。そのような展開かな、と思いましたが、第2章 『「理解」をブーストする』では、「できるエンジニアはコードをたくさん読んでいる」から始まります。自分が建てた仮説の答え合わせをしながら、第2章以降も読み進めていきます。]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[20分でわかるセキュアAPI]]></title>
             <link>https://speakerdeck.com/nwiizo/20fen-dewakarusekiyuaapi</link>
@@ -260,14 +268,6 @@
             <pubDate>Fri, 24 Jul 2026 02:08:56 GMT</pubDate>
             <content:encoded><![CDATA[はじめに AIにコードを渡せば、多くの場合、流暢な説明は返ってくる。けれど、人が止まる理由は同じではない。 見慣れない演算子が一つだけ置かれたコードを前にすると、私は意味を知らないために止まる。使われている関数の定義が別の場所にあるコードでは、何を探すべきかは分かっていても、必要な情報が手元にないために止まる。すべての構文を知っていても、変数の値が何度も入れ替わる処理では、途中の状態を頭の中だけで動かせずに止まる。 外から見れば、どれも「コードが分からない」という同じ沈黙である。しかし、最初の停止に必要なのは知識であり、二つ目に必要なのは情報へ戻る経路であり、三つ目に必要なのは関係を外へ出す表…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[vCluster と Grafana Alloy によるマルチテナント Kubernetes 環境のオブザーバビリティ基盤]]></title>
-            <link>https://sreake.com/blog/vcluster-grafana-alloy-observability/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/vcluster-grafana-alloy-observability/</guid>
-            <pubDate>Thu, 23 Jul 2026 09:06:15 GMT</pubDate>
-            <content:encoded><![CDATA[自己紹介 千葉工業大学大学院 情報科学研究科 情報科学専攻 修士２年の井上 裕介と申します. 大学では主にメタヒューリスティクスに関する最適化アルゴリズムの研究に従事しております. はじめに 複数のチームやプロジェクトが […]The post vCluster と Grafana Alloy によるマルチテナント Kubernetes 環境のオブザーバビリティ基盤 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
