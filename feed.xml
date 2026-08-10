@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 09 Aug 2026 22:41:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Aug 2026 03:50:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Local LLM で Coding Agent をつかってみる]]></title>
+            <link>https://zenn.dev/satohjohn/articles/36c250162eb0ed</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/36c250162eb0ed</guid>
+            <pubDate>Mon, 10 Aug 2026 02:12:40 GMT</pubDate>
+            <content:encoded><![CDATA[概要タイトルの通り。そもそも、https://github.com/magnitudedev/magnitude というのを見ており、「そういえば、そもそも Claude Code で Local LLM ってどうなんじゃ？」と思ってやってみた記録です。 環境Macbook Pro M4 32GBclaude code, codexollama, LiteLLMMagnitude 結論まぁ、良いPCがないと厳しい ≒ 全然処理が終わらない(リクエストタイムアウトする)claude code のデフォルトの context と tool 定義で 30000...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[訂正した誤りが、組織で再発する理由]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/10/103320</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/10/103320</guid>
+            <pubDate>Mon, 10 Aug 2026 01:33:20 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 「Rustでclone()を呼べば、値は別物として複製される」。 String::clone()で得た直観を、そのままArcへ持ち込むと、この説明に行き着く。けれど、Arc::clone()が増やすのは同じ割り当てを指す共有所有者であり、Tそのものを別の値として複製するわけではない。 use std::sync::{Arc, Mutex}; fn main() { let original = Arc::new(Mutex::new(vec![1])); let cloned = Arc::clone(&original); assert!(Arc::ptr_eq(&origi…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[部下としてのAI　世界一流エンジニアの進化術 第1章を読んで 〜理解こそが最も重要〜]]></title>
             <link>https://shu-kob.hateblo.jp/entry/buka-toshite-no-ai-chapter1</link>
@@ -251,22 +267,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</guid>
             <pubDate>Sat, 25 Jul 2026 13:27:24 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 知らない名前があれば止まり、呼び出し先を開く。そこにもまた、知らない名前がある。 かつての私は、そうやって定義から定義へ移っていた。 たどり着いたころには、最初に何を知りたかったのかを忘れている。 戻る道は残っていた。開いたタブは全部そこにある。それでも、なぜ最初のファイルを開いたのかだけが出てこない。仕方がないので、また先頭から読み始める。 あのころ読むのが遅かったのは、目の動きが遅いからではない。すべてを同じ重要度で読み、一度に扱える量が限られた注意へ、目的、現在地、通過した経路、細部を同時に載せていたからだ。最初に載せた目的が、いちばん先に落ちる。 いまはAIにコードを調べさせ…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-07-24 tfpolicyを試してみたのですが、、、、]]></title>
-            <link>https://speakerdeck.com/masasuzu/2026-07-24-tfpolicywoshi-sitemitanodesuga</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-07-24-tfpolicywoshi-sitemitanodesuga</guid>
-            <pubDate>Fri, 24 Jul 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[社内勉強会でtfplanをざっくり調べた結果の共有https://www.hashicorp.com/ja/blog/introducing-tfpolicy-a-declarative-policy-workflow-built-for-terraformhttps://developer.hashicorp.com/terraform/policy]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[説明を足す前に、どこで止まったかを分ける]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/24/110856</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/24/110856</guid>
-            <pubDate>Fri, 24 Jul 2026 02:08:56 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに AIにコードを渡せば、多くの場合、流暢な説明は返ってくる。けれど、人が止まる理由は同じではない。 見慣れない演算子が一つだけ置かれたコードを前にすると、私は意味を知らないために止まる。使われている関数の定義が別の場所にあるコードでは、何を探すべきかは分かっていても、必要な情報が手元にないために止まる。すべての構文を知っていても、変数の値が何度も入れ替わる処理では、途中の状態を頭の中だけで動かせずに止まる。 外から見れば、どれも「コードが分からない」という同じ沈黙である。しかし、最初の停止に必要なのは知識であり、二つ目に必要なのは情報へ戻る経路であり、三つ目に必要なのは関係を外へ出す表…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
