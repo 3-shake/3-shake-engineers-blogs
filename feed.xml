@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 10 Aug 2026 22:42:45 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Aug 2026 11:46:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AIの「自然な名前」が、概念の境界を消す]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/11/142818</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/11/142818</guid>
+            <pubDate>Tue, 11 Aug 2026 05:28:18 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに よい名前ほど、間違いに気づきにくい。 fetch_userが利用者を作って返しても、読み手は取得だと思ったまま先へ進める。 詰まらずに読めたことが、最初の誤りになる。 customer、account、member、user。生成AIへ名前の候補を求めると、文脈や規約を追加しない限り、どれも自然な候補として並びやすい。契約主体とログイン主体と請求先が別のものでも、同じ顔をして並ぶ。 識別子として置き換えるだけで、型や処理が同じなら、4つのうちどれを選んでもコードは動く。特段の取り決めがなければレビューも通る。名前が嘘になるのは、契約は生きているがログインは止まっている利用者が現れた日…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Local LLM で Coding Agent をつかってみる]]></title>
             <link>https://zenn.dev/satohjohn/articles/36c250162eb0ed</link>
@@ -260,14 +268,6 @@
             <pubDate>Sat, 25 Jul 2026 13:47:10 GMT</pubDate>
             <content:encoded><![CDATA[2年7カ月ほど利用してきたスマートロックの SESAME 5 が突然機能しなくなりました。スマホでの操作や SESAME FACE との連携で反応はしてカチカチと小さな音を立てるけれどもサムターンは回らない状況でした。]]></content:encoded>
             <author>yteraoka</author>
-        </item>
-        <item>
-            <title><![CDATA[全部読まなくても、読まなかった場所には責任を持つ]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/25/222724</guid>
-            <pubDate>Sat, 25 Jul 2026 13:27:24 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 知らない名前があれば止まり、呼び出し先を開く。そこにもまた、知らない名前がある。 かつての私は、そうやって定義から定義へ移っていた。 たどり着いたころには、最初に何を知りたかったのかを忘れている。 戻る道は残っていた。開いたタブは全部そこにある。それでも、なぜ最初のファイルを開いたのかだけが出てこない。仕方がないので、また先頭から読み始める。 あのころ読むのが遅かったのは、目の動きが遅いからではない。すべてを同じ重要度で読み、一度に扱える量が限られた注意へ、目的、現在地、通過した経路、細部を同時に載せていたからだ。最初に載せた目的が、いちばん先に落ちる。 いまはAIにコードを調べさせ…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
