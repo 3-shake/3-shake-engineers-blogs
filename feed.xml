@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 11 Aug 2026 22:43:20 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Aug 2026 11:47:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[TopcoatでRustフルスタック開発]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/12/163644</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/12/163644</guid>
+            <pubDate>Wed, 12 Aug 2026 07:36:44 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 初回の起動でデータは保存でき、画面も出た。2回目の起動でアプリが落ちた。エラーはtable "users" already exists。フレームワークを疑ったが、原因は自分の初期化コードだった。 Topcoatは、HTMLをサーバーで生成しながら、ブラウザ上の状態更新やサーバー処理もRustで記述するフルスタックフレームワークです。フロントエンド用のディレクトリやnpmを用意せず、1つのRustファイルから動きます。2026年7月に発表された0.5.0を検証しました。 サーバーサイドレンダリング、部分的な反応、セッションの転送層までは任せられます。認証、マイグレーション、運用はアプ…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[Google Cloud 認定資格を全冠しました（14試験・2年半の記録）]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/google-cloud-all-14-certifications</link>
+            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/google-cloud-all-14-certifications</guid>
+            <pubDate>Wed, 12 Aug 2026 01:41:09 GMT</pubDate>
+            <content:encoded><![CDATA[2026年8月8日、Google Cloud 認定試験の全冠を達成しました。Google Cloud 認定資格は現在14試験あり、その全てに合格した状態です。全冠されている方は業界内に他にもいらっしゃいますが、私の場合は1年などという短期間で凝縮して駆け抜けたタイプではなく、約2年半かけてゆっくり積み上げた形になります。初めて受けたのが2年半前の Google Cloud Certified - Cloud Digital Leader（以下 CDL）。そこからガツガツ受けた時期もあれば、まったく受けていない時期もありました。この間、IPA の情報処理技術者試験（高度情報）も並行して受けていて中断時期もありますし、モチベーションの波もそれなりにありました。ただ、「全冠を取るぞ」と決めてからは、コンスタントに取っていけたという実感があります。受験費用とバウチャーの事情私は Google Cloud のパートナー企業であるスリーシェイクに勤めています。パートナー企業の社員には受験費用が無料になるバウチャーが配布されるため、費用面ではかなり恵まれた環境でした。ただ、この配布方式が2026年4月頃に変わりました。旧方式（Kryterion 時代）: クーポンコードが配布され、それを適用すれば受験できた新方式: Google Cloud Skills Boost で特定のコースを完了することで、バウチャーが適用される2026年2月にテスト配信プロバイダーが Kryterion から Pearson VUE に変わったタイミングと前後して、この変更が入りました。正直、この Skills Boost の対応になかなか本腰を入れられず、バウチャーを受け取るのが遅れました。ただ、一度やってみると他の試験分の Skills Boost もどんどん消化できるようになり、最終的には問題なく受験できました。面倒がって後回しにしていた期間が、結果的に一番のロスでした。受験履歴 日付  試験  結果  2024/02/10  Google Cloud Certified - Cloud Digital Leader（CDL）  合格  2024/05/31  Google Cloud Certified - Associate Cloud Engineer（ACE）  合格  2024/06/26  Google Cloud Certified - Professional Cloud DevOps Engineer（PCDOE）  不合格  2024/07/13  PCDOE（2回目）  合格  2024/07/26  Google Cloud Certified - Professional Cloud Architect（PCA）  不合格  2024/08/10  PCA（2回目）  合格  2024/11/28  Google Cloud Certified - Professional Cloud Developer（PCD）  不合格  2024/12/29  PCD（2回目）  不合格  2025/07/19  PCD（3回目）  合格  2025/08/09  Google Cloud Certified - Generative AI Leader（GAIL）【英語版】  合格  2025/11/20  Google Cloud Certified - Professional Data Engineer（PDE）  不合格  2025/11/23  Google Cloud Certified - Associate Data Practitioner（ADP）  合格  2025/12/14  PDE（2回目）  合格  2025/12/27  Google Cloud Certified - Professional Machine Learning Engineer（PMLE）  合格  2025/12/28  Google Cloud Certified - Associate Google Workspace Administrator（AGWA）  合格  2026/01/11  Google Cloud Certified - Professional Cloud Security Engineer（PCSE）  合格  2026/02/18  Google Cloud Certified - Professional Cloud Database Engineer（PCDBE）【英語版】  不合格  2026/06/18  PCDBE（2回目）【日本語版】  合格  2026/07/23  Google Cloud Certified - Professional Cloud Network Engineer（PCNE）  合格  2026/07/29  PCDOE 更新試験  合格  2026/08/08  Google Cloud Certified - Professional Security Operations Engineer（PSOE）  合格 ※ PCAはRenewal Skillsにて試験なしで更新こうして並べると、私はかなり落ちています。しかも落ちているのは最初の方に集中していて、初期の Professional は受けるたびに一度落ちていました。PCDOE: 1回落ちて2回目で合格PCA: 1回落ちて2回目で合格PCD: 2回落ちて3回目で合格それが次第に、Professional でも一発で合格できるようになっていきました。印象に残っている試験GAIL — 受験登録後に日本語化が発表されるGAIL は英語版で受験しました。当時は日本語版がなかったためです。ところが、受験登録をしてから受験日までの間に Google Cloud Next Tokyo '25 が開催され、そこで「Generative AI Leader を日本語化します」という発表がありました。このまま英語版で受けるか、キャンセルして日本語版を待つか悩みましたが、そのまま英語版で受けて無事合格。日本語版の発表を聞いた時は、非常に複雑な心境でした。受験登録前だったら大喜びだったんですが……。とはいえ、英語で受験したのは今振り返るととても良い経験でした。PDE → ADP — 順番を間違えた話PDE（Professional Data Engineer）を1回目で落ちました。本来であれば、ADP（Associate Data Practitioner）を受けた後に PDE を受けるべきです。ではなぜ逆になったのか。ADP が日本語化されているのを知らなかったからです。英語版しかないと思い込んで後回しにし、先に PDE に手を出してしまいました。ちゃんと確認しておくべきでした。そして PDE に落ちて悔しくなり、3日後に ADP を受けて合格しました。これは PDE のために積んだ土台があり、かつ試験の難易度が下がる分、3日で行けたという面が大きいと思います。その後、1回目から2回目の受験制限期間（2週間）を明けて、2025年12月14日に PDE を合格。この試験は12月半ばあたりで試験内容が変わるという情報があったので、変わる前に取りに行くことを決めて臨みました。PMLE — PDE の土台があれば2週間で行けたPMLE（Professional Machine Learning Engineer）は難関と言われる試験です。ですが、ADP・PDE と積み上げてきた土台、特に PDE が土台になることで、PDE 合格から2週間（12/14 → 12/27）でクリアできました。PMLE が難しいと言われる理由は、Google Cloud の知識だけでなく機械学習そのものの知識も必要になるためです。ただ、生成 AI をがっつりやっている方であれば、ML 領域の素養も次第についてくるので、そこは段階的に埋まっていくと思います。AGWA — PMLE の翌日、一夜漬けPMLE に合格した翌日（12/28）に、AGWA に合格しました。やったことは、ほぼ一夜漬け。今振り返ると、かなり詰め込んだなと思います。この流れで、2025年11月から2026年1月までの3ヶ月で5試験（ADP・PDE・PMLE・AGWA・PCSE）に合格できました。PCDBE — 英語版で落ち、日本語版で合格2026年2月18日、PCDBE を受験。当時は英語版しかなく、久しぶりの不合格となりました。英語版はやはりきつかったです。その後、テスト配信プロバイダーの変更（Kryterion → Pearson VUE）やバウチャー方式の変更を挟んで間が空き、6月18日に日本語版で再受験して合格しました。勉強法：Gemini Notebook（旧NotebookLM）の活用途中から取り入れたのが Gemini Notebook（旧NotebookLM） です。PDE を受けるにあたって使い始めました。私の勉強の流れはこうです。公式ドキュメントやUdemyの模擬試験をGemini Notebookに入れ、生成されるスライドと音声でポイントを抑えます。スライドはかなり分かりやすく解説してくれる形に整えてくれますし、音声解説も理解しやすい。動画を作って見るのもアリだと思います。なお、この方法が特に効いた試験と、そうでもなかった試験があります。その辺りの使い分けは別記事で書く予定です。受験順の戦略：垂直に積み上げる全冠を目指す方に一番お伝えしたいのが、受験順です。結論から言うと、垂直に積み上げるのが良いと考えています。つまり、ある試験に合格したら、同じ上位系統の資格に続けて挑戦するということです。なぜかというと、試験のために記憶した内容は、時間が経つと薄れていくからです。薄れる前に次を受けたい。そして、それを最も有効に活用できるのが同じ上位系統の資格なのです。アーキテクト・開発・運用系CDL → ACE → PCA → PCD → PCDOE一番易しい CDL から入り、その上位である ACE、さらに上位の PCA へ。PCA の次は王道的には PCD、そして開発系という括りで近い PCDOE、という流れです。（私自身は PCA より先に PCDOE を受けているのと、PCDは最後なので、この順番を守っていません。）AI・ML・データ系GAIL → ADP → PDE → PMLEAI とデータは結びつきが非常に強い領域です。GAIL の出題範囲には ML の問題も含まれていますし、ADP・PDE の領域にも ML が含まれます。AI・ML・データはひとつの塊として捉えて良いと思います。難関と言われる PMLE も、ADP → PDE と駆け上がっていけば、かなり取りやすくなります。データベースPCDBE については、PDE でデータベース関連の内容もそれなりに出てくるので、繋がりはあります。ただ、PDE と PMLE の方が結びつきは強い印象です。なので PDE の後に PCDBE でも良いですし、逆でも良いと思います。ネットワーク・セキュリティ系PCSE・PCNE・PSOE の3つは、「ネットワーク・セキュリティ系」と括れそうに見えますが、実際に受けてみると試験問題の内容としての結びつきはそこまで強くないと感じました。それぞれタイプが違います。なので、ここは垂直に積み上げるメリットが他の系統より薄いかもしれません。難易度は人それぞれの経験で変わる一般的に「この試験は難しい」と言われるものはありますが、難易度は本人の実務経験で大きく変わります。私の場合、難関と言われる PMLE の後に、（英語版とはいえ）PCDBE で落ちています。普段の業務で触っているサービスと、試験範囲の重なり方によって、体感難易度は全然違ってきます。AI 系が強い方は、まず PMLE を目指してみるのも良いかもしれません。なお、PCNE も難しいと言われる試験ですが、こちらは対策をしっかりやって一発合格できたので、そこは良かったなと思っています。費用についてパートナー企業でない方は、受験費用がそれなりにかさみます。会社の資格試験補助制度などを活用して臨むのが現実的だと思います。パートナー企業の場合は、年1回の全冠表彰（Google Cloud Partner All Certification Holders）もあります。私もこれを忘れずに申請したいと思います。おわりに私の場合は約2年半かけて、ゆっくり全冠まで到達しました。途中で何度も落ちていますし、順番を間違えたり、英語版で苦戦したり、バウチャーの対応を面倒がって時間をロスしたりもしています。それでも、系統ごとに垂直に積み上げることと、Gemini Notebookを使いこなすことを続けていれば、全冠は十分に射程内だと感じました。Google Cloud を触っている方は、ぜひ全冠を目指してみてはどうでしょうか。shu-kob.hateblo.jp↑以前の記事で書きましたが、Google Cloud Next Tokyoで獲得した全冠バッチ！お読みいただきありがとうございました。]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[AIの「自然な名前」が、概念の境界を消す]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/11/142818</link>
@@ -252,22 +268,6 @@
             <pubDate>Mon, 27 Jul 2026 00:09:34 GMT</pubDate>
             <content:encoded><![CDATA[【概念編】SLI/SLOとは何か——ユーザー体験から信頼性を定義するこの記事は、SLI/SLOを「定義し、実践し、運用で育てる」までを扱う3部作の1本目・概念編です。【概念編】SLI/SLOとは何か——ユーザー体験から信頼性を定義する(この記事): SLI/SLOの基本的な考え方と作り方【実践編】GitLab Self-hosted(AWS)のSLI/SLOを定義し、CloudWatchで表現する: 実際のインフラ構成に当てはめる【運用編】SLI/SLOをチームに定着させ、運用で育てる: 定義したSLI/SLOをチームに定着させ、育てていく方法 想定読者SL...]]></content:encoded>
             <author>Shohei Takamura</author>
-        </item>
-        <item>
-            <title><![CDATA[忘れてもいい知識、忘れると気づけない知識]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/27/003037</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/27/003037</guid>
-            <pubDate>Sun, 26 Jul 2026 15:30:37 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 生成させたRustのコードはコンパイルを通り、小さな入力を使うテストも通った。 use std::io::{self, Read}; fn read_stream(mut input: impl Read) -> io::Result> { let mut bytes = Vec::new(); input.read_to_end(&mut bytes)?; Ok(bytes) } unsafe はない。借用規則にも違反していない。それでも、この関数には入力の上限がない。read_to_end はEOFまで読み込んだ内容をVecへ追加する。入力が大きければメモリを使い…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[SESAME 5 のモーターを DIY で交換しました]]></title>
-            <link>https://blog.1q77.com/2026/07/replace-sesame5-moter/</link>
-            <guid isPermaLink="false">https://blog.1q77.com/2026/07/replace-sesame5-moter/</guid>
-            <pubDate>Sat, 25 Jul 2026 13:47:10 GMT</pubDate>
-            <content:encoded><![CDATA[2年7カ月ほど利用してきたスマートロックの SESAME 5 が突然機能しなくなりました。スマホでの操作や SESAME FACE との連携で反応はしてカチカチと小さな音を立てるけれどもサムターンは回らない状況でした。]]></content:encoded>
-            <author>yteraoka</author>
         </item>
     </channel>
 </rss>
