@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 12 Aug 2026 22:43:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Aug 2026 11:47:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[RMCP 3.0でtfmcpをMCP 2026-07-28へ移行した]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/13/122153</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/13/122153</guid>
+            <pubDate>Thu, 13 Aug 2026 03:21:53 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 2025年3月、私はTerraformをMCP経由で操作するツールtfmcpを開発しました。JSON-RPCのメッセージ型、標準入出力のトランスポート層、メソッドの振り分けまで、すべてRustで実装しています。当時の記事では「MCPの動作原理を理解するため、あえて配線を自分の手で組み立てた」と書きました。正直に言えば、当時は利用できるライブラリがなく、自作するほかなかったのです。 syu-m-5151.hatenablog.com それからMCPは何度も更新されました。2026年7月28日版では、プロトコルセッションと初期化ハンドシェイクがなくなりました。代わって、server/di…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[TopcoatでRustフルスタック開発]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/12/163644</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/337ee02dc8798a</guid>
             <pubDate>Mon, 27 Jul 2026 00:10:59 GMT</pubDate>
             <content:encoded><![CDATA[【実践編】GitLab Self-hosted(AWS)のSLI/SLOを定義し、CloudWatchで表現するこの記事は、SLI/SLOを「定義し、実践し、運用で育てる」までを扱う3部作の2本目・実践編です。【概念編】SLI/SLOとは何か——ユーザー体験から信頼性を定義する: SLI/SLOの基本的な考え方と作り方【実践編】GitLab Self-hosted(AWS)のSLI/SLOを定義し、CloudWatchで表現する(この記事): 実際のインフラ構成に当てはめる【運用編】SLI/SLOをチームに定着させ、運用で育てる: 定義したSLI/SLOをチームに定着...]]></content:encoded>
-            <author>Shohei Takamura</author>
-        </item>
-        <item>
-            <title><![CDATA[【概念編】SLI/SLOとは何か - ユーザー体験から信頼性を定義する]]></title>
-            <link>https://zenn.dev/hakushou41/articles/8b29111a290ae2</link>
-            <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/8b29111a290ae2</guid>
-            <pubDate>Mon, 27 Jul 2026 00:09:34 GMT</pubDate>
-            <content:encoded><![CDATA[【概念編】SLI/SLOとは何か——ユーザー体験から信頼性を定義するこの記事は、SLI/SLOを「定義し、実践し、運用で育てる」までを扱う3部作の1本目・概念編です。【概念編】SLI/SLOとは何か——ユーザー体験から信頼性を定義する(この記事): SLI/SLOの基本的な考え方と作り方【実践編】GitLab Self-hosted(AWS)のSLI/SLOを定義し、CloudWatchで表現する: 実際のインフラ構成に当てはめる【運用編】SLI/SLOをチームに定着させ、運用で育てる: 定義したSLI/SLOをチームに定着させ、育てていく方法 想定読者SL...]]></content:encoded>
             <author>Shohei Takamura</author>
         </item>
     </channel>
