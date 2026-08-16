@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 16 Aug 2026 11:37:48 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Aug 2026 22:36:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -21,6 +21,14 @@
             <pubDate>Sat, 15 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026/08/15(土) JAWS-UG 茨城 #16 LT&BBQ大会https://jawsug-ibaraki.connpass.com/event/401327/ で話した内容。TerraformでSecret値を扱う際の課題とその対応の話。]]></content:encoded>
             <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[ソフトウェアサプライチェーンの構造的リスクとコンテナ環境の保護]]></title>
+            <link>https://speakerdeck.com/kyohmizu/no-kouzouteki-risuku-to-kontena-kankyou-no-hogo</link>
+            <guid isPermaLink="false">https://speakerdeck.com/kyohmizu/no-kouzouteki-risuku-to-kontena-kankyou-no-hogo</guid>
+            <pubDate>Thu, 13 Aug 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[セキュリティ・キャンプ全国大会2026のB6講義資料です。]]></content:encoded>
+            <author>kyohmizu</author>
         </item>
         <item>
             <title><![CDATA[RMCP 3.0でtfmcpをMCP 2026-07-28へ移行した]]></title>
@@ -260,14 +268,6 @@
             <pubDate>Mon, 27 Jul 2026 03:00:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに今回、色々と遊ぶ過程でスライド作成ツールを見直しました。Markdown記法を使用できると嬉しいので、候補はSlidevとMarpの2つで検討しました。試行錯誤したので、個人のADR的に残しておきます。]]></content:encoded>
             <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[【運用編】SLI/SLOをチームに定着させ、運用で育てる]]></title>
-            <link>https://zenn.dev/hakushou41/articles/165afb6f3ca005</link>
-            <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/165afb6f3ca005</guid>
-            <pubDate>Mon, 27 Jul 2026 00:11:26 GMT</pubDate>
-            <content:encoded><![CDATA[【運用編】SLI/SLOをチームに定着させ、運用で育てるこの記事は、SLI/SLOを「定義し、実践し、運用で育てる」までを扱う3部作の3本目・運用編です。【概念編】SLI/SLOとは何か——ユーザー体験から信頼性を定義する: SLI/SLOの基本的な考え方と作り方【実践編】GitLab Self-hosted(AWS)のSLI/SLOを定義し、CloudWatchで表現する: 実際のインフラ構成に当てはめる【運用編】SLI/SLOをチームに定着させ、運用で育てる(この記事): 定義したSLI/SLOをチームに定着させ、育てていく方法免責事項: 本文中では、一般的...]]></content:encoded>
-            <author>Shohei Takamura</author>
         </item>
     </channel>
 </rss>
