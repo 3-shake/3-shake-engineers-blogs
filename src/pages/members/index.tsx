@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import Head from "next/head";
 
 import { config } from "@site.config";
 import { members } from "@members";
@@ -16,8 +15,6 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
         <img
           src={member.avatarSrc}
           alt={member.name}
-          width={80}
-          height={80}
           className="member-card__avatar-img"
         />
       </div>

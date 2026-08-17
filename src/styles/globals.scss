@@ -1,17 +1,17 @@
-@import "./_utils";
-@import "./_variables";
-@import "./_base";
+@use "./utils" as *;
+@use "./variables" as *;
+@use "./base";
 
 // components
-@import "./components/_ContentWrapper";
-@import "./components/_SiteHeader";
-@import "./components/_SiteFooter";
-@import "./components/_ScrollableMembers";
-@import "./components/_PostList";
-@import "./components/_LinkBackHome";
+@use "./components/ContentWrapper";
+@use "./components/SiteHeader";
+@use "./components/SiteFooter";
+@use "./components/ScrollableMembers";
+@use "./components/PostList";
+@use "./components/LinkBackHome";
 
 // pages
-@import "./pages/_index";
-@import "./pages/_error";
-@import "./pages/members/_name";
-@import "./pages/members/_index";
+@use "./pages/index" as page-index;
+@use "./pages/error";
+@use "./pages/members/name";
+@use "./pages/members/index" as members-index;

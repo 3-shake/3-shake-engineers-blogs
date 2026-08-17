@@ -36,3 +36,7 @@ yarn-error.log*
 # generated data
 /.contents
 /public/feed.xml
+/public/favicons
+
+# typescript
+tsconfig.tsbuildinfo

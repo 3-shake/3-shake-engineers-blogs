@@ -16,7 +16,7 @@ export const SiteHeader: React.FC = () => (
           <span className="site-header__logo-text">
             3-shake
             <br />
-            Engineers' Blogs
+            Engineers&apos; Blogs
           </span>
         </Link>
         <div className="site-header__links">

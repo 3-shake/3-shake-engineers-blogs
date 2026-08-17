@@ -1,0 +1,56 @@
+{
+  // Renovate設定スキーマ
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+
+  // 基本設定プリセット
+  extends: [
+    "config:recommended", // 推奨設定
+    ":dependencyDashboard", // 依存関係ダッシュボード
+    ":semanticCommits", // セマンティックコミット
+    ":separateMajorReleases", // メジャーリリースを分離
+    ":combinePatchMinorReleases", // パッチ・マイナーリリースを結合
+    ":ignoreUnstable", // 不安定版を無視
+    ":prImmediately", // PR即座作成
+    ":updateNotScheduled", // スケジュール外更新なし
+    ":automergeDisabled", // 自動マージ無効（後で個別設定）
+    ":ignoreModulesAndTests", // node_modulesとテストファイルを無視
+    ":autodetectPinVersions", // バージョン固定を自動検出
+    ":prConcurrentLimit10", // 同時PR数制限: 10
+    ":prHourlyLimit2", // 時間あたりPR数制限: 2
+  ],
+
+  // 基本設定
+  timezone: "Asia/Tokyo",
+  schedule: ["before 10am on monday"], // 毎週月曜日の午前10時前
+  labels: ["dependencies"],
+  reviewers: ["O-natsu"],
+
+  // セキュリティアラート設定
+  vulnerabilityAlerts: {
+    enabled: true,
+    labels: ["security", "dependencies"],
+  },
+
+  // 最小リリース期間（新バージョンから一定期間待機）
+  minimumReleaseAge: "5 days",
+
+  // pnpm の trustPolicy による誤検知を回避（Renovate 実行時のみ）
+  npmrc: "trust-policy=none",
+
+  // eslint-plugin-react が ESLint v10 未対応のため v8 に固定
+  packageRules: [
+    {
+      matchPackageNames: ["eslint", "@eslint/js"],
+      allowedVersions: "<9",
+    },
+  ],
+
+  // ロックファイルメンテナンス
+  // minimumReleaseAge を 0 にして、毎週の force-push で待機日数が
+  // リセットされ続けマージ不能になるのを防ぐ
+  lockFileMaintenance: {
+    enabled: true,
+    schedule: ["before 10am on monday"],
+    minimumReleaseAge: "0 days",
+  },
+}

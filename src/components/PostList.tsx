@@ -5,21 +5,27 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import { PostItem } from "@src/types";
 import {
-  getMemberByName,
   getHostFromURL,
   getFaviconSrcFromHostname,
   getMemberPath,
   getMemberById,
 } from "@src/utils/helper";
+import fetchedFavicons from "@.contents/favicons.json";
 
 dayjs.extend(relativeTime);
 
-const PostLink: React.FC<{ item: PostItem }> = (props) => {
+type PostLinkProps = {
+  item: PostItem;
+  currentTime: number;
+};
+
+const PostLink: React.FC<PostLinkProps> = (props) => {
   const { authorId, title, isoDate, link, dateMiliSeconds } = props.item;
   const member = getMemberById(authorId);
   if (!member) return null;
 
   const hostname = getHostFromURL(link);
+  const threeDaysAgo = props.currentTime - 86400000 * 3;
 
   return (
     <article className="post-link">
@@ -27,8 +33,6 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
         <img
           src={member.avatarSrc}
           className="post-link__author-img"
-          width={35}
-          height={35}
         />
         <div className="post-link__author-name">
           <div className="post-link__author-name">{member.name}</div>
@@ -41,27 +45,37 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
         <h2 className="post-link__title">{title}</h2>
         {hostname && (
           <div className="post-link__site">
-            <img
-              src={getFaviconSrcFromHostname(hostname)}
-              width={14}
-              height={14}
-              className="post-link__site-favicon"
-            />
+            {(fetchedFavicons as string[]).includes(hostname) && (
+              <img
+                src={getFaviconSrcFromHostname(hostname)}
+                width={14}
+                height={14}
+                className="post-link__site-favicon"
+                alt=""
+              />
+            )}
             {hostname}
           </div>
         )}
       </a>
-      {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
+      {dateMiliSeconds && dateMiliSeconds > threeDaysAgo && (
         <div className="post-link__new-label">NEW</div>
       )}
     </article>
   );
 };
 
-export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
+type PostListProps = {
+  items: PostItem[];
+};
+
+export const PostList: React.FC<PostListProps> = (props) => {
   const [displayItemsCount, setDisplayItemsCount] = useState<number>(32);
+  const [currentTime] = useState(() => Date.now());
   const totalItemsCount = props.items?.length || 0;
   const canLoadMore = totalItemsCount - displayItemsCount > 0;
+
+  const displayItems = props.items.slice(0, displayItemsCount);
 
   if (!totalItemsCount) {
     return <div className="post-list-empty">No posts yet</div>;
@@ -70,8 +84,12 @@ export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
   return (
     <>
       <div className="post-list">
-        {props.items.slice(0, displayItemsCount).map((item, i) => (
-          <PostLink key={`post-item-${i}`} item={item} />
+        {displayItems.map((item, i) => (
+          <PostLink
+            key={`post-item-${i}`}
+            item={item}
+            currentTime={currentTime}
+          />
         ))}
       </div>
       {canLoadMore && (

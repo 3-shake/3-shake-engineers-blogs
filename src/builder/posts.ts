@@ -1,85 +1,180 @@
-import fs from 'fs-extra';
-import Parser from 'rss-parser';
-import { members } from '../../members';
-import { PostItem, Member } from '../types';
-export default {};
+import fs from "fs-extra";
+import Parser from "rss-parser";
+import { members } from "../../members.js";
+import { PostItem, Member } from "../types.js";
 
 type FeedItem = {
   title: string;
   link: string;
-  contentSnippet?: string;
-  isoDate?: string;
+  contentSnippet?: string | undefined;
+  isoDate?: string | undefined;
   dateMiliSeconds: number;
 };
 
 const parser = new Parser();
-let allPostItems: PostItem[] = [];
+const FETCH_TIMEOUT_MS = 30_000;
 
-async function fetchFeedItems(url: string) {
-  const feed = await parser.parseURL(url);
-  if (!feed?.items?.length) return [];
-
-  // return item which has title and link
-  return feed.items
-    .map(({ title, contentSnippet, link, isoDate }) => {
-      return {
-        title,
-        contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ''),
-        link,
-        isoDate,
-        dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
-      };
-    })
-    .filter(({ title, link }) => title && link) as FeedItem[];
+function withTimeout<T>(promise: Promise<T>, ms: number, url: string): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(
+      () => reject(new Error(`Timeout after ${ms}ms fetching ${url}`)),
+      ms,
+    );
+    promise.then(
+      (val) => { clearTimeout(timer); resolve(val); },
+      (err) => { clearTimeout(timer); reject(err); },
+    );
+  });
 }
 
-async function getFeedItemsFromSources(sources: undefined | string[]) {
-  if (!sources?.length) return [];
-  let feedItems: FeedItem[] = [];
-  for (const url of sources) {
-    const items = await fetchFeedItems(url);
-    if (items) feedItems = [...feedItems, ...items];
+async function fetchFeedItems(url: string): Promise<FeedItem[]> {
+  try {
+    console.log(`Fetching feed from: ${url}`);
+    const feed = await withTimeout(parser.parseURL(url), FETCH_TIMEOUT_MS, url);
+
+    if (!feed?.items?.length) {
+      console.warn(`No items found in feed: ${url}`);
+      return [];
+    }
+
+    return feed.items
+      .map(({ title, contentSnippet, link, isoDate }) => {
+        if (!title || !link) {
+          console.warn(
+            `Skipping item with missing title or link in feed: ${url}`,
+          );
+          return null;
+        }
+
+        const item: FeedItem = {
+          title,
+          link,
+          contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ""),
+          isoDate,
+          dateMiliSeconds: isoDate ? (new Date(isoDate).getTime() || 0) : 0,
+        };
+        return item;
+      })
+      .filter((item): item is FeedItem => item !== null);
+  } catch (error) {
+    console.error(
+      `Error fetching feed from ${url}:`,
+      error instanceof Error ? error.message : "Unknown error",
+    );
+    return [];
   }
-  return feedItems;
+}
+
+async function getFeedItemsFromSources(
+  sources: undefined | string[],
+): Promise<FeedItem[]> {
+  if (!sources?.length) {
+    console.warn("No sources provided");
+    return [];
+  }
+
+  const results = await Promise.all(sources.map((url) => fetchFeedItems(url)));
+  return results.flat();
 }
 
 async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
   const { id, sources, name, includeUrlRegex, excludeUrlRegex } = member;
-  const feedItems = await getFeedItemsFromSources(sources);
-  if (!feedItems) return [];
 
-  let postItems = feedItems.map((item) => {
-    return {
-      ...item,
-      authorName: name,
-      authorId: id,
-    };
-  });
-  // remove items which not matches includeUrlRegex
+  console.log(`Processing feeds for member: ${name}`);
+  const feedItems = await getFeedItemsFromSources(sources);
+
+  let postItems = feedItems.map((item) => ({
+    ...item,
+    authorName: name,
+    authorId: id,
+  }));
+
   if (includeUrlRegex) {
-    postItems = postItems.filter((item) => {
-      return item.link.match(new RegExp(includeUrlRegex));
-    });
+    try {
+      const regex = new RegExp(includeUrlRegex);
+      postItems = postItems.filter((item) => {
+        const matches = item.link.match(regex);
+        if (!matches) {
+          console.debug(
+            `Filtered out item not matching includeUrlRegex: ${item.link}`,
+          );
+        }
+        return matches;
+      });
+    } catch (error) {
+      console.error(
+        `Invalid includeUrlRegex "${includeUrlRegex}" for ${name}: ${error instanceof Error ? error.message : error}`,
+      );
+    }
   }
-  // remove items which matches excludeUrlRegex
+
   if (excludeUrlRegex) {
-    postItems = postItems.filter((item) => {
-      return !item.link.match(new RegExp(excludeUrlRegex));
-    });
+    try {
+      const regex = new RegExp(excludeUrlRegex);
+      postItems = postItems.filter((item) => {
+        const matches = item.link.match(regex);
+        if (matches) {
+          console.debug(
+            `Filtered out item matching excludeUrlRegex: ${item.link}`,
+          );
+        }
+        return !matches;
+      });
+    } catch (error) {
+      console.error(
+        `Invalid excludeUrlRegex "${excludeUrlRegex}" for ${name}: ${error instanceof Error ? error.message : error}`,
+      );
+    }
   }
 
   return postItems;
 }
 
-(async function () {
-  for (const member of members) {
-    const items = await getMemberFeedItems(member);
-    if (items) allPostItems = [...allPostItems, ...items];
-  }
-  allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
-  fs.ensureDirSync(".contents");
+const CONCURRENCY_LIMIT = 10;
 
-  // Unicodeの行区切り文字 (line separator) を示すLS (U+2028)、段落区切り文字 (paragraph separator) を示すPS (U+2029)を削除する必要がある。
-  const json = JSON.stringify(allPostItems).replaceAll(/[\u2028\u2029]/g, "");
-  fs.writeFileSync(".contents/posts.json", json);
+async function processInBatches<T, R>(
+  items: T[],
+  batchSize: number,
+  processor: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const batchResults = await Promise.all(batch.map(processor));
+    results.push(...batchResults);
+  }
+  return results;
+}
+
+(async function () {
+  try {
+    console.log("Starting feed processing...");
+    console.log(
+      `Processing ${members.length} members with concurrency limit of ${CONCURRENCY_LIMIT}`,
+    );
+
+    const results = await processInBatches(
+      members,
+      CONCURRENCY_LIMIT,
+      getMemberFeedItems,
+    );
+    const allPostItems = results.flat();
+
+    allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
+
+    fs.ensureDirSync(".contents");
+    const json = JSON.stringify(allPostItems).replaceAll(/[\u2028\u2029]/g, "");
+    fs.writeFileSync(".contents/posts.json", json);
+
+    console.log(
+      `Successfully processed ${allPostItems.length} posts from ${members.length} members`,
+    );
+    process.exit(0);
+  } catch (error) {
+    console.error(
+      "Fatal error during feed processing:",
+      error instanceof Error ? error.message : "Unknown error",
+    );
+    process.exit(1);
+  }
 })();

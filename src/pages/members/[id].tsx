@@ -36,8 +36,8 @@ const Page: NextPage<Props> = (props) => {
               <img
                 src={avatarSrc}
                 alt={name}
-                width={100}
-                height={100}
+                
+                
                 className="member-header__avatar-img"
               />
             </div>

@@ -3,17 +3,41 @@ name: Build Next.js app
 on:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v6
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v7
         with:
           node-version-file: package.json
-          cache: yarn
+          cache: pnpm
 
-      - run: yarn
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y webp
 
-      - run: yarn build
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Cache Next.js build
+        uses: actions/cache@v6
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('next.config.js', 'tsconfig.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
+
+      - name: Type check
+        run: pnpm typecheck
+
+      - name: Build application
+        run: pnpm build

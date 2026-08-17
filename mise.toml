@@ -1,0 +1,8 @@
+[tools]
+node = "24.19.0"
+
+[hooks]
+postinstall = "corepack enable"
+
+[settings]
+experimental = true
