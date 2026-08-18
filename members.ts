@@ -482,6 +482,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars-webp/kobuchi.webp",
     sources: [
       "https://shu-kob.hateblo.jp/feed",
+      "https://zenn.dev/shu_kob/feed",
       "https://speakerdeck.com/shukob.rss",
     ],
     includeUrlRegex: "",
