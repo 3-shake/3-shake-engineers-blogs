@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 17 Aug 2026 22:38:10 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Aug 2026 01:32:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[資格は「型」をくれる — Google Cloud 全冠で分かったこと]]></title>
+            <link>https://zenn.dev/shu_kob/articles/57d0e91e66cc60</link>
+            <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/57d0e91e66cc60</guid>
+            <pubDate>Sun, 16 Aug 2026 13:24:48 GMT</pubDate>
+            <content:encoded><![CDATA[先日、Google Cloud の認定資格14科目をすべて取得し、いわゆる「全冠」を達成しました。↓全冠とったレポート記事はこちらhttps://shu-kob.hateblo.jp/entry/google-cloud-all-14-certifications資格試験にはときどき、資格無駄という声も上がります。いわゆる「実務至上主義」ですね。私自身、実務経験が最も重要であるという意見を全否定するつもりは毛頭ありません。現場で泥臭く手を動かして得られる経験値は何物にも代えがたいです。ただ、全14科目を走り切った今、声を大にして言いたいのは「経験と知識（資格学習）は対立する...]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[2026-08-15 JAWS-UG 茨城 #16 Secrets ManagerにおけるSecret値の管理(Terraformの場合) / Secrets Manager Secrets]]></title>
             <link>https://speakerdeck.com/masasuzu/secrets-manager-secrets</link>
@@ -260,14 +268,6 @@
             <pubDate>Mon, 27 Jul 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://3-shake.connpass.com/event/399469/ で発表した内容]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[スライド作成にMarpを選んだ話]]></title>
-            <link>https://rin2yh.com/post/why-i-chose-marp-c96659vtvjaprs/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/why-i-chose-marp-c96659vtvjaprs/</guid>
-            <pubDate>Mon, 27 Jul 2026 03:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに今回、色々と遊ぶ過程でスライド作成ツールを見直しました。Markdown記法を使用できると嬉しいので、候補はSlidevとMarpの2つで検討しました。試行錯誤したので、個人のADR的に残しておきます。]]></content:encoded>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
