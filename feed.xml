@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 18 Aug 2026 11:40:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Aug 2026 22:38:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rustで日本語推敲CLI/Skillの「Suiko」を作りました]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/18/224136</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/18/224136</guid>
+            <pubDate>Tue, 18 Aug 2026 13:41:36 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Suikoは、日本語文書の自然さと読みやすさを、再現可能なルールで診断するRust製のCLIです。禁止語や翻訳調に加え、均一な文のリズム、段落構造、用語の初出、読解負荷まで確認できます。ただし、文章がAIによって書かれたかは判定しません。怪しい箇所を同じ条件で指し示し、直すか残すかの判断を人間やエージェントへ返します。 github.com Suikoの出発点は、cojiさんのNatural Japaneseです。このAgent Skillは、文章を書く前の設計、書くときの制約、書いた後の検査を一体として扱います。定型句を置換するだけで終わらず、機械が疑いを検出し、文脈を読める人間や…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[資格は「型」をくれる — Google Cloud 全冠で分かったこと]]></title>
             <link>https://zenn.dev/shu_kob/articles/57d0e91e66cc60</link>
@@ -260,14 +268,6 @@
             <pubDate>Mon, 27 Jul 2026 12:03:36 GMT</pubDate>
             <content:encoded><![CDATA[第1部:便利な社内ツールが、プラットフォームとして扱われるまで本記事について本記事に登場する企業、組織、人物、プロダクト、障害、会話はすべて架空です。公開されているPlatform EngineeringおよびSREの知見をもとに構成した思考実験であり、筆者が関わった特定の企業、案件、組織を説明・再現するものではありません。続き : 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか 開発を助ける道具は、いつからサービスになるのか架空のソフトウェア企業「Northstar Works」には、十数個の開発チームがあった。各チームはそれぞれ異なるプロダ...]]></content:encoded>
             <author>Shohei Takamura</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-07-28 3-shakeテックランチ Cloud Run のデプロイパラメータを考える / Cloud Run Deploy Parameter]]></title>
-            <link>https://speakerdeck.com/masasuzu/cloud-run-deploy-parameter</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/cloud-run-deploy-parameter</guid>
-            <pubDate>Mon, 27 Jul 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://3-shake.connpass.com/event/399469/ で発表した内容]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
         </item>
     </channel>
 </rss>
