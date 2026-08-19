@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 18 Aug 2026 22:38:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Aug 2026 11:40:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,27 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[Claude Code活用状況を可視化するダッシュボード構築]]></title>
+            <link>https://sreake.com/blog/visualize-claude-code-utilization/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/visualize-claude-code-utilization/</guid>
+            <pubDate>Wed, 19 Aug 2026 10:03:31 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreakeでは、AI駆動開発検証チームを中心に、AIツールの活用推進やPlaybook作成、情報収集・検証にも取り組んでいます。その一環として、Claude Codeの利用状況を可視化するためのダッシュボード […]The post Claude Code活用状況を可視化するダッシュボード構築 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
             <title><![CDATA[Rustで日本語推敲CLI/Skillの「Suiko」を作りました]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/18/224136</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/18/224136</guid>
             <pubDate>Tue, 18 Aug 2026 13:41:36 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Suikoは、日本語文書の自然さと読みやすさを、再現可能なルールで診断するRust製のCLIです。禁止語や翻訳調に加え、均一な文のリズム、段落構造、用語の初出、読解負荷まで確認できます。ただし、文章がAIによって書かれたかは判定しません。怪しい箇所を同じ条件で指し示し、直すか残すかの判断を人間やエージェントへ返します。 github.com Suikoの出発点は、cojiさんのNatural Japaneseです。このAgent Skillは、文章を書く前の設計、書くときの制約、書いた後の検査を一体として扱います。定型句を置換するだけで終わらず、機械が疑いを検出し、文脈を読める人間や…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[35分でわかるEffective Platform Engineering]]></title>
+            <link>https://speakerdeck.com/nwiizo/35-bun-de-wakaru-effective-platform-engineering</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/35-bun-de-wakaru-effective-platform-engineering</guid>
+            <pubDate>Tue, 18 Aug 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[このたび、はじめてマイナビ出版様より翻訳書を出版させていただくことになりました。原書は『Effective Platform Engineering』、邦題は『実践 プラットフォームエンジニアリング』です。発売日は2026年8月24日、いよいよ来週です。ぜひご予約いただけると嬉しいです。https://book.mynavi.jp/ec/products/detail/id=151794https://amzn.asia/d/0d4hfBcxこれに合わせて、「『実践 プラットフォームエンジニアリング』翻訳者と考える、開発者体験を加速する基盤のセルフサービス化」というイベントに登壇させていただきます。いつも機会をくださる Findy 様には感謝しています。セッションタイトルは「35分でわかるEffective Platform Engineering」です。書籍を読む際のガイドラインとして機能する内容になればと思っています。]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
@@ -252,22 +268,6 @@
             <pubDate>Mon, 27 Jul 2026 22:52:20 GMT</pubDate>
             <content:encoded><![CDATA[はじめに WebAssembly（以下、Wasm）は、ブラウザ上で高い実行性能を得るために生まれた技術です。近年は、軽量性や可搬性、サンドボックスによる分離といった特徴から、ブラウザの外でも活用が広がっています。なかでも […]The post ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[[プラットフォームは、何を支えるのか] 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか]]></title>
-            <link>https://zenn.dev/hakushou41/articles/89d8ff677dec5a</link>
-            <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/89d8ff677dec5a</guid>
-            <pubDate>Mon, 27 Jul 2026 12:03:44 GMT</pubDate>
-            <content:encoded><![CDATA[第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか本記事について本記事に登場する企業、組織、人物、プロダクト、出来事はすべて架空です。公開されているPlatform EngineeringおよびSREの知見をもとに構成した思考実験であり、筆者が関わった特定の企業、案件、組織を説明・再現するものではありません。前の文章 : 第1部:便利な社内ツールが、プラットフォームとして扱われるまで プロダクトを作るハードルが下がったNorthstar Worksが標準的な開発経路を提供するようになってから、数年が経った。その間に、ソフトウェア開発の環境は大きく変...]]></content:encoded>
-            <author>Shohei Takamura</author>
-        </item>
-        <item>
-            <title><![CDATA[[プラットフォームは、何を支えるのか] 第1部:便利な社内ツールが、プラットフォームとして扱われるまで]]></title>
-            <link>https://zenn.dev/hakushou41/articles/603d1d1b207878</link>
-            <guid isPermaLink="false">https://zenn.dev/hakushou41/articles/603d1d1b207878</guid>
-            <pubDate>Mon, 27 Jul 2026 12:03:36 GMT</pubDate>
-            <content:encoded><![CDATA[第1部:便利な社内ツールが、プラットフォームとして扱われるまで本記事について本記事に登場する企業、組織、人物、プロダクト、障害、会話はすべて架空です。公開されているPlatform EngineeringおよびSREの知見をもとに構成した思考実験であり、筆者が関わった特定の企業、案件、組織を説明・再現するものではありません。続き : 第2部:AIで作れるものが増えたあと、プラットフォームは何を守るのか 開発を助ける道具は、いつからサービスになるのか架空のソフトウェア企業「Northstar Works」には、十数個の開発チームがあった。各チームはそれぞれ異なるプロダ...]]></content:encoded>
-            <author>Shohei Takamura</author>
         </item>
     </channel>
 </rss>
