@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 21 Aug 2026 11:40:38 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Aug 2026 22:38:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gemini Sparkを触る勉強会をやってみて考えた、ノーコードAIエージェントとこれからのエンジニア]]></title>
+            <link>https://zenn.dev/shu_kob/articles/53a468ddd1a707</link>
+            <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/53a468ddd1a707</guid>
+            <pubDate>Fri, 21 Aug 2026 15:21:57 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに2026年8月21日(金)の19時から、「Gemini Sparkを触る会」という勉強会を個人主催で開催しました。https://genai-users.connpass.com/event/404236/事前資料は作らず、公式ドキュメントを画面に出しながらライブで触る、という形式です。YouTube Liveで配信したのでアーカイブも残っています。この記事では、勉強会でGemini Sparkを触ってみて考えたこと ——「ノーコードAIエージェントの立ち位置」と「これからのエンジニアの役割」について書きます。 Gemini SparkとはGemini Spar...]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[AI時代のソフトウェア要求 - Software Requirements Essentialsの読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/21/163005</link>
@@ -261,13 +269,6 @@
             <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[最低限のハイライトは動いていたけれど，平坦で認知負荷が高かったので生成 AI に相談した．]]></content:encoded>
             <author>Masaki Haga</author>
-        </item>
-        <item>
-            <title><![CDATA[Javaなしで安全に使えるPlantUMLビューア「pumlv」]]></title>
-            <link>https://rin2yh.com/post/pumlv-go-ouw3hxjl9upmqm/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/pumlv-go-ouw3hxjl9upmqm/</guid>
-            <pubDate>Tue, 28 Jul 2026 15:00:00 GMT</pubDate>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
