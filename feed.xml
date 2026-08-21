@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 20 Aug 2026 22:39:35 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Aug 2026 11:40:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AI時代のソフトウェア要求 - Software Requirements Essentialsの読書感想文]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/21/163005</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/21/163005</guid>
+            <pubDate>Fri, 21 Aug 2026 07:30:05 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 私たちは、明確なゴールを決めずにコードを書き始めていた。 書いて、動かして、また直した。 AIエージェントを使う今、それは過去の話ではない。 コードから考え始めることには、もっともな理由があります。動くものがあれば話は具体的になり、間違いにも早く気づけます。AIエージェントは、このやり方をさらにやりやすくしました。曖昧な依頼でも何かを返し、修正を頼めば次の案を出します。 その一方で、完成したコードから「なぜ作るのか」「どの損失を避けるのか」「誰が判断するのか」を復元する仕事は残ります。生成が速いほど、曖昧さも速く実装へ広がります。要求工学は、作る機能だけでなく、作る理由、判断する人、…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Claude Code活用状況を可視化するダッシュボード構築]]></title>
             <link>https://sreake.com/blog/visualize-claude-code-utilization/</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://rin2yh.com/post/pumlv-go-ouw3hxjl9upmqm/</guid>
             <pubDate>Tue, 28 Jul 2026 15:00:00 GMT</pubDate>
             <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題]]></title>
-            <link>https://sreake.com/blog/difference-between-container-and-webassembly/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/difference-between-container-and-webassembly/</guid>
-            <pubDate>Mon, 27 Jul 2026 22:52:20 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに WebAssembly（以下、Wasm）は、ブラウザ上で高い実行性能を得るために生まれた技術です。近年は、軽量性や可搬性、サンドボックスによる分離といった特徴から、ブラウザの外でも活用が広がっています。なかでも […]The post ブラウザの外で WebAssembly を動かして見えたコンテナとの違いと実用上の課題 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
