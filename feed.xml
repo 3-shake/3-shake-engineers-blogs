@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 22 Aug 2026 22:36:57 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Aug 2026 11:38:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -37,6 +37,14 @@
             <pubDate>Wed, 19 Aug 2026 10:03:31 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreakeでは、AI駆動開発検証チームを中心に、AIツールの活用推進やPlaybook作成、情報収集・検証にも取り組んでいます。その一環として、Claude Codeの利用状況を可視化するためのダッシュボード […]The post Claude Code活用状況を可視化するダッシュボード構築 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[AIは「削る」んやなくて「移す」だけ  − 移った先が本番障害やったので、SREで受け止める −]]></title>
+            <link>https://speakerdeck.com/shukob/ai-shifts-toil-to-production</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/ai-shifts-toil-to-production</guid>
+            <pubDate>Wed, 19 Aug 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2026年8月19日 田町.ai #2 での登壇資料です。https://tamachiai.connpass.com/event/397623/生成AIは業務を「削らない」、「移す」だけ。AIコーディングで実装が高速化した結果、しんどさはレビュー・検査へ移動し、それも追いつかなくなると最終的に本番環境が最終テスト環境になります。生産性が上がったのではなく、リスクを前借りしているだけではないか、という話をしました。社内勉強会での自分の仮説、AI Dev Dayでの「PRのdiffが大きすぎると人間もAIもレビューをサボる」という指摘、Google Cloud Next TokyoでのNew Relic社による「AIコーディング以降、本番障害が増えている」という定量報告。この3つが線になったところから、対策としてのSRE（オブザーバビリティの先行設計、カナリアリリース、高速な切り戻し、SLO/エラーバジェット）と、Cloud Run / Cloud Deploy / Cloud Monitoring で実装する提案まで話しています。AI時代の開発速度は「作る速さ」ではなく、「早く気づいて速く戻せる時間」で決まる。#田町ai #生成AI #SRE #GoogleCloud #CloudRun]]></content:encoded>
+            <author>Shu Kobuchi</author>
         </item>
         <item>
             <title><![CDATA[Rustで日本語推敲CLI/Skillの「Suiko」を作りました]]></title>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 29 Jul 2026 02:47:48 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 個々の関数は読める。使われている概念も知っている。 それなのに、値の変化と呼び出し順と失敗時の戻り方を一緒に動かそうとすると、前に見た関係が抜け落ちていく。 足りないのは、たぶん理解力ではない。 同じ関数をもう一度開く。さっき確かめたはずの分岐を、もう一度目で追う。追っているあいだに、その前に確かめた状態のほうが消える。長いコードを前にして私が感じるのは難しさというより、この往復である。 この状態で説明を増やしても、必ずしも楽にはならない。情報が足りないのではなく、考えるために一時的に保持できる量を超えているからだ。 生成AIは私より長いコードを一度に受け取り、関係を要約できる。扱え…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Standard ML のシンタクスハイライトが読みにくくて直した]]></title>
-            <link>https://silasol.la/posts/2026-07-29-01_sml-highlight-readable/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-07-29-01_sml-highlight-readable/</guid>
-            <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[最低限のハイライトは動いていたけれど，平坦で認知負荷が高かったので生成 AI に相談した．]]></content:encoded>
-            <author>Masaki Haga</author>
         </item>
     </channel>
 </rss>
