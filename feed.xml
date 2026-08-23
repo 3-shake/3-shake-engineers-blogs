@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 23 Aug 2026 11:38:14 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Aug 2026 22:36:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,7 +27,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2026/08/21/163005</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/21/163005</guid>
             <pubDate>Fri, 21 Aug 2026 07:30:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 私たちは、明確なゴールを決めずにコードを書き始めていた。 書いて、動かして、また直した。 AIエージェントを使う今、それは過去の話ではない。 コードから考え始めることには、もっともな理由があります。動くものがあれば話は具体的になり、間違いにも早く気づけます。AIエージェントは、このやり方をさらにやりやすくしました。曖昧な依頼でも何かを返し、修正を頼めば次の案を出します。 その一方で、完成したコードから「なぜ作るのか」「どの損失を避けるのか」「誰が判断するのか」を復元する仕事は残ります。生成が速いほど、曖昧さも速く実装へ広がります。要求工学は、作る機能だけでなく、作る理由、判断する人、…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 私たちは、明確なゴールを決めずにコードを書き始めていた。 書いて、動かして、また直した。 AIエージェントを使う今、それは過去の話ではない。 コードから考え始めることには、もっともな理由があります。動くものがあれば話は具体的になり、間違いにも早く気づけます。AIエージェントは、このやり方をさらにやりやすくしました。曖昧な依頼からでも、画面、API、テストまで一息に作れます。 ただし、速くなったのはコードだけではありません。検討中の案、採用した要求、実装条件を区別しないまま、誰かの要望が動くソフトウェアへ変わる速度も上がりました。完成したコードから、「なぜ作るのか」「誰が何を達成するの…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
