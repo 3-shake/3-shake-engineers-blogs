@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 26 Aug 2026 23:35:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Aug 2026 15:12:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,70 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Daprつかってみた(Web APIのイメージでローカルストレージとGCSを同じように扱ってみる)]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2021-12-05-dapr-gcs-local-storage-api</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2021-12-05-dapr-gcs-local-storage-api</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:31 GMT</pubDate>
+            <content:encoded><![CDATA[この記事は Web API Advent Calendar 2021 の5日目の記事になりますちなみに4日目は@sys_zeroさんのPower Automate for desktopの変数に関するTips「JSONにnull値がある場合の選択的置換」でした今回は、当日まで全く内容について考えられてなかったのですが、ふっと、頭にわいた、個人的に気になっているDaprについて調べて、ローカルストレージとGoogle Cloud Storage(以下GCS)を扱ってみます なんで今回Dapr？Daprを使うメリットの1つとして、他のサービスにつなぐ方法をHTTPまたはgRPCに...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[Vuexの型定義でモジュールでの型解決してくれるようにしてみた]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2021-09-11-vuex-typescript-module-types</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2021-09-11-vuex-typescript-module-types</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:30 GMT</pubDate>
+            <content:encoded><![CDATA[前提Nuxt.jsでVuexを使っているのでそのときにhttps://github.com/ktsn/vuex-type-helper以下を利用させてもらっていましたただ、モジュールのstore場合利用時にtypeがうまくはまらないから、どうするんだろうとか色々見てたのですがあんまりいい手段が見つからなく、自分で型定義でテンプレートリテラル部分書いたらどうなんだろうとおもってやってみました。正直もっと良い手段があると思いますが、今回は自分の勉強踏まえの備忘録。そして、多分Vue3対応とかが入ったらちゃんと動いていくんだと思うので、後で書き換えればいいし、現状型の問題だけな...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[FirebaseのCliでの操作で401系エラーが出るときの解決法]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2021-08-17-firebase-cli-401-error-solution</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2021-08-17-firebase-cli-401-error-solution</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:29 GMT</pubDate>
+            <content:encoded><![CDATA[考えられる原因は以下ですログインできていない本当に権限がないcliに保存されているクレデンシャルが古い 前提環境としてはfirebase-tools 9.16.5です ログインできていないコレはわかりやすいです。以下コマンドでログインしてくださいfirebase loginちなみに、すでにログインしている場合は、ログインしているアカウントが表示されます(コレはまりポイント 本当に権限がないGCPのIAMの権限を確認してください。個人で直接Firebaseプロジェクトを作っている場合はあまり関係がないかもしれません。 cliに保存されているクレデンシャ...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[Open Telemetry + Google Cloud Trace やってみた]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2021-06-14-opentelemetry-cloud-trace-setup</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2021-06-14-opentelemetry-cloud-trace-setup</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:29 GMT</pubDate>
+            <content:encoded><![CDATA[モチベーションGoogle Cloud Trace(以下Cloud Trace)がOpen Telemetryの対応をしているということで、更にドキュメントにはないけど(2021-06-14現在)Javaでもライブラリができたので、それを試してみる。分散トレーシングしたいって言う場合、GKEで組んでいる場合、Cloud Traceのライブラリを使って直接送るっていうのもありだが、Open Telemetryを使うことで、他のツールにも送れるような仕組みができる。 前提分散トレーシングについて知っているNuxt.jsについて少し知っている Open Telemetr...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[Rustの練習]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2021-05-01-rust-programming-practice</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2021-05-01-rust-programming-practice</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:28 GMT</pubDate>
+            <content:encoded><![CDATA[概要完全に参照の部分に慣れていないので、これをどうやって対応したのかを自分の整理のためにもメモしていくexerismでRustの勉強をしているが、その問題を使う Simple Linked List全容： https://exercism.io/tracks/rust/exercises/simple-linked-list/solutions/d0fdfb1c904344ecbf4bcf808c345cdc以下のような構造ときので後入れ先出しのパターンの場合pub struct SimpleLinkedList<T> {    head: Option&...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[.gcloudignoreの書き方]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2020-11-30-gcloudignore-how-to-write</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2020-11-30-gcloudignore-how-to-write</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:28 GMT</pubDate>
+            <content:encoded><![CDATA[.gcloudignore の設定が思ったとおりに、いかなかったのでまとめます。.gitignoreと同じらしいですが、そもそもgitで今まで全体をignoreすることはやったことなかったので基本はコチラに書いてあるのですが、わからなかった部分も含みますhttps://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore# 始まりはコメントです 基本の考え ファイル指定以下パターンすべてプロジェクト直下のものが対象になります。否定する場合は ! をつけます。!a.txt というファイルをデプロイ対象にしたい...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[GAE + Java 11 + Quarkusってどんなもんよ]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2020-11-07-gae-java11-quarkus-overview</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2020-11-07-gae-java11-quarkus-overview</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:27 GMT</pubDate>
+            <content:encoded><![CDATA[基本的に今までTypeScript + Node.jsで書いてましたが、そろそろJVMを書きたいという気持ちが出てきました。ただし、Standard環境のGAEは良いものだと知ってしまった、、、ということでJava 11でかけないかなと思いました。GAE + Java 11を利用する上で考えるのは、 初回リクエストのレスポンス速度 (JVMの起動速度+アプリケーションの起動速度) が問題になるかと思います。では、高速に起動する(?)と言われるQuarkusを使って見たらどうだろうと思い、ちょっと調査してみました。Javaと言いながらKotlinで作ってますが、あんまり変わらない(...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[フロントエンド(SPA)でのFirebase Authとの付き合い方]]></title>
+            <link>https://zenn.dev/satohjohn/articles/2020-11-03-spa-frontend-firebase-auth-tips</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/2020-11-03-spa-frontend-firebase-auth-tips</guid>
+            <pubDate>Thu, 27 Aug 2026 15:08:26 GMT</pubDate>
+            <content:encoded><![CDATA[Firebase Authで取得したID Tokenをどう使うか、どう保管するかが結構難しいと思っています。その中で、WebアプリケーションにおいてFirebaseのドキュメントには2パターンがあるように見えました。Cookieを使ったSession管理ID Token+Service Workerを使った管理(Betaっぽい)自分としてはそれぞれのメリット・デメリットがあると感じましたので、まとめます。 1. Cookieを使ったSession管理メリット自分でCookieの長さを決められる.2週間に設定することもできる（ID Tokenの期限は1時間)古い...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
         <item>
             <title><![CDATA[Gemini Sparkを触る勉強会をやってみて考えた、ノーコードAIエージェントとこれからのエンジニア]]></title>
             <link>https://zenn.dev/shu_kob/articles/53a468ddd1a707</link>
@@ -205,70 +269,6 @@
             <pubDate>Tue, 04 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[NW-JAWS #22 ～タイトル持ちの長い夜(LV300-)～ のLT登壇資料です。https://jawsug-nw.connpass.com/event/399100/]]></content:encoded>
             <author>Itaru Ota</author>
-        </item>
-        <item>
-            <title><![CDATA[形にならなかった「おい、」を29回書いたら本]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</guid>
-            <pubDate>Mon, 03 Aug 2026 23:19:51 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 最初から完璧な成果物は存在しない。 ただ出して、直して、また出した人がいるだけだ。私の場合、それが29本の「おい、」だった。 「おい、」シリーズは、形にならなかった本の原稿から始まりました。本を出せなかったときは、やはり少し絶望しました。それでも、書きかけの原稿まで消えたわけではありません。1冊へまとめず、原稿を1本ずつブログとして終わらせました。 最初から上手に書けるわけではありません。書き始めた頃の文章は、普通に不格好です。不格好なものを外へ出せば、ある程度はバカにもされます。ここは、たぶん避けられません。 ところが、1年も続けていると、だいたいの人は飽きます。批判が減る。ありが…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ターミナルを占領するのは許さないよ、Neovimですべて管理する]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</guid>
-            <pubDate>Mon, 03 Aug 2026 07:52:15 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに CodexやClaude Codeに作業を任せ、その間にNeovimで別のコードを編集します。これは便利です。しかし、エージェントの状態を確かめるたびに端末を順に開き、止まっていればそこで返事をします。これを繰り返すうちに、Neovimよりターミナルを見ている時間が長くなります。 正直に言えば、効率だけの問題ではありません。私は、自分の手に馴染む開発環境を自分で育てることを、PDE（Personal Development Environment）として続けてきました。エージェントが増えても、コードを読み書きする場所をNeovimから端末へ移す理由はありません。作業を任せたエージェン…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ Codex CLIをNeovimで使うcodex.nvimを作ったので、使ってみてほしい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/01/205220</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/01/205220</guid>
-            <pubDate>Sat, 01 Aug 2026 11:52:20 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Neovimでコードを読んでいるとき、やりたいのはCodexをsplitで開くことではありません。開いているファイルや選択範囲を正確に渡し、会話を残したまま編集へ戻ることです。codex.nvimは、その往復を短くするためのNeovimプラグインです。 github.com このツールが必要になる場面 codex.nvimで解決したい課題は、次のとおりです。 Neovimでコードを読んだり選んだりしているとき、ファイルや範囲を説明し直さずCodexへ正確に渡し、会話を残したまま編集へ戻りたい。そうすれば、エディタとagentの間を往復するたびに作業の前提を組み立て直さずに済む。 Co…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud Next Tokyo 26 で 公式ユーザー会 Jagu'e'r ブースに立ってきました]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/google-cloud-next-tokyo-2026-jaguer</link>
-            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/google-cloud-next-tokyo-2026-jaguer</guid>
-            <pubDate>Sat, 01 Aug 2026 05:03:20 GMT</pubDate>
-            <content:encoded><![CDATA[Google Cloud Next Tokyo 262026年7月30日(木)・31日(金)、東京ビッグサイト南展示棟で「Google Cloud Next Tokyo 26」が開催されました。日本国内では最大規模の Google Cloud のイベントです。クラウドには AWS や Microsoft Azure など他の選択肢もある中で、Google Cloud は Google 検索や YouTube を支える基盤としても使われているクラウドです。開発者体験の良さが特徴のひとつですが、最近は生成 AI の広がりもあって、「Gemini を使いたいから Google Cloud を触り始めた」というユーザーさんも増えている印象があります。実際、今年の Next Tokyo も来場者がとても多く、会場は熱気にあふれていました。↓参加されてない方もイベント登録でアーカイブ動画を視聴できますwww.googlecloudevents.com私と Google Cloud私は2023年12月にスリーシェイクに入社しました。スリーシェイクは Google Cloud のプレミアパートナーであり、AWS のアドバンストティアパートナーでもあります。入社をきっかけに仕事で初めて Google Cloud を触り、そこから資格試験もがっつり取り、案件もほとんどが Google Cloud という状況になりました。開発者体験の良さや、生成 AI との相性の良さもあって、今ではすっかり私の中で「大好きなクラウド」になっています。Next Tokyo との関わり方の変化2024年(パシフィコ横浜開催)：スリーシェイクの自社ブースに立つ。セッションは聞かず2025年(26年と同じく東京ビッグサイト南展示棟)：1日だけ一般参加者として、セッションやブースを回る2026年：1日目は一般参加者としてセッション中心、2日目は Jagu'e'r のブースに立つ参加の仕方が「見る側」や「立つ側」混ざってますが、26年2日目はがっつり立つ側を楽しみました！Jagu'e'r というコミュニティjaguer.jpjaguer.connpass.comJagu'e'r は Google Cloud の公式エンタープライズユーザー会です。参加には会員登録が必要で、その意味では少しクローズドではあるのですが、その分きちんと熱量のある方が集まっていて、とても活気のあるコミュニティになっています。私は今年1月から AI/ML 分科会の運営に入り、定例会議に参加したり、各種イベントの運営に携わってきました。6月30日には Antigravity のハンズオンで講師も担当しています。そんな中で「Next Tokyo 26 の Jagu'e'r ブースに立つ人を募集」というお知らせがあり、手を挙げて、2日目にブースに立つことになりました。ブースには、書籍『優れたエンジニアがコミュニティの中でしていること 会社の外で技術を磨くには？』の著者である黒須義一さん・酒井真弓さん・宮本佳歩さんも立たれていて、著者3人が揃う場面も見られました。コアメンバーの方々がたくさんいる中で、とても刺激を受けました。著者勢ぞろい（レア）#Jaguer#GoogleCloud pic.twitter.com/cE8o89INr1— 黒氏 (@ykurosuyo) 2026年7月31日   ↑黒氏さんのX投稿を拝借この書籍は、その場で入会してくださった方に先着でお配りしていました。Jagu'e'r メンバーが中心となって書かれた本ですが、Jagu'e'r に限らず、いろいろなコミュニティでの活動の仕方を考えるうえで、とても良い教科書になっていると思います。⇒『優れたエンジニアがコミュニティの中でしていること 会社の外で技術を磨くには？』をAmazonで見るブースに立ってみてじゃがーブース大盛況！他社の方がGoogle Cloudを実務でどんなことやってるのかって気になりますよね？Google公式のユーザーコミュニティであるJagu’e’rなら、その困りごとも解決できるかも？未登録の方はぜひお立ち寄りを！#googlecloudnext #jaguer pic.twitter.com/ZuImiohwM1— Mario | 新著Google CloudではじめるAI/ML入門 (@vloomy_mario) 2026年7月30日   ↑1日目の様子をMarioさんのX投稿から拝借（私は2日目なのでこのときはいません）一般参加の方に Jagu'e'r について説明し、できれば入会を促す、というのがブースでの役割でした。こうして入会のお誘いをしていく中で、「自分ももっと Jagu'e'r にコミットしていきたい」「Google Cloud をもっとみんなに知ってもらいたい、触ってもらいたい」という気持ちがどんどん強くなっていきました。同時に、コミュニティに入る意義を、自分の言葉でもっと整理して説明できるようになりたいとも思いました。先ほどの書籍に書かれているようなことを、自分なりに言語化していきたいです。普段は関西分科会運営で、関西から来てブースに立ってくださった方も！数字で見るとブースには 約600名 の方が来場そのうち 約100名 の方が、その場で会員登録の手続きをしてくださいました仲間がぐっと増えた2日間でした。印象に残ったこと: 非エンジニアの方の声来場者の中には非エンジニアの方も多くいらっしゃいました。「非エンジニアでも大丈夫ですよ」とお声がけをする中で、非エンジニアが AI コーディングをするうえで、気をつけないといけないことを教えてほしいというご意見をいただきました。これはとても貴重な声でした。AI/ML 分科会で6月末に実施した Antigravity ハンズオンは、まさに非エンジニアの方も意識した内容だったので、こうしたニーズをもっと拾って広げていけたらと思っています。ブースに立って直接話すことで、皆さんが何を思っているのかを生で聞ける。これが何よりの学びでした。Googler の方と一緒にブースには Google の方も交代で立ってくださり、一緒に Jagu'e'r を盛り上げることができました。普段の本業では「Google Cloud のプレミアパートナーの一員」という立場ですが、Jagu'e'r という公式コミュニティを通じて、Google Cloud に対する当事者意識がより一層芽生えたように思います。コミュニティとの関わり方について思うこと仕事以外の時間で、IT エンジニアのコミュニティに所属して何をしていくか。最初は参加してインプットする、というのが中心になると思います。そこから、参加してインプットする発表する側に回ってみる運営側に回ってみると進んでいくことで、当事者意識が生まれ、コミュニティへのコミットも、プロダクト(Google Cloud)への思い入れも増えていきます。そしてそれは、本業の仕事にもつながっていきます。もうひとつ、コミュニティは 仲間づくりの場 でもあります。同じプロダクトを愛する仲間ができる。家庭・職場に次ぐ「サードプレイス」ができるという意味でも、人生の中で良い場所を持てるのだと思います。私自身、Jagu'e'r 以前にもコミュニティに所属したり運営したりしてきましたが、Jagu'e'r は規模が大きい分、活動も面白いことが多く、そして何より Google Cloud にめちゃくちゃ詳しい方が運営に携わっている。その中に入ることで、視座がかなり広がったと感じています。実際、Google Cloud の資格も14ある中であと1つで全冠というところまで来ました。Next Tokyo の資格認定者ラウンジでは全冠特典のバッジがいただけるのですが、残っている SecOps は今回の特典の対象外だったため、条件を満たしてバッジを受け取ることができました。Jagu'e'r に関わることで、Google Cloud の学習もどんどん進められたなと思います。運営に関わっている方の多くは、複数の分科会を掛け持ちしていたりして、本当に熱量が高い。Jagu'e'r 以外のコミュニティも運営されている方も多く、それがライフワークになっている方もいらっしゃいます。私には小さな子供もいるので、私生活とのバランスを取りながら、無理のない形でコミュニティにコミットしていきたいと思っています。GDG のブースもJagu'e'r ブースの真向かいには、Google Developer Groups(GDG)のブースもありました。gdg-tokyo.connpass.com↑GDG Tokyo以外にも地方のグループがあります私も GDG のイベントには参加していて、2025年の DevFest Tokyo では懇親会 LT をやらせていただきました。運営の方に知り合いがいたので、少しお話もできました。GDG も同じく Google のコミュニティとして、とても良いコミュニティだと思います。GDGの今後のイベントも楽しみです！おわりに2日目に一日中ブースに立って、足はとても疲れましたが、達成感と充実感、そして幸福感で心が満たされた一日でした。このブログを書いているのは1日経ってからですが、まだその幸せな気持ちが続いています。これからも Google Cloud についてもっといろいろ学んで、どんどんアウトプットしていきたいですし、仕事でも Google Cloud のポテンシャルを活かしていきたいと思います。Jagu'e'rブースに来てくださった皆様、一緒にブースに立ってくださったJagu'e'r運営の皆様、Googlerの皆様、Google Cloud Next Tokyoにご来場くださった皆様、本当にありがとうございました。Jagu'e'r AI/ML 分科会も引き続き盛り上げていきますので、どうぞよろしくお願いいたします!【お詫びと訂正】Jagu'e'r ブースにて「Jagu'e'r Camp 2026」を 2026年11月18日開催 としてご案内しておりましたが、日程が延期となりました。大変申し訳ございません。お詫びいたします。新しい日程が決まりましたら、改めてお知らせいたします。]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編]]></title>
-            <link>https://sreake.com/blog/lighthouse-best-practices-31-improvements-on-3-shake-engineers-blogs-1/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/lighthouse-best-practices-31-improvements-on-3-shake-engineers-blogs-1/</guid>
-            <pubDate>Fri, 31 Jul 2026 09:11:47 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに この記事では、スリーシェイクが運営する技術ブログ「3-shake Engineers’ Blogs」において、Lighthouseスコアの改善のために対応したパフォーマンスと開発者体験の向上を目指し […]The post 3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[SBOMの最小構成要素が増えた]]></title>
-            <link>https://www.rowicy.com/blog/sbom-elem-update-2026/</link>
-            <guid isPermaLink="false">https://www.rowicy.com/blog/sbom-elem-update-2026/</guid>
-            <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[CISAの公開した2026 Minimum Elements for a Software Bill of Materialsの新要素を軽く解説]]></content:encoded>
-            <author>riiimparm</author>
-        </item>
-        <item>
-            <title><![CDATA[テストが通ったあと、理解はどこに残るのか]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</guid>
-            <pubDate>Thu, 30 Jul 2026 03:01:14 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 生成されたコードを、十分に読まずにマージした。 障害は起きなかった。原因を半日追うような挙動も、出なかった。 払っていることに気づいたのは、ずっとあとだった。 壊れてくれるなら、まだ分かりやすかったのだと思う。実際に起きたのは、どの変更も動いていて、どの変更も少しだけ説明できない、という状態がゆっくり広がることだった。一つずつなら思い出せる。並べると、なぜこの形なのかを言える範囲だけが減っていく。ある日リポジトリを開いて、自分が説明できない側のほうが多いことに気づく。コードベースは、いつのまにか広大になっている。 要約は読んでいた。「入力を検証し、データを保存し、結果を返す」。その説…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[頭に入らないなら、関係を外へ出す]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/29/114748</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/29/114748</guid>
-            <pubDate>Wed, 29 Jul 2026 02:47:48 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 個々の関数は読める。使われている概念も知っている。 それなのに、値の変化と呼び出し順と失敗時の戻り方を一緒に動かそうとすると、前に見た関係が抜け落ちていく。 足りないのは、たぶん理解力ではない。 同じ関数をもう一度開く。さっき確かめたはずの分岐を、もう一度目で追う。追っているあいだに、その前に確かめた状態のほうが消える。長いコードを前にして私が感じるのは難しさというより、この往復である。 この状態で説明を増やしても、必ずしも楽にはならない。情報が足りないのではなく、考えるために一時的に保持できる量を超えているからだ。 生成AIは私より長いコードを一度に受け取り、関係を要約できる。扱え…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
