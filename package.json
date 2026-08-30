@@ -43,7 +43,7 @@
     "npm-run-all2": "9.0.3",
     "prettier": "3.9.6",
     "rss-parser": "3.13.0",
-    "sass": "1.102.0",
+    "sass": "1.103.1",
     "tsx": "4.23.12",
     "typescript": "6.0.3"
   }
