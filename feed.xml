@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 31 Aug 2026 04:31:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 31 Aug 2026 11:35:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,7 +15,7 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
-            <title><![CDATA[Gemini Sparkを触る勉強会をやってみて考えた、ノーコードAIエージェントとこれからのエンジニア]]></title>
+            <title><![CDATA[【Google Cloud Next Tokyo '26】Gemini Sparkを触ってわかったノーコードAIエージェントの立ち位置]]></title>
             <link>https://zenn.dev/shu_kob/articles/53a468ddd1a707</link>
             <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/53a468ddd1a707</guid>
             <pubDate>Fri, 21 Aug 2026 15:21:57 GMT</pubDate>
