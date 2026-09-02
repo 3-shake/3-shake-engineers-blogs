@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 01 Sep 2026 22:31:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Sep 2026 11:36:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[提案方針の「型」を、営業がClaudeと一緒につくってみた]]></title>
+            <link>https://sreake.com/blog/template-for-proposal-strategy-with-claude/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/template-for-proposal-strategy-with-claude/</guid>
+            <pubDate>Wed, 02 Sep 2026 01:53:49 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部の営業を担当している坪井です。これまでこのブログはエンジニアによる技術的な記事が中心でしたが、今回は非エンジニアの営業目線で、日々の業務にどう生成AIを取り入れているかの一例をご紹介したいと思 […]The post 提案方針の「型」を、営業がClaudeと一緒につくってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[【Google Cloud Next Tokyo '26】Gemini Sparkを触ってわかったノーコードAIエージェントの立ち位置]]></title>
             <link>https://zenn.dev/shu_kob/articles/53a468ddd1a707</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</guid>
             <pubDate>Thu, 30 Jul 2026 03:01:14 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 生成されたコードを、十分に読まずにマージした。 障害は起きなかった。原因を半日追うような挙動も、出なかった。 払っていることに気づいたのは、ずっとあとだった。 壊れてくれるなら、まだ分かりやすかったのだと思う。実際に起きたのは、どの変更も動いていて、どの変更も少しだけ説明できない、という状態がゆっくり広がることだった。一つずつなら思い出せる。並べると、なぜこの形なのかを言える範囲だけが減っていく。ある日リポジトリを開いて、自分が説明できない側のほうが多いことに気づく。コードベースは、いつのまにか広大になっている。 要約は読んでいた。「入力を検証し、データを保存し、結果を返す」。その説…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[頭に入らないなら、関係を外へ出す]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/29/114748</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/29/114748</guid>
-            <pubDate>Wed, 29 Jul 2026 02:47:48 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 個々の関数は読める。使われている概念も知っている。 それなのに、値の変化と呼び出し順と失敗時の戻り方を一緒に動かそうとすると、前に見た関係が抜け落ちていく。 足りないのは、たぶん理解力ではない。 同じ関数をもう一度開く。さっき確かめたはずの分岐を、もう一度目で追う。追っているあいだに、その前に確かめた状態のほうが消える。長いコードを前にして私が感じるのは難しさというより、この往復である。 この状態で説明を増やしても、必ずしも楽にはならない。情報が足りないのではなく、考えるために一時的に保持できる量を超えているからだ。 生成AIは私より長いコードを一度に受け取り、関係を要約できる。扱え…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
