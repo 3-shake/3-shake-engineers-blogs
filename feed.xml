@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 02 Sep 2026 11:36:11 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Sep 2026 22:32:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -21,6 +21,14 @@
             <pubDate>Wed, 02 Sep 2026 01:53:49 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreake事業部の営業を担当している坪井です。これまでこのブログはエンジニアによる技術的な記事が中心でしたが、今回は非エンジニアの営業目線で、日々の業務にどう生成AIを取り入れているかの一例をご紹介したいと思 […]The post 提案方針の「型」を、営業がClaudeと一緒につくってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[#24【オンライン】協調フィルタリング vs BigQueryベクトル検索 - WhatとWhyで考える推薦設計]]></title>
+            <link>https://speakerdeck.com/shukob/collaborative-filtering-vs-bigquery-vector-search</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/collaborative-filtering-vs-bigquery-vector-search</guid>
+            <pubDate>Fri, 28 Aug 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2026年8月28日「日本生成AIユーザ会 #24」での発表資料です。「なぜ、うどん屋のアンケートは10ptなのに、住宅ローンや不動産のアンケートは5,000円〜3万円も貰えるのか？」この差は、データが持つ What（何を買ったか＝行動ログ）とWhy（なぜ選んだのか＝生活文脈）の価値の違いにあります。Google Cloud Next Tokyo（2026年7月）のあるセッションで「購買行動ではなく生活者の動機を追う」というアプローチに触れ、そこから着想を得て自分で検証してみました。本資料の設計・実装・考察はすべて発表者による再構成であり、当該セッションの内容そのものではありません。『集合知プログラミング』（オライリー・ジャパン, 2007）2章のクラシックな協調フィルタリングと、BigQuery VECTOR_SEARCH を1万人の合成データで比較したところ、推薦結果の重複率（Jaccard Overlap）はわずか0.4%でした。どちらも同じ正解セグメントを当てているのに、挙げてくるユーザがほぼ被らないという結果です。■ 内容・What vs Why — データの経済原理・「データの性質（What/Why）」×「規模（インメモリ/分散）」の4象限・推薦重複率0.4%の正体（行動空間と意味空間の直交性）・BigQuery VECTOR_SEARCH の勘所■ 注意検証は合成データによるものです。データが単純なため精度では両手法に差がつかず、その前提の上で重複率を見ています。実データでは結果が変わる可能性があります。■ リンクイベントページhttps://genai-users.connpass.com/event/404869/YouTubeアーカイブhttps://www.youtube.com/live/GQdOcNujpjo※本資料は各書籍の解説を参考に、データは独自に作成したものです。]]></content:encoded>
+            <author>Shu Kobuchi</author>
         </item>
         <item>
             <title><![CDATA[【Google Cloud Next Tokyo '26】Gemini Sparkを触ってわかったノーコードAIエージェントの立ち位置]]></title>
@@ -261,14 +269,6 @@
             <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[CISAの公開した2026 Minimum Elements for a Software Bill of Materialsの新要素を軽く解説]]></content:encoded>
             <author>riiimparm</author>
-        </item>
-        <item>
-            <title><![CDATA[テストが通ったあと、理解はどこに残るのか]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/07/30/120114</guid>
-            <pubDate>Thu, 30 Jul 2026 03:01:14 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 生成されたコードを、十分に読まずにマージした。 障害は起きなかった。原因を半日追うような挙動も、出なかった。 払っていることに気づいたのは、ずっとあとだった。 壊れてくれるなら、まだ分かりやすかったのだと思う。実際に起きたのは、どの変更も動いていて、どの変更も少しだけ説明できない、という状態がゆっくり広がることだった。一つずつなら思い出せる。並べると、なぜこの形なのかを言える範囲だけが減っていく。ある日リポジトリを開いて、自分が説明できない側のほうが多いことに気づく。コードベースは、いつのまにか広大になっている。 要約は読んでいた。「入力を検証し、データを保存し、結果を返す」。その説…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
