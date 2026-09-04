@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 03 Sep 2026 22:38:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Sep 2026 11:35:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-09-04 SRE Tech Talk #15 怠惰なTerraform /  Lazy Terraform]]></title>
+            <link>https://speakerdeck.com/masasuzu/lazy-terraform</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/lazy-terraform</guid>
+            <pubDate>Fri, 04 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://3-shake.connpass.com/event/402777/ で話した内容]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[技術力に優劣はない(「技術力に優劣はある(「技術力に優劣はない」を読んで)」を読んで)]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/04/113629</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/04/113629</guid>
+            <pubDate>Fri, 04 Sep 2026 02:36:29 GMT</pubDate>
+            <content:encoded><![CDATA[syu-m-5151.hatenablog.com はじめに 一年で、こんなに価値観が変わるとは思っていませんでした。 私は「技術力に優劣はある」という記事で、技術との向き合い方を「道具として使う」「理解する」「創る」に分け、それぞれの中にも上手下手があると書きました。市場はその差を評価する。学びを続けた人ほど選択肢が広がる。コミュニケーションが得意でも、技術を学ばなくてよい理由にはならない。この主張は今も間違っているとは思いません。 エンジニアのキャリア地図 「技術」と「やりたいこと」から見つける最適解作者:サカモトソシムAmazon その記事を書いた時にも、AIコーディングエージェントはあ…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[提案方針の「型」を、営業がClaudeと一緒につくってみた]]></title>
             <link>https://sreake.com/blog/template-for-proposal-strategy-with-claude/</link>
@@ -253,22 +269,6 @@
             <pubDate>Sat, 01 Aug 2026 05:03:20 GMT</pubDate>
             <content:encoded><![CDATA[Google Cloud Next Tokyo 262026年7月30日(木)・31日(金)、東京ビッグサイト南展示棟で「Google Cloud Next Tokyo 26」が開催されました。日本国内では最大規模の Google Cloud のイベントです。クラウドには AWS や Microsoft Azure など他の選択肢もある中で、Google Cloud は Google 検索や YouTube を支える基盤としても使われているクラウドです。開発者体験の良さが特徴のひとつですが、最近は生成 AI の広がりもあって、「Gemini を使いたいから Google Cloud を触り始めた」というユーザーさんも増えている印象があります。実際、今年の Next Tokyo も来場者がとても多く、会場は熱気にあふれていました。↓参加されてない方もイベント登録でアーカイブ動画を視聴できますwww.googlecloudevents.com私と Google Cloud私は2023年12月にスリーシェイクに入社しました。スリーシェイクは Google Cloud のプレミアパートナーであり、AWS のアドバンストティアパートナーでもあります。入社をきっかけに仕事で初めて Google Cloud を触り、そこから資格試験もがっつり取り、案件もほとんどが Google Cloud という状況になりました。開発者体験の良さや、生成 AI との相性の良さもあって、今ではすっかり私の中で「大好きなクラウド」になっています。Next Tokyo との関わり方の変化2024年(パシフィコ横浜開催)：スリーシェイクの自社ブースに立つ。セッションは聞かず2025年(26年と同じく東京ビッグサイト南展示棟)：1日だけ一般参加者として、セッションやブースを回る2026年：1日目は一般参加者としてセッション中心、2日目は Jagu'e'r のブースに立つ参加の仕方が「見る側」や「立つ側」混ざってますが、26年2日目はがっつり立つ側を楽しみました！Jagu'e'r というコミュニティjaguer.jpjaguer.connpass.comJagu'e'r は Google Cloud の公式エンタープライズユーザー会です。参加には会員登録が必要で、その意味では少しクローズドではあるのですが、その分きちんと熱量のある方が集まっていて、とても活気のあるコミュニティになっています。私は今年1月から AI/ML 分科会の運営に入り、定例会議に参加したり、各種イベントの運営に携わってきました。6月30日には Antigravity のハンズオンで講師も担当しています。そんな中で「Next Tokyo 26 の Jagu'e'r ブースに立つ人を募集」というお知らせがあり、手を挙げて、2日目にブースに立つことになりました。ブースには、書籍『優れたエンジニアがコミュニティの中でしていること 会社の外で技術を磨くには？』の著者である黒須義一さん・酒井真弓さん・宮本佳歩さんも立たれていて、著者3人が揃う場面も見られました。コアメンバーの方々がたくさんいる中で、とても刺激を受けました。著者勢ぞろい（レア）#Jaguer#GoogleCloud pic.twitter.com/cE8o89INr1— 黒氏 (@ykurosuyo) 2026年7月31日   ↑黒氏さんのX投稿を拝借この書籍は、その場で入会してくださった方に先着でお配りしていました。Jagu'e'r メンバーが中心となって書かれた本ですが、Jagu'e'r に限らず、いろいろなコミュニティでの活動の仕方を考えるうえで、とても良い教科書になっていると思います。⇒『優れたエンジニアがコミュニティの中でしていること 会社の外で技術を磨くには？』をAmazonで見るブースに立ってみてじゃがーブース大盛況！他社の方がGoogle Cloudを実務でどんなことやってるのかって気になりますよね？Google公式のユーザーコミュニティであるJagu’e’rなら、その困りごとも解決できるかも？未登録の方はぜひお立ち寄りを！#googlecloudnext #jaguer pic.twitter.com/ZuImiohwM1— Mario | 新著Google CloudではじめるAI/ML入門 (@vloomy_mario) 2026年7月30日   ↑1日目の様子をMarioさんのX投稿から拝借（私は2日目なのでこのときはいません）一般参加の方に Jagu'e'r について説明し、できれば入会を促す、というのがブースでの役割でした。こうして入会のお誘いをしていく中で、「自分ももっと Jagu'e'r にコミットしていきたい」「Google Cloud をもっとみんなに知ってもらいたい、触ってもらいたい」という気持ちがどんどん強くなっていきました。同時に、コミュニティに入る意義を、自分の言葉でもっと整理して説明できるようになりたいとも思いました。先ほどの書籍に書かれているようなことを、自分なりに言語化していきたいです。普段は関西分科会運営で、関西から来てブースに立ってくださった方も！数字で見るとブースには 約600名 の方が来場そのうち 約100名 の方が、その場で会員登録の手続きをしてくださいました仲間がぐっと増えた2日間でした。印象に残ったこと: 非エンジニアの方の声来場者の中には非エンジニアの方も多くいらっしゃいました。「非エンジニアでも大丈夫ですよ」とお声がけをする中で、非エンジニアが AI コーディングをするうえで、気をつけないといけないことを教えてほしいというご意見をいただきました。これはとても貴重な声でした。AI/ML 分科会で6月末に実施した Antigravity ハンズオンは、まさに非エンジニアの方も意識した内容だったので、こうしたニーズをもっと拾って広げていけたらと思っています。ブースに立って直接話すことで、皆さんが何を思っているのかを生で聞ける。これが何よりの学びでした。Googler の方と一緒にブースには Google の方も交代で立ってくださり、一緒に Jagu'e'r を盛り上げることができました。普段の本業では「Google Cloud のプレミアパートナーの一員」という立場ですが、Jagu'e'r という公式コミュニティを通じて、Google Cloud に対する当事者意識がより一層芽生えたように思います。コミュニティとの関わり方について思うこと仕事以外の時間で、IT エンジニアのコミュニティに所属して何をしていくか。最初は参加してインプットする、というのが中心になると思います。そこから、参加してインプットする発表する側に回ってみる運営側に回ってみると進んでいくことで、当事者意識が生まれ、コミュニティへのコミットも、プロダクト(Google Cloud)への思い入れも増えていきます。そしてそれは、本業の仕事にもつながっていきます。もうひとつ、コミュニティは 仲間づくりの場 でもあります。同じプロダクトを愛する仲間ができる。家庭・職場に次ぐ「サードプレイス」ができるという意味でも、人生の中で良い場所を持てるのだと思います。私自身、Jagu'e'r 以前にもコミュニティに所属したり運営したりしてきましたが、Jagu'e'r は規模が大きい分、活動も面白いことが多く、そして何より Google Cloud にめちゃくちゃ詳しい方が運営に携わっている。その中に入ることで、視座がかなり広がったと感じています。実際、Google Cloud の資格も14ある中であと1つで全冠というところまで来ました。Next Tokyo の資格認定者ラウンジでは全冠特典のバッジがいただけるのですが、残っている SecOps は今回の特典の対象外だったため、条件を満たしてバッジを受け取ることができました。Jagu'e'r に関わることで、Google Cloud の学習もどんどん進められたなと思います。運営に関わっている方の多くは、複数の分科会を掛け持ちしていたりして、本当に熱量が高い。Jagu'e'r 以外のコミュニティも運営されている方も多く、それがライフワークになっている方もいらっしゃいます。私には小さな子供もいるので、私生活とのバランスを取りながら、無理のない形でコミュニティにコミットしていきたいと思っています。GDG のブースもJagu'e'r ブースの真向かいには、Google Developer Groups(GDG)のブースもありました。gdg-tokyo.connpass.com↑GDG Tokyo以外にも地方のグループがあります私も GDG のイベントには参加していて、2025年の DevFest Tokyo では懇親会 LT をやらせていただきました。運営の方に知り合いがいたので、少しお話もできました。GDG も同じく Google のコミュニティとして、とても良いコミュニティだと思います。GDGの今後のイベントも楽しみです！おわりに2日目に一日中ブースに立って、足はとても疲れましたが、達成感と充実感、そして幸福感で心が満たされた一日でした。このブログを書いているのは1日経ってからですが、まだその幸せな気持ちが続いています。これからも Google Cloud についてもっといろいろ学んで、どんどんアウトプットしていきたいですし、仕事でも Google Cloud のポテンシャルを活かしていきたいと思います。Jagu'e'rブースに来てくださった皆様、一緒にブースに立ってくださったJagu'e'r運営の皆様、Googlerの皆様、Google Cloud Next Tokyoにご来場くださった皆様、本当にありがとうございました。Jagu'e'r AI/ML 分科会も引き続き盛り上げていきますので、どうぞよろしくお願いいたします!【お詫びと訂正】Jagu'e'r ブースにて「Jagu'e'r Camp 2026」を 2026年11月18日開催 としてご案内しておりましたが、日程が延期となりました。大変申し訳ございません。お詫びいたします。新しい日程が決まりましたら、改めてお知らせいたします。]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編]]></title>
-            <link>https://sreake.com/blog/lighthouse-best-practices-31-improvements-on-3-shake-engineers-blogs-1/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/lighthouse-best-practices-31-improvements-on-3-shake-engineers-blogs-1/</guid>
-            <pubDate>Fri, 31 Jul 2026 09:11:47 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに この記事では、スリーシェイクが運営する技術ブログ「3-shake Engineers’ Blogs」において、Lighthouseスコアの改善のために対応したパフォーマンスと開発者体験の向上を目指し […]The post 3-shake Engineers’ BlogsのLighthouse Best Practicesを31点改善した話：パフォーマンス改善編 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[SBOMの最小構成要素が増えた]]></title>
-            <link>https://www.rowicy.com/blog/sbom-elem-update-2026/</link>
-            <guid isPermaLink="false">https://www.rowicy.com/blog/sbom-elem-update-2026/</guid>
-            <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[CISAの公開した2026 Minimum Elements for a Software Bill of Materialsの新要素を軽く解説]]></content:encoded>
-            <author>riiimparm</author>
         </item>
     </channel>
 </rss>
