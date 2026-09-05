@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 05 Sep 2026 11:35:24 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 05 Sep 2026 22:31:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -19,7 +19,7 @@
             <link>https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</link>
             <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</guid>
             <pubDate>Sat, 05 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Product Engineering Conference 2026 の登壇資料になります。]]></content:encoded>
+            <content:encoded><![CDATA[生成AIによって開発者の指は光の速さで動いている。なのに、リリースは相変わらず「来期のどこか」。では、犯人は AI なのか？ AI がコードを爆速で吐き出したあと、その成果物が「PdM 待ち」「デザイン待ち」「QA 待ち」「法務待ち」「偉い人の気分待ち」という職能ごとの待合室を巡り、気づいたら実装時間の10倍を待ち時間に費やしている——そんな光景に見覚えのある方、全員がこのスライドの対象読者です。本資料では「実装が速くなるほど、職能の壁がボトルネックとして浮き彫りになる」という不都合な真実を直視し、役割の境界線をなぞるのではなく、価値が流れる経路そのものを設計するという発想でプロダクト開発を組み立て直す方法を語ります。なお登壇者の nwiizo は、ネット上では「常に何かを読んでいる怖そうな人」として認識されているようですが、実物はめっぽう気さくで、話しかければ普通に喜びます。パブリックイメージと実装の間にギャップがあるのは、プロダクトや組織だけではないようです。📍 Product Engineering Conference 2026 https://product-engineering.jp/2026/ 登壇資料]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
