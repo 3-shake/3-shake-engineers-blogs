@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 04 Sep 2026 22:31:05 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 05 Sep 2026 11:35:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AIで実装は速くなった。なのにプロダクトは速くならない。職能の壁を越えて価値のフローを設計する]]></title>
+            <link>https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</guid>
+            <pubDate>Sat, 05 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Product Engineering Conference 2026 の登壇資料になります。]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[推論の観測、できていますか？ 〜 Google Cloud Gemini Enterprise Agent Platformで 3つの Gemini モデルを実測して踏んだ、評価の罠 〜]]></title>
             <link>https://speakerdeck.com/shukob/gemini-thinking-model-eval-observability</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</guid>
             <pubDate>Mon, 03 Aug 2026 07:52:15 GMT</pubDate>
             <content:encoded><![CDATA[はじめに CodexやClaude Codeに作業を任せ、その間にNeovimで別のコードを編集します。これは便利です。しかし、エージェントの状態を確かめるたびに端末を順に開き、止まっていればそこで返事をします。これを繰り返すうちに、Neovimよりターミナルを見ている時間が長くなります。 正直に言えば、効率だけの問題ではありません。私は、自分の手に馴染む開発環境を自分で育てることを、PDE（Personal Development Environment）として続けてきました。エージェントが増えても、コードを読み書きする場所をNeovimから端末へ移す理由はありません。作業を任せたエージェン…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ Codex CLIをNeovimで使うcodex.nvimを作ったので、使ってみてほしい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/01/205220</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/01/205220</guid>
-            <pubDate>Sat, 01 Aug 2026 11:52:20 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Neovimでコードを読んでいるとき、やりたいのはCodexをsplitで開くことではありません。開いているファイルや選択範囲を正確に渡し、会話を残したまま編集へ戻ることです。codex.nvimは、その往復を短くするためのNeovimプラグインです。 github.com このツールが必要になる場面 codex.nvimで解決したい課題は、次のとおりです。 Neovimでコードを読んだり選んだりしているとき、ファイルや範囲を説明し直さずCodexへ正確に渡し、会話を残したまま編集へ戻りたい。そうすれば、エディタとagentの間を往復するたびに作業の前提を組み立て直さずに済む。 Co…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
