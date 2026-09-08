@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 08 Sep 2026 11:35:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Sep 2026 22:31:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitHub Actions "concurrency" とは]]></title>
+            <link>https://www.rowicy.com/blog/gh-action-concurrency/</link>
+            <guid isPermaLink="false">https://www.rowicy.com/blog/gh-action-concurrency/</guid>
+            <pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[GitHubとGitlabのCIのキャンセル処理についてまとめた]]></content:encoded>
+            <author>riiimparm</author>
+        </item>
         <item>
             <title><![CDATA[AIで実装は速くなった。なのにプロダクトは速くならない。職能の壁を越えて価値のフローを設計する]]></title>
             <link>https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</guid>
             <pubDate>Mon, 03 Aug 2026 23:19:51 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 最初から完璧な成果物は存在しない。 ただ出して、直して、また出した人がいるだけだ。私の場合、それが29本の「おい、」だった。 「おい、」シリーズは、形にならなかった本の原稿から始まりました。本を出せなかったときは、やはり少し絶望しました。それでも、書きかけの原稿まで消えたわけではありません。1冊へまとめず、原稿を1本ずつブログとして終わらせました。 最初から上手に書けるわけではありません。書き始めた頃の文章は、普通に不格好です。不格好なものを外へ出せば、ある程度はバカにもされます。ここは、たぶん避けられません。 ところが、1年も続けていると、だいたいの人は飽きます。批判が減る。ありが…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ターミナルを占領するのは許さないよ、Neovimですべて管理する]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215</guid>
-            <pubDate>Mon, 03 Aug 2026 07:52:15 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに CodexやClaude Codeに作業を任せ、その間にNeovimで別のコードを編集します。これは便利です。しかし、エージェントの状態を確かめるたびに端末を順に開き、止まっていればそこで返事をします。これを繰り返すうちに、Neovimよりターミナルを見ている時間が長くなります。 正直に言えば、効率だけの問題ではありません。私は、自分の手に馴染む開発環境を自分で育てることを、PDE（Personal Development Environment）として続けてきました。エージェントが増えても、コードを読み書きする場所をNeovimから端末へ移す理由はありません。作業を任せたエージェン…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
