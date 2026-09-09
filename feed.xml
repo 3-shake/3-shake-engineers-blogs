@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 08 Sep 2026 22:31:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Sep 2026 11:36:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[fffで探し、CodeDiffで読む。私のNeovim設定とソースで見る仕組み]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/09/140201</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/09/140201</guid>
+            <pubDate>Wed, 09 Sep 2026 05:02:01 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに AIにコードを書いてもらうことが増えて、私はコードを書くより、読む時間のほうが多くなりました。生成された変更を開き、何を直そうとしているのか、そのためにどこを変えたのかを追っています。 そのとき素早くつかみたいのは、変更の構造です。どこから呼ばれ、どのデータを受け渡し、どこで判断し、失敗をどう返すのか。変更された行だけを見ていても、このつながりは分かりません。周辺のコードを行き来しながら、何を変えようとしていて、それがどう実現されているのかを理解したいと思っています。 fffは目的のコードを探すために、CodeDiffは変更されたコードを読むために使います。私の環境では、LazyVi…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[GitHub Actions "concurrency" とは]]></title>
             <link>https://www.rowicy.com/blog/gh-action-concurrency/</link>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 04 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[NW-JAWS #22 ～タイトル持ちの長い夜(LV300-)～ のLT登壇資料です。https://jawsug-nw.connpass.com/event/399100/]]></content:encoded>
             <author>Itaru Ota</author>
-        </item>
-        <item>
-            <title><![CDATA[形にならなかった「おい、」を29回書いたら本]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/04/081951</guid>
-            <pubDate>Mon, 03 Aug 2026 23:19:51 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 最初から完璧な成果物は存在しない。 ただ出して、直して、また出した人がいるだけだ。私の場合、それが29本の「おい、」だった。 「おい、」シリーズは、形にならなかった本の原稿から始まりました。本を出せなかったときは、やはり少し絶望しました。それでも、書きかけの原稿まで消えたわけではありません。1冊へまとめず、原稿を1本ずつブログとして終わらせました。 最初から上手に書けるわけではありません。書き始めた頃の文章は、普通に不格好です。不格好なものを外へ出せば、ある程度はバカにもされます。ここは、たぶん避けられません。 ところが、1年も続けていると、だいたいの人は飽きます。批判が減る。ありが…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
