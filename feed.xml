@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 09 Sep 2026 22:31:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Sep 2026 11:36:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Azure DevOps の Git の認証を OAuth にする]]></title>
+            <link>https://blog.1q77.com/2026/09/git-credentials-azure-devops/</link>
+            <guid isPermaLink="false">https://blog.1q77.com/2026/09/git-credentials-azure-devops/</guid>
+            <pubDate>Wed, 09 Sep 2026 10:00:24 GMT</pubDate>
+            <content:encoded><![CDATA[困りごとAzure DevOps のリポジトリの認証は WebUI から credentials をコピーして使うことも可能ですが、期限切れでの更新が面倒です。そこで Entra ID での OAuth で credentials を取得できるようにする方法をメモ。]]></content:encoded>
+            <author>yteraoka</author>
+        </item>
         <item>
             <title><![CDATA[fffで探し、CodeDiffで読む。私のNeovim設定とソースで見る仕組み]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/09/140201</link>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 05 Aug 2026 02:04:56 GMT</pubDate>
             <content:encoded><![CDATA[概要Gemini Enterprise App で A2UI を使ったアプリケーションの構築をしました。それについて以下のLT発表でまとめたのですがコードがほとんどなかったり、説明が足りない部分があると思ったのでこの blog でまとめます。https://speakerdeck.com/satohjohn/a2ui-toiuguang-wosi-itemiru色々調べていくうえでわかってきたこともあり、まとめておきます。 そもそも従来の Gemini Enterprise App での課題Gemini Enterprise App は Agent が返してきたものを M...]]></content:encoded>
             <author>SatohJohn</author>
-        </item>
-        <item>
-            <title><![CDATA[Service Connect 上のサービスに ECS Service の外側から到達できなかった話]]></title>
-            <link>https://speakerdeck.com/ota1022/service-connect-shang-nosabisuni-ecs-service-nowai-ce-karadao-da-dekinakatutahua</link>
-            <guid isPermaLink="false">https://speakerdeck.com/ota1022/service-connect-shang-nosabisuni-ecs-service-nowai-ce-karadao-da-dekinakatutahua</guid>
-            <pubDate>Tue, 04 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[NW-JAWS #22 ～タイトル持ちの長い夜(LV300-)～ のLT登壇資料です。https://jawsug-nw.connpass.com/event/399100/]]></content:encoded>
-            <author>Itaru Ota</author>
         </item>
     </channel>
 </rss>
