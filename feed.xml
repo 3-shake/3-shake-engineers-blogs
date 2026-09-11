@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 10 Sep 2026 22:31:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Sep 2026 11:35:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Yaziとは何か。ファイルを探し、確かめ、操作するTUIの仕組み]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/11/194300</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/11/194300</guid>
+            <pubDate>Fri, 11 Sep 2026 10:43:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに ディレクトリの中身を一覧にしても、目的のファイルがすぐ分かるとは限りません。似た名前の画像を見比べる、PDFの内容を確かめる、複数の場所からファイルを集める。こうした作業では、名前を検索するだけでなく、中身を見ながら選ぶ画面が役に立ちます。 Yaziは、その画面をターミナルに用意するファイルマネージャーです。Rustで実装され、キーボードを中心にディレクトリ移動、プレビュー、複数選択、コピーや移動を操作できます。文字端末の中で画面を描く、TUIと呼ばれる種類のアプリケーションです。 特徴は画像を表示できることだけではありません。プレビューの準備中にも別のファイルへ移動できるよう、処理…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetryのメトリクスをCloudWatchに送ってPromQLで見てみた]]></title>
+            <link>https://speakerdeck.com/ota1022/opentelemetry-no-o-cloudwatch-ni-oku-te-promql-de-mi-te-mita</link>
+            <guid isPermaLink="false">https://speakerdeck.com/ota1022/opentelemetry-no-o-cloudwatch-ni-oku-te-promql-de-mi-te-mita</guid>
+            <pubDate>Fri, 11 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[JAWS-UG山梨 【第13回】勉強会のLT登壇資料です。https://jaws-ug-yamanashi.connpass.com/event/403739/]]></content:encoded>
+            <author>Itaru Ota</author>
+        </item>
         <item>
             <title><![CDATA[helm, helmfile で secrets の diff を確認する方法]]></title>
             <link>https://blog.1q77.com/2026/09/helmfile-diff-secrets/</link>
@@ -252,22 +268,6 @@
             <guid isPermaLink="false">https://sreake.com/blog/kubecon-cloudnativecon-japan-booth-report/</guid>
             <pubDate>Wed, 05 Aug 2026 04:03:08 GMT</pubDate>
             <content:encoded><![CDATA[はじめに スリーシェイク Sreake事業部でTech Brandingチームに所属している澤田です。 2026/7/28〜30の3日間、パシフィコ横浜にて『KubeCon + CloudNativeCon Japan  […]The post KubeCon + CloudNativeCon Japan 2026 ブース出展レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[KubeCon + CloudNativeCon Japan 2026 参加レポート]]></title>
-            <link>https://sreake.com/blog/kubecon-cloudnativecon-japan-2026-report/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/kubecon-cloudnativecon-japan-2026-report/</guid>
-            <pubDate>Wed, 05 Aug 2026 03:40:05 GMT</pubDate>
-            <content:encoded><![CDATA[Sreake事業部アプリケーション開発支援チームの太田暢（@iorandd）です。 2026年7月29・30日に横浜で開催された KubeCon + CloudNativeCon Japan 2026 に参加してきました […]The post KubeCon + CloudNativeCon Japan 2026 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[KubeCon Japan 2026 をボランティアスタッフとして手伝った]]></title>
-            <link>https://sreake.com/blog/kubecon-japan-2026-volunteer-staff-report/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/kubecon-japan-2026-volunteer-staff-report/</guid>
-            <pubDate>Wed, 05 Aug 2026 03:39:42 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake 事業部の荒木 (@GawinGowin) です。 2026年7月29日・30日にパシフィコ横浜で開催された KubeCon + CloudNativeCon Japan 2026 に、ボランティア […]The post KubeCon Japan 2026 をボランティアスタッフとして手伝った first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
         </item>
     </channel>
