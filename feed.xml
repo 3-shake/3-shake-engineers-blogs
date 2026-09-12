@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 11 Sep 2026 22:31:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Sep 2026 11:35:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,30 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Service Extensions で自前 gRPC のガードレールを Agent Gateway に挿す]]></title>
+            <link>https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</guid>
+            <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにAgent Gateway を通る通信に、自前の gRPC モジュールを割り込ませる話です。Model Armor のような既成のエンジンではなく、社内固有のルールで通信を止めたい場合の手順と、実際に動かした結果をまとめます。 先に結論挿す先使える拡張ボディ結果Agent Gateway（Egress）authz 拡張（REQUEST_AUTHZ）渡らない効く（実測）。403 を確認Agent Gateway（Ingress）egress と同じ渡らない効かない。入口が発行されない自前 ALBトラフィック拡張渡る。...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[Agent Gateway と Model Armor で AI エージェントの通信を統制する]]></title>
+            <link>https://zenn.dev/satohjohn/articles/agent-gateway-model-armor-guide</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/agent-gateway-model-armor-guide</guid>
+            <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに最近 Model Armor と Agent Gateway について調べたのでまとめます。仕事などで見ていると AI Agent のセキュリティやガバナンスの観点から以下のような課題が見えてきています。プロンプトインジェクションや Jailbreak 攻撃によるエージェントの乗っ取りMCPやA2Aでのエージェントが外部ツールやデータベースを実行する際の個人情報（PII）や機密情報の漏洩,SSRF的な話。エージェントの無限ループや過剰な API 呼び出しによるコスト高騰シャドー AI や未承認ツール（MCP サーバー）の勝手な利用Google Cloud...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[Gemini Deep ResearchとGemini Notebookの連携強化！レポートも学習向けにバージョンアップ！]]></title>
+            <link>https://zenn.dev/shu_kob/articles/317cc52dcae906</link>
+            <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/317cc52dcae906</guid>
+            <pubDate>Sat, 12 Sep 2026 04:48:03 GMT</pubDate>
+            <content:encoded><![CDATA[GoogleのGemini Appにて、Deep Researchを使って出力した内容を、Gemini Notebook（旧NotebookLM）の既存ノートブックにエクスポートできるようになりました。これまでだと、Google Docsにエクスポートして、それをGemini Notebookにインポートしていましたが、既存ノートブックだと一発。新規ノートブックの作成はGemini Appからはできないので、そこは今後の機能追加に期待！さらに、Gemini App側で、Gemini Notebookに機能が使えるように作成したものは、Gemini App内での使用となります...]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[Yaziとは何か。ファイルを探し、確かめ、操作するTUIの仕組み]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/11/194300</link>
@@ -245,30 +269,6 @@
             <pubDate>Fri, 07 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026年8月7日に『セキュアAPI』翻訳者と考える、設計段階から組み込むセキュリティ というイベントで登壇します。https://levtechlab.connpass.com/event/399260/]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[分かりやすい説明ほど、反例で確かめる]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/07/124527</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/07/124527</guid>
-            <pubDate>Fri, 07 Aug 2026 03:45:27 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 以前、私はデータベースのトランザクションを「銀行振込」と捉えていました。送金元の残高を減らし、通知用の外部APIを呼び、送金先の残高を増やす。最後の更新に失敗しても、トランザクションをロールバックすれば元に戻るので、これで安全だと思っていました。 しかし、ロールバックできるのはデータベースの変更です。すでに外部APIが送った通知は取り消せません。私はトランザクションの仕組みをまったく理解していなかったわけではありません。データベースが保証する範囲と、利用者から見た「送金」という操作の範囲を、同じものとして扱っていました。 所有権を「本の貸し借り」、非同期処理を「料理」、キャッシュを「…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[キーバインドはつらいよ]]></title>
-            <link>https://silasol.la/posts/2026-08-06-01_ctrl-l-pty/</link>
-            <guid isPermaLink="false">https://silasol.la/posts/2026-08-06-01_ctrl-l-pty/</guid>
-            <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[AquaSKK の ASCII モード切替に使っている Ctrl+L が CLI と衝突して困ったので試行錯誤しました (オチあり)．]]></content:encoded>
-            <author>Masaki Haga</author>
-        </item>
-        <item>
-            <title><![CDATA[KubeCon + CloudNativeCon Japan 2026 ブース出展レポート]]></title>
-            <link>https://sreake.com/blog/kubecon-cloudnativecon-japan-booth-report/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/kubecon-cloudnativecon-japan-booth-report/</guid>
-            <pubDate>Wed, 05 Aug 2026 04:03:08 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに スリーシェイク Sreake事業部でTech Brandingチームに所属している澤田です。 2026/7/28〜30の3日間、パシフィコ横浜にて『KubeCon + CloudNativeCon Japan  […]The post KubeCon + CloudNativeCon Japan 2026 ブース出展レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
