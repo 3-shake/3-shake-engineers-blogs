@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 13 Sep 2026 22:31:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 11:37:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GitLab CI/CD 親子パイプラインの変数優先度の罠]]></title>
+            <link>https://zenn.dev/toshikish/articles/3239a9e27649f3</link>
+            <guid isPermaLink="false">https://zenn.dev/toshikish/articles/3239a9e27649f3</guid>
+            <pubDate>Mon, 14 Sep 2026 09:41:08 GMT</pubDate>
+            <content:encoded><![CDATA[背景GitLab CI/CD にはダウンストリームパイプラインという機能があり，パイプラインの中で別のパイプラインを呼び出すことができます。同じプロジェクトのパイプラインを呼び出す場合は親子パイプラインと呼ばれます。たとえば，以下のような .gitlab-ci.yml 定義を書きます。.gitlab-ci.ymltrigger-child-pipeline:  trigger:    include:      - local: child.gitlab-ci.ymlchild.gitlab-ci.ymlchild-pipeline:  stage: tes...]]></content:encoded>
+            <author>toshikish</author>
+        </item>
         <item>
             <title><![CDATA[Service Extensions で自前 gRPC のガードレールを Agent Gateway に挿す]]></title>
             <link>https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</link>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 08 Aug 2026 14:52:18 GMT</pubDate>
             <content:encoded><![CDATA[↑こちらの画像はGoogle Nano Banana 2で生成牛尾剛さん著『部下としてのAI　世界一流エンジニアの進化術』Kindle版を購入。Amazon.co.jp: 部下としてのAI 世界一流エンジニアの進化術 (文春e-book) eBook : 牛尾 剛: Kindleストア6月11日に出て、2ヶ月遅れだが、気になり読んでみました。Amazon.co.jp: 世界一流エンジニアの思考法 (文春e-book) eBook : 牛尾 剛: Kindleストア前作、『世界一流エンジニアの思考法』もKindle版買うて読んでいましたが、実践に至ってない箇所も多いな、と思いつつ、今作を読み進め、第1章『生成AIをマネジメントする』を読み終えました。第1章は生成AIによる目まぐるしい変化の解説とともに、前作でも力説されていた「深い理解の重要性」が今作でもやはり大事なんだと書かれています。第1章まで読んで、理解力の向上は基礎練かな、と前作読んだ記憶を頼りに仮説を立ててみました。例えば、個人的に思い浮かんだのは、受験勉強では基礎問題の反復で応用問題も解けるようになる。応用問題は分解すると、基礎の組み合わせでできている。そのような展開かな、と思いましたが、第2章 『「理解」をブーストする』では、「できるエンジニアはコードをたくさん読んでいる」から始まります。自分が建てた仮説の答え合わせをしながら、第2章以降も読み進めていきます。]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[20分でわかるセキュアAPI]]></title>
-            <link>https://speakerdeck.com/nwiizo/20fen-dewakarusekiyuaapi</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/20fen-dewakarusekiyuaapi</guid>
-            <pubDate>Fri, 07 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2026年8月7日に『セキュアAPI』翻訳者と考える、設計段階から組み込むセキュリティ というイベントで登壇します。https://levtechlab.connpass.com/event/399260/]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
