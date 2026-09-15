@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 15 Sep 2026 05:49:59 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 11:36:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -19,7 +19,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</guid>
             <pubDate>Tue, 15 Sep 2026 03:40:54 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 『おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから』が、ダイヤモンド社から発売されました。 【DL特典付】おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから（特典：生成AIにおけるSkillとは何か データ配信）作者:nwiizo（ぬうぃぞう）ダイヤモンド社Amazon 終わらせるための本を書いていて、何度か手が止まりました。書いている途中でやめとけば良かったなぁって何度も思いました。 私はプログラミングによって脳が変容してしまっているので、正しい手続きさえあればなんとかなると思っている節があります。 何を確かめて、どう分けて、どこから始めるか。途中…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 『おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから』が、ダイヤモンド社から発売されました。 【DL特典付】おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから（特典：生成AIにおけるSkillとは何か データ配信）作者:nwiizo（ぬうぃぞう）ダイヤモンド社Amazon 初めて商業出版する自分の単著は、技術書になると漠然と思っていました。技術の仕組みや使い方を詳しく書くか、『達人プログラマー』みたいな、プログラマーの判断や仕事の進め方についての本を書く。そういうことに憧れていました。 それが、『おい、とりあえず終わらせろ』になりました。プログラマーに…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
