@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 15 Sep 2026 03:24:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 04:15:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[本を書きました。本だからできたこと、これからできること]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</guid>
+            <pubDate>Tue, 15 Sep 2026 03:40:54 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 『おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから』が、ダイヤモンド社から発売されました。 【DL特典付】おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから（特典：生成AIにおけるSkillとは何か データ配信）作者:nwiizo（ぬうぃぞう）ダイヤモンド社Amazon 終わらせるための本を書いていて、何度か手が止まりました。書いている途中でやめとけば良かったなぁって何度も思いました。 私はプログラミングによって脳が変容してしまっているので、正しい手続きさえあればなんとかなると思っている節があります。 何を確かめて、どう分けて、どこから始めるか。途中…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[GitLab CI/CD 親子パイプラインの変数優先度の罠]]></title>
             <link>https://zenn.dev/toshikish/articles/3239a9e27649f3</link>
@@ -261,14 +269,6 @@
             <pubDate>Mon, 10 Aug 2026 01:33:20 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 「Rustでclone()を呼べば、値は別物として複製される」。 String::clone()で得た直観を、そのままArcへ持ち込むと、この説明に行き着く。けれど、Arc::clone()が増やすのは同じ割り当てを指す共有所有者であり、Tそのものを別の値として複製するわけではない。 use std::sync::{Arc, Mutex}; fn main() { let original = Arc::new(Mutex::new(vec![1])); let cloned = Arc::clone(&original); assert!(Arc::ptr_eq(&origi…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[部下としてのAI　世界一流エンジニアの進化術 第1章を読んで 〜理解こそが最も重要〜]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/buka-toshite-no-ai-chapter1</link>
-            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/buka-toshite-no-ai-chapter1</guid>
-            <pubDate>Sat, 08 Aug 2026 14:52:18 GMT</pubDate>
-            <content:encoded><![CDATA[↑こちらの画像はGoogle Nano Banana 2で生成牛尾剛さん著『部下としてのAI　世界一流エンジニアの進化術』Kindle版を購入。Amazon.co.jp: 部下としてのAI 世界一流エンジニアの進化術 (文春e-book) eBook : 牛尾 剛: Kindleストア6月11日に出て、2ヶ月遅れだが、気になり読んでみました。Amazon.co.jp: 世界一流エンジニアの思考法 (文春e-book) eBook : 牛尾 剛: Kindleストア前作、『世界一流エンジニアの思考法』もKindle版買うて読んでいましたが、実践に至ってない箇所も多いな、と思いつつ、今作を読み進め、第1章『生成AIをマネジメントする』を読み終えました。第1章は生成AIによる目まぐるしい変化の解説とともに、前作でも力説されていた「深い理解の重要性」が今作でもやはり大事なんだと書かれています。第1章まで読んで、理解力の向上は基礎練かな、と前作読んだ記憶を頼りに仮説を立ててみました。例えば、個人的に思い浮かんだのは、受験勉強では基礎問題の反復で応用問題も解けるようになる。応用問題は分解すると、基礎の組み合わせでできている。そのような展開かな、と思いましたが、第2章 『「理解」をブーストする』では、「できるエンジニアはコードをたくさん読んでいる」から始まります。自分が建てた仮説の答え合わせをしながら、第2章以降も読み進めていきます。]]></content:encoded>
-            <author>Shu Kobuchi</author>
         </item>
     </channel>
 </rss>
