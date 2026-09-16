@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 15 Sep 2026 22:31:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 11:38:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[おい、エージェントを使って終わらせろ]]></title>
+            <link>https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero</guid>
+            <pubDate>Wed, 16 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Forkwell Library #133。書籍の5ステップを紹介し、AIとともに仕事を終え、次の判断を変える進め方を考える。https://forkwell.connpass.com/event/405587/]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[AI時代の「技術的負債」の変質ー概念の終焉と再解釈、エージェントと共に向かう先]]></title>
+            <link>https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</link>
+            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</guid>
+            <pubDate>Tue, 15 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[技術的負債に向き合うConference 2026。AIによって変わる実装の費用、判断の負担、学び方を、オニオンモデルの5層と3つの負債から考える。概念のどこを捉え直し、エージェントとどんな開発へ進むかを語る40分。]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[本を書きました。本だからできたこと、これからできること]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</link>
@@ -252,22 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/11/142818</guid>
             <pubDate>Tue, 11 Aug 2026 05:28:18 GMT</pubDate>
             <content:encoded><![CDATA[はじめに よい名前ほど、間違いに気づきにくい。 fetch_userが利用者を作って返しても、読み手は取得だと思ったまま先へ進める。 詰まらずに読めたことが、最初の誤りになる。 customer、account、member、user。生成AIへ名前の候補を求めると、文脈や規約を追加しない限り、どれも自然な候補として並びやすい。契約主体とログイン主体と請求先が別のものでも、同じ顔をして並ぶ。 識別子として置き換えるだけで、型や処理が同じなら、4つのうちどれを選んでもコードは動く。特段の取り決めがなければレビューも通る。名前が嘘になるのは、契約は生きているがログインは止まっている利用者が現れた日…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Local LLM で Coding Agent をつかってみる]]></title>
-            <link>https://zenn.dev/satohjohn/articles/36c250162eb0ed</link>
-            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/36c250162eb0ed</guid>
-            <pubDate>Mon, 10 Aug 2026 02:12:40 GMT</pubDate>
-            <content:encoded><![CDATA[概要タイトルの通り。そもそも、https://github.com/magnitudedev/magnitude というのを見ており、「そういえば、そもそも Claude Code で Local LLM ってどうなんじゃ？」と思ってやってみた記録です。 環境Macbook Pro M4 32GBclaude code, codexollama, LiteLLMMagnitude 結論まぁ、良いPCがないと厳しい ≒ 全然処理が終わらない(リクエストタイムアウトする)claude code のデフォルトの context と tool 定義で 3000...]]></content:encoded>
-            <author>SatohJohn</author>
-        </item>
-        <item>
-            <title><![CDATA[訂正した誤りが、組織で再発する理由]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/10/103320</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/10/103320</guid>
-            <pubDate>Mon, 10 Aug 2026 01:33:20 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「Rustでclone()を呼べば、値は別物として複製される」。 String::clone()で得た直観を、そのままArcへ持ち込むと、この説明に行き着く。けれど、Arc::clone()が増やすのは同じ割り当てを指す共有所有者であり、Tそのものを別の値として複製するわけではない。 use std::sync::{Arc, Mutex}; fn main() { let original = Arc::new(Mutex::new(vec![1])); let cloned = Arc::clone(&original); assert!(Arc::ptr_eq(&origi…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
