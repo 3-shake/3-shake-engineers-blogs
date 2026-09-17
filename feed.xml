@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 16 Sep 2026 22:31:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 07:38:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ Claude Codeの Agent Skills は、ときどき見直したほうがいい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</guid>
+            <pubDate>Thu, 17 Sep 2026 05:03:49 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 2025年12月に「Claude Codeの Agent Skills は設定したほうがいい」という記事を書きました。必要な手順を必要なときに読み込ませる仕組みとして、Skillsを紹介した記事です。ただ、後半では設定が増えるほど管理が難しくなる話もしました。どれが使われているのか。似た説明のSkillが、互いの出番を奪っていないか。 syu-m-5151.hatenablog.com 今回は、その続きです。Skillsをいくつも設定した人には、まず /skill-doctor を紹介したいです。設定を増やす前に、今ある設定の使われ方を見られます。 /skill-doctor はv2…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes祭り #2 OP/ED]]></title>
+            <link>https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb</link>
+            <guid isPermaLink="false">https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb</guid>
+            <pubDate>Wed, 16 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Kubernetes祭り #2 の OP/ED スライドですhttps://3-shake.connpass.com/event/403684/]]></content:encoded>
+            <author>bells17</author>
+        </item>
         <item>
             <title><![CDATA[おい、エージェントを使って終わらせろ]]></title>
             <link>https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero</link>
@@ -159,12 +175,28 @@
             <author>Sreake</author>
         </item>
         <item>
+            <title><![CDATA[私にとって技術ブログは、推し活なのかもしれない]]></title>
+            <link>https://note.com/_mossann_t/n/n17b5de7e4281</link>
+            <guid isPermaLink="false">https://note.com/_mossann_t/n/n17b5de7e4281</guid>
+            <pubDate>Mon, 31 Aug 2026 02:28:43 GMT</pubDate>
+            <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。今回は、技術ブログやコミュニティ登壇資料をほぼ人力で作成してしまう自分の心理について考えてみると、「推し活」に帰結したよ、というお話です。続きをみる]]></content:encoded>
+            <author>もっさん</author>
+        </item>
+        <item>
             <title><![CDATA[#24【オンライン】協調フィルタリング vs BigQueryベクトル検索 - WhatとWhyで考える推薦設計]]></title>
             <link>https://speakerdeck.com/shukob/collaborative-filtering-vs-bigquery-vector-search</link>
             <guid isPermaLink="false">https://speakerdeck.com/shukob/collaborative-filtering-vs-bigquery-vector-search</guid>
             <pubDate>Fri, 28 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026年8月28日「日本生成AIユーザ会 #24」での発表資料です。「なぜ、うどん屋のアンケートは10ptなのに、住宅ローンや不動産のアンケートは5,000円〜3万円も貰えるのか？」この差は、データが持つ What（何を買ったか＝行動ログ）とWhy（なぜ選んだのか＝生活文脈）の価値の違いにあります。Google Cloud Next Tokyo（2026年7月）のあるセッションで「購買行動ではなく生活者の動機を追う」というアプローチに触れ、そこから着想を得て自分で検証してみました。本資料の設計・実装・考察はすべて発表者による再構成であり、当該セッションの内容そのものではありません。『集合知プログラミング』（オライリー・ジャパン, 2007）2章のクラシックな協調フィルタリングと、BigQuery VECTOR_SEARCH を1万人の合成データで比較したところ、推薦結果の重複率（Jaccard Overlap）はわずか0.4%でした。どちらも同じ正解セグメントを当てているのに、挙げてくるユーザがほぼ被らないという結果です。■ 内容・What vs Why — データの経済原理・「データの性質（What/Why）」×「規模（インメモリ/分散）」の4象限・推薦重複率0.4%の正体（行動空間と意味空間の直交性）・BigQuery VECTOR_SEARCH の勘所■ 注意検証は合成データによるものです。データが単純なため精度では両手法に差がつかず、その前提の上で重複率を見ています。実データでは結果が変わる可能性があります。■ リンクイベントページhttps://genai-users.connpass.com/event/404869/YouTubeアーカイブhttps://www.youtube.com/live/GQdOcNujpjo※本資料は各書籍の解説を参考に、データは独自に作成したものです。]]></content:encoded>
             <author>Shu Kobuchi</author>
+        </item>
+        <item>
+            <title><![CDATA[#aozorafm へのゲスト出演がウルトラ楽しかった話]]></title>
+            <link>https://note.com/_mossann_t/n/n848e76005736</link>
+            <guid isPermaLink="false">https://note.com/_mossann_t/n/n848e76005736</guid>
+            <pubDate>Sat, 22 Aug 2026 13:06:09 GMT</pubDate>
+            <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。タイトルの「ウルトラ楽しかった」はウルトラマンゼットの口癖から拝借しています。ご唱和ください、我の名を。FORTEさんが主催している 「仕事や趣味の楽しさを共有する雑談系Podcast　『aozora.fm』」にゲスト出演させていただきました。もっさんの出演回はこちらから↓ぜひ聴いてね続きをみる]]></content:encoded>
+            <author>もっさん</author>
         </item>
         <item>
             <title><![CDATA[【Google Cloud Next Tokyo '26】Gemini Sparkを触ってわかったノーコードAIエージェントの立ち位置]]></title>
@@ -237,38 +269,6 @@
             <pubDate>Thu, 13 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[セキュリティ・キャンプ全国大会2026のB6講義資料です。]]></content:encoded>
             <author>kyohmizu</author>
-        </item>
-        <item>
-            <title><![CDATA[RMCP 3.0でtfmcpをMCP 2026-07-28へ移行した]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/13/122153</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/13/122153</guid>
-            <pubDate>Thu, 13 Aug 2026 03:21:53 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 2025年3月、私はTerraformをMCP経由で操作するツールtfmcpを開発しました。JSON-RPCのメッセージ型、標準入出力のトランスポート層、メソッドの振り分けまで、すべてRustで実装しています。当時の記事では「MCPの動作原理を理解するため、あえて配線を自分の手で組み立てた」と書きました。正直に言えば、当時は利用できるライブラリがなく、自作するほかなかったのです。 syu-m-5151.hatenablog.com それからMCPは何度も更新されました。2026年7月28日版では、プロトコルセッションと初期化ハンドシェイクがなくなりました。代わって、server/di…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[TopcoatでRustフルスタック開発]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/12/163644</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/12/163644</guid>
-            <pubDate>Wed, 12 Aug 2026 07:36:44 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Topcoatは、HTMLをサーバーで生成しながら、ブラウザ上の状態更新やサーバー処理もRustで記述するフルスタックフレームワークです。フロントエンド用のディレクトリやnpmを用意せず、1つのRustファイルから動きます。2026年7月に発表された0.5.0を検証しました。 サーバーサイドレンダリング、部分的な反応、セッションの転送層までは任せられます。認証、マイグレーション、運用はアプリケーション側に残ります。この記事は、その境界を1つずつ確認した記録です。 github.com tokio.rs SSRとルーティングは1ファイルで済む Rust 1.95以上を用意し、Topco…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Google Cloud 認定資格を全冠しました（14試験・2年半の記録）]]></title>
-            <link>https://shu-kob.hateblo.jp/entry/google-cloud-all-14-certifications</link>
-            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/google-cloud-all-14-certifications</guid>
-            <pubDate>Wed, 12 Aug 2026 01:41:09 GMT</pubDate>
-            <content:encoded><![CDATA[2026年8月8日、Google Cloud 認定試験の全冠を達成しました。Google Cloud 認定資格は現在14試験あり、その全てに合格した状態です。全冠されている方は業界内に他にもいらっしゃいますが、私の場合は1年などという短期間で凝縮して駆け抜けたタイプではなく、約2年半かけてゆっくり積み上げた形になります。初めて受けたのが2年半前の Google Cloud Certified - Cloud Digital Leader（以下 CDL）。そこからガツガツ受けた時期もあれば、まったく受けていない時期もありました。この間、IPA の情報処理技術者試験（高度情報）も並行して受けていて中断時期もありますし、モチベーションの波もそれなりにありました。ただ、「全冠を取るぞ」と決めてからは、コンスタントに取っていけたという実感があります。受験費用とバウチャーの事情私は Google Cloud のパートナー企業であるスリーシェイクに勤めています。パートナー企業の社員には受験費用が無料になるバウチャーが配布されるため、費用面ではかなり恵まれた環境でした。ただ、この配布方式が2026年4月頃に変わりました。旧方式（Kryterion 時代）: クーポンコードが配布され、それを適用すれば受験できた新方式: Google Cloud Skills Boost で特定のコースを完了することで、バウチャーが適用される2026年2月にテスト配信プロバイダーが Kryterion から Pearson VUE に変わったタイミングと前後して、この変更が入りました。正直、この Skills Boost の対応になかなか本腰を入れられず、バウチャーを受け取るのが遅れました。ただ、一度やってみると他の試験分の Skills Boost もどんどん消化できるようになり、最終的には問題なく受験できました。面倒がって後回しにしていた期間が、結果的に一番のロスでした。受験履歴 日付  試験  結果  2024/02/10  Google Cloud Certified - Cloud Digital Leader（CDL）  合格  2024/05/31  Google Cloud Certified - Associate Cloud Engineer（ACE）  合格  2024/06/26  Google Cloud Certified - Professional Cloud DevOps Engineer（PCDOE）  不合格  2024/07/13  PCDOE（2回目）  合格  2024/07/26  Google Cloud Certified - Professional Cloud Architect（PCA）  不合格  2024/08/10  PCA（2回目）  合格  2024/11/28  Google Cloud Certified - Professional Cloud Developer（PCD）  不合格  2024/12/29  PCD（2回目）  不合格  2025/07/19  PCD（3回目）  合格  2025/08/09  Google Cloud Certified - Generative AI Leader（GAIL）【英語版】  合格  2025/11/20  Google Cloud Certified - Professional Data Engineer（PDE）  不合格  2025/11/23  Google Cloud Certified - Associate Data Practitioner（ADP）  合格  2025/12/14  PDE（2回目）  合格  2025/12/27  Google Cloud Certified - Professional Machine Learning Engineer（PMLE）  合格  2025/12/28  Google Cloud Certified - Associate Google Workspace Administrator（AGWA）  合格  2026/01/11  Google Cloud Certified - Professional Cloud Security Engineer（PCSE）  合格  2026/02/18  Google Cloud Certified - Professional Cloud Database Engineer（PCDBE）【英語版】  不合格  2026/06/18  PCDBE（2回目）【日本語版】  合格  2026/07/23  Google Cloud Certified - Professional Cloud Network Engineer（PCNE）  合格  2026/07/29  PCDOE 更新試験  合格  2026/08/08  Google Cloud Certified - Professional Security Operations Engineer（PSOE）  合格 ※ PCAはRenewal Skillsにて試験なしで更新こうして並べると、私はかなり落ちています。しかも落ちているのは最初の方に集中していて、初期の Professional は受けるたびに一度落ちていました。PCDOE: 1回落ちて2回目で合格PCA: 1回落ちて2回目で合格PCD: 2回落ちて3回目で合格それが次第に、Professional でも一発で合格できるようになっていきました。印象に残っている試験GAIL — 受験登録後に日本語化が発表されるGAIL は英語版で受験しました。当時は日本語版がなかったためです。ところが、受験登録をしてから受験日までの間に Google Cloud Next Tokyo '25 が開催され、そこで「Generative AI Leader を日本語化します」という発表がありました。このまま英語版で受けるか、キャンセルして日本語版を待つか悩みましたが、そのまま英語版で受けて無事合格。日本語版の発表を聞いた時は、非常に複雑な心境でした。受験登録前だったら大喜びだったんですが……。とはいえ、英語で受験したのは今振り返るととても良い経験でした。PDE → ADP — 順番を間違えた話PDE（Professional Data Engineer）を1回目で落ちました。本来であれば、ADP（Associate Data Practitioner）を受けた後に PDE を受けるべきです。ではなぜ逆になったのか。ADP が日本語化されているのを知らなかったからです。英語版しかないと思い込んで後回しにし、先に PDE に手を出してしまいました。ちゃんと確認しておくべきでした。そして PDE に落ちて悔しくなり、3日後に ADP を受けて合格しました。これは PDE のために積んだ土台があり、かつ試験の難易度が下がる分、3日で行けたという面が大きいと思います。その後、1回目から2回目の受験制限期間（2週間）を明けて、2025年12月14日に PDE を合格。この試験は12月半ばあたりで試験内容が変わるという情報があったので、変わる前に取りに行くことを決めて臨みました。PMLE — PDE の土台があれば2週間で行けたPMLE（Professional Machine Learning Engineer）は難関と言われる試験です。ですが、ADP・PDE と積み上げてきた土台、特に PDE が土台になることで、PDE 合格から2週間（12/14 → 12/27）でクリアできました。PMLE が難しいと言われる理由は、Google Cloud の知識だけでなく機械学習そのものの知識も必要になるためです。ただ、生成 AI をがっつりやっている方であれば、ML 領域の素養も次第についてくるので、そこは段階的に埋まっていくと思います。AGWA — PMLE の翌日、一夜漬けPMLE に合格した翌日（12/28）に、AGWA に合格しました。やったことは、ほぼ一夜漬け。今振り返ると、かなり詰め込んだなと思います。この流れで、2025年11月から2026年1月までの3ヶ月で5試験（ADP・PDE・PMLE・AGWA・PCSE）に合格できました。PCDBE — 英語版で落ち、日本語版で合格2026年2月18日、PCDBE を受験。当時は英語版しかなく、久しぶりの不合格となりました。英語版はやはりきつかったです。その後、テスト配信プロバイダーの変更（Kryterion → Pearson VUE）やバウチャー方式の変更を挟んで間が空き、6月18日に日本語版で再受験して合格しました。勉強法：Gemini Notebook（旧NotebookLM）の活用途中から取り入れたのが Gemini Notebook（旧NotebookLM） です。PDE を受けるにあたって使い始めました。私の勉強の流れはこうです。公式ドキュメントやUdemyの模擬試験をGemini Notebookに入れ、生成されるスライドと音声でポイントを抑えます。スライドはかなり分かりやすく解説してくれる形に整えてくれますし、音声解説も理解しやすい。動画を作って見るのもアリだと思います。なお、この方法が特に効いた試験と、そうでもなかった試験があります。その辺りの使い分けは別記事で書く予定です。受験順の戦略：垂直に積み上げる全冠を目指す方に一番お伝えしたいのが、受験順です。結論から言うと、垂直に積み上げるのが良いと考えています。つまり、ある試験に合格したら、同じ上位系統の資格に続けて挑戦するということです。なぜかというと、試験のために記憶した内容は、時間が経つと薄れていくからです。薄れる前に次を受けたい。そして、それを最も有効に活用できるのが同じ上位系統の資格なのです。アーキテクト・開発・運用系CDL → ACE → PCA → PCD → PCDOE一番易しい CDL から入り、その上位である ACE、さらに上位の PCA へ。PCA の次は王道的には PCD、そして開発系という括りで近い PCDOE、という流れです。（私自身は PCA より先に PCDOE を受けているのと、PCDは最後なので、この順番を守っていません。）AI・ML・データ系GAIL → ADP → PDE → PMLEAI とデータは結びつきが非常に強い領域です。GAIL の出題範囲には ML の問題も含まれていますし、ADP・PDE の領域にも ML が含まれます。AI・ML・データはひとつの塊として捉えて良いと思います。難関と言われる PMLE も、ADP → PDE と駆け上がっていけば、かなり取りやすくなります。データベースPCDBE については、PDE でデータベース関連の内容もそれなりに出てくるので、繋がりはあります。ただ、PDE と PMLE の方が結びつきは強い印象です。なので PDE の後に PCDBE でも良いですし、逆でも良いと思います。ネットワーク・セキュリティ系PCSE・PCNE・PSOE の3つは、「ネットワーク・セキュリティ系」と括れそうに見えますが、実際に受けてみると試験問題の内容としての結びつきはそこまで強くないと感じました。それぞれタイプが違います。なので、ここは垂直に積み上げるメリットが他の系統より薄いかもしれません。難易度は人それぞれの経験で変わる一般的に「この試験は難しい」と言われるものはありますが、難易度は本人の実務経験で大きく変わります。私の場合、難関と言われる PMLE の後に、（英語版とはいえ）PCDBE で落ちています。普段の業務で触っているサービスと、試験範囲の重なり方によって、体感難易度は全然違ってきます。AI 系が強い方は、まず PMLE を目指してみるのも良いかもしれません。なお、PCNE も難しいと言われる試験ですが、こちらは対策をしっかりやって一発合格できたので、そこは良かったなと思っています。費用についてパートナー企業でない方は、受験費用がそれなりにかさみます。会社の資格試験補助制度などを活用して臨むのが現実的だと思います。パートナー企業の場合は、年1回の全冠表彰（Google Cloud Partner All Certification Holders ← リンク先は2025年のもの）もあります。私もこれを忘れずに申請したいと思います。おわりに私の場合は約2年半かけて、ゆっくり全冠まで到達しました。途中で何度も落ちていますし、順番を間違えたり、英語版で苦戦したり、バウチャーの対応を面倒がって時間をロスしたりもしています。それでも、系統ごとに垂直に積み上げることと、Gemini Notebookを使いこなすことを続けていれば、全冠は十分に射程内だと感じました。Google Cloud を触っている方は、ぜひ全冠を目指してみてはどうでしょうか。shu-kob.hateblo.jp↑以前の記事で書きましたが、Google Cloud Next Tokyoで獲得した全冠バッチ！お読みいただきありがとうございました。]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[AIの「自然な名前」が、概念の境界を消す]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/11/142818</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/11/142818</guid>
-            <pubDate>Tue, 11 Aug 2026 05:28:18 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに よい名前ほど、間違いに気づきにくい。 fetch_userが利用者を作って返しても、読み手は取得だと思ったまま先へ進める。 詰まらずに読めたことが、最初の誤りになる。 customer、account、member、user。生成AIへ名前の候補を求めると、文脈や規約を追加しない限り、どれも自然な候補として並びやすい。契約主体とログイン主体と請求先が別のものでも、同じ顔をして並ぶ。 識別子として置き換えるだけで、型や処理が同じなら、4つのうちどれを選んでもコードは動く。特段の取り決めがなければレビューも通る。名前が嘘になるのは、契約は生きているがログインは止まっている利用者が現れた日…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
