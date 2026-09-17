@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 17 Sep 2026 11:36:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 22:31:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -21,6 +21,14 @@
             <pubDate>Thu, 17 Sep 2026 05:03:49 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 2025年12月に「Claude Codeの Agent Skills は設定したほうがいい」という記事を書きました。必要な手順を必要なときに読み込ませる仕組みとして、Skillsを紹介した記事です。ただ、後半では設定が増えるほど管理が難しくなる話もしました。どれが使われているのか。似た説明のSkillが、互いの出番を奪っていないか。 syu-m-5151.hatenablog.com 今回は、その続きです。Skillsをいくつも設定した人には、まず /skill-doctor を紹介したいです。設定を増やす前に、今ある設定の使われ方を見られます。 /skill-doctor はv2…]]></content:encoded>
             <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[AIで社員の自主発信に広報目線を組み込む]]></title>
+            <link>https://speakerdeck.com/_mossann_t/ai-de-shain-no-jishu-hasshin-ni-kouhou-mesen-o-kumikomu</link>
+            <guid isPermaLink="false">https://speakerdeck.com/_mossann_t/ai-de-shain-no-jishu-hasshin-ni-kouhou-mesen-o-kumikomu</guid>
+            <pubDate>Thu, 17 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[2026/09/17 AIを紡ぐ者たち #3 ～立場が変わればAIも変わる？役職別「相棒」としてのAIの使い方～ の発表資料ですイベントURL : https://3-shake.connpass.com/event/403793/スペシャルサンクス：ntkさん(https://x.com/knitta221)]]></content:encoded>
+            <author>もっさん</author>
         </item>
         <item>
             <title><![CDATA[Kubernetes祭り #2 OP/ED]]></title>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 15 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026/08/15(土) JAWS-UG 茨城 #16 LT&BBQ大会https://jawsug-ibaraki.connpass.com/event/401327/ で話した内容。TerraformでSecret値を扱う際の課題とその対応の話。]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[ソフトウェアサプライチェーンの構造的リスクとコンテナ環境の保護]]></title>
-            <link>https://speakerdeck.com/kyohmizu/no-kouzouteki-risuku-to-kontena-kankyou-no-hogo</link>
-            <guid isPermaLink="false">https://speakerdeck.com/kyohmizu/no-kouzouteki-risuku-to-kontena-kankyou-no-hogo</guid>
-            <pubDate>Thu, 13 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[セキュリティ・キャンプ全国大会2026のB6講義資料です。]]></content:encoded>
-            <author>kyohmizu</author>
         </item>
     </channel>
 </rss>
