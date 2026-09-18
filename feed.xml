@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 17 Sep 2026 22:31:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 11:36:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-09-18 gotanda.sre Terraformで複数環境作ったり、複数Stateに分割したりそれとTerragrunt / Terraform multi envs and multi states]]></title>
+            <link>https://speakerdeck.com/masasuzu/terraform-multi-envs-and-multi-states</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/terraform-multi-envs-and-multi-states</guid>
+            <pubDate>Fri, 18 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://gotanda-sre.connpass.com/event/402441/ で話す資料]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[Claude Codeの Rules と Auto memory は、書きっぱなしにしないほうがいい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</guid>
+            <pubDate>Fri, 18 Sep 2026 01:07:30 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 「今週は検証環境が使えない」と伝えた文が、来月の会話にも残っている。期限のある事情を覚えているだけなのに、いつの間にか恒久的な手順になる。そうなっていたら困ります。覚えてくれることと、今も正しいことは別です。 以前のモデルが何度も間違えたために足した指示も、モデルを替えた後まで同じ書き方で必要とは限りません。消してよいのか、残すべきなのか。その判断をしないまま、設定だけが増えていきます。 昨日の記事では、/skill-doctor でSkillsの使われ方を調べ、モデル更新時に指示を見直す話を書きました。今回は、その続きを .claude/rules/ とAuto memoryで考え…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ Claude Codeの Agent Skills は、ときどき見直したほうがいい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</link>
@@ -75,7 +91,7 @@
             <link>https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</link>
             <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</guid>
             <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにAgent Gateway を通る通信に、自前の gRPC モジュールを割り込ませる話です。Model Armor のような既成のエンジンではなく、社内固有のルールで通信を止めたい場合の手順と、実際に動かした結果をまとめます。 先に結論挿す先使える拡張ボディ結果Agent Gateway（Egress）authz 拡張（REQUEST_AUTHZ）渡らない効く（実測）。403 を確認Agent Gateway（Ingress）egress と同じ渡らない効かない。入口が発行されない自前 ALBトラフィック拡張渡る。...]]></content:encoded>
+            <content:encoded><![CDATA[はじめにAgent Gateway を通る通信に、自前の gRPC モジュールを割り込ませる話です。Model Armor のような既成のエンジンではなく、社内固有のルールで通信を止めたい場合の手順と、実際に動かした結果をまとめます。 先に結論挿す先使える拡張ボディ結果Agent Gateway（Egress）authz 拡張（REQUEST_AUTHZ）渡らない効く。403 を確認Agent Gateway（Ingress）egress と同じ渡らない効かない。入口が発行されない自前 ALBトラフィック拡張渡る。書き換え...]]></content:encoded>
             <author>SatohJohn</author>
         </item>
         <item>
@@ -253,22 +269,6 @@
             <pubDate>Tue, 18 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[このたび、はじめてマイナビ出版様より翻訳書を出版させていただくことになりました。原書は『Effective Platform Engineering』、邦題は『実践 プラットフォームエンジニアリング』です。発売日は2026年8月24日、いよいよ来週です。ぜひご予約いただけると嬉しいです。https://book.mynavi.jp/ec/products/detail/id=151794https://amzn.asia/d/0d4hfBcxこれに合わせて、「『実践 プラットフォームエンジニアリング』翻訳者と考える、開発者体験を加速する基盤のセルフサービス化」というイベントに登壇させていただきます。いつも機会をくださる Findy 様には感謝しています。セッションタイトルは「35分でわかるEffective Platform Engineering」です。書籍を読む際のガイドラインとして機能する内容になればと思っています。]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[資格は「型」をくれる — Google Cloud 全冠で分かったこと]]></title>
-            <link>https://zenn.dev/shu_kob/articles/57d0e91e66cc60</link>
-            <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/57d0e91e66cc60</guid>
-            <pubDate>Sun, 16 Aug 2026 13:24:48 GMT</pubDate>
-            <content:encoded><![CDATA[先日、Google Cloud の認定資格14科目をすべて取得し、いわゆる「全冠」を達成しました。↓全冠とったレポート記事はこちらhttps://shu-kob.hateblo.jp/entry/google-cloud-all-14-certifications資格試験にはときどき、資格無駄という声も上がります。いわゆる「実務至上主義」ですね。私自身、実務経験が最も重要であるという意見を全否定するつもりは毛頭ありません。現場で泥臭く手を動かして得られる経験値は何物にも代えがたいです。ただ、全14科目を走り切った今、声を大にして言いたいのは「経験と知識（資格学習）は対立する...]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-08-15 JAWS-UG 茨城 #16 Secrets ManagerにおけるSecret値の管理(Terraformの場合) / Secrets Manager Secrets]]></title>
-            <link>https://speakerdeck.com/masasuzu/secrets-manager-secrets</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/secrets-manager-secrets</guid>
-            <pubDate>Sat, 15 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2026/08/15(土) JAWS-UG 茨城 #16 LT&BBQ大会https://jawsug-ibaraki.connpass.com/event/401327/ で話した内容。TerraformでSecret値を扱う際の課題とその対応の話。]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
         </item>
     </channel>
 </rss>
