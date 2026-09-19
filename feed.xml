@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 18 Sep 2026 22:31:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Sep 2026 11:35:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Gemini Enterprise Agent Platform の「Managed Agents」に Cloud Run を運用させてみる]]></title>
+            <link>https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</guid>
+            <pubDate>Sat, 19 Sep 2026 06:59:04 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにGoogle Cloud の Managed Agents API に、Cloud Run のサービスを運用させました。Managed Agent API は Gemini Enterprise Agent Platform の Preview 機能です。今回、ログとメトリクスを読ませ、チューニング案を推測させ、実際に再デプロイまでさせています。モチベーションは、Antigravity による運用自動化で、どこまでいけるのかを知りたかったというのがあります。こちら検証日は 2026 年 9 月 14 日で、閲覧されたタイミングでは異なる機能になる可能性があります。 先...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
+        <item>
+            <title><![CDATA[Codexを使うなら、config.tomlとAGENTS.mdを押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330</guid>
+            <pubDate>Sat, 19 Sep 2026 02:23:30 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Codexで設定を残す場所は、主に2つあります。config.tomlは実行環境を、AGENTS.mdは仕事の進め方を決めます。 learn.chatgpt.com config.tomlにはモデルや推論の強さなど、実行時の条件を書きます。AGENTS.mdには検証方法や作業上の制約を書きます。役割は分かれていますが、ファイルを置いただけで意図どおりに効くわけではありません。 設定の優先順位、起動場所、読み込まれる指示を確認して初めて、同じ条件でCodexを使えます。この記事では、まず2つの役割を分け、次に設定の読み込み順とAGENTS.mdの探索範囲を確認します。 このシリーズでは…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[2026-09-18 gotanda.sre Terraformで複数環境作ったり、複数Stateに分割したりそれとTerragrunt / Terraform multi envs and multi states]]></title>
             <link>https://speakerdeck.com/masasuzu/terraform-multi-envs-and-multi-states</link>
@@ -253,22 +269,6 @@
             <pubDate>Wed, 19 Aug 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026年8月19日 田町.ai #2 での登壇資料です。https://tamachiai.connpass.com/event/397623/生成AIは業務を「削らない」、「移す」だけ。AIコーディングで実装が高速化した結果、しんどさはレビュー・検査へ移動し、それも追いつかなくなると最終的に本番環境が最終テスト環境になります。生産性が上がったのではなく、リスクを前借りしているだけではないか、という話をしました。社内勉強会での自分の仮説、AI Dev Dayでの「PRのdiffが大きすぎると人間もAIもレビューをサボる」という指摘、Google Cloud Next TokyoでのNew Relic社による「AIコーディング以降、本番障害が増えている」という定量報告。この3つが線になったところから、対策としてのSRE（オブザーバビリティの先行設計、カナリアリリース、高速な切り戻し、SLO/エラーバジェット）と、Cloud Run / Cloud Deploy / Cloud Monitoring で実装する提案まで話しています。AI時代の開発速度は「作る速さ」ではなく、「早く気づいて速く戻せる時間」で決まる。#田町ai #生成AI #SRE #GoogleCloud #CloudRun]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[Rustで日本語推敲CLI/Skillの「Suiko」を作りました]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/08/18/224136</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/08/18/224136</guid>
-            <pubDate>Tue, 18 Aug 2026 13:41:36 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Suikoは、日本語文書の自然さと読みやすさを、再現可能なルールで診断するRust製のCLIです。禁止語や翻訳調に加え、均一な文のリズム、段落構造、用語の初出、読解負荷まで確認できます。ただし、文章がAIによって書かれたかは判定しません。怪しい箇所を同じ条件で指し示し、直すか残すかの判断を人間やエージェントへ返します。 github.com Suikoの出発点は、cojiさんのNatural Japaneseです。このAgent Skillは、文章を書く前の設計、書くときの制約、書いた後の検査を一体として扱います。定型句を置換するだけで終わらず、機械が疑いを検出し、文脈を読める人間や…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[35分でわかるEffective Platform Engineering]]></title>
-            <link>https://speakerdeck.com/nwiizo/35-bun-de-wakaru-effective-platform-engineering</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/35-bun-de-wakaru-effective-platform-engineering</guid>
-            <pubDate>Tue, 18 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[このたび、はじめてマイナビ出版様より翻訳書を出版させていただくことになりました。原書は『Effective Platform Engineering』、邦題は『実践 プラットフォームエンジニアリング』です。発売日は2026年8月24日、いよいよ来週です。ぜひご予約いただけると嬉しいです。https://book.mynavi.jp/ec/products/detail/id=151794https://amzn.asia/d/0d4hfBcxこれに合わせて、「『実践 プラットフォームエンジニアリング』翻訳者と考える、開発者体験を加速する基盤のセルフサービス化」というイベントに登壇させていただきます。いつも機会をくださる Findy 様には感謝しています。セッションタイトルは「35分でわかるEffective Platform Engineering」です。書籍を読む際のガイドラインとして機能する内容になればと思っています。]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
