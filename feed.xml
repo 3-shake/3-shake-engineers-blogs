@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 19 Sep 2026 22:31:14 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 11:35:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Codexを使うなら、権限プロファイルとRulesを押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</guid>
+            <pubDate>Sun, 20 Sep 2026 03:07:46 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Codexにテストを実行してほしいのに、依存パッケージの取得や書き込みで止まることがあります。そこで権限を広げると、今度はどこまで実行できるのかを説明しにくくなります。確認画面の多さだけを見て設定すると、必要な権限も分かりにくいままです。 権限プロファイルでは、ローカルのコマンドが触れるファイルや通信先をまとめます。Rulesでは、コマンドの引数列から許可・確認・禁止の判断を決めます。Claude Codeの権限設定と比べると、「どの操作を許すか」と「どの範囲なら任せるか」を分けて考える意味が見えてきます。この記事では、その設計の違いを押さえてから、テストが止まった場所と直す設定を順…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Gemini Enterprise Agent Platform の「Managed Agents」に Cloud Run を運用させてみる]]></title>
             <link>https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</link>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 19 Aug 2026 10:03:31 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Sreakeでは、AI駆動開発検証チームを中心に、AIツールの活用推進やPlaybook作成、情報収集・検証にも取り組んでいます。その一環として、Claude Codeの利用状況を可視化するためのダッシュボード […]The post Claude Code活用状況を可視化するダッシュボード構築 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[AIは「削る」んやなくて「移す」だけ  − 移った先が本番障害やったので、SREで受け止める −]]></title>
-            <link>https://speakerdeck.com/shukob/ai-shifts-toil-to-production</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/ai-shifts-toil-to-production</guid>
-            <pubDate>Wed, 19 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2026年8月19日 田町.ai #2 での登壇資料です。https://tamachiai.connpass.com/event/397623/生成AIは業務を「削らない」、「移す」だけ。AIコーディングで実装が高速化した結果、しんどさはレビュー・検査へ移動し、それも追いつかなくなると最終的に本番環境が最終テスト環境になります。生産性が上がったのではなく、リスクを前借りしているだけではないか、という話をしました。社内勉強会での自分の仮説、AI Dev Dayでの「PRのdiffが大きすぎると人間もAIもレビューをサボる」という指摘、Google Cloud Next TokyoでのNew Relic社による「AIコーディング以降、本番障害が増えている」という定量報告。この3つが線になったところから、対策としてのSRE（オブザーバビリティの先行設計、カナリアリリース、高速な切り戻し、SLO/エラーバジェット）と、Cloud Run / Cloud Deploy / Cloud Monitoring で実装する提案まで話しています。AI時代の開発速度は「作る速さ」ではなく、「早く気づいて速く戻せる時間」で決まる。#田町ai #生成AI #SRE #GoogleCloud #CloudRun]]></content:encoded>
-            <author>Shu Kobuchi</author>
         </item>
     </channel>
 </rss>
