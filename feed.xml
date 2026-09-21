@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 20 Sep 2026 22:31:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 11:37:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Claude Codeの Agent view とセッション間通信は使ったほうがいい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258</guid>
+            <pubDate>Mon, 21 Sep 2026 01:42:58 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに AIを使って仕事が楽になった、という人は定期的に現れます。どこかの偉そうな人から、エージェントに任せれば人は楽になる、と言われる。けれど、複数のエージェントを起動すると、減っているのは考える時間です。 セッションごとの入力待ちに答え、別worktreeの差分を読み、終わった変更を同じ状態で動かす。仕事の量が消えたわけではなく、労働密度が上がっていました。1つのターミナルを見続ける辛さとは、別の辛さがあります。 Agent viewは、この辛さを消す機能ではありません。複数セッションの状態を一覧し、入力を求めている仕事へ移るための機能です。セッション間通信は、決まったことを別のセッショ…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Codexを使うなら、権限プロファイルとRulesを押さえておきたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</link>
@@ -261,14 +269,6 @@
             <pubDate>Fri, 21 Aug 2026 07:30:05 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 私たちは、明確なゴールを決めずにコードを書き始めていた。 書いて、動かして、また直した。 AIエージェントを使う今、それは過去の話ではない。 コードから考え始めることには、もっともな理由があります。動くものがあれば話は具体的になり、間違いにも早く気づけます。AIエージェントは、このやり方をさらにやりやすくしました。曖昧な依頼からでも、画面、API、テストまで一息に作れます。 ただし、速くなったのはコードだけではありません。検討中の案、採用した要求、実装条件を区別しないまま、誰かの要望が動くソフトウェアへ変わる速度も上がりました。完成したコードから、「なぜ作るのか」「誰が何を達成するの…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Claude Code活用状況を可視化するダッシュボード構築]]></title>
-            <link>https://sreake.com/blog/visualize-claude-code-utilization/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/visualize-claude-code-utilization/</guid>
-            <pubDate>Wed, 19 Aug 2026 10:03:31 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreakeでは、AI駆動開発検証チームを中心に、AIツールの活用推進やPlaybook作成、情報収集・検証にも取り組んでいます。その一環として、Claude Codeの利用状況を可視化するためのダッシュボード […]The post Claude Code活用状況を可視化するダッシュボード構築 first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
     </channel>
 </rss>
