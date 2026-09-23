@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 22 Sep 2026 22:31:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 11:37:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Codexを使うなら、SkillsとPluginsを押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</guid>
+            <pubDate>Wed, 23 Sep 2026 03:36:04 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 同じ仕事を頼むたびに、前の会話からうまくいった指示をコピーすることがあります。その手順を残す場所として、Claude Codeの記事ではAgent Skillsを紹介しました。続くPluginsの記事では、社内で共有するSkillをプラグインにまとめ、更新を届けるところまで管理する方針を書きました。今回は、その方針をCodexで実践するために、Skillの作成基準とCodex固有の配置・呼び出し方を考えます。 syu-m-5151.hatenablog.com syu-m-5151.hatenablog.com PR説明を頼んだときは使ってほしいけれど、変更方針を相談しているだけなら…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ Claude Codeの Plugins は設定したほうがいい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945</link>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 22 Aug 2026 13:06:09 GMT</pubDate>
             <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。タイトルの「ウルトラ楽しかった」はウルトラマンゼットの口癖から拝借しています。ご唱和ください、我の名を。FORTEさんが主催している 「仕事や趣味の楽しさを共有する雑談系Podcast　『aozora.fm』」にゲスト出演させていただきました。もっさんの出演回はこちらから↓ぜひ聴いてね続きをみる]]></content:encoded>
             <author>もっさん</author>
-        </item>
-        <item>
-            <title><![CDATA[【Google Cloud Next Tokyo '26】Gemini Sparkを触ってわかったノーコードAIエージェントの立ち位置]]></title>
-            <link>https://zenn.dev/shu_kob/articles/53a468ddd1a707</link>
-            <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/53a468ddd1a707</guid>
-            <pubDate>Fri, 21 Aug 2026 15:21:57 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに2026年8月21日(金)の19時から、「Gemini Sparkを触る会」という勉強会を個人主催で開催しました。https://genai-users.connpass.com/event/404236/事前資料は作らず、公式ドキュメントを画面に出しながらライブで触る、という形式です。YouTube Liveで配信したのでアーカイブも残っています。この記事では、勉強会でGemini Sparkを触ってみて考えたこと ——「ノーコードAIエージェントの立ち位置」と「これからのエンジニアの役割」について書きます。 Gemini SparkとはGemini Spar...]]></content:encoded>
-            <author>Shu Kobuchi</author>
         </item>
     </channel>
 </rss>
