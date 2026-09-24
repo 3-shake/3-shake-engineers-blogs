@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 11:37:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 22:32:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[ISUCONの素振り用ポータルサイトを Cloudflare Workers で作った]]></title>
+            <link>https://zenn.dev/ntk221/articles/ecc80f3006ef97</link>
+            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/ecc80f3006ef97</guid>
+            <pubDate>Thu, 24 Sep 2026 21:32:18 GMT</pubDate>
+            <content:encoded><![CDATA[ISUCONの練習を好きなタイミングで始めたいISUCONの素振りをするためのポータルサイトを作りました。https://suburi.dev/欲しかったのは1人から複数人までのチームがそれぞれ好きなタイミングでISUCONの練習ができる場所です。環境の用意、ベンチの実行、パフォーマンスの改善という一連の作業を始めやすくしたいというモチベーションで作っています。使い方としては、GitHubでログインし練習する問題とメンバーを決めると練習用の環境を作るCloudFormationテンプレートを取得できます。テンプレートから自分やチームのAWSアカウントで環境を作れば、あとはポー...]]></content:encoded>
+            <author>ntk</author>
+        </item>
+        <item>
+            <title><![CDATA[Multicaの紹介＋初心者ループエンジニアリング]]></title>
+            <link>https://qiita.com/gensan0223/items/267936f36aebcbba718f</link>
+            <guid isPermaLink="false">https://qiita.com/gensan0223/items/267936f36aebcbba718f</guid>
+            <pubDate>Thu, 24 Sep 2026 14:06:33 GMT</pubDate>
+            <content:encoded><![CDATA[はじめについ最近、ようやっとAI駆動開発に手を出し始めた者です！Claude Code、Codex、Cursor。使えるエージェントは増えたのですが、増えるほどターミナルのタブも増えていきます。誰が何をやっていて、どこで止まっているのか、だんだん自分でも分からなくなっ...]]></content:encoded>
+            <author>Gemma Naoki</author>
+        </item>
         <item>
             <title><![CDATA[Codexを使うなら、Worktreesと会話の分岐を押さえておきたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105</link>
@@ -253,22 +269,6 @@
             <pubDate>Fri, 04 Sep 2026 02:36:29 GMT</pubDate>
             <content:encoded><![CDATA[syu-m-5151.hatenablog.com はじめに 一年で、こんなに価値観が変わるとは思っていませんでした。 私は「技術力に優劣はある」という記事で、技術との向き合い方を「道具として使う」「理解する」「創る」に分け、それぞれの中にも上手下手があると書きました。市場はその差を評価する。学びを続けた人ほど選択肢が広がる。コミュニケーションが得意でも、技術を学ばなくてよい理由にはならない。この主張は今も間違っているとは思いません。 エンジニアのキャリア地図 「技術」と「やりたいこと」から見つける最適解作者:サカモトソシムAmazon その記事を書いた時にも、AIコーディングエージェントはあ…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[提案方針の「型」を、営業がClaudeと一緒につくってみた]]></title>
-            <link>https://sreake.com/blog/template-for-proposal-strategy-with-claude/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/template-for-proposal-strategy-with-claude/</guid>
-            <pubDate>Wed, 02 Sep 2026 01:53:49 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Sreake事業部の営業を担当している坪井です。これまでこのブログはエンジニアによる技術的な記事が中心でしたが、今回は非エンジニアの営業目線で、日々の業務にどう生成AIを取り入れているかの一例をご紹介したいと思 […]The post 提案方針の「型」を、営業がClaudeと一緒につくってみた first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[[速報] 俺氏 OTCA に合格]]></title>
-            <link>https://zenn.dev/ntk221/articles/1d989765a06f32</link>
-            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/1d989765a06f32</guid>
-            <pubDate>Mon, 31 Aug 2026 10:29:49 GMT</pubDate>
-            <content:encoded><![CDATA[OTCA (OpenTelemetry Certified Associate) 受けたこれです。https://training.linuxfoundation.org/ja/certification/opentelemetry-certified-associate-otca/オブザーバビリティに興味があるので、受けてみました。 前提インフラ領域のエンジニア1年生(3ヶ月目)エンジニア歴3年弱Go とか React(TypeScript) とか特段どこかに強みがあるとかではない技術書を積んだり崩したりするのが趣味前職でk8s上で動いているプロダ...]]></content:encoded>
-            <author>ntk</author>
         </item>
     </channel>
 </rss>
