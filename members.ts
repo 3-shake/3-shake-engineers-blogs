@@ -767,4 +767,20 @@ export const members: Member[] = [
     githubUsername: "ntk221",
     websiteUrl: "https://zenn.dev/ntk221",
   },
+  {
+    id: "mossann",
+    name: "もっさん",
+    role: "HRBP / DevHR / DevRel",
+    bio: "エモーショナルバースト",
+    avatarSrc: "/avatars-webp/mossann_icon.webp",
+    sources: [
+        "https://note.com/_mossann_t/rss",
+        "https://zenn.dev/mossan06/feed",
+        "https://speakerdeck.com/_mossann_t.rss"
+      ],
+    includeUrlRegex: "",
+    twitterUsername: "_mossann_t",
+    githubUsername: "mossann-t",
+    websiteUrl: "https://note.com/_mossann_t/",
+  }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
