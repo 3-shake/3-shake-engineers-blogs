@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 23 Sep 2026 22:31:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 02:11:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -207,6 +207,14 @@
             <author>riiimparm</author>
         </item>
         <item>
+            <title><![CDATA[[OpenTelemetry] Go のコンパイル時計装において、ctx 伝搬なしで span を紐づける仕組みについて調べた]]></title>
+            <link>https://zenn.dev/ntk221/articles/34cbb95272720f</link>
+            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/34cbb95272720f</guid>
+            <pubDate>Sat, 05 Sep 2026 05:20:31 GMT</pubDate>
+            <content:encoded><![CDATA[Go の OpenTelemetry コンパイル時計装(opentelemetry-go-compile-instrumentation の otelc)について調べていると、context.Context を伝搬していなくても span の親子を繋げられる仕組みが入っていることがわかりました。これは GLS(goroutine-local storage) と呼ばれる仕組みです。Go では span の親子関係を ctx で運ぶのが API の規約なので、ctx を引き回していないコードにそのまま計装を入れても span 同士は繋がりません。GLS はこの隙間を埋めるもので、ctx ...]]></content:encoded>
+            <author>ntk</author>
+        </item>
+        <item>
             <title><![CDATA[AIで実装は速くなった。なのにプロダクトは速くならない。職能の壁を越えて価値のフローを設計する]]></title>
             <link>https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</link>
             <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</guid>
@@ -247,27 +255,19 @@
             <author>Sreake</author>
         </item>
         <item>
+            <title><![CDATA[[速報] 俺氏 OTCA に合格]]></title>
+            <link>https://zenn.dev/ntk221/articles/1d989765a06f32</link>
+            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/1d989765a06f32</guid>
+            <pubDate>Mon, 31 Aug 2026 10:29:49 GMT</pubDate>
+            <content:encoded><![CDATA[OTCA (OpenTelemetry Certified Associate) 受けたこれです。https://training.linuxfoundation.org/ja/certification/opentelemetry-certified-associate-otca/オブザーバビリティに興味があるので、受けてみました。 前提インフラ領域のエンジニア1年生(3ヶ月目)エンジニア歴3年弱Go とか React(TypeScript) とか特段どこかに強みがあるとかではない技術書を積んだり崩したりするのが趣味前職でk8s上で動いているプロダ...]]></content:encoded>
+            <author>ntk</author>
+        </item>
+        <item>
             <title><![CDATA[私にとって技術ブログは、推し活なのかもしれない]]></title>
             <link>https://note.com/_mossann_t/n/n17b5de7e4281</link>
             <guid isPermaLink="false">https://note.com/_mossann_t/n/n17b5de7e4281</guid>
             <pubDate>Mon, 31 Aug 2026 02:28:43 GMT</pubDate>
             <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。今回は、技術ブログやコミュニティ登壇資料をほぼ人力で作成してしまう自分の心理について考えてみると、「推し活」に帰結したよ、というお話です。続きをみる]]></content:encoded>
-            <author>もっさん</author>
-        </item>
-        <item>
-            <title><![CDATA[#24【オンライン】協調フィルタリング vs BigQueryベクトル検索 - WhatとWhyで考える推薦設計]]></title>
-            <link>https://speakerdeck.com/shukob/collaborative-filtering-vs-bigquery-vector-search</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/collaborative-filtering-vs-bigquery-vector-search</guid>
-            <pubDate>Fri, 28 Aug 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2026年8月28日「日本生成AIユーザ会 #24」での発表資料です。「なぜ、うどん屋のアンケートは10ptなのに、住宅ローンや不動産のアンケートは5,000円〜3万円も貰えるのか？」この差は、データが持つ What（何を買ったか＝行動ログ）とWhy（なぜ選んだのか＝生活文脈）の価値の違いにあります。Google Cloud Next Tokyo（2026年7月）のあるセッションで「購買行動ではなく生活者の動機を追う」というアプローチに触れ、そこから着想を得て自分で検証してみました。本資料の設計・実装・考察はすべて発表者による再構成であり、当該セッションの内容そのものではありません。『集合知プログラミング』（オライリー・ジャパン, 2007）2章のクラシックな協調フィルタリングと、BigQuery VECTOR_SEARCH を1万人の合成データで比較したところ、推薦結果の重複率（Jaccard Overlap）はわずか0.4%でした。どちらも同じ正解セグメントを当てているのに、挙げてくるユーザがほぼ被らないという結果です。■ 内容・What vs Why — データの経済原理・「データの性質（What/Why）」×「規模（インメモリ/分散）」の4象限・推薦重複率0.4%の正体（行動空間と意味空間の直交性）・BigQuery VECTOR_SEARCH の勘所■ 注意検証は合成データによるものです。データが単純なため精度では両手法に差がつかず、その前提の上で重複率を見ています。実データでは結果が変わる可能性があります。■ リンクイベントページhttps://genai-users.connpass.com/event/404869/YouTubeアーカイブhttps://www.youtube.com/live/GQdOcNujpjo※本資料は各書籍の解説を参考に、データは独自に作成したものです。]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[#aozorafm へのゲスト出演がウルトラ楽しかった話]]></title>
-            <link>https://note.com/_mossann_t/n/n848e76005736</link>
-            <guid isPermaLink="false">https://note.com/_mossann_t/n/n848e76005736</guid>
-            <pubDate>Sat, 22 Aug 2026 13:06:09 GMT</pubDate>
-            <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。タイトルの「ウルトラ楽しかった」はウルトラマンゼットの口癖から拝借しています。ご唱和ください、我の名を。FORTEさんが主催している 「仕事や趣味の楽しさを共有する雑談系Podcast　『aozora.fm』」にゲスト出演させていただきました。もっさんの出演回はこちらから↓ぜひ聴いてね続きをみる]]></content:encoded>
             <author>もっさん</author>
         </item>
     </channel>
