@@ -756,6 +756,18 @@ export const members: Member[] = [
     websiteUrl: "https://rin2yh.com/",
   },
   {
+    id: "ntk221",
+    name: "ntk",
+    role: "SRE",
+    bio: "dev→ops",
+    avatarSrc: "/avatars-webp/ntk221.webp",
+    sources: ["https://zenn.dev/ntk221/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "knitta221",
+    githubUsername: "ntk221",
+    websiteUrl: "https://zenn.dev/ntk221",
+  },
+  {
     id: "mossann",
     name: "もっさん",
     role: "HRBP / DevHR / DevRel",
@@ -770,5 +782,5 @@ export const members: Member[] = [
     twitterUsername: "_mossann_t",
     githubUsername: "mossann-t",
     websiteUrl: "https://note.com/_mossann_t/",
-  },
+  }
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
