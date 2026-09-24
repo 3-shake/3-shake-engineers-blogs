@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 02:41:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 11:37:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Codexを使うなら、Worktreesと会話の分岐を押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105</guid>
+            <pubDate>Thu, 24 Sep 2026 03:31:05 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 会話を分岐しただけでは、ファイルは分かれません。修正案を2通り試していても、同じディレクトリを書き換えているなら、片方の変更はもう片方からも見えます。会話の中では別案でも、ディスク上では同じ実装を直している状態です。 Codexでは、会話の分岐にWorktreeを組み合わせ、作業場所も分けられます。共通の調査から別案を試し、それぞれの差分を比較できます。取り込む変更が決まったら、不要になった作業場所も片付けます。 Claude CodeのAgent viewの記事では、並行する仕事の編集場所をWorktreeで分け、最後に変更を統合する話を書きました。今回の主題は、Codexから会話…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Codexを使うなら、SkillsとPluginsを押さえておきたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</link>
@@ -261,14 +269,6 @@
             <pubDate>Mon, 31 Aug 2026 10:29:49 GMT</pubDate>
             <content:encoded><![CDATA[OTCA (OpenTelemetry Certified Associate) 受けたこれです。https://training.linuxfoundation.org/ja/certification/opentelemetry-certified-associate-otca/オブザーバビリティに興味があるので、受けてみました。 前提インフラ領域のエンジニア1年生(3ヶ月目)エンジニア歴3年弱Go とか React(TypeScript) とか特段どこかに強みがあるとかではない技術書を積んだり崩したりするのが趣味前職でk8s上で動いているプロダ...]]></content:encoded>
             <author>ntk</author>
-        </item>
-        <item>
-            <title><![CDATA[私にとって技術ブログは、推し活なのかもしれない]]></title>
-            <link>https://note.com/_mossann_t/n/n17b5de7e4281</link>
-            <guid isPermaLink="false">https://note.com/_mossann_t/n/n17b5de7e4281</guid>
-            <pubDate>Mon, 31 Aug 2026 02:28:43 GMT</pubDate>
-            <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。今回は、技術ブログやコミュニティ登壇資料をほぼ人力で作成してしまう自分の心理について考えてみると、「推し活」に帰結したよ、というお話です。続きをみる]]></content:encoded>
-            <author>もっさん</author>
         </item>
     </channel>
 </rss>
