@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 11:38:48 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 22:33:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -239,6 +239,14 @@
             <author>nwiizo</author>
         </item>
         <item>
+            <title><![CDATA[「プログラミングの基礎」でOCamlを学んで気づいたこと]]></title>
+            <link>https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</guid>
+            <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに関数型まつり2026をきっかけに、関数型プログラミングに興味を持ちました。イベントでは興味深いプラクティスが多く、実際に学んでみたらおもしろそうだと思いました。そこで関数型まつりのスタッフで、登壇もしていた同僚のhagaさん（@silasolla）に相談して、『プログラミングの基礎』を読み始めました。本を選ぶ際の相談から学習中のアドバイスまで、hagaさんには大変お世話になりました。ありがとうございます。本書ではOCamlを使うため、まずはその文法を学びました。この記事では、学習していて気になったOCamlの文法を紹介します。前提Webエンジニア普段よく使う言語はGoとTypeScriptDartとRubyは商用開発で使用経験ありC・Java・Python・Rustは少し触った程度演算子や記号の違い% ではなく modOCamlでは、整数の剰余は % ではなく mod を使います。]]></content:encoded>
+            <author>Rinrin</author>
+        </item>
+        <item>
             <title><![CDATA[GitHub Actions "concurrency" とは]]></title>
             <link>https://www.rowicy.com/blog/gh-action-concurrency/</link>
             <guid isPermaLink="false">https://www.rowicy.com/blog/gh-action-concurrency/</guid>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 05 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[生成AIによって開発者の指は光の速さで動いている。なのに、リリースは相変わらず「来期のどこか」。では、犯人は AI なのか？ AI がコードを爆速で吐き出したあと、その成果物が「PdM 待ち」「デザイン待ち」「QA 待ち」「法務待ち」「偉い人の気分待ち」という職能ごとの待合室を巡り、気づいたら実装時間の10倍を待ち時間に費やしている——そんな光景に見覚えのある方、全員がこのスライドの対象読者です。本資料では「実装が速くなるほど、職能の壁がボトルネックとして浮き彫りになる」という不都合な真実を直視し、役割の境界線をなぞるのではなく、価値が流れる経路そのものを設計するという発想でプロダクト開発を組み立て直す方法を語ります。なお登壇者の nwiizo は、ネット上では「常に何かを読んでいる怖そうな人」として認識されているようですが、実物はめっぽう気さくで、話しかければ普通に喜びます。パブリックイメージと実装の間にギャップがあるのは、プロダクトや組織だけではないようです。📍 Product Engineering Conference 2026 https://product-engineering.jp/2026/ 登壇資料]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[推論の観測、できていますか？ 〜 Google Cloud Gemini Enterprise Agent Platformで 3つの Gemini モデルを実測して踏んだ、評価の罠 〜]]></title>
-            <link>https://speakerdeck.com/shukob/gemini-thinking-model-eval-observability</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/gemini-thinking-model-eval-observability</guid>
-            <pubDate>Fri, 04 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2026年9月4日(金)開催の「【3-shake × enechain】SRE Tech Talk #15」でのLT登壇スライドです。イベントページ: https://3-shake.connpass.com/event/402777/◼︎概要本セッションでは、Google CloudのGemini 3世代モデル（gemini-3.7-flash / gemini-3.5-flash-lite / gemini-3.1-pro-preview）をCI上で実測評価した際に直面した、「推論モデル（Thinking Model）特有の評価・観測の罠」とその解決アプローチについて共有しました。◼︎ハイライト・見落とされがちな監視項目: レイテンシやコストだけでなく「推論トークン数（thoughts_token_count）」と「finish_reason」の観測が必須な理由・推論トークンが出力枠を食う罠: MAX_TOKENS の上限を内部推論が圧迫し、可視出力が文の途中で強制終了していた実例・設定1行でスコアが逆転: 測定条件の欠陥を是正したことで、正答率が 79.7% → 100% へ・「記録していなかったものは、永久に見えない」: SRE視点で考える生成AIアプリケーションのオブザーバビリティ◼︎検証リポジトリADK (Agent Development Kit) と Gemini を用いた検証用チャットボット実装・CI評価コードはこちらで公開しています。👉 https://github.com/shu-kob/adk-agent-chat]]></content:encoded>
-            <author>Shu Kobuchi</author>
         </item>
     </channel>
 </rss>
