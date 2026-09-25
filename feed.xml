@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 22:32:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 11:38:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Go Conference 2026 参加レポート]]></title>
+            <link>https://sreake.com/blog/go-conference-2026-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/go-conference-2026-report/</guid>
+            <pubDate>Fri, 25 Sep 2026 02:11:21 GMT</pubDate>
+            <content:encoded><![CDATA[こんにちは、Sreake事業部の岩塚(yura_builder)です。 2026年9月11日(金)に中野セントラルパークで開催されたGo Conference 2026に参加してきました。本記事では現地の様子や印象に残っ […]The post Go Conference 2026 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[ Codexを使うなら、定期タスクを押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</guid>
+            <pubDate>Fri, 25 Sep 2026 01:29:41 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 毎朝、前日に変わったコードを確認したい。レビュー待ちのPRも見に行きたい。繰り返す仕事には、手順が分かっていても、始めるのを忘れる問題があります。Codexの定期タスクは、その開始を予定へ移す機能です。 毎朝同じ文章を送っても、前回の会話や対象ファイルがなければ、同じ仕事にはなりません。予定どおり始まっても、必要な情報を読めずに終わることがあります。実行する時刻と一緒に、何を渡して始めるかを決めます。 ここでは、ローカルプロジェクトの変更を朝に確認するタスクを作ります。ChatGPTデスクトップアプリ内のCodexから利用し、管理画面の Scheduled で予定と実行結果を確認しま…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ISUCONの素振り用ポータルサイトを Cloudflare Workers で作った]]></title>
             <link>https://zenn.dev/ntk221/articles/ecc80f3006ef97</link>
@@ -253,22 +269,6 @@
             <pubDate>Fri, 04 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026年9月4日(金)開催の「【3-shake × enechain】SRE Tech Talk #15」でのLT登壇スライドです。イベントページ: https://3-shake.connpass.com/event/402777/◼︎概要本セッションでは、Google CloudのGemini 3世代モデル（gemini-3.7-flash / gemini-3.5-flash-lite / gemini-3.1-pro-preview）をCI上で実測評価した際に直面した、「推論モデル（Thinking Model）特有の評価・観測の罠」とその解決アプローチについて共有しました。◼︎ハイライト・見落とされがちな監視項目: レイテンシやコストだけでなく「推論トークン数（thoughts_token_count）」と「finish_reason」の観測が必須な理由・推論トークンが出力枠を食う罠: MAX_TOKENS の上限を内部推論が圧迫し、可視出力が文の途中で強制終了していた実例・設定1行でスコアが逆転: 測定条件の欠陥を是正したことで、正答率が 79.7% → 100% へ・「記録していなかったものは、永久に見えない」: SRE視点で考える生成AIアプリケーションのオブザーバビリティ◼︎検証リポジトリADK (Agent Development Kit) と Gemini を用いた検証用チャットボット実装・CI評価コードはこちらで公開しています。👉 https://github.com/shu-kob/adk-agent-chat]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-09-04 SRE Tech Talk #15 怠惰なTerraform /  Lazy Terraform]]></title>
-            <link>https://speakerdeck.com/masasuzu/lazy-terraform</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/lazy-terraform</guid>
-            <pubDate>Fri, 04 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://3-shake.connpass.com/event/402777/ で話した内容]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[技術力に優劣はない(「技術力に優劣はある(「技術力に優劣はない」を読んで)」を読んで)]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/04/113629</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/04/113629</guid>
-            <pubDate>Fri, 04 Sep 2026 02:36:29 GMT</pubDate>
-            <content:encoded><![CDATA[syu-m-5151.hatenablog.com はじめに 一年で、こんなに価値観が変わるとは思っていませんでした。 私は「技術力に優劣はある」という記事で、技術との向き合い方を「道具として使う」「理解する」「創る」に分け、それぞれの中にも上手下手があると書きました。市場はその差を評価する。学びを続けた人ほど選択肢が広がる。コミュニケーションが得意でも、技術を学ばなくてよい理由にはならない。この主張は今も間違っているとは思いません。 エンジニアのキャリア地図 「技術」と「やりたいこと」から見つける最適解作者:サカモトソシムAmazon その記事を書いた時にも、AIコーディングエージェントはあ…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
