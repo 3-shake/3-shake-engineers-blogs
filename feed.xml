@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 22:33:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 11:35:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Codexを使うなら、codex execと構造化出力を押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930</guid>
+            <pubDate>Sat, 26 Sep 2026 01:39:30 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Codexへ同じ種類の依頼を繰り返していると、会話を開いて文章を貼り付ける操作を省きたくなります。変更概要を作る、ログを整理する、確認すべき点を一覧にする。入力と出力が見えている仕事なら、codex execで既存のCLIの流れへ組み込めます。 JSONの形が正しくても、調査が成功したとは限りません。対象を読めなかった結果が「問題なし」の空配列になれば、後の処理は失敗に気づけません。この記事では、実行中のイベント、最後の回答、実行そのものの失敗を分けて受け取ります。 learn.chatgpt.com まず単発の仕事を渡し、次にJSONLのイベントと最終JSONを分けます。その後、保…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Go Conference 2026 参加レポート]]></title>
             <link>https://sreake.com/blog/go-conference-2026-report/</link>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 05 Sep 2026 05:20:31 GMT</pubDate>
             <content:encoded><![CDATA[Go の OpenTelemetry コンパイル時計装(opentelemetry-go-compile-instrumentation の otelc)について調べていると、context.Context を伝搬していなくても span の親子を繋げられる仕組みが入っていることがわかりました。これは GLS(goroutine-local storage) と呼ばれる仕組みです。Go では span の親子関係を ctx で運ぶのが API の規約なので、ctx を引き回していないコードにそのまま計装を入れても span 同士は繋がりません。GLS はこの隙間を埋めるもので、ctx ...]]></content:encoded>
             <author>ntk</author>
-        </item>
-        <item>
-            <title><![CDATA[AIで実装は速くなった。なのにプロダクトは速くならない。職能の壁を越えて価値のフローを設計する]]></title>
-            <link>https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-de-jissou-ha-hayaku-nata-nanoni-purodakuto-ha-hayaku-naranai-shokunou-no-kabe-o-koe-te-kachi-no-furo-o-sekkei-suru</guid>
-            <pubDate>Sat, 05 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[生成AIによって開発者の指は光の速さで動いている。なのに、リリースは相変わらず「来期のどこか」。では、犯人は AI なのか？ AI がコードを爆速で吐き出したあと、その成果物が「PdM 待ち」「デザイン待ち」「QA 待ち」「法務待ち」「偉い人の気分待ち」という職能ごとの待合室を巡り、気づいたら実装時間の10倍を待ち時間に費やしている——そんな光景に見覚えのある方、全員がこのスライドの対象読者です。本資料では「実装が速くなるほど、職能の壁がボトルネックとして浮き彫りになる」という不都合な真実を直視し、役割の境界線をなぞるのではなく、価値が流れる経路そのものを設計するという発想でプロダクト開発を組み立て直す方法を語ります。なお登壇者の nwiizo は、ネット上では「常に何かを読んでいる怖そうな人」として認識されているようですが、実物はめっぽう気さくで、話しかければ普通に喜びます。パブリックイメージと実装の間にギャップがあるのは、プロダクトや組織だけではないようです。📍 Product Engineering Conference 2026 https://product-engineering.jp/2026/ 登壇資料]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
