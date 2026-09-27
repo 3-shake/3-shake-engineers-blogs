@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 22:32:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 11:36:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-09-26 Platform Engineering Kaigi 2026 インフラとアプリの境界線と委譲の設計 / Drawing the Infra and App Line ]]></title>
+            <link>https://speakerdeck.com/masasuzu/drawing-the-infra-and-app-line</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/drawing-the-infra-and-app-line</guid>
+            <pubDate>Sun, 27 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[インフラとアプリの境界線と委譲の設計Platform Engineering Kaigi 2026での発表内容https://www.cnia.io/pek2026/sessions/7696ab46-5273-441e-941e-6cd027402d19/セッション概要インフラとアプリの境界線を、どこに引くのが望ましいのでしょうか。全部インフラチームが持てば安全ですが反映待ちで開発が止まり、全部アプリチームに渡せば速いですが野良運用が広がり作り直せない構成が残ります。この問いには二つの境界線が混ざっているように思います。インフラプロビジョニングとアプリデプロイをどこで分けるかという機能の境界と、共通プラットフォームを挟んで開発チームがどこまで自分で動けるようにするかという役割の境界です。そして二つは独立しているわけではありません。役割が動けば選ぶ道具も変わり、道具が変われば機能の境界の置き場所も変わってくるかもしれません。クライアントワークで複数のお客様のインフラに関わってきた経験から、実際にどう引かれていたかを交えて整理してみます。題材は ECS や Cloud Run といったマネージドサービスです。]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
+        <item>
+            <title><![CDATA[Codexを使うなら、/goalとサイドチャットを押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/27/120017</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/27/120017</guid>
+            <pubDate>Sun, 27 Sep 2026 03:00:17 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Codexが修正している途中で、「なぜ、その判定を変えるのか」と聞きたくなることがあります。理由を知りたいだけなのか、その変更を止めてほしいのか。途中で送る一文にも、別の目的があります。 長い仕事を続ける /goal、途中の質問を分ける /side、実行中の指示変更と予約送信。それぞれ、作業を続ける条件、質問する会話、指示を送るタイミングを指定する操作です。9月のCLI更新では、下書きを残したままCodexからの質問へ答える機能も加わりました。 認証処理を直す仕事で考えてみます。修正は続けてほしい。でも、期限の判定については説明を聞きたい。必要なら仕様を決め直し、Codexへ変更を指…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Codexを使うなら、codex execと構造化出力を押さえておきたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930</link>
@@ -253,22 +269,6 @@
             <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに関数型まつり2026をきっかけに、関数型プログラミングに興味を持ちました。イベントでは興味深いプラクティスが多く、実際に学んでみたらおもしろそうだと思いました。そこで関数型まつりのスタッフで、登壇もしていた同僚のhagaさん（@silasolla）に相談して、『プログラミングの基礎』を読み始めました。本を選ぶ際の相談から学習中のアドバイスまで、hagaさんには大変お世話になりました。ありがとうございます。本書ではOCamlを使うため、まずはその文法を学びました。この記事では、学習していて気になったOCamlの文法を紹介します。前提Webエンジニア普段よく使う言語はGoとTypeScriptDartとRubyは商用開発で使用経験ありC・Java・Python・Rustは少し触った程度演算子や記号の違い% ではなく modOCamlでは、整数の剰余は % ではなく mod を使います。]]></content:encoded>
             <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Actions "concurrency" とは]]></title>
-            <link>https://www.rowicy.com/blog/gh-action-concurrency/</link>
-            <guid isPermaLink="false">https://www.rowicy.com/blog/gh-action-concurrency/</guid>
-            <pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[GitHubとGitlabのCIのキャンセル処理についてまとめた]]></content:encoded>
-            <author>riiimparm</author>
-        </item>
-        <item>
-            <title><![CDATA[[OpenTelemetry] Go のコンパイル時計装において、ctx 伝搬なしで span を紐づける仕組みについて調べた]]></title>
-            <link>https://zenn.dev/ntk221/articles/34cbb95272720f</link>
-            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/34cbb95272720f</guid>
-            <pubDate>Sat, 05 Sep 2026 05:20:31 GMT</pubDate>
-            <content:encoded><![CDATA[Go の OpenTelemetry コンパイル時計装(opentelemetry-go-compile-instrumentation の otelc)について調べていると、context.Context を伝搬していなくても span の親子を繋げられる仕組みが入っていることがわかりました。これは GLS(goroutine-local storage) と呼ばれる仕組みです。Go では span の親子関係を ctx で運ぶのが API の規約なので、ctx を引き回していないコードにそのまま計装を入れても span 同士は繋がりません。GLS はこの隙間を埋めるもので、ctx ...]]></content:encoded>
-            <author>ntk</author>
         </item>
     </channel>
 </rss>
