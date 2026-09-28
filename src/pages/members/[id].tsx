@@ -16,15 +16,8 @@ type Props = {
 };
 
 const Page: NextPage<Props> = (props) => {
-  const {
-    id,
-    name,
-    bio,
-    avatarSrc,
-    xUsername,
-    githubUsername,
-    websiteUrl,
-  } = props.member;
+  const { id, name, bio, avatarSrc, xUsername, githubUsername, websiteUrl } =
+    props.member;
 
   return (
     <>
