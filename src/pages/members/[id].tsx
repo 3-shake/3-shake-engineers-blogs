@@ -16,15 +16,8 @@ type Props = {
 };
 
 const Page: NextPage<Props> = (props) => {
-  const {
-    id,
-    name,
-    bio,
-    avatarSrc,
-    twitterUsername,
-    githubUsername,
-    websiteUrl,
-  } = props.member;
+  const { id, name, bio, avatarSrc, xUsername, githubUsername, websiteUrl } =
+    props.member;
 
   return (
     <>
@@ -42,14 +35,14 @@ const Page: NextPage<Props> = (props) => {
             <h1 className="member-header__name">{name}</h1>
             <p className="member-header__bio">{bio}</p>
             <div className="member-header__links">
-              {twitterUsername && (
+              {xUsername && (
                 <a
-                  href={`https://twitter.com/${twitterUsername}`}
+                  href={`https://x.com/${xUsername}`}
                   className="member-header__link"
                 >
                   <img
-                    src="/icons/twitter.svg"
-                    alt={`Twitterのユーザー@${twitterUsername}`}
+                    src="/icons/x.svg"
+                    alt={`Xのユーザー@${xUsername}`}
                     width={22}
                     height={22}
                   />
