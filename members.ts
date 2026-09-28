@@ -507,18 +507,6 @@ export const members: Member[] = [
     websiteUrl: "https://www.wantedly.com/id/keigo_kurita_e",
   },
   {
-    id: "masaru-komiyama",
-    name: "masaru-komiyama",
-    role: "SRE",
-    bio: "SRE",
-    avatarSrc: "/avatars-webp/komiyama5380.webp",
-    sources: ["https://qiita.com/masaru-komiyama/feed"],
-    includeUrlRegex: "",
-    xUsername: "",
-    githubUsername: "",
-    websiteUrl: "https://qiita.com/masaru-komiyama/",
-  },
-  {
     id: "moz-sec",
     name: "Kobayashi Shun",
     role: "long-term internship student",
