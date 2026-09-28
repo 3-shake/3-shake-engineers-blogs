@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { members } from "@members";
 import { getMemberPath } from "@src/utils/helper";
+import Link from "next/link";
+import type React from "react";
+import { useEffect, useState } from "react";
 
 export const ScrollableMembers: React.FC = () => {
   const [shuffledMembers, setShuffledMembers] = useState(members);
 
   useEffect(() => {
     // クライアント側でマウント後にシャッフル
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setShuffledMembers([...members].sort(() => 0.5 - Math.random()));
   }, []);
 

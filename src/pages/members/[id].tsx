@@ -1,14 +1,14 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from "next";
 import { members } from "@members";
-import { PostItem, Member } from "@src/types";
-import { PostList } from "@src/components/PostList";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { PageSEO } from "@src/components/PageSEO";
+import { PostList } from "@src/components/PostList";
+import type { Member, PostItem } from "@src/types";
 import {
   getMemberById,
-  getMemberPostsById,
   getMemberPath,
+  getMemberPostsById,
 } from "@src/utils/helper";
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
 type Props = {
   postItems: PostItem[];
@@ -36,8 +36,6 @@ const Page: NextPage<Props> = (props) => {
               <img
                 src={avatarSrc}
                 alt={name}
-                
-                
                 className="member-header__avatar-img"
               />
             </div>

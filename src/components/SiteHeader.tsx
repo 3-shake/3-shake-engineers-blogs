@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { config } from "@site.config";
-
 import { ContentWrapper } from "@src/components/ContentWrapper";
+import Link from "next/link";
 
 export const SiteHeader: React.FC = () => (
   <header className="site-header">

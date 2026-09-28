@@ -1,6 +1,6 @@
-import { PostItem } from "@src/types";
-import { members } from "@members";
 import posts from "@.contents/posts.json";
+import { members } from "@members";
+import type { PostItem } from "@src/types";
 
 export function getMemberByName(name: string) {
   return members.find((member) => member.name === name);
