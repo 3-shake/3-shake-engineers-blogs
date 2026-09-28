@@ -1,8 +1,8 @@
+import fs from "node:fs";
 import { Feed } from "feed";
-import fs from "fs";
-import { config } from "../../site.config.js";
 import postsData from "../../.contents/posts.json" with { type: "json" };
-import { PostItem } from "../types.js";
+import { config } from "../../site.config.js";
+import type { PostItem } from "../types.js";
 
 const posts = postsData as PostItem[];
 

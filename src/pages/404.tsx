@@ -1,7 +1,7 @@
-import { NextPage } from "next";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { LinkBackHome } from "@src/components/LinkBackHome";
 import { PageSEO } from "@src/components/PageSEO";
+import type { NextPage } from "next";
 
 const Page: NextPage = () => {
   return (

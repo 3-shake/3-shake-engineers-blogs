@@ -1,9 +1,9 @@
-import { AppProps } from "next/app";
-import Head from "next/head";
-import { Roboto, Open_Sans } from "next/font/google";
 import { config } from "@site.config";
-import { SiteHeader } from "@src/components/SiteHeader";
 import { SiteFooter } from "@src/components/SiteFooter";
+import { SiteHeader } from "@src/components/SiteHeader";
+import type { AppProps } from "next/app";
+import { Open_Sans, Roboto } from "next/font/google";
+import Head from "next/head";
 
 import "@src/styles/globals.scss";
 

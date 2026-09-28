@@ -1,12 +1,11 @@
-import { NextPage } from "next";
-import Link from "next/link";
-
-import { config } from "@site.config";
 import { members } from "@members";
+import { config } from "@site.config";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { PageSEO } from "@src/components/PageSEO";
+import type { Member } from "@src/types";
 import { getMemberPath } from "@src/utils/helper";
-import { Member } from "@src/types";
+import type { NextPage } from "next";
+import Link from "next/link";
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
@@ -37,8 +36,8 @@ const Page: NextPage = () => {
             </span>
           </h1>
           <div className="members__cards">
-            {members.map((member, i) => (
-              <MemberCard key={`member-card-${i}`} member={member} />
+            {members.map((member) => (
+              <MemberCard key={member.id} member={member} />
             ))}
           </div>
         </section>

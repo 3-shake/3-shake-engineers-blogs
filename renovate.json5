@@ -37,14 +37,6 @@
   // pnpm の trustPolicy による誤検知を回避（Renovate 実行時のみ）
   npmrc: "trust-policy=none",
 
-  // eslint-plugin-react が ESLint v10 未対応のため v8 に固定
-  packageRules: [
-    {
-      matchPackageNames: ["eslint", "@eslint/js"],
-      allowedVersions: "<9",
-    },
-  ],
-
   // ロックファイルメンテナンス
   // minimumReleaseAge を 0 にして、毎週の force-push で待機日数が
   // リセットされ続けマージ不能になるのを防ぐ

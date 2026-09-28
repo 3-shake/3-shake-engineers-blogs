@@ -1,4 +1,4 @@
-import { Member } from "@src/types";
+import type { Member } from "@src/types";
 
 export const members: Member[] = [
   {
@@ -670,9 +670,7 @@ export const members: Member[] = [
     role: "Engineer",
     bio: "Engineer",
     avatarSrc: "/avatars-webp/riiim.webp",
-    sources: [
-      "https://rowicy.com/RiiiM/rss.xml",
-    ],
+    sources: ["https://rowicy.com/RiiiM/rss.xml"],
     includeUrlRegex: "",
     twitterUsername: "riiimparm",
     githubUsername: "riiimparm",
@@ -735,9 +733,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "Glass Innu",
     avatarSrc: "/avatars-webp/gensan0223.webp",
-    sources: [
-      "https://qiita.com/gensan0223/feed",
-    ],
+    sources: ["https://qiita.com/gensan0223/feed"],
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "gensan0223",

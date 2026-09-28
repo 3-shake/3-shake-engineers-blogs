@@ -1,17 +1,16 @@
-import { NextPage } from "next";
-import Link from "next/link";
-
 import posts from "@.contents/posts.json";
 import { config } from "@site.config";
-import { PostItem } from "@src/types";
-import { ScrollableMembers } from "@src/components/ScrollableMembers";
-import { PostList } from "@src/components/PostList";
-import { PageSEO } from "@src/components/PageSEO";
 import {
   ContentWrapper,
   UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
+import { PageSEO } from "@src/components/PageSEO";
+import { PostList } from "@src/components/PostList";
+import { ScrollableMembers } from "@src/components/ScrollableMembers";
+import type { PostItem } from "@src/types";
 import { limitPostsPerMember } from "@src/utils/helper";
+import type { NextPage } from "next";
+import Link from "next/link";
 
 const MAX_POSTS_PER_MEMBER = 5;
 const { posts: limitedPosts } = limitPostsPerMember(
