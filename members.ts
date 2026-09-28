@@ -175,18 +175,6 @@ export const members: Member[] = [
     websiteUrl: "https://masasuzu.net",
   },
   {
-    id: "kiyos",
-    name: "Kyohei Saito",
-    role: "SRE",
-    bio: "haraheri",
-    avatarSrc: "/avatars-webp/kiyos.webp",
-    sources: ["https://zenn.dev/kyohei_saito/feed"],
-    includeUrlRegex: "",
-    xUsername: "kiyo_12_07",
-    githubUsername: "kiyo-s",
-    websiteUrl: "",
-  },
-  {
     id: "mos914",
     name: "Yu Kaneko",
     role: "SRE",
