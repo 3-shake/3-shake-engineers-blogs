@@ -1,16 +1,15 @@
-import { useState } from "react";
-import Link from "next/link";
+import fetchedFavicons from "@.contents/favicons.json";
+import type { PostItem } from "@src/types";
+import {
+  getFaviconSrcFromHostname,
+  getHostFromURL,
+  getMemberById,
+  getMemberPath,
+} from "@src/utils/helper";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-
-import { PostItem } from "@src/types";
-import {
-  getHostFromURL,
-  getFaviconSrcFromHostname,
-  getMemberPath,
-  getMemberById,
-} from "@src/utils/helper";
-import fetchedFavicons from "@.contents/favicons.json";
+import Link from "next/link";
+import { useState } from "react";
 
 dayjs.extend(relativeTime);
 
@@ -30,10 +29,7 @@ const PostLink: React.FC<PostLinkProps> = (props) => {
   return (
     <article className="post-link">
       <Link href={getMemberPath(member.id)} className="post-link__author">
-        <img
-          src={member.avatarSrc}
-          className="post-link__author-img"
-        />
+        <img src={member.avatarSrc} alt="" className="post-link__author-img" />
         <div className="post-link__author-name">
           <div className="post-link__author-name">{member.name}</div>
           <time dateTime={isoDate} className="post-link__date">
@@ -86,6 +82,7 @@ export const PostList: React.FC<PostListProps> = (props) => {
       <div className="post-list">
         {displayItems.map((item, i) => (
           <PostLink
+            // biome-ignore lint/suspicious/noArrayIndexKey: link は複数フィード間で重複しうるため
             key={`post-item-${i}`}
             item={item}
             currentTime={currentTime}
@@ -95,6 +92,7 @@ export const PostList: React.FC<PostListProps> = (props) => {
       {canLoadMore && (
         <div className="post-list-load">
           <button
+            type="button"
             onClick={() => setDisplayItemsCount(displayItemsCount + 32)}
             className="post-list-load__button"
           >

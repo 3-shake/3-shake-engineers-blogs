@@ -1,7 +1,7 @@
 import fs from "fs-extra";
 import Parser from "rss-parser";
 import { members } from "../../members.js";
-import { PostItem, Member } from "../types.js";
+import type { Member, PostItem } from "../types.js";
 
 type FeedItem = {
   title: string;
@@ -14,15 +14,25 @@ type FeedItem = {
 const parser = new Parser();
 const FETCH_TIMEOUT_MS = 30_000;
 
-function withTimeout<T>(promise: Promise<T>, ms: number, url: string): Promise<T> {
+function withTimeout<T>(
+  promise: Promise<T>,
+  ms: number,
+  url: string,
+): Promise<T> {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(
       () => reject(new Error(`Timeout after ${ms}ms fetching ${url}`)),
       ms,
     );
     promise.then(
-      (val) => { clearTimeout(timer); resolve(val); },
-      (err) => { clearTimeout(timer); reject(err); },
+      (val) => {
+        clearTimeout(timer);
+        resolve(val);
+      },
+      (err) => {
+        clearTimeout(timer);
+        reject(err);
+      },
     );
   });
 }
@@ -51,7 +61,7 @@ async function fetchFeedItems(url: string): Promise<FeedItem[]> {
           link,
           contentSnippet: contentSnippet?.replace(/\n|\u2028/g, ""),
           isoDate,
-          dateMiliSeconds: isoDate ? (new Date(isoDate).getTime() || 0) : 0,
+          dateMiliSeconds: isoDate ? new Date(isoDate).getTime() || 0 : 0,
         };
         return item;
       })
@@ -146,7 +156,7 @@ async function processInBatches<T, R>(
   return results;
 }
 
-(async function () {
+(async () => {
   try {
     console.log("Starting feed processing...");
     console.log(

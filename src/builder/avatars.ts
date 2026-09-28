@@ -1,6 +1,6 @@
+import { execSync } from "node:child_process";
+import path from "node:path";
 import fs from "fs-extra";
-import path from "path";
-import { execSync } from "child_process";
 
 const AVATARS_DIR = "public/avatars";
 const WEBP_DIR = "public/avatars-webp";
@@ -17,7 +17,7 @@ function checkCwebpInstalled(): void {
   }
 }
 
-(async function () {
+(async () => {
   checkCwebpInstalled();
   fs.ensureDirSync(WEBP_DIR);
 

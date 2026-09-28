@@ -1,4 +1,4 @@
-import { Member } from "@src/types";
+import type { Member } from "@src/types";
 
 export const members: Member[] = [
   {
@@ -670,9 +670,7 @@ export const members: Member[] = [
     role: "Engineer",
     bio: "Engineer",
     avatarSrc: "/avatars-webp/riiim.webp",
-    sources: [
-      "https://rowicy.com/RiiiM/rss.xml",
-    ],
+    sources: ["https://rowicy.com/RiiiM/rss.xml"],
     includeUrlRegex: "",
     xUsername: "riiimparm",
     githubUsername: "riiimparm",
@@ -735,9 +733,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "Glass Innu",
     avatarSrc: "/avatars-webp/gensan0223.webp",
-    sources: [
-      "https://qiita.com/gensan0223/feed",
-    ],
+    sources: ["https://qiita.com/gensan0223/feed"],
     includeUrlRegex: "",
     xUsername: "",
     githubUsername: "gensan0223",
@@ -774,13 +770,13 @@ export const members: Member[] = [
     bio: "エモーショナルバースト",
     avatarSrc: "/avatars-webp/mossann_icon.webp",
     sources: [
-        "https://note.com/_mossann_t/rss",
-        "https://zenn.dev/mossan06/feed",
-        "https://speakerdeck.com/_mossann_t.rss"
-      ],
+      "https://note.com/_mossann_t/rss",
+      "https://zenn.dev/mossan06/feed",
+      "https://speakerdeck.com/_mossann_t.rss",
+    ],
     includeUrlRegex: "",
     xUsername: "_mossann_t",
     githubUsername: "mossann-t",
     websiteUrl: "https://note.com/_mossann_t/",
-  }
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));

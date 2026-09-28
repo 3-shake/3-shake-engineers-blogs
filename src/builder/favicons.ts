@@ -1,6 +1,6 @@
+import path from "node:path";
 import fs from "fs-extra";
-import path from "path";
-import { PostItem } from "../types.js";
+import type { PostItem } from "../types.js";
 
 const FAVICON_DIR = "public/favicons";
 const FETCH_TIMEOUT_MS = 10_000;
@@ -27,7 +27,7 @@ async function fetchFavicon(hostname: string): Promise<Buffer | null> {
   }
 }
 
-(async function () {
+(async () => {
   const posts: PostItem[] = JSON.parse(
     fs.readFileSync(".contents/posts.json", "utf-8"),
   );
@@ -63,10 +63,7 @@ async function fetchFavicon(hostname: string): Promise<Buffer | null> {
   }
 
   fs.ensureDirSync(".contents");
-  fs.writeFileSync(
-    ".contents/favicons.json",
-    JSON.stringify(fetchedHostnames),
-  );
+  fs.writeFileSync(".contents/favicons.json", JSON.stringify(fetchedHostnames));
 
   console.log(`Done. Favicons saved to ${FAVICON_DIR}`);
   process.exit(0);

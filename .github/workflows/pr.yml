@@ -36,6 +36,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
+      - name: Lint and format check
+        run: pnpm exec biome ci
+
       - name: Type check
         run: pnpm typecheck
 
