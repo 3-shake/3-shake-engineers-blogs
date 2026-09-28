@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 03:05:04 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 03:44:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[おい、のっていけ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/28/121135</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/28/121135</guid>
+            <pubDate>Mon, 28 Sep 2026 03:11:35 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 誰かの「やってみたい」に加わることは、仕事の中でも外でも、人生を豊かにすると考えています。人の誘いに応じれば、自分だけでは選ばなかった場所へ行き、会わなかったはずの人と話し、興味のなかったものを面白がれることがある。自分の関心だけで選んでいたら、選ぶものはだんだん似てきます。 それなのに、のる前は面倒です。予定を空け、知らない場所へ行き、慣れない人と話す。楽しめるかは分からないのに、手間は先に見える。今日はやめておこう。次に面白そうなものがあったら。その判断は一度ずつならもっともでも、繰り返していると、自分に何が起きるのでしょうか。 のらなかった日に、何かが壊れるわけではありません。…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[2026-09-26 Platform Engineering Kaigi 2026 インフラとアプリの境界線と委譲の設計 / Drawing the Infra and App Line ]]></title>
             <link>https://speakerdeck.com/masasuzu/drawing-the-infra-and-app-line</link>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 09 Sep 2026 05:02:01 GMT</pubDate>
             <content:encoded><![CDATA[はじめに AIにコードを書いてもらうことが増えて、私はコードを書くより、読む時間のほうが多くなりました。生成された変更を開き、何を直そうとしているのか、そのためにどこを変えたのかを追っています。 そのとき素早くつかみたいのは、変更の構造です。どこから呼ばれ、どのデータを受け渡し、どこで判断し、失敗をどう返すのか。変更された行だけを見ていても、このつながりは分かりません。周辺のコードを行き来しながら、何を変えようとしていて、それがどう実現されているのかを理解したいと思っています。 fffは目的のコードを探すために、CodeDiffは変更されたコードを読むために使います。私の環境では、LazyVi…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[「プログラミングの基礎」でOCamlを学んで気づいたこと]]></title>
-            <link>https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</guid>
-            <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに関数型まつり2026をきっかけに、関数型プログラミングに興味を持ちました。イベントでは興味深いプラクティスが多く、実際に学んでみたらおもしろそうだと思いました。そこで関数型まつりのスタッフで、登壇もしていた同僚のhagaさん（@silasolla）に相談して、『プログラミングの基礎』を読み始めました。本を選ぶ際の相談から学習中のアドバイスまで、hagaさんには大変お世話になりました。ありがとうございます。本書ではOCamlを使うため、まずはその文法を学びました。この記事では、学習していて気になったOCamlの文法を紹介します。前提Webエンジニア普段よく使う言語はGoとTypeScriptDartとRubyは商用開発で使用経験ありC・Java・Python・Rustは少し触った程度演算子や記号の違い% ではなく modOCamlでは、整数の剰余は % ではなく mod を使います。]]></content:encoded>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
