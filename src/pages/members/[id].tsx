@@ -46,12 +46,12 @@ const Page: NextPage<Props> = (props) => {
             <div className="member-header__links">
               {twitterUsername && (
                 <a
-                  href={`https://twitter.com/${twitterUsername}`}
+                  href={`https://x.com/${twitterUsername}`}
                   className="member-header__link"
                 >
                   <img
-                    src="/icons/twitter.svg"
-                    alt={`Twitterのユーザー@${twitterUsername}`}
+                    src="/icons/x.svg"
+                    alt={`Xのユーザー@${twitterUsername}`}
                     width={22}
                     height={22}
                   />
