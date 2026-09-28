@@ -21,7 +21,7 @@ const Page: NextPage<Props> = (props) => {
     name,
     bio,
     avatarSrc,
-    twitterUsername,
+    xUsername,
     githubUsername,
     websiteUrl,
   } = props.member;
@@ -44,14 +44,14 @@ const Page: NextPage<Props> = (props) => {
             <h1 className="member-header__name">{name}</h1>
             <p className="member-header__bio">{bio}</p>
             <div className="member-header__links">
-              {twitterUsername && (
+              {xUsername && (
                 <a
-                  href={`https://x.com/${twitterUsername}`}
+                  href={`https://x.com/${xUsername}`}
                   className="member-header__link"
                 >
                   <img
                     src="/icons/x.svg"
-                    alt={`Xのユーザー@${twitterUsername}`}
+                    alt={`Xのユーザー@${xUsername}`}
                     width={22}
                     height={22}
                   />
