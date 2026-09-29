@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 11:39:19 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 22:34:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -67,7 +67,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</guid>
             <pubDate>Fri, 25 Sep 2026 01:29:41 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 毎朝、前日に変わったコードを確認したい。レビュー待ちのPRも見に行きたい。繰り返す仕事には、手順が分かっていても、始めるのを忘れる問題があります。Codexの定期タスクは、その開始を予定へ移す機能です。 毎朝同じ文章を送っても、前回の会話や対象ファイルがなければ、同じ仕事にはなりません。予定どおり始まっても、必要な情報を読めずに終わることがあります。実行する時刻と一緒に、何を渡して始めるかを決めます。 ここでは、ローカルプロジェクトの変更を朝に確認するタスクを作ります。ChatGPTデスクトップアプリ内のCodexから利用し、管理画面の Scheduled で予定と実行結果を確認しま…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 毎朝、前日に変わったコードを確認したい。レビュー待ちのPRも見に行きたい。繰り返す仕事には、手順が分かっていても、始めるのを忘れる問題があります。Codexの定期タスクを使うと、予定した時刻にその仕事を始められます。 毎朝同じ文章を送っても、前回の会話や対象ファイルがなければ、同じ仕事にはなりません。予定どおり始まっても、必要な情報を読めずに終わることがあります。実行する時刻と一緒に、何を渡して始めるかを決めます。 ここでは、ローカルプロジェクトの変更を朝に確認するタスクを作ります。ChatGPTデスクトップアプリ内のCodexから利用し、管理画面の Scheduled で予定と実行…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
@@ -99,7 +99,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</guid>
             <pubDate>Wed, 23 Sep 2026 03:36:04 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 同じ仕事を頼むたびに、前の会話からうまくいった指示をコピーすることがあります。その手順を残す場所として、Claude Codeの記事ではAgent Skillsを紹介しました。続くPluginsの記事では、社内で共有するSkillをプラグインにまとめ、更新を届けるところまで管理する方針を書きました。今回は、その方針をCodexで実践するために、Skillの作成基準とCodex固有の配置・呼び出し方を考えます。 syu-m-5151.hatenablog.com syu-m-5151.hatenablog.com PR説明を頼んだときは使ってほしいけれど、変更方針を相談しているだけなら…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 同じ仕事を頼むたびに、前の会話からうまくいった指示をコピーすることがあります。その手順を残す場所として、Claude Codeの記事ではAgent Skillsを紹介しました。続くPluginsの記事では、社内で共有するSkillをプラグインにまとめる方法を書きました。配布した後も更新が届くところまで管理します。今回はCodexで同じことをするために、Skillを作る基準と、Codex固有の配置・呼び出し方を考えます。 syu-m-5151.hatenablog.com syu-m-5151.hatenablog.com PR説明を頼んだときは使ってほしいけれど、変更方針を相談してい…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
