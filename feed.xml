@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 22:33:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 11:39:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Codexを使うなら、/recap・/copy・/exportを押さえておきたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/29/161928</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/29/161928</guid>
+            <pubDate>Tue, 29 Sep 2026 07:19:28 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Codex CLIには、会話を要約する /recap、出力をコピーする /copy、会話全体を書き出す /export があります。いずれも会話に蓄積された情報を扱う機能ですが、対象と用途が異なります。 この記事では、3つのコマンドの役割と、関連する /compact・/status・/diff との違いを整理します。要約、コピー、保存で何が得られるのか。現在のコードや検証結果は、どこで確かめるのか。この区別を押さえると、作業の再開やPRの説明に必要な情報を選びやすくなります。 会話の要約、出力のコピー、会話全体の保存 3つのコマンドは、扱う情報の範囲で分けられます。 コマンド 扱う…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[おい、のっていけ]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/28/121135</link>
@@ -67,7 +75,7 @@
             <link>https://zenn.dev/ntk221/articles/ecc80f3006ef97</link>
             <guid isPermaLink="false">https://zenn.dev/ntk221/articles/ecc80f3006ef97</guid>
             <pubDate>Thu, 24 Sep 2026 21:32:18 GMT</pubDate>
-            <content:encoded><![CDATA[ISUCONの練習を好きなタイミングで始めたいISUCONの素振りをするためのポータルサイトを作りました。https://suburi.dev/欲しかったのは1人から複数人までのチームがそれぞれ好きなタイミングでISUCONの練習ができる場所です。環境の用意、ベンチの実行、パフォーマンスの改善という一連の作業を始めやすくしたいというモチベーションで作っています。使い方としては、GitHubでログインし練習する問題とメンバーを決めると練習用の環境を作るCloudFormationテンプレートを取得できます。テンプレートから自分やチームのAWSアカウントで環境を作れば、あとはポー...]]></content:encoded>
+            <content:encoded><![CDATA[ISUCONの練習を好きなタイミングで始めたいISUCONの素振りをするためのポータルサイトを作りました。https://suburi.dev/欲しかったのは1人から複数人までのチームがそれぞれ好きなタイミングでISUCONの練習ができるサイトです。環境の用意、ベンチの実行、パフォーマンスの改善という一連の作業を始めやすくしたいというモチベーションで作っています。使い方としては、GitHubでログインし練習する問題とメンバーを決めることで練習用の環境を作るCloudFormationテンプレートを取得できるようになっています。テンプレートから自分やチームのAWSアカウントで環...]]></content:encoded>
             <author>ntk</author>
         </item>
         <item>
@@ -261,14 +269,6 @@
             <pubDate>Wed, 09 Sep 2026 10:00:24 GMT</pubDate>
             <content:encoded><![CDATA[困りごとAzure DevOps のリポジトリの認証は WebUI から credentials をコピーして使うことも可能ですが、期限切れでの更新が面倒です。そこで Entra ID での OAuth で credentials を取得できるようにする方法をメモ。]]></content:encoded>
             <author>yteraoka</author>
-        </item>
-        <item>
-            <title><![CDATA[fffで探し、CodeDiffで読む。私のNeovim設定とソースで見る仕組み]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/09/140201</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/09/140201</guid>
-            <pubDate>Wed, 09 Sep 2026 05:02:01 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに AIにコードを書いてもらうことが増えて、私はコードを書くより、読む時間のほうが多くなりました。生成された変更を開き、何を直そうとしているのか、そのためにどこを変えたのかを追っています。 そのとき素早くつかみたいのは、変更の構造です。どこから呼ばれ、どのデータを受け渡し、どこで判断し、失敗をどう返すのか。変更された行だけを見ていても、このつながりは分かりません。周辺のコードを行き来しながら、何を変えようとしていて、それがどう実現されているのかを理解したいと思っています。 fffは目的のコードを探すために、CodeDiffは変更されたコードを読むために使います。私の環境では、LazyVi…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
