@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 11:38:54 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 22:35:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -27,7 +27,7 @@
             <link>https://speakerdeck.com/shukob/llm-shadow-testing-and-ab-testing</link>
             <guid isPermaLink="false">https://speakerdeck.com/shukob/llm-shadow-testing-and-ab-testing</guid>
             <pubDate>Wed, 30 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[新しい LLM が登場した際、ベンチマークだけを信じて本番切り替えを行うと、レイテンシ悪化やユーザー体験の悪化といった予期せぬトラブルを招きます。本番レイテンシに一切影響を与えずに候補モデルへトラフィックをミラーリングする「Shadow Testing 基盤」の設計と、どのモデルかがわからない横並びの A/B テストの実装を紹介します。さらに、実際のユーザー対話データから見えてきた「最新モデルより軽量モデルが好まれた意外な理由」や、トピックに応じた動的モデルルーティング、Batch API を用いたコスト半減手法など、本番運用に直結する知見を共有します。]]></content:encoded>
+            <content:encoded><![CDATA[新モデルへの即時切り替えによる「プロンプト挙動の変化」「JSON出力の崩れ」「429レート制限」「コスト・レイテンシ悪化」を防ぐため、本番影響ゼロで検証・移行を行う「3段階の防壁アーキテクチャ」と実証知見をまとめた登壇資料です。Google Cloud と Google Agent Development Kit (ADK) を用いたチャット基盤をベースに、生トラフィックによるモデル比較（Gemini 3.8 Flash / 3.7 Flash / 3.5 Flash Lite）を行った検証結果や、動的ルーティングへの展望を解説しています。📌 本資料のポイント・アジェンダ新モデル移行に潜む4つの落とし穴プロンプト互換性の破壊、出力フォーマット崩れ、プレビュー版の429エラー、予期せぬコスト・遅延増モデル移行を守る「3段階の防壁」第1の防壁：オフライン評価（ゴールデンデータセットを用いた回帰テスト、ルールベース採点）第2の防壁：遅延0msの Shadow Testing（本番ユーザー影響ゼロの非同期ミラーリング、429自動フェイルオーバー、PIIマスキング、Gemini Batch APIによる50%コスト削減）第3の防壁：ブラインド A/B テスト（Chatbot Arena方式による位置バイアス排除、回答後のモデル開示演出）生トラフィック検証から得られた知見「最高性能・高コストなモデルが常に勝つとは限らない」実態（相槌・即答性における軽量モデルの優位性と複雑推論での上位モデルの使い分け）今後の展望：動的モデルルーティング（Contextual Bandit）意図分類やコンテキストに応じたモデルの自動最適化開発基盤Googleの次世代AIコーディング環境「Antigravity」によるバイブコーディング実装🔗 関連リンクGitHub リポジトリ（ソースコード・実装）:https://github.com/shu-kob/adk-agent-chatYouTube 発表アーカイブ（動画）:https://youtube.com/live/T1GN27CgNakイベント詳細（connpass）:https://genai-users.connpass.com/event/407986/発表者 X (Twitter):https://x.com/shu_kob]]></content:encoded>
             <author>Shu Kobuchi</author>
         </item>
         <item>
