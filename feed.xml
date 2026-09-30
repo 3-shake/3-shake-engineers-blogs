@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 22:34:21 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 11:38:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AIに実装を任せると、設計の仕事はどう変わるか - Building Evolutionary Architectures, 2nd Edition の読書感想文]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/30/162646</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/30/162646</guid>
+            <pubDate>Wed, 30 Sep 2026 07:26:46 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 『Building Evolutionary Architectures, 2nd Edition』を読みました。要件や技術が変わり続ける中で、システムの設計をどう変えていくかを扱った本です。部品をどう分け、どうつなぎ、どこへデータを置くか。ここでいうアーキテクチャは、そうした全体の構造を指します。1か所を直すだけで済むか、ほかの部品や担当チームまで巻き込むかにも関わります。 中心となるのは、守りたい性質を確かめる「フィットネス関数」です。新しい機能が動くだけでなく、応答が遅くなっていないか、必要なセキュリティを保てているかも、日々の変更の中で確かめる。本書は、その検査の仕組み、変更…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[LLMの安全なモデル乗り換え戦略！Shadow TestingとA/B検証 - Google Cloud × Google ADK で実践するモデル評価・検証基盤と実証知見]]></title>
+            <link>https://speakerdeck.com/shukob/llm-shadow-testing-and-ab-testing</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/llm-shadow-testing-and-ab-testing</guid>
+            <pubDate>Wed, 30 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[新しい LLM が登場した際、ベンチマークだけを信じて本番切り替えを行うと、レイテンシ悪化やユーザー体験の悪化といった予期せぬトラブルを招きます。本番レイテンシに一切影響を与えずに候補モデルへトラフィックをミラーリングする「Shadow Testing 基盤」の設計と、どのモデルかがわからない横並びの A/B テストの実装を紹介します。さらに、実際のユーザー対話データから見えてきた「最新モデルより軽量モデルが好まれた意外な理由」や、トピックに応じた動的モデルルーティング、Batch API を用いたコスト半減手法など、本番運用に直結する知見を共有します。]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[Codexを使うなら、/recap・/copy・/exportを押さえておきたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/29/161928</link>
@@ -53,6 +69,14 @@
             <pubDate>Sat, 26 Sep 2026 01:39:30 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Codexへ同じ種類の依頼を繰り返していると、会話を開いて文章を貼り付ける操作を省きたくなります。変更概要を作る、ログを整理する、確認すべき点を一覧にする。入力と出力が見えている仕事なら、codex execで既存のCLIの流れへ組み込めます。 JSONの形が正しくても、調査が成功したとは限りません。対象を読めなかった結果が「問題なし」の空配列になれば、後の処理は失敗に気づけません。この記事では、実行中のイベント、最後の回答、実行そのものの失敗を分けて受け取ります。 learn.chatgpt.com まず単発の仕事を渡し、次にJSONLのイベントと最終JSONを分けます。その後、保…]]></content:encoded>
             <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[「プログラミングの基礎」でOCamlを学んで気づいたこと]]></title>
+            <link>https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</guid>
+            <pubDate>Fri, 25 Sep 2026 14:00:49 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに関数型まつり2026をきっかけに、関数型プログラミングに興味を持ちました。イベントでは興味深いプラクティスが多く、実際に学んでみたらおもしろそうだと思いました。そこで関数型まつりのスタッフで、登壇もしていた同僚のhagaさん（@silasolla）に相談して、『プログラミングの基礎』を読み始めました。本を選ぶ際の相談から学習中のアドバイスまで、hagaさんには大変お世話になりました。ありがとうございます。本書ではOCamlを使うため、まずはその文法を学びました。この記事では、学習していて気になったOCamlの文法を紹介します。前提Webエンジニア普段よく使う言語はGoとTypeScriptDartとRubyは商用開発で使用経験ありC・Java・Python・Rustは少し触った程度演算子や記号の違い% ではなく modOCamlでは、整数の剰余は % ではなく mod を使います。]]></content:encoded>
+            <author>Rinrin</author>
         </item>
         <item>
             <title><![CDATA[Go Conference 2026 参加レポート]]></title>
@@ -245,30 +269,6 @@
             <pubDate>Fri, 11 Sep 2026 10:43:00 GMT</pubDate>
             <content:encoded><![CDATA[はじめに ディレクトリの中身を一覧にしても、目的のファイルがすぐ分かるとは限りません。似た名前の画像を見比べる、PDFの内容を確かめる、複数の場所からファイルを集める。こうした作業では、名前を検索するだけでなく、中身を見ながら選ぶ画面が役に立ちます。 Yaziは、その画面をターミナルに用意するファイルマネージャーです。Rustで実装され、キーボードを中心にディレクトリ移動、プレビュー、複数選択、コピーや移動を操作できます。文字端末の中で画面を描く、TUIと呼ばれる種類のアプリケーションです。 特徴は画像を表示できることだけではありません。プレビューの準備中にも別のファイルへ移動できるよう、処理…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[OpenTelemetryのメトリクスをCloudWatchに送ってPromQLで見てみた]]></title>
-            <link>https://speakerdeck.com/ota1022/opentelemetry-no-o-cloudwatch-ni-oku-te-promql-de-mi-te-mita</link>
-            <guid isPermaLink="false">https://speakerdeck.com/ota1022/opentelemetry-no-o-cloudwatch-ni-oku-te-promql-de-mi-te-mita</guid>
-            <pubDate>Fri, 11 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[JAWS-UG山梨 【第13回】勉強会のLT登壇資料です。https://jaws-ug-yamanashi.connpass.com/event/403739/]]></content:encoded>
-            <author>Itaru Ota</author>
-        </item>
-        <item>
-            <title><![CDATA[helm, helmfile で secrets の diff を確認する方法]]></title>
-            <link>https://blog.1q77.com/2026/09/helmfile-diff-secrets/</link>
-            <guid isPermaLink="false">https://blog.1q77.com/2026/09/helmfile-diff-secrets/</guid>
-            <pubDate>Thu, 10 Sep 2026 13:20:21 GMT</pubDate>
-            <content:encoded><![CDATA[困りごとhelm diff / helmfile diff はデフォルトでは Secret の値はマスクされてどんな値がどんな値に変わるのかがわからない。マスクされる理由はわかるが確認する方法も知りたい。]]></content:encoded>
-            <author>yteraoka</author>
-        </item>
-        <item>
-            <title><![CDATA[Azure DevOps の Git の認証を OAuth にする]]></title>
-            <link>https://blog.1q77.com/2026/09/git-credentials-azure-devops/</link>
-            <guid isPermaLink="false">https://blog.1q77.com/2026/09/git-credentials-azure-devops/</guid>
-            <pubDate>Wed, 09 Sep 2026 10:00:24 GMT</pubDate>
-            <content:encoded><![CDATA[困りごとAzure DevOps のリポジトリの認証は WebUI から credentials をコピーして使うことも可能ですが、期限切れでの更新が面倒です。そこで Entra ID での OAuth で credentials を取得できるようにする方法をメモ。]]></content:encoded>
-            <author>yteraoka</author>
         </item>
     </channel>
 </rss>
