@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 01 Oct 2026 22:33:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 02 Oct 2026 11:40:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AIに実装を任せながら、Rustを学び続けたい。「Rust Learning Lab」を作りました]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023</guid>
+            <pubDate>Fri, 02 Oct 2026 07:30:23 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Rust Learning Labは、手元のRustコードを題材に、構文や型、所有権を説明してもらうためのCodex・Claude Code向けプラグインです。「この記号は何か」「なぜここで借用するのか」「この変更で何が変わるのか」といった疑問を、具体的なコードに沿って確かめられます。 github.com Rustを書き始めた人にも、コードは読めるけれど型や所有権を選んだ理由までは説明しきれない人にも使ってもらいたいと思っています。私が考えているのは、AIに何を任せ、何を自分で確かめるか、その判断を育てる機会を仕事の中にどう残すかということです。Rust Learning Labは…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[AIに実装を任せると、設計の仕事はどう変わるか - Building Evolutionary Architectures, 2nd Edition の読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/30/162646</link>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 12 Sep 2026 04:48:03 GMT</pubDate>
             <content:encoded><![CDATA[GoogleのGemini Appにて、Deep Researchを使って出力した内容を、Gemini Notebook（旧NotebookLM）の既存ノートブックにエクスポートできるようになりました。これまでだと、Google Docsにエクスポートして、それをGemini Notebookにインポートしていましたが、既存ノートブックだと一発。新規ノートブックの作成はGemini Appからはできないので、そこは今後の機能追加に期待！さらに、Gemini App側で、Gemini Notebookに機能が使えるように作成したものは、Gemini App内での使用となります...]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[Yaziとは何か。ファイルを探し、確かめ、操作するTUIの仕組み]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/11/194300</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/11/194300</guid>
-            <pubDate>Fri, 11 Sep 2026 10:43:00 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに ディレクトリの中身を一覧にしても、目的のファイルがすぐ分かるとは限りません。似た名前の画像を見比べる、PDFの内容を確かめる、複数の場所からファイルを集める。こうした作業では、名前を検索するだけでなく、中身を見ながら選ぶ画面が役に立ちます。 Yaziは、その画面をターミナルに用意するファイルマネージャーです。Rustで実装され、キーボードを中心にディレクトリ移動、プレビュー、複数選択、コピーや移動を操作できます。文字端末の中で画面を描く、TUIと呼ばれる種類のアプリケーションです。 特徴は画像を表示できることだけではありません。プレビューの準備中にも別のファイルへ移動できるよう、処理…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
