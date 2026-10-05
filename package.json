@@ -36,7 +36,7 @@
     "fs-extra": "11.4.1",
     "npm-run-all2": "9.0.3",
     "rss-parser": "3.13.0",
-    "sass": "1.105.0",
+    "sass": "1.105.1",
     "tsx": "4.23.15",
     "typescript": "6.0.3"
   }
