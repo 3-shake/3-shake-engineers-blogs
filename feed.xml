@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 05 Oct 2026 02:22:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Oct 2026 11:40:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[シニアになりきれない中堅エンジニアは、何を読めばいいのか 2026年版]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/05/132102</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/05/132102</guid>
+            <pubDate>Mon, 05 Oct 2026 04:21:02 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 自分にできることは増えた。では、その力でチームや組織をどれだけ勝利に近づけられただろう。 知っていることを判断に使い、周囲と行動に移し、現実を変える。 次に身につけたいのは、そこまでできる力だ。 私は、シニアエンジニア以上の役職では、チームや組織を勝たせることが仕事だと考えている。自分で難しい問題を解くことも、周囲が力を発揮できるようにすることも、そのための働きだ。 そのために、目標と、どんな変化を成果とみなすのかを周囲と確かめたい。自分が手を動かすか、ほかの人が判断できるように情報や権限を整えるかを選ぶ。実行した後は、利用者の困りごとを解消できたか、待ち時間や手戻りが減ったかを確か…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[AIに実装を任せながら、Rustを学び続けたい。「Rust Learning Lab」を作りました]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023</link>
@@ -261,14 +269,6 @@
             <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
             <content:encoded><![CDATA[はじめに最近 Model Armor と Agent Gateway について調べたのでまとめます。仕事などで見ていると AI Agent のセキュリティやガバナンスの観点から以下のような課題が見えてきています。プロンプトインジェクションや Jailbreak 攻撃によるエージェントの乗っ取りMCPやA2Aでのエージェントが外部ツールやデータベースを実行する際の個人情報（PII）や機密情報の漏洩,SSRF的な話。エージェントの無限ループや過剰な API 呼び出しによるコスト高騰シャドー AI や未承認ツール（MCP サーバー）の勝手な利用Google Cloud...]]></content:encoded>
             <author>SatohJohn</author>
-        </item>
-        <item>
-            <title><![CDATA[Gemini Deep ResearchとGemini Notebookの連携強化！レポートも学習向けにバージョンアップ！]]></title>
-            <link>https://zenn.dev/shu_kob/articles/317cc52dcae906</link>
-            <guid isPermaLink="false">https://zenn.dev/shu_kob/articles/317cc52dcae906</guid>
-            <pubDate>Sat, 12 Sep 2026 04:48:03 GMT</pubDate>
-            <content:encoded><![CDATA[GoogleのGemini Appにて、Deep Researchを使って出力した内容を、Gemini Notebook（旧NotebookLM）の既存ノートブックにエクスポートできるようになりました。これまでだと、Google Docsにエクスポートして、それをGemini Notebookにインポートしていましたが、既存ノートブックだと一発。新規ノートブックの作成はGemini Appからはできないので、そこは今後の機能追加に期待！さらに、Gemini App側で、Gemini Notebookに機能が使えるように作成したものは、Gemini App内での使用となります...]]></content:encoded>
-            <author>Shu Kobuchi</author>
         </item>
     </channel>
 </rss>
