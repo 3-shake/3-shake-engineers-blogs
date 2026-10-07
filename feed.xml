@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 06 Oct 2026 22:35:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Oct 2026 11:40:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜]]></title>
+            <link>https://qiita.com/tozastation/items/d875aa90dc07ee06ce29</link>
+            <guid isPermaLink="false">https://qiita.com/tozastation/items/d875aa90dc07ee06ce29</guid>
+            <pubDate>Wed, 07 Oct 2026 02:14:26 GMT</pubDate>
+            <content:encoded><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜はじめに初めまして、戸澤（@tozastation）といいます。純粋に宇宙が大好きで、趣味で色々と勉強したり実験し...]]></content:encoded>
+            <author>tozastation</author>
+        </item>
         <item>
             <title><![CDATA[シニアになりきれない中堅エンジニアは、何を読めばいいのか 2026年版]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/05/132102</link>
@@ -260,14 +268,6 @@
             <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</guid>
             <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
             <content:encoded><![CDATA[はじめにAgent Gateway を通る通信に、自前の gRPC モジュールを割り込ませる話です。Model Armor のような既成のエンジンではなく、社内固有のルールで通信を止めたい場合の手順と、実際に動かした結果をまとめます。 先に結論挿す先使える拡張ボディ結果Agent Gateway（Egress）authz 拡張（REQUEST_AUTHZ）渡らない効く。403 を確認Agent Gateway（Ingress）egress と同じ渡らない効かない。入口が発行されない自前 ALBトラフィック拡張渡る。書き換え...]]></content:encoded>
-            <author>SatohJohn</author>
-        </item>
-        <item>
-            <title><![CDATA[Agent Gateway と Model Armor で AI エージェントの通信を統制する]]></title>
-            <link>https://zenn.dev/satohjohn/articles/agent-gateway-model-armor-guide</link>
-            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/agent-gateway-model-armor-guide</guid>
-            <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに最近 Model Armor と Agent Gateway について調べたのでまとめます。仕事などで見ていると AI Agent のセキュリティやガバナンスの観点から以下のような課題が見えてきています。プロンプトインジェクションや Jailbreak 攻撃によるエージェントの乗っ取りMCPやA2Aでのエージェントが外部ツールやデータベースを実行する際の個人情報（PII）や機密情報の漏洩,SSRF的な話。エージェントの無限ループや過剰な API 呼び出しによるコスト高騰シャドー AI や未承認ツール（MCP サーバー）の勝手な利用Google Cloud...]]></content:encoded>
             <author>SatohJohn</author>
         </item>
     </channel>
