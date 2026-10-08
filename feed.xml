@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 07 Oct 2026 22:35:43 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Oct 2026 11:40:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【ベランダ電波観測所 #2】KubeEdge×SDRで始める衛星電波観測と単一ノード運用の記録]]></title>
+            <link>https://qiita.com/tozastation/items/8a1ca95fe3280e19138b</link>
+            <guid isPermaLink="false">https://qiita.com/tozastation/items/8a1ca95fe3280e19138b</guid>
+            <pubDate>Thu, 08 Oct 2026 11:22:55 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！純粋に宇宙が大好きで、自宅のベランダから個人で電波天文学や衛星観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に電波工学やDSP（...]]></content:encoded>
+            <author>tozastation</author>
+        </item>
         <item>
             <title><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜]]></title>
             <link>https://qiita.com/tozastation/items/d875aa90dc07ee06ce29</link>
@@ -261,14 +269,6 @@
             <pubDate>Mon, 14 Sep 2026 09:41:08 GMT</pubDate>
             <content:encoded><![CDATA[背景GitLab CI/CD にはダウンストリームパイプラインという機能があり，パイプラインの中で別のパイプラインを呼び出すことができます。同じプロジェクトのパイプラインを呼び出す場合は親子パイプラインと呼ばれます。たとえば，以下のような .gitlab-ci.yml 定義を書きます。.gitlab-ci.ymltrigger-child-pipeline:  trigger:    include:      - local: child.gitlab-ci.ymlchild.gitlab-ci.ymlchild-pipeline:  stage: tes...]]></content:encoded>
             <author>toshikish</author>
-        </item>
-        <item>
-            <title><![CDATA[Service Extensions で自前 gRPC のガードレールを Agent Gateway に挿す]]></title>
-            <link>https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</link>
-            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/service-extensions-grpc-guardrail</guid>
-            <pubDate>Sat, 12 Sep 2026 05:22:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにAgent Gateway を通る通信に、自前の gRPC モジュールを割り込ませる話です。Model Armor のような既成のエンジンではなく、社内固有のルールで通信を止めたい場合の手順と、実際に動かした結果をまとめます。 先に結論挿す先使える拡張ボディ結果Agent Gateway（Egress）authz 拡張（REQUEST_AUTHZ）渡らない効く。403 を確認Agent Gateway（Ingress）egress と同じ渡らない効かない。入口が発行されない自前 ALBトラフィック拡張渡る。書き換え...]]></content:encoded>
-            <author>SatohJohn</author>
         </item>
     </channel>
 </rss>
