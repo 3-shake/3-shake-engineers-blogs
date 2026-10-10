@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 10 Oct 2026 11:38:40 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Oct 2026 22:35:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,19 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[【ベランダ電波観測所 #3】KubeEdgeを活かした衛星電波解析パイプラインの構築]]></title>
+            <link>https://qiita.com/tozastation/items/81b7bafbf4f4fc3893d9</link>
+            <guid isPermaLink="false">https://qiita.com/tozastation/items/81b7bafbf4f4fc3893d9</guid>
+            <pubDate>Sat, 10 Oct 2026 12:03:40 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！宇宙が好きで、自宅のベランダから個人で電波天文学や人工衛星の観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談しながら二人三脚...]]></content:encoded>
+            <author>tozastation</author>
+        </item>
+        <item>
             <title><![CDATA[【ベランダ電波観測所 #2】KubeEdge×SDRで始める衛星電波観測と単一ノード運用の記録]]></title>
             <link>https://qiita.com/tozastation/items/8a1ca95fe3280e19138b</link>
             <guid isPermaLink="false">https://qiita.com/tozastation/items/8a1ca95fe3280e19138b</guid>
             <pubDate>Thu, 08 Oct 2026 11:22:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！純粋に宇宙が大好きで、自宅のベランダから個人で電波天文学や衛星観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に電波工学やDSP（...]]></content:encoded>
+            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！純粋に宇宙が大好きで、自宅のベランダから個人で電波天文学や衛星観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談し、教わりなが...]]></content:encoded>
             <author>tozastation</author>
         </item>
         <item>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 15 Sep 2026 03:40:54 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 『おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから』が、ダイヤモンド社から発売されました。 【DL特典付】おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから（特典：生成AIにおけるSkillとは何か データ配信）作者:nwiizo（ぬうぃぞう）ダイヤモンド社Amazon 初めて商業出版する自分の単著は、技術書になると漠然と思っていました。技術の仕組みや使い方を詳しく書くか、『達人プログラマー』みたいな、プログラマーの判断や仕事の進め方についての本を書く。そういうことに憧れていました。 それが、『おい、とりあえず終わらせろ』になりました。プログラマーに…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[GitLab CI/CD 親子パイプラインの変数優先度の罠]]></title>
-            <link>https://zenn.dev/toshikish/articles/3239a9e27649f3</link>
-            <guid isPermaLink="false">https://zenn.dev/toshikish/articles/3239a9e27649f3</guid>
-            <pubDate>Mon, 14 Sep 2026 09:41:08 GMT</pubDate>
-            <content:encoded><![CDATA[背景GitLab CI/CD にはダウンストリームパイプラインという機能があり，パイプラインの中で別のパイプラインを呼び出すことができます。同じプロジェクトのパイプラインを呼び出す場合は親子パイプラインと呼ばれます。たとえば，以下のような .gitlab-ci.yml 定義を書きます。.gitlab-ci.ymltrigger-child-pipeline:  trigger:    include:      - local: child.gitlab-ci.ymlchild.gitlab-ci.ymlchild-pipeline:  stage: tes...]]></content:encoded>
-            <author>toshikish</author>
         </item>
     </channel>
 </rss>
