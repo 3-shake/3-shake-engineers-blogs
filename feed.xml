@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 12 Oct 2026 11:42:12 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 22:36:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[TinyGo Conf 2026で初めて登壇しました！]]></title>
+            <link>https://rin2yh.com/post/tinygo-conf-2026-report/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/tinygo-conf-2026-report/</guid>
+            <pubDate>Mon, 12 Oct 2026 12:01:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにTinyGo Conf 2026では、当日スタッフを務めながら、初めてCfPに採択されて登壇しました。スタッフとして関わってきたことや、これまでの出会いを思い返すと、万感の想いがありました。]]></content:encoded>
+            <author>Rinrin</author>
+        </item>
         <item>
             <title><![CDATA[【ベランダ電波観測所 #3】KubeEdgeを活かした衛星電波解析パイプラインの構築]]></title>
             <link>https://qiita.com/tozastation/items/81b7bafbf4f4fc3893d9</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero</guid>
             <pubDate>Wed, 16 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Forkwell Library #133。書籍の5ステップを紹介し、AIとともに仕事を終え、次の判断を変える進め方を考える。https://forkwell.connpass.com/event/405587/]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AI時代の「技術的負債」の変質ー概念の終焉と再解釈、エージェントと共に向かう先]]></title>
-            <link>https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</link>
-            <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</guid>
-            <pubDate>Tue, 15 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[技術的負債に向き合うConference 2026。AIによって変わる実装の費用、判断の負担、学び方を、オニオンモデルの5層と3つの負債から考える。概念のどこを捉え直し、エージェントとどんな開発へ進むかを語る40分。]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
