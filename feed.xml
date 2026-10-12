@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 11 Oct 2026 22:35:42 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 11:42:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -21,6 +21,13 @@
             <pubDate>Sat, 10 Oct 2026 12:03:40 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！宇宙が好きで、自宅のベランダから個人で電波天文学や人工衛星の観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談しながら二人三脚...]]></content:encoded>
             <author>tozastation</author>
+        </item>
+        <item>
+            <title><![CDATA[TinyGoから理解するHID]]></title>
+            <link>https://rin2yh.com/post/understanding-hid-through-tinygo-d1pu6mtpws7ju7/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/understanding-hid-through-tinygo-d1pu6mtpws7ju7/</guid>
+            <pubDate>Sat, 10 Oct 2026 05:00:00 GMT</pubDate>
+            <author>Rinrin</author>
         </item>
         <item>
             <title><![CDATA[【ベランダ電波観測所 #2】KubeEdge×SDRで始める衛星電波観測と単一ノード運用の記録]]></title>
@@ -260,14 +267,6 @@
             <guid isPermaLink="false">https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</guid>
             <pubDate>Tue, 15 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[技術的負債に向き合うConference 2026。AIによって変わる実装の費用、判断の負担、学び方を、オニオンモデルの5層と3つの負債から考える。概念のどこを捉え直し、エージェントとどんな開発へ進むかを語る40分。]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[本を書きました。本だからできたこと、これからできること]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</guid>
-            <pubDate>Tue, 15 Sep 2026 03:40:54 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 『おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから』が、ダイヤモンド社から発売されました。 【DL特典付】おい、とりあえず終わらせろ そうすれば「動けない自分」が変わるから（特典：生成AIにおけるSkillとは何か データ配信）作者:nwiizo（ぬうぃぞう）ダイヤモンド社Amazon 初めて商業出版する自分の単著は、技術書になると漠然と思っていました。技術の仕組みや使い方を詳しく書くか、『達人プログラマー』みたいな、プログラマーの判断や仕事の進め方についての本を書く。そういうことに憧れていました。 それが、『おい、とりあえず終わらせろ』になりました。プログラマーに…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
