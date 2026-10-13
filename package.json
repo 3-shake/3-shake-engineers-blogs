@@ -27,7 +27,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.14",
+    "@biomejs/biome": "2.5.15",
     "@types/fs-extra": "11.0.4",
     "@types/node": "24.19.1",
     "@types/react": "19.3.0",
