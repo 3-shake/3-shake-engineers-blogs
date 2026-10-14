@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 13 Oct 2026 22:32:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Oct 2026 11:39:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,11 +15,19 @@
         </image>
         <copyright>3-shake Inc.</copyright>
         <item>
+            <title><![CDATA[RustでBFSとDFSを書く]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/14/154958</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/14/154958</guid>
+            <pubDate>Wed, 14 Oct 2026 06:49:58 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに アルゴリズムや設計を理解すると、同じ問題に対して立てる問いが変わります。サービスの障害調査でも、「次にどのサービスを確認するか」に加えて、「依存関係をどちら向きにたどれば、影響を受ける候補を集められるか」と考えられます。関係の表し方や調査を終える条件まで、検討できるようになります。 ただし、知識があっても、目の前の問題をそのように捉えなければアプローチは変わりません。さらに、問題を探索として捉えた後にも、何を求め、何を求めないかという判断が残ります。BFSとDFSの実装を通じて、選んだ方法の理由と、その判断を見直す条件まで考えます。 BFSとDFSは、調べる順序が違う 地点と、その間…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
             <title><![CDATA[続続: 自分が書いたコードより目立つな - エンジニアがバズったので自戒]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/13/113711</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/13/113711</guid>
             <pubDate>Tue, 13 Oct 2026 02:37:11 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「インフルエンサーのnwiizoさんです」と紹介されるのが本当に嫌だ。 インフルエンサーという呼び名からは、何を開発し、何を運用してきたかより、どれだけ人に知られているかが先に伝わるように感じる。ソフトウェアエンジニアとして働いてきた時間は、その呼び名のどこにも入っていない。開発者としての努力を無視されているような気がする。知られるように働きかけたのは自分で、会社にとってはそれが技術広報の成果でもある。だから、呼び名が間違いだとは言えない。嫌なのは、そこに入らない仕事が、自分には大きいからだ。 それでも、去年よりは受け止められるようになってきた。書籍を書き、連載に取り組む中で、発信も…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 「インフルエンサーのnwiizoさんです」と紹介されるのが本当に嫌だ。まず、俺は誰をインフルエンスしているんだ。となる。 フォロワーの数を見ても、誰かが何かを良いと思って動いてくれたかどうかは分からない。知られてはいても、誰かをインフルエンスしている実態は、自分には見えていない。嫌なのは、その実態がないまま、インフルエンサーとして紹介されるからだ。知られるように働きかけたのは自分で、会社にとってはそれが技術広報の成果でもある。だから、知られていること自体は否定できない。ただ、知られていることと、誰かをインフルエンスしていることは別だ。引っかかる点はもう1つある。この呼び名からは、何を…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
@@ -260,14 +268,6 @@
             <pubDate>Thu, 17 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[2026/09/17 AIを紡ぐ者たち #3 ～立場が変わればAIも変わる？役職別「相棒」としてのAIの使い方～ の発表資料ですイベントURL : https://3-shake.connpass.com/event/403793/スペシャルサンクス：ntkさん(https://x.com/knitta221)]]></content:encoded>
             <author>もっさん</author>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes祭り #2 OP/ED]]></title>
-            <link>https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb</link>
-            <guid isPermaLink="false">https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb</guid>
-            <pubDate>Wed, 16 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[Kubernetes祭り #2 の OP/ED スライドですhttps://3-shake.connpass.com/event/403684/]]></content:encoded>
-            <author>bells17</author>
         </item>
     </channel>
 </rss>
