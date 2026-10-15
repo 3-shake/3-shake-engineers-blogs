@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 14 Oct 2026 22:32:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Oct 2026 11:39:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Claude Maxプラン(5x)を半年使って見直した話]]></title>
+            <link>https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</guid>
+            <pubDate>Thu, 15 Oct 2026 03:08:26 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに生成AIの台頭により、開発スタイルが大きく変わり、Claude Codeの利用量が一気に増えました。私は元々Claude Proプランを契約していたのですが、足りなくなったため、8月まで約半年間Claude Maxプラン(5x)を契約しました。（以降、本稿ではClaude Proプランを「Proプラン」と表記します。Maxプラン(5x)を「Maxプラン」と表記します）]]></content:encoded>
+            <author>Rinrin</author>
+        </item>
         <item>
             <title><![CDATA[RustでBFSとDFSを書く]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/14/154958</link>
@@ -260,14 +268,6 @@
             <pubDate>Thu, 17 Sep 2026 05:03:49 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 2025年12月に「Claude Codeの Agent Skills は設定したほうがいい」という記事を書きました。必要な手順を必要なときに読み込ませる仕組みとして、Skillsを紹介した記事です。ただ、後半では設定が増えるほど管理が難しくなる話もしました。どれが使われているのか。似た説明のSkillが、互いの出番を奪っていないか。 syu-m-5151.hatenablog.com 今回は、その続きです。Skillsをいくつも設定した人には、まず /skill-doctor を紹介したいです。設定を増やす前に、今ある設定の使われ方を見られます。 /skill-doctor はv2…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AIで社員の自主発信に広報目線を組み込む]]></title>
-            <link>https://speakerdeck.com/_mossann_t/ai-de-shain-no-jishu-hasshin-ni-kouhou-mesen-o-kumikomu</link>
-            <guid isPermaLink="false">https://speakerdeck.com/_mossann_t/ai-de-shain-no-jishu-hasshin-ni-kouhou-mesen-o-kumikomu</guid>
-            <pubDate>Thu, 17 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[2026/09/17 AIを紡ぐ者たち #3 ～立場が変わればAIも変わる？役職別「相棒」としてのAIの使い方～ の発表資料ですイベントURL : https://3-shake.connpass.com/event/403793/スペシャルサンクス：ntkさん(https://x.com/knitta221)]]></content:encoded>
-            <author>もっさん</author>
         </item>
     </channel>
 </rss>
