@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 16 Oct 2026 11:38:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Oct 2026 22:32:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[完結編のそのまた先へ — Gemini 4 Argon 登場！ 新仕様 `thinking_level` の罠と、法律判定で87秒考え込んで財布が爆発しそうになった話]]></title>
+            <link>https://shu-kob.hateblo.jp/entry/gemini-4-argon-thinking-level</link>
+            <guid isPermaLink="false">https://shu-kob.hateblo.jp/entry/gemini-4-argon-thinking-level</guid>
+            <pubDate>Fri, 16 Oct 2026 15:03:27 GMT</pubDate>
+            <content:encoded><![CDATA[Gemini 4 Argonに生成AIが苦手な法規判定をやらせてみたはじめに「もう二度と完結編とは書かない」と誓ったはずなのに、Google DeepMind が次世代フラッグシップ推論モデル Gemini 4 Argon (gemini-4-argon) をリリースしてしまいました。新モデルが出たとなれば、机の前に座ってベンチマークを回さざるを得ません。本ブログで連載してきた 「自転車の青切符 × 2008年の卒論ロジック」 シリーズも、気がつけば第8弾となりました。過去の連載記事一覧第1弾: 自転車の青切符、生成AIに聞いたら間違えた話を2008年度の卒論で工夫第2弾: 続・自転車の青切符、Proなら勝てるのか — Gemini 3.1 Pro で同じベンチマークを回してみた第3弾: 続々・自転車の青切符、ローカル LLM (gemma3:4b) でやらせたら何が起きたか第4弾: 完結編・Anthropic Claude を加えて、5機種で自転車青切符ベンチマークを総括する第5弾: 続・完結編 — 「完結」と書いた翌週に Layer 2 の thinking を切ったら 5 機種ハイブリッドが 70〜85% 速くなって、正答率はほぼ動かなかった話第6弾: 「次こそ完結編とは書かない」と言った週に書く続編 — Layer 1 に意味埋め込みを足したら、TC-003「ながらスマホ」が全機種で救えて、30 ケース評価で Flash が首位になった話第7弾: 帰ってきた「完結編」のその先 — Gemini 3.5 Flash への対応と、Google Antigravity が暴いた「堅すぎるAIが引き起こした Layer 1 のバグ」今回の対象リポジトリ: shu-kob/gemini-law-compiler#18 (feat: Gemini 4 Argon サポートおよび 2x2 マトリクス検証レポートの追加)さっそく Gemini 4 Argon を組み込んでみたところ、「API仕様の地雷」、「推論が深すぎて1分半フリーズする現象」、そして 「見えない思考トークンによる課金の罠」 に直面しました。その検証記録をお届けします。1. API の罠：thinking_budget から thinking_level へ刷新まず実装段階で洗礼を受けました。Gemini 2.5 や 3.x 世代では、推論トークン数を整数で指定する thinking_budget が使われていましたが、Gemini 4 Argon で thinking_budget を渡すと 400 エラーで即死します。400 INVALID_ARGUMENT.Thinking budget is not supported for this model.Use thinking level instead.Gemini 4 世代からは、トークン数の直接指定が廃止され、段階指定パラメータ thinking_level（low / medium / high）を使う仕様に変わっていました。互換コード（Python / google-genai SDK）新旧モデルが混在するリポジトリのため、以下のような自動判定ラッパーを config.py に実装しました。from typing import Anydef uses_thinking_level(model: str) -> bool:    """Gemini 4 世代モデルかどうか判定"""    return "gemini-4" in model or "argon" in modeldef get_thinking_config(    model: str,    thinking_enabled: bool = False,    thinking_budget: int = 2048,) -> dict[str, Any]:    """モデル世代に応じた thinking_config を返す"""    if uses_thinking_level(model):        # Gemini 4 Argon: low / high で制御        return {"thinking_level": "high" if thinking_enabled else "low"}    # Gemini 3.x / 2.5: 数値バジェットで制御    return {"thinking_budget": thinking_budget if thinking_enabled else 0}from google import genaiclient = genai.Client(api_key=API_KEY)# 推論を最小限に抑えて高速応答させる設定config = {    "temperature": 0.0,    "thinking_config": get_thinking_config("gemini-4-argon", thinking_enabled=False),}resp = client.models.generate_content(    model="gemini-4-argon",    contents="道路交通法において自転車は軽車両ですか？",    config=config,)Tips: 思考を実質OFFにしたい場合は "low" を渡すと思考トークンがほぼゼロになり最速で返ります（なお "minimal" は Argon では未対応エラーとなりました）。2. 実測：生条文を渡して推論させたら「87秒」考え続けた本シリーズでおなじみの難問 「75歳高齢者の歩道通行（TC-001）」 を Argon に解かせてみました。問題: 75歳の高齢者が普通自転車で歩道を走行しています。これは違反ですか？反則金はいくらですか？法律の構造: 道交法第63条の4第1項第2号には「政令で定める者」としか書かれておらず、具体的な年齢要件（70歳以上）は道路交通法施行令第26条にジャンプしないと分かりません。この問題を、以下の 2×2 マトリクスで実測しました。2×2 マトリクス検証結果（TC-001） パターン  入力（前処理）  Thinking 設定  レイテンシ  判定結果  ① 生条文 × 推論OFF  生の条文  level="low"  8.2 秒  ✅ 合法  ② 生条文 × 推論ON  生の条文  level="high"  87.7 秒 (約1分半!)  ✅ 合法  ③ 前処理済 × 推論ON  構造化・政令解決済  level="high"  11.3 秒  ✅ 合法  ④ 前処理済 × 推論OFF  構造化・政令解決済  level="low"  4.2 秒 (最速)  ✅ 合法 (最高精度) 驚き①：基礎知能は歴代最強（政令を自力で思い出す）先行世代のモデル（Flash 3.7 / 3.8 / 3.5-Lite）は、生の条文だけを渡すと 100% 施行令を見落とし、「歩道通行違反・反則金6,000円」と捏造していました。Gemini 4 Argon は生条文だけでも、自身の学習データから施行令第26条を引っ張り出し、「70歳以上なので合法」と自力正答 しました。この知能の高さは本物です。驚き②：しかし遅すぎる（自問自答で87秒）問題はレイテンシです。条文の例外規定を検証するために 87秒間も考え込み、Webアプリやチャットとしては完全にタイムアウト級の待ち時間が発生しました。3. コストの罠：思考トークンは「出力トークン」として丸ごと課金される「裏で非同期で回すバッチ処理なら87秒待ってもいいのでは？」と思うかもしれません。しかし、お財布へのダメージが強烈です。画面に出ない思考プロセスが全部「出力」扱い画面上に表示される回答が「合法です」の数行であっても、裏でモデルが自問自答した「思考プロセス（Thinking Tokens）」はすべて高価な【出力トークン】として課金されます。 パターン  入力トークン  思考・出力トークン  1回あたりの総トークン  ② 生条文 × 推論ON (力技)  約 4,000 tok（条文丸投げ）  約 1,100 tok（大量の自問自答）  5,097 tok  ④ 前処理 × 推論OFF (本命)  約 1,100 tok（必要な条文のみ）  約 160 tok（確定出力のみ）  1,292 tok (約75%削減) さらに、Gemini 4 Argon はフラッグシップモデルのため、モデル単価自体が Flash の数倍〜10倍高価です。「フラッグシップ単価」×「思考トークンによる4倍の消費量」 のダブルパンチにより、前処理なしで推論させると コストが 10〜30 倍に跳ね上がります。10,000 回リクエスト時のシミュレーション 構成  10,000回処理の推定コスト  処理時間（累計）  ② 生条文 × Argon 推論ON  約 20,000 円 〜 30,000 円  約 152 時間（6.3日分）  ④ 前処理済 × Argon 推論OFF  約 3,000 円 〜 5,000 円  約 10 時間  参考: 前処理済 × Flash-Lite 推論OFF  約 150 円 〜 300 円  約 3 時間 4. 解決策：2008年の卒論で解いて、推論は切る（④）第5弾の記事 で実証した「確定ロジックでの推論（Thinking）不要論」は、Gemini 4 世代でも完全に当てはまりました。2008年式の古典的XMLパーサ（Layer 1）で事前に法令参照を解決し、「反則金と根拠条文はこれです」と確定情報をプロンプトに注入した上で thinking_level="low" で呼び出します。結果：- 遅延：87.7 秒 → 4.2 秒（95% 高速化）- 総トークン数：5,097 tok → 1,292 tok（75% 削減）- コスト：推論ONの約 1/5〜1/10 へ圧縮- 出力品質：法律文書として隙のない論理的な回答5. まとめAPI 仕様の刷新: Gemini 4 Argon では thinking_budget は廃止。thinking_level="low" / "high" を使うべし。生テキストでの推論丸投げは「遅い・高い」: 自力で解く知能はあるが、1分以上悩み、高価な思考トークンを大量消費する。「古典的決定論パーサー × Thinking Low」が次世代でも最強:事実関係の確定（グラウンディング）は古典アルゴリズムで行い、LLMには推論をさせずに評価器・文章生成器として使う設計が、Gemini 4 世代でも「速度・コスト・精度」すべての面で圧倒的なベストプラクティスでした。現場からは以上です。次回こそ、本当に完結編になることを祈りつつ……。]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
         <item>
             <title><![CDATA[Claude Maxプラン(5x)を半年使って見直した話]]></title>
             <link>https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</guid>
             <pubDate>Fri, 18 Sep 2026 01:07:30 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 「今週は検証環境が使えない」と伝えた文が、来月の会話にも残っている。期限のある事情を覚えているだけなのに、いつの間にか恒久的な手順になる。そうなっていたら困ります。覚えてくれることと、今も正しいことは別です。 以前のモデルが何度も間違えたために足した指示も、モデルを替えた後まで同じ書き方で必要とは限りません。消してよいのか、残すべきなのか。その判断をしないまま、設定だけが増えていきます。 昨日の記事では、/skill-doctor でSkillsの使われ方を調べ、モデル更新時に指示を見直す話を書きました。今回は、その続きを .claude/rules/ とAuto memoryで考え…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ Claude Codeの Agent Skills は、ときどき見直したほうがいい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</guid>
-            <pubDate>Thu, 17 Sep 2026 05:03:49 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 2025年12月に「Claude Codeの Agent Skills は設定したほうがいい」という記事を書きました。必要な手順を必要なときに読み込ませる仕組みとして、Skillsを紹介した記事です。ただ、後半では設定が増えるほど管理が難しくなる話もしました。どれが使われているのか。似た説明のSkillが、互いの出番を奪っていないか。 syu-m-5151.hatenablog.com 今回は、その続きです。Skillsをいくつも設定した人には、まず /skill-doctor を紹介したいです。設定を増やす前に、今ある設定の使われ方を見られます。 /skill-doctor はv2…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
