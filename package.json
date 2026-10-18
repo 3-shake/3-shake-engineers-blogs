@@ -29,7 +29,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "24.19.1",
+    "@types/node": "24.19.2",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "feed": "6.0.0",
