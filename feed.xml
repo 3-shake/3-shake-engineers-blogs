@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 18 Oct 2026 22:31:34 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Oct 2026 02:28:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[RustでA*を書く]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/19/100827</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/19/100827</guid>
+            <pubDate>Mon, 19 Oct 2026 01:08:27 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに AI時代でも、アルゴリズムや基礎を学んでおこうと若い人に話しています。そう勧める自分の復習も兼ねて、今回はRustでA*を実装します。「最短の経路を探して」とAIへ頼む時に、自分は何を最小にしたいのか。返ってきた答えを最小だと言える条件まで、小さな例で確かめます。 ある作業の担当者が、完了までの手順を選ぶ場面を考えます。2つの操作で済む案と、3つの操作を順に進める案があります。操作数で選ぶなら前者です。ところが所要時間を足すと、前者は9分、後者は3分です。待っている人へ早く結果を返すには、操作の回数より、各操作にかかる時間を比べる必要があります。 候補が増えると、どの手順から調べるか…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[完結編のそのまた先へ — Gemini 4 Argon 登場！ 新仕様 `thinking_level` の罠と、法律判定で87秒考え込んで財布が爆発しそうになった話]]></title>
             <link>https://shu-kob.hateblo.jp/entry/gemini-4-argon-thinking-level</link>
@@ -260,14 +268,6 @@
             <pubDate>Fri, 18 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[https://gotanda-sre.connpass.com/event/402441/ で話す資料]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[Claude Codeの Rules と Auto memory は、書きっぱなしにしないほうがいい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</guid>
-            <pubDate>Fri, 18 Sep 2026 01:07:30 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「今週は検証環境が使えない」と伝えた文が、来月の会話にも残っている。期限のある事情を覚えているだけなのに、いつの間にか恒久的な手順になる。そうなっていたら困ります。覚えてくれることと、今も正しいことは別です。 以前のモデルが何度も間違えたために足した指示も、モデルを替えた後まで同じ書き方で必要とは限りません。消してよいのか、残すべきなのか。その判断をしないまま、設定だけが増えていきます。 昨日の記事では、/skill-doctor でSkillsの使われ方を調べ、モデル更新時に指示を見直す話を書きました。今回は、その続きを .claude/rules/ とAuto memoryで考え…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
