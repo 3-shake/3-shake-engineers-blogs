@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 20 Oct 2026 22:32:54 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Oct 2026 08:10:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rustでαβ枝刈りを実装する]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/21/113821</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/21/113821</guid>
+            <pubDate>Wed, 21 Oct 2026 02:38:21 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 探索の答えを変えずに、調べる量を減らせるでしょうか。AIへ「速くして」と頼む時、自分でも省略の根拠を説明できるように、αβ枝刈りを追ってみます。 対戦ゲームを作り、コンピューターに先の手まで読ませるとします。自分の手の後には相手の応手があり、その後にも選択が続きます。読む範囲を広げるほど候補が増え、遊んでいる人は次の一手を待つことになります。途中で読むのをやめれば早く返せますが、不利な展開を見落とす可能性があります。 すでに有利な手を1つ見つけている時、別の手では相手がこちらを不利にできると分かったら、どうでしょう。その先に魅力的な展開があっても、相手がそれを選んでくれるとは限りませ…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[初めて Terraform の二重管理を踏んだ話]]></title>
             <link>https://qiita.com/gensan0223/items/535b9f4fc768d48b378d</link>
@@ -260,14 +268,6 @@
             <pubDate>Sun, 20 Sep 2026 03:07:46 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Codexにテストを実行してほしいのに、依存パッケージの取得や書き込みで止まることがあります。そこで権限を広げると、今度はどこまで実行できるのかを説明しにくくなります。確認画面の多さだけを見て設定すると、必要な権限も分かりにくいままです。 権限プロファイルでは、ローカルのコマンドが触れるファイルや通信先をまとめます。Rulesでは、コマンドの引数列から許可・確認・禁止の判断を決めます。Claude Codeの権限設定と比べると、「どの操作を許すか」と「どの範囲なら任せるか」を分けて考える意味が見えてきます。この記事では、その設計の違いを押さえてから、テストが止まった場所と直す設定を順…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Gemini Enterprise Agent Platform の「Managed Agents」に Cloud Run を運用させてみる]]></title>
-            <link>https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</link>
-            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</guid>
-            <pubDate>Sat, 19 Sep 2026 06:59:04 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにGoogle Cloud の Managed Agents API に、Cloud Run のサービスを運用させました。Managed Agent API は Gemini Enterprise Agent Platform の Preview 機能です。今回、ログとメトリクスを読ませ、チューニング案を推測させ、実際に再デプロイまでさせています。モチベーションは、Antigravity による運用自動化で、どこまでいけるのかを知りたかったというのがあります。こちら検証日は 2026 年 9 月 14 日で、閲覧されたタイミングでは異なる機能になる可能性があります。 先...]]></content:encoded>
-            <author>SatohJohn</author>
         </item>
     </channel>
 </rss>
