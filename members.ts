@@ -759,7 +759,7 @@ export const members: Member[] = [
     id: "tksgtkm",
     name: "TakumiTakasugi",
     role: "DBRE",
-    bio: "今はどちらかというとData Enginerr",
+    bio: "今はどちらかというとData Engineer",
     avatarSrc: "avatars-webp/takumi_takasugi.webp",
     sources: ["https://tksgtkm.hatenablog.com/feed"],
     includeUrlRegex: "",
