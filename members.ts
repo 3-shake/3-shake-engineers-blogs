@@ -755,4 +755,16 @@ export const members: Member[] = [
     githubUsername: "mossann-t",
     websiteUrl: "https://note.com/_mossann_t/",
   },
+  {
+    id: "tksgtkm",
+    name: "TakumiTakasugi",
+    role: "DBRE",
+    bio: "今はどちらかというとData Engineer",
+    avatarSrc: "avatars-webp/takumi_takasugi.webp",
+    sources: ["https://tksgtkm.hatenablog.com/feed"],
+    includeUrlRegex: "",
+    xUsername: "tksgtkm",
+    githubUsername: "takumitakasugi-dbre",
+    websiteUrl: "https://tksgtkm.hatenablog.com",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
