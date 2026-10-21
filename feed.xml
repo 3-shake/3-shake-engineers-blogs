@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 21 Oct 2026 08:10:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Oct 2026 11:40:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Service-Linked Roleってなんだ？]]></title>
+            <link>https://qiita.com/gensan0223/items/bb4d686853742dc62e8b</link>
+            <guid isPermaLink="false">https://qiita.com/gensan0223/items/bb4d686853742dc62e8b</guid>
+            <pubDate>Wed, 21 Oct 2026 08:50:05 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに今さらながら、AWS の Service-Linked Role（SLR）を初めて知りました。このロールが陰ながら支えてくれていたことに、感謝しています。一方で先日、このロールの影響でエラーが出ました。同じ轍を踏んでほしくないと思い、記事にしました。概...]]></content:encoded>
+            <author>Gemma Naoki</author>
+        </item>
         <item>
             <title><![CDATA[Rustでαβ枝刈りを実装する]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/21/113821</link>
@@ -196,14 +204,6 @@
             <pubDate>Fri, 25 Sep 2026 14:00:49 GMT</pubDate>
             <content:encoded><![CDATA[はじめに関数型まつり2026をきっかけに、関数型プログラミングに興味を持ちました。イベントでは興味深いプラクティスが多く、実際に学んでみたらおもしろそうだと思いました。そこで関数型まつりのスタッフで、登壇もしていた同僚のhagaさん（@silasolla）に相談して、『プログラミングの基礎』を読み始めました。本を選ぶ際の相談から学習中のアドバイスまで、hagaさんには大変お世話になりました。ありがとうございます。本書ではOCamlを使うため、まずはその文法を学びました。この記事では、学習していて気になったOCamlの文法を紹介します。前提Webエンジニア普段よく使う言語はGoとTypeScriptDartとRubyは商用開発で使用経験ありC・Java・Python・Rustは少し触った程度演算子や記号の違い% ではなく modOCamlでは、整数の剰余は % ではなく mod を使います。]]></content:encoded>
             <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[Go Conference 2026 参加レポート]]></title>
-            <link>https://sreake.com/blog/go-conference-2026-report/</link>
-            <guid isPermaLink="false">https://sreake.com/blog/go-conference-2026-report/</guid>
-            <pubDate>Fri, 25 Sep 2026 02:11:21 GMT</pubDate>
-            <content:encoded><![CDATA[こんにちは、Sreake事業部の岩塚(yura_builder)です。 2026年9月11日(金)に中野セントラルパークで開催されたGo Conference 2026に参加してきました。本記事では現地の様子や印象に残っ […]The post Go Conference 2026 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
-            <author>Sreake</author>
         </item>
         <item>
             <title><![CDATA[ Codexを使うなら、定期タスクを押さえておきたい]]></title>
