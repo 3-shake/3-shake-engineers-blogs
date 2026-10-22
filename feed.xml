@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 21 Oct 2026 22:34:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Oct 2026 11:39:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[PHP2Shellから考える、Rustは何を防ぎ、何を防がないのか]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/22/185047</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/22/185047</guid>
+            <pubDate>Thu, 22 Oct 2026 09:50:47 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに PHP2Shellへの対応、お疲れさまでした。この記事は、更新や影響の確認が一段落し、今後の開発や保守を考える人に向けた読み物です。 2026年10月21日、PHPは外部からのリクエストによって、サーバー上で任意のコードを実行されうる2件の脆弱性を修正しました。PHP2Shellと呼ばれる問題です。PHP公式はWeb向けの各実行方式に影響し、Apacheのmod_phpではアプリケーションのコードが動く前から攻撃が成立すると説明しています。 www.php.net GMO Flatt Securityの解説がめちゃくちゃ良いので、何が起こったのかは、まずこちらを読んでみてください。 …]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Service-Linked Roleってなんだ？]]></title>
             <link>https://qiita.com/gensan0223/items/bb4d686853742dc62e8b</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258</guid>
             <pubDate>Mon, 21 Sep 2026 01:42:58 GMT</pubDate>
             <content:encoded><![CDATA[はじめに AIを使って仕事が楽になった、という人は定期的に現れます。どこかの偉そうな人から、エージェントに任せれば人は楽になる、と言われる。けれど、複数のエージェントを起動すると、減っているのは考える時間です。 セッションごとの入力待ちに答え、別worktreeの差分を読み、終わった変更を同じ状態で動かす。仕事の量が消えたわけではなく、労働密度が上がっていました。1つのターミナルを見続ける辛さとは、別の辛さがあります。 Agent viewは、この辛さを消す機能ではありません。複数セッションの状態を一覧し、入力を求めている仕事へ移るための機能です。セッション間通信は、決まったことを別のセッショ…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Codexを使うなら、権限プロファイルとRulesを押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</guid>
-            <pubDate>Sun, 20 Sep 2026 03:07:46 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Codexにテストを実行してほしいのに、依存パッケージの取得や書き込みで止まることがあります。そこで権限を広げると、今度はどこまで実行できるのかを説明しにくくなります。確認画面の多さだけを見て設定すると、必要な権限も分かりにくいままです。 権限プロファイルでは、ローカルのコマンドが触れるファイルや通信先をまとめます。Rulesでは、コマンドの引数列から許可・確認・禁止の判断を決めます。Claude Codeの権限設定と比べると、「どの操作を許すか」と「どの範囲なら任せるか」を分けて考える意味が見えてきます。この記事では、その設計の違いを押さえてから、テストが止まった場所と直す設定を順…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
