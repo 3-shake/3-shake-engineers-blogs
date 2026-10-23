@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 23 Oct 2026 11:40:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 22:33:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[著者の1人が勝手に語る！『AWSの知識地図 [改訂新版]』の「ココが好き」]]></title>
+            <link>https://note.com/_mossann_t/n/n6c24734995f1</link>
+            <guid isPermaLink="false">https://note.com/_mossann_t/n/n6c24734995f1</guid>
+            <pubDate>Fri, 23 Oct 2026 13:49:38 GMT</pubDate>
+            <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。『AWSの知識地図 [改訂新版]』が刊行となりました続きをみる]]></content:encoded>
+            <author>もっさん</author>
+        </item>
         <item>
             <title><![CDATA[PHP2Shellから考える、Rustは何を防ぎ、何を防がないのか]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/22/185047</link>
@@ -260,14 +268,6 @@
             <pubDate>Thu, 24 Sep 2026 21:32:18 GMT</pubDate>
             <content:encoded><![CDATA[ISUCONの練習を好きなタイミングで始めたいISUCONの素振りをするためのポータルサイトを作りました。https://suburi.dev/欲しかったのは1人から複数人までのチームがそれぞれ好きなタイミングでISUCONの練習ができるサイトです。環境の用意、ベンチの実行、パフォーマンスの改善という一連の作業を始めやすくしたいというモチベーションで作っています。使い方としては、GitHubでログインし練習する問題とメンバーを決めることで練習用の環境を作るCloudFormationテンプレートを取得できるようになっています。テンプレートから自分やチームのAWSアカウントで環...]]></content:encoded>
             <author>ntk</author>
-        </item>
-        <item>
-            <title><![CDATA[Multicaの紹介＋初心者ループエンジニアリング]]></title>
-            <link>https://qiita.com/gensan0223/items/267936f36aebcbba718f</link>
-            <guid isPermaLink="false">https://qiita.com/gensan0223/items/267936f36aebcbba718f</guid>
-            <pubDate>Thu, 24 Sep 2026 14:06:33 GMT</pubDate>
-            <content:encoded><![CDATA[はじめについ最近、ようやっとAI駆動開発に手を出し始めた者です！Claude Code、Codex、Cursor。使えるエージェントは増えたのですが、増えるほどターミナルのタブも増えていきます。誰が何をやっていて、どこで止まっているのか、だんだん自分でも分からなくなっ...]]></content:encoded>
-            <author>Gemma Naoki</author>
         </item>
     </channel>
 </rss>
