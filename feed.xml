@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 22 Oct 2026 22:32:51 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 08:23:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -71,6 +71,14 @@
             <author>Shu Kobuchi</author>
         </item>
         <item>
+            <title><![CDATA[TP/DPマルチGPUサービング実測記録: Runpod A100 4枚で3つの構成を比較]]></title>
+            <link>https://zenn.dev/hyeonjae/articles/llm-tp-dp-serving-lab-ja</link>
+            <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/llm-tp-dp-serving-lab-ja</guid>
+            <pubDate>Fri, 16 Oct 2026 01:18:18 GMT</pubDate>
+            <content:encoded><![CDATA[GPUを4枚積んだ単一ノードで、vLLMサービングを TP=4、TP=2 × DP=2、DP=4 の3構成で立ち上げ、速度を比べた記録である。当初はTP=8まで比べる予定だった。しかしRunpodでは8枚の在庫がなかなか見つからず、価格も安くない。現状は4枚が上限なので、同じ4枚の中でTPとDPの比重だけを変える形に組み直した。先に結果を書いておく。GPU 1枚に収まるモデル(Qwen3-8B/14B)では DP=4 が最も速く、Qwen3-8Bではスループットが TP=4 の約1.3倍、Mean TTFTは約27%短かった。GPU 1枚に収まらないQwen2.5-72Bでは逆にTP=...]]></content:encoded>
+            <author>lee</author>
+        </item>
+        <item>
             <title><![CDATA[Claude Maxプラン(5x)を半年使って見直した話]]></title>
             <link>https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</link>
             <guid isPermaLink="false">https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</guid>
@@ -93,6 +101,14 @@
             <pubDate>Tue, 13 Oct 2026 02:37:11 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 「インフルエンサーのnwiizoさんです」と紹介されるのが本当に嫌だ。まず、俺は誰をインフルエンスしているんだ。となる。 フォロワーの数を見ても、誰かが何かを良いと思って動いてくれたかどうかは分からない。知られてはいても、誰かをインフルエンスしている実態は、自分には見えていない。嫌なのは、その実態がないまま、インフルエンサーとして紹介されるからだ。知られるように働きかけたのは自分で、会社にとってはそれが技術広報の成果でもある。だから、知られていること自体は否定できない。ただ、知られていることと、誰かをインフルエンスしていることは別だ。引っかかる点はもう1つある。この呼び名からは、何を…]]></content:encoded>
             <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[PRコメントからKubernetesに訊く ~GitHub ActionsからA2Aエージェントをシークレットレスで繋ぐ~]]></title>
+            <link>https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja</link>
+            <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja</guid>
+            <pubDate>Mon, 12 Oct 2026 14:31:57 GMT</pubDate>
+            <content:encoded><![CDATA[A2Aエージェントを活用するにあたって、セキュリティの観点からどのように補強していったかを整理します。 1. 背景まず現在の状況を分かりやすく整理します。私たちは main ブランチにマージする前に、 k8s クラスタ上の job の状態を把握する必要がありました。そのため GitHub で PR を上げた状態で、複数の開発者が実際に k8s クラスタへ接続して各種リソースの状態を確認していました。しかし k8s クラスタに接続するたびに VPN へ繋ぐ必要があり、手作業でリソースをひとつずつ点検するのは非常に時間がかかり煩雑な作業です。(もちろんミスも起こりえます！)そこで「...]]></content:encoded>
+            <author>lee</author>
         </item>
         <item>
             <title><![CDATA[TinyGo Conf 2026で初めて登壇しました！]]></title>
@@ -124,6 +140,14 @@
             <pubDate>Thu, 08 Oct 2026 11:22:55 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！純粋に宇宙が大好きで、自宅のベランダから個人で電波天文学や衛星観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談し、教わりなが...]]></content:encoded>
             <author>tozastation</author>
+        </item>
+        <item>
+            <title><![CDATA[ホームラボの GPU ノードの監視環境を構築する]]></title>
+            <link>https://zenn.dev/hyeonjae/articles/46d734a43c2c93</link>
+            <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/46d734a43c2c93</guid>
+            <pubDate>Wed, 07 Oct 2026 14:04:11 GMT</pubDate>
+            <content:encoded><![CDATA[GPU ノードをホームラボで運用していたところ、トス証券の技術ブログ記事「トス証券が GPU-aware を超えて GPU-native クラスターを構築した方法」で紹介されている運用基準を目にしました。そこで、ホームラボの環境に合わせて規模を縮小し、GPU の状態を監視することにしました。現在、ノード 1 台に GPU が 2 枚載っていますが、GPU の状態を個別に監視してはいませんでした。この取り組みにより、「Node が Ready でも GPU は故障していることがある」という事実に備えられるようになりました。GPU のハードウェアエラー(Xid)はカーネルログにしか残らず...]]></content:encoded>
+            <author>lee</author>
         </item>
         <item>
             <title><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜]]></title>
@@ -214,6 +238,14 @@
             <author>Rinrin</author>
         </item>
         <item>
+            <title><![CDATA[Go Conference 2026 参加レポート]]></title>
+            <link>https://sreake.com/blog/go-conference-2026-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/go-conference-2026-report/</guid>
+            <pubDate>Fri, 25 Sep 2026 02:11:21 GMT</pubDate>
+            <content:encoded><![CDATA[こんにちは、Sreake事業部の岩塚(yura_builder)です。 2026年9月11日(金)に中野セントラルパークで開催されたGo Conference 2026に参加してきました。本記事では現地の様子や印象に残っ […]The post Go Conference 2026 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
             <title><![CDATA[ Codexを使うなら、定期タスクを押さえておきたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</guid>
@@ -236,38 +268,6 @@
             <pubDate>Thu, 24 Sep 2026 14:06:33 GMT</pubDate>
             <content:encoded><![CDATA[はじめについ最近、ようやっとAI駆動開発に手を出し始めた者です！Claude Code、Codex、Cursor。使えるエージェントは増えたのですが、増えるほどターミナルのタブも増えていきます。誰が何をやっていて、どこで止まっているのか、だんだん自分でも分からなくなっ...]]></content:encoded>
             <author>Gemma Naoki</author>
-        </item>
-        <item>
-            <title><![CDATA[Codexを使うなら、Worktreesと会話の分岐を押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105</guid>
-            <pubDate>Thu, 24 Sep 2026 03:31:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 会話を分岐しただけでは、ファイルは分かれません。修正案を2通り試していても、同じディレクトリを書き換えているなら、片方の変更はもう片方からも見えます。会話の中では別案でも、ディスク上では同じ実装を直している状態です。 Codexでは、会話の分岐にWorktreeを組み合わせ、作業場所も分けられます。共通の調査から別案を試し、それぞれの差分を比較できます。取り込む変更が決まったら、不要になった作業場所も片付けます。 Claude CodeのAgent viewの記事では、並行する仕事の編集場所をWorktreeで分け、最後に変更を統合する話を書きました。今回の主題は、Codexから会話…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Codexを使うなら、SkillsとPluginsを押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604</guid>
-            <pubDate>Wed, 23 Sep 2026 03:36:04 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 同じ仕事を頼むたびに、前の会話からうまくいった指示をコピーすることがあります。その手順を残す場所として、Claude Codeの記事ではAgent Skillsを紹介しました。続くPluginsの記事では、社内で共有するSkillをプラグインにまとめる方法を書きました。配布した後も更新が届くところまで管理します。今回はCodexで同じことをするために、Skillを作る基準と、Codex固有の配置・呼び出し方を考えます。 syu-m-5151.hatenablog.com syu-m-5151.hatenablog.com PR説明を頼んだときは使ってほしいけれど、変更方針を相談してい…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ Claude Codeの Plugins は設定したほうがいい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945</guid>
-            <pubDate>Tue, 22 Sep 2026 03:49:45 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに これまで、settings.json、CLAUDE.md、Commands、Hooks、Subagents、Skillsについて書いてきました。それぞれ設定すると、毎回説明することを減らせます。その次に困るのが、直した設定を、使っている環境へ届け続けることです。個人的にPluginsで嬉しいのは、自分のSkillをパッケージとして管理できることです。Skillを配布しても、その後の更新を忘れてしまうので。 たとえば、変更の概要を書くSkillを3つのリポジトリへコピーしたとします。1つで説明を改善したら、残り2つも更新する。Hooksも一緒に渡したいなら、設定ファイルへ追記する場所を…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Claude Codeの Agent view とセッション間通信は使ったほうがいい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258</guid>
-            <pubDate>Mon, 21 Sep 2026 01:42:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに AIを使って仕事が楽になった、という人は定期的に現れます。どこかの偉そうな人から、エージェントに任せれば人は楽になる、と言われる。けれど、複数のエージェントを起動すると、減っているのは考える時間です。 セッションごとの入力待ちに答え、別worktreeの差分を読み、終わった変更を同じ状態で動かす。仕事の量が消えたわけではなく、労働密度が上がっていました。1つのターミナルを見続ける辛さとは、別の辛さがあります。 Agent viewは、この辛さを消す機能ではありません。複数セッションの状態を一覧し、入力を求めている仕事へ移るための機能です。セッション間通信は、決まったことを別のセッショ…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
