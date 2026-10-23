@@ -767,4 +767,15 @@ export const members: Member[] = [
     githubUsername: "takumitakasugi-dbre",
     websiteUrl: "https://tksgtkm.hatenablog.com",
   },
+  {
+    id: "hyeonjae1122",
+    name: "lee",
+    role: "SRE",
+    bio: "今はSREですが、最近LLMサービングやML基盤の構築に興味があります",
+    avatarSrc: "/avatars-webp/lee.webp",
+    sources: ["https://zenn.dev/hyeonjae/feed"],
+    includeUrlRegex: "",
+    githubUsername: "hyeonjae1122",
+    websiteUrl: "https://zenn.dev/hyeonjae",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
