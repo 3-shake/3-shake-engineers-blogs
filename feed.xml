@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 23 Oct 2026 22:33:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 11:37:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-10-24 JAWS JAWS-UG 茨城 #18 IAM Policy Autopilotってなにさ。terraform planからIAM Policyつくれるの? / What's IAM Policy Autopilot  ]]></title>
+            <link>https://speakerdeck.com/masasuzu/whats-iam-policy-autopilot</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/whats-iam-policy-autopilot</guid>
+            <pubDate>Sat, 24 Oct 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[[JAWS-UG 茨城 #18 祝！2周年記念祭 - connpass](https://jawsug-ibaraki.connpass.com/event/407471/)で話した内容。 IAM Policy Autopilot はなにか。Terraform Planとの連携についてLTしました]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
         <item>
             <title><![CDATA[著者の1人が勝手に語る！『AWSの知識地図 [改訂新版]』の「ココが好き」]]></title>
             <link>https://note.com/_mossann_t/n/n6c24734995f1</link>
@@ -260,14 +268,6 @@
             <pubDate>Fri, 25 Sep 2026 01:29:41 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 毎朝、前日に変わったコードを確認したい。レビュー待ちのPRも見に行きたい。繰り返す仕事には、手順が分かっていても、始めるのを忘れる問題があります。Codexの定期タスクを使うと、予定した時刻にその仕事を始められます。 毎朝同じ文章を送っても、前回の会話や対象ファイルがなければ、同じ仕事にはなりません。予定どおり始まっても、必要な情報を読めずに終わることがあります。実行する時刻と一緒に、何を渡して始めるかを決めます。 ここでは、ローカルプロジェクトの変更を朝に確認するタスクを作ります。ChatGPTデスクトップアプリ内のCodexから利用し、管理画面の Scheduled で予定と実行…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ISUCONの素振り用ポータルサイトを Cloudflare Workers で作った]]></title>
-            <link>https://zenn.dev/ntk221/articles/ecc80f3006ef97</link>
-            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/ecc80f3006ef97</guid>
-            <pubDate>Thu, 24 Sep 2026 21:32:18 GMT</pubDate>
-            <content:encoded><![CDATA[ISUCONの練習を好きなタイミングで始めたいISUCONの素振りをするためのポータルサイトを作りました。https://suburi.dev/欲しかったのは1人から複数人までのチームがそれぞれ好きなタイミングでISUCONの練習ができるサイトです。環境の用意、ベンチの実行、パフォーマンスの改善という一連の作業を始めやすくしたいというモチベーションで作っています。使い方としては、GitHubでログインし練習する問題とメンバーを決めることで練習用の環境を作るCloudFormationテンプレートを取得できるようになっています。テンプレートから自分やチームのAWSアカウントで環...]]></content:encoded>
-            <author>ntk</author>
         </item>
     </channel>
 </rss>
