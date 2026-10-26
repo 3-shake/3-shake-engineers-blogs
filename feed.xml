@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sun, 25 Oct 2026 22:31:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Oct 2026 11:43:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -69,6 +69,13 @@
             <pubDate>Tue, 20 Oct 2026 03:21:50 GMT</pubDate>
             <content:encoded><![CDATA[二枚の予約確認書 水野は、予約確認書が二枚あることより、梶原がそれを印刷してきたことを先に気にした。ふだんならチャットに予約番号が送られてくる。確認します、と返せば、そのあと何を確認するかを考える時間があった。 梶原は二枚とも、水野から読める向きに置いた。 開発を始めて五十九日目だった。どちらにも、土曜日の午前九時、折り畳み椅子六十脚、とある。届け先と予約番号が違い、下のほうの「予約が確定しました」だけが同じだった。水野は一度、その文の下に何か小さな注意書きがないか探した。 「倉庫には六十脚です」 「どっちが先ですか」 「先なら届けていいんですか」 梶原は、どちらを先に受け付けたかを知らないわ…]]></content:encoded>
             <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[tinygo.vimとgopls-lazyが噛み合わなかった話]]></title>
+            <link>https://rin2yh.com/post/tinygo-gopls-lazy-0txdwpqmhwbdin/</link>
+            <guid isPermaLink="false">https://rin2yh.com/post/tinygo-gopls-lazy-0txdwpqmhwbdin/</guid>
+            <pubDate>Mon, 19 Oct 2026 15:00:00 GMT</pubDate>
+            <author>Rinrin</author>
         </item>
         <item>
             <title><![CDATA[RustでA*を書く]]></title>
@@ -260,14 +267,6 @@
             <pubDate>Fri, 25 Sep 2026 02:11:21 GMT</pubDate>
             <content:encoded><![CDATA[こんにちは、Sreake事業部の岩塚(yura_builder)です。 2026年9月11日(金)に中野セントラルパークで開催されたGo Conference 2026に参加してきました。本記事では現地の様子や印象に残っ […]The post Go Conference 2026 参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
-        </item>
-        <item>
-            <title><![CDATA[ Codexを使うなら、定期タスクを押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941</guid>
-            <pubDate>Fri, 25 Sep 2026 01:29:41 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 毎朝、前日に変わったコードを確認したい。レビュー待ちのPRも見に行きたい。繰り返す仕事には、手順が分かっていても、始めるのを忘れる問題があります。Codexの定期タスクを使うと、予定した時刻にその仕事を始められます。 毎朝同じ文章を送っても、前回の会話や対象ファイルがなければ、同じ仕事にはなりません。予定どおり始まっても、必要な情報を読めずに終わることがあります。実行する時刻と一緒に、何を渡して始めるかを決めます。 ここでは、ローカルプロジェクトの変更を朝に確認するタスクを作ります。ChatGPTデスクトップアプリ内のCodexから利用し、管理画面の Scheduled で予定と実行…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
