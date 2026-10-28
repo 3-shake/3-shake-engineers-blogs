@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 28 Oct 2026 11:35:08 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Oct 2026 22:31:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rustで順序交叉を書く]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/29/010206</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/29/010206</guid>
+            <pubDate>Wed, 28 Oct 2026 16:02:06 GMT</pubDate>
+            <content:encoded><![CDATA[Rustで順序交叉（OX）を実装し、都市を重複・欠落させずに2つの親から子を作ります。循環して埋める手順と、区間の端や不正な入力の検査を確かめます。]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[バッチで安く、A/Bで確かめ、動的ルーティングで届ける Google Cloudで実現するLLM選定戦略]]></title>
             <link>https://speakerdeck.com/shukob/google-cloud-llm-routing-strategy</link>
@@ -259,14 +267,6 @@
             <pubDate>Sun, 27 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[インフラとアプリの境界線と委譲の設計Platform Engineering Kaigi 2026での発表内容https://www.cnia.io/pek2026/sessions/7696ab46-5273-441e-941e-6cd027402d19/セッション概要インフラとアプリの境界線を、どこに引くのが望ましいのでしょうか。全部インフラチームが持てば安全ですが反映待ちで開発が止まり、全部アプリチームに渡せば速いですが野良運用が広がり作り直せない構成が残ります。この問いには二つの境界線が混ざっているように思います。インフラプロビジョニングとアプリデプロイをどこで分けるかという機能の境界と、共通プラットフォームを挟んで開発チームがどこまで自分で動けるようにするかという役割の境界です。そして二つは独立しているわけではありません。役割が動けば選ぶ道具も変わり、道具が変われば機能の境界の置き場所も変わってくるかもしれません。クライアントワークで複数のお客様のインフラに関わってきた経験から、実際にどう引かれていたかを交えて整理してみます。題材は ECS や Cloud Run といったマネージドサービスです。]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[Codexを使うなら、/goalとサイドチャットを押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/27/120017</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/27/120017</guid>
-            <pubDate>Sun, 27 Sep 2026 03:00:17 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Codexが修正している途中で、「なぜ、その判定を変えるのか」と聞きたくなることがあります。理由を知りたいだけなのか、その変更を止めてほしいのか。途中で送る一文にも、別の目的があります。 長い仕事を続ける /goal、途中の質問を分ける /side、実行中の指示変更と予約送信。それぞれ、作業を続ける条件、質問する会話、指示を送るタイミングを指定する操作です。9月のCLI更新では、下書きを残したままCodexからの質問へ答える機能も加わりました。 認証処理を直す仕事で考えてみます。修正は続けてほしい。でも、期限の判定については説明を聞きたい。必要なら仕様を決め直し、Codexへ変更を指…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
