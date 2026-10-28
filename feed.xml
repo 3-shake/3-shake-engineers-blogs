@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 27 Oct 2026 23:51:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Oct 2026 11:35:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[バッチで安く、A/Bで確かめ、動的ルーティングで届ける Google Cloudで実現するLLM選定戦略]]></title>
+            <link>https://speakerdeck.com/shukob/google-cloud-llm-routing-strategy</link>
+            <guid isPermaLink="false">https://speakerdeck.com/shukob/google-cloud-llm-routing-strategy</guid>
+            <pubDate>Wed, 28 Oct 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[https://jaguer-tech-lunch.connpass.com/event/408350/2026年10月28日に開催された「Jagu'e'r Tech Lunch」での登壇資料です。当日はデモを交えながら、Google Cloud / Gemini 環境における実践的な LLM 選定・移行・運用戦略についてお話ししました。  ■ 概要LLM の急速な進化に伴い「最新・最高性能のモデルへ即時切り替えたい」というニーズが高まる一方、プロンプトの効き方の変化、JSON 出力構造の崩れ、予期せぬレイテンシ増やレート制限といった本番トラブルのリスクも存在します。  本発表では、モデル変更に伴うリスクを最小化し、コストとユーザー体験のバランスを最大化するための「3重の防御策」と「動的ルーティング」のアーキテクチャパターンを紹介しています。   ■ 主なトピック新モデルへの即時切り替えに潜むリスク（出力崩れ・レイテンシ増など）  第1の防壁：決定論的アサーションとオフライン評価（CI/CDによる足切り、LLM-as-a-Judge の使い所）  第2の防壁：遅延0msの Shadow Testing 基盤（本番ミラーリング）   FinOps の実践：Gemini Batch API によるコスト半減アプローチ   第3の防壁：ブラインド A/B テストの実態（「高性能モデル＝最良のUX」とは限らないケーススタディ）  最適解：ユースケースに応じた動的ルーティング（Contextual Routing）  ■ 関連リンク登壇イベント（connpass）: https://jaguer-tech-lunch.connpass.com/event/408350/デモ・検証リポジトリ: https://github.com/shu-kob/adk-agent-chat（ADK: Agent Development Kit と Gemini を用いたチャットボット実装）  #GoogleCloud #Gemini #LLM #FinOps #Jaguer #機械学習]]></content:encoded>
+            <author>Shu Kobuchi</author>
+        </item>
+        <item>
+            <title><![CDATA[2026-10-28 Jagu'e'r月末 Tech Lunch Online#18 - Google Cloud を語る！ Cloud Run のプロビジョニングとデプロイの隙間を埋める - tfstate との連携 / Cloud Run Deploy and Provisioning]]></title>
+            <link>https://speakerdeck.com/masasuzu/cloud-run-deploy-and-provisioning</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/cloud-run-deploy-and-provisioning</guid>
+            <pubDate>Tue, 27 Oct 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[[月末 Tech Lunch Online#18 - Google Cloud を語る！- - connpass](https://jaguer-tech-lunch.connpass.com/event/408350/)で話した内容。Cloud Run のプロビジョニングとデプロイをどう境界を引いて、どう値を受け渡して、どう連携していくといいのか。最近の私見です。]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
         <item>
             <title><![CDATA[Rustで遺伝的アルゴリズムを書く]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/27/122602</link>
@@ -251,22 +267,6 @@
             <pubDate>Sun, 27 Sep 2026 03:00:17 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Codexが修正している途中で、「なぜ、その判定を変えるのか」と聞きたくなることがあります。理由を知りたいだけなのか、その変更を止めてほしいのか。途中で送る一文にも、別の目的があります。 長い仕事を続ける /goal、途中の質問を分ける /side、実行中の指示変更と予約送信。それぞれ、作業を続ける条件、質問する会話、指示を送るタイミングを指定する操作です。9月のCLI更新では、下書きを残したままCodexからの質問へ答える機能も加わりました。 認証処理を直す仕事で考えてみます。修正は続けてほしい。でも、期限の判定については説明を聞きたい。必要なら仕様を決め直し、Codexへ変更を指…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Codexを使うなら、codex execと構造化出力を押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930</guid>
-            <pubDate>Sat, 26 Sep 2026 01:39:30 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Codexへ同じ種類の依頼を繰り返していると、会話を開いて文章を貼り付ける操作を省きたくなります。変更概要を作る、ログを整理する、確認すべき点を一覧にする。入力と出力が見えている仕事なら、codex execで既存のCLIの流れへ組み込めます。 JSONの形が正しくても、調査が成功したとは限りません。対象を読めなかった結果が「問題なし」の空配列になれば、後の処理は失敗に気づけません。この記事では、実行中のイベント、最後の回答、実行そのものの失敗を分けて受け取ります。 learn.chatgpt.com まず単発の仕事を渡し、次にJSONLのイベントと最終JSONを分けます。その後、保…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[「プログラミングの基礎」でOCamlを学んで気づいたこと]]></title>
-            <link>https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/ocaml-basics-q7m2k9v4x8p3nz/</guid>
-            <pubDate>Fri, 25 Sep 2026 14:00:49 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに関数型まつり2026をきっかけに、関数型プログラミングに興味を持ちました。イベントでは興味深いプラクティスが多く、実際に学んでみたらおもしろそうだと思いました。そこで関数型まつりのスタッフで、登壇もしていた同僚のhagaさん（@silasolla）に相談して、『プログラミングの基礎』を読み始めました。本を選ぶ際の相談から学習中のアドバイスまで、hagaさんには大変お世話になりました。ありがとうございます。本書ではOCamlを使うため、まずはその文法を学びました。この記事では、学習していて気になったOCamlの文法を紹介します。前提Webエンジニア普段よく使う言語はGoとTypeScriptDartとRubyは商用開発で使用経験ありC・Java・Python・Rustは少し触った程度演算子や記号の違い% ではなく modOCamlでは、整数の剰余は % ではなく mod を使います。]]></content:encoded>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
