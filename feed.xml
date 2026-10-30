@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 29 Oct 2026 22:31:14 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2026 11:35:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[『魔法使いの弟子』を思い出した。AIで作ったものに責任を持つということ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/30/131753</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/30/131753</guid>
+            <pubDate>Fri, 30 Oct 2026 04:17:53 GMT</pubDate>
+            <content:encoded><![CDATA[がるさんの「魔法が使えるようになったプログラマたちへ」を読んで、『魔法使いの弟子』を思い出しました。ディズニーの『ファンタジア』で、ミッキーがほうきに水を運ばせる、あの話です。 ファンタジア スペシャル・エディション [DVD]ウォルト・ディズニー・ジャパン株式会社Amazon 記事は、AIで何かを作れるようになった喜びを認めながら、作ったものを理解し、面倒を見続けられるかを問いかけています。とくに好きだったのは、自分用だった便利な道具がほかの人にも使われ、いつの間にか業務から外せなくなる話でした。 水を運ばせることには成功した。 最初は魔法を動かせても止められない弟子と、よく似ていると思いま…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[AIに実装を任せる時代に、何を残し、何を変えるのか - Domain-Driven Transformation の読書感想文]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/29/134734</link>
@@ -258,14 +266,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/29/161928</guid>
             <pubDate>Tue, 29 Sep 2026 07:19:28 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Codex CLIには、会話を要約する /recap、出力をコピーする /copy、会話全体を書き出す /export があります。いずれも会話に蓄積された情報を扱う機能ですが、対象と用途が異なります。 この記事では、3つのコマンドの役割と、関連する /compact・/status・/diff との違いを整理します。要約、コピー、保存で何が得られるのか。現在のコードや検証結果は、どこで確かめるのか。この区別を押さえると、作業の再開やPRの説明に必要な情報を選びやすくなります。 会話の要約、出力のコピー、会話全体の保存 3つのコマンドは、扱う情報の範囲で分けられます。 コマンド 扱う…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[おい、のっていけ]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/28/121135</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/28/121135</guid>
-            <pubDate>Mon, 28 Sep 2026 03:11:35 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 誰かの「やってみたい」に加わることは、仕事の中でも外でも、人生を豊かにすると考えています。人の誘いに応じて、自分だけでは選ばなかった場所へ行き、会わなかったはずの人と話す。興味のなかったものを、そこで面白く感じることもある。自分の関心だけで選んでいたら、選ぶものはだんだん似てきます。 それなのに、のる前は面倒です。予定を空け、知らない場所へ行き、慣れない人と話す。楽しめるかは分からないのに、手間は先に見える。今日はやめておこう。次に面白そうなものがあったら。その判断は一度ずつならもっともでも、繰り返していると、自分に何が起きるのでしょうか。 誘いを一度断っても、その日はいつもどおりに…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
