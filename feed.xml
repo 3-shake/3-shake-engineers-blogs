@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 30 Oct 2026 22:31:04 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 31 Oct 2026 11:34:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -61,6 +61,14 @@
             <pubDate>Tue, 27 Oct 2026 03:26:02 GMT</pubDate>
             <content:encoded><![CDATA[Rustで8ビットの遺伝的アルゴリズムを実装し、選択・交叉・突然変異とエリート保存を確かめます。全探索との比較や、探索結果を採用する際の条件も扱います。]]></content:encoded>
             <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Releaseの不正差し替えに備える検証入門]]></title>
+            <link>https://www.rowicy.com/blog/verify-release-binary/</link>
+            <guid isPermaLink="false">https://www.rowicy.com/blog/verify-release-binary/</guid>
+            <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[リリースバイナリが差し替えられても気づけるか。ダイジェスト検証、GPG・Cosign署名、attestationによる来歴検証までを整理]]></content:encoded>
+            <author>riiimparm</author>
         </item>
         <item>
             <title><![CDATA[2026-10-24 JAWS JAWS-UG 茨城 #18 IAM Policy Autopilotってなにさ。terraform planからIAM Policyつくれるの? / What's IAM Policy Autopilot  ]]></title>
@@ -259,14 +267,6 @@
             <pubDate>Wed, 30 Sep 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[新モデルへの即時切り替えによる「プロンプト挙動の変化」「JSON出力の崩れ」「429レート制限」「コスト・レイテンシ悪化」を防ぐため、本番影響ゼロで検証・移行を行う「3段階の防壁アーキテクチャ」と実証知見をまとめた登壇資料です。Google Cloud と Google Agent Development Kit (ADK) を用いたチャット基盤をベースに、生トラフィックによるモデル比較（Gemini 3.8 Flash / 3.7 Flash / 3.5 Flash Lite）を行った検証結果や、動的ルーティングへの展望を解説しています。📌 本資料のポイント・アジェンダ新モデル移行に潜む4つの落とし穴プロンプト互換性の破壊、出力フォーマット崩れ、プレビュー版の429エラー、予期せぬコスト・遅延増モデル移行を守る「3段階の防壁」第1の防壁：オフライン評価（ゴールデンデータセットを用いた回帰テスト、ルールベース採点）第2の防壁：遅延0msの Shadow Testing（本番ユーザー影響ゼロの非同期ミラーリング、429自動フェイルオーバー、PIIマスキング、Gemini Batch APIによる50%コスト削減）第3の防壁：ブラインド A/B テスト（Chatbot Arena方式による位置バイアス排除、回答後のモデル開示演出）生トラフィック検証から得られた知見「最高性能・高コストなモデルが常に勝つとは限らない」実態（相槌・即答性における軽量モデルの優位性と複雑推論での上位モデルの使い分け）今後の展望：動的モデルルーティング（Contextual Bandit）意図分類やコンテキストに応じたモデルの自動最適化開発基盤Googleの次世代AIコーディング環境「Antigravity」によるバイブコーディング実装🔗 関連リンクGitHub リポジトリ（ソースコード・実装）:https://github.com/shu-kob/adk-agent-chatYouTube 発表アーカイブ（動画）:https://youtube.com/live/T1GN27CgNakイベント詳細（connpass）:https://genai-users.connpass.com/event/407986/発表者 X (Twitter):https://x.com/shu_kob]]></content:encoded>
             <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[Codexを使うなら、/recap・/copy・/exportを押さえておきたい]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/29/161928</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/29/161928</guid>
-            <pubDate>Tue, 29 Sep 2026 07:19:28 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Codex CLIには、会話を要約する /recap、出力をコピーする /copy、会話全体を書き出す /export があります。いずれも会話に蓄積された情報を扱う機能ですが、対象と用途が異なります。 この記事では、3つのコマンドの役割と、関連する /compact・/status・/diff との違いを整理します。要約、コピー、保存で何が得られるのか。現在のコードや検証結果は、どこで確かめるのか。この区別を押さえると、作業の再開やPRの説明に必要な情報を選びやすくなります。 会話の要約、出力のコピー、会話全体の保存 3つのコマンドは、扱う情報の範囲で分けられます。 コマンド 扱う…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
