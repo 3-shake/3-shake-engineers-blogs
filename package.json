@@ -34,7 +34,7 @@
     "@types/react-dom": "19.3.0",
     "feed": "6.0.0",
     "fs-extra": "11.4.1",
-    "npm-run-all2": "9.0.3",
+    "npm-run-all2": "9.0.4",
     "rss-parser": "3.13.0",
     "sass": "1.106.1",
     "tsx": "4.23.15",
