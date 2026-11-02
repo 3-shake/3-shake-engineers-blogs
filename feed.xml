@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 02 Nov 2026 02:22:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 11:34:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -19,7 +19,7 @@
             <link>https://zenn.dev/ntk221/articles/98b17a773669a1</link>
             <guid isPermaLink="false">https://zenn.dev/ntk221/articles/98b17a773669a1</guid>
             <pubDate>Sat, 31 Oct 2026 13:14:45 GMT</pubDate>
-            <content:encoded><![CDATA[10/31 の ISUCON2026 本番に出ました。ISUCON は今回が初参加です。結果は 最終スコア ____ 点・____ 位 です。どちらもまだ確定していないので、いまは空けておきます。最後のベンチはたしか9万点に届かないくらいでしたねこの記事は、当日の Claude Code の会話ログ（~/.claude/projects/ の JSONL）と git の履歴から Claude Code が時刻を拾い直して書いたものを、自分でこね直したものです。数字や経緯は claude-recall で会話を検索して確かめました。 準備 suburi と template リポ...]]></content:encoded>
+            <content:encoded><![CDATA[10/31 の ISUCON2026 本番に出ました。ISUCON は今回が初参加です。結果は 最終スコア85,869点・208位 でした。この記事は、当日の Claude Code の会話ログ（~/.claude/projects/ の JSONL）と git の履歴から Claude Code が時刻を拾い直して書いたものを、自分でこね直したものです。数字や経緯は claude-recall で会話を検索して確かめました。 準備 suburi と template リポジトリ本番の前に、練習の環境とリポジトリの雛形を用意しました。練習には自分でバイブコーディングして作っ...]]></content:encoded>
             <author>ntk</author>
         </item>
         <item>
@@ -186,7 +186,7 @@
             <link>https://syu-m-5151.hatenablog.com/entry/2026/10/13/113711</link>
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/13/113711</guid>
             <pubDate>Tue, 13 Oct 2026 02:37:11 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「インフルエンサーのnwiizoさんです」と紹介されるのが本当に嫌だ。まず、俺は誰をインフルエンスしているんだ。となる。 フォロワーの数を見ても、誰かが何かを良いと思って動いてくれたかどうかは分からない。知られてはいても、誰かをインフルエンスしている実態は、自分には見えていない。嫌なのは、その実態がないまま、インフルエンサーとして紹介されるからだ。知られるように働きかけたのは自分で、会社にとってはそれが技術広報の成果でもある。だから、知られていること自体は否定できない。ただ、知られていることと、誰かをインフルエンスしていることは別だ。引っかかる点はもう1つある。この呼び名からは、何を…]]></content:encoded>
+            <content:encoded><![CDATA[はじめに 「インフルエンサーのnwiizoさんです」と紹介されるのが本当に嫌だ。 インフルエンサーという呼び名からは、何を開発し、何を運用してきたかより、どれだけ人に知られているかが先に伝わるように感じる。ソフトウェアエンジニアとして働いてきた時間は、その呼び名のどこにも入っていない。開発者としての努力を無視されているような気がする。知られるように働きかけたのは自分で、会社にとってはそれが技術広報の成果でもある。だから、呼び名が間違いだとは言えない。嫌なのは、そこに入らない仕事が自分には大きいからだ。 それでも、去年よりは受け止められるようになってきた。書籍を書き、連載に取り組む中で、発信も自…]]></content:encoded>
             <author>nwiizo</author>
         </item>
         <item>
