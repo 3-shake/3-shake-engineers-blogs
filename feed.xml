@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 02 Nov 2026 22:31:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 11:33:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[何者って、なんですか]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/03/120527</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/03/120527</guid>
+            <pubDate>Tue, 03 Nov 2026 03:05:27 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに トラックバックをやります。河又さんも喜ぶはずです。 河又さんの記事「何者かになりたいなら打席に立ち続けなさい」で、私の「おい、〇〇」シリーズを取り上げていただきました。 note.com 何者かになりたいなら、打席に立たなければいけない。それはそのとおりです。河又さんは「何者か」を、特定の分野や仕事と結びつけてその人を思い浮かべてもらえる状態として説明しています。発信は義務ではなくやめてもよいとしたうえで、そうなりたい人には続けることを勧めています。私もその考えには賛成です。 何をしている人なのかを知ってもらうには、仕事や考えを人に見せる必要があります。私自身、できないことを人に知ら…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[ISUCON2026 本番に出た]]></title>
             <link>https://zenn.dev/ntk221/articles/98b17a773669a1</link>
@@ -258,14 +266,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023</guid>
             <pubDate>Fri, 02 Oct 2026 07:30:23 GMT</pubDate>
             <content:encoded><![CDATA[はじめに Rust Learning Labは、手元のRustコードを題材に、構文や型、所有権を説明してもらうためのCodex・Claude Code向けプラグインです。「この記号は何か」「なぜここで借用するのか」「この変更で何が変わるのか」といった疑問を、具体的なコードに沿って確かめられます。 github.com Rustを書き始めた人にも、コードは読めるけれど型や所有権を選んだ理由までは説明しきれない人にも使ってもらいたいと思っています。私が考えているのは、AIに何を任せ、何を自分で確かめるか、その判断を育てる機会を仕事の中にどう残すかということです。Rust Learning Labは…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AIに実装を任せると、設計の仕事はどう変わるか - Building Evolutionary Architectures, 2nd Edition の読書感想文]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/30/162646</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/09/30/162646</guid>
-            <pubDate>Wed, 30 Sep 2026 07:26:46 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 『Building Evolutionary Architectures, 2nd Edition』を読みました。要件や技術が変わり続ける中で、システムの設計をどう変えていくかを扱った本です。部品をどう分け、どうつなぎ、どこへデータを置くか。ここでいうアーキテクチャは、そうした全体の構造を指します。1か所を直すだけで済むか、ほかの部品や担当チームまで巻き込むかにも関わります。 中心となるのは、守りたい性質を確かめる「フィットネス関数」です。新しい機能が動くだけでなく、応答が遅くなっていないか、必要なセキュリティを保てているかも、日々の変更の中で確かめる。本書は、その検査の仕組み、変更…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
