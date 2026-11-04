@@ -6,7 +6,15 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!public", "!docs"]
+    "includes": [
+      "**",
+      "!public",
+      "!docs",
+      "!**/*.md",
+      "!**/*.yaml",
+      "!**/*.yml",
+      "!**/*.scss"
+    ]
   },
   "formatter": {
     "enabled": true,
