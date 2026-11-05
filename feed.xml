@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 04 Nov 2026 22:31:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 11:34:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[S3 を Deep Archive へ ~~S3 Inventory + Athena で何件・何 GiB 動くかを数える~~]]></title>
+            <link>https://qiita.com/gensan0223/items/770ae61e9001b49b6ecd</link>
+            <guid isPermaLink="false">https://qiita.com/gensan0223/items/770ae61e9001b49b6ecd</guid>
+            <pubDate>Thu, 05 Nov 2026 08:16:31 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに業務で、S3 Glacier Deep Archive によるコスト削減に取り組むことになりました。これを機に、移す前に知っておきたい仕様を検証環境で確かめながらまとめてみました。対象読者S3 のライフサイクルで、Deep Archive への移行を...]]></content:encoded>
+            <author>Gemma Naoki</author>
+        </item>
         <item>
             <title><![CDATA[何者って、なんですか]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/03/120527</link>
@@ -258,14 +266,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/05/132102</guid>
             <pubDate>Mon, 05 Oct 2026 04:21:02 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 「自分は成果を出した」と言い切ったあとに、まだ問いが残る。では、その仕事で、チームや組織は何を手にしたのか。 難しい問題を解く。仕事を早く終える。私の実績として並ぶそれらも、私たちの勝利につながっていなければ、シニアの仕事としては意味がない。 自分の成果を、チームや組織の結果に変える。チームや組織を勝たせることが、シニアエンジニア以上の役職の仕事だ。 自分で難しい問題を解くことも、周囲が力を発揮できるようにすることも、そのための働きになる。 そのために、目標と、どんな変化を成果とみなすのかを周囲と確かめたい。自分が手を動かすか、ほかの人が判断できるように情報や権限を整えるかを選ぶ。実…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AIに実装を任せながら、Rustを学び続けたい。「Rust Learning Lab」を作りました]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023</guid>
-            <pubDate>Fri, 02 Oct 2026 07:30:23 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに Rust Learning Labは、手元のRustコードを題材に、構文や型、所有権を説明してもらうためのCodex・Claude Code向けプラグインです。「この記号は何か」「なぜここで借用するのか」「この変更で何が変わるのか」といった疑問を、具体的なコードに沿って確かめられます。 github.com Rustを書き始めた人にも、コードは読めるけれど型や所有権を選んだ理由までは説明しきれない人にも使ってもらいたいと思っています。私が考えているのは、AIに何を任せ、何を自分で確かめるか、その判断を育てる機会を仕事の中にどう残すかということです。Rust Learning Labは…]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
