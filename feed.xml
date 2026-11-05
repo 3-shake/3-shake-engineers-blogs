@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 05 Nov 2026 11:34:34 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 22:30:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[AI駆動文章作成において俺が意識しているテクニック集]]></title>
+            <link>https://zenn.dev/ntk221/articles/34ad88a9225364</link>
+            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/34ad88a9225364</guid>
+            <pubDate>Thu, 05 Nov 2026 14:35:31 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに私は基本的に、「誰もわたしが書いた文章なんて読みたくない」と思っています。みんな忙しいんです。そんな中であなたが文章を書いて、誰かがそれを読むということは、双方に何かしらの目的があるんだと思います。しかも今は AI のおかげで、文章は一瞬でいくらでも書けるようになりました。結果として、仕事の中でも外でも AI が生成した文章が溢れかえっています。AI に書かせた長文を「で、何が言いたいの？」と思いながらスクロールした経験ってありませんか。わたしはあります。だからこそ、みんな忙しい中でどうやって読んでもらうか？ を考えるテクニックが大事になると思います。この記事では...]]></content:encoded>
+            <author>ntk</author>
+        </item>
         <item>
             <title><![CDATA[S3 を Deep Archive へ ~~S3 Inventory + Athena で何件・何 GiB 動くかを数える~~]]></title>
             <link>https://qiita.com/gensan0223/items/770ae61e9001b49b6ecd</link>
@@ -259,14 +267,6 @@
             <pubDate>Wed, 07 Oct 2026 02:14:26 GMT</pubDate>
             <content:encoded><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜はじめに初めまして、戸澤（@tozastation）といいます。純粋に宇宙が大好きで、趣味で色々と勉強したり実験し...]]></content:encoded>
             <author>tozastation</author>
-        </item>
-        <item>
-            <title><![CDATA[シニアになりきれない中堅エンジニアは、何を読めばいいのか 2026年版]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/05/132102</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/05/132102</guid>
-            <pubDate>Mon, 05 Oct 2026 04:21:02 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「自分は成果を出した」と言い切ったあとに、まだ問いが残る。では、その仕事で、チームや組織は何を手にしたのか。 難しい問題を解く。仕事を早く終える。私の実績として並ぶそれらも、私たちの勝利につながっていなければ、シニアの仕事としては意味がない。 自分の成果を、チームや組織の結果に変える。チームや組織を勝たせることが、シニアエンジニア以上の役職の仕事だ。 自分で難しい問題を解くことも、周囲が力を発揮できるようにすることも、そのための働きになる。 そのために、目標と、どんな変化を成果とみなすのかを周囲と確かめたい。自分が手を動かすか、ほかの人が判断できるように情報や権限を整えるかを選ぶ。実…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
