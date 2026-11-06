@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Thu, 05 Nov 2026 22:30:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 11:34:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Herdrで、複数のエージェントを見守りたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/06/132239</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/06/132239</guid>
+            <pubDate>Fri, 06 Nov 2026 04:22:39 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 私たちエンジニアの仕事はここ1年で大きく変貌しました。大きく変貌しましたよね？ 自分でコードを書く時間より、エージェントに仕事を渡し、戻ってきた差分を読み、次に何を任せるかを決める時間のほうが長くなった人も多いはずです。仕事術の本を出したのですが、修正をしなければ嘘だなって思ったほどです。 おい、とりあえず終わらせろ: そうすれば「動けない自分」が変わるから作者:nwiizo（ぬうぃぞう）ダイヤモンド社Amazon コードを書き、動かし、直すところまでは、エージェントがかなりこなせるようになりました。では楽になったかというと、なっていません。手を動かす時間が減ったぶん、差分を読み、承…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[AI駆動文章作成において俺が意識しているテクニック集]]></title>
             <link>https://zenn.dev/ntk221/articles/34ad88a9225364</link>
@@ -259,14 +267,6 @@
             <pubDate>Wed, 07 Oct 2026 14:04:11 GMT</pubDate>
             <content:encoded><![CDATA[GPU ノードをホームラボで運用していたところ、トス証券の技術ブログ記事「トス証券が GPU-aware を超えて GPU-native クラスターを構築した方法」で紹介されている運用基準を目にしました。そこで、ホームラボの環境に合わせて規模を縮小し、GPU の状態を監視することにしました。現在、ノード 1 台に GPU が 2 枚載っていますが、GPU の状態を個別に監視してはいませんでした。この取り組みにより、「Node が Ready でも GPU は故障していることがある」という事実に備えられるようになりました。GPU のハードウェアエラー(Xid)はカーネルログにしか残らず...]]></content:encoded>
             <author>lee</author>
-        </item>
-        <item>
-            <title><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜]]></title>
-            <link>https://qiita.com/tozastation/items/d875aa90dc07ee06ce29</link>
-            <guid isPermaLink="false">https://qiita.com/tozastation/items/d875aa90dc07ee06ce29</guid>
-            <pubDate>Wed, 07 Oct 2026 02:14:26 GMT</pubDate>
-            <content:encoded><![CDATA[【ベランダ電波観測所 #1】RTL-SDR Blog V4 と WSL2 で電波を受信してみる 〜公式ドライバビルドの罠からSSHストリーミングまで〜はじめに初めまして、戸澤（@tozastation）といいます。純粋に宇宙が大好きで、趣味で色々と勉強したり実験し...]]></content:encoded>
-            <author>tozastation</author>
         </item>
     </channel>
 </rss>
