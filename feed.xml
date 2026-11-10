@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 09 Nov 2026 22:31:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 11:34:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Claude Code のスキル脆弱性スキャンを社内に導入する]]></title>
+            <link>https://sreake.com/blog/implement-claude-code-skill-vulnerability-scan/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/implement-claude-code-skill-vulnerability-scan/</guid>
+            <pubDate>Tue, 10 Nov 2026 07:29:03 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 同僚から NVIDIA SkillSpector を紹介してもらい、興味を持ったことが本稿のきっかけです。これまで、スキルやプラグインを導入する前のチェックは、目視だけで行っていました。具体的には、SKILL. […]The post Claude Code のスキル脆弱性スキャンを社内に導入する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[Herdrで、複数のエージェントを見守りたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/06/132239</link>
@@ -259,14 +267,6 @@
             <pubDate>Thu, 08 Oct 2026 11:22:55 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！純粋に宇宙が大好きで、自宅のベランダから個人で電波天文学や衛星観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談し、教わりなが...]]></content:encoded>
             <author>tozastation</author>
-        </item>
-        <item>
-            <title><![CDATA[ホームラボの GPU ノードの監視環境を構築する]]></title>
-            <link>https://zenn.dev/hyeonjae/articles/46d734a43c2c93</link>
-            <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/46d734a43c2c93</guid>
-            <pubDate>Wed, 07 Oct 2026 14:04:11 GMT</pubDate>
-            <content:encoded><![CDATA[GPU ノードをホームラボで運用していたところ、トス証券の技術ブログ記事「トス証券が GPU-aware を超えて GPU-native クラスターを構築した方法」で紹介されている運用基準を目にしました。そこで、ホームラボの環境に合わせて規模を縮小し、GPU の状態を監視することにしました。現在、ノード 1 台に GPU が 2 枚載っていますが、GPU の状態を個別に監視してはいませんでした。この取り組みにより、「Node が Ready でも GPU は故障していることがある」という事実に備えられるようになりました。GPU のハードウェアエラー(Xid)はカーネルログにしか残らず...]]></content:encoded>
-            <author>lee</author>
         </item>
     </channel>
 </rss>
