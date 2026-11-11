@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Nov 2026 11:34:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 22:31:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -29,6 +29,14 @@
             <pubDate>Tue, 10 Nov 2026 07:29:03 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 同僚から NVIDIA SkillSpector を紹介してもらい、興味を持ったことが本稿のきっかけです。これまで、スキルやプラグインを導入する前のチェックは、目視だけで行っていました。具体的には、SKILL. […]The post Claude Code のスキル脆弱性スキャンを社内に導入する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
             <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Releaseの不正差し替えに備える検証 ~ SLSA Build Track ~]]></title>
+            <link>https://www.rowicy.com/blog/slsa-build-l2-to-l3/</link>
+            <guid isPermaLink="false">https://www.rowicy.com/blog/slsa-build-l2-to-l3/</guid>
+            <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[actions/attestのSLSA Build L2から再利用ワークフローでのL3強化と検証について]]></content:encoded>
+            <author>riiimparm</author>
         </item>
         <item>
             <title><![CDATA[Herdrで、複数のエージェントを見守りたい]]></title>
@@ -260,13 +268,6 @@
             <pubDate>Sat, 10 Oct 2026 12:03:40 GMT</pubDate>
             <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！宇宙が好きで、自宅のベランダから個人で電波天文学や人工衛星の観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談しながら二人三脚...]]></content:encoded>
             <author>tozastation</author>
-        </item>
-        <item>
-            <title><![CDATA[TinyGoから理解するHID]]></title>
-            <link>https://rin2yh.com/post/understanding-hid-through-tinygo-d1pu6mtpws7ju7/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/understanding-hid-through-tinygo-d1pu6mtpws7ju7/</guid>
-            <pubDate>Sat, 10 Oct 2026 05:00:00 GMT</pubDate>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
