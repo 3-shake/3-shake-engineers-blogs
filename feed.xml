@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 10 Nov 2026 22:31:10 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 11:34:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[2026-11-11 Tamachi.sre#7 PaCにインフラリソースの命を救われました。 / PaC saves the infra resource life]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-11-11-tamachi-sre-7-pac-ni-infura-risosu-no-inochi-o-sukuwaremashita-pac-saves-the-infra-resource-life</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-11-11-tamachi-sre-7-pac-ni-infura-risosu-no-inochi-o-sukuwaremashita-pac-saves-the-infra-resource-life</guid>
+            <pubDate>Wed, 11 Nov 2026 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[[Tamachi.sre#7 - connpass](https://tamachi-sre.connpass.com/event/408227/) で話す内容TerraformでPolicy as Codeを入れてインフラの命を救った話。]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
         <item>
             <title><![CDATA[Claude Code のスキル脆弱性スキャンを社内に導入する]]></title>
             <link>https://sreake.com/blog/implement-claude-code-skill-vulnerability-scan/</link>
@@ -259,14 +267,6 @@
             <guid isPermaLink="false">https://rin2yh.com/post/understanding-hid-through-tinygo-d1pu6mtpws7ju7/</guid>
             <pubDate>Sat, 10 Oct 2026 05:00:00 GMT</pubDate>
             <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[【ベランダ電波観測所 #2】KubeEdge×SDRで始める衛星電波観測と単一ノード運用の記録]]></title>
-            <link>https://qiita.com/tozastation/items/8a1ca95fe3280e19138b</link>
-            <guid isPermaLink="false">https://qiita.com/tozastation/items/8a1ca95fe3280e19138b</guid>
-            <pubDate>Thu, 08 Oct 2026 11:22:55 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！純粋に宇宙が大好きで、自宅のベランダから個人で電波天文学や衛星観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談し、教わりなが...]]></content:encoded>
-            <author>tozastation</author>
         </item>
     </channel>
 </rss>
