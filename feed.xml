@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 11 Nov 2026 22:31:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 11:34:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[cc-sdd v3 で何が変わったか ― 仕様駆動開発が「自律実装」までつながった]]></title>
+            <link>https://sreake.com/blog/what-has-changed-in-cc-sdd-v3/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/what-has-changed-in-cc-sdd-v3/</guid>
+            <pubDate>Thu, 12 Nov 2026 07:14:53 GMT</pubDate>
+            <content:encoded><![CDATA[AI に仕様を書かせ、人がレビューしてから実装に進む。前回の記事「仕様から書くAI駆動開発へ ― cc-sdd 入門」では、この流れを cc-sdd のコマンド方式（v2）で紹介しました。 それから cc-sdd は v […]The post cc-sdd v3 で何が変わったか ― 仕様駆動開発が「自律実装」までつながった first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[2026-11-11 Tamachi.sre#7 PaCにインフラリソースの命を救われました。 / PaC saves the infra resource life]]></title>
             <link>https://speakerdeck.com/masasuzu/2026-11-11-tamachi-sre-7-pac-ni-infura-risosu-no-inochi-o-sukuwaremashita-pac-saves-the-infra-resource-life</link>
@@ -260,14 +268,6 @@
             <pubDate>Mon, 12 Oct 2026 12:01:47 GMT</pubDate>
             <content:encoded><![CDATA[はじめにTinyGo Conf 2026では、当日スタッフを務めながら、初めてCfPに採択されて登壇しました。スタッフとして関わってきたことや、これまでの出会いを思い返すと、万感の想いがありました。]]></content:encoded>
             <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[【ベランダ電波観測所 #3】KubeEdgeを活かした衛星電波解析パイプラインの構築]]></title>
-            <link>https://qiita.com/tozastation/items/81b7bafbf4f4fc3893d9</link>
-            <guid isPermaLink="false">https://qiita.com/tozastation/items/81b7bafbf4f4fc3893d9</guid>
-            <pubDate>Sat, 10 Oct 2026 12:03:40 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！宇宙が好きで、自宅のベランダから個人で電波天文学や人工衛星の観測を行う 「ベランダ電波観測所」 プロジェクトを進めています。本プロジェクトは、AIアシスタントの Antigravity に相談しながら二人三脚...]]></content:encoded>
-            <author>tozastation</author>
         </item>
     </channel>
 </rss>
