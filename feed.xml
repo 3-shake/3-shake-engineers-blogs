@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Sat, 14 Nov 2026 22:31:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Nov 2026 11:34:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,14 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Herdrで、エージェントに渡した仕事を受け入れまで見守りたい]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/15/093525</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/15/093525</guid>
+            <pubDate>Sun, 15 Nov 2026 00:35:25 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 前回の記事ではHerdrのサイドバーで、どのエージェントが自分を待っているかを探す方法を書きました。Herdrが表示するのは、エージェントの作業中や入力待ちといった状態です。渡した仕事が終わったかどうかは、画面と会話を読んで自分で判断するしかありません。 syu-m-5151.hatenablog.com Addy Osmani氏は2026年2月の記事で、AIが実装し、人がアーキテクチャと品質と正しさに責任を持つ働き方をagentic engineeringと呼びました。 addyosmani.com 同氏は7月の記事「Software Factories, Light and Da…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[cc-sdd v3 で何が変わったか ― 仕様駆動開発が「自律実装」までつながった]]></title>
             <link>https://sreake.com/blog/what-has-changed-in-cc-sdd-v3/</link>
@@ -260,14 +268,6 @@
             <pubDate>Mon, 12 Oct 2026 14:31:57 GMT</pubDate>
             <content:encoded><![CDATA[A2Aエージェントを活用するにあたって、セキュリティの観点からどのように補強していったかを整理します。 1. 背景まず現在の状況を分かりやすく整理します。私たちは main ブランチにマージする前に、 k8s クラスタ上の job の状態を把握する必要がありました。そのため GitHub で PR を上げた状態で、複数の開発者が実際に k8s クラスタへ接続して各種リソースの状態を確認していました。しかし k8s クラスタに接続するたびに VPN へ繋ぐ必要があり、手作業でリソースをひとつずつ点検するのは非常に時間がかかり煩雑な作業です。(もちろんミスも起こりえます！)そこで「...]]></content:encoded>
             <author>lee</author>
-        </item>
-        <item>
-            <title><![CDATA[TinyGo Conf 2026で初めて登壇しました！]]></title>
-            <link>https://rin2yh.com/post/tinygo-conf-2026-report/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/tinygo-conf-2026-report/</guid>
-            <pubDate>Mon, 12 Oct 2026 12:01:47 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにTinyGo Conf 2026では、当日スタッフを務めながら、初めてCfPに採択されて登壇しました。スタッフとして関わってきたことや、これまでの出会いを思い返すと、万感の想いがありました。]]></content:encoded>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
