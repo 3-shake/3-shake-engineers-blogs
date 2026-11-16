@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 16 Nov 2026 06:06:31 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 10:59:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,38 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[NVIDIA OpenShellのinference.local経由で、OpenClaw TUIからローカルLLMと会話する]]></title>
+            <link>https://sreake.com/blog/converse-local-llm-from-openclaw-tui-via-nvidia-openshell-inference-local/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/converse-local-llm-from-openclaw-tui-via-nvidia-openshell-inference-local/</guid>
+            <pubDate>Mon, 16 Nov 2026 10:58:17 GMT</pubDate>
+            <content:encoded><![CDATA[NVIDIA OpenShellのinference.local経由で、OpenClaw TUIからローカルLLMと会話する 今回は、NVIDIA NemoClaw（以下「NemoClaw」）をLambda Cloud上 […]The post NVIDIA OpenShellのinference.local経由で、OpenClaw TUIからローカルLLMと会話する first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[JAWS FESTA 2026 in AKITA ブース出展レポート]]></title>
+            <link>https://sreake.com/blog/jawsfesta-2026-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/jawsfesta-2026-report/</guid>
+            <pubDate>Mon, 16 Nov 2026 07:48:51 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Sreake事業部Tech Brandingチームの太田です。 2026年11月7日（土）あきた芸術劇場ミルハスにて「JAWS FESTA 2026 in AKITA」が開催されました。スリーシェイクは今回初め […]The post JAWS FESTA 2026 in AKITA ブース出展レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[Rustのビルド待ちを減らす設定と、そのトレードオフ]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/16/164307</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/16/164307</guid>
+            <pubDate>Mon, 16 Nov 2026 07:43:07 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 「Rustはコンパイルが遅いから」。半年前のホットリロードの記事は、技術選定の場で何度か聞いたこの一言から始めました。 Rustのビルドを速くする定番の手段は、Cargo Bookの手引きをはじめ、いくつもあります。リンカの変更・debuginfoの削減・devでの最適化・コンパイル結果のキャッシュなどです。ただ、どの手段がどの待ちに効くのかは、並べて測らないと分かりません。 2026年11月には、MakepadがRelaxを公開しました。rustc・LLVM・リンカを使わずに、Cargoのパッケージをソースから直接動かすJITです。公式ページには、大きな3Dゲームをcleanな状態…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[2026-11-16 JAWS-UG コンテナ支部 #31 ゆるLT大会 ECR のライフサイクルポリシーを いい感じに設定したい  / ECR Lifecycle policy]]></title>
+            <link>https://speakerdeck.com/masasuzu/2026-11-16-jaws-ug-kontena-shibu-31-yuru-lt-taikai-ecr-no-raifusaikuru-porishi-o-ii-kanji-ni-settei-shitai-ecr-lifecycle-policy</link>
+            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-11-16-jaws-ug-kontena-shibu-31-yuru-lt-taikai-ecr-no-raifusaikuru-porishi-o-ii-kanji-ni-settei-shitai-ecr-lifecycle-policy</guid>
+            <pubDate>Mon, 16 Nov 2026 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[[JAWS-UGコンテナ支部 #31 ゆるLT大会 - connpass](https://jawsug-container.connpass.com/event/400814/) で発表する内容。ゆるふわです]]></content:encoded>
+            <author>SUZUKI, Masashi</author>
+        </item>
         <item>
             <title><![CDATA[Herdrで、エージェントに渡した仕事を受け入れまで見守りたい]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/15/093525</link>
@@ -235,38 +267,6 @@
             <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/llm-tp-dp-serving-lab-ja</guid>
             <pubDate>Fri, 16 Oct 2026 01:18:18 GMT</pubDate>
             <content:encoded><![CDATA[GPUを4枚積んだ単一ノードで、vLLMサービングを TP=4、TP=2 × DP=2、DP=4 の3構成で立ち上げ、速度を比べた記録である。当初はTP=8まで比べる予定だった。しかしRunpodでは8枚の在庫がなかなか見つからず、価格も安くない。現状は4枚が上限なので、同じ4枚の中でTPとDPの比重だけを変える形に組み直した。先に結果を書いておく。GPU 1枚に収まるモデル(Qwen3-8B/14B)では DP=4 が最も速く、Qwen3-8Bではスループットが TP=4 の約1.3倍、Mean TTFTは約27%短かった。GPU 1枚に収まらないQwen2.5-72Bでは逆にTP=...]]></content:encoded>
-            <author>lee</author>
-        </item>
-        <item>
-            <title><![CDATA[Claude Maxプラン(5x)を半年使って見直した話]]></title>
-            <link>https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/claude-max-plan-review-e4bfb08989ad56/</guid>
-            <pubDate>Thu, 15 Oct 2026 03:08:26 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに生成AIの台頭により、開発スタイルが大きく変わり、Claude Codeの利用量が一気に増えました。私は元々Claude Proプランを契約していたのですが、足りなくなったため、8月まで約半年間Claude Maxプラン(5x)を契約しました。（以降、本稿ではClaude Proプランを「Proプラン」と表記します。Maxプラン(5x)を「Maxプラン」と表記します）]]></content:encoded>
-            <author>Rinrin</author>
-        </item>
-        <item>
-            <title><![CDATA[RustでBFSとDFSを書く]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/14/154958</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/14/154958</guid>
-            <pubDate>Wed, 14 Oct 2026 06:49:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに アルゴリズムや設計を理解すると、同じ問題に対して立てる問いが変わります。サービスの障害調査でも、「次にどのサービスを確認するか」に加えて、「依存関係をどちら向きにたどれば、影響を受ける候補を集められるか」と考えられます。関係の表し方や調査を終える条件まで、検討できるようになります。 ただし、知識があっても、目の前の問題をそのように捉えなければアプローチは変わりません。さらに、問題を探索として捉えた後にも、何を求め、何を求めないかという判断が残ります。BFSとDFSの実装を通じて、選んだ方法の理由と、その判断を見直す条件まで考えます。 BFSとDFSは、調べる順序が違う 地点と、その間…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[続続: 自分が書いたコードより目立つな - エンジニアがバズったので自戒]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/13/113711</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/13/113711</guid>
-            <pubDate>Tue, 13 Oct 2026 02:37:11 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 「インフルエンサーのnwiizoさんです」と紹介されるのが本当に嫌だ。 インフルエンサーという呼び名からは、何を開発し、何を運用してきたかより、どれだけ人に知られているかが先に伝わるように感じる。ソフトウェアエンジニアとして働いてきた時間は、その呼び名のどこにも入っていない。開発者としての努力を無視されているような気がする。知られるように働きかけたのは自分で、会社にとってはそれが技術広報の成果でもある。だから、呼び名が間違いだとは言えない。嫌なのは、そこに入らない仕事が自分には大きいからだ。 それでも、去年よりは受け止められるようになってきた。書籍を書き、連載に取り組む中で、発信も自…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[PRコメントからKubernetesに訊く ~GitHub ActionsからA2Aエージェントをシークレットレスで繋ぐ~]]></title>
-            <link>https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja</link>
-            <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja</guid>
-            <pubDate>Mon, 12 Oct 2026 14:31:57 GMT</pubDate>
-            <content:encoded><![CDATA[A2Aエージェントを活用するにあたって、セキュリティの観点からどのように補強していったかを整理します。 1. 背景まず現在の状況を分かりやすく整理します。私たちは main ブランチにマージする前に、 k8s クラスタ上の job の状態を把握する必要がありました。そのため GitHub で PR を上げた状態で、複数の開発者が実際に k8s クラスタへ接続して各種リソースの状態を確認していました。しかし k8s クラスタに接続するたびに VPN へ繋ぐ必要があり、手作業でリソースをひとつずつ点検するのは非常に時間がかかり煩雑な作業です。(もちろんミスも起こりえます！)そこで「...]]></content:encoded>
             <author>lee</author>
         </item>
     </channel>
