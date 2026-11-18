@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 17 Nov 2026 22:31:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 11:37:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,30 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[dbt Projects on Snowflake を試して考える、GitHub Actions との使い分け]]></title>
+            <link>https://sreake.com/blog/dbt-snowflake-vs-github-actions-compariso/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/dbt-snowflake-vs-github-actions-compariso/</guid>
+            <pubDate>Wed, 18 Nov 2026 09:08:54 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに Snowflake で dbt の開発・運用を検討する中で、dbt Projects on Snowflake と GitHub Actions（以下、GHA）をどう使い分けるべきか気になり、実際に dbt P […]The post dbt Projects on Snowflake を試して考える、GitHub Actions との使い分け first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[dbt World Tour 2026参加レポート]]></title>
+            <link>https://sreake.com/blog/dbt-world-tour-2026-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/dbt-world-tour-2026-report/</guid>
+            <pubDate>Wed, 18 Nov 2026 05:10:52 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 3-shake 高杉です。 今回2026年10月20日に開催された「dbt World Tour 2026 東京」に参加してきました。dbt World Tourとは、dbtの最新の動向やdbtを実際に業務に使 […]The post dbt World Tour 2026参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA["技術勉強会"をやめる前に、世界観をつくろう]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/18/113034</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/18/113034</guid>
+            <pubDate>Wed, 18 Nov 2026 02:30:34 GMT</pubDate>
+            <content:encoded><![CDATA[kotowazamanさんのQiitaの記事を読みました。 qiita.com 調べれば分かる一般的な知識を、誰かがまとめて発表するだけの社内勉強会は、AIに聞けば済む時代にはやめてしまおう。そういう主張の記事です。書かれている内容には、一部賛成です。冒頭の会議室では、発表を聞く9人が手元のSlackで返信し、質疑に入って5秒ほどたつと、ふだんからよく話す1人が当たり障りのない質問をします。残業続きの人たちにこうして1時間集まってもらうなら、何を頼みたくて呼ぶのかは、私も確かめたいところです。ああいう会は減ったほうがいいと考えていますし、開催回数が評価されるせいで会が続いてしまう、という指摘に…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Rustのデプロイ環境で、いま動いているバイナリを答えられるようにする]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/17/134612</link>
@@ -245,29 +269,6 @@
             <pubDate>Wed, 21 Oct 2026 02:38:21 GMT</pubDate>
             <content:encoded><![CDATA[はじめに 探索の答えを変えずに、調べる量を減らせるでしょうか。AIへ「速くして」と頼む時、自分でも省略の根拠を説明できるように、αβ枝刈りを追ってみます。 対戦ゲームを作り、コンピューターに先の手まで読ませるとします。自分の手の後には相手の応手があり、その後にも選択が続きます。読む範囲を広げるほど候補が増え、遊んでいる人は次の一手を待つことになります。途中で読むのをやめれば早く返せますが、不利な展開を見落とす可能性があります。 すでに有利な手を1つ見つけている時、別の手では相手がこちらを不利にできると分かったら、どうでしょう。その先に魅力的な展開があっても、相手がそれを選んでくれるとは限りませ…]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[初めて Terraform の二重管理を踏んだ話]]></title>
-            <link>https://qiita.com/gensan0223/items/535b9f4fc768d48b378d</link>
-            <guid isPermaLink="false">https://qiita.com/gensan0223/items/535b9f4fc768d48b378d</guid>
-            <pubDate>Tue, 20 Oct 2026 08:27:53 GMT</pubDate>
-            <content:encoded><![CDATA[結論for_each から要素を1つ外す = そのインスタンスの destroy そのもの。ファイルごと消した場合と結果は同じです。同じ付与を2箇所で宣言すると危険。「自分のぶんだけ消したつもり」が、他サービスの権限を消す可能性あり。実体を残して state か...]]></content:encoded>
-            <author>Gemma Naoki</author>
-        </item>
-        <item>
-            <title><![CDATA[全テスト成功]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/20/122150</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/20/122150</guid>
-            <pubDate>Tue, 20 Oct 2026 03:21:50 GMT</pubDate>
-            <content:encoded><![CDATA[二枚の予約確認書 水野は、予約確認書が二枚あることより、梶原がそれを印刷してきたことを先に気にした。ふだんならチャットに予約番号が送られてくる。確認します、と返せば、そのあと何を確認するかを考える時間があった。 梶原は二枚とも、水野から読める向きに置いた。 開発を始めて五十九日目だった。どちらにも、土曜日の午前九時、折り畳み椅子六十脚、とある。届け先と予約番号が違い、下のほうの「予約が確定しました」だけが同じだった。水野は一度、その文の下に何か小さな注意書きがないか探した。 「倉庫には六十脚です」 「どっちが先ですか」 「先なら届けていいんですか」 梶原は、どちらを先に受け付けたかを知らないわ…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[tinygo.vimとgopls-lazyが噛み合わなかった話]]></title>
-            <link>https://rin2yh.com/post/tinygo-gopls-lazy-0txdwpqmhwbdin/</link>
-            <guid isPermaLink="false">https://rin2yh.com/post/tinygo-gopls-lazy-0txdwpqmhwbdin/</guid>
-            <pubDate>Mon, 19 Oct 2026 15:00:00 GMT</pubDate>
-            <author>Rinrin</author>
         </item>
     </channel>
 </rss>
