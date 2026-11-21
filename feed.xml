@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 20 Nov 2026 22:31:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 11:34:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,30 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[【ベランダ電波観測所 #4】Vダイポール×FMブロック導入で気象衛星の地球画像をデコード＆専用ビューアを作った話]]></title>
+            <link>https://qiita.com/tozastation/items/ef6437db3365c3efcf02</link>
+            <guid isPermaLink="false">https://qiita.com/tozastation/items/ef6437db3365c3efcf02</guid>
+            <pubDate>Sat, 21 Nov 2026 03:41:53 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにこんにちは、戸澤（@tozastation）です！宇宙が好きで、自宅のベランダから個人で電波天文学や人工衛星の観測を行う「ベランダ電波観測所」プロジェクトを進めています。本プロジェクトは AI アシスタントの Antigravity に相談しながら二人三脚で...]]></content:encoded>
+            <author>tozastation</author>
+        </item>
+        <item>
+            <title><![CDATA[Rustのenumで式木を作り、x + 2 の右側だけを書き換える]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/21/123701</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/21/123701</guid>
+            <pubDate>Sat, 21 Nov 2026 03:37:01 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに スコアの計算式が x + 2 だとします。「2を3に変えたい」という依頼なら、設定画面に数値の入力欄が1つあれば足ります。では、次の依頼が「2のところに x * x を入れたい」だったらどうでしょう。利用者が指定したいのは、入力した値を2乗する計算です。 私が「後で変更しやすくして」とAIに頼むとき、この2つの依頼を区別できているでしょうか。式を文字列として扱うと、「足し算の右側」がどこまでかは括弧や演算の優先順位を読んで判断することになります。演算とその引数を木にすれば、右側を1つの枝として指定できます。 数式を演算と引数に分ける x + 2 の x は、計算するときに値を入れる変…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[さわって理解するeBPF観測 ~bpftrace~]]></title>
+            <link>https://www.rowicy.com/blog/ebpf-beginner/</link>
+            <guid isPermaLink="false">https://www.rowicy.com/blog/ebpf-beginner/</guid>
+            <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[bpftraceからシステムコールを観測し、Linuxカーネルのイベントをどこまで取得できるのかを確認する]]></content:encoded>
+            <author>riiimparm</author>
+        </item>
         <item>
             <title><![CDATA[dbt Projects on Snowflake を試して考える、GitHub Actions との使い分け]]></title>
             <link>https://sreake.com/blog/dbt-snowflake-vs-github-actions-compariso/</link>
@@ -245,30 +269,6 @@
             <pubDate>Fri, 23 Oct 2026 13:49:38 GMT</pubDate>
             <content:encoded><![CDATA[おはこんばんちは(挨拶)もっさん(@_mossann_t)です。『AWSの知識地図 [改訂新版]』が刊行となりました続きをみる]]></content:encoded>
             <author>もっさん</author>
-        </item>
-        <item>
-            <title><![CDATA[PHP2Shellから考える、Rustは何を防ぎ、何を防がないのか]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/22/185047</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/22/185047</guid>
-            <pubDate>Thu, 22 Oct 2026 09:50:47 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに PHP2Shellへの対応、お疲れさまでした。この記事は、更新や影響の確認が一段落し、今後の開発や保守を考える人に向けた読み物です。 2026年10月21日、PHPは外部からのリクエストによって、サーバー上で任意のコードを実行されうる2件の脆弱性を修正しました。PHP2Shellと呼ばれる問題です。PHP公式はWeb向けの各実行方式に影響し、Apacheのmod_phpではアプリケーションのコードが動く前から攻撃が成立すると説明しています。 www.php.net GMO Flatt Securityの解説がめちゃくちゃ良いので、何が起こったのかは、まずこちらを読んでみてください。 …]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Service-Linked Roleってなんだ？]]></title>
-            <link>https://qiita.com/gensan0223/items/bb4d686853742dc62e8b</link>
-            <guid isPermaLink="false">https://qiita.com/gensan0223/items/bb4d686853742dc62e8b</guid>
-            <pubDate>Wed, 21 Oct 2026 08:50:05 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに今さらながら、AWS の Service-Linked Role（SLR）を初めて知りました。このロールが陰ながら支えてくれていたことに、感謝しています。一方で先日、このロールの影響でエラーが出ました。同じ轍を踏んでほしくないと思い、記事にしました。概...]]></content:encoded>
-            <author>Gemma Naoki</author>
-        </item>
-        <item>
-            <title><![CDATA[Rustでαβ枝刈りを実装する]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/21/113821</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/21/113821</guid>
-            <pubDate>Wed, 21 Oct 2026 02:38:21 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに 探索の答えを変えずに、調べる量を減らせるでしょうか。AIへ「速くして」と頼む時、自分でも省略の根拠を説明できるように、αβ枝刈りを追ってみます。 対戦ゲームを作り、コンピューターに先の手まで読ませるとします。自分の手の後には相手の応手があり、その後にも選択が続きます。読む範囲を広げるほど候補が増え、遊んでいる人は次の一手を待つことになります。途中で読むのをやめれば早く返せますが、不利な展開を見落とす可能性があります。 すでに有利な手を1つ見つけている時、別の手では相手がこちらを不利にできると分かったら、どうでしょう。その先に魅力的な展開があっても、相手がそれを選んでくれるとは限りませ…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
