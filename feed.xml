@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Mon, 23 Nov 2026 22:30:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 11:34:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rustで蟻コロニー最適化を書く]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/24/114005</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/24/114005</guid>
+            <pubDate>Tue, 24 Nov 2026 02:40:05 GMT</pubDate>
+            <content:encoded><![CDATA[4つの都市を1回ずつ訪れ、出発点に戻ります。都市0からすぐ隣の都市1と都市3までは、どちらも距離1です。最初はどちらも同じ確率で選びます。この記事の実行例では、12匹の蟻が巡回を終えると、都市3を選ぶ確率のほうが高くなります。道の長さは変わっていないのに、なぜでしょうか。 私が蟻コロニー最適化（Ant Colony Optimization、ACO）を復習して気になったのは、ある道順で短く回れた経験を、別の道順にどう生かすかでした。この実装では、蟻がたどった道を1本ずつ記録します。12匹が戻ってきたら、それぞれの巡回距離に応じて、通った道にフェロモンという数値を加えます。次の12匹は、以前の巡…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[Jev 互換の lev を Cloud Run の GPU（L4）に載せて、起動と並行リクエストの速さを測る]]></title>
+            <link>https://zenn.dev/satohjohn/articles/lev-cloudrun-gpu-coldstart</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/lev-cloudrun-gpu-coldstart</guid>
+            <pubDate>Tue, 24 Nov 2026 00:10:58 GMT</pubDate>
+            <content:encoded><![CDATA[はじめにJev は文章を生成せず、答えの形式（はい・いいえ、選択肢、段階など）を決めた質問に確率で答える判定モデルです。lev は、その API を個人が再現した小さなモデルで、LiquidAI の LFM2.5-350M を元にしています。M3 の Mac（MPS）では 1 件 80〜100 ms で答えます。この lev を Cloud Run の GPU（NVIDIA L4）に置き、2 つの速さを測りました。インスタンスが 0 台の状態から最初の応答までの時間（コールドスタート）と、並行してリクエストを送ったときのスループットと待ち時間です。重みはコンテナイメージに入れず...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
         <item>
             <title><![CDATA[テストが通ったコードは、どこまで正しいのか。Rustで考えるAI時代の形式検証]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/22/153730</link>
@@ -253,22 +269,6 @@
             <pubDate>Tue, 27 Oct 2026 03:26:02 GMT</pubDate>
             <content:encoded><![CDATA[Rustで8ビットの遺伝的アルゴリズムを実装し、選択・交叉・突然変異とエリート保存を確かめます。全探索との比較や、探索結果を採用する際の条件も扱います。]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Releaseの不正差し替えに備える検証入門]]></title>
-            <link>https://www.rowicy.com/blog/verify-release-binary/</link>
-            <guid isPermaLink="false">https://www.rowicy.com/blog/verify-release-binary/</guid>
-            <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[リリースバイナリが差し替えられても気づけるか。ダイジェスト検証、GPG・Cosign署名、attestationによる来歴検証までを整理]]></content:encoded>
-            <author>riiimparm</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-10-24 JAWS JAWS-UG 茨城 #18 IAM Policy Autopilotってなにさ。terraform planからIAM Policyつくれるの? / What's IAM Policy Autopilot  ]]></title>
-            <link>https://speakerdeck.com/masasuzu/whats-iam-policy-autopilot</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/whats-iam-policy-autopilot</guid>
-            <pubDate>Sat, 24 Oct 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[[JAWS-UG 茨城 #18 祝！2周年記念祭 - connpass](https://jawsug-ibaraki.connpass.com/event/407471/)で話した内容。 IAM Policy Autopilot はなにか。Terraform Planとの連携についてLTしました]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
         </item>
     </channel>
 </rss>
