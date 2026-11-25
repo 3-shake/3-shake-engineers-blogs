@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Tue, 24 Nov 2026 22:31:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 08:11:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -159,6 +159,14 @@
             <author>Sreake</author>
         </item>
         <item>
+            <title><![CDATA[いわゆる『AI臭』がするとなぜ困るのか]]></title>
+            <link>https://speakerdeck.com/_mossann_t/ai-o-tsumugu-monotachi-4-mosan</link>
+            <guid isPermaLink="false">https://speakerdeck.com/_mossann_t/ai-o-tsumugu-monotachi-4-mosan</guid>
+            <pubDate>Thu, 12 Nov 2026 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[AIを紡ぐ者たち #4 ～AIに振り回された人間たちの慰労会〜(https://3-shake.connpass.com/event/410066/) の登壇資料です。「AIが大半を作成したように見える成果物が嫌厭されるのは、認知負荷が高いからである」という仮説のもと、人間の認知負荷が低い成果物をどのようにアウトプットすれば良いのかを話しています。]]></content:encoded>
+            <author>もっさん</author>
+        </item>
+        <item>
             <title><![CDATA[2026-11-11 Tamachi.sre#7 PaCにインフラリソースの命を救われました。 / PaC saves the infra resource life]]></title>
             <link>https://speakerdeck.com/masasuzu/2026-11-11-tamachi-sre-7-pac-ni-infura-risosu-no-inochi-o-sukuwaremashita-pac-saves-the-infra-resource-life</link>
             <guid isPermaLink="false">https://speakerdeck.com/masasuzu/2026-11-11-tamachi-sre-7-pac-ni-infura-risosu-no-inochi-o-sukuwaremashita-pac-saves-the-infra-resource-life</guid>
@@ -261,14 +269,6 @@
             <pubDate>Tue, 27 Oct 2026 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[[月末 Tech Lunch Online#18 - Google Cloud を語る！- - connpass](https://jaguer-tech-lunch.connpass.com/event/408350/)で話した内容。Cloud Run のプロビジョニングとデプロイをどう境界を引いて、どう値を受け渡して、どう連携していくといいのか。最近の私見です。]]></content:encoded>
             <author>SUZUKI, Masashi</author>
-        </item>
-        <item>
-            <title><![CDATA[Rustで遺伝的アルゴリズムを書く]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/27/122602</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/27/122602</guid>
-            <pubDate>Tue, 27 Oct 2026 03:26:02 GMT</pubDate>
-            <content:encoded><![CDATA[Rustで8ビットの遺伝的アルゴリズムを実装し、選択・交叉・突然変異とエリート保存を確かめます。全探索との比較や、探索結果を採用する際の条件も扱います。]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
