@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 25 Nov 2026 08:24:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 11:34:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[GKE Gateway で SSE が300秒で切れる原因とその調査]]></title>
+            <link>https://qiita.com/gensan0223/items/cef0998687d7be622f51</link>
+            <guid isPermaLink="false">https://qiita.com/gensan0223/items/cef0998687d7be622f51</guid>
+            <pubDate>Wed, 25 Nov 2026 10:13:55 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の対象読者GKE Gateway（Google Cloud の外部アプリケーションロードバランサ）の後ろで、SSE やストリーミング応答を返している方oauth2-proxy と Keycloak で、API やツールの前段に認証を置いている方「5分で切れ...]]></content:encoded>
+            <author>Gemma Naoki</author>
+        </item>
+        <item>
+            <title><![CDATA[db tech showcase 2026 Tokyo レポート]]></title>
+            <link>https://sreake.com/blog/db-tech-showcase-2026-tokyo-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/db-tech-showcase-2026-tokyo-report/</guid>
+            <pubDate>Wed, 25 Nov 2026 08:49:48 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 3-shake DBRE 高杉です。 2026年11月5日と6日に開催されました、「db tech showcase 2026 Tokyo」に参加してきました。私が大阪在住で当日移動だったり、業務の都合で聞けた […]The post db tech showcase 2026 Tokyo レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
         <item>
             <title><![CDATA[Rustで蟻コロニー最適化を書く]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/24/114005</link>
@@ -253,22 +269,6 @@
             <pubDate>Wed, 28 Oct 2026 16:02:06 GMT</pubDate>
             <content:encoded><![CDATA[Rustで順序交叉（OX）を実装し、都市を重複・欠落させずに2つの親から子を作ります。循環して埋める手順と、区間の端や不正な入力の検査を確かめます。]]></content:encoded>
             <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[バッチで安く、A/Bで確かめ、動的ルーティングで届ける Google Cloudで実現するLLM選定戦略]]></title>
-            <link>https://speakerdeck.com/shukob/google-cloud-llm-routing-strategy</link>
-            <guid isPermaLink="false">https://speakerdeck.com/shukob/google-cloud-llm-routing-strategy</guid>
-            <pubDate>Wed, 28 Oct 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[https://jaguer-tech-lunch.connpass.com/event/408350/2026年10月28日に開催された「Jagu'e'r Tech Lunch」での登壇資料です。当日はデモを交えながら、Google Cloud / Gemini 環境における実践的な LLM 選定・移行・運用戦略についてお話ししました。  ■ 概要LLM の急速な進化に伴い「最新・最高性能のモデルへ即時切り替えたい」というニーズが高まる一方、プロンプトの効き方の変化、JSON 出力構造の崩れ、予期せぬレイテンシ増やレート制限といった本番トラブルのリスクも存在します。  本発表では、モデル変更に伴うリスクを最小化し、コストとユーザー体験のバランスを最大化するための「3重の防御策」と「動的ルーティング」のアーキテクチャパターンを紹介しています。   ■ 主なトピック新モデルへの即時切り替えに潜むリスク（出力崩れ・レイテンシ増など）  第1の防壁：決定論的アサーションとオフライン評価（CI/CDによる足切り、LLM-as-a-Judge の使い所）  第2の防壁：遅延0msの Shadow Testing 基盤（本番ミラーリング）   FinOps の実践：Gemini Batch API によるコスト半減アプローチ   第3の防壁：ブラインド A/B テストの実態（「高性能モデル＝最良のUX」とは限らないケーススタディ）  最適解：ユースケースに応じた動的ルーティング（Contextual Routing）  ■ 関連リンク登壇イベント（connpass）: https://jaguer-tech-lunch.connpass.com/event/408350/デモ・検証リポジトリ: https://github.com/shu-kob/adk-agent-chat（ADK: Agent Development Kit と Gemini を用いたチャットボット実装）  #GoogleCloud #Gemini #LLM #FinOps #Jaguer #機械学習]]></content:encoded>
-            <author>Shu Kobuchi</author>
-        </item>
-        <item>
-            <title><![CDATA[2026-10-28 Jagu'e'r月末 Tech Lunch Online#18 - Google Cloud を語る！ Cloud Run のプロビジョニングとデプロイの隙間を埋める - tfstate との連携 / Cloud Run Deploy and Provisioning]]></title>
-            <link>https://speakerdeck.com/masasuzu/cloud-run-deploy-and-provisioning</link>
-            <guid isPermaLink="false">https://speakerdeck.com/masasuzu/cloud-run-deploy-and-provisioning</guid>
-            <pubDate>Tue, 27 Oct 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[[月末 Tech Lunch Online#18 - Google Cloud を語る！- - connpass](https://jaguer-tech-lunch.connpass.com/event/408350/)で話した内容。Cloud Run のプロビジョニングとデプロイをどう境界を引いて、どう値を受け渡して、どう連携していくといいのか。最近の私見です。]]></content:encoded>
-            <author>SUZUKI, Masashi</author>
         </item>
     </channel>
 </rss>
