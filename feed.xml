@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Wed, 25 Nov 2026 22:31:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 11:34:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,38 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Rustで粒子群最適化を書く]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/26/185155</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/26/185155</guid>
+            <pubDate>Thu, 26 Nov 2026 09:51:55 GMT</pubDate>
+            <content:encoded><![CDATA[24個の候補をすべて同じ座標に置き、初速を0にします。移動のたびに乱数を使うのに、候補はどれも最初の場所から一歩も動きません。出発点をばらばらにすると、何が変わるのでしょうか。 粒子群最適化（Particle Swarm Optimization、PSO）では、試したい設定の組み合わせを座標で表し、候補を「粒子」と呼びます。各粒子が覚えているのは、自分がこれまでに試した中でいちばん成績のよかった座標です。群れの中でいちばんよかった座標は、ほかの粒子も使えます。この2つの記録が次の一歩にどう効くか、1個の粒子を追ってみます。 答えが分かっている問題で試す 今回は2つの数 x と y を動かし、B…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
+        <item>
+            <title><![CDATA[macOS で go test を流すと、開発者のログイン状態が黙って消える]]></title>
+            <link>https://qiita.com/gensan0223/items/d02c3e777f4d87051f8c</link>
+            <guid isPermaLink="false">https://qiita.com/gensan0223/items/d02c3e777f4d87051f8c</guid>
+            <pubDate>Thu, 26 Nov 2026 09:18:44 GMT</pubDate>
+            <content:encoded><![CDATA[この記事の対象読者Go で CLI やデスクトップアプリを作っていて、設定やトークンを os.UserConfigDir の下に保存している方テストで t.Setenv を使い、XDG_CONFIG_HOME を一時フォルダに向けて設定の置き場を隔離している方開発...]]></content:encoded>
+            <author>Gemma Naoki</author>
+        </item>
+        <item>
+            <title><![CDATA[CloudNative Days Winter 2026参加レポート]]></title>
+            <link>https://sreake.com/blog/cloudnative-days-winter-2026-report/</link>
+            <guid isPermaLink="false">https://sreake.com/blog/cloudnative-days-winter-2026-report/</guid>
+            <pubDate>Thu, 26 Nov 2026 04:38:41 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに こんにちは、Sreake事業部の三雲(mi_queue)です。 2026年11月18・19日に有明セントラルタワーホール＆カンファレンスで開催された CloudNative Days Winter 2026 ( […]The post CloudNative Days Winter 2026参加レポート first appeared on sreake.com | 株式会社スリーシェイク.]]></content:encoded>
+            <author>Sreake</author>
+        </item>
+        <item>
+            <title><![CDATA[Cloud Run の static24 を検証する：Nginx の挙動、Cloud Storage のマウント、IAP]]></title>
+            <link>https://zenn.dev/satohjohn/articles/cloudrun-static24-verify</link>
+            <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/cloudrun-static24-verify</guid>
+            <pubDate>Thu, 26 Nov 2026 00:00:10 GMT</pubDate>
+            <content:encoded><![CDATA[Cloud Run に、静的サイトを配信するためのランタイム static24 が加わりました（Preview）。index.html のあるディレクトリを渡すと、Google が用意した Nginx のイメージに載せて配信します。Dockerfile も Nginx の設定も書きません。 ドキュメントに書かれた機能と、書かれていない挙動を、デプロイして確かめました。Cloud Storage をマウントした構成と、IAP をかけた構成も試しています。リージョンは asia-northeast1（東京）、検証日は 2026 年 11 月 25 日です。使い方の例として、Claude が作...]]></content:encoded>
+            <author>SatohJohn</author>
+        </item>
         <item>
             <title><![CDATA[GKE Gateway で SSE が300秒で切れる原因とその調査]]></title>
             <link>https://qiita.com/gensan0223/items/cef0998687d7be622f51</link>
@@ -43,7 +75,7 @@
             <link>https://zenn.dev/satohjohn/articles/lev-cloudrun-gpu-coldstart</link>
             <guid isPermaLink="false">https://zenn.dev/satohjohn/articles/lev-cloudrun-gpu-coldstart</guid>
             <pubDate>Tue, 24 Nov 2026 00:10:58 GMT</pubDate>
-            <content:encoded><![CDATA[はじめにJev は文章を生成せず、答えの形式（はい・いいえ、選択肢、段階など）を決めた質問に確率で答える判定モデルです。lev は、その API を個人が再現した小さなモデルで、LiquidAI の LFM2.5-350M を元にしています。M3 の Mac（MPS）では 1 件 80〜100 ms で答えます。この lev を Cloud Run の GPU（NVIDIA L4）に置き、2 つの速さを測りました。インスタンスが 0 台の状態から最初の応答までの時間（コールドスタート）と、並行してリクエストを送ったときのスループットと待ち時間です。重みはコンテナイメージに入れず...]]></content:encoded>
+            <content:encoded><![CDATA[Jev は文章を生成せず、答えの形式（はい・いいえ、選択肢、段階など）を決めた質問に確率で答える判定モデルです。lev は、その API を個人が再現した小さなモデルで、LiquidAI の LFM2.5-350M を元にしています。M3 の Mac（MPS）では 1 件 80〜100 ms で答えます。 この lev を Cloud Run の GPU（NVIDIA L4）に置き、2 つの速さを測りました。インスタンスが 0 台の状態から最初の応答までの時間（コールドスタート）と、並行してリクエストを送ったときのスループットと待ち時間です。 重みはコンテナイメージに入れず、Cloud ...]]></content:encoded>
             <author>SatohJohn</author>
         </item>
         <item>
@@ -219,7 +251,7 @@
             <link>https://zenn.dev/ntk221/articles/34ad88a9225364</link>
             <guid isPermaLink="false">https://zenn.dev/ntk221/articles/34ad88a9225364</guid>
             <pubDate>Thu, 05 Nov 2026 14:35:31 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに私は基本的に、「誰もわたしが書いた文章なんて読みたくない」と思っています。みんな忙しいんです。そんな中であなたが文章を書いて、誰かがそれを読むということは、双方に何かしらの目的があるんだと思います。しかも今は AI のおかげで、文章は一瞬でいくらでも書けるようになりました。結果として、仕事の中でも外でも AI が生成した文章が溢れかえっています。AI に書かせた長文を「で、何が言いたいの？」と思いながらスクロールした経験ってありませんか。わたしはあります。だからこそ、みんな忙しい中でどうやって読んでもらうか？ を考えるテクニックが大事になると思います。この記事では...]]></content:encoded>
+            <content:encoded><![CDATA[私は基本的に、「誰もわたしが書いた文章なんて読みたくない」と思っています。 みんな忙しいんです。そんな中であなたが文章を書いて、誰かがそれを読むということは、双方に何かしらの目的があるんだと思います。 しかも今は AI のおかげで、文章は一瞬でいくらでも書けるようになりました。結果として、仕事の中でも外でも AI が生成した文章が溢れかえっています。AI に書かせた長文を「で、何が言いたいの？」と思いながらスクロールした経験ってありませんか。 わたしはあります。 だからこそ、みんな忙しい中でどうやって読んでもらうか？ を考えるテクニックが大事になると思います。この記事では、私が普段使って...]]></content:encoded>
             <author>ntk</author>
         </item>
         <item>
@@ -236,38 +268,6 @@
             <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/03/120527</guid>
             <pubDate>Tue, 03 Nov 2026 03:05:27 GMT</pubDate>
             <content:encoded><![CDATA[はじめに トラックバックをやります。河又さんも喜ぶはずです。 河又さんの記事「何者かになりたいなら打席に立ち続けなさい」で、私の「おい、〇〇」シリーズを取り上げていただきました。 note.com 何者かになりたいなら、打席に立たなければいけない。それはそのとおりです。河又さんは「何者か」を、特定の分野や仕事と結びつけてその人を思い浮かべてもらえる状態として説明しています。発信は義務ではなくやめてもよいとしたうえで、そうなりたい人には続けることを勧めています。私もその考えには賛成です。 何をしている人なのかを知ってもらうには、仕事や考えを人に見せる必要があります。私自身、できないことを人に知ら…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[ISUCON2026 本番に出た]]></title>
-            <link>https://zenn.dev/ntk221/articles/98b17a773669a1</link>
-            <guid isPermaLink="false">https://zenn.dev/ntk221/articles/98b17a773669a1</guid>
-            <pubDate>Sat, 31 Oct 2026 13:14:45 GMT</pubDate>
-            <content:encoded><![CDATA[10/31 の ISUCON2026 本番に出ました。ISUCON は今回が初参加です。結果は 最終スコア85,869点・208位 でした。この記事は、当日の Claude Code の会話ログ（~/.claude/projects/ の JSONL）と git の履歴から Claude Code が時刻を拾い直して書いたものを、自分でこね直したものです。数字や経緯は claude-recall で会話を検索して確かめました。 準備 suburi と template リポジトリ本番の前に、練習の環境とリポジトリの雛形を用意しました。練習には自分でバイブコーディングして作っ...]]></content:encoded>
-            <author>ntk</author>
-        </item>
-        <item>
-            <title><![CDATA[『魔法使いの弟子』を思い出した。AIで作ったものに責任を持つということ]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/30/131753</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/30/131753</guid>
-            <pubDate>Fri, 30 Oct 2026 04:17:53 GMT</pubDate>
-            <content:encoded><![CDATA[がるさんの「魔法が使えるようになったプログラマたちへ」を読んで、『魔法使いの弟子』を思い出しました。ディズニーの『ファンタジア』で、ミッキーがほうきに水を運ばせる、あの話です。 ファンタジア スペシャル・エディション [DVD]ウォルト・ディズニー・ジャパン株式会社Amazon 記事は、AIで何かを作れるようになった喜びを認めながら、作ったものを理解し、面倒を見続けられるかを問いかけています。とくに好きだったのは、自分用だった便利な道具がほかの人にも使われ、いつの間にか業務から外せなくなる話でした。 水を運ばせることには成功した。 最初は魔法を動かせても止められない弟子と、よく似ていると思いま…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[AIに実装を任せる時代に、何を残し、何を変えるのか - Domain-Driven Transformation の読書感想文]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/29/134734</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/29/134734</guid>
-            <pubDate>Thu, 29 Oct 2026 04:47:34 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに AIに古いシステムを書き直してもらい、今と同じ動作を再現できたとします。テストも通りました。けれど、利用者は翌朝も同じ数字を転記し、別の表で確かめている。書き換えは終わったのに、その人の仕事は変わっていません。 『Domain-Driven Transformation』を読みながら考えたのは、何を残し、何を変えるかを、どこで判断するのかということでした。古いコードには業務を支えてきた知識があります。一方で、ソフトウェアの都合で続けてきた手順もあります。同じ動作を再現できても、それを今後も残す理由は、コードだけでは分かりません。利用者の要望をそのまま実装するだけでも、この判断はできま…]]></content:encoded>
-            <author>nwiizo</author>
-        </item>
-        <item>
-            <title><![CDATA[Rustで順序交叉を書く]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/10/29/010206</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/10/29/010206</guid>
-            <pubDate>Wed, 28 Oct 2026 16:02:06 GMT</pubDate>
-            <content:encoded><![CDATA[Rustで順序交叉（OX）を実装し、都市を重複・欠落させずに2つの親から子を作ります。循環して埋める手順と、区間の端や不正な入力の検査を確かめます。]]></content:encoded>
             <author>nwiizo</author>
         </item>
     </channel>
