@@ -325,21 +325,6 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
-    id: "toVersus",
-    name: "Tsubasa Nagasawa",
-    role: "SRE",
-    bio: "lazy programmer",
-    avatarSrc: "/avatars-webp/toVersus.webp",
-    sources: [
-      "https://qiita.com/toVersus/feed",
-      "https://zenn.dev/toversus/feed",
-    ],
-    includeUrlRegex: "",
-    xUsername: "toversus26",
-    githubUsername: "toVersus",
-    websiteUrl: "",
-  },
-  {
     id: "raba-jp",
     name: "Hiroki Sakuraba",
     role: "Software Developer",
