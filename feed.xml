@@ -4,7 +4,7 @@
         <title>3-shake Engineers' Blogs</title>
         <link>https://blog.3-shake.com/</link>
         <description>3-shake に所属するエンジニアのブログ記事をまとめています。</description>
-        <lastBuildDate>Fri, 27 Nov 2026 22:30:58 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 11:34:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,6 +14,22 @@
             <link>https://blog.3-shake.com/</link>
         </image>
         <copyright>3-shake Inc.</copyright>
+        <item>
+            <title><![CDATA[Kubernetesをどれで動かすか - 選択肢を比べてみる]]></title>
+            <link>https://zenn.dev/r4ynode/articles/kubernetes-distributions</link>
+            <guid isPermaLink="false">https://zenn.dev/r4ynode/articles/kubernetes-distributions</guid>
+            <pubDate>Sat, 28 Nov 2026 03:00:05 GMT</pubDate>
+            <content:encoded><![CDATA[皆さんは普段、Kubernetes をどこで使っているでしょうか。 私は EKS を使うことが多く、次点で GKE です。最近はオンプレの Kubernetes も触り始めて、クラウドで使っていたときには気にしなかったことを、考える場面が増えてきました。 オンプレで Kubernetes を立てる方法を調べると、名前が一気に増えます。kubeadm、Kubespray、RKE2、k3s、k0s、Talos、OpenShift。どれも Kubernetes で、どれも本番で使われています。 同じ Kubernetes なのに、何が違うのか。 この記事では、Kubernetes ディストリビ...]]></content:encoded>
+            <author>Reito Koike</author>
+        </item>
+        <item>
+            <title><![CDATA[Rustで単回帰を書く]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/28/114153</link>
+            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/28/114153</guid>
+            <pubDate>Sat, 28 Nov 2026 02:41:53 GMT</pubDate>
+            <content:encoded><![CDATA[はじめに 夜間処理は2件で5分。何晩測っても2件の日しかなかったら、今夜の3件を何分と見積もるでしょうか。6分という予測も、7分という予測も、これまでの記録に合う直線から出せます。 若い人に基礎を勧めている私も、この見積もりを題材にRustで単回帰を復習します。件数をx、所要時間をyとして、記録にy = ax + bという直線を当てます。傾きaは1件増えると所要時間が何分延びるか、切片bは件数を0としたときに何分かかると見積もるかを表します。 平均からのずれで傾きを求める 入力は観測した(x, y)の組、出力は傾きaと切片bです。誤差をy − (ax + b)とし、その二乗を全点で足した値を最…]]></content:encoded>
+            <author>nwiizo</author>
+        </item>
         <item>
             <title><![CDATA[Rustで粒子群最適化を書く]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/11/26/185155</link>
@@ -253,22 +269,6 @@
             <pubDate>Thu, 05 Nov 2026 14:35:31 GMT</pubDate>
             <content:encoded><![CDATA[私は基本的に、「誰もわたしが書いた文章なんて読みたくない」と思っています。 みんな忙しいんです。そんな中であなたが文章を書いて、誰かがそれを読むということは、双方に何かしらの目的があるんだと思います。 しかも今は AI のおかげで、文章は一瞬でいくらでも書けるようになりました。結果として、仕事の中でも外でも AI が生成した文章が溢れかえっています。AI に書かせた長文を「で、何が言いたいの？」と思いながらスクロールした経験ってありませんか。 わたしはあります。 だからこそ、みんな忙しい中でどうやって読んでもらうか？ を考えるテクニックが大事になると思います。この記事では、私が普段使って...]]></content:encoded>
             <author>ntk</author>
-        </item>
-        <item>
-            <title><![CDATA[S3 を Deep Archive へ ~~S3 Inventory + Athena で何件・何 GiB 動くかを数える~~]]></title>
-            <link>https://qiita.com/gensan0223/items/770ae61e9001b49b6ecd</link>
-            <guid isPermaLink="false">https://qiita.com/gensan0223/items/770ae61e9001b49b6ecd</guid>
-            <pubDate>Thu, 05 Nov 2026 08:16:31 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに業務で、S3 Glacier Deep Archive によるコスト削減に取り組むことになりました。これを機に、移す前に知っておきたい仕様を検証環境で確かめながらまとめてみました。対象読者S3 のライフサイクルで、Deep Archive への移行を...]]></content:encoded>
-            <author>Gemma Naoki</author>
-        </item>
-        <item>
-            <title><![CDATA[何者って、なんですか]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/11/03/120527</link>
-            <guid isPermaLink="false">https://syu-m-5151.hatenablog.com/entry/2026/11/03/120527</guid>
-            <pubDate>Tue, 03 Nov 2026 03:05:27 GMT</pubDate>
-            <content:encoded><![CDATA[はじめに トラックバックをやります。河又さんも喜ぶはずです。 河又さんの記事「何者かになりたいなら打席に立ち続けなさい」で、私の「おい、〇〇」シリーズを取り上げていただきました。 note.com 何者かになりたいなら、打席に立たなければいけない。それはそのとおりです。河又さんは「何者か」を、特定の分野や仕事と結びつけてその人を思い浮かべてもらえる状態として説明しています。発信は義務ではなくやめてもよいとしたうえで、そうなりたい人には続けることを勧めています。私もその考えには賛成です。 何をしている人なのかを知ってもらうには、仕事や考えを人に見せる必要があります。私自身、できないことを人に知ら…]]></content:encoded>
-            <author>nwiizo</author>
         </item>
     </channel>
 </rss>
